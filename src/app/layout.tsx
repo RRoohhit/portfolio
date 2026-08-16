@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -13,10 +13,11 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Variable fonts: one single woff2 file per family covers every weight
-const plusJakarta = Plus_Jakarta_Sans({
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-jakarta",
   display: "swap",
+  axes: ["opsz"],
 });
 
 const jetBrainsMono = JetBrains_Mono({
@@ -135,7 +136,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en-IN"
       suppressHydrationWarning
       data-scroll-behavior="smooth"
-      className={`dark scroll-smooth ${plusJakarta.variable} ${jetBrainsMono.variable}`}
+      className={`dark scroll-smooth ${inter.variable} ${jetBrainsMono.variable}`}
       style={{ colorScheme: "dark" }}
     >
       <head>

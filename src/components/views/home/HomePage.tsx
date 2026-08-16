@@ -161,28 +161,33 @@ export const HomePage: React.FC = () => {
   const { openAudit } = useAudit();
 
   return (
-    <div className="space-y-16 md:space-y-24">
+    <div className="space-y-10 md:space-y-16 lg:space-y-24">
 
       {/* HERO SECTION */}
       <section
         aria-label="Hero"
-        className="hero-full-bleed relative min-h-screen flex flex-col justify-center lg:justify-start isolate pt-16 sm:pt-20"
+        className="hero-full-bleed relative min-h-[85dvh] sm:min-h-[90dvh] lg:min-h-screen flex flex-col justify-center lg:justify-start isolate pt-16 sm:pt-20"
       >
         <div className="absolute inset-0 -z-20 bg-grid-pattern opacity-40 pointer-events-none" />
         <div className="absolute inset-0 -z-20 bg-radial-glow pointer-events-none" />
         {/* Animated ambient blobs */}
-        <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-emerald-500/15 blur-[100px] -z-10 pointer-events-none animate-blob" />
-        <div className="absolute top-1/3 -right-32 w-80 h-80 rounded-full bg-emerald-400/10 blur-[80px] -z-10 pointer-events-none animate-blob animation-delay-2000" />
-        <div className="absolute bottom-16 left-1/3 w-72 h-72 rounded-full bg-teal-500/10 blur-[90px] -z-10 pointer-events-none animate-blob animation-delay-4000" />
+        <div className="absolute -top-32 -left-32 w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-emerald-500/15 blur-[100px] -z-10 pointer-events-none animate-blob" />
+        <div className="absolute top-1/3 -right-32 w-64 sm:w-80 h-64 sm:h-80 rounded-full bg-emerald-400/10 blur-[80px] -z-10 pointer-events-none animate-blob animation-delay-2000" />
+        <div className="absolute bottom-16 left-1/3 w-56 sm:w-72 h-56 sm:h-72 rounded-full bg-teal-500/10 blur-[90px] -z-10 pointer-events-none animate-blob animation-delay-4000" />
         <div className="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-b from-transparent to-[#050505] -z-10 pointer-events-none" />
 
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center py-6 sm:py-10 lg:py-0">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center py-8 sm:py-10 lg:py-0">
 
           {/* Left Column: Copy & CTAs */}
-          <Reveal direction="right" distance={40} className="lg:col-span-7 space-y-6 lg:space-y-8 relative z-20">
+          <Reveal direction="right" distance={40} className="lg:col-span-7 space-y-5 sm:space-y-6 lg:space-y-8 relative z-20">
 
-            <div className="space-y-4">
-              <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] xl:text-5xl font-black text-white tracking-tight leading-[1.08] uppercase">
+            <div className="space-y-3 sm:space-y-4">
+              {/* Available badge */}
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] sm:text-[11px] font-mono font-bold uppercase tracking-wider">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                Available for New Projects
+              </div>
+              <h1 className="text-[1.65rem] sm:text-4xl lg:text-[2.75rem] xl:text-5xl font-black text-white tracking-tight leading-[1.1] sm:leading-[1.08]">
                 Rank #1 on Google &amp; AI Search for Businesses in{" "}
                 <span className="relative inline-block text-emerald-400">
                   Noida, Delhi &amp; All India
@@ -191,7 +196,7 @@ export const HomePage: React.FC = () => {
                   </svg>
                 </span>
               </h1>
-              <p className="text-sm sm:text-base text-white/75 font-light leading-relaxed max-w-xl">
+              <p className="text-sm sm:text-base text-white/75 leading-relaxed max-w-xl">
                 I&apos;m <strong className="text-white font-semibold">Rohit Gupta</strong> — a{" "}
                 <strong className="text-white font-semibold">SEO specialist &amp; full stack web developer</strong>{" "}
                 who combines White Hat technical SEO, Core Web Vitals, and high-performance Next.js builds to{" "}
@@ -200,31 +205,31 @@ export const HomePage: React.FC = () => {
               </p>
             </div>
 
-            <div className="flex flex-wrap items-center gap-3">
+            <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3">
               <Link
                 href="/contact"
-                className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest shadow-lg shadow-emerald-500/25 hover:bg-emerald-300 hover:shadow-emerald-500/40 hover:-translate-y-0.5 transition-all duration-200"
+                className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest shadow-lg shadow-emerald-500/25 hover:bg-emerald-300 hover:shadow-emerald-500/40 hover:-translate-y-0.5 transition-all duration-200"
               >
                 Start Your Project
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
               <button
                 onClick={openAudit}
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/5 text-white border border-white/15 text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/10 hover:border-white/30 backdrop-blur-md transition-all duration-200"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white/5 text-white border border-white/15 text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/10 hover:border-white/30 backdrop-blur-md transition-all duration-200"
               >
                 <Gauge className="w-4 h-4 text-emerald-400" />
                 Free SEO Audit
               </button>
             </div>
 
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 pt-1">
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-x-4 gap-y-2.5 pt-1">
               {[
                 "100% White Hat, no penalties",
                 "Free technical SEO audit",
                 "No long-term contracts",
                 "Transparent monthly reports",
               ].map((point) => (
-                <span key={point} className="inline-flex items-center gap-1.5 text-[11px] font-mono text-white/55">
+                <span key={point} className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-medium text-white/60">
                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                   {point}
                 </span>
@@ -234,9 +239,9 @@ export const HomePage: React.FC = () => {
           </Reveal>
 
           {/* Right Column: Portrait */}
-          <Reveal direction="left" distance={40} delay={0.1} className="lg:col-span-5 relative flex justify-center lg:justify-end items-start h-full z-10 isolate mt-6 lg:mt-0">
+          <Reveal direction="left" distance={40} delay={0.1} className="lg:col-span-5 relative flex justify-center lg:justify-end items-start h-full z-10 isolate">
             <div className="absolute inset-0 flex items-end justify-center lg:justify-end pointer-events-none -z-10">
-              <div className="w-[420px] sm:w-[620px] lg:w-[850px] aspect-square rounded-full bg-[radial-gradient(circle_at_50%_40%,rgba(16,185,129,0.40),rgba(16,185,129,0.10)_55%,transparent_75%)] blur-3xl animate-pulse" />
+              <div className="w-[280px] sm:w-[420px] lg:w-[620px] xl:w-[850px] aspect-square rounded-full bg-[radial-gradient(circle_at_50%_40%,rgba(16,185,129,0.40),rgba(16,185,129,0.10)_55%,transparent_75%)] blur-3xl animate-pulse" />
             </div>
             <div className="relative flex justify-center lg:justify-end w-full">
               <Image
@@ -246,15 +251,15 @@ export const HomePage: React.FC = () => {
                 fetchPriority="high"
                 width={1400}
                 height={1400}
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 850px"
+                sizes="(max-width: 640px) 85vw, (max-width: 1024px) 60vw, 850px"
                 className="
                   relative w-auto
-                  h-[480px] sm:h-[620px] lg:h-[780px] xl:h-[920px] 2xl:h-[1020px]
+                  h-[300px] sm:h-[400px] md:h-[520px] lg:h-[720px] xl:h-[880px] 2xl:h-[980px]
                   max-h-[min(92vh,980px)] max-w-full
                   object-contain origin-bottom saturate-110
                   lg:scale-105 xl:scale-110 transition-transform duration-500
-                  drop-shadow-[0_30px_60px_rgba(0,0,0,0.95)]
-                  drop-shadow-[0_0_55px_rgba(16,185,129,0.40)]
+                  drop-shadow-[0_20px_50px_rgba(0,0,0,0.90)]
+                  drop-shadow-[0_0_45px_rgba(16,185,129,0.35)]
                 "
               />
             </div>
@@ -264,9 +269,9 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* MARQUEE TICKER */}
-      <div className="-mt-16 md:-mt-20 hero-full-bleed py-3.5 bg-gradient-to-r from-emerald-950/40 via-zinc-950/90 to-emerald-950/40 border-y border-white/10 overflow-hidden shadow-2xl backdrop-blur-xl relative z-20">
-        <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-r from-black via-black/80 to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-l from-black via-black/80 to-transparent z-10 pointer-events-none" />
+      <div className="-mt-8 sm:-mt-16 md:-mt-20 hero-full-bleed py-3.5 bg-gradient-to-r from-emerald-950/40 via-zinc-950/90 to-emerald-950/40 border-y border-white/10 overflow-hidden shadow-2xl backdrop-blur-xl relative z-20">
+        <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-16 lg:w-24 bg-gradient-to-r from-black via-black/80 to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-16 lg:w-24 bg-gradient-to-l from-black via-black/80 to-transparent z-10 pointer-events-none" />
 
         <div className="animate-marquee flex items-center gap-3 sm:gap-4">
           {[...MARQUEE_SERVICES, ...MARQUEE_SERVICES].map((item, idx) => {
@@ -287,18 +292,18 @@ export const HomePage: React.FC = () => {
 
       {/* STATS BAR (SHOWING RIGHT AFTER MARQUEE TICKER) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5 p-4 sm:p-5 bg-zinc-950 border border-white/12 rounded-3xl shadow-2xl">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-3.5 p-3 sm:p-5 bg-zinc-950 border border-white/12 rounded-3xl shadow-2xl">
           {HERO_STATS.map((stat) => {
             const Icon = stat.icon;
             const c = colorMap[stat.color];
             return (
               <div
                 key={stat.label}
-                className={`p-4 rounded-2xl border ${c.border} ${c.bg} flex flex-col items-center text-center gap-1.5 shadow-lg hover:scale-[1.03] transition-transform duration-300`}
+                className={`p-3 sm:p-4 rounded-2xl border ${c.border} ${c.bg} flex flex-col items-center text-center gap-1 sm:gap-1.5 shadow-lg hover:scale-[1.03] transition-transform duration-300`}
               >
-                <Icon className={`w-5 h-5 ${c.text}`} />
-                <span className={`text-2xl sm:text-3xl font-black font-mono ${c.text}`}>{stat.value}</span>
-                <span className="text-xs text-white/70 font-mono uppercase tracking-wider leading-tight font-bold">{stat.label}</span>
+                <Icon className={`w-4 h-4 sm:w-5 sm:h-5 ${c.text}`} />
+                <span className={`text-xl sm:text-2xl lg:text-3xl font-black font-mono ${c.text}`}>{stat.value}</span>
+                <span className="text-[10px] sm:text-xs text-white/70 font-mono uppercase tracking-wide leading-tight font-bold">{stat.label}</span>
               </div>
             );
           })}
@@ -307,34 +312,34 @@ export const HomePage: React.FC = () => {
 
       {/* CORE WEB VITALS PERFORMANCE BENCHMARK BAR */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-        <div className="p-6 sm:p-8 bg-black/90 border border-emerald-500/30 rounded-3xl space-y-6 shadow-2xl relative overflow-hidden">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-white/10 pb-4">
-            <div className="space-y-1">
+        <div className="p-4 sm:p-6 lg:p-8 bg-black/90 border border-emerald-500/30 rounded-3xl space-y-5 sm:space-y-6 shadow-2xl relative overflow-hidden">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 border-b border-white/10 pb-4">
+            <div className="space-y-1.5">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-mono uppercase font-bold tracking-widest">
                 <FastForward className="w-3.5 h-3.5 text-emerald-400" />
                 <span>Sub-Second Performance &amp; Google Core Web Vitals</span>
               </div>
-              <h3 className="text-xl sm:text-2xl font-black text-white uppercase tracking-tight">
+              <h3 className="text-base sm:text-xl lg:text-2xl font-black text-white uppercase tracking-tight leading-tight">
                 Verified 99–100/100 Lighthouse Performance Benchmarks
               </h3>
             </div>
-            <div className="px-3.5 py-1.5 rounded-xl bg-emerald-400 text-black font-mono font-black text-xs uppercase tracking-wider shadow-lg shrink-0">
+            <div className="px-3 py-1.5 rounded-xl bg-emerald-400 text-black font-mono font-black text-[10px] sm:text-xs uppercase tracking-wider shadow-lg shrink-0">
               ⚡ Lighthouse 99/100 Certified
             </div>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3.5">
             {WEB_VITALS_METRICS.map((m) => (
-              <div key={m.metric} className={`p-4 rounded-2xl bg-zinc-950 border ${m.border} space-y-1`}>
+              <div key={m.metric} className={`p-3 sm:p-4 rounded-2xl bg-zinc-950 border ${m.border} space-y-1.5`}>
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-mono font-bold text-white/50">{m.metric}</span>
-                  <span className={`text-[9px] font-mono font-extrabold uppercase px-2 py-0.5 rounded bg-white/5 ${m.color}`}>
+                  <span className="text-[11px] font-mono font-bold text-white/60">{m.metric}</span>
+                  <span className={`text-[10px] font-mono font-extrabold uppercase px-1.5 py-0.5 rounded bg-white/5 ${m.color}`}>
                     {m.status}
                   </span>
                 </div>
-                <div className={`text-2xl sm:text-3xl font-black font-mono ${m.color}`}>{m.value}</div>
-                <div className="text-[10px] font-mono text-white/40">{m.name}</div>
-                <div className="text-[9px] font-mono text-white/30 pt-1 border-t border-white/5">{m.benchmark}</div>
+                <div className={`text-xl sm:text-2xl lg:text-3xl font-black font-mono ${m.color}`}>{m.value}</div>
+                <div className="text-[10px] sm:text-[11px] font-mono text-white/50 leading-tight">{m.name}</div>
+                <div className="text-[10px] font-mono text-white/35 pt-1 border-t border-white/5">{m.benchmark}</div>
               </div>
             ))}
           </div>
@@ -342,32 +347,32 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* SERVICES GRID */}
-      <section aria-labelledby="services-heading" className="space-y-8">
+      <section aria-labelledby="services-heading" className="space-y-6 sm:space-y-8">
         <Reveal className="space-y-3 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-mono uppercase tracking-widest font-bold">
             <Zap className="w-3 h-3" />
             <span>Full-Spectrum Digital Growth</span>
           </div>
-          <h2 id="services-heading" className="text-2xl sm:text-4xl font-black text-white tracking-tight uppercase">
+          <h2 id="services-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
             What I Do for <span className="text-gradient">Your Business</span>
           </h2>
-          <p className="text-sm text-white/60 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-sm text-white/60 max-w-2xl mx-auto leading-relaxed">
             From a single-page audit to a full-scale Next.js rebuild with AI search optimization — I cover every layer of modern digital growth.
           </p>
         </Reveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {SERVICES.map((svc, idx) => {
             const Icon = svc.icon;
             const c = colorMap[svc.color];
             return (
               <Reveal key={svc.number} delay={(idx % 3) * 0.1} amount={0.15}>
                 <div
-                  className={`service-card p-6 rounded-2xl bg-zinc-950 border ${c.border} space-y-4 relative overflow-hidden group h-full`}
+                  className={`service-card p-5 sm:p-6 rounded-2xl bg-zinc-950 border ${c.border} space-y-3 sm:space-y-4 relative overflow-hidden group h-full`}
                 >
                   <div className="flex items-center justify-between">
-                    <div className={`w-10 h-10 rounded-xl ${c.bg} border ${c.border} flex items-center justify-center`}>
-                      <Icon className={`w-5 h-5 ${c.text}`} />
+                    <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl ${c.bg} border ${c.border} flex items-center justify-center`}>
+                      <Icon className={`w-4 h-4 sm:w-5 sm:h-5 ${c.text}`} />
                     </div>
                     <span className="text-xs font-mono font-black text-white/20 group-hover:text-white/40 transition-colors">
                       {svc.number}
@@ -375,12 +380,12 @@ export const HomePage: React.FC = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="text-sm font-bold text-white font-mono uppercase tracking-wide">{svc.title}</h3>
-                    <p className="text-xs text-white/65 leading-relaxed font-light">{svc.desc}</p>
+                    <h3 className="text-sm font-bold text-white tracking-wide">{svc.title}</h3>
+                    <p className="text-xs sm:text-[13px] text-white/65 leading-relaxed">{svc.desc}</p>
                   </div>
                   <ul className="space-y-1.5">
                     {svc.highlights.map((h) => (
-                      <li key={h} className="flex items-center gap-2 text-[11px] font-mono text-white/70">
+                      <li key={h} className="flex items-center gap-2 text-xs text-white/75">
                         <CheckCircle2 className={`w-3.5 h-3.5 ${c.text} shrink-0`} />
                         {h}
                       </li>
@@ -404,25 +409,25 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* INTERACTIVE LIVE SEO TOOLS QUICK LAUNCH */}
-      <section aria-labelledby="tools-suite-heading" className="space-y-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section aria-labelledby="tools-suite-heading" className="space-y-6 sm:space-y-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal className="space-y-2 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-[10px] font-mono uppercase tracking-widest font-bold">
             <Cpu className="w-3.5 h-3.5" />
             <span>Built-In Live SEO &amp; AI Intelligence Tools</span>
           </div>
-          <h2 id="tools-suite-heading" className="text-2xl sm:text-4xl font-black text-white tracking-tight uppercase">
+          <h2 id="tools-suite-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
             Test Drive My <span className="text-gradient">Proprietary SEO Tools</span>
           </h2>
-          <p className="text-sm text-white/60 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-sm text-white/60 max-w-2xl mx-auto leading-relaxed">
             Free interactive tools built directly into this portfolio for audit engineers, developers, and marketing leads.
           </p>
         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
           {INTERACTIVE_TOOLS_SUITE.map((tool) => {
             const ToolIcon = tool.icon;
             return (
-              <div key={tool.title} className="p-6 rounded-3xl bg-zinc-950 border border-white/12 space-y-4 hover:border-emerald-500/40 transition-all flex flex-col justify-between group">
+              <div key={tool.title} className="p-5 sm:p-6 rounded-3xl bg-zinc-950 border border-white/12 space-y-4 hover:border-emerald-500/40 transition-all flex flex-col justify-between group">
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
                     <span className={`px-2.5 py-1 rounded-full text-[10px] font-mono font-bold uppercase border ${tool.color}`}>
@@ -430,13 +435,13 @@ export const HomePage: React.FC = () => {
                     </span>
                     <ToolIcon className="w-5 h-5 text-white/50 group-hover:text-emerald-400 transition-colors" />
                   </div>
-                  <h3 className="text-base font-bold text-white tracking-tight font-mono">{tool.title}</h3>
-                  <p className="text-xs text-white/65 font-light leading-relaxed">{tool.desc}</p>
+                  <h3 className="text-sm sm:text-base font-bold text-white tracking-tight">{tool.title}</h3>
+                  <p className="text-xs sm:text-[13px] text-white/65 leading-relaxed">{tool.desc}</p>
                 </div>
 
                 <Link
                   href={tool.link}
-                  className="w-full py-2.5 px-4 bg-white/5 hover:bg-emerald-400 hover:text-black border border-white/10 rounded-xl text-xs font-mono font-bold uppercase tracking-wider text-white flex items-center justify-center gap-2 transition-all"
+                  className="w-full py-3 px-4 bg-white/5 hover:bg-emerald-400 hover:text-black border border-white/10 rounded-xl text-xs font-mono font-bold uppercase tracking-wider text-white flex items-center justify-center gap-2 transition-all"
                 >
                   <span>Launch Tool</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -456,14 +461,14 @@ export const HomePage: React.FC = () => {
           </h2>
         </Reveal>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6">
 
           <Reveal direction="right" distance={32} className="lg:col-span-7">
-            <div className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-6 shadow-xl h-full">
-            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight uppercase">
+            <div className="p-5 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-5 sm:space-y-6 shadow-xl h-full">
+            <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-white tracking-tight">
               Passionate React Developer &amp; Technical SEO Audit Consultant
             </h3>
-            <p className="text-sm leading-relaxed text-white/75 font-light">
+            <p className="text-sm leading-relaxed text-white/75">
               Bridging the gap between{" "}
               <strong className="text-emerald-400 font-semibold">performance optimization</strong> and{" "}
               <strong className="text-white font-semibold">search engine visibility</strong>. As a specialist offering{" "}
@@ -472,9 +477,9 @@ export const HomePage: React.FC = () => {
               high-growth startups rank #1 on Google SERPs. {ROHIT_PROFILE.summary}
             </p>
 
-            <div className="space-y-3 pt-2">
+            <div className="space-y-3 pt-1">
               <h4 className="text-[10px] uppercase text-white/40 font-bold tracking-[0.2em] font-mono">High-Impact Technical Pillars:</h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
                 {[
                   "Technical SEO Audit & Schema JSON-LD",
                   "Performance Optimization & Core Web Vitals",
@@ -483,7 +488,7 @@ export const HomePage: React.FC = () => {
                 ].map((item) => (
                   <div key={item} className="p-3 bg-black border border-white/10 rounded-xl flex items-center gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                    <span className="text-xs text-white/90 font-medium">{item}</span>
+                    <span className="text-xs sm:text-[13px] text-white/90 font-medium leading-snug">{item}</span>
                   </div>
                 ))}
               </div>
@@ -492,11 +497,11 @@ export const HomePage: React.FC = () => {
           </Reveal>
 
           <Reveal direction="left" distance={32} delay={0.1} className="lg:col-span-5">
-            <div className="space-y-6 h-full">
-            <div className="bg-white text-black p-6 rounded-3xl flex flex-col justify-between space-y-4 shadow-2xl">
+            <div className="space-y-4 sm:space-y-6 h-full">
+            <div className="bg-white text-black p-5 sm:p-6 rounded-3xl flex flex-col justify-between space-y-4 shadow-2xl">
               <div>
                 <p className="text-[10px] uppercase text-black/60 mb-1.5 tracking-widest font-mono font-bold">Hire SEO &amp; Development Specialist</p>
-                <p className="text-base sm:text-lg font-extrabold tracking-tighter font-mono break-all">{ROHIT_PROFILE.email}</p>
+                <p className="text-sm sm:text-base lg:text-lg font-extrabold tracking-tight font-mono break-all">{ROHIT_PROFILE.email}</p>
               </div>
               <div className="pt-4 border-t border-black/10 flex justify-between items-center">
                 <span className="text-[10px] font-mono uppercase font-bold text-black/60">AYODHYA · DELHI · NOIDA</span>
@@ -510,13 +515,13 @@ export const HomePage: React.FC = () => {
               </div>
             </div>
 
-            <div className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3 shadow-xl">
+            <div className="p-5 sm:p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3 shadow-xl">
               <h4 className="text-[10px] uppercase text-white/40 tracking-[0.2em] font-mono font-bold">Education Credentials</h4>
-              <div className="space-y-3 text-xs">
+              <div className="space-y-2.5 text-xs sm:text-[13px]">
                 {EDUCATIONS.map((edu, idx) => (
                   <div key={idx} className="p-3 rounded-xl bg-black border border-white/10 space-y-1">
                     <div className="font-bold text-white italic">{edu.degree}</div>
-                    <div className="text-white/60">{edu.institution}</div>
+                    <div className="text-white/60 text-xs">{edu.institution}</div>
                     <div className="flex justify-between text-[10px] font-mono text-white/40 pt-1">
                       <span>{edu.period}</span>
                       <span className="text-emerald-400 font-bold">{edu.grade}</span>
@@ -546,30 +551,30 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* TECHNICAL SKILLS MATRIX */}
-      <section aria-labelledby="tech-stack-heading" className="space-y-8 cv-auto">
+      <section aria-labelledby="tech-stack-heading" className="space-y-6 sm:space-y-8 cv-auto">
         <Reveal className="space-y-2">
           <div className="flex items-center gap-2 text-xs font-mono text-white/60 uppercase tracking-wider">
             <Zap className="w-4 h-4 text-white" />
             <span>Technology &amp; Tools Stack</span>
           </div>
-          <h2 id="tech-stack-heading" className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 id="tech-stack-heading" className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
             The <span className="text-gradient">Tech Stack</span> Behind the Rankings
           </h2>
         </Reveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {TECHNICAL_SKILLS.map((skillGroup, idx) => (
             <Reveal key={idx} delay={(idx % 3) * 0.08} amount={0.1}>
-              <div className="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-3 hover:border-white/25 hover:bg-white/[0.07] transition-colors shadow-lg h-full">
+              <div className="p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 space-y-3 hover:border-white/25 hover:bg-white/[0.07] transition-colors shadow-lg h-full">
                 <h3 className="text-xs font-bold text-white font-mono uppercase tracking-wider flex items-center gap-2">
                   <Code2 className="w-4 h-4 text-emerald-400" />
                   {skillGroup.category}
                 </h3>
-                <div className="flex flex-wrap gap-2 pt-1">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-1">
                   {skillGroup.items.map((item, itemIdx) => (
                     <span
                       key={itemIdx}
-                      className="px-2.5 py-1 rounded-lg bg-black border border-white/10 text-[11px] font-mono text-white/85 hover:border-emerald-400/50 hover:text-emerald-300 hover:scale-105 transition-all"
+                      className="px-2 sm:px-2.5 py-1 rounded-lg bg-black border border-white/10 text-xs font-mono text-white/85 hover:border-emerald-400/50 hover:text-emerald-300 hover:scale-105 transition-all"
                     >
                       {item}
                     </span>
@@ -581,15 +586,15 @@ export const HomePage: React.FC = () => {
         </div>
 
         <div className="pt-2">
-          <h3 className="text-sm font-bold text-white font-mono mb-4 flex items-center gap-2">
+          <h3 className="text-sm font-bold text-white font-mono mb-3 sm:mb-4 flex items-center gap-2">
             <Search className="w-4 h-4 text-amber-400" />
             Specialized SEO &amp; Performance Tools Utilized:
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {SEO_TOOLS.map((tool, idx) => (
-              <div key={idx} className="p-4 rounded-xl bg-black border border-white/10 space-y-1 hover:border-white/25 hover:bg-white/[0.04] transition-colors">
+              <div key={idx} className="p-3 sm:p-4 rounded-xl bg-black border border-white/10 space-y-1 hover:border-white/25 hover:bg-white/[0.04] transition-colors">
                 <h4 className="text-xs font-bold text-white font-mono">{tool.name}</h4>
-                <p className="text-[11px] text-white/55 font-light">{tool.desc}</p>
+                <p className="text-[11px] sm:text-xs text-white/55 leading-relaxed">{tool.desc}</p>
               </div>
             ))}
           </div>
@@ -611,24 +616,24 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* EXPERIENCE TIMELINE */}
-      <section aria-labelledby="experience-heading" className="space-y-8 cv-auto">
+      <section aria-labelledby="experience-heading" className="space-y-6 sm:space-y-8 cv-auto">
         <Reveal className="space-y-2">
           <div className="flex items-center gap-2 text-xs font-mono text-white/60 uppercase tracking-wider">
             <Award className="w-4 h-4 text-white" />
             <span>Professional Career Experience</span>
           </div>
-          <h2 id="experience-heading" className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 id="experience-heading" className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
             Work Experience (<span className="text-gradient">SEO &amp; Development</span>)
           </h2>
         </Reveal>
 
-        <div className="space-y-5">
+        <div className="space-y-4 sm:space-y-5">
           {EXPERIENCES.map((exp) => (
             <Reveal key={exp.id}>
-            <div className="p-6 sm:p-8 rounded-2xl bg-white/[0.04] border border-white/10 space-y-4 shadow-xl hover:border-emerald-500/30 hover:bg-white/[0.06] transition-colors">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-4">
+            <div className="p-5 sm:p-6 lg:p-8 rounded-2xl bg-white/[0.04] border border-white/10 space-y-4 shadow-xl hover:border-emerald-500/30 hover:bg-white/[0.06] transition-colors">
+              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 border-b border-white/10 pb-4">
                 <div>
-                  <div className="flex items-center gap-3 flex-wrap">
+                  <div className="flex items-center gap-2.5 flex-wrap">
                     <h3 className="text-base sm:text-lg font-extrabold text-white">{exp.role}</h3>
                     {exp.isCurrent && (
                       <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-mono font-bold border border-emerald-500/30">
@@ -636,18 +641,18 @@ export const HomePage: React.FC = () => {
                       </span>
                     )}
                   </div>
-                  <p className="text-xs font-mono text-white/55 mt-0.5">{exp.company} · {exp.location}</p>
+                  <p className="text-xs font-mono text-white/55 mt-1">{exp.company} · {exp.location}</p>
                 </div>
-                <div className="text-xs font-mono text-white/65 bg-black px-3 py-1.5 rounded-lg border border-white/10 self-start sm:self-auto whitespace-nowrap">
+                <div className="text-xs font-mono text-white/65 bg-black px-3 py-1.5 rounded-lg border border-white/10 self-start whitespace-nowrap">
                   {exp.period}
                 </div>
               </div>
 
-              <ul className="space-y-2 text-xs text-white/75">
+              <ul className="space-y-2 text-xs sm:text-[13px] text-white/75">
                 {exp.responsibilities.map((resp, idx) => (
                   <li key={idx} className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400/80 shrink-0 mt-0.5" />
-                    <span className="leading-relaxed font-light">{resp}</span>
+                    <span className="leading-relaxed">{resp}</span>
                   </li>
                 ))}
               </ul>

@@ -52,23 +52,23 @@ export const ProjectsPage: React.FC = () => {
     <div className="space-y-12">
       
       {/* Top Banner */}
-      <div className="bg-white/5 border border-white/10 p-6 sm:p-10 rounded-2xl space-y-6">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white border border-white/20 text-[10px] font-mono uppercase tracking-widest">
+      <div className="bg-white/5 border border-white/10 p-5 sm:p-8 lg:p-10 rounded-2xl space-y-5 sm:space-y-6">
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-white border border-white/20 text-[10px] sm:text-xs font-mono uppercase tracking-widest">
           <Code2 className="w-3.5 h-3.5" />
-          <span>Verified Case Studies & Quantifiable Proof</span>
+          <span>Verified Case Studies &amp; Quantifiable Proof</span>
         </div>
 
         <div className="space-y-2">
-          <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase">
-            Project Showcase & Growth Engineering
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
+            Project Showcase &amp; Growth Engineering
           </h1>
-          <p className="text-xs sm:text-sm text-white/60 max-w-3xl leading-relaxed font-light">
-            Explore Rohit Gupta's full stack web development & technical SEO portfolio. Filter by service category or test the interactive side-by-side performance slider below.
+          <p className="text-xs sm:text-sm text-white/60 max-w-3xl leading-relaxed">
+            Explore Rohit Gupta&apos;s full stack web development &amp; technical SEO portfolio. Filter by service category or test the interactive side-by-side performance slider below.
           </p>
         </div>
 
         {/* Filter Bar & Search Input */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pt-4 border-t border-white/10">
+        <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
           
           {/* Category Filter Pills */}
           <div className="flex flex-wrap items-center gap-2">
@@ -82,7 +82,7 @@ export const ProjectsPage: React.FC = () => {
                 <button
                   key={cat}
                   onClick={() => setCategoryFilter(cat)}
-                  className={`px-3.5 py-1.5 rounded-lg text-xs font-mono uppercase tracking-wider transition-all ${
+                  className={`px-3 py-1.5 rounded-lg text-xs font-mono uppercase tracking-wider transition-all ${
                     isActive
                       ? "bg-white text-black font-bold shadow-md"
                       : "bg-black text-white/60 border border-white/10 hover:text-white hover:border-white/20"
@@ -95,9 +95,9 @@ export const ProjectsPage: React.FC = () => {
           </div>
 
           {/* Search Box */}
-          <div className="relative w-full md:w-64">
+          <div className="relative w-full sm:max-w-xs">
             <label htmlFor="projects-search-query" className="sr-only">Search projects</label>
-            <Search className="w-3.5 h-3.5 text-white/40 absolute left-3 top-3" />
+            <Search className="w-3.5 h-3.5 text-white/40 absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               id="projects-search-query"
               name="searchQuery"
@@ -106,7 +106,7 @@ export const ProjectsPage: React.FC = () => {
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search by project or tech..."
               aria-label="Search projects by name or technology"
-              className="w-full bg-black border border-white/20 rounded-xl pl-9 pr-3 py-2 text-xs font-mono text-white placeholder-white/40 focus:outline-none focus:border-white transition-colors"
+              className="w-full bg-black border border-white/20 rounded-xl pl-9 pr-3 py-2.5 text-xs sm:text-sm font-mono text-white placeholder-white/40 focus:outline-none focus:border-white transition-colors"
             />
           </div>
 
@@ -170,12 +170,12 @@ export const ProjectsPage: React.FC = () => {
                   <div className="pt-3 border-t border-white/10 space-y-3">
                     <div className="grid grid-cols-2 gap-2 text-xs font-mono">
                       <div className="p-2 bg-black rounded border border-white/10">
-                        <span className="text-[9px] text-white/40 uppercase block">Primary Metric</span>
-                        <span className="text-emerald-400 font-bold">{project.metrics[0].improvement} ({project.metrics[0].after})</span>
+                        <span className="text-[9px] sm:text-[10px] text-white/40 uppercase block">Primary Metric</span>
+                        <span className="text-emerald-400 font-bold text-[11px] sm:text-xs">{project.metrics[0].improvement} ({project.metrics[0].after})</span>
                       </div>
                       <div className="p-2 bg-black rounded border border-white/10">
-                        <span className="text-[9px] text-white/40 uppercase block">Speed Score</span>
-                        <span className="text-white font-bold">{project.lighthouse.after.performance}/100 Lighthouse</span>
+                        <span className="text-[9px] sm:text-[10px] text-white/40 uppercase block">Speed Score</span>
+                        <span className="text-white font-bold text-[11px] sm:text-xs">{project.lighthouse.after.performance}/100 Lighthouse</span>
                       </div>
                     </div>
 

@@ -60,14 +60,14 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
 
         {/* CTA band */}
-        <div className="relative overflow-hidden rounded-3xl border border-emerald-500/25 bg-gradient-to-br from-emerald-950/50 via-zinc-950 to-zinc-950 p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-5">
+        <div className="relative overflow-hidden rounded-3xl border border-emerald-500/25 bg-gradient-to-br from-emerald-950/50 via-zinc-950 to-zinc-950 p-5 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-5">
           <div className="absolute -top-16 -right-16 w-56 h-56 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
-          <div className="space-y-1.5 relative">
+          <div className="space-y-2 relative">
             <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-[10px] font-mono uppercase tracking-widest text-emerald-300 font-bold">
               <Zap className="w-3 h-3" />
               Free 14-Point SEO Audit
             </div>
-            <h3 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight">
+            <h3 className="text-lg sm:text-xl lg:text-2xl font-extrabold text-white tracking-tight">
               Ready to Rank #1 on Google &amp; AI Search?
             </h3>
             <p className="text-xs sm:text-sm text-zinc-400 max-w-xl leading-relaxed">
@@ -76,7 +76,7 @@ export const Footer: React.FC = () => {
           </div>
           <Link
             href="/contact"
-            className="group relative inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest shadow-lg shadow-emerald-500/25 hover:bg-emerald-300 transition-all active:scale-[0.98] shrink-0"
+            className="group relative inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest shadow-lg shadow-emerald-500/25 hover:bg-emerald-300 transition-all active:scale-[0.98] shrink-0"
           >
             Start Free Audit
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -205,7 +205,7 @@ export const Footer: React.FC = () => {
             {SEO_KEYWORDS.map((kw, idx) => (
               <span
                 key={idx}
-                className="px-2 py-0.5 rounded-md bg-zinc-900 border border-zinc-800 text-[10px] font-mono text-zinc-500 hover:text-zinc-300 hover:border-zinc-600 transition-colors cursor-default"
+                className="px-2 py-0.5 rounded-md bg-zinc-900 border border-zinc-800 text-[10px] sm:text-[11px] font-mono text-zinc-500 hover:text-zinc-300 hover:border-zinc-600 transition-colors cursor-default"
               >
                 #{kw}
               </span>

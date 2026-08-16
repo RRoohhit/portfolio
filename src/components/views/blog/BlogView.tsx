@@ -46,9 +46,9 @@ const ReadTimeBadge: React.FC<{ readTime: string }> = ({ readTime }) => {
       : "text-rose-400 bg-rose-500/15 border-rose-500/30";
   return (
     <span
-      className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-mono font-bold border uppercase tracking-wide ${color}`}
+      className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-mono font-bold border uppercase tracking-wide ${color}`}
     >
-      <Clock className="w-2.5 h-2.5" />
+      <Clock className="w-3 h-3" />
       {readTime}
     </span>
   );
@@ -156,11 +156,11 @@ export const BlogView: React.FC = () => {
 
         {/* Top row: badge + stats */}
         <div className="flex flex-wrap items-center justify-between gap-3 relative">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-400 text-black text-[10px] font-mono font-extrabold uppercase tracking-widest shadow-lg shadow-emerald-500/20">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-400 text-black text-[10px] sm:text-[11px] font-mono font-extrabold uppercase tracking-widest shadow-lg shadow-emerald-500/20">
             <BookOpen className="w-3.5 h-3.5" />
             <span>Technical SEO Knowledge Base</span>
           </div>
-          <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-white/50">
+          <div className="flex flex-wrap items-center gap-2 text-xs font-mono text-white/50">
             <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/5 border border-white/10">
               <LayoutGrid className="w-3.5 h-3.5 text-emerald-400" />
               <span className="text-white font-bold">{POST_COUNT}</span> Articles
@@ -174,11 +174,11 @@ export const BlogView: React.FC = () => {
 
         {/* Title */}
         <div className="space-y-2 relative">
-          <h1 className="text-2xl sm:text-4xl font-black text-white tracking-tight leading-tight">
+          <h1 className="text-xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
             Technical SEO &amp;{" "}
             <span className="text-gradient">Full Stack Engineering</span> Articles
           </h1>
-          <p className="text-sm text-white/60 max-w-2xl leading-relaxed font-light">
+          <p className="text-sm text-white/60 max-w-2xl leading-relaxed">
             In-depth tutorials, Core Web Vitals optimization guides, and hiring-ready SEO playbooks
             authored by <strong className="text-white font-semibold">Rohit Gupta</strong> — a White
             Hat technical SEO specialist &amp; full stack developer.
@@ -208,19 +208,19 @@ export const BlogView: React.FC = () => {
           </div>
 
           {/* Category pills */}
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-1.5 sm:gap-2">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
                 aria-pressed={activeCategory === cat}
-                className={`group inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-mono font-bold border transition-all duration-200 ${
+                className={`group inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-mono font-bold border transition-all duration-200 ${
                   activeCategory === cat
                     ? "bg-emerald-400 text-black border-emerald-400 shadow-md shadow-emerald-500/20"
-                    : "bg-white/5 text-white/55 border-white/10 hover:border-white/25 hover:text-white hover:bg-white/8"
+                    : "bg-white/5 text-white/60 border-white/10 hover:border-white/25 hover:text-white hover:bg-white/8"
                 }`}
               >
-                <Hash className="w-2.5 h-2.5 opacity-60" />
+                <Hash className="w-3 h-3 opacity-60" />
                 <span>{cat}</span>
                 <span
                   className={`px-1.5 py-0.5 rounded-full text-[9px] leading-none font-extrabold ${
@@ -370,7 +370,7 @@ export const BlogView: React.FC = () => {
                 {/* Meta row */}
                 <div className="flex items-center justify-between gap-2 flex-wrap">
                   <span
-                    className={`px-2.5 py-1 rounded-full text-[9px] font-mono font-bold uppercase border ${getCategoryColor(post.category)}`}
+                    className={`px-2.5 py-1 rounded-full text-xs font-mono font-bold uppercase border ${getCategoryColor(post.category)}`}
                   >
                     {post.category}
                   </span>
@@ -379,28 +379,28 @@ export const BlogView: React.FC = () => {
 
                 {/* Title */}
                 <Link href={`/blog/${post.slug}`} className="flex-1">
-                  <h3 className="text-base font-bold text-white group-hover:text-emerald-400 transition-colors leading-snug line-clamp-2">
+                  <h3 className="text-sm sm:text-base font-bold text-white group-hover:text-emerald-400 transition-colors leading-snug line-clamp-2">
                     {post.title}
                   </h3>
                 </Link>
 
                 {/* Excerpt */}
-                <p className="text-xs text-white/55 leading-relaxed font-light line-clamp-3 flex-1">
+                <p className="text-xs sm:text-[13px] text-white/60 leading-relaxed line-clamp-3 flex-1">
                   {post.excerpt}
                 </p>
 
                 {/* Keyword tags - show first 3 */}
-                <div className="flex flex-wrap gap-1">
+                <div className="flex flex-wrap gap-1.5">
                   {post.keywords.slice(0, 3).map((kw) => (
                     <span
                       key={kw}
-                      className="px-1.5 py-0.5 rounded text-[9px] font-mono text-white/35 bg-white/5 border border-white/8"
+                      className="px-2 py-0.5 rounded text-[10px] font-mono text-white/50 bg-white/5 border border-white/10"
                     >
                       {kw}
                     </span>
                   ))}
                   {post.keywords.length > 3 && (
-                    <span className="px-1.5 py-0.5 rounded text-[9px] font-mono text-white/25">
+                    <span className="px-2 py-0.5 rounded text-[10px] font-mono text-white/35">
                       +{post.keywords.length - 3}
                     </span>
                   )}
@@ -408,24 +408,24 @@ export const BlogView: React.FC = () => {
               </div>
 
               {/* Card footer */}
-              <div className="px-5 py-4 border-t border-white/8 flex items-center justify-between gap-3 bg-black/20">
-                <span className="flex items-center gap-1.5 text-[10px] font-mono text-white/35">
+              <div className="px-4 sm:px-5 py-3 sm:py-4 border-t border-white/8 flex items-center justify-between gap-3 bg-black/20">
+                <span className="flex items-center gap-1.5 text-[10px] sm:text-xs font-mono text-white/40">
                   <Calendar className="w-3 h-3 text-emerald-400/60" />
                   {formatDate(post.date)}
                 </span>
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => openArticle(post)}
-                    className="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-[10px] font-mono font-bold text-white/60 hover:bg-white/10 hover:text-white transition-all"
+                    className="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-xs font-mono font-bold text-white/60 hover:bg-white/10 hover:text-white transition-all"
                   >
                     Preview
                   </button>
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-emerald-400/10 border border-emerald-500/25 text-emerald-400 text-[10px] font-mono font-bold hover:bg-emerald-400 hover:text-black hover:border-emerald-400 transition-all"
+                    className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-emerald-400/10 border border-emerald-500/25 text-emerald-400 text-xs font-mono font-bold hover:bg-emerald-400 hover:text-black hover:border-emerald-400 transition-all"
                   >
                     Read
-                    <ChevronRight className="w-3 h-3" />
+                    <ChevronRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
               </div>
@@ -458,7 +458,7 @@ export const BlogView: React.FC = () => {
       <AnimatePresence>
         {selectedArticle && (
           <div
-            className="fixed inset-0 z-50 overflow-hidden bg-black/92 backdrop-blur-2xl flex items-center justify-center p-3 sm:p-6"
+            className="fixed inset-0 z-50 overflow-hidden bg-black/92 backdrop-blur-2xl flex items-end sm:items-center justify-center p-0 sm:p-4 lg:p-6"
             onClick={() => setSelectedArticle(null)}
             role="dialog"
             aria-modal="true"
@@ -470,7 +470,7 @@ export const BlogView: React.FC = () => {
               exit={{ opacity: 0, scale: 0.96, y: 24 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-zinc-950 border border-white/15 rounded-3xl max-w-3xl w-full max-h-[92vh] flex flex-col shadow-2xl overflow-hidden relative"
+              className="bg-zinc-950 border border-white/15 rounded-t-3xl sm:rounded-3xl max-w-3xl w-full max-h-[96dvh] sm:max-h-[92vh] flex flex-col shadow-2xl overflow-hidden relative"
             >
               {/* Modal Header (sticky) */}
               <div className="flex items-start justify-between gap-4 p-5 sm:p-6 border-b border-white/10 shrink-0 bg-zinc-950/95 backdrop-blur-xl">
