@@ -1,4 +1,4 @@
-export const SITE_URL = process.env.APP_URL || "https://rohit-gupta-seo.dev";
+export const SITE_URL = process.env.APP_URL || "https://rohitguptaseo.vercel.app";
 export const SITE_NAME = "Rohit Gupta - SEO Specialist & Full Stack Web Developer";
 
 export const OG_IMAGE =

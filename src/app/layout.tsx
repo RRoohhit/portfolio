@@ -9,9 +9,10 @@ import ScrollProgress from "@/components/layout/ScrollProgress";
 import FloatingContactClient from "@/components/layout/FloatingContactClient";
 import { SITE_URL, OG_IMAGE } from "@/lib/seo";
 import { CONTACT } from "@/config/site";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Variable fonts: one single woff2 file per family covers every weight
-// (was 9 separate weight files before -> 2 self-hosted variable files).
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-jakarta",
@@ -58,6 +59,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Rohit Gupta" }],
   creator: "Rohit Gupta",
+  verification: {
+    google: "IWz8BQJBZj13aj8Mtgvbq4j-7wfGraaeSAzBydH9O_Q",
+  },
   robots: {
     index: true,
     follow: true,
@@ -91,8 +95,6 @@ export const metadata: Metadata = {
     site: "@rohitguptacodec",
     creator: "@rohitguptacodec",
   },
-  // Icons live in public/ and are explicitly referenced here so Next.js emits
-  // the matching <link rel="icon"> / apple-touch-icon tags.
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -137,6 +139,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       style={{ colorScheme: "dark" }}
     >
       <head>
+        <meta name="google-site-verification" content="IWz8BQJBZj13aj8Mtgvbq4j-7wfGraaeSAzBydH9O_Q" />
         <StructuredData />
         <noscript>
           <div style={{ maxWidth: "720px", margin: "0 auto", padding: "40px 20px", fontFamily: "system-ui,sans-serif", color: "#eee" }}>
@@ -159,6 +162,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <FloatingContactClient />
           </div>
         </AuditProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
