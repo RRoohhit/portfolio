@@ -1,0 +1,662 @@
+"use client";
+
+import React, { Suspense } from "react";
+import dynamic from "next/dynamic";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { ROHIT_PROFILE, EXPERIENCES, EDUCATIONS, TECHNICAL_SKILLS, SEO_TOOLS } from "@/data/portfolioData";
+import { LazySection } from "@/components/ui/LazySection";
+import { Reveal } from "@/components/ui/Reveal";
+import { useAudit } from "@/components/providers/AuditProvider";
+import heroPortraitImg from "@/assets/images/rohit-gupta-seo.webp";
+import {
+  TrendingUp, Award, Zap, ArrowRight, CheckCircle2, MapPin,
+  Sparkles, Code2, Search, Target, Gauge, Star,
+  Activity, Globe, BarChart3, Layers, ShieldCheck,
+  Cpu, LayoutGrid, Check, ExternalLink, Route, LineChart, FileText, FastForward,
+} from "lucide-react";
+
+const MARQUEE_SERVICES = [
+  { label: "SEO Strategy", icon: Target },
+  { label: "AI Search Optimization", icon: Sparkles },
+  { label: "Technical SEO", icon: Search },
+  { label: "Website Development", icon: Code2 },
+  { label: "Local SEO", icon: MapPin },
+  { label: "Performance Optimization", icon: Gauge },
+  { label: "Core Web Vitals", icon: Zap },
+  { label: "Schema JSON-LD", icon: Search },
+  { label: "E-Commerce SEO", icon: TrendingUp },
+  { label: "Page Speed Audit", icon: Activity },
+  { label: "Keyword Research", icon: Target },
+  { label: "React & Next.js Apps", icon: Code2 },
+  { label: "Organic Growth", icon: Award },
+];
+
+const SERVICES = [
+  {
+    number: "01",
+    icon: Search,
+    title: "Technical SEO Audit",
+    desc: "Deep crawl analysis, Core Web Vitals, structured data, indexation & schema — everything to unlock #1 rankings.",
+    highlights: ["Core Web Vitals 99/100", "Schema JSON-LD", "Crawl & Indexation Fix"],
+    color: "emerald",
+  },
+  {
+    number: "02",
+    icon: Code2,
+    title: "React & Next.js Development",
+    desc: "Blazing-fast, SEO-first web apps built with Next.js 15, server components, and edge caching for perfect Lighthouse scores.",
+    highlights: ["Next.js 15 / App Router", "Server Components", "Edge Performance"],
+    color: "blue",
+  },
+  {
+    number: "03",
+    icon: Globe,
+    title: "Local & National SEO",
+    desc: "Dominate 'near me' searches in Noida, Delhi NCR & pan-India with hyper-local content, GBP optimization, and citation building.",
+    highlights: ["Google Business Profile", "Local Citations", "Geo-Targeted Content"],
+    color: "violet",
+  },
+  {
+    number: "04",
+    icon: Sparkles,
+    title: "AI Search Optimization",
+    desc: "Get cited in ChatGPT, Perplexity & Google AI Overviews. Future-proof your content for the AEO/GEO era.",
+    highlights: ["AEO / GEO Strategy", "AI Citation Building", "E-E-A-T Signals"],
+    color: "amber",
+  },
+  {
+    number: "05",
+    icon: BarChart3,
+    title: "Content & Keyword Strategy",
+    desc: "Data-driven keyword clustering, topical authority maps, and conversion-optimized on-page copy that ranks and converts.",
+    highlights: ["Topical Authority Map", "Competitor Gap Analysis", "Content Calendar"],
+    color: "rose",
+  },
+  {
+    number: "06",
+    icon: Layers,
+    title: "E-Commerce SEO",
+    desc: "Product-level SEO, faceted navigation fixes, structured data for rich snippets, and category page authority for Shopify & WooCommerce.",
+    highlights: ["Product Rich Snippets", "Category Optimization", "Faceted Nav Fix"],
+    color: "teal",
+  },
+];
+
+const HERO_STATS = [
+  { value: "200+", label: "Sites Ranked #1", icon: TrendingUp, color: "emerald" },
+  { value: "2+", label: "Years Experience", icon: Award, color: "amber" },
+  { value: "99", label: "Lighthouse Score", icon: Gauge, color: "blue" },
+  { value: "4.9★", label: "Client Rating", icon: Star, color: "violet" },
+];
+
+const WEB_VITALS_METRICS = [
+  { metric: "LCP", name: "Largest Contentful Paint", value: "0.8s", benchmark: "Target < 2.5s", status: "Optimal", color: "text-emerald-400", border: "border-emerald-500/30" },
+  { metric: "INP", name: "Interaction to Next Paint", value: "42ms", benchmark: "Target < 200ms", status: "Instant", color: "text-cyan-400", border: "border-cyan-500/30" },
+  { metric: "CLS", name: "Cumulative Layout Shift", value: "0.00", benchmark: "Target < 0.1", status: "Zero Shift", color: "text-amber-400", border: "border-amber-500/30" },
+  { metric: "TTFB", name: "Time to First Byte", value: "110ms", benchmark: "Target < 800ms", status: "Edge Fast", color: "text-purple-400", border: "border-purple-500/30" },
+];
+
+const INTERACTIVE_TOOLS_SUITE = [
+  {
+    title: "Visual SEO Mind Map Analyzer",
+    desc: "Interactive canvas graph visualizer for technical site hierarchy, crawl depth, and orphan page detection.",
+    link: "/seo-analyzer",
+    badge: "Interactive Mind Map",
+    icon: Route,
+    color: "text-emerald-400 border-emerald-500/30 bg-emerald-500/10",
+  },
+  {
+    title: "SERP & Social Card Previewer",
+    desc: "Real-time Google pixel width title gauge, OpenGraph & X Twitter card multi-platform previewer.",
+    link: "/seo-tools",
+    badge: "SERP & Schema",
+    icon: LayoutGrid,
+    color: "text-cyan-400 border-cyan-500/30 bg-cyan-500/10",
+  },
+  {
+    title: "AI Search & LLMs Directive Generator",
+    desc: "Generates robots.txt rules for GPTBot, ClaudeBot & PerplexityBot, plus llms.txt entity files.",
+    link: "/ai-lab",
+    badge: "AEO / GEO AI Search",
+    icon: Cpu,
+    color: "text-purple-400 border-purple-500/30 bg-purple-500/10",
+  },
+];
+
+const SkillsRadarChart = dynamic(
+  () => import("@/components/shared/SkillsRadarChart").then((m) => ({ default: m.SkillsRadarChart })),
+  { ssr: false }
+);
+const IndustryPulse = dynamic(
+  () => import("@/components/shared/IndustryPulse").then((m) => ({ default: m.IndustryPulse })),
+  { ssr: false }
+);
+const LocalSeoCoverageSection = dynamic(
+  () => import("@/components/shared/LocalSeoCoverageSection").then((m) => ({ default: m.LocalSeoCoverageSection })),
+  { loading: () => <div className="min-h-[420px]" /> }
+);
+const FaqSection = dynamic(
+  () => import("@/components/shared/FaqSection").then((m) => ({ default: m.FaqSection })),
+  { loading: () => <div className="min-h-[360px]" /> }
+);
+const SectionLoader: React.FC = () => (
+  <div className="flex items-center justify-center py-16">
+    <div className="w-8 h-8 rounded-full border-2 border-white/10 border-t-emerald-400 animate-spin" />
+  </div>
+);
+
+const colorMap: Record<string, { border: string; bg: string; text: string; badge: string }> = {
+  emerald: { border: "border-emerald-500/30", bg: "bg-emerald-500/10", text: "text-emerald-400", badge: "bg-emerald-500/20 text-emerald-300 border-emerald-500/30" },
+  blue:    { border: "border-blue-500/30",    bg: "bg-blue-500/10",    text: "text-blue-400",    badge: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
+  violet:  { border: "border-violet-500/30",  bg: "bg-violet-500/10",  text: "text-violet-400",  badge: "bg-violet-500/20 text-violet-300 border-violet-500/30" },
+  amber:   { border: "border-amber-500/30",   bg: "bg-amber-500/10",   text: "text-amber-400",   badge: "bg-amber-500/20 text-amber-300 border-amber-500/30" },
+  rose:    { border: "border-rose-500/30",    bg: "bg-rose-500/10",    text: "text-rose-400",    badge: "bg-rose-500/20 text-rose-300 border-rose-500/30" },
+  teal:    { border: "border-teal-500/30",    bg: "bg-teal-500/10",    text: "text-teal-400",    badge: "bg-teal-500/20 text-teal-300 border-teal-500/30" },
+};
+
+export const HomePage: React.FC = () => {
+  const router = useRouter();
+  const { openAudit } = useAudit();
+
+  return (
+    <div className="space-y-16 md:space-y-24">
+
+      {/* HERO SECTION */}
+      <section
+        aria-label="Hero"
+        className="hero-full-bleed relative min-h-screen flex flex-col justify-center lg:justify-start isolate pt-16 sm:pt-20"
+      >
+        <div className="absolute inset-0 -z-20 bg-grid-pattern opacity-40 pointer-events-none" />
+        <div className="absolute inset-0 -z-20 bg-radial-glow pointer-events-none" />
+        {/* Animated ambient blobs */}
+        <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-emerald-500/15 blur-[100px] -z-10 pointer-events-none animate-blob" />
+        <div className="absolute top-1/3 -right-32 w-80 h-80 rounded-full bg-emerald-400/10 blur-[80px] -z-10 pointer-events-none animate-blob animation-delay-2000" />
+        <div className="absolute bottom-16 left-1/3 w-72 h-72 rounded-full bg-teal-500/10 blur-[90px] -z-10 pointer-events-none animate-blob animation-delay-4000" />
+        <div className="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-b from-transparent to-[#050505] -z-10 pointer-events-none" />
+
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center py-6 sm:py-10 lg:py-0">
+
+          {/* Left Column: Copy & CTAs */}
+          <Reveal direction="right" distance={40} className="lg:col-span-7 space-y-6 lg:space-y-8 relative z-20">
+
+            <div className="space-y-4">
+              <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] xl:text-5xl font-black text-white tracking-tight leading-[1.08] uppercase">
+                Rank #1 on Google &amp; AI Search for Businesses in{" "}
+                <span className="relative inline-block text-emerald-400">
+                  Noida, Delhi &amp; All India
+                  <svg className="absolute -bottom-1.5 left-0 w-full" viewBox="0 0 200 10" fill="none" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M2 7C60 2 140 2 198 7" stroke="#34d399" strokeWidth="2.5" strokeLinecap="round" opacity="0.65" />
+                  </svg>
+                </span>
+              </h1>
+              <p className="text-sm sm:text-base text-white/75 font-light leading-relaxed max-w-xl">
+                I&apos;m <strong className="text-white font-semibold">Rohit Gupta</strong> — a{" "}
+                <strong className="text-white font-semibold">SEO specialist &amp; full stack web developer</strong>{" "}
+                who combines White Hat technical SEO, Core Web Vitals, and high-performance Next.js builds to{" "}
+                <strong className="text-emerald-400 font-semibold">rank 200+ websites #1</strong> on Google and win
+                AI search citations — turning organic traffic into booked sales.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-3">
+              <Link
+                href="/contact"
+                className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest shadow-lg shadow-emerald-500/25 hover:bg-emerald-300 hover:shadow-emerald-500/40 hover:-translate-y-0.5 transition-all duration-200"
+              >
+                Start Your Project
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              </Link>
+              <button
+                onClick={openAudit}
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/5 text-white border border-white/15 text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/10 hover:border-white/30 backdrop-blur-md transition-all duration-200"
+              >
+                <Gauge className="w-4 h-4 text-emerald-400" />
+                Free SEO Audit
+              </button>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 pt-1">
+              {[
+                "100% White Hat, no penalties",
+                "Free technical SEO audit",
+                "No long-term contracts",
+                "Transparent monthly reports",
+              ].map((point) => (
+                <span key={point} className="inline-flex items-center gap-1.5 text-[11px] font-mono text-white/55">
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                  {point}
+                </span>
+              ))}
+            </div>
+
+          </Reveal>
+
+          {/* Right Column: Portrait */}
+          <Reveal direction="left" distance={40} delay={0.1} className="lg:col-span-5 relative flex justify-center lg:justify-end items-start h-full z-10 isolate mt-6 lg:mt-0">
+            <div className="absolute inset-0 flex items-end justify-center lg:justify-end pointer-events-none -z-10">
+              <div className="w-[420px] sm:w-[620px] lg:w-[850px] aspect-square rounded-full bg-[radial-gradient(circle_at_50%_40%,rgba(16,185,129,0.40),rgba(16,185,129,0.10)_55%,transparent_75%)] blur-3xl animate-pulse" />
+            </div>
+            <div className="relative flex justify-center lg:justify-end w-full">
+              <Image
+                src={heroPortraitImg}
+                alt="Rohit Gupta — SEO Expert & Web Developer"
+                priority
+                fetchPriority="high"
+                width={1400}
+                height={1400}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 850px"
+                className="
+                  relative w-auto
+                  h-[480px] sm:h-[620px] lg:h-[780px] xl:h-[920px] 2xl:h-[1020px]
+                  max-h-[min(92vh,980px)] max-w-full
+                  object-contain origin-bottom saturate-110
+                  lg:scale-105 xl:scale-110 transition-transform duration-500
+                  drop-shadow-[0_30px_60px_rgba(0,0,0,0.95)]
+                  drop-shadow-[0_0_55px_rgba(16,185,129,0.40)]
+                "
+              />
+            </div>
+          </Reveal>
+
+        </div>
+      </section>
+
+      {/* MARQUEE TICKER */}
+      <div className="-mt-16 md:-mt-20 hero-full-bleed py-3.5 bg-gradient-to-r from-emerald-950/40 via-zinc-950/90 to-emerald-950/40 border-y border-white/10 overflow-hidden shadow-2xl backdrop-blur-xl relative z-20">
+        <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-r from-black via-black/80 to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-l from-black via-black/80 to-transparent z-10 pointer-events-none" />
+
+        <div className="animate-marquee flex items-center gap-3 sm:gap-4">
+          {[...MARQUEE_SERVICES, ...MARQUEE_SERVICES].map((item, idx) => {
+            const ItemIcon = item.icon;
+            return (
+              <div
+                key={idx}
+                className="px-4 py-2.5 rounded-2xl bg-zinc-900/90 border border-white/10 hover:border-emerald-500/50 text-xs sm:text-sm font-mono text-white/90 font-medium flex items-center gap-2 whitespace-nowrap hover:bg-zinc-800 hover:text-emerald-300 transition-all cursor-default group"
+              >
+                <ItemIcon className="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform shrink-0" />
+                <span>{item.label}</span>
+                <span className="text-white/20 ml-1">•</span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* STATS BAR (SHOWING RIGHT AFTER MARQUEE TICKER) */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5 p-4 sm:p-5 bg-zinc-950 border border-white/12 rounded-3xl shadow-2xl">
+          {HERO_STATS.map((stat) => {
+            const Icon = stat.icon;
+            const c = colorMap[stat.color];
+            return (
+              <div
+                key={stat.label}
+                className={`p-4 rounded-2xl border ${c.border} ${c.bg} flex flex-col items-center text-center gap-1.5 shadow-lg hover:scale-[1.03] transition-transform duration-300`}
+              >
+                <Icon className={`w-5 h-5 ${c.text}`} />
+                <span className={`text-2xl sm:text-3xl font-black font-mono ${c.text}`}>{stat.value}</span>
+                <span className="text-xs text-white/70 font-mono uppercase tracking-wider leading-tight font-bold">{stat.label}</span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* CORE WEB VITALS PERFORMANCE BENCHMARK BAR */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+        <div className="p-6 sm:p-8 bg-black/90 border border-emerald-500/30 rounded-3xl space-y-6 shadow-2xl relative overflow-hidden">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-white/10 pb-4">
+            <div className="space-y-1">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-mono uppercase font-bold tracking-widest">
+                <FastForward className="w-3.5 h-3.5 text-emerald-400" />
+                <span>Sub-Second Performance &amp; Google Core Web Vitals</span>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-black text-white uppercase tracking-tight">
+                Verified 99–100/100 Lighthouse Performance Benchmarks
+              </h3>
+            </div>
+            <div className="px-3.5 py-1.5 rounded-xl bg-emerald-400 text-black font-mono font-black text-xs uppercase tracking-wider shadow-lg shrink-0">
+              ⚡ Lighthouse 99/100 Certified
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3.5">
+            {WEB_VITALS_METRICS.map((m) => (
+              <div key={m.metric} className={`p-4 rounded-2xl bg-zinc-950 border ${m.border} space-y-1`}>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-mono font-bold text-white/50">{m.metric}</span>
+                  <span className={`text-[9px] font-mono font-extrabold uppercase px-2 py-0.5 rounded bg-white/5 ${m.color}`}>
+                    {m.status}
+                  </span>
+                </div>
+                <div className={`text-2xl sm:text-3xl font-black font-mono ${m.color}`}>{m.value}</div>
+                <div className="text-[10px] font-mono text-white/40">{m.name}</div>
+                <div className="text-[9px] font-mono text-white/30 pt-1 border-t border-white/5">{m.benchmark}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES GRID */}
+      <section aria-labelledby="services-heading" className="space-y-8">
+        <Reveal className="space-y-3 text-center">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-mono uppercase tracking-widest font-bold">
+            <Zap className="w-3 h-3" />
+            <span>Full-Spectrum Digital Growth</span>
+          </div>
+          <h2 id="services-heading" className="text-2xl sm:text-4xl font-black text-white tracking-tight uppercase">
+            What I Do for <span className="text-gradient">Your Business</span>
+          </h2>
+          <p className="text-sm text-white/60 max-w-2xl mx-auto font-light leading-relaxed">
+            From a single-page audit to a full-scale Next.js rebuild with AI search optimization — I cover every layer of modern digital growth.
+          </p>
+        </Reveal>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {SERVICES.map((svc, idx) => {
+            const Icon = svc.icon;
+            const c = colorMap[svc.color];
+            return (
+              <Reveal key={svc.number} delay={(idx % 3) * 0.1} amount={0.15}>
+                <div
+                  className={`service-card p-6 rounded-2xl bg-zinc-950 border ${c.border} space-y-4 relative overflow-hidden group h-full`}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className={`w-10 h-10 rounded-xl ${c.bg} border ${c.border} flex items-center justify-center`}>
+                      <Icon className={`w-5 h-5 ${c.text}`} />
+                    </div>
+                    <span className="text-xs font-mono font-black text-white/20 group-hover:text-white/40 transition-colors">
+                      {svc.number}
+                    </span>
+                  </div>
+
+                  <div className="space-y-2">
+                    <h3 className="text-sm font-bold text-white font-mono uppercase tracking-wide">{svc.title}</h3>
+                    <p className="text-xs text-white/65 leading-relaxed font-light">{svc.desc}</p>
+                  </div>
+                  <ul className="space-y-1.5">
+                    {svc.highlights.map((h) => (
+                      <li key={h} className="flex items-center gap-2 text-[11px] font-mono text-white/70">
+                        <CheckCircle2 className={`w-3.5 h-3.5 ${c.text} shrink-0`} />
+                        {h}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </Reveal>
+            );
+          })}
+        </div>
+
+        <Reveal className="flex justify-center pt-2">
+          <Link
+            href="/contact"
+            className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-400 transition-all duration-200 shadow-lg"
+          >
+            Get a Free Strategy Call
+            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+          </Link>
+        </Reveal>
+      </section>
+
+      {/* INTERACTIVE LIVE SEO TOOLS QUICK LAUNCH */}
+      <section aria-labelledby="tools-suite-heading" className="space-y-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Reveal className="space-y-2 text-center">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-[10px] font-mono uppercase tracking-widest font-bold">
+            <Cpu className="w-3.5 h-3.5" />
+            <span>Built-In Live SEO &amp; AI Intelligence Tools</span>
+          </div>
+          <h2 id="tools-suite-heading" className="text-2xl sm:text-4xl font-black text-white tracking-tight uppercase">
+            Test Drive My <span className="text-gradient">Proprietary SEO Tools</span>
+          </h2>
+          <p className="text-sm text-white/60 max-w-2xl mx-auto font-light leading-relaxed">
+            Free interactive tools built directly into this portfolio for audit engineers, developers, and marketing leads.
+          </p>
+        </Reveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {INTERACTIVE_TOOLS_SUITE.map((tool) => {
+            const ToolIcon = tool.icon;
+            return (
+              <div key={tool.title} className="p-6 rounded-3xl bg-zinc-950 border border-white/12 space-y-4 hover:border-emerald-500/40 transition-all flex flex-col justify-between group">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className={`px-2.5 py-1 rounded-full text-[10px] font-mono font-bold uppercase border ${tool.color}`}>
+                      {tool.badge}
+                    </span>
+                    <ToolIcon className="w-5 h-5 text-white/50 group-hover:text-emerald-400 transition-colors" />
+                  </div>
+                  <h3 className="text-base font-bold text-white tracking-tight font-mono">{tool.title}</h3>
+                  <p className="text-xs text-white/65 font-light leading-relaxed">{tool.desc}</p>
+                </div>
+
+                <Link
+                  href={tool.link}
+                  className="w-full py-2.5 px-4 bg-white/5 hover:bg-emerald-400 hover:text-black border border-white/10 rounded-xl text-xs font-mono font-bold uppercase tracking-wider text-white flex items-center justify-center gap-2 transition-all"
+                >
+                  <span>Launch Tool</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* ABOUT & BIO */}
+      <section id="about-us-section" aria-labelledby="about-heading" className="scroll-mt-24 space-y-6">
+        <Reveal as="div">
+          <h2 id="about-heading" className="text-[10px] uppercase text-white/40 tracking-[0.2em] font-bold flex items-center gap-2">
+            <Award className="w-3.5 h-3.5 text-emerald-400" />
+            About Specialist &amp; High-Traffic SEO Services
+          </h2>
+        </Reveal>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+          <Reveal direction="right" distance={32} className="lg:col-span-7">
+            <div className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-6 shadow-xl h-full">
+            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight uppercase">
+              Passionate React Developer &amp; Technical SEO Audit Consultant
+            </h3>
+            <p className="text-sm leading-relaxed text-white/75 font-light">
+              Bridging the gap between{" "}
+              <strong className="text-emerald-400 font-semibold">performance optimization</strong> and{" "}
+              <strong className="text-white font-semibold">search engine visibility</strong>. As a specialist offering{" "}
+              <strong className="text-white font-bold">React development services</strong> and comprehensive{" "}
+              <strong className="text-emerald-300 font-bold">technical SEO audits</strong>, I help enterprise clients and
+              high-growth startups rank #1 on Google SERPs. {ROHIT_PROFILE.summary}
+            </p>
+
+            <div className="space-y-3 pt-2">
+              <h4 className="text-[10px] uppercase text-white/40 font-bold tracking-[0.2em] font-mono">High-Impact Technical Pillars:</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {[
+                  "Technical SEO Audit & Schema JSON-LD",
+                  "Performance Optimization & Core Web Vitals",
+                  "React Development Services & Next.js",
+                  "White Hat SEO Strategy & Link Audits",
+                ].map((item) => (
+                  <div key={item} className="p-3 bg-black border border-white/10 rounded-xl flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                    <span className="text-xs text-white/90 font-medium">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          </Reveal>
+
+          <Reveal direction="left" distance={32} delay={0.1} className="lg:col-span-5">
+            <div className="space-y-6 h-full">
+            <div className="bg-white text-black p-6 rounded-3xl flex flex-col justify-between space-y-4 shadow-2xl">
+              <div>
+                <p className="text-[10px] uppercase text-black/60 mb-1.5 tracking-widest font-mono font-bold">Hire SEO &amp; Development Specialist</p>
+                <p className="text-base sm:text-lg font-extrabold tracking-tighter font-mono break-all">{ROHIT_PROFILE.email}</p>
+              </div>
+              <div className="pt-4 border-t border-black/10 flex justify-between items-center">
+                <span className="text-[10px] font-mono uppercase font-bold text-black/60">AYODHYA · DELHI · NOIDA</span>
+                <Link
+                  href="/contact"
+                  className="w-9 h-9 bg-black text-white rounded-xl flex items-center justify-center font-bold hover:bg-emerald-400 hover:text-black transition-colors"
+                  aria-label="Contact Rohit Gupta to hire an SEO specialist"
+                >
+                  →
+                </Link>
+              </div>
+            </div>
+
+            <div className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3 shadow-xl">
+              <h4 className="text-[10px] uppercase text-white/40 tracking-[0.2em] font-mono font-bold">Education Credentials</h4>
+              <div className="space-y-3 text-xs">
+                {EDUCATIONS.map((edu, idx) => (
+                  <div key={idx} className="p-3 rounded-xl bg-black border border-white/10 space-y-1">
+                    <div className="font-bold text-white italic">{edu.degree}</div>
+                    <div className="text-white/60">{edu.institution}</div>
+                    <div className="flex justify-between text-[10px] font-mono text-white/40 pt-1">
+                      <span>{edu.period}</span>
+                      <span className="text-emerald-400 font-bold">{edu.grade}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            </div>
+          </Reveal>
+
+        </div>
+      </section>
+
+      {/* LOCAL SEO COVERAGE */}
+      <section className="space-y-6">
+        <LocalSeoCoverageSection onContact={() => router.push("/contact")} />
+      </section>
+
+      {/* SKILLS RADAR CHART */}
+      <section className="space-y-6">
+        <LazySection minHeight="420px">
+          <Suspense fallback={<SectionLoader />}>
+            <SkillsRadarChart />
+          </Suspense>
+        </LazySection>
+      </section>
+
+      {/* TECHNICAL SKILLS MATRIX */}
+      <section aria-labelledby="tech-stack-heading" className="space-y-8 cv-auto">
+        <Reveal className="space-y-2">
+          <div className="flex items-center gap-2 text-xs font-mono text-white/60 uppercase tracking-wider">
+            <Zap className="w-4 h-4 text-white" />
+            <span>Technology &amp; Tools Stack</span>
+          </div>
+          <h2 id="tech-stack-heading" className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+            The <span className="text-gradient">Tech Stack</span> Behind the Rankings
+          </h2>
+        </Reveal>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {TECHNICAL_SKILLS.map((skillGroup, idx) => (
+            <Reveal key={idx} delay={(idx % 3) * 0.08} amount={0.1}>
+              <div className="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-3 hover:border-white/25 hover:bg-white/[0.07] transition-colors shadow-lg h-full">
+                <h3 className="text-xs font-bold text-white font-mono uppercase tracking-wider flex items-center gap-2">
+                  <Code2 className="w-4 h-4 text-emerald-400" />
+                  {skillGroup.category}
+                </h3>
+                <div className="flex flex-wrap gap-2 pt-1">
+                  {skillGroup.items.map((item, itemIdx) => (
+                    <span
+                      key={itemIdx}
+                      className="px-2.5 py-1 rounded-lg bg-black border border-white/10 text-[11px] font-mono text-white/85 hover:border-emerald-400/50 hover:text-emerald-300 hover:scale-105 transition-all"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+
+        <div className="pt-2">
+          <h3 className="text-sm font-bold text-white font-mono mb-4 flex items-center gap-2">
+            <Search className="w-4 h-4 text-amber-400" />
+            Specialized SEO &amp; Performance Tools Utilized:
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {SEO_TOOLS.map((tool, idx) => (
+              <div key={idx} className="p-4 rounded-xl bg-black border border-white/10 space-y-1 hover:border-white/25 hover:bg-white/[0.04] transition-colors">
+                <h4 className="text-xs font-bold text-white font-mono">{tool.name}</h4>
+                <p className="text-[11px] text-white/55 font-light">{tool.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* INDUSTRY PULSE */}
+      <section className="space-y-6">
+        <LazySection minHeight="480px">
+          <Suspense fallback={<SectionLoader />}>
+            <IndustryPulse />
+          </Suspense>
+        </LazySection>
+      </section>
+
+      {/* FAQ SECTION */}
+      <section className="space-y-6 cv-auto">
+        <FaqSection />
+      </section>
+
+      {/* EXPERIENCE TIMELINE */}
+      <section aria-labelledby="experience-heading" className="space-y-8 cv-auto">
+        <Reveal className="space-y-2">
+          <div className="flex items-center gap-2 text-xs font-mono text-white/60 uppercase tracking-wider">
+            <Award className="w-4 h-4 text-white" />
+            <span>Professional Career Experience</span>
+          </div>
+          <h2 id="experience-heading" className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Work Experience (<span className="text-gradient">SEO &amp; Development</span>)
+          </h2>
+        </Reveal>
+
+        <div className="space-y-5">
+          {EXPERIENCES.map((exp) => (
+            <Reveal key={exp.id}>
+            <div className="p-6 sm:p-8 rounded-2xl bg-white/[0.04] border border-white/10 space-y-4 shadow-xl hover:border-emerald-500/30 hover:bg-white/[0.06] transition-colors">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-4">
+                <div>
+                  <div className="flex items-center gap-3 flex-wrap">
+                    <h3 className="text-base sm:text-lg font-extrabold text-white">{exp.role}</h3>
+                    {exp.isCurrent && (
+                      <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-mono font-bold border border-emerald-500/30">
+                        PRESENT
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-xs font-mono text-white/55 mt-0.5">{exp.company} · {exp.location}</p>
+                </div>
+                <div className="text-xs font-mono text-white/65 bg-black px-3 py-1.5 rounded-lg border border-white/10 self-start sm:self-auto whitespace-nowrap">
+                  {exp.period}
+                </div>
+              </div>
+
+              <ul className="space-y-2 text-xs text-white/75">
+                {exp.responsibilities.map((resp, idx) => (
+                  <li key={idx} className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400/80 shrink-0 mt-0.5" />
+                    <span className="leading-relaxed font-light">{resp}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+          ))}
+        </div>
+      </section>
+
+    </div>
+  );
+};

@@ -1,0 +1,16 @@
+export type ToolsSubTab =
+  | "generators"
+  | "health-report"
+  | "schema-serp"
+  | "local-seo"
+  | "reviews"
+  | "dashboard"
+  | "ai-seo"
+  | "url-analyzer"
+  | "on-page"
+  | "folder-analyzer"
+  | "all-in-one"
+  | "meta-tags"
+  | "keyword-research"
+  | "redirect-check"
+  | "keyword-heatmap";

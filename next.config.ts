@@ -1,0 +1,64 @@
+import type { NextConfig } from "next";
+import path from "path";
+
+const securityHeaders = [
+  { key: "X-Content-Type-Options", value: "nosniff" },
+  { key: "X-Frame-Options", value: "SAMEORIGIN" },
+  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+  {
+    key: "Permissions-Policy",
+    value:
+      "camera=(), microphone=(), geolocation=(), interest-cohort=(), browsing-topics=(), clipboard-read=(self), payment=()",
+  },
+  {
+    key: "Strict-Transport-Security",
+    value: "max-age=63072000; includeSubDomains; preload",
+  },
+  { key: "X-DNS-Prefetch-Control", value: "on" },
+  { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
+  { key: "Cross-Origin-Resource-Policy", value: "cross-origin" },
+  { key: "X-Robots-Tag", value: "max-image-preview:large" },
+];
+
+const nextConfig: NextConfig = {
+  reactStrictMode: true,
+  poweredByHeader: false,
+  compress: true,
+  outputFileTracingRoot: path.join(__dirname),
+  // Allow the preview environment's wildcard hostname to fetch dev resources.
+  allowedDevOrigins: ["*.monkeycode-ai.live"],
+  images: {
+    formats: ["image/avif", "image/webp"],
+    deviceSizes: [420, 640, 750, 828, 1080, 1200, 1920],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256],
+    minimumCacheTTL: 31536000,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
+  },
+  experimental: {
+    optimizePackageImports: ["lucide-react", "recharts", "motion"],
+  },
+  // Raise the static-page generation timeout for slower build environments.
+  staticPageGenerationTimeout: 120,
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: securityHeaders,
+      },
+      // Short cache for the generated SEO files (sitemap.xml, robots.txt)
+      {
+        source: "/:path(sitemap.xml|robots.txt|manifest.webmanifest)",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=3600, s-maxage=3600" },
+        ],
+      },
+    ];
+  },
+};
+
+export default nextConfig;
