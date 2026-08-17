@@ -239,9 +239,9 @@ export const HomePage: React.FC = () => {
           </Reveal>
 
           {/* Right Column: Portrait */}
-          <Reveal direction="left" distance={40} delay={0.1} className="lg:col-span-5 relative flex justify-center lg:justify-end items-start h-full z-10 isolate">
+          <Reveal direction="left" distance={40} delay={0.1} className="lg:col-span-5 relative flex justify-center lg:justify-end items-end h-full z-10 isolate">
             <div className="absolute inset-0 flex items-end justify-center lg:justify-end pointer-events-none -z-10">
-              <div className="w-[280px] sm:w-[420px] lg:w-[620px] xl:w-[850px] aspect-square rounded-full bg-[radial-gradient(circle_at_50%_40%,rgba(16,185,129,0.40),rgba(16,185,129,0.10)_55%,transparent_75%)] blur-3xl animate-pulse" />
+              <div className="w-[320px] sm:w-[500px] lg:w-[750px] xl:w-[1000px] aspect-square rounded-full bg-[radial-gradient(circle_at_50%_40%,rgba(16,185,129,0.45),rgba(16,185,129,0.12)_55%,transparent_75%)] blur-3xl animate-pulse" />
             </div>
             <div className="relative flex justify-center lg:justify-end w-full">
               <Image
@@ -251,15 +251,15 @@ export const HomePage: React.FC = () => {
                 fetchPriority="high"
                 width={1400}
                 height={1400}
-                sizes="(max-width: 640px) 85vw, (max-width: 1024px) 60vw, 850px"
+                sizes="(max-width: 640px) 95vw, (max-width: 1024px) 75vw, 1100px"
                 className="
                   relative w-auto
-                  h-[300px] sm:h-[400px] md:h-[520px] lg:h-[720px] xl:h-[880px] 2xl:h-[980px]
-                  max-h-[min(92vh,980px)] max-w-full
+                  h-[360px] sm:h-[480px] md:h-[640px] lg:h-[840px] xl:h-[1020px] 2xl:h-[1150px]
+                  max-h-[min(96vh,1150px)] max-w-full
                   object-contain origin-bottom saturate-110
-                  lg:scale-105 xl:scale-110 transition-transform duration-500
-                  drop-shadow-[0_20px_50px_rgba(0,0,0,0.90)]
-                  drop-shadow-[0_0_45px_rgba(16,185,129,0.35)]
+                  scale-105 lg:scale-115 xl:scale-125 2xl:scale-130 transition-transform duration-500
+                  drop-shadow-[0_25px_60px_rgba(0,0,0,0.95)]
+                  drop-shadow-[0_0_55px_rgba(16,185,129,0.45)]
                 "
               />
             </div>

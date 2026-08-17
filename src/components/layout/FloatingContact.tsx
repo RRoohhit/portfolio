@@ -50,7 +50,7 @@ export const FloatingContact: React.FC = () => {
     >
       {/* Expanded Quick Chat Options Drawer */}
       {expanded && (
-        <div className="w-72 bg-zinc-950/95 border border-white/20 rounded-3xl p-4 space-y-3 shadow-2xl backdrop-blur-2xl animate-in fade-in slide-in-from-bottom-3 duration-200">
+        <div className="w-72 card-3d-interactive p-4 space-y-3 shadow-2xl backdrop-blur-2xl animate-in fade-in slide-in-from-bottom-3 duration-200">
           
           {/* Header */}
           <div className="flex items-center justify-between border-b border-white/10 pb-2.5">
@@ -143,15 +143,15 @@ export const FloatingContact: React.FC = () => {
         </div>
       )}
 
-      {/* Primary Floating Chat Toggle Button (NO extra circle arrow next to it) */}
+      {/* Primary Floating Chat Toggle Button */}
       <button
         onClick={() => setExpanded((v) => !v)}
         aria-label={expanded ? "Close chat options" : "Open quick chat options"}
         aria-expanded={expanded}
         className={`relative w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${
           expanded
-            ? "bg-zinc-950 text-white border border-white/20 shadow-black/80"
-            : "bg-emerald-400 text-black hover:bg-emerald-300 hover:scale-105 active:scale-95 shadow-emerald-500/30"
+            ? "btn-3d-dark text-white shadow-black/80"
+            : "btn-3d-emerald text-black hover:scale-105 active:scale-95 shadow-emerald-500/40"
         }`}
       >
         {!expanded && (

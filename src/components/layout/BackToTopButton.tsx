@@ -83,7 +83,7 @@ const BackToTopButton: React.FC = () => {
         </svg>
 
         {/* Button face */}
-        <div className="w-8 h-8 bg-zinc-900 border border-white/15 rounded-full flex items-center justify-center group-hover:bg-emerald-400 group-hover:border-emerald-400 transition-all duration-200 shadow-lg shadow-black/50">
+        <div className="icon-btn-3d w-8 h-8 rounded-full flex items-center justify-center group-hover:text-black group-hover:bg-emerald-400 group-hover:border-emerald-400 transition-all duration-200 shadow-xl">
           <ArrowUp className="w-4 h-4 text-white group-hover:text-black transition-colors duration-200" />
         </div>
       </div>

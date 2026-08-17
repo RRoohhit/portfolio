@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { CONTACT } from "@/config/site";
 import {
@@ -125,7 +126,7 @@ export const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
-  const [glider, setGlider] = useState<{ left: number; width: number } | null>(null);
+  const [glider, setGlider] = useState<{ left: number; top: number; width: number; height: number } | null>(null);
   const navRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<Record<string, HTMLAnchorElement | null>>({});
 
@@ -138,14 +139,19 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  /* Measure active item rect for the animated glider */
+  /* Measure active item rect for 100% centered animated glider */
   useEffect(() => {
     const el = itemRefs.current[activeTab];
     const container = navRef.current;
     if (el && container) {
       const elRect = el.getBoundingClientRect();
       const containerRect = container.getBoundingClientRect();
-      setGlider({ left: elRect.left - containerRect.left, width: elRect.width });
+      setGlider({
+        left: elRect.left - containerRect.left,
+        top: elRect.top - containerRect.top,
+        width: elRect.width,
+        height: elRect.height,
+      });
     }
   }, [activeTab, mounted]);
 
@@ -211,31 +217,36 @@ export const Navbar: React.FC = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between gap-4 relative">
 
-          {/* ── Brand Logo ── */}
+          {/* ── Brand Logo (Image Logo from public/) ── */}
           <Link
             href="/"
             onClick={handleMobileClose}
             className="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 rounded-xl flex-shrink-0"
           >
-            {/* 3D layered badge */}
+            {/* 3D Image Logo badge */}
             <div className="relative w-10 h-10 flex-shrink-0">
               {/* Shadow / depth layer */}
-              <div className="absolute inset-0 rounded-xl bg-emerald-800/70 translate-y-[3px] blur-[3px]" />
-              {/* Main face */}
+              <div className="absolute inset-0 rounded-xl bg-emerald-700/60 translate-y-[3px] blur-[3px]" />
+              {/* Main face frame */}
               <div
                 className={[
-                  "relative w-10 h-10 flex items-center justify-center rounded-xl select-none",
+                  "relative w-10 h-10 rounded-xl overflow-hidden p-0.5 select-none",
                   "bg-gradient-to-br from-emerald-300 via-emerald-400 to-teal-500",
-                  "text-black font-black text-sm italic",
                   "shadow-[0_4px_16px_rgba(52,211,153,0.35),0_1px_0_rgba(255,255,255,0.15)_inset]",
                   "group-hover:shadow-[0_8px_32px_rgba(52,211,153,0.55),0_1px_0_rgba(255,255,255,0.2)_inset]",
                   "group-hover:scale-105 group-hover:-translate-y-0.5",
-                  "transition-all duration-300",
+                  "transition-all duration-300 flex items-center justify-center",
                 ].join(" ")}
               >
-                RG
+                <Image
+                  src="/apple-touch-icon.png"
+                  alt="Rohit Gupta Logo"
+                  width={36}
+                  height={36}
+                  className="w-full h-full object-cover rounded-[10px]"
+                />
                 {/* Gloss top sheen */}
-                <div className="absolute inset-x-1.5 top-1 h-[45%] bg-white/25 rounded-t-lg blur-[1px] pointer-events-none" />
+                <div className="absolute inset-x-0 top-0 h-[45%] bg-white/20 rounded-t-xl blur-[1px] pointer-events-none" />
                 {/* Hover ring */}
                 <div className="absolute inset-0 rounded-xl ring-1 ring-white/10 group-hover:ring-emerald-300/30 transition-all duration-300" />
               </div>
@@ -265,17 +276,20 @@ export const Navbar: React.FC = () => {
                 "transition-all duration-500",
               ].join(" ")}
             >
-              {/* Animated emerald glider */}
+              {/* Animated emerald glider — 100% mathematically centered */}
               {mounted && glider && (
                 <div
-                  className="absolute top-1 h-[28px] rounded-full pointer-events-none"
+                  className="absolute rounded-full pointer-events-none"
                   style={{
                     left: glider.left,
+                    top: glider.top,
                     width: glider.width,
+                    height: glider.height,
                     background: "linear-gradient(135deg, #34d399 0%, #2dd4bf 100%)",
                     boxShadow:
                       "0 0 24px rgba(52,211,153,0.45), 0 2px 8px rgba(52,211,153,0.3), inset 0 1px 0 rgba(255,255,255,0.3)",
-                    transition: "left 0.32s cubic-bezier(0.34,1.56,0.64,1), width 0.32s cubic-bezier(0.34,1.56,0.64,1)",
+                    transition:
+                      "left 0.32s cubic-bezier(0.34,1.56,0.64,1), top 0.32s cubic-bezier(0.34,1.56,0.64,1), width 0.32s cubic-bezier(0.34,1.56,0.64,1), height 0.32s cubic-bezier(0.34,1.56,0.64,1)",
                   }}
                 />
               )}
@@ -375,9 +389,15 @@ export const Navbar: React.FC = () => {
               <div className="flex items-center gap-3">
                 <div className="relative w-9 h-9">
                   <div className="absolute inset-0 rounded-xl bg-emerald-700/50 translate-y-0.5 blur-[3px]" />
-                  <div className="relative w-9 h-9 bg-gradient-to-br from-emerald-300 via-emerald-400 to-teal-500 text-black font-black flex items-center justify-center rounded-xl text-sm italic shadow-md select-none">
-                    RG
-                    <div className="absolute inset-x-1 top-0.5 h-[45%] bg-white/20 rounded-t-lg" />
+                  <div className="relative w-9 h-9 rounded-xl overflow-hidden p-0.5 bg-gradient-to-br from-emerald-300 via-emerald-400 to-teal-500 shadow-md select-none flex items-center justify-center">
+                    <Image
+                      src="/apple-touch-icon.png"
+                      alt="Rohit Gupta Logo"
+                      width={32}
+                      height={32}
+                      className="w-full h-full object-cover rounded-[8px]"
+                    />
+                    <div className="absolute inset-x-0 top-0 h-[45%] bg-white/20 rounded-t-xl" />
                   </div>
                 </div>
                 <div className="flex flex-col">
