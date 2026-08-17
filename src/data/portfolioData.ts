@@ -7,7 +7,7 @@ export const ROHIT_PROFILE = {
   title: "Full Stack Web Developer & Technical SEO Specialist",
   seoTitle: "SEO Specialist & Expert | Hire SEO Consultant in Noida, Delhi & India",
   phone: "+91 96966 21216",
-  email: "rohitguptacodec@gmail.com",
+  email: "rohitguptacodec96@gmail.com",
   location: "Ayodhya, Uttar Pradesh – 272130",
   serving: "Serving Noida, Delhi, Gurgaon, Ghaziabad, Lucknow, Ayodhya & all of India — remote worldwide",
   summary: "Passionate and results-driven SEO Specialist and Full Stack Web Developer with 2 years of White Hat SEO experience. I help companies across Noida, Delhi and all of India rank #1 on Google and win AI search (ChatGPT, Google AI Overviews, Copilot). Proven record: 200+ websites optimized, 4,700%+ organic traffic and 99/100 Core Web Vitals. Businesses hire me as their SEO specialist, SEO consultant or SEO executive to turn technical audits, keyword research, schema and speed into verifiable revenue growth.",

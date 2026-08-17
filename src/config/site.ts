@@ -8,7 +8,7 @@ export const CONTACT = {
   name: "Rohit Gupta",
   phone: "+91 96966 21216",
   phoneHref: "tel:+919696621216",
-  email: "rohitguptacodec@gmail.com",
+  email: "rohitguptacodec96@gmail.com",
   whatsapp: "https://wa.me/919696621216",
   whatsappText: "Hi Rohit, I saw your portfolio. I would like to discuss a project.",
   permanentLocation: "Ayodhya, Uttar Pradesh, India",
