@@ -145,7 +145,7 @@ export const ContactSection: React.FC = () => {
       
       {/* Top Banner */}
       <Reveal>
-      <div className="bg-zinc-900/90 border border-zinc-800 p-6 sm:p-8 rounded-3xl space-y-3 shadow-xl">
+      <div className="card-3d-interactive p-6 sm:p-8 space-y-3 shadow-2xl">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-mono">
           <MessageSquare className="w-3.5 h-3.5" />
           <span>Available for High-Growth SEO & Development Projects</span>
@@ -164,15 +164,15 @@ export const ContactSection: React.FC = () => {
         {/* Left Column: Direct Profile Details */}
         <Reveal direction="right" className="lg:col-span-2">
         <div className="space-y-6">
-          <div className="p-6 rounded-3xl bg-zinc-900 border border-zinc-800 space-y-6 shadow-xl">
+          <div className="card-3d-interactive p-6 space-y-6 shadow-2xl">
             <h3 className="text-lg font-extrabold text-white">Direct Contact Info</h3>
 
             <div className="space-y-4 text-xs font-mono">
               <a
                 href={CONTACT.phoneHref}
-                className="flex items-center gap-3.5 p-3.5 rounded-2xl bg-black border border-zinc-800 hover:border-emerald-500/50 transition-all group"
+                className="card-3d flex items-center gap-3.5 p-3.5 group"
               >
-                <div className="w-10 h-10 rounded-xl bg-emerald-950 text-emerald-400 flex items-center justify-center shrink-0">
+                <div className="icon-3d w-10 h-10 rounded-xl text-emerald-400 shrink-0">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
@@ -183,9 +183,9 @@ export const ContactSection: React.FC = () => {
 
               <a
                 href={`mailto:${CONTACT.email}`}
-                className="flex items-center gap-3.5 p-3.5 rounded-2xl bg-black border border-zinc-800 hover:border-blue-500/50 transition-all group"
+                className="card-3d flex items-center gap-3.5 p-3.5 group"
               >
-                <div className="w-10 h-10 rounded-xl bg-blue-950 text-blue-400 flex items-center justify-center shrink-0">
+                <div className="icon-3d w-10 h-10 rounded-xl text-blue-400 shrink-0">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div className="min-w-0">
@@ -194,8 +194,8 @@ export const ContactSection: React.FC = () => {
                 </div>
               </a>
 
-              <div className="flex items-center gap-3.5 p-3.5 rounded-2xl bg-black border border-zinc-800">
-                <div className="w-10 h-10 rounded-xl bg-purple-950 text-purple-400 flex items-center justify-center shrink-0">
+              <div className="card-3d flex items-center gap-3.5 p-3.5">
+                <div className="icon-3d w-10 h-10 rounded-xl text-purple-400 shrink-0">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
@@ -211,7 +211,7 @@ export const ContactSection: React.FC = () => {
               href={`${CONTACT.whatsapp}?text=${encodeURIComponent(CONTACT.whatsappText)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full py-3.5 rounded-2xl bg-emerald-400 text-black font-extrabold text-xs hover:bg-emerald-300 transition-all shadow-lg shadow-emerald-500/20 active:scale-[0.98]"
+              className="btn-3d-emerald flex items-center justify-center gap-2 w-full py-3.5 text-xs font-mono font-black shadow-lg"
             >
               <MessageSquare className="w-4 h-4 fill-black" />
               <span>Chat Immediately on WhatsApp</span>
@@ -219,7 +219,7 @@ export const ContactSection: React.FC = () => {
           </div>
 
           {/* Quick Resume Card */}
-          <div className="p-6 rounded-3xl bg-zinc-900 border border-zinc-800 space-y-3 shadow-xl">
+          <div className="card-3d-interactive p-6 space-y-3 shadow-2xl">
             <div className="flex items-center gap-2 text-white font-bold text-sm">
               <Award className="w-4 h-4 text-emerald-400" />
               <span>Education & Credentials</span>
@@ -237,7 +237,7 @@ export const ContactSection: React.FC = () => {
           <form 
             onSubmit={handleSubmit} 
             noValidate 
-            className="relative p-6 sm:p-8 rounded-3xl bg-zinc-900/80 border border-zinc-800 space-y-4 shadow-xl overflow-hidden"
+            className="relative p-6 sm:p-8 card-3d-interactive space-y-4 shadow-2xl overflow-hidden"
           >
             <h3 className="text-lg font-extrabold text-white">Send a Direct Message / Audit Request</h3>
 
@@ -403,7 +403,7 @@ export const ContactSection: React.FC = () => {
             <button
               type="submit"
               disabled={status === "sending"}
-              className="w-full py-3.5 rounded-xl bg-white text-black text-xs font-extrabold font-mono uppercase tracking-wider hover:bg-emerald-400 transition-all flex items-center justify-center gap-2 shadow-lg shadow-white/5 disabled:opacity-60 disabled:cursor-not-allowed active:scale-[0.99]"
+              className="btn-3d-emerald w-full py-3.5 text-xs font-mono font-black disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {status === "sending" ? (
                 <>

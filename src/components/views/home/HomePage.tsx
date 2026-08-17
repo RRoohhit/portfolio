@@ -469,7 +469,7 @@ export const HomePage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6">
 
           <Reveal direction="right" distance={32} className="lg:col-span-7">
-            <div className="p-5 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-5 sm:space-y-6 shadow-xl h-full flex flex-col justify-between">
+            <div className="card-3d-interactive p-5 sm:p-8 space-y-5 sm:space-y-6 shadow-2xl h-full flex flex-col justify-between">
               <div className="space-y-4">
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-white tracking-tight">
                   Rohit Gupta — SEO Expert, Digital Marketing Consultant &amp; Web Developer
@@ -488,7 +488,7 @@ export const HomePage: React.FC = () => {
                     "Full-Stack React & Next.js Dev",
                     "Digital Marketing & Google Ads",
                   ].map((item) => (
-                    <div key={item} className="p-3 bg-black border border-white/10 rounded-xl flex items-center gap-2.5">
+                    <div key={item} className="card-3d p-3 flex items-center gap-2.5">
                       <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
                       <span className="text-xs sm:text-[13px] text-white/90 font-medium leading-snug">{item}</span>
                     </div>
@@ -499,7 +499,7 @@ export const HomePage: React.FC = () => {
               <div className="pt-3 border-t border-white/10">
                 <Link
                   href="/rohit-gupta"
-                  className="inline-flex items-center gap-2 text-xs font-mono font-bold text-emerald-400 hover:text-emerald-300 transition-colors"
+                  className="btn-3d-dark text-xs font-mono font-bold text-emerald-400 hover:text-emerald-300 py-2 px-4 inline-flex items-center gap-2"
                 >
                   <span>Learn more about Rohit Gupta</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -509,17 +509,17 @@ export const HomePage: React.FC = () => {
           </Reveal>
 
           <Reveal direction="left" distance={32} delay={0.1} className="lg:col-span-5">
-            <div className="space-y-4 sm:space-y-6 h-full">
-            <div className="bg-white text-black p-5 sm:p-6 rounded-3xl flex flex-col justify-between space-y-4 shadow-2xl">
+            <div className="space-y-4 sm:space-y-6 h-full flex flex-col justify-between">
+            <div className="card-3d-interactive bg-gradient-to-br from-white via-zinc-100 to-zinc-200 text-black p-5 sm:p-6 rounded-3xl flex flex-col justify-between space-y-4 shadow-2xl">
               <div>
                 <p className="text-[10px] uppercase text-black/60 mb-1.5 tracking-widest font-mono font-bold">Contact Rohit Gupta</p>
-                <p className="text-sm sm:text-base lg:text-lg font-extrabold tracking-tight font-mono break-all">{ROHIT_PROFILE.email}</p>
+                <p className="text-sm sm:text-base lg:text-lg font-extrabold tracking-tight font-mono break-all text-black">{ROHIT_PROFILE.email}</p>
               </div>
               <div className="pt-4 border-t border-black/10 flex justify-between items-center">
-                <span className="text-[10px] font-mono uppercase font-bold text-black/60">NOIDA (CURRENT) · AYODHYA (PERMANENT)</span>
+                <span className="text-[10px] font-mono uppercase font-bold text-black/70">NOIDA (CURRENT) · AYODHYA (PERMANENT)</span>
                 <Link
                   href="/rohit-gupta"
-                  className="w-9 h-9 bg-black text-white rounded-xl flex items-center justify-center font-bold hover:bg-emerald-400 hover:text-black transition-colors"
+                  className="arrow-3d w-9 h-9 flex items-center justify-center font-bold text-black shadow-md hover:scale-110 transition-transform"
                   aria-label="View Rohit Gupta profile page"
                 >
                   →
@@ -527,14 +527,14 @@ export const HomePage: React.FC = () => {
               </div>
             </div>
 
-            <div className="p-5 sm:p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3 shadow-xl">
+            <div className="card-3d-interactive p-5 sm:p-6 space-y-3 shadow-2xl">
               <h4 className="text-[10px] uppercase text-white/40 tracking-[0.2em] font-mono font-bold">Education Credentials</h4>
               <div className="space-y-2.5 text-xs sm:text-[13px]">
                 {EDUCATIONS.map((edu, idx) => (
-                  <div key={idx} className="p-3 rounded-xl bg-black border border-white/10 space-y-1">
+                  <div key={idx} className="card-3d p-3 space-y-1">
                     <div className="font-bold text-white italic">{edu.degree}</div>
                     <div className="text-white/60 text-xs">{edu.institution}</div>
-                    <div className="flex justify-between text-[10px] font-mono text-white/40 pt-1">
+                    <div className="flex justify-between text-[10px] font-mono text-white/40 pt-1 border-t border-white/5">
                       <span>{edu.period}</span>
                       <span className="text-emerald-400 font-bold">{edu.grade}</span>
                     </div>
@@ -577,16 +577,18 @@ export const HomePage: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {TECHNICAL_SKILLS.map((skillGroup, idx) => (
             <Reveal key={idx} delay={(idx % 3) * 0.08} amount={0.1}>
-              <div className="p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 space-y-3 hover:border-white/25 hover:bg-white/[0.07] transition-colors shadow-lg h-full">
+              <div className="card-3d-interactive p-4 sm:p-5 space-y-3 shadow-xl h-full">
                 <h3 className="text-xs font-bold text-white font-mono uppercase tracking-wider flex items-center gap-2">
-                  <Code2 className="w-4 h-4 text-emerald-400" />
+                  <div className="icon-3d p-1.5 rounded-lg text-emerald-400">
+                    <Code2 className="w-4 h-4" />
+                  </div>
                   {skillGroup.category}
                 </h3>
                 <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-1">
                   {skillGroup.items.map((item, itemIdx) => (
                     <span
                       key={itemIdx}
-                      className="px-2 sm:px-2.5 py-1 rounded-lg bg-black border border-white/10 text-xs font-mono text-white/85 hover:border-emerald-400/50 hover:text-emerald-300 hover:scale-105 transition-all"
+                      className="card-3d px-2 sm:px-2.5 py-1 text-xs font-mono text-white/85 hover:border-emerald-400/50 hover:text-emerald-300 hover:scale-105 transition-all"
                     >
                       {item}
                     </span>
@@ -604,7 +606,7 @@ export const HomePage: React.FC = () => {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {SEO_TOOLS.map((tool, idx) => (
-              <div key={idx} className="p-3 sm:p-4 rounded-xl bg-black border border-white/10 space-y-1 hover:border-white/25 hover:bg-white/[0.04] transition-colors">
+              <div key={idx} className="card-3d p-3 sm:p-4 space-y-1">
                 <h4 className="text-xs font-bold text-white font-mono">{tool.name}</h4>
                 <p className="text-[11px] sm:text-xs text-white/55 leading-relaxed">{tool.desc}</p>
               </div>
@@ -642,7 +644,7 @@ export const HomePage: React.FC = () => {
         <div className="space-y-4 sm:space-y-5">
           {EXPERIENCES.map((exp) => (
             <Reveal key={exp.id}>
-            <div className="p-5 sm:p-6 lg:p-8 rounded-2xl bg-white/[0.04] border border-white/10 space-y-4 shadow-xl hover:border-emerald-500/30 hover:bg-white/[0.06] transition-colors">
+            <div className="card-3d-interactive p-5 sm:p-6 lg:p-8 space-y-4 shadow-xl">
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 border-b border-white/10 pb-4">
                 <div>
                   <div className="flex items-center gap-2.5 flex-wrap">
@@ -655,7 +657,7 @@ export const HomePage: React.FC = () => {
                   </div>
                   <p className="text-xs font-mono text-white/55 mt-1">{exp.company} · {exp.location}</p>
                 </div>
-                <div className="text-xs font-mono text-white/65 bg-black px-3 py-1.5 rounded-lg border border-white/10 self-start whitespace-nowrap">
+                <div className="text-xs font-mono text-white/65 card-3d px-3 py-1.5 self-start whitespace-nowrap">
                   {exp.period}
                 </div>
               </div>

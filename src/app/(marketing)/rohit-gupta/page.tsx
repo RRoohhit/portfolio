@@ -64,7 +64,7 @@ export default function RohitGuptaPage() {
         />
 
         {/* Hero Banner */}
-        <header className="bg-zinc-950 border border-white/10 p-6 sm:p-10 rounded-3xl space-y-6 shadow-2xl relative overflow-hidden">
+        <header className="card-3d-interactive p-6 sm:p-10 rounded-3xl space-y-6 shadow-2xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -90,19 +90,19 @@ export default function RohitGuptaPage() {
               <div className="pt-2 flex flex-wrap items-center gap-3 text-xs font-mono">
                 <a
                   href={CONTACT.phoneHref}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10 text-white/90 hover:text-emerald-400 hover:border-emerald-500/30 transition-colors"
+                  className="card-3d inline-flex items-center gap-1.5 px-3 py-1.5 text-white/90 hover:text-emerald-400"
                 >
                   <Phone className="w-3.5 h-3.5 text-emerald-400" />
                   {CONTACT.phone}
                 </a>
                 <a
                   href={`mailto:${CONTACT.email}`}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10 text-white/90 hover:text-emerald-400 hover:border-emerald-500/30 transition-colors"
+                  className="card-3d inline-flex items-center gap-1.5 px-3 py-1.5 text-white/90 hover:text-emerald-400"
                 >
                   <Mail className="w-3.5 h-3.5 text-emerald-400" />
                   {CONTACT.email}
                 </a>
-                <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10 text-white/70">
+                <div className="card-3d inline-flex items-center gap-1.5 px-3 py-1.5 text-white/70">
                   <MapPin className="w-3.5 h-3.5 text-emerald-400" />
                   <span>Noida, UP (Current) · Ayodhya, UP (Permanent)</span>
                 </div>
@@ -125,7 +125,7 @@ export default function RohitGuptaPage() {
         </header>
 
         {/* Bio Overview */}
-        <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-5 shadow-xl">
+        <section className="card-3d-interactive p-6 sm:p-8 space-y-5 shadow-2xl">
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <Globe className="w-5 h-5 text-emerald-400" />
             Background &amp; Philosophy
@@ -159,7 +159,7 @@ export default function RohitGuptaPage() {
             {CORE_EXPERTISE.map((item) => (
               <div
                 key={item}
-                className="p-4 rounded-2xl bg-zinc-950 border border-white/10 hover:border-emerald-500/40 transition-colors flex items-center gap-3"
+                className="card-3d p-4 flex items-center gap-3"
               >
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
                 <span className="text-xs sm:text-sm font-mono font-semibold text-white/90">{item}</span>
@@ -169,7 +169,7 @@ export default function RohitGuptaPage() {
         </section>
 
         {/* Professional Experience Section */}
-        <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-5 shadow-xl">
+        <section className="card-3d-interactive p-6 sm:p-8 space-y-5 shadow-2xl">
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <Code2 className="w-5 h-5 text-emerald-400" />
             Professional Experience
@@ -185,7 +185,7 @@ export default function RohitGuptaPage() {
         </section>
 
         {/* My Approach to SEO */}
-        <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-5 shadow-xl">
+        <section className="card-3d-interactive p-6 sm:p-8 space-y-5 shadow-2xl">
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <Zap className="w-5 h-5 text-emerald-400" />
             My Approach to SEO
@@ -198,41 +198,41 @@ export default function RohitGuptaPage() {
         </section>
 
         {/* Verified Profiles Section */}
-        <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
+        <section className="card-3d-interactive p-6 sm:p-8 space-y-4 shadow-2xl">
           <h2 className="text-lg font-bold text-white font-mono uppercase tracking-wider">Official Professional Profiles</h2>
           <div className="flex flex-wrap gap-3">
             <a
               href={SOCIALS.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-mono font-bold text-white hover:bg-emerald-400 hover:text-black transition-colors"
+              className="btn-3d-dark text-xs font-mono font-bold"
             >
-              <Linkedin className="w-4 h-4" />
+              <Linkedin className="w-4 h-4 text-blue-400" />
               LinkedIn Profile
             </a>
             <a
               href={SOCIALS.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-mono font-bold text-white hover:bg-emerald-400 hover:text-black transition-colors"
+              className="btn-3d-dark text-xs font-mono font-bold"
             >
-              <Github className="w-4 h-4" />
+              <Github className="w-4 h-4 text-white" />
               GitHub Profile
             </a>
             <a
               href={SOCIALS.twitter}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-mono font-bold text-white hover:bg-emerald-400 hover:text-black transition-colors"
+              className="btn-3d-dark text-xs font-mono font-bold"
             >
-              <Twitter className="w-4 h-4" />
+              <Twitter className="w-4 h-4 text-sky-400" />
               X (Twitter) Profile
             </a>
           </div>
         </section>
 
         {/* Work With Rohit Gupta CTA */}
-        <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/60 via-zinc-950 to-zinc-950 border border-emerald-500/30 text-center space-y-5 shadow-2xl">
+        <section className="card-3d-interactive p-8 sm:p-10 text-center space-y-5 shadow-2xl border-emerald-500/30">
           <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
             Work With Rohit Gupta
           </h2>
@@ -242,14 +242,14 @@ export default function RohitGuptaPage() {
           <div className="pt-2 flex flex-wrap justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25"
+              className="btn-3d-emerald text-xs font-mono font-black group"
             >
               Contact Rohit Gupta
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
-              href="/services/seo"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white/5 border border-white/15 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/10 transition-colors"
+              href="/services"
+              className="btn-3d-dark text-xs font-mono font-bold"
             >
               Explore SEO Services
             </Link>
