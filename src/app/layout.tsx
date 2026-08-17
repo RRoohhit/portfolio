@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Rohit Gupta" }],
   creator: "Rohit Gupta",
   verification: {
-    google: "IWz8BQJBZj13aj8Mtgvbq4j-7wfGraaeSAzBydH9O_Q",
+    google: "cOS3XGFct508GjSXqJ8sOKgYDLll8jZo2WqzsLvBWs4",
   },
   robots: {
     index: true,
@@ -139,7 +139,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       style={{ colorScheme: "dark" }}
     >
       <head>
-        <meta name="google-site-verification" content="IWz8BQJBZj13aj8Mtgvbq4j-7wfGraaeSAzBydH9O_Q" />
+        <meta name="google-site-verification" content="cOS3XGFct508GjSXqJ8sOKgYDLll8jZo2WqzsLvBWs4" />
         <StructuredData />
         <noscript>
           <div style={{ maxWidth: "720px", margin: "0 auto", padding: "40px 20px", fontFamily: "system-ui,sans-serif", color: "#eee" }}>
