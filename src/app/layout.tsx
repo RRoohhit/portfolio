@@ -155,8 +155,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <AuditProvider>
           <div className="min-h-screen bg-[#050505] text-white flex flex-col font-sans selection:bg-emerald-400 selection:text-black [overflow-x:clip]">
             <Navbar />
-            <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 [overflow-x:clip]">
-              {children}
+            <main className="flex-1 w-full [overflow-x:clip]">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 md:space-y-16 lg:space-y-24">
+                {children}
+              </div>
             </main>
             <Footer />
             <FloatingContactClient />

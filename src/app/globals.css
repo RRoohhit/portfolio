@@ -93,12 +93,12 @@
 
   /* Hero full-bleed: stretches edge-to-edge regardless of the layout container max-width */
   .hero-full-bleed {
-    width: 100vw;
+    width: 100%;
     position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   /* Safe bottom padding for mobile browser chrome */

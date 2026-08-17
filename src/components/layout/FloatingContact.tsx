@@ -77,67 +77,50 @@ export const FloatingContact: React.FC = () => {
           </p>
 
           {/* Action Links */}
-          <div className="space-y-2 font-mono">
+          <div className="space-y-2.5 font-mono">
             {/* WhatsApp */}
             <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 p-3 rounded-2xl bg-[#25D366] text-black shadow-lg hover:bg-[#20bd5a] transition-all hover:scale-[1.02] active:scale-[0.98]"
+              className="card-3d flex items-center gap-3 p-3 text-white hover:border-emerald-400/60 transition-all hover:scale-[1.02] active:scale-[0.98] group"
             >
-              <div className="w-8 h-8 rounded-xl bg-black/15 flex items-center justify-center shrink-0">
-                <MessageCircle className="w-4 h-4 text-black" />
+              <div className="icon-3d w-9 h-9 rounded-xl bg-[#25D366]/20 text-[#25D366] shrink-0">
+                <MessageCircle className="w-4 h-4 fill-[#25D366]/20" />
               </div>
               <div className="min-w-0">
-                <div className="text-xs font-black uppercase tracking-wider">WhatsApp Chat</div>
-                <div className="text-[9px] text-black/75 font-semibold">Instant reply on WhatsApp</div>
+                <div className="text-xs font-black uppercase tracking-wider text-white group-hover:text-emerald-300">WhatsApp Chat</div>
+                <div className="text-[9px] text-emerald-400 font-semibold">Instant reply on WhatsApp</div>
               </div>
             </a>
 
             {/* Direct Phone Call */}
             <a
               href={`tel:${ROHIT_PROFILE.phone}`}
-              className="flex items-center gap-3 p-3 rounded-2xl bg-white text-black shadow-lg hover:bg-zinc-100 transition-all hover:scale-[1.02] active:scale-[0.98]"
+              className="card-3d flex items-center gap-3 p-3 text-white hover:border-emerald-400/60 transition-all hover:scale-[1.02] active:scale-[0.98] group"
             >
-              <div className="w-8 h-8 rounded-xl bg-black text-emerald-400 flex items-center justify-center shrink-0">
+              <div className="icon-3d w-9 h-9 rounded-xl text-emerald-400 shrink-0">
                 <Phone className="w-4 h-4" />
               </div>
               <div className="min-w-0">
-                <div className="text-xs font-black uppercase tracking-wider">Call Directly</div>
-                <div className="text-[9px] text-zinc-600 font-semibold">{ROHIT_PROFILE.phone}</div>
+                <div className="text-xs font-black uppercase tracking-wider text-white group-hover:text-emerald-300">Call Directly</div>
+                <div className="text-[9px] text-white/70 font-semibold">{ROHIT_PROFILE.phone}</div>
               </div>
             </a>
 
             {/* Email Inquiry */}
             <a
               href={`mailto:${ROHIT_PROFILE.email}?subject=SEO%20and%20Web%20Project%20Inquiry`}
-              className="flex items-center gap-3 p-3 rounded-2xl bg-zinc-900 border border-white/15 text-white shadow-lg hover:bg-zinc-850 hover:border-white/30 transition-all hover:scale-[1.02] active:scale-[0.98]"
+              className="card-3d flex items-center gap-3 p-3 text-white hover:border-emerald-400/60 transition-all hover:scale-[1.02] active:scale-[0.98] group"
             >
-              <div className="w-8 h-8 rounded-xl bg-white/10 text-emerald-400 flex items-center justify-center shrink-0">
+              <div className="icon-3d w-9 h-9 rounded-xl text-sky-400 shrink-0">
                 <Mail className="w-4 h-4" />
               </div>
               <div className="min-w-0">
-                <div className="text-xs font-bold uppercase tracking-wider">Email Inquiry</div>
-                <div className="text-[9px] text-white/50 truncate">{ROHIT_PROFILE.email}</div>
+                <div className="text-xs font-bold uppercase tracking-wider text-white group-hover:text-sky-300">Email Inquiry</div>
+                <div className="text-[9px] text-white/60 truncate">{ROHIT_PROFILE.email}</div>
               </div>
             </a>
-
-            {/* Free SEO Audit Trigger */}
-            <button
-              onClick={() => {
-                setExpanded(false);
-                openAudit();
-              }}
-              className="w-full flex items-center gap-3 p-3 rounded-2xl bg-emerald-500/15 border border-emerald-500/35 text-emerald-300 shadow-lg hover:bg-emerald-500/25 transition-all hover:scale-[1.02] active:scale-[0.98] text-left"
-            >
-              <div className="w-8 h-8 rounded-xl bg-emerald-400 text-black flex items-center justify-center shrink-0">
-                <Sparkles className="w-4 h-4" />
-              </div>
-              <div className="min-w-0">
-                <div className="text-xs font-bold uppercase tracking-wider">Request Free Audit</div>
-                <div className="text-[9px] text-emerald-300/80">Get 1-on-1 technical SEO review</div>
-              </div>
-            </button>
           </div>
 
         </div>

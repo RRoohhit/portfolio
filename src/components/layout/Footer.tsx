@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
 
         {/* CTA band */}
-        <div className="relative overflow-hidden rounded-3xl border border-emerald-500/25 bg-gradient-to-br from-emerald-950/50 via-zinc-950 to-zinc-950 p-5 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-5">
+        <div className="relative overflow-hidden card-3d-interactive p-5 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-5 shadow-2xl">
           <div className="absolute -top-16 -right-16 w-56 h-56 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
           <div className="space-y-2 relative">
             <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-[10px] font-mono uppercase tracking-widest text-emerald-300 font-bold">
@@ -44,7 +44,7 @@ export const Footer: React.FC = () => {
           </div>
           <Link
             href="/contact"
-            className="group relative inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest shadow-lg shadow-emerald-500/25 hover:bg-emerald-300 transition-all active:scale-[0.98] shrink-0"
+            className="btn-3d-emerald text-xs font-mono font-black shrink-0 group"
           >
             Get Consultation
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -57,7 +57,7 @@ export const Footer: React.FC = () => {
           {/* Col 1: Bio */}
           <div className="sm:col-span-2 lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <Link href="/rohit-gupta" className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-400 to-teal-300 text-black font-extrabold flex items-center justify-center text-sm font-mono shadow-lg shadow-emerald-500/20 hover:scale-105 transition-transform">
+              <Link href="/rohit-gupta" className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-400 to-teal-300 text-black font-extrabold flex items-center justify-center text-sm font-mono shadow-lg shadow-emerald-500/30 hover:scale-105 transition-transform">
                 {AUTHOR.initials}
               </Link>
               <div>
@@ -94,14 +94,14 @@ export const Footer: React.FC = () => {
               </div>
             </div>
 
-            {/* Social Icons */}
-            <div className="flex items-center gap-2 pt-1">
+            {/* 3D Social Icons */}
+            <div className="flex items-center gap-2.5 pt-2">
               <a
                 href={CONTACT.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
-                className="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-black hover:bg-emerald-400 hover:border-emerald-400 hover:scale-110 transition-all duration-200"
+                className="icon-btn-3d w-9 h-9 text-emerald-400 hover:text-black hover:bg-emerald-400 transition-all"
               >
                 <MessageSquare className="w-4 h-4" />
               </a>
@@ -110,7 +110,7 @@ export const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-black hover:bg-sky-400 hover:border-sky-400 hover:scale-110 transition-all duration-200"
+                className="icon-btn-3d w-9 h-9 text-sky-400 hover:text-black hover:bg-sky-400 transition-all"
               >
                 <Linkedin className="w-4 h-4" />
               </a>
@@ -119,7 +119,7 @@ export const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-black hover:bg-white hover:border-white hover:scale-110 transition-all duration-200"
+                className="icon-btn-3d w-9 h-9 text-white hover:text-black hover:bg-white transition-all"
               >
                 <Github className="w-4 h-4" />
               </a>
@@ -136,7 +136,7 @@ export const Footer: React.FC = () => {
                     href={nav.href}
                     className="text-zinc-400 hover:text-emerald-400 transition-colors flex items-center gap-1.5 group w-fit"
                   >
-                    <span className="w-1 h-1 rounded-full bg-zinc-700 group-hover:bg-emerald-400 transition-colors flex-shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-zinc-700 group-hover:bg-emerald-400 transition-colors flex-shrink-0" />
                     {nav.label}
                   </Link>
                 </li>
@@ -148,11 +148,11 @@ export const Footer: React.FC = () => {
           <div className="space-y-3">
             <h4 className="text-xs font-mono uppercase text-white font-bold tracking-wider">Experience &amp; Address</h4>
             <div className="space-y-3 text-xs">
-              <div className="p-3 bg-zinc-900/60 border border-zinc-800 rounded-xl space-y-1">
+              <div className="card-3d p-3 space-y-1">
                 <p className="text-zinc-300 font-mono font-bold text-[11px]">Current Location</p>
                 <p className="text-zinc-400 font-mono text-[10px]">Gali No. 7, Block M, Mamura, Sector 66, Noida, UP 201309</p>
               </div>
-              <div className="p-3 bg-zinc-900/60 border border-zinc-800 rounded-xl space-y-1">
+              <div className="card-3d p-3 space-y-1">
                 <p className="text-zinc-300 font-mono font-bold text-[11px]">Permanent Address</p>
                 <p className="text-zinc-400 font-mono text-[10px]">Ayodhya, Uttar Pradesh, India</p>
               </div>
