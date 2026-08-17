@@ -326,7 +326,9 @@ export const Navbar: React.FC = () => {
           {/* ── Right: 3D CTA Button ── */}
           <div className="hidden sm:flex items-center gap-2 flex-shrink-0">
             <a
-              href={CONTACT.phoneHref}
+              href={`${CONTACT.whatsapp}?text=${encodeURIComponent(CONTACT.whatsappText)}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className={[
                 "group relative hidden lg:inline-flex items-center gap-2",
                 "px-4 py-2 rounded-full overflow-hidden",
@@ -340,8 +342,8 @@ export const Navbar: React.FC = () => {
             >
               {/* Gloss top sheen */}
               <div className="absolute inset-x-0 top-0 h-[48%] bg-white/18 rounded-t-full pointer-events-none" />
-              <Phone className="w-3.5 h-3.5 relative z-10" />
-              <span className="relative z-10">{CONTACT.phone}</span>
+              <MessageSquare className="w-3.5 h-3.5 relative z-10" />
+              <span className="relative z-10">Instant Chat</span>
               <Zap className="w-3 h-3 relative z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
             </a>
           </div>
@@ -522,23 +524,23 @@ export const Navbar: React.FC = () => {
               <p className="text-[10px] font-mono uppercase text-white/30 font-bold tracking-widest">Get in Touch</p>
               <div className="grid grid-cols-2 gap-2">
                 <a
-                  href={CONTACT.phoneHref}
+                  href={`${CONTACT.whatsapp}?text=${encodeURIComponent(CONTACT.whatsappText)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={handleMobileClose}
                   className="relative flex items-center justify-center gap-2 p-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-400 text-black text-xs font-mono font-black uppercase tracking-wider hover:opacity-90 transition-all shadow-lg shadow-emerald-500/20 active:scale-95 overflow-hidden"
                 >
                   <div className="absolute inset-x-0 top-0 h-[46%] bg-white/18 rounded-t-xl pointer-events-none" />
-                  <Phone className="w-4 h-4 relative z-10" />
-                  <span className="relative z-10">Call Now</span>
+                  <MessageSquare className="w-4 h-4 relative z-10" />
+                  <span className="relative z-10">Instant Chat</span>
                 </a>
                 <a
-                  href={CONTACT.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={CONTACT.phoneHref}
                   onClick={handleMobileClose}
                   className="flex items-center justify-center gap-2 p-3 rounded-xl bg-white/[0.04] text-white border border-white/[0.12] text-xs font-mono font-bold uppercase tracking-wider hover:bg-white/[0.08] hover:border-white/20 transition-all active:scale-95"
                 >
-                  <MessageSquare className="w-4 h-4 text-emerald-400" />
-                  WhatsApp
+                  <Phone className="w-4 h-4 text-emerald-400" />
+                  Call Now
                 </a>
               </div>
               <Link
