@@ -52,7 +52,7 @@ const nextConfig: NextConfig = {
       },
       // Short cache for the generated SEO files (sitemap.xml, robots.txt)
       {
-        source: "/:path(sitemap.xml|robots.txt|manifest.webmanifest)",
+        source: "/:path(sitemap.xml|robots.txt|manifest.webmanifest|manifest.json)",
         headers: [
           { key: "Cache-Control", value: "public, max-age=3600, s-maxage=3600" },
         ],
