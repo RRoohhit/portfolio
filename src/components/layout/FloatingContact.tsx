@@ -131,19 +131,22 @@ export const FloatingContact: React.FC = () => {
         onClick={() => setExpanded((v) => !v)}
         aria-label={expanded ? "Close chat options" : "Open quick chat options"}
         aria-expanded={expanded}
-        className={`relative w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${
+        className={`relative w-14 h-14 rounded-full p-0 flex items-center justify-center transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 overflow-hidden ${
           expanded
             ? "btn-3d-dark text-white shadow-black/80"
-            : "btn-3d-emerald text-black hover:scale-105 active:scale-95 shadow-emerald-500/40"
+            : "bg-gradient-to-br from-emerald-400 via-emerald-500 to-teal-600 text-black shadow-[0_0_24px_rgba(52,211,153,0.5),0_4px_12px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.4),inset_0_-2px_0_rgba(0,0,0,0.3)] hover:scale-105 active:scale-95"
         }`}
       >
+        {/* Gloss sheen overlay */}
+        <div className="absolute inset-x-0 top-0 h-[48%] bg-white/25 rounded-t-full pointer-events-none" />
+
         {!expanded && (
           <span className="absolute inset-0 rounded-full bg-emerald-400/50 animate-ping pointer-events-none" />
         )}
         {expanded ? (
-          <X className="w-6 h-6 text-white" />
+          <X className="w-6 h-6 text-white relative z-10" />
         ) : (
-          <MessageCircle className="w-7 h-7 text-black" />
+          <MessageCircle className="w-7 h-7 text-black relative z-10 fill-black/10" />
         )}
       </button>
     </div>
