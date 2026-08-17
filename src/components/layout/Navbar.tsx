@@ -257,24 +257,24 @@ export const Navbar: React.FC = () => {
             <div
               ref={navRef}
               className={[
-                "relative flex items-center",
+                "relative flex items-center p-1",
                 "bg-white/[0.04] border border-white/[0.08]",
-                "backdrop-blur-xl rounded-full px-1.5 py-1.5",
+                "backdrop-blur-xl rounded-full",
                 /* Inset top highlight + bottom shadow = 3D card depth */
-                "shadow-[0_1px_0_0_rgba(255,255,255,0.07)_inset,0_-1px_0_0_rgba(0,0,0,0.5)_inset,0_8px_32px_-4px_rgba(0,0,0,0.6),0_2px_8px_-2px_rgba(0,0,0,0.4)]",
+                "shadow-[0_1px_0_0_rgba(255,255,255,0.08)_inset,0_-1px_0_0_rgba(0,0,0,0.5)_inset,0_8px_32px_-4px_rgba(0,0,0,0.6),0_2px_8px_-2px_rgba(0,0,0,0.4)]",
                 "transition-all duration-500",
               ].join(" ")}
             >
               {/* Animated emerald glider */}
               {mounted && glider && (
                 <div
-                  className="absolute top-1.5 h-[calc(100%-12px)] rounded-full pointer-events-none"
+                  className="absolute top-1 h-[28px] rounded-full pointer-events-none"
                   style={{
                     left: glider.left,
                     width: glider.width,
                     background: "linear-gradient(135deg, #34d399 0%, #2dd4bf 100%)",
                     boxShadow:
-                      "0 0 24px rgba(52,211,153,0.45), 0 2px 8px rgba(52,211,153,0.3), inset 0 1px 0 rgba(255,255,255,0.25)",
+                      "0 0 24px rgba(52,211,153,0.45), 0 2px 8px rgba(52,211,153,0.3), inset 0 1px 0 rgba(255,255,255,0.3)",
                     transition: "left 0.32s cubic-bezier(0.34,1.56,0.64,1), width 0.32s cubic-bezier(0.34,1.56,0.64,1)",
                   }}
                 />
@@ -291,17 +291,18 @@ export const Navbar: React.FC = () => {
                     onMouseEnter={() => setHoveredItem(item.id)}
                     onMouseLeave={() => setHoveredItem(null)}
                     className={[
-                      "relative px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-widest rounded-full",
+                      "relative inline-flex items-center justify-center h-7 px-3.5",
+                      "text-[10px] font-bold uppercase tracking-widest leading-none rounded-full",
                       "transition-all duration-150 whitespace-nowrap select-none",
                       isActive
-                        ? "text-black font-bold"
+                        ? "text-black"
                         : isHov
                           ? "text-white/90 bg-white/[0.05]"
                           : "text-white/55 hover:text-white/85",
                     ].join(" ")}
                     aria-current={isActive ? "page" : undefined}
                   >
-                    <span className="relative z-10">{item.label}</span>
+                    <span className="relative z-10 inline-flex items-center justify-center leading-none mt-[-0.5px]">{item.label}</span>
                   </Link>
                 );
               })}

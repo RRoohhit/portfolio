@@ -206,19 +206,18 @@ export const HomePage: React.FC = () => {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3">
+            <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3.5">
               <Link
                 href="/contact"
-                className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest shadow-lg shadow-emerald-500/25 hover:bg-emerald-300 hover:shadow-emerald-500/40 hover:-translate-y-0.5 transition-all duration-200"
+                className="btn-3d-emerald group text-xs font-mono font-black"
               >
                 Get SEO Consultation
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
               <Link
                 href="/case-studies"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white/5 text-white border border-white/15 text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/10 hover:border-white/30 backdrop-blur-md transition-all duration-200"
+                className="btn-3d-dark text-xs font-mono font-bold"
               >
-                <BarChart3 className="w-4 h-4 text-emerald-400" />
                 View Case Studies
               </Link>
             </div>
@@ -280,7 +279,7 @@ export const HomePage: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="px-4 py-2.5 rounded-2xl bg-zinc-900/90 border border-white/10 hover:border-emerald-500/50 text-xs sm:text-sm font-mono text-white/90 font-medium flex items-center gap-2 whitespace-nowrap hover:bg-zinc-800 hover:text-emerald-300 transition-all cursor-default group"
+                className="px-4 py-2.5 rounded-2xl card-3d text-xs sm:text-sm font-mono text-white/90 font-medium flex items-center gap-2 whitespace-nowrap hover:text-emerald-300 transition-all cursor-default group"
               >
                 <ItemIcon className="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform shrink-0" />
                 <span>{item.label}</span>
@@ -293,7 +292,7 @@ export const HomePage: React.FC = () => {
 
       {/* STATS BAR (SHOWING RIGHT AFTER MARQUEE TICKER) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-3.5 p-3 sm:p-5 bg-zinc-950 border border-white/12 rounded-3xl shadow-2xl">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-3.5 p-3 sm:p-5 card-3d-interactive">
           {HERO_STATS.map((stat) => {
             const Icon = stat.icon;
             const c = colorMap[stat.color];
@@ -313,7 +312,7 @@ export const HomePage: React.FC = () => {
 
       {/* CORE WEB VITALS PERFORMANCE BENCHMARK BAR */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-        <div className="p-4 sm:p-6 lg:p-8 bg-black/90 border border-emerald-500/30 rounded-3xl space-y-5 sm:space-y-6 shadow-2xl relative overflow-hidden">
+        <div className="p-4 sm:p-6 lg:p-8 card-3d-interactive space-y-5 sm:space-y-6 relative overflow-hidden">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 border-b border-white/10 pb-4">
             <div className="space-y-1.5">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-mono uppercase font-bold tracking-widest">
@@ -324,14 +323,14 @@ export const HomePage: React.FC = () => {
                 Verified 99–100/100 Lighthouse Performance Benchmarks
               </h3>
             </div>
-            <div className="px-3 py-1.5 rounded-xl bg-emerald-400 text-black font-mono font-black text-[10px] sm:text-xs uppercase tracking-wider shadow-lg shrink-0">
+            <div className="btn-3d-emerald text-[10px] sm:text-xs py-2 px-4 shrink-0 pointer-events-none">
               ⚡ Lighthouse 99/100 Certified
             </div>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3.5">
             {WEB_VITALS_METRICS.map((m) => (
-              <div key={m.metric} className={`p-3 sm:p-4 rounded-2xl bg-zinc-950 border ${m.border} space-y-1.5`}>
+              <div key={m.metric} className={`p-3 sm:p-4 rounded-2xl card-3d border ${m.border} space-y-1.5`}>
                 <div className="flex items-center justify-between">
                   <span className="text-[11px] font-mono font-bold text-white/60">{m.metric}</span>
                   <span className={`text-[10px] font-mono font-extrabold uppercase px-1.5 py-0.5 rounded bg-white/5 ${m.color}`}>
@@ -369,7 +368,7 @@ export const HomePage: React.FC = () => {
             return (
               <Reveal key={svc.number} delay={(idx % 3) * 0.1} amount={0.15}>
                 <div
-                  className={`service-card p-5 sm:p-6 rounded-2xl bg-zinc-950 border ${c.border} space-y-3 sm:space-y-4 relative overflow-hidden group h-full`}
+                  className={`card-3d-interactive p-5 sm:p-6 space-y-3 sm:space-y-4 relative overflow-hidden group h-full`}
                 >
                   <div className="flex items-center justify-between">
                     <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl ${c.bg} border ${c.border} flex items-center justify-center`}>
@@ -401,7 +400,7 @@ export const HomePage: React.FC = () => {
         <Reveal className="flex justify-center pt-2">
           <Link
             href="/contact"
-            className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-400 transition-all duration-200 shadow-lg"
+            className="btn-3d-emerald group text-xs font-mono font-black"
           >
             Get a Free Strategy Call
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -428,7 +427,7 @@ export const HomePage: React.FC = () => {
           {INTERACTIVE_TOOLS_SUITE.map((tool) => {
             const ToolIcon = tool.icon;
             return (
-              <div key={tool.title} className="p-5 sm:p-6 rounded-3xl bg-zinc-950 border border-white/12 space-y-4 hover:border-emerald-500/40 transition-all flex flex-col justify-between group">
+              <div key={tool.title} className="card-3d-interactive p-5 sm:p-6 space-y-4 flex flex-col justify-between group">
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
                     <span className={`px-2.5 py-1 rounded-full text-[10px] font-mono font-bold uppercase border ${tool.color}`}>
@@ -442,7 +441,7 @@ export const HomePage: React.FC = () => {
 
                 <Link
                   href={tool.link}
-                  className="w-full py-3 px-4 bg-white/5 hover:bg-emerald-400 hover:text-black border border-white/10 rounded-xl text-xs font-mono font-bold uppercase tracking-wider text-white flex items-center justify-center gap-2 transition-all"
+                  className="btn-3d-dark w-full py-2.5 px-4 text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-2"
                 >
                   <span>Launch Tool</span>
                   <ExternalLink className="w-3.5 h-3.5" />
