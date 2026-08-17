@@ -86,7 +86,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         author: {
           "@type": "Person",
           name: "Rohit Gupta",
-          url: `${SITE_URL}/#person`,
+          url: `${SITE_URL}/rohit-gupta/`,
         },
         publisher: {
           "@type": "Organization",
@@ -192,17 +192,23 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </h1>
 
         <div className="flex items-center gap-3 pt-2 border-t border-white/10">
-          <div className="w-10 h-10 rounded-full bg-emerald-400 text-black font-black flex items-center justify-center text-xs font-mono shrink-0">
+          <Link
+            href="/rohit-gupta"
+            className="w-10 h-10 rounded-full bg-emerald-400 text-black font-black flex items-center justify-center text-xs font-mono shrink-0 hover:scale-105 transition-transform"
+          >
             RG
-          </div>
+          </Link>
           <div className="flex-1">
             <div className="text-xs sm:text-sm font-bold text-white font-mono flex items-center gap-2 flex-wrap">
-              <span>Rohit Gupta</span>
-              <span className="text-[10px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20 font-bold uppercase tracking-wide">
-                Author &amp; Technical SEO Architect
+              <span className="text-white/70 font-normal">Written by</span>
+              <Link href="/rohit-gupta" className="text-emerald-400 hover:underline font-bold">
+                Rohit Gupta
+              </Link>
+              <span className="text-[10px] text-emerald-300 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20 font-bold uppercase tracking-wide">
+                SEO Expert &amp; Full-Stack Web Developer
               </span>
             </div>
-            <p className="text-[11px] text-white/60 font-mono">{ROHIT_PROFILE.title}</p>
+            <p className="text-[11px] text-white/60 font-mono">Digital Marketing Consultant &amp; Web Developer</p>
           </div>
           {/* Share actions */}
           <div className="flex items-center gap-2">

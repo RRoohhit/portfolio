@@ -7,47 +7,15 @@ import { CONTACT, SOCIALS, SITE_NAME, AUTHOR } from "@/config/site";
 import BackToTopButton from "./BackToTopButton";
 
 const QUICK_NAV = [
-  { href: "/", label: "Home & Overview" },
-  { href: "/projects", label: "Projects & Case Studies" },
-  { href: "/seo-tools", label: "Free SEO Tools" },
-  { href: "/seo-analyzer", label: "AI SEO Analyzer" },
-  { href: "/ai-lab", label: "AI Content Optimizer" },
-  { href: "/blog", label: "Technical SEO Articles" },
-  { href: "/contact", label: "Contact & Hire" },
-];
-
-const SEO_KEYWORDS = [
-  "Hire SEO Specialist India",
-  "SEO Specialist Near Me",
-  "SEO Expert Near Me",
-  "SEO Executive in Noida",
-  "SEO Specialist in Delhi",
-  "SEO Specialist in Gurgaon",
-  "SEO Expert in Ghaziabad",
-  "SEO Specialist in Lucknow",
-  "SEO Services India",
-  "Freelance SEO Expert India",
-  "Technical SEO Specialist",
-  "Technical SEO Audit & Core Web Vitals",
-  "Local SEO & Google Business",
-  "On-Page SEO",
-  "Off-Page SEO",
-  "White Hat SEO",
-  "Schema JSON-LD Markup",
-  "AI Search Optimization",
-  "Google Search Console",
-  "Google Ads Specialist",
-  "Keyword Research India",
-  "Backlink Monitoring & Disavow",
-  "Full Stack Web Developer India",
-  "Next.js Developer Noida",
-  "Website Performance Optimization",
-  "Organic Traffic Growth",
-  "SEO Consultant Delhi NCR",
-  "E-Commerce SEO Expert",
-  "SEO Services Noida",
-  "SEO Services Delhi",
-  "Website Development India",
+  { href: "/", label: "Home" },
+  { href: "/rohit-gupta", label: "About Rohit Gupta" },
+  { href: "/services/seo", label: "SEO Services" },
+  { href: "/services/technical-seo", label: "Technical SEO" },
+  { href: "/services/digital-marketing", label: "Digital Marketing" },
+  { href: "/services/web-development", label: "Web Development" },
+  { href: "/case-studies", label: "Case Studies" },
+  { href: "/blog", label: "Technical Articles" },
+  { href: "/contact", label: "Contact Rohit Gupta" },
 ];
 
 export const Footer: React.FC = () => {
@@ -65,20 +33,20 @@ export const Footer: React.FC = () => {
           <div className="space-y-2 relative">
             <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-[10px] font-mono uppercase tracking-widest text-emerald-300 font-bold">
               <Zap className="w-3 h-3" />
-              Free 14-Point SEO Audit
+              SEO &amp; Web Development Consultation
             </div>
             <h3 className="text-lg sm:text-xl lg:text-2xl font-extrabold text-white tracking-tight">
-              Ready to Rank #1 on Google &amp; AI Search?
+              Ready to Improve Organic Visibility &amp; Website Performance?
             </h3>
             <p className="text-xs sm:text-sm text-zinc-400 max-w-xl leading-relaxed">
-              Get a free technical audit and a 90-day ranking roadmap — no contracts, no obligations. Noida, Delhi &amp; all India.
+              Get in touch with Rohit Gupta to discuss technical SEO, search strategy, or modern full-stack web development.
             </p>
           </div>
           <Link
             href="/contact"
             className="group relative inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest shadow-lg shadow-emerald-500/25 hover:bg-emerald-300 transition-all active:scale-[0.98] shrink-0"
           >
-            Start Free Audit
+            Get Consultation
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </Link>
         </div>
@@ -89,17 +57,19 @@ export const Footer: React.FC = () => {
           {/* Col 1: Bio */}
           <div className="sm:col-span-2 lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-400 to-teal-300 text-black font-extrabold flex items-center justify-center text-sm font-mono shadow-lg shadow-emerald-500/20">
+              <Link href="/rohit-gupta" className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-400 to-teal-300 text-black font-extrabold flex items-center justify-center text-sm font-mono shadow-lg shadow-emerald-500/20 hover:scale-105 transition-transform">
                 {AUTHOR.initials}
-              </div>
+              </Link>
               <div>
-                <h3 className="text-white font-extrabold tracking-tight text-lg leading-none">{AUTHOR.name}</h3>
+                <Link href="/rohit-gupta" className="text-white font-extrabold tracking-tight text-lg leading-none hover:text-emerald-400 transition-colors">
+                  {AUTHOR.name}
+                </Link>
                 <p className="text-xs text-zinc-500 font-mono mt-0.5">{AUTHOR.role}</p>
               </div>
             </div>
 
             <p className="text-xs text-zinc-400 max-w-sm leading-relaxed">
-              Engineering high-performance, scalable React/Next.js web applications and executing data-backed White Hat SEO strategies that consistently deliver Rank #1 search engine positioning.
+              {CONTACT.serving}
             </p>
 
             {/* Contact info */}
@@ -120,7 +90,7 @@ export const Footer: React.FC = () => {
               </a>
               <div className="flex items-start gap-2 text-zinc-400">
                 <MapPin className="w-3.5 h-3.5 text-purple-400 shrink-0 mt-0.5" />
-                <span>{CONTACT.location}</span>
+                <span>Noida, UP (Current) · Ayodhya, UP (Permanent)</span>
               </div>
             </div>
 
@@ -158,7 +128,7 @@ export const Footer: React.FC = () => {
 
           {/* Col 2: Navigation */}
           <div className="space-y-3">
-            <h4 className="text-xs font-mono uppercase text-white font-bold tracking-wider">Quick Navigation</h4>
+            <h4 className="text-xs font-mono uppercase text-white font-bold tracking-wider">Navigation</h4>
             <ul className="space-y-2 text-xs font-mono">
               {QUICK_NAV.map((nav) => (
                 <li key={nav.href}>
@@ -176,52 +146,30 @@ export const Footer: React.FC = () => {
 
           {/* Col 3: Location & Credentials */}
           <div className="space-y-3">
-            <h4 className="text-xs font-mono uppercase text-white font-bold tracking-wider">Location & Experience</h4>
+            <h4 className="text-xs font-mono uppercase text-white font-bold tracking-wider">Experience &amp; Address</h4>
             <div className="space-y-3 text-xs">
-              <div className="p-3 bg-zinc-900/60 border border-zinc-800 rounded-xl space-y-1.5">
-                <p className="text-zinc-300 font-mono font-bold text-[11px]">Megamind Technosoft</p>
-                <p className="text-zinc-500 font-mono">SEO Specialist · Delhi, India</p>
-              </div>
-              <div className="p-3 bg-zinc-900/60 border border-zinc-800 rounded-xl space-y-1.5">
-                <p className="text-zinc-300 font-mono font-bold text-[11px]">Thingbiz Hightech</p>
-                <p className="text-zinc-500 font-mono">SEO Executive · Noida, India</p>
+              <div className="p-3 bg-zinc-900/60 border border-zinc-800 rounded-xl space-y-1">
+                <p className="text-zinc-300 font-mono font-bold text-[11px]">Current Location</p>
+                <p className="text-zinc-400 font-mono text-[10px]">Gali No. 7, Block M, Mamura, Sector 66, Noida, UP 201309</p>
               </div>
               <div className="p-3 bg-zinc-900/60 border border-zinc-800 rounded-xl space-y-1">
-                <p className="text-zinc-300 font-mono font-bold text-[11px]">B.Tech CSE — AKTU</p>
-                <p className="text-zinc-500 font-mono">2021–2025</p>
+                <p className="text-zinc-300 font-mono font-bold text-[11px]">Permanent Address</p>
+                <p className="text-zinc-400 font-mono text-[10px]">Ayodhya, Uttar Pradesh, India</p>
               </div>
             </div>
           </div>
 
         </div>
 
-        {/* SEO Keywords Cloud */}
-        <div className="pt-6 border-t border-zinc-900 space-y-3">
-          <div className="flex items-center gap-2 text-xs font-mono text-zinc-400 uppercase tracking-wider font-bold">
-            <Search className="w-3.5 h-3.5 text-emerald-400" />
-            <span>Target Organic Search Keywords:</span>
-          </div>
-          <div className="flex flex-wrap gap-1.5">
-            {SEO_KEYWORDS.map((kw, idx) => (
-              <span
-                key={idx}
-                className="px-2 py-0.5 rounded-md bg-zinc-900 border border-zinc-800 text-[10px] sm:text-[11px] font-mono text-zinc-500 hover:text-zinc-300 hover:border-zinc-600 transition-colors cursor-default"
-              >
-                #{kw}
-              </span>
-            ))}
-          </div>
-        </div>
-
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono text-zinc-600">
           <div className="text-center sm:text-left">
             © {new Date().getFullYear()} Rohit Gupta. All Rights Reserved.{" "}
-            <span className="text-zinc-700">Built with Next.js, React &amp; White Hat SEO.</span>
+            <span className="text-zinc-700">SEO Expert, Digital Marketing Consultant &amp; Full-Stack Web Developer.</span>
           </div>
           <div className="flex items-center gap-4">
-            <Link href="/contact" className="hover:text-emerald-400 transition-colors">
-              Hire Me
+            <Link href="/rohit-gupta" className="hover:text-emerald-400 transition-colors">
+              About Rohit
             </Link>
             <span className="text-zinc-800">|</span>
             <BackToTopButton />

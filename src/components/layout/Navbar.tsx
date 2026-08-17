@@ -24,6 +24,9 @@ import {
 
 const TAB_PATHS: Record<string, string> = {
   home: "/",
+  "rohit-gupta": "/rohit-gupta",
+  services: "/services",
+  "case-studies": "/case-studies",
   projects: "/projects",
   "seo-tools": "/seo-tools",
   "seo-analyzer": "/seo-analyzer",
@@ -188,10 +191,10 @@ export const Navbar: React.FC = () => {
             <div className="relative flex items-center gap-0.5 bg-white/5 border border-white/10 backdrop-blur-xl rounded-full p-1.5 shadow-lg shadow-black/30">
               {[
                 { id: "home", label: "Home" },
-                { id: "projects", label: "Projects" },
+                { id: "rohit-gupta", label: "About" },
+                { id: "services", label: "Services" },
+                { id: "case-studies", label: "Case Studies" },
                 { id: "seo-tools", label: "SEO Tools" },
-                { id: "seo-analyzer", label: "SEO Analyzer" },
-                { id: "ai-lab", label: "AI Lab" },
                 { id: "blog", label: "Blog" },
                 { id: "contact", label: "Contact" },
               ].map((item) => {

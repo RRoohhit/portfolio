@@ -21,6 +21,24 @@ export function renderJsonLd(data: object, id?: string): ReactElement {
   );
 }
 
+/** ProfilePage structured data for /rohit-gupta/ page */
+export function profilePageGraph(): object {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Rohit Gupta",
+      "jobTitle": "SEO Expert, Digital Marketing Consultant & Full-Stack Web Developer",
+      "url": `${SITE_URL}/rohit-gupta/`,
+      "sameAs": [
+        SOCIALS.linkedin,
+        SOCIALS.github,
+      ],
+    },
+  };
+}
+
 /** Organization-level graph: Person, ProfessionalService and WebSite (with sitelinks searchbox). */
 export function organizationGraph(): object {
   return {
@@ -30,18 +48,25 @@ export function organizationGraph(): object {
         "@type": "Person",
         "@id": `${SITE_URL}/#person`,
         "name": "Rohit Gupta",
-        "url": `${SITE_URL}/`,
+        "url": `${SITE_URL}/rohit-gupta/`,
         "image": OG_IMAGE,
-        "jobTitle": "Full Stack Web Developer & SEO Specialist",
+        "jobTitle": "SEO Expert, Digital Marketing Consultant & Full-Stack Web Developer",
         "description":
-          "SEO specialist and expert for hire. Technical SEO, Core Web Vitals, Local SEO, AI search optimization and full stack web development in Noida, Delhi and India.",
+          "Rohit Gupta is an SEO expert, digital marketing consultant & full-stack web developer helping businesses improve organic search visibility, website performance and online growth.",
         "telephone": CONTACT.phone.replace(/\s+/g, ""),
         "email": CONTACT.email,
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "Gali No. 7, Block M, Mamura, Sector 66",
+          "addressLocality": "Noida",
+          "addressRegion": "Uttar Pradesh",
+          "postalCode": "201309",
+          "addressCountry": "IN",
+        },
+        "homeLocation": {
+          "@type": "PostalAddress",
           "addressLocality": "Ayodhya",
           "addressRegion": "Uttar Pradesh",
-          "postalCode": "272130",
           "addressCountry": "IN",
         },
         "alumniOf": "Dronacharya Group of Institutions, AKTU University, Greater Noida",

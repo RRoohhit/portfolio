@@ -85,10 +85,10 @@ const SERVICES = [
 ];
 
 const HERO_STATS = [
-  { value: "200+", label: "Sites Ranked #1", icon: TrendingUp, color: "emerald" },
+  { value: "100%", label: "White Hat SEO", icon: ShieldCheck, color: "emerald" },
   { value: "2+", label: "Years Experience", icon: Award, color: "amber" },
-  { value: "99", label: "Lighthouse Score", icon: Gauge, color: "blue" },
-  { value: "4.9★", label: "Client Rating", icon: Star, color: "violet" },
+  { value: "99+", label: "Lighthouse Performance", icon: Gauge, color: "blue" },
+  { value: "Data", label: "Driven Strategy", icon: Star, color: "violet" },
 ];
 
 const WEB_VITALS_METRICS = [
@@ -185,23 +185,24 @@ export const HomePage: React.FC = () => {
               {/* Available badge */}
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] sm:text-[11px] font-mono font-bold uppercase tracking-wider">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                Available for New Projects
+                Available for SEO &amp; Web Development Projects
               </div>
-              <h1 className="text-[1.65rem] sm:text-4xl lg:text-[2.75rem] xl:text-5xl font-black text-white tracking-tight leading-[1.1] sm:leading-[1.08]">
-                Rank #1 on Google &amp; AI Search for Businesses in{" "}
+              <h1 className="text-[1.75rem] sm:text-4xl lg:text-[2.75rem] xl:text-5xl font-black text-white tracking-tight leading-[1.1] sm:leading-[1.08]">
+                Rohit Gupta —{" "}
                 <span className="relative inline-block text-emerald-400">
-                  Noida, Delhi &amp; All India
+                  SEO Expert &amp; Full-Stack Web Developer
                   <svg className="absolute -bottom-1.5 left-0 w-full" viewBox="0 0 200 10" fill="none" preserveAspectRatio="none" aria-hidden="true">
                     <path d="M2 7C60 2 140 2 198 7" stroke="#34d399" strokeWidth="2.5" strokeLinecap="round" opacity="0.65" />
                   </svg>
                 </span>
               </h1>
-              <p className="text-sm sm:text-base text-white/75 leading-relaxed max-w-xl">
-                I&apos;m <strong className="text-white font-semibold">Rohit Gupta</strong> — a{" "}
-                <strong className="text-white font-semibold">SEO specialist &amp; full stack web developer</strong>{" "}
-                who combines White Hat technical SEO, Core Web Vitals, and high-performance Next.js builds to{" "}
-                <strong className="text-emerald-400 font-semibold">rank 200+ websites #1</strong> on Google and win
-                AI search citations — turning organic traffic into booked sales.
+              <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-xl">
+                I help businesses improve organic search visibility, website performance and online growth through{" "}
+                <Link href="/services/technical-seo" className="text-white hover:text-emerald-400 font-semibold underline">technical SEO</Link>,{" "}
+                <Link href="/services/local-seo" className="text-white hover:text-emerald-400 font-semibold underline">local SEO</Link>,{" "}
+                <Link href="/services/international-seo" className="text-white hover:text-emerald-400 font-semibold underline">international SEO</Link>,{" "}
+                <Link href="/services/digital-marketing" className="text-white hover:text-emerald-400 font-semibold underline">digital marketing</Link> and{" "}
+                <Link href="/services/web-development" className="text-white hover:text-emerald-400 font-semibold underline">high-performance web development</Link>.
               </p>
             </div>
 
@@ -210,16 +211,16 @@ export const HomePage: React.FC = () => {
                 href="/contact"
                 className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest shadow-lg shadow-emerald-500/25 hover:bg-emerald-300 hover:shadow-emerald-500/40 hover:-translate-y-0.5 transition-all duration-200"
               >
-                Start Your Project
+                Get SEO Consultation
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
-              <button
-                onClick={openAudit}
+              <Link
+                href="/case-studies"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white/5 text-white border border-white/15 text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/10 hover:border-white/30 backdrop-blur-md transition-all duration-200"
               >
-                <Gauge className="w-4 h-4 text-emerald-400" />
-                Free SEO Audit
-              </button>
+                <BarChart3 className="w-4 h-4 text-emerald-400" />
+                View Case Studies
+              </Link>
             </div>
 
             <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-x-4 gap-y-2.5 pt-1">
@@ -455,60 +456,72 @@ export const HomePage: React.FC = () => {
       {/* ABOUT & BIO */}
       <section id="about-us-section" aria-labelledby="about-heading" className="scroll-mt-24 space-y-6">
         <Reveal as="div">
-          <h2 id="about-heading" className="text-[10px] uppercase text-white/40 tracking-[0.2em] font-bold flex items-center gap-2">
-            <Award className="w-3.5 h-3.5 text-emerald-400" />
-            About Specialist &amp; High-Traffic SEO Services
-          </h2>
+          <div className="flex items-center justify-between">
+            <h2 id="about-heading" className="text-[10px] uppercase text-white/40 tracking-[0.2em] font-bold flex items-center gap-2">
+              <Award className="w-3.5 h-3.5 text-emerald-400" />
+              About Rohit Gupta
+            </h2>
+            <Link href="/rohit-gupta" className="text-xs font-mono text-emerald-400 hover:underline font-bold flex items-center gap-1">
+              Read Full Entity Profile Page →
+            </Link>
+          </div>
         </Reveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6">
 
           <Reveal direction="right" distance={32} className="lg:col-span-7">
-            <div className="p-5 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-5 sm:space-y-6 shadow-xl h-full">
-            <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-white tracking-tight">
-              Passionate React Developer &amp; Technical SEO Audit Consultant
-            </h3>
-            <p className="text-sm leading-relaxed text-white/75">
-              Bridging the gap between{" "}
-              <strong className="text-emerald-400 font-semibold">performance optimization</strong> and{" "}
-              <strong className="text-white font-semibold">search engine visibility</strong>. As a specialist offering{" "}
-              <strong className="text-white font-bold">React development services</strong> and comprehensive{" "}
-              <strong className="text-emerald-300 font-bold">technical SEO audits</strong>, I help enterprise clients and
-              high-growth startups rank #1 on Google SERPs. {ROHIT_PROFILE.summary}
-            </p>
+            <div className="p-5 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-5 sm:space-y-6 shadow-xl h-full flex flex-col justify-between">
+              <div className="space-y-4">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-white tracking-tight">
+                  Rohit Gupta — SEO Expert, Digital Marketing Consultant &amp; Web Developer
+                </h3>
+                <p className="text-sm leading-relaxed text-white/75">
+                  I&apos;m Rohit Gupta, an SEO specialist and full-stack web developer focused on helping businesses improve their search visibility, website performance and digital growth through ethical, data-backed strategies.
+                </p>
+              </div>
 
-            <div className="space-y-3 pt-1">
-              <h4 className="text-[10px] uppercase text-white/40 font-bold tracking-[0.2em] font-mono">High-Impact Technical Pillars:</h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
-                {[
-                  "Technical SEO Audit & Schema JSON-LD",
-                  "Performance Optimization & Core Web Vitals",
-                  "React Development Services & Next.js",
-                  "White Hat SEO Strategy & Link Audits",
-                ].map((item) => (
-                  <div key={item} className="p-3 bg-black border border-white/10 rounded-xl flex items-center gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                    <span className="text-xs sm:text-[13px] text-white/90 font-medium leading-snug">{item}</span>
-                  </div>
-                ))}
+              <div className="space-y-3 pt-2">
+                <h4 className="text-[10px] uppercase text-white/40 font-bold tracking-[0.2em] font-mono">Core Service Capabilities:</h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
+                  {[
+                    "Technical SEO & Schema JSON-LD",
+                    "Local & International SEO",
+                    "Full-Stack React & Next.js Dev",
+                    "Digital Marketing & Google Ads",
+                  ].map((item) => (
+                    <div key={item} className="p-3 bg-black border border-white/10 rounded-xl flex items-center gap-2.5">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                      <span className="text-xs sm:text-[13px] text-white/90 font-medium leading-snug">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="pt-3 border-t border-white/10">
+                <Link
+                  href="/rohit-gupta"
+                  className="inline-flex items-center gap-2 text-xs font-mono font-bold text-emerald-400 hover:text-emerald-300 transition-colors"
+                >
+                  <span>Learn more about Rohit Gupta</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
               </div>
             </div>
-          </div>
           </Reveal>
 
           <Reveal direction="left" distance={32} delay={0.1} className="lg:col-span-5">
             <div className="space-y-4 sm:space-y-6 h-full">
             <div className="bg-white text-black p-5 sm:p-6 rounded-3xl flex flex-col justify-between space-y-4 shadow-2xl">
               <div>
-                <p className="text-[10px] uppercase text-black/60 mb-1.5 tracking-widest font-mono font-bold">Hire SEO &amp; Development Specialist</p>
+                <p className="text-[10px] uppercase text-black/60 mb-1.5 tracking-widest font-mono font-bold">Contact Rohit Gupta</p>
                 <p className="text-sm sm:text-base lg:text-lg font-extrabold tracking-tight font-mono break-all">{ROHIT_PROFILE.email}</p>
               </div>
               <div className="pt-4 border-t border-black/10 flex justify-between items-center">
-                <span className="text-[10px] font-mono uppercase font-bold text-black/60">AYODHYA · DELHI · NOIDA</span>
+                <span className="text-[10px] font-mono uppercase font-bold text-black/60">NOIDA (CURRENT) · AYODHYA (PERMANENT)</span>
                 <Link
-                  href="/contact"
+                  href="/rohit-gupta"
                   className="w-9 h-9 bg-black text-white rounded-xl flex items-center justify-center font-bold hover:bg-emerald-400 hover:text-black transition-colors"
-                  aria-label="Contact Rohit Gupta to hire an SEO specialist"
+                  aria-label="View Rohit Gupta profile page"
                 >
                   →
                 </Link>

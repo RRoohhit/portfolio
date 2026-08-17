@@ -34,29 +34,21 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Hire SEO Expert & Specialist Near Me | Noida, Delhi, India",
+  title: "Rohit Gupta — SEO Expert, Digital Marketing Consultant & Web Developer",
   description:
-    "Hire a proven SEO specialist in Noida, Delhi & India. 2+ yrs White Hat technical SEO & AI, 200+ sites ranked #1. Free SEO audit today.",
+    "Rohit Gupta is an SEO expert, digital marketing consultant & full-stack web developer helping businesses improve organic search visibility, website performance and online growth.",
   keywords: [
-    "SEO specialist near me",
-    "SEO expert near me",
-    "SEO executive near me",
-    "hire SEO specialist",
-    "hire SEO expert India",
-    "SEO specialist in Noida",
-    "SEO expert in Delhi",
-    "SEO consultant India",
-    "SEO executive in Noida",
-    "SEO services near me",
-    "freelance SEO specialist India",
-    "technical SEO specialist",
-    "SEO expert for hire",
-    "SEO services Noida",
-    "SEO services Delhi",
-    "e-commerce SEO expert",
-    "local SEO specialist",
-    "full stack web developer and SEO specialist",
-    "Google Ads expert",
+    "Rohit Gupta",
+    "Rohit Gupta SEO",
+    "Rohit Gupta SEO expert",
+    "Rohit Gupta digital marketing",
+    "Rohit Gupta web developer",
+    "SEO Expert India",
+    "Technical SEO Specialist",
+    "Local SEO Expert",
+    "International SEO Expert",
+    "Full Stack Web Developer",
+    "Digital Marketing Consultant",
   ],
   authors: [{ name: "Rohit Gupta" }],
   creator: "Rohit Gupta",
@@ -72,26 +64,26 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    siteName: "Rohit Gupta - SEO Specialist & Full Stack Web Developer",
-    title: "Hire SEO Expert & Specialist Near Me | Noida, Delhi, India",
+    siteName: "Rohit Gupta — SEO Expert, Digital Marketing Consultant & Web Developer",
+    title: "Rohit Gupta — SEO Expert, Digital Marketing Consultant & Web Developer",
     description:
-      "Hire a proven SEO specialist in Noida, Delhi & India. 200+ businesses ranked, Core Web Vitals 99/100. Free audit today.",
+      "Rohit Gupta is an SEO expert, digital marketing consultant & full-stack web developer helping businesses improve organic search visibility, website performance and online growth.",
     url: SITE_URL,
     images: [
       {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "Rohit Gupta - SEO Specialist & Web Developer",
+        alt: "Rohit Gupta — SEO Expert, Digital Marketing Consultant & Web Developer",
       },
     ],
     locale: "en_IN",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO Specialist & Expert Near Me | Hire SEO Expert India",
+    title: "Rohit Gupta — SEO Expert, Digital Marketing Consultant & Web Developer",
     description:
-      "Rank #1 on Google & AI search. 200+ businesses ranked, Core Web Vitals 99/100. Noida, Delhi & India. Free SEO audit.",
+      "Rohit Gupta is an SEO expert, digital marketing consultant & full-stack web developer helping businesses improve organic search visibility, website performance and online growth.",
     images: [OG_IMAGE],
     site: "@rohitguptacodec",
     creator: "@rohitguptacodec",
@@ -117,10 +109,10 @@ export const metadata: Metadata = {
   },
   other: {
     "geo.region": "IN-UP",
-    "geo.placename": "Ayodhya, Uttar Pradesh",
-    "geo.position": "26.795;82.199",
-    ICBM: "26.795, 82.199",
-    city: "Noida, Delhi, Gurgaon, Ghaziabad, Lucknow, Ayodhya",
+    "geo.placename": "Noida, Uttar Pradesh",
+    "geo.position": "28.570;77.380",
+    ICBM: "28.570, 77.380",
+    city: "Noida, Ayodhya",
     state: "Uttar Pradesh, Delhi NCR, India",
     area: "India, Worldwide (Remote)",
     language: "en-IN",
@@ -144,8 +136,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <StructuredData />
         <noscript>
           <div style={{ maxWidth: "720px", margin: "0 auto", padding: "40px 20px", fontFamily: "system-ui,sans-serif", color: "#eee" }}>
-            <p style={{ fontSize: "1.5rem", fontWeight: 700, margin: "0 0 12px" }}>Hire SEO Specialist &amp; Expert Near Me in Noida, Delhi &amp; India</p>
-            <p>Rohit Gupta is a full stack web developer and SEO specialist helping businesses in Noida, Delhi, NCR and all of India rank #1 on Google and AI search. Services: Technical SEO, On-Page SEO, Web Development, Core Web Vitals, Local SEO, Google Ads.</p>
+            <p style={{ fontSize: "1.5rem", fontWeight: 700, margin: "0 0 12px" }}>Rohit Gupta — SEO Expert, Digital Marketing Consultant &amp; Web Developer</p>
+            <p>Rohit Gupta is an SEO expert, digital marketing consultant &amp; full-stack web developer helping businesses improve organic search visibility, website performance and online growth through technical SEO, local SEO, international SEO, digital marketing and high-performance web development.</p>
             <p>Call/WhatsApp: <a href={CONTACT.phoneHref} style={{ color: "#34d399" }}>{CONTACT.phone}</a> &nbsp;|&nbsp; Email: <a href={`mailto:${CONTACT.email}`} style={{ color: "#34d399" }}>{CONTACT.email}</a></p>
           </div>
         </noscript>
