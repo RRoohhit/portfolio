@@ -8,7 +8,7 @@ import { Globe, CheckCircle2, ArrowRight, ShieldCheck } from "lucide-react";
 export const metadata: Metadata = buildPageMetadata({
   title: "International & Multi-Regional SEO Services — Rohit Gupta",
   description:
-    "International SEO services by Rohit Gupta: Hreflang implementation, country-level keyword mapping, ccTLD vs subfolder architecture, geotargeting, localization, and global search growth.",
+    "International SEO services by Rohit Gupta: hreflang setup, ccTLD vs subfolder architecture, multi-country keyword mapping, geotargeting, and global ranking.",
   path: "/services/international-seo/",
   keywords: [
     "International SEO Expert",

@@ -8,7 +8,7 @@ import { Sparkles, CheckCircle2, ArrowRight } from "lucide-react";
 export const metadata: Metadata = buildPageMetadata({
   title: "Next.js Development & Performance Services — Rohit Gupta",
   description:
-    "Next.js web development services by Rohit Gupta: App Router architecture, Server Components, edge deployment, SSR, SSG, and sub-second page performance.",
+    "Next.js web development by Rohit Gupta: App Router architecture, React Server Components, SSR/SSG rendering, and sub-second page load performance.",
   path: "/services/nextjs-development/",
   keywords: [
     "Next.js Developer India",

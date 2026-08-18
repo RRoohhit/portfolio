@@ -8,7 +8,7 @@ import { Link2, CheckCircle2, ArrowRight, ShieldCheck, Target, Search } from "lu
 export const metadata: Metadata = buildPageMetadata({
   title: "Off-Page SEO & Link Building Services — Rohit Gupta",
   description:
-    "Off-Page SEO services by Rohit Gupta: backlink audit, competitor backlink analysis, link-gap analysis, digital PR, authority building, brand mentions, citation building, and quality link outreach. White Hat only.",
+    "Off-Page SEO & link building services by Rohit Gupta: backlink audit, competitor link-gap analysis, digital PR, authority building, and ethical outreach.",
   path: "/services/off-page-seo/",
   keywords: [
     "Off-Page SEO Services",

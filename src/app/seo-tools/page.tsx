@@ -7,7 +7,7 @@ import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
 export const metadata: Metadata = buildPageMetadata({
   title: "Free SEO Tools: Audit, Schema Generator & SERP Preview",
   description:
-    "Free technical SEO tools by Rohit Gupta - instant website SEO audit, JSON-LD schema generator, SERP meta preview and AI content optimizer for India businesses.",
+    "Free SEO tools by Rohit Gupta: instant website SEO audit, JSON-LD schema generator, SERP meta preview, and AI content optimizer for business growth.",
   path: "/seo-tools",
   keywords: [
     "free SEO tools",
@@ -35,6 +35,7 @@ export default function SeoTools() {
             { name: "SEO Tools" },
           ]}
         />
+        <h1 className="sr-only">Free Technical SEO Tools: Audit, Schema Generator &amp; SERP Preview</h1>
         <SeoToolsPage />
       </div>
     </>

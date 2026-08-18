@@ -8,7 +8,7 @@ import { MapPin, CheckCircle2, ArrowRight, Star } from "lucide-react";
 export const metadata: Metadata = buildPageMetadata({
   title: "Local SEO Services in Noida — Map Pack & Local Search | Rohit Gupta",
   description:
-    "Dominate local search in Noida with Rohit Gupta. Local SEO services including Google Business Profile management, local citations, geo-targeted content, and Map Pack 3-pack rankings.",
+    "Dominate local search in Noida with Rohit Gupta: Google Business Profile optimization, local citations, geo-targeted content, and Google Maps rankings.",
   path: "/local-seo-noida/",
   keywords: [
     "Local SEO Noida",

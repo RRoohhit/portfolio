@@ -8,7 +8,7 @@ import { FileText, CheckCircle2, ArrowRight, Search, Target, BarChart3, ShieldCh
 export const metadata: Metadata = buildPageMetadata({
   title: "On-Page SEO Services — Keyword Research, Content Optimization & Meta Tags | Rohit Gupta",
   description:
-    "On-Page SEO services by Rohit Gupta: keyword research, search intent analysis, title tags, meta descriptions, H1-H6 optimization, content optimization, internal linking, image SEO, entity optimization, and CTR improvement.",
+    "On-Page SEO services by Rohit Gupta: keyword research, search intent optimization, meta tags, heading structure, internal linking, and content optimization.",
   path: "/services/on-page-seo/",
   keywords: [
     "On-Page SEO Services",

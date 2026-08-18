@@ -366,7 +366,7 @@ export const SerpMetaPreview: React.FC = () => {
             <div className="rounded-2xl bg-[#18191a] text-white overflow-hidden border border-zinc-700 shadow-2xl space-y-0 font-sans">
               <div className="h-44 bg-zinc-900 overflow-hidden relative">
                 {/* eslint-disable-next-html-element-suppression */}
-                <img src={ogImage} alt="OpenGraph Preview" className="w-full h-full object-cover" />
+                <img src={ogImage} alt="OpenGraph Preview" width={1200} height={630} className="w-full h-full object-cover" />
               </div>
               <div className="p-4 space-y-1 bg-[#242526]">
                 <span className="text-[10px] font-mono text-zinc-400 uppercase tracking-wider block">
@@ -381,7 +381,7 @@ export const SerpMetaPreview: React.FC = () => {
             <div className="rounded-2xl bg-black text-white overflow-hidden border border-zinc-800 shadow-2xl space-y-0 font-sans">
               <div className="h-44 bg-zinc-900 overflow-hidden relative">
                 {/* eslint-disable-next-html-element-suppression */}
-                <img src={ogImage} alt="Twitter Card Preview" className="w-full h-full object-cover" />
+                <img src={ogImage} alt="Twitter Card Preview" width={1200} height={630} className="w-full h-full object-cover" />
               </div>
               <div className="p-3.5 space-y-1 bg-black">
                 <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-wider block">

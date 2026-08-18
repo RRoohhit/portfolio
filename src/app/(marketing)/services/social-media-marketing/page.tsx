@@ -8,7 +8,7 @@ import { Users, CheckCircle2, ArrowRight, ShieldCheck, BarChart3 } from "lucide-
 export const metadata: Metadata = buildPageMetadata({
   title: "Social Media Marketing Services — Instagram, Facebook & LinkedIn | Rohit Gupta",
   description:
-    "Social Media Marketing by Rohit Gupta: Instagram marketing, Facebook marketing, LinkedIn marketing, social media strategy, content planning, profile optimization, competitor analysis, organic growth, and lead generation.",
+    "Social Media Marketing by Rohit Gupta: Instagram, Facebook & LinkedIn strategy, brand profile optimization, organic growth, and lead generation campaigns.",
   path: "/services/social-media-marketing/",
   keywords: [
     "Social Media Marketing Services",

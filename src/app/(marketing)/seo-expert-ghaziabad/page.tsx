@@ -8,7 +8,7 @@ import { MapPin, CheckCircle2, ArrowRight } from "lucide-react";
 export const metadata: Metadata = buildPageMetadata({
   title: "SEO Expert in Ghaziabad — Local SEO & Technical Growth | Rohit Gupta",
   description:
-    "Hire Rohit Gupta — leading SEO Expert in Ghaziabad. Technical SEO, Google Business Profile optimization, local citation building, and web development for businesses in Indirapuram, Vaishali, Raj Nagar & Ghaziabad.",
+    "Hire Rohit Gupta — top SEO Expert in Ghaziabad. Technical SEO, Google Business Profile optimization, local citation building, and web development.",
   path: "/seo-expert-ghaziabad/",
   keywords: [
     "SEO Expert in Ghaziabad",

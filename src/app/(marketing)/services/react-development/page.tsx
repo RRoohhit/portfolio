@@ -8,7 +8,7 @@ import { Code2, CheckCircle2, ArrowRight, Zap, ShieldCheck, Layers } from "lucid
 export const metadata: Metadata = buildPageMetadata({
   title: "React Development Services — Custom React & Next.js Apps | Rohit Gupta",
   description:
-    "Custom React.js web development by Rohit Gupta: component-driven architecture, high-speed single page applications, SSR/SSG integration, state management, API integration, and Core Web Vitals optimization.",
+    "Custom React development services by Rohit Gupta: high-speed web applications, component architecture, SSR/SSG rendering, and Core Web Vitals tuning.",
   path: "/services/react-development/",
   keywords: [
     "React Development Services",

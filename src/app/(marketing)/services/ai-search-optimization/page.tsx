@@ -8,7 +8,7 @@ import { Sparkles, CheckCircle2, ArrowRight, ShieldCheck, Search, AlertTriangle 
 export const metadata: Metadata = buildPageMetadata({
   title: "AI Search Optimization Services — AEO, GEO & Google AI Overviews | Rohit Gupta",
   description:
-    "AI Search Optimization by Rohit Gupta: improve brand visibility in Google AI Overviews, ChatGPT, Perplexity, and Bing Copilot through entity optimization, structured data, E-E-A-T signals, and citation-oriented content.",
+    "AI Search Optimization by Rohit Gupta: rank in Google AI Overviews, ChatGPT, and Perplexity through entity markup, Schema data, and E-E-A-T signals.",
   path: "/services/ai-search-optimization/",
   keywords: [
     "AI Search Optimization",

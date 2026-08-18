@@ -43,6 +43,7 @@ export function buildPageMetadata({
       languages: {
         "en-IN": canonicalUrl,
         en: canonicalUrl,
+        "x-default": canonicalUrl,
       },
     },
     robots: noindex

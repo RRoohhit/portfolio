@@ -8,7 +8,7 @@ import { MapPin, CheckCircle2, ArrowRight, Globe, ShieldCheck, Search, Star } fr
 export const metadata: Metadata = buildPageMetadata({
   title: "Local SEO Services & Map Pack Ranking — Rohit Gupta",
   description:
-    "Local SEO services by Rohit Gupta: Google Business Profile optimization, NAP citation audit, localized content, city landing pages, review strategy, competitor analysis, and local map pack dominance.",
+    "Local SEO services by Rohit Gupta: Google Business Profile optimization, local citations, city landing pages, review signals, and Google Maps ranking.",
   path: "/services/local-seo/",
   keywords: [
     "Local SEO Expert",

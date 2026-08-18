@@ -8,7 +8,7 @@ import { BarChart3, CheckCircle2, ArrowRight, Target, Sparkles, TrendingUp } fro
 export const metadata: Metadata = buildPageMetadata({
   title: "Digital Marketing Consultant — Rohit Gupta",
   description:
-    "Rohit Gupta provides data-driven digital marketing strategies that combine SEO, paid search, content and website optimization to help businesses attract relevant traffic and generate measurable growth.",
+    "Digital marketing consulting by Rohit Gupta: SEO, Google Ads, content strategy, and high-converting website optimization for measurable business growth.",
   path: "/services/digital-marketing/",
   keywords: [
     "Digital Marketing Consultant Rohit Gupta",

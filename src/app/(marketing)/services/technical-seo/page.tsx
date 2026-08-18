@@ -8,7 +8,7 @@ import { Zap, CheckCircle2, ArrowRight, Code2, Gauge, Search, Layers, ShieldChec
 export const metadata: Metadata = buildPageMetadata({
   title: "Technical SEO Services & Core Web Vitals Optimization — Rohit Gupta",
   description:
-    "Technical SEO services by Rohit Gupta: Core Web Vitals optimization, crawlability, indexation fixes, robots.txt, XML sitemaps, canonical tags, 301 redirects, JavaScript SEO, Schema markup, log-file analysis, and site migrations.",
+    "Technical SEO services by Rohit Gupta: Core Web Vitals optimization, crawlability, indexation fixes, sitemaps, Schema markup, and JavaScript SEO tuning.",
   path: "/services/technical-seo/",
   keywords: [
     "Technical SEO Specialist",

@@ -8,7 +8,7 @@ import { MapPin, CheckCircle2, ArrowRight } from "lucide-react";
 export const metadata: Metadata = buildPageMetadata({
   title: "Google Business Profile SEO in Noida — GBP & Google Maps Expert | Rohit Gupta",
   description:
-    "Google Business Profile SEO specialist in Noida. Optimize your GBP, select the right categories, build review signals, and rank in the Google Maps 3-Pack across Noida & Delhi NCR.",
+    "Google Business Profile SEO specialist in Noida. Optimize your GBP, manage categories and review signals, and rank in the Google Maps 3-Pack across Noida.",
   path: "/google-business-profile-seo-noida/",
   keywords: [
     "Google Business Profile SEO Noida",

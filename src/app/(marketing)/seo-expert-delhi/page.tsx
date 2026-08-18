@@ -8,7 +8,7 @@ import { MapPin, CheckCircle2, ArrowRight } from "lucide-react";
 export const metadata: Metadata = buildPageMetadata({
   title: "SEO Expert in Delhi — Organic Growth & Technical SEO Consultant | Rohit Gupta",
   description:
-    "Hire Rohit Gupta — premier SEO Expert in Delhi. Technical SEO, local search optimization, content strategy, and Google Ads management for businesses across Connaught Place, South Delhi, Janakpuri, Dwarka & Delhi NCR.",
+    "Hire Rohit Gupta — premier SEO Expert in Delhi. Technical SEO, local search optimization, content strategy, and Google Ads management across Delhi NCR.",
   path: "/seo-expert-delhi/",
   keywords: [
     "SEO Expert in Delhi",

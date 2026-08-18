@@ -9,7 +9,7 @@ import { Search, CheckCircle2, ArrowRight, ShieldCheck, Zap, BarChart3, FileText
 export const metadata: Metadata = buildPageMetadata({
   title: "Free SEO Audit & Website SEO Analysis — Rohit Gupta",
   description:
-    "Request a free SEO audit by Rohit Gupta. Comprehensive technical SEO, on-page, keyword, competitor, Core Web Vitals, local SEO, and backlink audit for your website.",
+    "Request a free SEO audit by Rohit Gupta. Get a complete technical SEO, Core Web Vitals, on-page keyword, local search, and backlink audit for your site.",
   path: "/seo-audit/",
   keywords: [
     "Free SEO Audit",

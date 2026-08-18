@@ -9,7 +9,7 @@ import { CONTACT } from "@/config/site";
 export const metadata: Metadata = buildPageMetadata({
   title: "SEO Expert in Noida — Technical SEO & Growth Consultant | Rohit Gupta",
   description:
-    "Hire Rohit Gupta — leading SEO Expert in Noida. Specializing in Technical SEO, Local Map Pack dominance, Google Business Profile SEO, and web performance for businesses across Noida Sector 18, 62, 63, Greater Noida & Delhi NCR.",
+    "Hire Rohit Gupta — top SEO Expert in Noida. Specializing in Technical SEO, Google Maps 3-Pack, local business growth, and Next.js web development.",
   path: "/seo-expert-noida/",
   keywords: [
     "SEO Expert in Noida",

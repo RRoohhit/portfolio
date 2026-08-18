@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = buildPageMetadata({
   title: "Rohit Gupta — SEO Expert, Digital Marketing Consultant & Web Developer",
   description:
-    "About Rohit Gupta — SEO specialist, digital marketing consultant and full-stack web developer focused on technical SEO, white hat practices, Next.js development and online growth.",
+    "About Rohit Gupta — SEO specialist & web developer focused on technical SEO, Core Web Vitals, Next.js web applications, and measurable business growth.",
   path: "/rohit-gupta/",
   keywords: [
     "Rohit Gupta",

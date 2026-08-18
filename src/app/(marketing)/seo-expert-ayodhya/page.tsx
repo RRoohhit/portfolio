@@ -8,7 +8,7 @@ import { MapPin, CheckCircle2, ArrowRight } from "lucide-react";
 export const metadata: Metadata = buildPageMetadata({
   title: "SEO Expert in Ayodhya — Tourism, Hospitality & Local SEO | Rohit Gupta",
   description:
-    "Hire Rohit Gupta — SEO Expert in Ayodhya (Permanent Base). Tourism SEO, hospitality search visibility, Google Business Profile optimization, and website development for growing Ayodhya businesses.",
+    "Hire Rohit Gupta — SEO Expert in Ayodhya. Tourism SEO, hospitality search visibility, Google Business Profile setup, and website development in Ayodhya.",
   path: "/seo-expert-ayodhya/",
   keywords: [
     "SEO Expert in Ayodhya",

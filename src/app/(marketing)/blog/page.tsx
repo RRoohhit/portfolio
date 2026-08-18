@@ -7,7 +7,7 @@ import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
 export const metadata: Metadata = buildPageMetadata({
   title: "SEO Blog & Hiring Guides: On-Page, Off-Page, Backlinks, WordPress & Shopify",
   description:
-    "In-depth SEO articles and hiring guides: on-page & off-page SEO, black hat vs white hat experts, backlink building, digital marketing, WordPress and Shopify developers - written by a technical SEO specialist in India.",
+    "Read actionable SEO articles and hiring guides on technical SEO, Core Web Vitals, white-hat link building, and Next.js development by Rohit Gupta.",
   path: "/blog",
   keywords: [
     "SEO blog",

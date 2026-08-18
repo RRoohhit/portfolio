@@ -8,7 +8,7 @@ import { ShoppingCart, CheckCircle2, ArrowRight, Search, ShieldCheck, Target, La
 export const metadata: Metadata = buildPageMetadata({
   title: "E-Commerce SEO Services — Shopify, WooCommerce & Product Page Optimization | Rohit Gupta",
   description:
-    "E-Commerce SEO by Rohit Gupta: Shopify SEO, WooCommerce SEO, product page optimization, category page SEO, product schema, faceted navigation fixes, duplicate URL resolution, and conversion-focused keyword strategy.",
+    "E-Commerce SEO by Rohit Gupta: Shopify & WooCommerce SEO, product page optimization, category structure, Product schema markup, and organic revenue growth.",
   path: "/services/ecommerce-seo/",
   keywords: [
     "E-Commerce SEO Services",

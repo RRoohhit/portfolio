@@ -8,7 +8,7 @@ import { Code2, CheckCircle2, ArrowRight, Zap, ShieldCheck, Layers, ShoppingCart
 export const metadata: Metadata = buildPageMetadata({
   title: "Web Development Services — SEO-Friendly React & Next.js Websites | Rohit Gupta",
   description:
-    "Web development services by Rohit Gupta: Business website development, SEO-friendly websites, React development, Next.js 15 apps, e-commerce stores, website redesigns, speed tuning, and full-stack web applications.",
+    "Web development services by Rohit Gupta: SEO-friendly React & Next.js websites, high-speed business web apps, e-commerce stores, and website redesigns.",
   path: "/services/web-development/",
   keywords: [
     "Web Development Services",

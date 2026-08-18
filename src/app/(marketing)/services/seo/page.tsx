@@ -9,7 +9,7 @@ import { CONTACT } from "@/config/site";
 export const metadata: Metadata = buildPageMetadata({
   title: "SEO Services by Rohit Gupta — Technical, Local, On-Page & White Hat SEO",
   description:
-    "Data-driven SEO services by Rohit Gupta: Technical SEO, On-Page SEO, Off-Page SEO, Local SEO, Google Business Profile SEO, E-Commerce SEO, International SEO, and AI Search Optimization.",
+    "Data-driven SEO services by Rohit Gupta: Technical SEO, On-Page, Off-Page, Local SEO, E-Commerce SEO, and AI Search Optimization for sustainable growth.",
   path: "/services/seo/",
   keywords: [
     "SEO Services by Rohit Gupta",

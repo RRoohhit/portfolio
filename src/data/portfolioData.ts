@@ -100,7 +100,7 @@ export const SEO_TOOLS = [
 export const CASE_STUDIES: ProjectCaseStudy[] = [
   {
     id: "project-megamind-portal",
-    title: "E-Commerce Tech Platform: 400% Organic Traffic Surge & Core Web Vitals Re-Architecture",
+    title: "E-Commerce SEO & Next.js Case Study",
     category: "Full Stack Development & Technical SEO",
     client: "Megamind Tech Client (Delhi)",
     timeline: "3 Months (2026)",
@@ -169,7 +169,7 @@ export default function OptimizedProductPage({ product }) {
   },
   {
     id: "project-thingbiz-b2b",
-    title: "B2B Tech Portal Optimization: Rank #1 Dominance & High-Intent Conversion Engine",
+    title: "B2B Tech Portal SEO Case Study",
     category: "On-Page, Off-Page & Technical SEO Strategy",
     client: "Thingbiz Hightech (Noida Sector-63)",
     timeline: "4 Months (2025-2026)",

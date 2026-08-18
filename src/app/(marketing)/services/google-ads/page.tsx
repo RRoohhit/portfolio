@@ -8,7 +8,7 @@ import { TrendingUp, CheckCircle2, ArrowRight, ShieldCheck, Target, BarChart3 } 
 export const metadata: Metadata = buildPageMetadata({
   title: "Google Ads Management Services — PPC, Search & Performance Max | Rohit Gupta",
   description:
-    "Google Ads management by Rohit Gupta: Search campaigns, Performance Max, keyword research, negative keywords, ad copy, landing pages, conversion tracking, GA4 setup, Quality Score optimization, and monthly performance reporting.",
+    "Google Ads management by Rohit Gupta: Search campaigns, Performance Max, ad copy, landing page optimization, conversion tracking, and high ROI PPC setup.",
   path: "/services/google-ads/",
   keywords: [
     "Google Ads Management",
