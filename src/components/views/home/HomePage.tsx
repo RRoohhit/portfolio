@@ -336,9 +336,9 @@ export const HomePage: React.FC = () => {
                 <FastForward className="w-3.5 h-3.5 text-emerald-400" />
                 <span>Sub-Second Performance &amp; Google Core Web Vitals</span>
               </div>
-              <h3 className="text-base sm:text-xl lg:text-2xl font-black text-white uppercase tracking-tight leading-tight">
+              <h2 className="text-base sm:text-xl lg:text-2xl font-black text-white uppercase tracking-tight leading-tight">
                 Verified 99–100/100 Lighthouse Performance Benchmarks
-              </h3>
+              </h2>
             </div>
             <div className="btn-3d-emerald text-[10px] sm:text-xs py-2 px-4 shrink-0 pointer-events-none">
               ⚡ Lighthouse 99/100 Certified

@@ -150,7 +150,7 @@ export const Footer: React.FC = () => {
 
             {/* Social Media Buttons Bar */}
             <div className="space-y-2 pt-1">
-              <span className="text-[10px] font-mono uppercase text-zinc-500 font-bold tracking-wider">Connect &amp; Follow</span>
+              <span className="text-[10px] font-mono uppercase text-zinc-300 font-bold tracking-wider">Connect &amp; Follow</span>
               <div className="flex items-center gap-2">
                 <a
                   href={CONTACT.whatsapp}
@@ -206,9 +206,9 @@ export const Footer: React.FC = () => {
                 <li key={nav.href}>
                   <Link
                     href={nav.href}
-                    className="text-zinc-400 hover:text-emerald-400 transition-colors flex items-center gap-1.5 group w-fit"
+                    className="text-zinc-300 hover:text-emerald-400 transition-colors flex items-center gap-1.5 group w-fit"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-zinc-800 group-hover:bg-emerald-400 transition-colors flex-shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-zinc-700 group-hover:bg-emerald-400 transition-colors flex-shrink-0" />
                     {nav.label}
                   </Link>
                 </li>
@@ -226,9 +226,9 @@ export const Footer: React.FC = () => {
                 <li key={nav.href}>
                   <Link
                     href={nav.href}
-                    className="text-zinc-400 hover:text-emerald-400 transition-colors flex items-center gap-1.5 group w-fit"
+                    className="text-zinc-300 hover:text-emerald-400 transition-colors flex items-center gap-1.5 group w-fit"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-zinc-800 group-hover:bg-emerald-400 transition-colors flex-shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-zinc-700 group-hover:bg-emerald-400 transition-colors flex-shrink-0" />
                     {nav.label}
                   </Link>
                 </li>
@@ -246,9 +246,9 @@ export const Footer: React.FC = () => {
                 <li key={nav.href}>
                   <Link
                     href={nav.href}
-                    className="text-zinc-400 hover:text-emerald-400 transition-colors flex items-center gap-1.5 group w-fit"
+                    className="text-zinc-300 hover:text-emerald-400 transition-colors flex items-center gap-1.5 group w-fit"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-zinc-800 group-hover:bg-emerald-400 transition-colors flex-shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-zinc-700 group-hover:bg-emerald-400 transition-colors flex-shrink-0" />
                     {nav.label}
                   </Link>
                 </li>
@@ -259,26 +259,26 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-6 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono text-zinc-500">
+        <div className="pt-6 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono text-zinc-300">
           <div className="text-center sm:text-left">
             © {new Date().getFullYear()} Rohit Gupta. All Rights Reserved.{" "}
-            <span className="text-zinc-600">SEO Expert, Digital Marketing Consultant &amp; Web Developer.</span>
+            <span className="text-zinc-300 font-normal">SEO Expert, Digital Marketing Consultant &amp; Web Developer.</span>
           </div>
           <div className="flex items-center gap-4">
             <a
               href={CONTACT.googleMaps}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-emerald-400 transition-colors flex items-center gap-1 text-zinc-400"
+              className="hover:text-emerald-400 transition-colors flex items-center gap-1 text-zinc-300"
             >
               <MapPin className="w-3 h-3 text-emerald-400" />
               Google Maps
             </a>
-            <span className="text-zinc-800">|</span>
-            <Link href="/rohit-gupta" className="hover:text-emerald-400 transition-colors">
+            <span className="text-zinc-700">|</span>
+            <Link href="/rohit-gupta" className="text-zinc-300 hover:text-emerald-400 transition-colors">
               About Rohit
             </Link>
-            <span className="text-zinc-800">|</span>
+            <span className="text-zinc-700">|</span>
             <BackToTopButton />
           </div>
         </div>

@@ -182,7 +182,7 @@ export const FaqSection: React.FC = () => {
                 >
                   <div className="space-y-1.5 min-w-0 flex-1">
                     <div className="flex items-center gap-2 flex-wrap">
-                      <span className="text-[9px] font-mono font-bold text-white/30">
+                      <span className="text-[9px] font-mono font-bold text-emerald-400">
                         #{String(idx + 1).padStart(2, "0")}
                       </span>
                       <span
