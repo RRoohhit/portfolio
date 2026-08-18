@@ -15,12 +15,14 @@ export const CONTACT = {
   currentLocation: "Gali No. 7, Block M, Mamura, Sector 66, Noida, Uttar Pradesh 201309",
   location: "Noida & Ayodhya, UP, India",
   serving: "Based in Noida & Ayodhya, UP, India · Serving clients across India and internationally",
+  googleMaps: "https://share.google/cqewWmS35Q5m53u5C",
 } as const;
 
 export const SOCIALS = {
-  linkedin: "https://www.linkedin.com/in/rohit-gupta-seo",
-  github: "https://github.com/rohitguptacodec",
-  twitter: "https://x.com/rohitguptacodec",
+  linkedin: "https://www.linkedin.com/in/rohit-gupta-seo1",
+  instagram: "https://www.instagram.com/rohitguptaseoin",
+  github: "#",
+  twitter: "#",
   whatsapp: CONTACT.whatsapp,
 } as const;
 

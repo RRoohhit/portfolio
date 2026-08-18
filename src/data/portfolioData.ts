@@ -317,8 +317,8 @@ export const WHY_HIRE = [
   { metric: "200+ Sites", label: "optimized & ranked across India" },
   { metric: "2 Years", label: "White Hat SEO & Dev experience" },
   { metric: "4,766%", label: "avg. organic traffic growth" },
-  { metric: "99/100", label: "Core Web Vitals guarantee" },
-  { metric: "Rank #1", label: "targeted keyword positioning" },
+  { metric: "99/100", label: "Core Web Vitals achieved" },
+  { metric: "Top-3", label: "targeted search visibility" },
   { metric: "AI Ready", label: "citations in AI Overviews & ChatGPT" }
 ] as const;
 

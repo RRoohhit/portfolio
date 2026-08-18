@@ -10,11 +10,12 @@ import { LazySection } from "@/components/ui/LazySection";
 import { Reveal } from "@/components/ui/Reveal";
 import { useAudit } from "@/components/providers/AuditProvider";
 import heroPortraitImg from "@/assets/images/rohit-gupta-seo.webp";
+import { CONTACT } from "@/config/site";
 import {
   TrendingUp, Award, Zap, ArrowRight, CheckCircle2, MapPin,
   Sparkles, Code2, Search, Target, Gauge, Star,
   Activity, Globe, BarChart3, Layers, ShieldCheck,
-  Cpu, LayoutGrid, Check, ExternalLink, Route, LineChart, FileText, FastForward,
+  Cpu, LayoutGrid, Check, ExternalLink, Route, LineChart, FileText, FastForward, MessageSquare,
 } from "lucide-react";
 
 const MARQUEE_SERVICES = [
@@ -182,10 +183,10 @@ export const HomePage: React.FC = () => {
           <Reveal direction="right" distance={40} className="lg:col-span-7 space-y-5 sm:space-y-6 lg:space-y-8 relative z-20">
 
             <div className="space-y-3 sm:space-y-4">
-              {/* Available badge */}
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] sm:text-[11px] font-mono font-bold uppercase tracking-wider">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                Available for SEO &amp; Web Development Projects
+              {/* Available badge — Always single line on all devices */}
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[9px] min-[380px]:text-[10px] sm:text-[11px] font-mono font-bold uppercase tracking-wider whitespace-nowrap max-w-full overflow-hidden shrink-0 select-none">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+                <span className="truncate">Available for SEO &amp; Web Development Projects</span>
               </div>
               <h1 className="text-[1.75rem] sm:text-4xl lg:text-[2.75rem] xl:text-5xl font-black text-white tracking-tight leading-[1.1] sm:leading-[1.08]">
                 Rohit Gupta —{" "}
@@ -206,20 +207,36 @@ export const HomePage: React.FC = () => {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3.5">
+            {/* Hero CTAs: Button 1 full line on mobile; Buttons 2 & 3 side-by-side in 1 line on mobile */}
+            <div className="space-y-2.5 sm:space-y-0 sm:flex sm:flex-wrap sm:items-center sm:gap-3.5 w-full">
+              {/* Button 1: Get SEO Consultation */}
               <Link
                 href="/contact"
-                className="btn-3d-emerald group text-xs font-mono font-black"
+                className="btn-3d-emerald group text-xs font-mono font-black w-full sm:w-auto justify-center flex items-center gap-2 py-3.5 px-5 shadow-lg"
               >
-                Get SEO Consultation
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                <span>Get SEO Consultation</span>
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1 shrink-0" />
               </Link>
-              <Link
-                href="/case-studies"
-                className="btn-3d-dark text-xs font-mono font-bold"
-              >
-                View Case Studies
-              </Link>
+
+              {/* Buttons 2 & 3: Side-by-side in ONE line on mobile */}
+              <div className="grid grid-cols-2 gap-2 sm:flex sm:items-center sm:gap-3 w-full sm:w-auto">
+                <Link
+                  href="/case-studies"
+                  className="btn-3d-dark text-[10px] sm:text-xs font-mono font-bold text-center justify-center flex items-center py-3 px-2 sm:px-4 leading-none truncate"
+                >
+                  <span className="truncate">View Case Studies</span>
+                </Link>
+
+                <a
+                  href={`${CONTACT.whatsapp}?text=${encodeURIComponent(CONTACT.whatsappText)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-3d-dark text-[10px] sm:text-xs font-mono font-bold text-center justify-center flex items-center gap-1.5 py-3 px-2 sm:px-4 leading-none hover:text-emerald-400 truncate"
+                >
+                  <MessageSquare className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                  <span className="truncate">WhatsApp Me</span>
+                </a>
+              </div>
             </div>
 
             <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-x-4 gap-y-2.5 pt-1">

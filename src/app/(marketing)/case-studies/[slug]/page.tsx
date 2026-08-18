@@ -146,16 +146,46 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
           </div>
         </section>
 
-        {/* Step 5: Evidence */}
+        {/* Step 5: Timeline & Lessons */}
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4 shadow-xl">
           <div className="flex items-center gap-2 text-purple-400 font-mono text-xs font-bold uppercase tracking-wider">
             <ShieldCheck className="w-4 h-4" />
-            <span>5. Technical Evidence &amp; Verification</span>
+            <span>5. Timeline &amp; Key Lessons Learned</span>
           </div>
-          <h2 className="text-xl font-bold text-white tracking-tight">Tools &amp; Code Architecture</h2>
-          <div className="space-y-3 text-xs font-mono">
+          <h2 className="text-xl font-bold text-white tracking-tight">Strategy Execution &amp; Key Takeaways</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+            <div className="p-4 rounded-2xl bg-black border border-white/10 space-y-1">
+              <span className="text-xs font-mono font-bold text-emerald-400">Month 1 — Audit &amp; Technical Fixes</span>
+              <p className="text-xs text-white/70 leading-relaxed font-light">Crawl audit, indexing fixes, Core Web Vitals optimization, robots.txt, and sitemaps.</p>
+            </div>
+            <div className="p-4 rounded-2xl bg-black border border-white/10 space-y-1">
+              <span className="text-xs font-mono font-bold text-emerald-400">Month 2 — On-Page &amp; Schema</span>
+              <p className="text-xs text-white/70 leading-relaxed font-light">Keyword mapping, title/meta rewrite, H1-H6 structure, internal links, and JSON-LD schema.</p>
+            </div>
+            <div className="p-4 rounded-2xl bg-black border border-white/10 space-y-1">
+              <span className="text-xs font-mono font-bold text-emerald-400">Month 3 — Authority &amp; Scaling</span>
+              <p className="text-xs text-white/70 leading-relaxed font-light">White-hat backlink outreach, local citation building, and Search Console rank tracking.</p>
+            </div>
+          </div>
+          <div className="space-y-3 text-xs font-mono pt-3 border-t border-white/10">
             <div className="text-white/60">Tools Utilized: {cs.toolsUsed.join(", ")}</div>
             <div className="text-white/60">Target Keywords: {cs.keywordsTargeted.join(", ")}</div>
+          </div>
+        </section>
+
+        {/* CTA Box */}
+        <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/40 via-zinc-950 to-zinc-950 border border-emerald-500/30 text-center space-y-5 shadow-2xl">
+          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Want Similar Organic Results for Your Business?</h2>
+          <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
+            Get a free, detailed technical and on-page SEO audit to uncover the exact growth opportunities for your website.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link href="/seo-audit" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
+              Request Free SEO Audit
+            </Link>
+            <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors">
+              Contact Rohit Gupta
+            </Link>
           </div>
         </section>
       </div>

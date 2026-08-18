@@ -33,7 +33,9 @@ export function profilePageGraph(): object {
       "url": `${SITE_URL}/rohit-gupta/`,
       "sameAs": [
         SOCIALS.linkedin,
+        SOCIALS.instagram,
         SOCIALS.github,
+        SOCIALS.twitter,
       ],
     },
   };
@@ -73,6 +75,7 @@ export function organizationGraph(): object {
         "worksFor": { "@id": `${SITE_URL}/#service` },
         "sameAs": [
           SOCIALS.linkedin,
+          SOCIALS.instagram,
           SOCIALS.github,
           SOCIALS.twitter,
         ],
@@ -125,6 +128,7 @@ export function organizationGraph(): object {
         },
         "sameAs": [
           SOCIALS.linkedin,
+          SOCIALS.instagram,
           SOCIALS.github,
           SOCIALS.twitter,
         ],
@@ -145,6 +149,7 @@ export function organizationGraph(): object {
               "@type": "Service",
               "name": "SEO Specialist Services India",
               "serviceType": "Search Engine Optimization",
+              "url": `${SITE_URL}/services/seo/`,
             },
           },
           {
@@ -153,22 +158,70 @@ export function organizationGraph(): object {
               "@type": "Service",
               "name": "Technical SEO Audit & Core Web Vitals",
               "serviceType": "Technical SEO",
+              "url": `${SITE_URL}/services/technical-seo/`,
             },
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Local SEO Services (Google Business)",
+              "name": "Google Business Profile SEO & Map Pack",
               "serviceType": "Local SEO",
+              "url": `${SITE_URL}/services/google-business-profile-seo/`,
             },
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "E-Commerce SEO Expert",
+              "name": "On-Page SEO & Content Optimization",
+              "serviceType": "On-Page SEO",
+              "url": `${SITE_URL}/services/on-page-seo/`,
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Off-Page SEO & Link Building",
+              "serviceType": "Off-Page SEO",
+              "url": `${SITE_URL}/services/off-page-seo/`,
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Local SEO Services",
+              "serviceType": "Local SEO",
+              "url": `${SITE_URL}/services/local-seo/`,
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "E-Commerce SEO Expert (Shopify & WooCommerce)",
               "serviceType": "E-Commerce SEO",
+              "url": `${SITE_URL}/services/ecommerce-seo/`,
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Search Optimization (AEO / GEO)",
+              "serviceType": "AI Search Optimization",
+              "url": `${SITE_URL}/services/ai-search-optimization/`,
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Google Ads & PPC Management",
+              "serviceType": "PPC Management",
+              "url": `${SITE_URL}/services/google-ads/`,
             },
           },
           {
@@ -177,6 +230,7 @@ export function organizationGraph(): object {
               "@type": "Service",
               "name": "Full Stack Web Development (React, Next.js)",
               "serviceType": "Web Development",
+              "url": `${SITE_URL}/services/web-development/`,
             },
           },
         ],

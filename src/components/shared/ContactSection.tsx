@@ -194,16 +194,25 @@ export const ContactSection: React.FC = () => {
                 </div>
               </a>
 
-              <div className="card-3d flex items-center gap-3.5 p-3.5">
-                <div className="icon-3d w-10 h-10 rounded-xl text-purple-400 shrink-0">
+              <a
+                href={CONTACT.googleMaps}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Open location in Google Maps"
+                className="card-3d flex items-center gap-3.5 p-3.5 hover:border-emerald-500/40 transition-colors group cursor-pointer"
+              >
+                <div className="icon-3d w-10 h-10 rounded-xl text-purple-400 group-hover:text-emerald-400 shrink-0 transition-colors">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-[10px] text-zinc-500 uppercase">Primary Location</div>
-                  <div className="text-white font-bold">{CONTACT.location}</div>
-                  <div className="text-[10px] text-zinc-400">Delhi / Noida Experience</div>
+                  <div className="text-[10px] text-zinc-500 uppercase flex items-center gap-1">
+                    Primary Location
+                    <span className="text-emerald-400 font-mono text-[9px] font-bold underline">(Open Maps)</span>
+                  </div>
+                  <div className="text-white font-bold group-hover:text-emerald-400 transition-colors">{CONTACT.location}</div>
+                  <div className="text-[10px] text-zinc-400">Noida &amp; Ayodhya, India</div>
                 </div>
-              </div>
+              </a>
             </div>
 
             {/* Direct WhatsApp CTA Button */}
@@ -233,7 +242,6 @@ export const ContactSection: React.FC = () => {
 
         {/* Right Column: Project Inquiry Form */}
         <Reveal direction="left" delay={0.1} className="lg:col-span-3">
-        <div className="lg:col-span-3">
           <form 
             onSubmit={handleSubmit} 
             noValidate 
@@ -418,7 +426,6 @@ export const ContactSection: React.FC = () => {
               )}
             </button>
           </form>
-        </div>
         </Reveal>
 
       </div>

@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { CONTACT, SOCIALS } from "@/config/site";
 import heroPortraitImg from "@/assets/images/rohit-gupta-seo.webp";
 import {
-  CheckCircle2, ArrowRight, MapPin, Mail, Phone, Code2, Search, Target, Globe, Zap, ShieldCheck, Linkedin, Github, Twitter
+  CheckCircle2, ArrowRight, MapPin, Mail, Phone, Code2, Search, Target, Globe, Zap, ShieldCheck, Linkedin, Github, Twitter, Instagram
 } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
@@ -184,16 +184,81 @@ export default function RohitGuptaPage() {
           </div>
         </section>
 
-        {/* My Approach to SEO */}
+        {/* My Approach to SEO & White Hat Philosophy */}
         <section className="card-3d-interactive p-6 sm:p-8 space-y-5 shadow-2xl">
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <Zap className="w-5 h-5 text-emerald-400" />
-            My Approach to SEO
+            My White-Hat SEO Philosophy &amp; Methodology
           </h2>
           <div className="space-y-4 text-sm sm:text-base text-white/80 leading-relaxed font-light">
             <p>
-              I focus primarily on ethical, white hat SEO practices. My process includes technical analysis, search-intent research, content optimization, internal linking, structured data, website performance and legitimate authority building.
+              I focus exclusively on ethical, White-Hat SEO tactics aligned with Google's official Search Essentials guidelines. I do not use private blog networks (PBNs), link buying schemes, or automated keyword-stuffed content — tactics that create temporary spikes followed by permanent algorithmic penalties.
             </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              {[
+                { title: "1. Technical Foundation", desc: "Audit and fix crawlability, Core Web Vitals, indexation, sitemaps, canonicals, and schema markup." },
+                { title: "2. Intent & Keyword Architecture", desc: "Research exact buyer & user intent, map keywords to specific landing pages, and structure content logically." },
+                { title: "3. On-Page & Semantic SEO", desc: "Optimize title tags, H1-H6 headers, internal link equity, alt-text, entities, and rich content depth." },
+                { title: "4. Ethical Authority Building", desc: "Earn contextual dofollow links via digital PR, unlinked brand mentions, local citations, and resource outreach." },
+              ].map((step, idx) => (
+                <div key={idx} className="p-4 rounded-2xl bg-zinc-950 border border-white/10 space-y-1">
+                  <h3 className="text-sm font-bold text-emerald-400 font-mono">{step.title}</h3>
+                  <p className="text-xs text-white/70 leading-relaxed">{step.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Why Clients Choose Rohit */}
+        <section className="card-3d-interactive p-6 sm:p-8 space-y-5 shadow-2xl">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <ShieldCheck className="w-5 h-5 text-emerald-400" />
+            Why Clients Work With Me
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { title: "Developer + SEO Hybrid", desc: "I write clean React/Next.js/Node.js code myself — meaning I don't just point out technical errors, I fix them directly in the codebase." },
+              { title: "Transparent & Measurable", desc: "No opaque reporting or fluff metrics. Monthly reports track ranking movements, organic traffic growth, impressions, and conversions." },
+              { title: "100% Penalty-Free Guarantee", desc: "Strict adherence to White-Hat standards means your website's search equity is protected across Google core updates." },
+              { title: "Direct Communication", desc: "You work directly with me — the technical specialist executing the work — ensuring zero miscommunication." },
+            ].map((reason, idx) => (
+              <div key={idx} className="p-4 rounded-2xl bg-zinc-950 border border-white/10 space-y-1">
+                <h3 className="text-sm font-bold text-white tracking-tight">{reason.title}</h3>
+                <p className="text-xs text-white/70 leading-relaxed font-light">{reason.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Industries & Locations Served */}
+        <section className="card-3d-interactive p-6 sm:p-8 space-y-5 shadow-2xl">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <MapPin className="w-5 h-5 text-emerald-400" />
+            Industries &amp; Locations Served
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm text-white/80">
+            <div className="space-y-2">
+              <h3 className="text-xs font-mono uppercase text-emerald-400 font-bold tracking-wider">Industries Served</h3>
+              <ul className="space-y-1 text-xs text-white/75">
+                <li>• E-Commerce & Retail (Shopify, WooCommerce, Next.js)</li>
+                <li>• B2B Tech, SaaS & Enterprise Portals</li>
+                <li>• Local Service Businesses (Legal, Clinics, Home Services)</li>
+                <li>• Tourism, Hospitality & Heritage Projects</li>
+                <li>• Educational Institutions & EdTech Platforms</li>
+              </ul>
+            </div>
+            <div className="space-y-2">
+              <h3 className="text-xs font-mono uppercase text-emerald-400 font-bold tracking-wider">Locations Served</h3>
+              <ul className="space-y-1 text-xs text-white/75">
+                <li>• <Link href="/seo-expert-noida" className="hover:text-emerald-400 underline">Noida & Greater Noida</Link> (Current Base)</li>
+                <li>• <Link href="/seo-expert-delhi" className="hover:text-emerald-400 underline">Delhi NCR</Link> (Connaught Place, South/West Delhi)</li>
+                <li>• <Link href="/seo-expert-gurgaon" className="hover:text-emerald-400 underline">Gurgaon</Link> (Cyber City, B2B Hubs)</li>
+                <li>• <Link href="/seo-expert-ghaziabad" className="hover:text-emerald-400 underline">Ghaziabad & Lucknow</Link></li>
+                <li>• <Link href="/seo-expert-ayodhya" className="hover:text-emerald-400 underline">Ayodhya</Link> (Permanent Base)</li>
+                <li>• All of India & International Remote Clients</li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -209,6 +274,15 @@ export default function RohitGuptaPage() {
             >
               <Linkedin className="w-4 h-4 text-blue-400" />
               LinkedIn Profile
+            </a>
+            <a
+              href={SOCIALS.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-3d-dark text-xs font-mono font-bold"
+            >
+              <Instagram className="w-4 h-4 text-pink-400" />
+              Instagram Profile
             </a>
             <a
               href={SOCIALS.github}

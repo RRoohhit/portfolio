@@ -28,6 +28,7 @@ const TAB_PATHS: Record<string, string> = {
   home: "/",
   "rohit-gupta": "/rohit-gupta",
   services: "/services",
+  "seo-audit": "/seo-audit",
   "case-studies": "/case-studies",
   projects: "/projects",
   "seo-tools": "/seo-tools",
@@ -65,6 +66,7 @@ const NAV_ITEMS = [
   { id: "home", label: "Home" },
   { id: "rohit-gupta", label: "About" },
   { id: "services", label: "Services" },
+  { id: "seo-audit", label: "SEO Audit" },
   { id: "case-studies", label: "Case Studies" },
   { id: "seo-tools", label: "SEO Tools" },
   { id: "blog", label: "Blog" },
@@ -76,6 +78,7 @@ const categorizedNav: NavCategory[] = [
     category: "Core Pages",
     items: [
       { id: "home", label: "Home Overview", icon: Home, desc: "Featured Highlights & Expertise" },
+      { id: "seo-audit", label: "Free SEO Audit", icon: Zap, desc: "Technical & On-Page SEO Analysis", badge: "Free" },
       { id: "projects", label: "Featured Projects", icon: FolderGit2, desc: "Case Studies & Live Demos" },
       { id: "contact", label: "Contact & Hire", icon: Mail, desc: "Schedule Audit or Hire Specialist" },
     ],
@@ -187,10 +190,10 @@ export const Navbar: React.FC = () => {
           "fixed inset-x-0 top-0 z-50 h-[68px] transition-all duration-500 ease-out",
           mounted && scrolled
             ? [
-                "bg-[#050505]/88 backdrop-blur-2xl",
-                "border-b border-white/[0.06]",
-                "shadow-[0_1px_0_0_rgba(255,255,255,0.04),0_16px_64px_-8px_rgba(0,0,0,0.85),0_4px_24px_-4px_rgba(52,211,153,0.05)]",
-              ].join(" ")
+              "bg-[#050505]/88 backdrop-blur-2xl",
+              "border-b border-white/[0.06]",
+              "shadow-[0_1px_0_0_rgba(255,255,255,0.04),0_16px_64px_-8px_rgba(0,0,0,0.85),0_4px_24px_-4px_rgba(52,211,153,0.05)]",
+            ].join(" ")
             : "bg-transparent border-b border-transparent",
         ].join(" ")}
       >
@@ -268,7 +271,7 @@ export const Navbar: React.FC = () => {
             <div
               ref={navRef}
               className={[
-                "relative flex items-center p-1",
+                "relative flex items-center h-[36px] p-1",
                 "bg-white/[0.04] border border-white/[0.08]",
                 "backdrop-blur-xl rounded-full",
                 /* Inset top highlight + bottom shadow = 3D card depth */
@@ -331,7 +334,7 @@ export const Navbar: React.FC = () => {
               rel="noopener noreferrer"
               className={[
                 "group relative hidden lg:inline-flex items-center gap-2",
-                "px-4 py-2 rounded-full overflow-hidden",
+                "h-[36px] px-4 rounded-full overflow-hidden",
                 "text-[10px] uppercase tracking-wider font-black font-mono whitespace-nowrap",
                 "bg-gradient-to-r from-emerald-500 to-teal-400 text-black",
                 "shadow-[0_0_20px_rgba(52,211,153,0.3),0_2px_8px_rgba(52,211,153,0.25),inset_0_1px_0_rgba(255,255,255,0.25)]",
