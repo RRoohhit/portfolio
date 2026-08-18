@@ -35,9 +35,14 @@ export default function Contact() {
             { name: "Contact" },
           ]}
         />
-        <h1 className="sr-only">
-          Contact SEO Specialist &amp; Expert Rohit Gupta in Noida, Delhi, India
-        </h1>
+        <div className="space-y-4 max-w-4xl mx-auto text-center sm:text-left">
+          <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+            Contact SEO Specialist &amp; Web Developer Rohit Gupta
+          </h1>
+          <p className="text-sm sm:text-base text-white/80 leading-relaxed font-light">
+            Ready to scale your organic search visibility, eliminate technical SEO bottlenecks, or build a high-speed React / Next.js web application? Get in touch directly with Rohit Gupta. Whether you need a comprehensive website audit, local Google Maps 3-Pack optimization in Noida/Delhi NCR, or a full digital growth strategy, submit your inquiry below or reach out via WhatsApp and phone for immediate assistance.
+          </p>
+        </div>
         <ContactSection />
       </div>
     </>

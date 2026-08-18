@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { BarChart3, CheckCircle2, ArrowRight, Target, Sparkles, TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Digital Marketing Consultant — Rohit Gupta",
+  title: "Digital Marketing Consultant Services | Rohit Gupta",
   description:
     "Digital marketing consulting by Rohit Gupta: SEO, Google Ads, content strategy, and high-converting website optimization for measurable business growth.",
   path: "/services/digital-marketing/",
@@ -55,35 +55,44 @@ export default function DigitalMarketingPage() {
           </p>
         </header>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {[
-            {
-              title: "Search Engine Optimization (SEO)",
-              desc: "Combining technical audits, intent-based keyword research, on-page optimization, and authoritative white-hat strategies to capture sustained organic market share.",
-            },
-            {
-              title: "Paid Search & Google Ads Management",
-              desc: "High-ROI PPC campaign structuring, quality score optimization, negative keyword filtering, and conversion-focused landing page alignment.",
-            },
-            {
-              title: "Content Strategy & Copywriting",
-              desc: "Creating authoritative, search-optimized articles, guidebooks, and service landing copy that rank high and convert qualified prospects into customers.",
-            },
-            {
-              title: "Conversion Rate Optimization (CRO)",
-              desc: "Analyzing user behavior, page speed bottlenecks, call-to-action placement, and UX friction to increase conversion rates across paid and organic channels.",
-            },
-          ].map((item, idx) => (
-            <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3 shadow-xl">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <h2 className="text-base font-bold text-white tracking-tight">{item.title}</h2>
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+            Integrated Multi-Channel Digital Marketing Approach
+          </h2>
+          <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
+            Successful digital marketing requires connecting organic search, paid acquisition, and conversion-focused web architecture into one seamless lead generation funnel.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+            {[
+              {
+                title: "Search Engine Optimization (SEO)",
+                desc: "Combining technical audits, intent-based keyword research, on-page optimization, and authoritative white-hat strategies to capture sustained organic market share.",
+              },
+              {
+                title: "Paid Search & Google Ads Management",
+                desc: "High-ROI PPC campaign structuring, quality score optimization, negative keyword filtering, and conversion-focused landing page alignment.",
+              },
+              {
+                title: "Content Strategy & Copywriting",
+                desc: "Creating authoritative, search-optimized articles, guidebooks, and service landing copy that rank high and convert qualified prospects into customers.",
+              },
+              {
+                title: "Conversion Rate Optimization (CRO)",
+                desc: "Analyzing user behavior, page speed bottlenecks, call-to-action placement, and UX friction to increase conversion rates across paid and organic channels.",
+              },
+            ].map((item, idx) => (
+              <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3 shadow-xl">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <h3 className="text-base font-bold text-white tracking-tight">{item.title}</h3>
+                </div>
+                <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light pl-6">
+                  {item.desc}
+                </p>
               </div>
-              <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light pl-6">
-                {item.desc}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </section>
 
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/50 via-zinc-950 to-zinc-950 border border-emerald-500/30 text-center space-y-5 shadow-2xl">

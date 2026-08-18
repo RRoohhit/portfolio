@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { MapPin, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "SEO Expert in Gurgaon — B2B SEO & Tech Growth Consultant | Rohit Gupta",
+  title: "SEO Expert in Gurgaon | Rohit Gupta",
   description:
     "Hire Rohit Gupta — top SEO Expert in Gurgaon. Specializing in B2B Technical SEO, SaaS growth strategy, Next.js web development, and Google Ads.",
   path: "/seo-expert-gurgaon/",
@@ -49,8 +49,43 @@ export default function SeoExpertGurgaonPage() {
           </Link>
         </header>
 
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+            B2B &amp; Corporate SEO Services for Gurgaon Enterprises
+          </h2>
+          <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
+            Gurgaon is a fast-paced market where top ranking position requires technical superiority, rapid rendering speed, and deep keyword alignment.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+            {[
+              {
+                title: "B2B SaaS & Tech Keyword Clustering",
+                desc: "Target commercial search queries used by decision-makers in Cyber City and Gurgaon corporate hubs. Build topical relevance with structured content silos.",
+              },
+              {
+                title: "Enterprise Technical SEO Audits",
+                desc: "Fix indexation issues, JavaScript rendering bottlenecks, canonical conflicts, and 301 redirect chains across complex Next.js and React enterprise applications.",
+              },
+              {
+                title: "Google Ads & Conversion Rate Optimization",
+                desc: "Maximize pay-per-click ROI with targeted Search and Performance Max campaigns designed to capture high-intent inbound corporate leads.",
+              },
+              {
+                title: "High-Authority Link Building & Digital PR",
+                desc: "Build sustainable domain authority using White Hat backlink outreach, guest editorial features, and niche directory placements.",
+              },
+            ].map((pillar, idx) => (
+              <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">
+                <h3 className="text-base font-bold text-white tracking-tight">{pillar.title}</h3>
+                <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">{pillar.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h2 className="text-xl font-black text-white tracking-tight">Enterprise & B2B SEO Strategy</h2>
+          <h2 className="text-xl font-black text-white tracking-tight">Enterprise &amp; B2B SEO Strategy</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               "High-Intent B2B Keyword Research & Clustering",

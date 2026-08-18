@@ -148,10 +148,10 @@ export const SeoToolsHero: React.FC<SeoToolsHeroProps> = ({
         {/* Domain & Project Config */}
         <div className="p-4 sm:p-6 bg-black/70 border border-white/12 rounded-2xl space-y-4 shadow-2xl backdrop-blur-xl">
           <div className="flex items-center justify-between flex-wrap gap-2">
-            <div className="flex items-center gap-2 text-xs font-mono text-white font-bold uppercase tracking-wider">
+            <h2 className="flex items-center gap-2 text-xs sm:text-sm font-mono text-white font-bold uppercase tracking-wider">
               <Globe className="w-4 h-4 text-emerald-400 shrink-0" />
               <span>Step 1: Website Configuration &amp; Domain Binding</span>
-            </div>
+            </h2>
             <span className="text-[10px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/25 px-2 py-0.5 rounded font-bold flex items-center gap-1">
               <Zap className="w-3 h-3" />
               Auto-injects into all generators

@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { Sparkles, CheckCircle2, ArrowRight, ShieldCheck, Search, AlertTriangle } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "AI Search Optimization Services — AEO, GEO & Google AI Overviews | Rohit Gupta",
+  title: "AI Search Optimization (AEO & GEO) | Rohit Gupta",
   description:
     "AI Search Optimization by Rohit Gupta: rank in Google AI Overviews, ChatGPT, and Perplexity through entity markup, Schema data, and E-E-A-T signals.",
   path: "/services/ai-search-optimization/",

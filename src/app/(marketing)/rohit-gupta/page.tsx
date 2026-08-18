@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Rohit Gupta — SEO Expert, Digital Marketing Consultant & Web Developer",
+  title: "About Rohit Gupta — Technical SEO Specialist & Developer",
   description:
     "About Rohit Gupta — SEO specialist & web developer focused on technical SEO, Core Web Vitals, Next.js web applications, and measurable business growth.",
   path: "/rohit-gupta/",
@@ -113,10 +113,11 @@ export default function RohitGuptaPage() {
               <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-3xl overflow-hidden border-2 border-emerald-500/30 shadow-2xl bg-zinc-900">
                 <Image
                   src={heroPortraitImg}
-                  alt="Rohit Gupta — SEO Expert & Full-Stack Web Developer"
-                  fill
-                  sizes="224px"
-                  className="object-cover object-top"
+                  alt="Rohit Gupta — SEO Expert &amp; Full-Stack Web Developer"
+                  width={600}
+                  height={600}
+                  sizes="(max-width: 640px) 192px, 224px"
+                  className="w-full h-full object-cover object-top"
                   priority
                 />
               </div>

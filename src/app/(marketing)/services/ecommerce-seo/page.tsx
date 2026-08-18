@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { ShoppingCart, CheckCircle2, ArrowRight, Search, ShieldCheck, Target, Layers } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "E-Commerce SEO Services — Shopify, WooCommerce & Product Page Optimization | Rohit Gupta",
+  title: "E-Commerce SEO Services | Rohit Gupta",
   description:
     "E-Commerce SEO by Rohit Gupta: Shopify & WooCommerce SEO, product page optimization, category structure, Product schema markup, and organic revenue growth.",
   path: "/services/ecommerce-seo/",

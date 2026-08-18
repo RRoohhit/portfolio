@@ -1077,8 +1077,11 @@ export const SeoAnalyzerPage: React.FC = () => {
 
           {/* Quick Presets Strip */}
           <div className="p-4 bg-zinc-950 border border-white/10 rounded-2xl space-y-3 shadow-xl">
+            <h2 className="text-sm sm:text-base font-bold text-white font-mono uppercase tracking-wide">
+              ⚡ Instant 1-Click Demo Websites &amp; Audit Presets
+            </h2>
             <span className="text-[10px] font-mono uppercase text-white/50 tracking-wider font-bold block">
-              ⚡ 1-Click Instant Demo Presets:
+              Select a pre-analyzed domain below:
             </span>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
               {QUICK_PRESETS.map((preset) => (

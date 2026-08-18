@@ -7,7 +7,7 @@ import { Search, CheckCircle2, ArrowRight, ShieldCheck, Zap, Globe, MapPin, Targ
 import { CONTACT } from "@/config/site";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "SEO Services by Rohit Gupta — Technical, Local, On-Page & White Hat SEO",
+  title: "SEO Services by Rohit Gupta",
   description:
     "Data-driven SEO services by Rohit Gupta: Technical SEO, On-Page, Off-Page, Local SEO, E-Commerce SEO, and AI Search Optimization for sustainable growth.",
   path: "/services/seo/",

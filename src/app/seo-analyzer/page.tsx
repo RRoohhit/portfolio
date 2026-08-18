@@ -5,7 +5,7 @@ import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Free SEO Analyzer & Interactive Site Mind Map Tool | Rohit Gupta",
+  title: "Free SEO Analyzer & Site Mind Map | Rohit Gupta",
   description:
     "Free AI SEO Analyzer by Rohit Gupta. Instantly audit technical SEO issues, on-page gaps, backlinks, and website performance with an interactive mind map.",
   path: "/seo-analyzer",

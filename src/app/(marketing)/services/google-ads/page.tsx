@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { TrendingUp, CheckCircle2, ArrowRight, ShieldCheck, Target, BarChart3 } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Google Ads Management Services — PPC, Search & Performance Max | Rohit Gupta",
+  title: "Google Ads Management Services | Rohit Gupta",
   description:
     "Google Ads management by Rohit Gupta: Search campaigns, Performance Max, ad copy, landing page optimization, conversion tracking, and high ROI PPC setup.",
   path: "/services/google-ads/",

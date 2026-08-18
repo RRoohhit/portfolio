@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Professional Services — SEO, Digital Marketing & Web Development | Rohit Gupta",
+  title: "SEO & Web Development Services | Rohit Gupta",
   description:
     "Data-driven SEO, digital marketing, and web growth services by Rohit Gupta for local, national, e-commerce, and international businesses.",
   path: "/services/",

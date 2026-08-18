@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { MapPin, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Google Business Profile SEO in Noida — GBP & Google Maps Expert | Rohit Gupta",
+  title: "GBP SEO Noida Expert | Rohit Gupta",
   description:
     "Google Business Profile SEO specialist in Noida. Optimize your GBP, manage categories and review signals, and rank in the Google Maps 3-Pack across Noida.",
   path: "/google-business-profile-seo-noida/",
@@ -48,6 +48,41 @@ export default function GbpSeoNoidaPage() {
             Request Noida GBP Audit <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
+
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+            Google Business Profile &amp; Maps Growth Pillars
+          </h2>
+          <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
+            Optimizing your Google Business Profile is the fastest way to drive inbound calls, foot traffic, and website visits from local customers across Noida and Delhi NCR.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+            {[
+              {
+                title: "GBP Profile Audit & Category Alignment",
+                desc: "Select high-converting primary and secondary categories tailored to Noida search trends to maximize your profile's geographic radius.",
+              },
+              {
+                title: "Noida Citation & Directory Consistency",
+                desc: "Eliminate conflicting NAP data across local directories to build strong location confidence signals in Google's local search algorithm.",
+              },
+              {
+                title: "Geo-Tagged Photos & Weekly Posts",
+                desc: "Upload geo-tagged business images, update service menus, and post weekly updates to maintain high profile activity signals.",
+              },
+              {
+                title: "Review Generation & Response Management",
+                desc: "Set up automated customer feedback systems to collect positive reviews and respond with keyword-rich answers.",
+              },
+            ].map((pillar, idx) => (
+              <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">
+                <h3 className="text-base font-bold text-white tracking-tight">{pillar.title}</h3>
+                <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">{pillar.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
           <h2 className="text-xl font-black text-white tracking-tight">Our Noida GBP Optimization Checklist</h2>

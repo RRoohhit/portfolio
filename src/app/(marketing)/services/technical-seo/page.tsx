@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { Zap, CheckCircle2, ArrowRight, Code2, Gauge, Search, Layers, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Technical SEO Services & Core Web Vitals Optimization — Rohit Gupta",
+  title: "Technical SEO Services | Rohit Gupta",
   description:
     "Technical SEO services by Rohit Gupta: Core Web Vitals optimization, crawlability, indexation fixes, sitemaps, Schema markup, and JavaScript SEO tuning.",
   path: "/services/technical-seo/",

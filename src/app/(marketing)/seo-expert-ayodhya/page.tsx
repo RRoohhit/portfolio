@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { MapPin, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "SEO Expert in Ayodhya — Tourism, Hospitality & Local SEO | Rohit Gupta",
+  title: "SEO Expert in Ayodhya | Rohit Gupta",
   description:
     "Hire Rohit Gupta — SEO Expert in Ayodhya. Tourism SEO, hospitality search visibility, Google Business Profile setup, and website development in Ayodhya.",
   path: "/seo-expert-ayodhya/",
@@ -48,6 +48,41 @@ export default function SeoExpertAyodhyaPage() {
             Consult Ayodhya SEO Expert <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
+
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+            SEO &amp; Digital Growth Solutions for Ayodhya Businesses
+          </h2>
+          <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
+            As Ayodhya grows into a major national destination, establishing top organic search presence on Google and Google Maps ensures a steady flow of local customers and visiting travelers.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+            {[
+              {
+                title: "Ayodhya Google Business Profile & Map Pack",
+                desc: "Dominate Google Maps searches for hotels, homestays, restaurants, and local services in Ayodhya with verified citations, photos, and review strategies.",
+              },
+              {
+                title: "Tourism & Travel Intent SEO",
+                desc: "Capture high-volume visitor search queries across India. Target key commercial phrases for travel, booking, tour guides, and regional transportation.",
+              },
+              {
+                title: "Mobile-First Speed & Performance",
+                desc: "Ensure your business website loads in under 1 second on mobile networks with optimized images, clean CSS/JS rendering, and sub-second TTFB.",
+              },
+              {
+                title: "Structured Schema & Local Entity Markup",
+                desc: "Implement Hotel, LocalBusiness, Restaurant, and FAQPage JSON-LD schema markup so Google and AI search engines present your business in rich snippets.",
+              },
+            ].map((pillar, idx) => (
+              <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">
+                <h3 className="text-base font-bold text-white tracking-tight">{pillar.title}</h3>
+                <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">{pillar.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
           <h2 className="text-xl font-black text-white tracking-tight">Ayodhya Search Opportunities</h2>

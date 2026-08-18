@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { MapPin, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "SEO Expert in Delhi — Organic Growth & Technical SEO Consultant | Rohit Gupta",
+  title: "SEO Expert in Delhi | Rohit Gupta",
   description:
     "Hire Rohit Gupta — premier SEO Expert in Delhi. Technical SEO, local search optimization, content strategy, and Google Ads management across Delhi NCR.",
   path: "/seo-expert-delhi/",
@@ -49,6 +49,41 @@ export default function SeoExpertDelhiPage() {
             Consult Delhi SEO Specialist <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
+
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+            SEO &amp; Web Growth Solutions for Delhi Businesses
+          </h2>
+          <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
+            Ranking #1 in Delhi requires technical SEO precision, Google Business Profile optimization, and authoritative backlink profiles.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+            {[
+              {
+                title: "Delhi Local SEO & Google Map Pack",
+                desc: "Drive targeted local walk-ins and phone calls across Connaught Place, South Delhi, and West Delhi with optimized Google Business Profiles and local citations.",
+              },
+              {
+                title: "Technical Audits & Core Web Vitals",
+                desc: "Identify and resolve crawl errors, JavaScript rendering issues, slow LCP/CLS scores, and duplicate content to pass Google PageSpeed benchmarks.",
+              },
+              {
+                title: "High-Intent Keyword & Intent Mapping",
+                desc: "Capture high-converting commercial searches in your industry. Align title tags, H1-H6 headers, and content depth with exact buyer intent.",
+              },
+              {
+                title: "Custom Next.js & React Web Apps",
+                desc: "Build modern, mobile-responsive web applications featuring built-in Schema JSON-LD structured data and lightning-fast page load times.",
+              },
+            ].map((pillar, idx) => (
+              <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">
+                <h3 className="text-base font-bold text-white tracking-tight">{pillar.title}</h3>
+                <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">{pillar.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
           <h2 className="text-xl font-black text-white tracking-tight">Key Service Areas in Delhi</h2>

@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { Code2, CheckCircle2, ArrowRight, Zap, ShieldCheck, Layers, ShoppingCart, Globe } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Web Development Services — SEO-Friendly React & Next.js Websites | Rohit Gupta",
+  title: "Web Development Services | Rohit Gupta",
   description:
     "Web development services by Rohit Gupta: SEO-friendly React & Next.js websites, high-speed business web apps, e-commerce stores, and website redesigns.",
   path: "/services/web-development/",

@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { Code2, CheckCircle2, ArrowRight, Zap, ShieldCheck, Layers } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "React Development Services — Custom React & Next.js Apps | Rohit Gupta",
+  title: "React Development Services | Rohit Gupta",
   description:
     "Custom React development services by Rohit Gupta: high-speed web applications, component architecture, SSR/SSG rendering, and Core Web Vitals tuning.",
   path: "/services/react-development/",

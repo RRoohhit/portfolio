@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { ShieldCheck, CheckCircle2, ArrowRight, BookOpen, AlertTriangle } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "White Hat SEO Services & Ethical Organic Growth — Rohit Gupta",
+  title: "White Hat SEO Services | Rohit Gupta",
   description:
     "White Hat SEO services by Rohit Gupta: ethical search optimization aligned with Google guidelines. Sustainable organic rankings without penalty risks.",
   path: "/services/white-hat-seo/",

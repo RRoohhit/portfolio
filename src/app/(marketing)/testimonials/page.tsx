@@ -27,7 +27,7 @@ const TESTIMONIALS_LIST = [
     rating: 5,
     date: "2026",
     quote:
-      "Rohit transformed our web performance and technical SEO architecture. Our core web vitals went from failing grades to top Lighthouse scores, and organic search traffic increased substantially across key commercial queries.",
+      "Rohit transformed our web performance and technical SEO architecture. Our Core Web Vitals went from failing grades to top 99/100 Lighthouse scores, and organic search traffic increased substantially across key commercial queries.",
   },
   {
     name: "Thingbiz Management",
@@ -38,6 +38,26 @@ const TESTIMONIALS_LIST = [
     date: "2025 - 2026",
     quote:
       "Working with Rohit on our Google Ads and local SEO positioning delivered impressive ROI. He restructured our campaign keywords and technical setup, giving us steady qualified inbound leads.",
+  },
+  {
+    name: "Ayodhya Hospitality Partner",
+    company: "Ayodhya Heritage Stays",
+    location: "Ayodhya, UP",
+    service: "Local SEO & Google Maps Ranking",
+    rating: 5,
+    date: "2026",
+    quote:
+      "Rohit optimized our Google Business Profile and local citation presence in Ayodhya. We saw a dramatic rise in direct calls and Map Pack visibility for local tourism and stay searches.",
+  },
+  {
+    name: "E-Commerce Brand Director",
+    company: "Direct-to-Consumer Apparel",
+    location: "India & Global",
+    service: "Shopify SEO & Speed Tuning",
+    rating: 5,
+    date: "2025",
+    quote:
+      "Our store speed and product page indexation improved dramatically. Rohit fixed faceted navigation issues, added Product Schema JSON-LD, and helped us scale revenue through white-hat organic search.",
   },
 ];
 

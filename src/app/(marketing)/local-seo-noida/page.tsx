@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { MapPin, CheckCircle2, ArrowRight, Star } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Local SEO Services in Noida — Map Pack & Local Search | Rohit Gupta",
+  title: "Local SEO Services Noida | Rohit Gupta",
   description:
     "Dominate local search in Noida with Rohit Gupta: Google Business Profile optimization, local citations, geo-targeted content, and Google Maps rankings.",
   path: "/local-seo-noida/",
@@ -48,6 +48,41 @@ export default function LocalSeoNoidaPage() {
             Get Local SEO Consultation <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
+
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+            Comprehensive Local SEO Solutions for Noida Businesses
+          </h2>
+          <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
+            Local customers in Noida rely on Google Search and Google Maps to find nearby businesses. Rohit Gupta implements technical and geo-targeted optimization to position your brand at the top of local results.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+            {[
+              {
+                title: "Google Map Pack 3-Pack Dominance",
+                desc: "Claim top position on Google Maps for high-intent 'near me' searches across Noida Sector 18, 62, 63, and Greater Noida.",
+              },
+              {
+                title: "Sector-Specific Geo Landing Pages",
+                desc: "Build dedicated, localized landing pages for key commercial hubs in Noida, complete with LocalBusiness Schema JSON-LD markup.",
+              },
+              {
+                title: "NAP Citation & Directory Audits",
+                desc: "Ensure consistent Name, Address, and Phone (NAP) details across Justdial, IndiaMART, Sulekha, and niche business directories.",
+              },
+              {
+                title: "Review Signal & Reputation Management",
+                desc: "Develop automated customer review workflows to increase your star rating and build trust signals that Google rewards.",
+              },
+            ].map((pillar, idx) => (
+              <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">
+                <h3 className="text-base font-bold text-white tracking-tight">{pillar.title}</h3>
+                <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">{pillar.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
           <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">

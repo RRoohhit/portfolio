@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { MapPin, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "SEO Expert in Ghaziabad — Local SEO & Technical Growth | Rohit Gupta",
+  title: "SEO Expert in Ghaziabad | Rohit Gupta",
   description:
     "Hire Rohit Gupta — top SEO Expert in Ghaziabad. Technical SEO, Google Business Profile optimization, local citation building, and web development.",
   path: "/seo-expert-ghaziabad/",
@@ -48,6 +48,41 @@ export default function SeoExpertGhaziabadPage() {
             Consult Ghaziabad SEO Expert <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
+
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+            SEO &amp; Digital Growth Services for Ghaziabad Businesses
+          </h2>
+          <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
+            Local competition across Ghaziabad and Delhi NCR requires a clear, technical approach. Rohit Gupta delivers targeted SEO services engineered to convert regional search queries into paying customers.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+            {[
+              {
+                title: "Ghaziabad Google Maps 3-Pack SEO",
+                desc: "Optimize your Google Business Profile with verified NAP data, geo-targeted category tags, customer review automation, and localized citations across Indirapuram and Vaishali.",
+              },
+              {
+                title: "Technical Site Speed & Core Web Vitals",
+                desc: "Fix slow page speeds, bad LCP/CLS metrics, render-blocking scripts, and layout shifts to ensure your website passes Google PageSpeed Insights with 90+ Lighthouse scores.",
+              },
+              {
+                title: "Commercial Keyword & Competitor Research",
+                desc: "Identify high-intent buyer keywords used by Ghaziabad customers. Uncover content gaps competitors have missed and rank for valuable commercial search terms.",
+              },
+              {
+                title: "High-Speed Next.js & React Web Development",
+                desc: "Build custom, mobile-first websites designed for instant loading, seamless navigation, structured Schema markup, and high-converting contact inquiries.",
+              },
+            ].map((pillar, idx) => (
+              <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">
+                <h3 className="text-base font-bold text-white tracking-tight">{pillar.title}</h3>
+                <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">{pillar.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
           <h2 className="text-xl font-black text-white tracking-tight">Areas Covered in Ghaziabad</h2>

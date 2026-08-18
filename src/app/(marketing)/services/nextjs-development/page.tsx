@@ -54,35 +54,44 @@ export default function NextjsDevelopmentPage() {
           </p>
         </header>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {[
-            {
-              title: "App Router & Server Components",
-              desc: "Leveraging React Server Components (RSC) to minimize client-side JavaScript bundle sizes and accelerate initial page loads.",
-            },
-            {
-              title: "Built-In SEO & Dynamic Metadata API",
-              desc: "Utilizing Next.js metadata generation, canonical URL management, and open-graph image builders for automated social and SERP previews.",
-            },
-            {
-              title: "Edge Rendering & Incremental Static Regeneration",
-              desc: "Implementing ISR (Incremental Static Regeneration) and edge routes to render content dynamically while maintaining static speed benefits.",
-            },
-            {
-              title: "Lighthouse 100/100 Optimization",
-              desc: "Fine-tuning font loading, image optimization (next/image), script priority (next/script), and layout shifts.",
-            },
-          ].map((item, idx) => (
-            <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3 shadow-xl">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <h2 className="text-base font-bold text-white tracking-tight">{item.title}</h2>
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+            Why Next.js Is the Preferred Framework for Modern SEO
+          </h2>
+          <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
+            Next.js combines server-side rendering (SSR), static site generation (SSG), and edge execution into a powerful framework that satisfies both Google search crawlers and modern web users.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+            {[
+              {
+                title: "App Router & Server Components",
+                desc: "Leveraging React Server Components (RSC) to minimize client-side JavaScript bundle sizes and accelerate initial page loads.",
+              },
+              {
+                title: "Built-In SEO & Dynamic Metadata API",
+                desc: "Utilizing Next.js metadata generation, canonical URL management, and open-graph image builders for automated social and SERP previews.",
+              },
+              {
+                title: "Edge Rendering & Incremental Static Regeneration",
+                desc: "Implementing ISR (Incremental Static Regeneration) and edge routes to render content dynamically while maintaining static speed benefits.",
+              },
+              {
+                title: "Lighthouse 100/100 Optimization",
+                desc: "Fine-tuning font loading, image optimization (next/image), script priority (next/script), and layout shifts.",
+              },
+            ].map((item, idx) => (
+              <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3 shadow-xl">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <h3 className="text-base font-bold text-white tracking-tight">{item.title}</h3>
+                </div>
+                <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light pl-6">
+                  {item.desc}
+                </p>
               </div>
-              <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light pl-6">
-                {item.desc}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </section>
 
         <section className="p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4 text-center">
