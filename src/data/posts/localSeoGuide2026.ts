@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const localSeoGuide2026: BlogPost = {
   id: "blog-6",
-  title: "Local SEO Complete Guide 2026: Rank #1 on Google Maps & Near Me Searches",
+  title: "Local SEO Guide 2026: Rank #1 on Google Maps & Near Me",
   slug: "local-seo-guide-rank-google-maps-2026",
   excerpt:
     "The complete 2026 local SEO playbook: Google Business Profile optimization, map pack ranking factors, local citations, reviews, link building and AEO for 'near me' searches across India.",

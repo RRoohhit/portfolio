@@ -34,7 +34,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Rohit Gupta — SEO Expert, Digital Marketing Consultant & Web Developer",
+  title: "Rohit Gupta | SEO Expert & Web Developer in India",
   description:
     "Rohit Gupta is an SEO expert, digital marketing consultant & full-stack web developer helping businesses improve organic search visibility, website performance and online growth.",
   keywords: [
@@ -58,17 +58,17 @@ export const metadata: Metadata = {
     "Google Ads Expert India",
     "Schema JSON-LD Expert",
   ],
-  authors: [{ name: "Rohit Gupta", url: `${SITE_URL}/rohit-gupta/` }],
+  authors: [{ name: "Rohit Gupta", url: `${SITE_URL}/rohit-gupta` }],
   creator: "Rohit Gupta",
   publisher: "Rohit Gupta",
   verification: {
     google: "cOS3XGFct508GjSXqJ8sOKgYDLll8jZo2WqzsLvBWs4",
   },
   alternates: {
-    canonical: SITE_URL,
+    canonical: `${SITE_URL}/`,
     languages: {
-      "en-IN": SITE_URL,
-      "en": SITE_URL,
+      "en-IN": `${SITE_URL}/`,
+      "en": `${SITE_URL}/`,
     },
   },
   robots: {
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Rohit Gupta — SEO Expert, Digital Marketing Consultant & Web Developer",
-    title: "Rohit Gupta — SEO Expert, Digital Marketing Consultant & Web Developer",
+    title: "Rohit Gupta | SEO Expert & Web Developer in India",
     description:
       "Rohit Gupta is an SEO expert, digital marketing consultant & full-stack web developer helping businesses improve organic search visibility, website performance and online growth.",
     url: `${SITE_URL}/`,
@@ -104,7 +104,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rohit Gupta — SEO Expert, Digital Marketing Consultant & Web Developer",
+    title: "Rohit Gupta | SEO Expert & Web Developer in India",
     description:
       "Rohit Gupta is an SEO expert, digital marketing consultant & full-stack web developer helping businesses improve organic search visibility, website performance and online growth.",
     images: [OG_IMAGE],

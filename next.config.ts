@@ -44,6 +44,17 @@ const nextConfig: NextConfig = {
   },
   // Raise the static-page generation timeout for slower build environments.
   staticPageGenerationTimeout: 120,
+  async redirects() {
+    return [
+      // www → non-www permanent redirect for canonical consistency
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.rohitguptaseo.in" }],
+        destination: "https://rohitguptaseo.in/:path*",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

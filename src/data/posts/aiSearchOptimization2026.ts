@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const aiSearchOptimization2026: BlogPost = {
   id: "blog-8",
-  title: "AI Search Optimization (AEO & GEO) 2026: Rank in ChatGPT, Google AI Overviews & Perplexity",
+  title: "AEO & GEO 2026: Rank in ChatGPT, AI Overviews & Perplexity",
   slug: "ai-search-optimization-aeo-geo-guide-2026",
   excerpt:
     "The complete AEO & GEO playbook for 2026: how Google AI Overviews, ChatGPT, Perplexity and Gemini choose citations, and how to structure content, schema and entities to be recommended and quoted by AI search.",

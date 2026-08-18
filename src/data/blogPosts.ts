@@ -11,7 +11,7 @@ import { seoServicesCostIndia2026 } from "./posts/seoServicesCostIndia2026";
 export const BLOG_POSTS: BlogPost[] = [
   {
     id: "blog-1",
-    title: "The Ultimate Guide to Core Web Vitals Optimization in React & Next.js",
+    title: "Core Web Vitals Guide: React & Next.js Optimization 2026",
     slug: "core-web-vitals-react-nextjs",
     excerpt:
       "Learn how to achieve 100/100 Lighthouse scores by fixing LCP, INP, and CLS using SSR, Next Image, and dynamic script deferral.",
@@ -171,7 +171,7 @@ Speed is one layer of the complete ranking system. Continue with the related gui
   },
   {
     id: "blog-2",
-    title: "White Hat SEO vs. Black Hat SEO: Sustainable Rankings in the AI Era",
+    title: "White Hat vs. Black Hat SEO: Sustainable Rankings in 2026",
     slug: "white-hat-vs-black-hat-seo",
     excerpt:
       "Why short-term Black Hat shortcuts fail Google SpamBrain AI algorithms, and how ethical White Hat technical strategies build long-term domain authority.",
@@ -324,7 +324,7 @@ White hat strategy depends on the execution layers around it. Continue with thes
   },
   {
     id: "blog-3",
-    title: "How to Build Programmatic JSON-LD Schema Markup for Instant Rich Snippets",
+    title: "JSON-LD Schema Markup Guide: Get Rich Snippets Fast",
     slug: "json-ld-schema-markup-guide",
     excerpt:
       "A step-by-step tutorial on generating dynamic Schema.org JSON-LD structured data for Google Search and AI Overviews.",
@@ -485,7 +485,7 @@ Structured data works hardest when the rest of the page is optimized. Continue w
   },
   {
     id: "blog-4",
-    title: "How to Hire a Good SEO Expert in India: Complete Checklist for 2026",
+    title: "How to Hire an SEO Expert in India: 2026 Checklist",
     slug: "how-to-hire-seo-expert-india",
     excerpt:
       "A hiring manager's guide to vetting SEO specialists in Noida, Delhi and all India - the exact questions, red flags and reports that separate real growth from inflated promises.",
@@ -646,7 +646,7 @@ Before you hire, understand the work the right specialist will run. Continue wit
   },
   {
     id: "blog-5",
-    title: "Complete 2026 Guide: On-Page, Off-Page SEO, Backlinks, MERN Stack, Next.js vs React, WordPress & Shopify",
+    title: "SEO & Web Dev Guide 2026: On-Page, Backlinks & Next.js",
     slug: "seo-and-web-development-complete-guide-2026",
     excerpt:
       "One end-to-end playbook covering on-page SEO, off-page SEO, backlink creation, white hat SEO, digital and social media marketing, MERN stack development, Next.js vs React, WordPress and Shopify - everything you need to rank #1 on Google and AI search.",

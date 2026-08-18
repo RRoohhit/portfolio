@@ -30,8 +30,8 @@ export function buildPageMetadata({
   noindex = false,
   imageUrl = OG_IMAGE,
 }: PageSeoOptions): Metadata {
-  // Ensure trailing slash for canonical consistency
-  const cleanPath = path.endsWith("/") ? path : `${path}/`;
+  // Normalize path: strip trailing slash to match actual Next.js URL (no redirect)
+  const cleanPath = path.endsWith("/") && path !== "/" ? path.slice(0, -1) : path;
   const canonicalUrl = new URL(cleanPath, SITE_URL).href;
 
   return {
