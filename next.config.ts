@@ -3,7 +3,8 @@ import path from "path";
 
 const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
-  { key: "X-Frame-Options", value: "SAMEORIGIN" },
+  // X-Frame-Options removed — CSP frame-ancestors below controls framing.
+  // Keeping it caused Bing's preview iframe renderer to abort the render step.
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
   {
     key: "Permissions-Policy",
@@ -15,7 +16,9 @@ const securityHeaders = [
     value: "max-age=63072000; includeSubDomains; preload",
   },
   { key: "X-DNS-Prefetch-Control", value: "on" },
-  { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
+  // COOP relaxed from same-origin → unsafe-none so Bing's headless Chromium
+  // renderer can share the browsing context needed to load JS module chunks.
+  { key: "Cross-Origin-Opener-Policy", value: "unsafe-none" },
   { key: "Cross-Origin-Resource-Policy", value: "cross-origin" },
   { key: "X-Robots-Tag", value: "all, index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
   {
