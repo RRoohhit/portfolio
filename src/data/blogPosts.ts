@@ -94,24 +94,24 @@ date: "2026-08-10",
     ],
     content: `Core Web Vitals are official Google ranking factors. In 2026, pages with an LCP above 2.5s or an INP above 200ms lose SERP visibility regardless of content quality. This guide is the exact architecture playbook Rohit Gupta uses to bring React and Next.js applications to sub-second load times.
 
-### 1. Fix Largest Contentful Paint (LCP) First
+## 1. Fix Largest Contentful Paint (LCP) First
 The LCP element is usually the hero image or above-the-fold text. Serve it with Next.js Image using priority, explicit dimensions and modern formats (AVIF/WebP). Remove any client-side slide-show that delays the first paint of meaningful content.
 
-### 2. Eliminate Render-Blocking JavaScript
+## 2. Eliminate Render-Blocking JavaScript
 At least 80% of interaction cost in React apps comes from hydration. Split routes, lazy-load below-the-fold widgets with next/dynamic, and add Loading UI so the shell paints instantly while heavy charts and embeds stream in later.
 
-### 3. Kill Layout Shift (CLS)
+## 3. Kill Layout Shift (CLS)
 Reserve space for images, ads, embeds and fonts. Always set width/height on images, use font-display swap, and avoid injecting content above already-painted elements. A stable layout keeps CLS score at zero.
 
-### 4. Optimize INP with Passive Delegation
+## 4. Optimize INP with Passive Delegation
 Move scroll and resize listeners to passive mode, throttle expensive handlers, and keep most interactions inside small islands of JavaScript. Long main-thread tasks are the number one cause of poor INP scores.
 
-### 5. Measure with Lab and Field Data
+## 5. Measure with Lab and Field Data
 Generate Lighthouse runs from PageSpeed Insights and cross-check with the Chrome UX Report (CrUX) so you optimise for real user devices, not just the lab.
 
 By applying this sequence, the reference project moved from a 32/100 performance score to 99/100 Lighthouse and an LCP of 0.6s in under four weeks.
 
-### 6. The Core Web Vitals Toolkit
+## 6. The Core Web Vitals Toolkit
 You can only fix what you can see. Here is the stack I use on every performance project, free to start and powerful enough for enterprise audits.
 
 - Google PageSpeed Insights for a quick lab score plus real field data from the Chrome UX Report.
@@ -121,17 +121,17 @@ You can only fix what you can see. Here is the stack I use on every performance 
 - Web Vitals JavaScript library for real-user monitoring on your own pages.
 - Bundle analyzers and next/dynamic visualizer for finding the JavaScript chunks bloating your main thread.
 
-### 7. Common Mistakes That Destroy Page Speed Scores
+## 7. Common Mistakes That Destroy Page Speed Scores
 - Optimizing images but keeping thousands of them above the fold with priority on none of them.
 - Deferring everything except the one legacy script that blocks first paint anyway.
 - Fixing LCP in the lab and never checking whether real users on slower devices improved.
 - Adding one analytics or chat widget that costs more main-thread time than all your code combined.
 - Measuring performance once a year instead of treating it as a deployment checklist.
 
-### 8. When to Stop Optimizing
+## 8. When to Stop Optimizing
 Performance optimization has a point of diminishing returns, and knowing when to stop is a skill. Once your field data sits comfortably inside the green thresholds on the 75th percentile of real users, further wrestling over milliseconds is better spent on content, authority and conversion. The goal is not the highest number; it is the fastest experience that your users actually perceive, which is what Google measures and what customers reward.
 
-### Frequently Asked Questions
+## Frequently Asked Questions
 
 ### What is a good Core Web Vitals score in 2026?
 Google's 2026 pass thresholds are LCP under 2.5 seconds, INP under 200 milliseconds and CLS under 0.1. For competitive rankings, aim for LCP under 1.2 seconds, INP under 100 milliseconds and CLS at zero, verified on field data.
@@ -254,24 +254,24 @@ Speed is one layer of the complete ranking system. Continue with the related gui
     ],
     content: `While Black Hat SEO (private blog networks, hidden text, doorway pages) promises quick traffic, Google's AI core updates penalise unnatural link velocity within weeks. White Hat technical SEO, entity graph mapping and high-quality outreach deliver resilient search dominance instead.
 
-### 1. Why Speed Kills Black Hat Campaigns
+## 1. Why Speed Kills Black Hat Campaigns
 SpamBrain and the 2026 core update detect scaled link patterns in days, not months. Sites caught lose not only their rankings but their eligibility for future AI-driven search features.
 
-### 2. The Sustainable White Hat Stack
+## 2. The Sustainable White Hat Stack
 White Hat SEO is built on real traffic intent, crawlable architecture, clean internal linking, schema-rich content and earned editorial links. Every tactic maps directly to Google's Search Essentials documentation.
 
-### 3. Anchor Text Distribution That Protects You
+## 3. Anchor Text Distribution That Protects You
 Maintain 70%+ branded or raw-URL anchors, keep a natural mix of partial-match phrases, and never spike new dofollow links in a single month. Velocity is a feature of quality, not volume.
 
-### 4. Audit Toxicity and Maintain a Disavow File
+## 4. Audit Toxicity and Maintain a Disavow File
 Monitor referring domains for spam TLDs and PBN markers with Ahrefs or Semrush. When toxic automated links appear, submit a clean Google Search Console disavow file to protect domain authority.
 
 Rohit has applied this methodology across 200+ websites, producing 4,700%+ organic traffic growth without a single penalty event.
 
-### 5. Grey Hat SEO: The Risky Middle Ground
+## 5. Grey Hat SEO: The Risky Middle Ground
 White hat and black hat are the extremes, but most real-world campaigns sit in the grey: expired domain hijacking for residual authority, guest post networks built purely for links, buying aged PBN-adjacent domains, or link manipulation at small scale hoping to stay under the radar. Grey hat feels like a compromise, but it carries all of black hat's risk with none of its speed advantage. Google's systems do not care how small your manipulation is; they care about the pattern. A single grey-hat shortcut can seed a pattern that a core update later discovers, and unlike a black hat campaign you did not even get the fast traffic to justify the risk.
 
-### 6. The Penalty Recovery Playbook
+## 6. The Penalty Recovery Playbook
 If your rankings collapsed, here is the recovery sequence that works, in order.
 
 - Confirm the penalty type: manual action in Search Console, or algorithmic drop at a known update date.
@@ -281,10 +281,10 @@ If your rankings collapsed, here is the recovery sequence that works, in order.
 - Rebuild with white hat methods: technical fixes first, then content, then steady earned links.
 - Measure recovery monthly; trust returns on Google's timeline, not yours.
 
-### 7. How to Vet Any SEO Provider for Black Hat Activity
+## 7. How to Vet Any SEO Provider for Black Hat Activity
 Before signing with any agency or specialist, ask three questions: which directories do you build links from, what is your anchor-text distribution target, and can I see the referring domains from your last campaign? A white hat provider answers with specific, verifiable answers and welcomes scrutiny. A provider who guarantees fast rankings, refuses to name link sources or sells links by the hundred is describing black hat work, whatever they call it.
 
-### Frequently Asked Questions
+## Frequently Asked Questions
 
 ### What is black hat SEO?
 Black hat SEO exploits algorithm weaknesses for artificial fast rankings: PBNs, bought links, cloaking, doorway pages, hidden text and fake reviews. SpamBrain now detects these patterns in days, and penalties strip rankings, trust and future AI visibility.
@@ -407,22 +407,22 @@ date: "2026-06-20",
     ],
     content: `Search engines rely on structured data to parse page context instantly. Embedding JSON-LD (TechArticle, Organization, FAQPage, Product) earns rich results, star ratings and direct inclusion in Google AI Overview answers.
 
-### 1. JSON-LD Beats Microdata
+## 1. JSON-LD Beats Microdata
 Google explicitly recommends JSON-LD because it lives in a clean script tag, separate from presentation HTML, and survives React hydration untouched.
 
-### 2. Programmatic Generation in Next.js
+## 2. Programmatic Generation in Next.js
 Generate schema server-side from your content data. Create a helper that outputs a consistent @graph with Person, WebSite, Organization, Article, and BreadcrumbList entities for every URL.
 
-### 3. Person and LocalBusiness Entities Build the Knowledge Graph
+## 3. Person and LocalBusiness Entities Build the Knowledge Graph
 Nested Person and ProfessionalService entities connect your brand to the Knowledge Graph, boosting E-E-A-T and entity-based citations in AI search.
 
-### 4. Validate Before You Ship
+## 4. Validate Before You Ship
 Run every page through Google's Rich Results Test and the Schema.org validator. Zero warnings, then deploy. Invalid JSON-LD wastes the effort and can attract manual actions.
 
-### 5. Reuse Across CMS and Static Sites
+## 5. Reuse Across CMS and Static Sites
 The same JSON-LD template works across WordPress, headless CMS and SSG setups. Keep one configuration object and generate route-specific JSON for every template.
 
-### 6. The Full Schema Stack Every Website Needs in 2026
+## 6. The Full Schema Stack Every Website Needs in 2026
 One or two blocks is rarely enough. Here is the stack I generate on every production site.
 
 - Organization and Person blocks on the homepage, tying the brand and author to their entities.
@@ -434,7 +434,7 @@ One or two blocks is rarely enough. Here is the stack I generate on every produc
 - LocalBusiness or ProfessionalService with address, hours and service area for local businesses.
 - Service and FAQ blocks on service pages to clarify what you offer for both Google and AI.
 
-### 7. Common Schema Errors That Block Rich Results
+## 7. Common Schema Errors That Block Rich Results
 - Invalid JSON: one trailing comma, and Google rejects the entire block.
 - Schema that does not match visible content: a headline different from the H1 or an image that is not on the page.
 - Missing required fields: FAQPage needs both name and acceptedAnswer on every question.
@@ -442,10 +442,10 @@ One or two blocks is rarely enough. Here is the stack I generate on every produc
 - Duplicate schema blocks generating conflicting values for the same page.
 - Running markup on noindex pages, which wastes crawl attention on pages Google will never show.
 
-### 8. Schema and the AI Overview Opportunity
+## 8. Schema and the AI Overview Opportunity
 Google AI Overviews, ChatGPT, Perplexity and Bing Copilot all privilege extractable, structured content. A page with a direct first-paragraph answer, question-mirroring headings and clean FAQPage schema is dramatically more likely to be quoted verbatim than the same page without it. Every schema block you add is an eligibility ticket for a surface beyond classic blue links, and in 2026 those surfaces decide a growing share of your visibility.
 
-### Frequently Asked Questions
+## Frequently Asked Questions
 
 ### What is JSON-LD schema?
 JSON-LD is Google's recommended structured data format: one script tag declaring the page's entities with Schema.org vocabulary, independent of presentation HTML and untouched by JavaScript frameworks.
@@ -568,24 +568,24 @@ Structured data works hardest when the rest of the page is optimized. Continue w
     ],
     content: `Hiring the right SEO specialist is the difference between a #1 ranking funnel and a burned budget. Use this five-point checklist to evaluate any SEO candidate in India before you sign.
 
-### 1. Demand Verifiable Case Study Data
+## 1. Demand Verifiable Case Study Data
 Real SEO specialists share anonymised dashboards: monthly organic sessions, SERP position changes and Core Web Vitals before/after. Vague "we ranked many sites" claims without numbers are a red flag.
 
-### 2. Check Core Web Vitals Mastery
+## 2. Check Core Web Vitals Mastery
 Ask for concrete LCP, INP and CLS targets. A technical SEO expert should quote LCP under 1.2s, INP under 100ms and CLS at zero, and explain exactly how they will re-architect your stack to reach them.
 
-### 3. Audit Rigour and White Hat Attitude
+## 3. Audit Rigour and White Hat Attitude
 Ask which tools they use (Ahrefs, Screaming Frog, GSC), how they run a technical audit, and whether they ever buy links or use PBNs. Only White Hat methods build durable rankings.
 
-### 4. AI-Search Readiness
+## 4. AI-Search Readiness
 In 2026 your business must also rank inside Google AI Overviews, ChatGPT and Bing Copilot. The right specialist implements schema-rich, entity-focused content that is citable by AI.
 
-### 5. Transparent Monthly Reporting
+## 5. Transparent Monthly Reporting
 Insist on a simple monthly report: rankings, traffic, indexed pages, backlinks, Core Web Vitals and revenue-influencing metrics. No jargon, no vanity metrics.
 
 Rohit Gupta offers a free technical SEO audit with a clear 90-day roadmap before you commit budget - that is the level of transparency to look for.
 
-### 6. Interview Questions to Ask Every SEO Candidate
+## 6. Interview Questions to Ask Every SEO Candidate
 Ask the same five questions to every candidate and compare answers side by side.
 
 - Which three pages would you improve first on our site, and what result would you expect on each?
@@ -594,7 +594,7 @@ Ask the same five questions to every candidate and compare answers side by side.
 - What do LCP, INP and CLS mean for our specific site, and what targets would you set?
 - What does your monthly report contain, and how do I verify the numbers?
 
-### 7. Red Flags That Should Stop You Hiring
+## 7. Red Flags That Should Stop You Hiring
 - Guaranteed #1 rankings or specific positions in weeks.
 - No case studies, or case studies without numbers.
 - Refuses to name their link sources or disavow policy.
@@ -603,10 +603,10 @@ Ask the same five questions to every candidate and compare answers side by side.
 - Reports only screenshots with no raw data and no dates.
 - No written scope, no reporting cadence, no contract.
 
-### 8. How to Write the Hiring Brief That Attracts the Right Expert
+## 8. How to Write the Hiring Brief That Attracts the Right Expert
 The quality of candidates follows the quality of your brief. State your industry, target cities, current traffic baseline if you have one, budget band, and what winning looks like in six months: ranked keywords, organic leads or both. Mention that you expect verifiable case studies and a written monthly report. A tight brief filters out generalists and attract the specialists who are genuinely qualified to work on your market.
 
-### Frequently Asked Questions
+## Frequently Asked Questions
 
 ### How much does it cost to hire an SEO expert in India?
 Freelancers run roughly ₹10,000 to ₹40,000 per month, agencies ₹20,000 to ₹80,000, and one-time audits ₹8,000 to ₹50,000. Judge price against deliverables and reporting quality, not the number alone.

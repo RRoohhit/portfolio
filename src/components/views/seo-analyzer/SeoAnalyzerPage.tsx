@@ -1058,22 +1058,7 @@ export const SeoAnalyzerPage: React.FC = () => {
   /* Initial Upload / URL Input View */
   if (!analysis) {
     return (
-      <div className="min-h-screen pt-16 lg:pt-20 px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="max-w-4xl mx-auto space-y-10">
-
-          {/* Page Hero Header */}
-          <div className="text-center space-y-4">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-xs font-mono font-bold uppercase tracking-widest">
-              <Network className="w-4 h-4" />
-              <span>Interactive Website SEO &amp; Architecture Mind Map</span>
-            </div>
-            <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase">
-              AI-Powered SEO Analyzer &amp; Visual Mind Map
-            </h1>
-            <p className="text-sm sm:text-base text-white/70 font-light max-w-2xl mx-auto leading-relaxed">
-              Crawl any website URL or upload your Next.js/React project ZIP. Instantly generate an interactive visual mind map highlighting technical bottlenecks, orphan routes, schema gaps, and step-by-step action plans.
-            </p>
-          </div>
+      <div className="max-w-4xl mx-auto space-y-8">
 
           {/* Quick Presets Strip */}
           <div className="p-4 bg-zinc-950 border border-white/10 rounded-2xl space-y-3 shadow-xl">
@@ -1214,9 +1199,7 @@ export const SeoAnalyzerPage: React.FC = () => {
               </div>
             )}
           </div>
-
         </div>
-      </div>
     );
   }
 

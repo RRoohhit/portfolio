@@ -91,7 +91,7 @@ export default function LocalSeoPage() {
             <Star className="w-4 h-4" />
             Dedicated Service Page
           </div>
-          <h3 className="text-lg font-bold text-white tracking-tight">Looking Specifically for Google Business Profile SEO?</h3>
+          <p className="text-lg font-bold text-white tracking-tight">Looking Specifically for Google Business Profile SEO?</p>
           <p className="text-xs sm:text-sm text-white/75 leading-relaxed">
             We have a dedicated, specialized page for Google Business Profile audit, category optimization, services setup, and Map Pack tracking.
           </p>

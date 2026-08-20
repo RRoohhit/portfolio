@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
+import { Network } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Free SEO Analyzer & Site Mind Map | Rohit Gupta",
@@ -43,13 +44,30 @@ export default function Page() {
         ]),
         "jsonld-seo-analyzer-breadcrumb"
       )}
-      <div className="space-y-6 pt-24 lg:pt-28">
+      <div className="space-y-8 pt-24 lg:pt-28 pb-16">
         <Breadcrumbs
           items={[
             { name: "Home", href: "/" },
             { name: "SEO Analyzer" },
           ]}
         />
+
+        <header className="bg-zinc-950 border border-white/10 p-6 sm:p-10 rounded-3xl space-y-4 shadow-2xl relative overflow-hidden text-center">
+          <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-xs font-mono font-bold uppercase tracking-widest mx-auto">
+            <Network className="w-4 h-4" />
+            <span>Interactive Website SEO &amp; Architecture Mind Map</span>
+          </div>
+
+          <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase leading-tight">
+            AI-Powered SEO Analyzer &amp; Visual Mind Map
+          </h1>
+
+          <p className="text-sm sm:text-base text-white/70 font-light max-w-2xl mx-auto leading-relaxed">
+            Crawl any website URL or upload your Next.js/React project ZIP. Instantly generate an interactive visual mind map highlighting technical bottlenecks, orphan routes, schema gaps, and step-by-step action plans.
+          </p>
+        </header>
+
         <SeoAnalyzerPage />
         
         {/* Rich SEO Content for Indexing & Word Count */}

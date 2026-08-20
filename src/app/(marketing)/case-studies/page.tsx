@@ -96,6 +96,87 @@ export default function CaseStudiesPage() {
             </div>
           ))}
         </section>
+
+        {/* Detailed Methodology & Verified Results Guide */}
+        <section className="bg-zinc-950 border border-white/10 p-6 sm:p-10 rounded-3xl space-y-8 shadow-2xl">
+          <div className="space-y-3">
+            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+              Our 5-Stage SEO Engineering &amp; Growth Framework
+            </h2>
+            <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light">
+              Every client project executed by Rohit Gupta follows an evidence-based, data-backed roadmap designed for sustainable organic visibility and conversion growth.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="p-5 rounded-2xl bg-black border border-white/10 space-y-2">
+              <span className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 1 · Deep Technical Audit</span>
+              <p className="text-xs text-white/70 leading-relaxed font-light">
+                Full-site crawl auditing crawl depth, indexation gaps, status codes, JavaScript rendering hurdles, and Core Web Vitals performance benchmarks.
+              </p>
+            </div>
+            <div className="p-5 rounded-2xl bg-black border border-white/10 space-y-2">
+              <span className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 2 · Entity &amp; Intent Mapping</span>
+              <p className="text-xs text-white/70 leading-relaxed font-light">
+                Topical keyword clustering, search intent classification, schema graph architecture, and parent-child internal link hierarchy planning.
+              </p>
+            </div>
+            <div className="p-5 rounded-2xl bg-black border border-white/10 space-y-2">
+              <span className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 3 · Codebase Implementation</span>
+              <p className="text-xs text-white/70 leading-relaxed font-light">
+                Direct code-level optimization in React, Next.js, or CMS templates, eliminating hydration drag, layout shift, and server response latency.
+              </p>
+            </div>
+            <div className="p-5 rounded-2xl bg-black border border-white/10 space-y-2">
+              <span className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 4 · Ethical Authority Building</span>
+              <p className="text-xs text-white/70 leading-relaxed font-light">
+                White-hat digital PR outreach, local citation reclamation, unlinked brand mention conversion, and contextual editorial link acquisition.
+              </p>
+            </div>
+            <div className="p-5 rounded-2xl bg-black border border-white/10 space-y-2">
+              <span className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 5 · Performance Monitoring</span>
+              <p className="text-xs text-white/70 leading-relaxed font-light">
+                Continuous Google Search Console position tracking, CrUX real-user monitoring, algorithm update immunity verification, and conversion audits.
+              </p>
+            </div>
+            <div className="p-5 rounded-2xl bg-black border border-white/10 space-y-2 flex flex-col justify-between">
+              <div className="space-y-1">
+                <span className="text-xs font-mono font-bold text-emerald-400 uppercase">Verified Evidence</span>
+                <p className="text-xs text-white/70 leading-relaxed font-light">
+                  Transparent before/after metrics from Google Search Console, Google Analytics 4, and Lighthouse reports.
+                </p>
+              </div>
+              <Link href="/contact/" className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 font-bold mt-2">
+                Discuss Your Campaign Roadmap →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/40 via-zinc-950 to-zinc-950 border border-emerald-500/30 text-center space-y-5 shadow-2xl">
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+            Ready to Scale Your Organic Search Growth?
+          </h3>
+          <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
+            Get in touch with Rohit Gupta for a complimentary technical SEO diagnosis and discover the exact bottlenecks preventing your site from ranking #1.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link
+              href="/contact/"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25"
+            >
+              Request Free Consultation
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/seo-audit/"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
+            >
+              Learn About SEO Audits
+            </Link>
+          </div>
+        </section>
       </div>
     </>
   );

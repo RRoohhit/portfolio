@@ -83,16 +83,29 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
           </p>
         </header>
 
-        {/* Step 1: Problem */}
-        <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4 shadow-xl">
-          <div className="flex items-center gap-2 text-rose-400 font-mono text-xs font-bold uppercase tracking-wider">
-            <AlertTriangle className="w-4 h-4" />
-            <span>1. Problem</span>
+        {/* Case Study Overview & Breakdown Section */}
+        <section className="space-y-6">
+          <div className="space-y-2">
+            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+              <TrendingUp className="w-5 h-5 text-emerald-400" />
+              Case Study Execution &amp; Results Breakdown
+            </h2>
+            <p className="text-xs sm:text-sm text-white/60">
+              A 5-stage technical analysis, implementation roadmap, and verified organic growth metrics for {cs.client}.
+            </p>
           </div>
-          <h3 className="text-xl font-bold text-white tracking-tight">Initial Challenges &amp; Bottlenecks</h3>
-          <p className="text-sm text-white/80 leading-relaxed font-light">
-            {cs.beforeDescription}
-          </p>
+
+          {/* Step 1: Problem */}
+          <div className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4 shadow-xl">
+            <div className="flex items-center gap-2 text-rose-400 font-mono text-xs font-bold uppercase tracking-wider">
+              <AlertTriangle className="w-4 h-4" />
+              <span>1. Problem</span>
+            </div>
+            <h3 className="text-xl font-bold text-white tracking-tight">Initial Challenges &amp; Bottlenecks</h3>
+            <p className="text-sm text-white/80 leading-relaxed font-light">
+              {cs.beforeDescription}
+            </p>
+          </div>
         </section>
 
         {/* Step 2: Analysis */}
