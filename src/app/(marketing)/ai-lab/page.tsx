@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { AiLabView } from "@/components/views/ai-lab/AiLabView";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { buildPageMetadata } from "@/lib/seo";
@@ -24,7 +24,7 @@ export default function AiLab() {
       {renderJsonLd(
         breadcrumbGraph([
           { name: "Home", path: "/" },
-          { name: "AI Lab", path: "/ai-lab"/ },
+          { name: "AI Lab", path: "/ai-lab/" },
         ]),
         "jsonld-ai-lab-breadcrumb"
       )}

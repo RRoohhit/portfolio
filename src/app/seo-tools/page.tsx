@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { SeoToolsPage } from "@/components/views/seo-tools/SeoToolsPage";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { buildPageMetadata } from "@/lib/seo";
@@ -24,7 +24,7 @@ export default function SeoTools() {
       {renderJsonLd(
         breadcrumbGraph([
           { name: "Home", path: "/" },
-          { name: "SEO Tools", path: "/seo-tools"/ },
+          { name: "SEO Tools", path: "/seo-tools/" },
         ]),
         "jsonld-seo-tools-breadcrumb"
       )}
