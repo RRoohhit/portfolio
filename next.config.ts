@@ -17,7 +17,7 @@ const securityHeaders = [
   { key: "X-DNS-Prefetch-Control", value: "on" },
   { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
   { key: "Cross-Origin-Resource-Policy", value: "cross-origin" },
-  { key: "X-Robots-Tag", value: "max-image-preview:large" },
+  { key: "X-Robots-Tag", value: "all, index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
   {
     key: "Content-Security-Policy",
     value:

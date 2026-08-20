@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/temp-uploads/", "/_next/", "/static/"],
+        disallow: ["/api/", "/temp-uploads/"],
       },
       // ── Google: full access including images ──
       {
@@ -20,9 +20,23 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "Googlebot-Image",
         allow: "/",
       },
-      // ── Bing ──
+      // ── Microsoft Bing: full access including preview & rendering ──
       {
         userAgent: "Bingbot",
+        allow: "/",
+        disallow: ["/api/", "/temp-uploads/"],
+      },
+      {
+        userAgent: "BingPreview",
+        allow: "/",
+      },
+      {
+        userAgent: "msnbot",
+        allow: "/",
+        disallow: ["/api/", "/temp-uploads/"],
+      },
+      {
+        userAgent: "AdIdxBot",
         allow: "/",
         disallow: ["/api/", "/temp-uploads/"],
       },
