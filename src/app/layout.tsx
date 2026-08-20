@@ -63,6 +63,9 @@ export const metadata: Metadata = {
   publisher: "Rohit Gupta",
   verification: {
     google: "cOS3XGFct508GjSXqJ8sOKgYDLll8jZo2WqzsLvBWs4",
+    other: {
+      "msvalidate.01": "1F50D6150FF4AD9C8B68283209539A7F",
+    },
   },
   alternates: {
     canonical: `${SITE_URL}/`,
