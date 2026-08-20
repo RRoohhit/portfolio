@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -224,6 +224,7 @@ export const Navbar: React.FC = () => {
           {/* ── Brand Logo (Image Logo from public/) ── */}
           <Link
             href="/"
+            aria-label="Rohit Gupta SEO Specialist Homepage"
             onClick={handleMobileClose}
             className="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 rounded-xl flex-shrink-0"
           >

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -97,7 +97,7 @@ export const Footer: React.FC = () => {
           {/* Col 1: Brand & Contact Info */}
           <div className="space-y-5">
             <div className="flex items-center gap-3">
-              <Link href="/rohit-gupta/" className="w-11 h-11 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-400 text-black font-extrabold flex items-center justify-center text-sm font-mono shadow-lg shadow-emerald-500/30 hover:scale-105 transition-transform">
+              <Link href="/rohit-gupta/" aria-label="About Rohit Gupta SEO Specialist" className="w-11 h-11 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-400 text-black font-extrabold flex items-center justify-center text-sm font-mono shadow-lg shadow-emerald-500/30 hover:scale-105 transition-transform">
                 {AUTHOR.initials}
               </Link>
               <div>
