@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -325,7 +325,7 @@ export default function ServicesPage() {
 
         {/* CTA */}
         <section className="p-8 sm:p-10 rounded-3xl bg-zinc-950 border border-white/10 text-center space-y-4 shadow-xl">
-          <h2 className="text-2xl font-bold text-white tracking-tight">Need Help Choosing the Right Service?</h2>
+          <h3 className="text-2xl font-bold text-white tracking-tight">Need Help Choosing the Right Service?</h3>
           <p className="text-xs sm:text-sm text-white/70 max-w-xl mx-auto">
             Get a free SEO audit to identify your exact technical and ranking needs before starting.
           </p>

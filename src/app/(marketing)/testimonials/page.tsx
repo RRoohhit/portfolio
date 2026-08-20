@@ -138,9 +138,9 @@ export default function TestimonialsPage() {
 
         {/* CTA */}
         <section className="p-8 sm:p-10 rounded-3xl bg-zinc-950 border border-white/10 text-center space-y-5 shadow-2xl">
-          <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+          <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
             Want to Achieve Similar Results?
-          </h2>
+          </h3>
           <p className="text-xs sm:text-sm text-white/70 max-w-xl mx-auto">
             Discuss your website SEO, search rankings, or technical development needs today.
           </p>

@@ -239,9 +239,9 @@ export default function SeoServicesPage() {
 
         {/* Callout to SEO Audit */}
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/50 via-zinc-950 to-zinc-950 border border-emerald-500/30 text-center space-y-5 shadow-2xl">
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
             Ready to Improve Your Organic Visibility?
-          </h2>
+          </h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Get in touch with Rohit Gupta to audit your existing SEO foundation and build a practical roadmap for organic search growth.
           </p>

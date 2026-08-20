@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -91,7 +91,7 @@ export default function LocalSeoPage() {
             <Star className="w-4 h-4" />
             Dedicated Service Page
           </div>
-          <h2 className="text-lg font-bold text-white tracking-tight">Looking Specifically for Google Business Profile SEO?</h2>
+          <h3 className="text-lg font-bold text-white tracking-tight">Looking Specifically for Google Business Profile SEO?</h3>
           <p className="text-xs sm:text-sm text-white/75 leading-relaxed">
             We have a dedicated, specialized page for Google Business Profile audit, category optimization, services setup, and Map Pack tracking.
           </p>
@@ -133,7 +133,7 @@ export default function LocalSeoPage() {
 
         {/* Related links */}
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h2>
+          <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h3>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Google Business Profile SEO", href: "/services/google-business-profile-seo" },
@@ -154,7 +154,7 @@ export default function LocalSeoPage() {
         </section>
 
         <section className="p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4 text-center">
-          <h2 className="text-xl font-bold text-white tracking-tight">Ready to Dominate Local Search?</h2>
+          <h3 className="text-xl font-bold text-white tracking-tight">Ready to Dominate Local Search?</h3>
           <p className="text-xs sm:text-sm text-white/70 max-w-xl mx-auto">
             Discuss your local search strategy with Rohit Gupta today.
           </p>

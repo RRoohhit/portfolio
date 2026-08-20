@@ -140,9 +140,9 @@ export const QuickAuditModal: React.FC<QuickAuditModalProps> = ({ isOpen, onClos
             <Gauge className="w-3.5 h-3.5 text-emerald-400" />
             <span>Instant Technical Audit Engine</span>
           </div>
-          <h2 id="audit-modal-title" className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h3 id="audit-modal-title" className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
             Quick Website Performance & SEO Audit
-          </h2>
+          </h3>
           <p className="text-xs text-white/60 leading-relaxed">
             Test any website URL against Google Core Web Vitals, SERP indexing benchmarks, and technical speed bottlenecks.
           </p>

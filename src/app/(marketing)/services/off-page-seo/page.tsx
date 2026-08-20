@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -170,7 +170,7 @@ export default function OffPageSeoPage() {
 
         {/* Related Services */}
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h2>
+          <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h3>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "On-Page SEO", href: "/services/on-page-seo" },
@@ -192,9 +192,9 @@ export default function OffPageSeoPage() {
 
         {/* CTA */}
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/50 via-zinc-950 to-zinc-950 border border-emerald-500/30 text-center space-y-5 shadow-2xl">
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
             Ready to Build Real Authority?
-          </h2>
+          </h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Get a backlink audit and competitor link analysis to understand exactly where your site stands and
             what quality links you need to outrank the competition.

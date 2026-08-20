@@ -487,9 +487,9 @@ export const BlogView: React.FC = () => {
                       {formatDate(selectedArticle.date)}
                     </span>
                   </div>
-                  <h2 className="text-lg sm:text-2xl font-black text-white tracking-tight leading-tight line-clamp-2">
+                  <h3 className="text-lg sm:text-2xl font-black text-white tracking-tight leading-tight line-clamp-2">
                     {selectedArticle.title}
-                  </h2>
+                  </h3>
                   {/* Author */}
                   <div className="flex items-center gap-2.5">
                     <div className="w-7 h-7 rounded-full bg-emerald-400 text-black font-black flex items-center justify-center text-[9px] font-mono shrink-0">

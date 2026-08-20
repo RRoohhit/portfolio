@@ -139,7 +139,7 @@ export default function GoogleAdsPage() {
         </section>
 
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-blue-950/40 via-zinc-950 to-zinc-950 border border-blue-500/30 text-center space-y-5 shadow-2xl">
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to Get More from Your Ad Budget?</h2>
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to Get More from Your Ad Budget?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Get a Google Ads account audit to find out where your budget is being wasted and how to improve your ROAS immediately.
           </p>

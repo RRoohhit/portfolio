@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
@@ -473,10 +473,10 @@ export const HomePage: React.FC = () => {
       <section id="about-us-section" aria-labelledby="about-heading" className="scroll-mt-24 space-y-6">
         <Reveal as="div">
           <div className="flex items-center justify-between">
-            <h2 id="about-heading" className="text-[10px] uppercase text-white/40 tracking-[0.2em] font-bold flex items-center gap-2">
+            <span id="about-heading" className="text-[10px] uppercase text-white/40 tracking-[0.2em] font-bold flex items-center gap-2">
               <Award className="w-3.5 h-3.5 text-emerald-400" />
               About Rohit Gupta
-            </h2>
+            </span>
             <Link href="/rohit-gupta/" className="text-xs font-mono text-emerald-400 hover:underline font-bold flex items-center gap-1">
               Read Full Entity Profile Page →
             </Link>
@@ -488,9 +488,9 @@ export const HomePage: React.FC = () => {
           <Reveal direction="right" distance={32} className="lg:col-span-7">
             <div className="card-3d-interactive p-5 sm:p-8 space-y-5 sm:space-y-6 shadow-2xl h-full flex flex-col justify-between">
               <div className="space-y-4">
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-white tracking-tight">
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-black text-white tracking-tight">
                   Rohit Gupta — SEO Expert, Digital Marketing Consultant &amp; Web Developer
-                </h3>
+                </h2>
                 <p className="text-sm leading-relaxed text-white/75">
                   I&apos;m Rohit Gupta, an SEO specialist and full-stack web developer focused on helping businesses improve their search visibility, website performance and digital growth through ethical, data-backed strategies.
                 </p>

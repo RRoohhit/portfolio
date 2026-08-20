@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -116,7 +116,7 @@ export default function SocialMediaMarketingPage() {
 
         {/* Related Services */}
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h2>
+          <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h3>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Digital Marketing", href: "/services/digital-marketing" },
@@ -132,7 +132,7 @@ export default function SocialMediaMarketingPage() {
         </section>
 
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-pink-950/30 via-zinc-950 to-zinc-950 border border-pink-500/20 text-center space-y-5 shadow-2xl">
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to Grow Your Social Presence?</h2>
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to Grow Your Social Presence?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Get in touch to discuss a social media strategy aligned with your business goals and target audience.
           </p>

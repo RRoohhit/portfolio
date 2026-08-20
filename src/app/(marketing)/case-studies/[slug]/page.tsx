@@ -89,7 +89,7 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
             <AlertTriangle className="w-4 h-4" />
             <span>1. Problem</span>
           </div>
-          <h2 className="text-xl font-bold text-white tracking-tight">Initial Challenges &amp; Bottlenecks</h2>
+          <h3 className="text-xl font-bold text-white tracking-tight">Initial Challenges &amp; Bottlenecks</h3>
           <p className="text-sm text-white/80 leading-relaxed font-light">
             {cs.beforeDescription}
           </p>
@@ -101,7 +101,7 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
             <FileText className="w-4 h-4" />
             <span>2. Analysis</span>
           </div>
-          <h2 className="text-xl font-bold text-white tracking-tight">Technical Audit &amp; Strategy Diagnostics</h2>
+          <h3 className="text-xl font-bold text-white tracking-tight">Technical Audit &amp; Strategy Diagnostics</h3>
           <p className="text-sm text-white/80 leading-relaxed font-light">
             Conducted deep technical crawling, keyword gap analysis, rendering bottlenecks evaluation, and search-intent alignment to isolate exact causes of underperformance.
           </p>
@@ -113,7 +113,7 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
             <Check className="w-4 h-4" />
             <span>3. Work Executed</span>
           </div>
-          <h2 className="text-xl font-bold text-white tracking-tight">Technical Implementation &amp; Optimization</h2>
+          <h3 className="text-xl font-bold text-white tracking-tight">Technical Implementation &amp; Optimization</h3>
           <ul className="space-y-2.5">
             {cs.technicalHighlights.map((item, idx) => (
               <li key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-white/80">
@@ -130,7 +130,7 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
             <TrendingUp className="w-4 h-4" />
             <span>4. Measurable Result</span>
           </div>
-          <h2 className="text-xl font-bold text-white tracking-tight">Post-Optimization Performance</h2>
+          <h3 className="text-xl font-bold text-white tracking-tight">Post-Optimization Performance</h3>
           <p className="text-sm text-white/80 leading-relaxed font-light">
             {cs.afterDescription}
           </p>
@@ -152,7 +152,7 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
             <ShieldCheck className="w-4 h-4" />
             <span>5. Timeline &amp; Key Lessons Learned</span>
           </div>
-          <h2 className="text-xl font-bold text-white tracking-tight">Strategy Execution &amp; Key Takeaways</h2>
+          <h3 className="text-xl font-bold text-white tracking-tight">Strategy Execution &amp; Key Takeaways</h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
             <div className="p-4 rounded-2xl bg-black border border-white/10 space-y-1">
               <span className="text-xs font-mono font-bold text-emerald-400">Month 1 — Audit &amp; Technical Fixes</span>
@@ -175,7 +175,7 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
 
         {/* CTA Box */}
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/40 via-zinc-950 to-zinc-950 border border-emerald-500/30 text-center space-y-5 shadow-2xl">
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Want Similar Organic Results for Your Business?</h2>
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Want Similar Organic Results for Your Business?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Get a free, detailed technical and on-page SEO audit to uncover the exact growth opportunities for your website.
           </p>

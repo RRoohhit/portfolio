@@ -82,7 +82,7 @@ export default function ReactDevelopmentPage() {
         </section>
 
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related React &amp; Web Application Services</h2>
+          <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related React &amp; Web Application Services</h3>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Full-Stack Web Development", href: "/services/web-development" },
@@ -97,7 +97,7 @@ export default function ReactDevelopmentPage() {
         </section>
 
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-blue-950/40 via-zinc-950 to-zinc-950 border border-blue-500/30 text-center space-y-5 shadow-2xl">
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Need a High-Performance React Web App?</h2>
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Need a High-Performance React Web App?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Discuss your project requirements with Rohit Gupta today.
           </p>

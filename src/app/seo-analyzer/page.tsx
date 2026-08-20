@@ -62,7 +62,7 @@ export default function Page() {
               Traditional SEO audit tools dump long, flat lists of URLs, status codes, and issues into tabular spreadsheets that make it difficult to visualize how link equity flows across your site. The <strong>Rohit Gupta Interactive SEO Mind Map &amp; Visual Analyzer</strong> solves this by converting your website structure, internal links, crawl depth, and route hierarchy into an interactive 2D node map.
             </p>
             <p>
-              By scanning your application routes, XML sitemaps, and folder hierarchy, our visual engine maps primary money pages, service landing pages, blog categories, and utility routes into interconnected nodes. You can inspect status codes (200 OK, 301 Redirects, 404 Errors), identify orphan pages lacking internal links, evaluate rendering bottlenecks, and audit JSON-LD Schema markup in real time.
+              By scanning your application routes, XML sitemaps, and folder hierarchy, our visual engine maps primary money pages, service landing pages, blog categories, and utility routes into interconnected nodes. You can inspect HTTP status codes (200 OK, 301 Redirects, broken page errors), identify orphan pages lacking internal links, evaluate rendering bottlenecks, and audit JSON-LD Schema markup in real time.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               <div className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">

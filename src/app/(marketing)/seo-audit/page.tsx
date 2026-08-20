@@ -137,10 +137,10 @@ export default function SeoAuditPage() {
 
         {/* Deliverables / Benefits */}
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4 shadow-xl">
-          <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
             <CheckCircle2 className="w-5 h-5 text-emerald-400" />
             What You Receive
-          </h2>
+          </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
             {[
               "Clear, prioritized list of technical errors and fixes",
@@ -160,9 +160,9 @@ export default function SeoAuditPage() {
 
         {/* Contact Info Bar */}
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/40 via-zinc-950 to-zinc-950 border border-emerald-500/30 text-center space-y-6 shadow-2xl">
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
             Ready to Unlock Your Search Potential?
-          </h2>
+          </h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Send your website URL and target keywords to get your audit started.
           </p>

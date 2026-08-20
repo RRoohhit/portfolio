@@ -163,7 +163,7 @@ Lab data is controlled Lighthouse runs, useful for debugging but optimistic. Fie
 ### How often should I check Core Web Vitals?
 Monthly at minimum, because every deployment can regress speed. Use the Search Console Core Web Vitals report and CrUX for alerts, and run Lighthouse on every pull request so performance becomes a continuous discipline.
 
-## Continue Reading
+### Continue Reading
 Speed is one layer of the complete ranking system. Continue with the related guides on this site.
 - [White hat vs black hat SEO: sustainable rankings in the AI era](/blog/white-hat-vs-black-hat-seo) - the strategy layer that turns fast pages into trusted pages
 - [Programmatic JSON-LD schema markup for rich snippets](/blog/json-ld-schema-markup-guide) - structured data that converts fast pages into rich results
@@ -316,7 +316,7 @@ It is the space between white and black: expired domains, guest post link networ
 ### How do I know if my site has a penalty?
 Check Search Console Security and Manual Actions for manual penalties, and compare traffic charts against known core and spam update dates for algorithmic drops. Backlink tools also flag the toxic links that may have triggered the drop.
 
-## Continue Reading
+### Continue Reading
 White hat strategy depends on the execution layers around it. Continue with these related guides on this site.
 - [White hat link building: the complete 2026 guide](/blog/white-hat-link-building-backlinks-guide-2026) - earning the authority this guide protects
 - [Core Web Vitals optimization in React and Next.js](/blog/core-web-vitals-react-nextjs) - the technical foundation white hat rankings stand on
@@ -477,7 +477,7 @@ Use the Rich Results Test, the Schema.org validator and Search Console URL Inspe
 ### What schema do ecommerce product pages need?
 Product, Offer and genuine AggregateRating, plus BreadcrumbList and Organization. Never fake reviews; structured data manual actions can strip all rich results from the domain.
 
-## Continue Reading
+### Continue Reading
 Structured data works hardest when the rest of the page is optimized. Continue with these related guides on this site.
 - [AI search optimization: AEO and GEO for Google AI Overviews](/blog/ai-search-optimization-aeo-geo-guide-2026) - the citation layer your schema feeds
 - [Core Web Vitals optimization in React and Next.js](/blog/core-web-vitals-react-nextjs) - fast pages that rich results convert
@@ -638,7 +638,7 @@ A real one names specific problems on your site and demonstrates judgment. A bai
 ### Should I hire in-house or outsource?
 In-house suits permanent daily SEO needs at higher cost; outsourcing brings senior skill and tools without payroll. Many teams run a hybrid: an in-house marketer coordinating a specialist or agency.
 
-## Continue Reading
+### Continue Reading
 Before you hire, understand the work the right specialist will run. Continue with these related guides on this site.
 - [SEO services cost and pricing in India 2026](/blog/seo-services-cost-price-india-2026) - honest budget ranges for every service
 - [White hat vs black hat SEO: sustainable rankings](/blog/white-hat-vs-black-hat-seo) - the method questions every candidate must pass

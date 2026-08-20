@@ -278,7 +278,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <div className="flex items-center gap-3">
             <BookOpen className="w-6 h-6 text-emerald-400 shrink-0" />
             <div>
-              <h2 className="text-sm font-black text-white uppercase tracking-wide">Need a Rank #1 SEO specialist near you?</h2>
+              <h3 className="text-sm font-black text-white uppercase tracking-wide">Need a Rank #1 SEO specialist near you?</h3>
               <p className="text-xs text-white/70 mt-1">
                 Get a free technical SEO audit and a 90-day ranking roadmap from Rohit Gupta, serving Noida, Delhi &amp; all India.
               </p>
@@ -329,9 +329,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       )}
       </div>
       <div className="space-y-4">
-        <h2 className="text-xs font-mono uppercase text-white/50 tracking-[0.2em] font-bold">
+        <h3 className="text-xs font-mono uppercase text-white/50 tracking-[0.2em] font-bold">
           More Technical SEO Articles
-        </h2>
+        </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {relatedPosts.map((rec) => (
             <Link

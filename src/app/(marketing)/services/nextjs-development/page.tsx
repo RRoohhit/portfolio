@@ -125,7 +125,7 @@ export default function NextjsDevelopmentPage() {
         </section>
 
         <section className="p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4 text-center">
-          <h2 className="text-xl font-bold text-white tracking-tight">Building a Next.js App?</h2>
+          <h3 className="text-xl font-bold text-white tracking-tight">Building a Next.js App?</h3>
           <p className="text-xs sm:text-sm text-white/70 max-w-xl mx-auto">
             Discuss your Next.js application architecture and search performance requirements with Rohit Gupta.
           </p>

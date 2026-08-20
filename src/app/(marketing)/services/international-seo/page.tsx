@@ -111,7 +111,7 @@ export default function InternationalSeoPage() {
 
         {/* Related links */}
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Global &amp; Multi-Regional Services</h2>
+          <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Global &amp; Multi-Regional Services</h3>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Technical SEO", href: "/services/technical-seo" },
@@ -132,7 +132,7 @@ export default function InternationalSeoPage() {
         </section>
 
         <section className="p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4 text-center">
-          <h2 className="text-xl font-bold text-white tracking-tight">Expanding Globally?</h2>
+          <h3 className="text-xl font-bold text-white tracking-tight">Expanding Globally?</h3>
           <p className="text-xs sm:text-sm text-white/70 max-w-xl mx-auto">
             Get expert guidance on structuring your international website for global search engines.
           </p>

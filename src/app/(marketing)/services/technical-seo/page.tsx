@@ -142,7 +142,7 @@ export default function TechnicalSeoPage() {
 
         {/* Related links */}
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Technical &amp; Core Vitals Services</h2>
+          <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Technical &amp; Core Vitals Services</h3>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "On-Page SEO", href: "/services/on-page-seo" },
@@ -164,7 +164,7 @@ export default function TechnicalSeoPage() {
         </section>
 
         <section className="p-8 sm:p-10 rounded-3xl bg-zinc-950 border border-white/10 space-y-4 text-center">
-          <h2 className="text-xl font-bold text-white tracking-tight">Need a Technical SEO Audit?</h2>
+          <h3 className="text-xl font-bold text-white tracking-tight">Need a Technical SEO Audit?</h3>
           <p className="text-xs sm:text-sm text-white/70 max-w-xl mx-auto">
             Get a thorough technical audit of your site structure, performance metrics, and schema implementation.
           </p>

@@ -148,7 +148,7 @@ export default function EcommerceSeoPage() {
 
         {/* Related Services */}
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h2>
+          <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h3>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Technical SEO", href: "/services/technical-seo" },
@@ -164,7 +164,7 @@ export default function EcommerceSeoPage() {
         </section>
 
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/50 via-zinc-950 to-zinc-950 border border-emerald-500/30 text-center space-y-5 shadow-2xl">
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to Grow Your Store's Organic Revenue?</h2>
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to Grow Your Store's Organic Revenue?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Get an e-commerce SEO audit to find out exactly which products and categories are losing organic traffic and why.
           </p>

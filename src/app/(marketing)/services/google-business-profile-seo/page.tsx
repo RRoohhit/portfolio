@@ -155,7 +155,7 @@ export default function GoogleBusinessProfileSeoPage() {
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4 shadow-xl">
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <Search className="w-5 h-5 text-emerald-400" />
-            Who Is This Service For?
+            Who Is Google Business Profile SEO For?
           </h2>
           <p className="text-sm sm:text-base text-white/75 leading-relaxed">
             Google Business Profile SEO is critical for any business that serves customers in a specific location or service area.
@@ -239,10 +239,10 @@ export default function GoogleBusinessProfileSeoPage() {
 
         {/* Search queries this page targets */}
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h2 className="text-lg font-bold text-white font-mono uppercase tracking-wider flex items-center gap-2">
+          <h3 className="text-lg font-bold text-white font-mono uppercase tracking-wider flex items-center gap-2">
             <Globe className="w-4 h-4 text-emerald-400" />
             Search Queries This Service Covers
-          </h2>
+          </h3>
           <div className="flex flex-wrap gap-2">
             {SEARCH_QUERIES.map((q) => (
               <span key={q} className="px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
@@ -254,7 +254,7 @@ export default function GoogleBusinessProfileSeoPage() {
 
         {/* Internal links */}
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Google Business Profile &amp; Local Maps Services</h2>
+          <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Google Business Profile &amp; Local Maps Services</h3>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Local SEO", href: "/services/local-seo" },
@@ -280,9 +280,9 @@ export default function GoogleBusinessProfileSeoPage() {
             <Star className="w-4 h-4" />
             Free GBP Audit Included
           </div>
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
             Ready to Rank in Google Maps?
-          </h2>
+          </h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Get a free Google Business Profile audit and find out exactly what's stopping your business from appearing
             in the local 3-pack. Contact Rohit Gupta today.

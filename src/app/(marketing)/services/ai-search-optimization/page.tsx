@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -151,7 +151,7 @@ export default function AiSearchOptimizationPage() {
 
         {/* Related Services */}
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h2>
+          <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h3>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Technical SEO", href: "/services/technical-seo" },
@@ -167,7 +167,7 @@ export default function AiSearchOptimizationPage() {
         </section>
 
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-purple-950/40 via-zinc-950 to-zinc-950 border border-purple-500/30 text-center space-y-5 shadow-2xl">
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready for the AI Search Era?</h2>
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready for the AI Search Era?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Discuss your AI search visibility goals with Rohit Gupta. We will audit your current entity signals
             and build a practical roadmap for improving your presence in AI-powered search systems.

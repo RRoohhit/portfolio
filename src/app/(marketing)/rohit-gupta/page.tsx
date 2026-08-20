@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { buildPageMetadata } from "@/lib/seo";
@@ -265,7 +265,7 @@ export default function RohitGuptaPage() {
 
         {/* Verified Profiles Section */}
         <section className="card-3d-interactive p-6 sm:p-8 space-y-4 shadow-2xl">
-          <h2 className="text-lg font-bold text-white font-mono uppercase tracking-wider">Official Professional Profiles</h2>
+          <h3 className="text-lg font-bold text-white font-mono uppercase tracking-wider">Official Professional Profiles</h3>
           <div className="flex flex-wrap gap-3">
             <a
               href={SOCIALS.linkedin}
@@ -308,9 +308,9 @@ export default function RohitGuptaPage() {
 
         {/* Work With Rohit Gupta CTA */}
         <section className="card-3d-interactive p-8 sm:p-10 text-center space-y-5 shadow-2xl border-emerald-500/30">
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
             Work With Rohit Gupta
-          </h2>
+          </h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             If you need help with SEO, digital marketing or a high-performance website, get in touch to discuss your project and goals.
           </p>
