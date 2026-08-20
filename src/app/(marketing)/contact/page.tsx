@@ -8,7 +8,7 @@ import { CONTACT } from "@/config/site";
 export const metadata: Metadata = buildPageMetadata({
   title: "Contact SEO Specialist Rohit Gupta | Free SEO Audit",
   description: `Contact Rohit Gupta - SEO specialist & full stack web developer in Noida, Delhi & India. Get a free technical SEO audit. Call/WhatsApp ${CONTACT.phone}.`,
-  path: "/contact",
+  path: "/contact/",
   keywords: [
     "hire SEO specialist",
     "SEO consultant India",
@@ -18,13 +18,14 @@ export const metadata: Metadata = buildPageMetadata({
   ],
 });
 
+
 export default function Contact() {
   return (
     <>
       {renderJsonLd(
         breadcrumbGraph([
           { name: "Home", path: "/" },
-          { name: "Contact", path: "/contact" },
+          { name: "Contact", path: "/contact/" },
         ]),
         "jsonld-contact-breadcrumb"
       )}

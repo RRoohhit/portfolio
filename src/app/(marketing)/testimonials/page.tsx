@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -136,14 +136,14 @@ export default function TestimonialsPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg"
             >
               Get In Touch
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              href="/case-studies"
+              href="/case-studies/"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
             >
               View Case Studies

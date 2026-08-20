@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React from "react";
 import Link from "next/link";
 import { LOCAL_COVERAGE, WHY_HIRE } from "@/data/portfolioData";
@@ -74,7 +74,7 @@ export const LocalSeoCoverageSection: React.FC<LocalSeoCoverageSectionProps> = (
             </div>
 
             <Link
-              href="/services/local-seo"
+              href="/services/local-seo/"
               className="inline-flex items-center gap-1 text-[11px] font-mono text-emerald-400 hover:underline pt-2 border-t border-white/5"
             >
               <span>Explore Local SEO Solutions</span>
@@ -111,7 +111,7 @@ export const LocalSeoCoverageSection: React.FC<LocalSeoCoverageSectionProps> = (
             </p>
           </div>
           <Link
-            href="/contact"
+            href="/contact/"
             className="btn-3d-emerald self-start text-xs font-mono font-black group"
           >
             <Phone className="w-4 h-4" />

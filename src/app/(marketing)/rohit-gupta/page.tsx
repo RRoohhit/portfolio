@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { buildPageMetadata } from "@/lib/seo";
@@ -252,11 +252,11 @@ export default function RohitGuptaPage() {
             <div className="space-y-2">
               <h3 className="text-xs font-mono uppercase text-emerald-400 font-bold tracking-wider">Locations Served</h3>
               <ul className="space-y-1 text-xs text-white/75">
-                <li>• <Link href="/seo-expert-noida" className="hover:text-emerald-400 underline">Noida & Greater Noida</Link> (Current Base)</li>
-                <li>• <Link href="/seo-expert-delhi" className="hover:text-emerald-400 underline">Delhi NCR</Link> (Connaught Place, South/West Delhi)</li>
-                <li>• <Link href="/seo-expert-gurgaon" className="hover:text-emerald-400 underline">Gurgaon</Link> (Cyber City, B2B Hubs)</li>
-                <li>• <Link href="/seo-expert-ghaziabad" className="hover:text-emerald-400 underline">Ghaziabad & Lucknow</Link></li>
-                <li>• <Link href="/seo-expert-ayodhya" className="hover:text-emerald-400 underline">Ayodhya</Link> (Permanent Base)</li>
+                <li>• <Link href="/seo-expert-noida/" className="hover:text-emerald-400 underline">Noida & Greater Noida</Link> (Current Base)</li>
+                <li>• <Link href="/seo-expert-delhi/" className="hover:text-emerald-400 underline">Delhi NCR</Link> (Connaught Place, South/West Delhi)</li>
+                <li>• <Link href="/seo-expert-gurgaon/" className="hover:text-emerald-400 underline">Gurgaon</Link> (Cyber City, B2B Hubs)</li>
+                <li>• <Link href="/seo-expert-ghaziabad/" className="hover:text-emerald-400 underline">Ghaziabad & Lucknow</Link></li>
+                <li>• <Link href="/seo-expert-ayodhya/" className="hover:text-emerald-400 underline">Ayodhya</Link> (Permanent Base)</li>
                 <li>• All of India & International Remote Clients</li>
               </ul>
             </div>
@@ -316,14 +316,14 @@ export default function RohitGuptaPage() {
           </p>
           <div className="pt-2 flex flex-wrap justify-center gap-4">
             <Link
-              href="/contact"
+              href="/contact/"
               className="btn-3d-emerald text-xs font-mono font-black group"
             >
               Contact Rohit Gupta
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
-              href="/services"
+              href="/services/"
               className="btn-3d-dark text-xs font-mono font-bold"
             >
               Explore SEO Services

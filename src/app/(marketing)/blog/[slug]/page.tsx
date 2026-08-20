@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   const post = BLOG_POSTS.find((p) => p.slug === slug);
   if (!post) return {};
 
-  const url = new URL(`/blog/${post.slug}`, SITE_URL).href;
+  const url = new URL(`/blog/${post.slug}/`, SITE_URL).href;
   return {
     title: post.title,
     description: post.excerpt.slice(0, 158),
@@ -63,7 +63,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const post = BLOG_POSTS.find((p) => p.slug === slug);
   if (!post) notFound();
 
-  const fullUrl = new URL(`/blog/${post.slug}`, SITE_URL).href;
+  const fullUrl = new URL(`/blog/${post.slug}/`, SITE_URL).href;
   const wordCount = post.content.split(/\s+/).length;
 
   const jsonLd = {
@@ -100,7 +100,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         "@id": `${fullUrl}#breadcrumb`,
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
-          { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog/` },
           { "@type": "ListItem", position: 3, name: post.title, item: fullUrl },
         ],
       },
@@ -131,7 +131,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     .slice(0, 12)
     .map((text, idx) => ({ index: idx + 1, text }));
 
-  const articleUrl = `${SITE_URL}/blog/${post.slug}`;
+  const articleUrl = `${SITE_URL}/blog/${post.slug}/`;
   const shareHrefs = {
     whatsapp: `https://wa.me/?text=${encodeURIComponent(`${post.title} — ${articleUrl}`)}`,
     twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(articleUrl)}&text=${encodeURIComponent(post.title)}`,
@@ -150,12 +150,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <Breadcrumbs
           items={[
             { name: "Home", href: "/" },
-            { name: "Blog", href: "/blog" },
+            { name: "Blog", href: "/blog/" },
             { name: post.title },
           ]}
         />
         <Link
-          href="/blog"
+          href="/blog/"
           className="inline-flex items-center gap-1.5 text-xs font-mono text-white/60 hover:text-emerald-400 transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
@@ -193,7 +193,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
         <div className="flex items-center gap-3 pt-2 border-t border-white/10">
           <Link
-            href="/rohit-gupta"
+            href="/rohit-gupta/"
             className="w-10 h-10 rounded-full bg-emerald-400 text-black font-black flex items-center justify-center text-xs font-mono shrink-0 hover:scale-105 transition-transform"
           >
             RG
@@ -201,7 +201,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <div className="flex-1">
             <div className="text-xs sm:text-sm font-bold text-white font-mono flex items-center gap-2 flex-wrap">
               <span className="text-white/70 font-normal">Written by</span>
-              <Link href="/rohit-gupta" className="text-emerald-400 hover:underline font-bold">
+              <Link href="/rohit-gupta/" className="text-emerald-400 hover:underline font-bold">
                 Rohit Gupta
               </Link>
               <span className="text-[10px] text-emerald-300 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20 font-bold uppercase tracking-wide">
@@ -286,7 +286,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
           <div className="flex flex-wrap items-center gap-3">
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25"
             >
               Hire Rohit

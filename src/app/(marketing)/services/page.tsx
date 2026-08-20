@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -330,7 +330,7 @@ export default function ServicesPage() {
             Get a free SEO audit to identify your exact technical and ranking needs before starting.
           </p>
           <Link
-            href="/seo-audit"
+            href="/seo-audit/"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg"
           >
             Request Free SEO Audit

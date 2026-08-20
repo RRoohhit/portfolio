@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -103,7 +103,7 @@ export default function DigitalMarketingPage() {
             Get in touch with Rohit Gupta to review your marketing campaigns, search visibility, and conversion goals.
           </p>
           <Link
-            href="/contact"
+            href="/contact/"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25"
           >
             Schedule Consultation

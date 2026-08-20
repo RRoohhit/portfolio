@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -44,7 +44,7 @@ export default function SeoExpertAyodhyaPage() {
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
             Ayodhya's economy is expanding rapidly across tourism, hospitality, retail, real estate, and local services. Rohit Gupta is permanently rooted in Ayodhya (UP 272130) and delivers specialized Local SEO, Google Business Profile management, and fast web applications for businesses establishing search dominance in Ayodhya.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
+          <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Ayodhya SEO Expert <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
@@ -107,7 +107,7 @@ export default function SeoExpertAyodhyaPage() {
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Get in touch with Rohit Gupta to audit your local search presence in Ayodhya.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
+          <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
             Request Ayodhya SEO Audit <ArrowRight className="w-4 h-4" />
           </Link>
         </section>

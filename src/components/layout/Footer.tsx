@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -9,34 +9,34 @@ import BackToTopButton from "./BackToTopButton";
 
 const QUICK_NAV = [
   { href: "/", label: "Home" },
-  { href: "/rohit-gupta", label: "About Rohit Gupta" },
-  { href: "/services", label: "All Services Hub" },
-  { href: "/seo-audit", label: "Free SEO Audit" },
-  { href: "/case-studies", label: "Case Studies" },
-  { href: "/testimonials", label: "Client Testimonials" },
-  { href: "/blog", label: "Technical Articles" },
-  { href: "/contact", label: "Contact Rohit Gupta" },
+  { href: "/rohit-gupta/", label: "About Rohit Gupta" },
+  { href: "/services/", label: "All Services Hub" },
+  { href: "/seo-audit/", label: "Free SEO Audit" },
+  { href: "/case-studies/", label: "Case Studies" },
+  { href: "/testimonials/", label: "Client Testimonials" },
+  { href: "/blog/", label: "Technical Articles" },
+  { href: "/contact/", label: "Contact Rohit Gupta" },
 ];
 
 const SERVICE_LINKS = [
-  { href: "/services/technical-seo", label: "Technical SEO & Speed" },
-  { href: "/services/google-business-profile-seo", label: "Google Business Profile SEO" },
-  { href: "/services/on-page-seo", label: "On-Page SEO & Content" },
-  { href: "/services/off-page-seo", label: "Off-Page SEO & Link Building" },
-  { href: "/services/ecommerce-seo", label: "E-Commerce SEO" },
-  { href: "/services/ai-search-optimization", label: "AI Search Optimization" },
-  { href: "/services/google-ads", label: "Google Ads & PPC" },
-  { href: "/services/web-development", label: "React & Next.js Web Dev" },
+  { href: "/services/technical-seo/", label: "Technical SEO & Speed" },
+  { href: "/services/google-business-profile-seo/", label: "Google Business Profile SEO" },
+  { href: "/services/on-page-seo/", label: "On-Page SEO & Content" },
+  { href: "/services/off-page-seo/", label: "Off-Page SEO & Link Building" },
+  { href: "/services/ecommerce-seo/", label: "E-Commerce SEO" },
+  { href: "/services/ai-search-optimization/", label: "AI Search Optimization" },
+  { href: "/services/google-ads/", label: "Google Ads & PPC" },
+  { href: "/services/web-development/", label: "React & Next.js Web Dev" },
 ];
 
 const LOCAL_LINKS = [
-  { href: "/seo-expert-noida", label: "SEO Expert in Noida" },
-  { href: "/local-seo-noida", label: "Local SEO Noida" },
-  { href: "/google-business-profile-seo-noida", label: "GBP SEO Noida" },
-  { href: "/seo-expert-delhi", label: "SEO Expert in Delhi" },
-  { href: "/seo-expert-gurgaon", label: "SEO Expert in Gurgaon" },
-  { href: "/seo-expert-ghaziabad", label: "SEO Expert in Ghaziabad" },
-  { href: "/seo-expert-ayodhya", label: "SEO Expert in Ayodhya" },
+  { href: "/seo-expert-noida/", label: "SEO Expert in Noida" },
+  { href: "/local-seo-noida/", label: "Local SEO Noida" },
+  { href: "/google-business-profile-seo-noida/", label: "GBP SEO Noida" },
+  { href: "/seo-expert-delhi/", label: "SEO Expert in Delhi" },
+  { href: "/seo-expert-gurgaon/", label: "SEO Expert in Gurgaon" },
+  { href: "/seo-expert-ghaziabad/", label: "SEO Expert in Ghaziabad" },
+  { href: "/seo-expert-ayodhya/", label: "SEO Expert in Ayodhya" },
 ];
 
 export const Footer: React.FC = () => {
@@ -72,7 +72,7 @@ export const Footer: React.FC = () => {
             </div>
             <div className="flex flex-wrap sm:flex-nowrap items-center gap-3 shrink-0">
               <Link
-                href="/seo-audit"
+                href="/seo-audit/"
                 className="btn-3d-emerald text-xs font-mono font-black uppercase tracking-wider group"
               >
                 Get Free SEO Audit
@@ -97,11 +97,11 @@ export const Footer: React.FC = () => {
           {/* Col 1: Brand & Contact Info */}
           <div className="space-y-5">
             <div className="flex items-center gap-3">
-              <Link href="/rohit-gupta" className="w-11 h-11 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-400 text-black font-extrabold flex items-center justify-center text-sm font-mono shadow-lg shadow-emerald-500/30 hover:scale-105 transition-transform">
+              <Link href="/rohit-gupta/" className="w-11 h-11 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-400 text-black font-extrabold flex items-center justify-center text-sm font-mono shadow-lg shadow-emerald-500/30 hover:scale-105 transition-transform">
                 {AUTHOR.initials}
               </Link>
               <div>
-                <Link href="/rohit-gupta" className="text-white font-extrabold tracking-tight text-lg leading-none hover:text-emerald-400 transition-colors">
+                <Link href="/rohit-gupta/" className="text-white font-extrabold tracking-tight text-lg leading-none hover:text-emerald-400 transition-colors">
                   {AUTHOR.name}
                 </Link>
                 <p className="text-xs text-zinc-500 font-mono mt-1">{AUTHOR.role}</p>
@@ -275,7 +275,7 @@ export const Footer: React.FC = () => {
               Google Maps
             </a>
             <span className="text-zinc-700">|</span>
-            <Link href="/rohit-gupta" className="text-zinc-300 hover:text-emerald-400 transition-colors">
+            <Link href="/rohit-gupta/" className="text-zinc-300 hover:text-emerald-400 transition-colors">
               About Rohit
             </Link>
             <span className="text-zinc-700">|</span>

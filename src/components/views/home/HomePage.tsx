@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
@@ -199,11 +199,11 @@ export const HomePage: React.FC = () => {
               </h1>
               <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-xl">
                 I help businesses improve organic search visibility, website performance and online growth through{" "}
-                <Link href="/services/technical-seo" className="text-white hover:text-emerald-400 font-semibold underline">technical SEO</Link>,{" "}
-                <Link href="/services/local-seo" className="text-white hover:text-emerald-400 font-semibold underline">local SEO</Link>,{" "}
-                <Link href="/services/international-seo" className="text-white hover:text-emerald-400 font-semibold underline">international SEO</Link>,{" "}
-                <Link href="/services/digital-marketing" className="text-white hover:text-emerald-400 font-semibold underline">digital marketing</Link> and{" "}
-                <Link href="/services/web-development" className="text-white hover:text-emerald-400 font-semibold underline">high-performance web development</Link>.
+                <Link href="/services/technical-seo/" className="text-white hover:text-emerald-400 font-semibold underline">technical SEO</Link>,{" "}
+                <Link href="/services/local-seo/" className="text-white hover:text-emerald-400 font-semibold underline">local SEO</Link>,{" "}
+                <Link href="/services/international-seo/" className="text-white hover:text-emerald-400 font-semibold underline">international SEO</Link>,{" "}
+                <Link href="/services/digital-marketing/" className="text-white hover:text-emerald-400 font-semibold underline">digital marketing</Link> and{" "}
+                <Link href="/services/web-development/" className="text-white hover:text-emerald-400 font-semibold underline">high-performance web development</Link>.
               </p>
             </div>
 
@@ -211,7 +211,7 @@ export const HomePage: React.FC = () => {
             <div className="space-y-2.5 sm:space-y-0 sm:flex sm:flex-wrap sm:items-center sm:gap-3.5 w-full">
               {/* Button 1: Get SEO Consultation */}
               <Link
-                href="/contact"
+                href="/contact/"
                 className="btn-3d-emerald group text-xs font-mono font-black w-full sm:w-auto justify-center flex items-center gap-2 py-3.5 px-5 shadow-lg"
               >
                 <span>Get SEO Consultation</span>
@@ -221,7 +221,7 @@ export const HomePage: React.FC = () => {
               {/* Buttons 2 & 3: Side-by-side in ONE line on mobile */}
               <div className="grid grid-cols-2 gap-2 sm:flex sm:items-center sm:gap-3 w-full sm:w-auto">
                 <Link
-                  href="/case-studies"
+                  href="/case-studies/"
                   className="btn-3d-dark text-[10px] sm:text-xs font-mono font-bold text-center justify-center flex items-center py-3 px-2 sm:px-4 leading-none truncate"
                 >
                   <span className="truncate">View Case Studies</span>
@@ -416,7 +416,7 @@ export const HomePage: React.FC = () => {
 
         <Reveal className="flex justify-center pt-2">
           <Link
-            href="/contact"
+            href="/contact/"
             className="btn-3d-emerald group text-xs font-mono font-black"
           >
             Get a Free Strategy Call
@@ -477,7 +477,7 @@ export const HomePage: React.FC = () => {
               <Award className="w-3.5 h-3.5 text-emerald-400" />
               About Rohit Gupta
             </h2>
-            <Link href="/rohit-gupta" className="text-xs font-mono text-emerald-400 hover:underline font-bold flex items-center gap-1">
+            <Link href="/rohit-gupta/" className="text-xs font-mono text-emerald-400 hover:underline font-bold flex items-center gap-1">
               Read Full Entity Profile Page →
             </Link>
           </div>
@@ -515,7 +515,7 @@ export const HomePage: React.FC = () => {
 
               <div className="pt-3 border-t border-white/10">
                 <Link
-                  href="/rohit-gupta"
+                  href="/rohit-gupta/"
                   className="btn-3d-dark text-xs font-mono font-bold text-emerald-400 hover:text-emerald-300 py-2 px-4 inline-flex items-center gap-2"
                 >
                   <span>Learn more about Rohit Gupta</span>
@@ -535,7 +535,7 @@ export const HomePage: React.FC = () => {
               <div className="pt-4 border-t border-black/10 flex justify-between items-center">
                 <span className="text-[10px] font-mono uppercase font-bold text-black/70">NOIDA (CURRENT) · AYODHYA (PERMANENT)</span>
                 <Link
-                  href="/rohit-gupta"
+                  href="/rohit-gupta/"
                   className="arrow-3d w-9 h-9 flex items-center justify-center font-bold text-black shadow-md hover:scale-110 transition-transform"
                   aria-label="View Rohit Gupta profile page"
                 >

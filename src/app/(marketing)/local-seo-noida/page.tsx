@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -44,7 +44,7 @@ export default function LocalSeoNoidaPage() {
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
             Capture high-intent local customers searching for your services across Noida, Sector 18, Sector 62, Sector 63, Greater Noida, and Delhi NCR. Rohit Gupta builds tailored local SEO strategies that put your business in the Google Map 3-Pack.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
+          <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Get Local SEO Consultation <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
@@ -111,7 +111,7 @@ export default function LocalSeoNoidaPage() {
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Discuss your Noida local search targets with Rohit Gupta today.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
+          <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
             Request Local SEO Audit <ArrowRight className="w-4 h-4" />
           </Link>
         </section>

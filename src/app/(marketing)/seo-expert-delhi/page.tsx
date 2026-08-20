@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -45,7 +45,7 @@ export default function SeoExpertDelhiPage() {
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
             Delhi is one of the most competitive search markets in India. From corporate firms in Connaught Place to retail brands in South Delhi and B2B services in Janakpuri and Dwarka, Rohit Gupta delivers technical SEO, white hat link building, and conversion-focused digital marketing that drives top organic rankings.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
+          <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Delhi SEO Specialist <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
@@ -108,7 +108,7 @@ export default function SeoExpertDelhiPage() {
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Get a free search visibility audit for your Delhi business today.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
+          <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
             Request Delhi SEO Audit <ArrowRight className="w-4 h-4" />
           </Link>
         </section>

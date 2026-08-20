@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -70,14 +70,14 @@ export default function LocalSeoPage() {
 
           <div className="flex flex-wrap gap-3 pt-2">
             <Link
-              href="/services/google-business-profile-seo"
+              href="/services/google-business-profile-seo/"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg"
             >
               Dedicated GBP SEO Service
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
             >
               Get Local SEO Strategy
@@ -96,7 +96,7 @@ export default function LocalSeoPage() {
             We have a dedicated, specialized page for Google Business Profile audit, category optimization, services setup, and Map Pack tracking.
           </p>
           <Link
-            href="/services/google-business-profile-seo"
+            href="/services/google-business-profile-seo/"
             className="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-emerald-400 hover:text-emerald-300 transition-colors"
           >
             <span>Explore Google Business Profile SEO</span>
@@ -159,7 +159,7 @@ export default function LocalSeoPage() {
             Discuss your local search strategy with Rohit Gupta today.
           </p>
           <Link
-            href="/contact"
+            href="/contact/"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg"
           >
             Get Local SEO Advice

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -73,7 +73,7 @@ export default function InternationalSeoPage() {
 
           <div className="flex flex-wrap gap-3 pt-2">
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg"
             >
               Get International Strategy
@@ -137,7 +137,7 @@ export default function InternationalSeoPage() {
             Get expert guidance on structuring your international website for global search engines.
           </p>
           <Link
-            href="/contact"
+            href="/contact/"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg"
           >
             Schedule Global SEO Strategy Call

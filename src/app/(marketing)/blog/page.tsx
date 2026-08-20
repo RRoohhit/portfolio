@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { BlogView } from "@/components/views/blog/BlogView";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { buildPageMetadata } from "@/lib/seo";
@@ -46,7 +46,7 @@ export default function Blog() {
       {renderJsonLd(
         breadcrumbGraph([
           { name: "Home", path: "/" },
-          { name: "Blog", path: "/blog" },
+          { name: "Blog", path: "/blog"/ },
         ]),
         "jsonld-blog-breadcrumb"
       )}

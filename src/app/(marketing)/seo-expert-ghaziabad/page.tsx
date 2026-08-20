@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -44,7 +44,7 @@ export default function SeoExpertGhaziabadPage() {
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
             Grow your organic search traffic in Ghaziabad, Indirapuram, Vaishali, Vasundhara, and Raj Nagar. Rohit Gupta provides white-hat SEO, Google Business Profile optimization, and fast web development tailored to the Ghaziabad market.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
+          <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Ghaziabad SEO Expert <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
@@ -108,7 +108,7 @@ export default function SeoExpertGhaziabadPage() {
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Get a free local search diagnostic for your Ghaziabad business.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
+          <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
             Request Ghaziabad SEO Audit <ArrowRight className="w-4 h-4" />
           </Link>
         </section>

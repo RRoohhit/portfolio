@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -95,7 +95,7 @@ export default function SeoAuditPage() {
               Request Audit via WhatsApp
             </a>
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
             >
               Contact Form
@@ -180,7 +180,7 @@ export default function SeoAuditPage() {
 
           <div>
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25"
             >
               Submit Audit Request

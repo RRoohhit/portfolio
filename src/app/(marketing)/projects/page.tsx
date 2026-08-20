@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { ProjectsPage } from "@/components/views/projects/ProjectsPage";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { buildPageMetadata } from "@/lib/seo";
@@ -24,7 +24,7 @@ export default function Projects() {
       {renderJsonLd(
         breadcrumbGraph([
           { name: "Home", path: "/" },
-          { name: "Projects", path: "/projects" },
+          { name: "Projects", path: "/projects"/ },
         ]),
         "jsonld-projects-breadcrumb"
       )}

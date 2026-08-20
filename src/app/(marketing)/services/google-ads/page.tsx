@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -75,7 +75,7 @@ export default function GoogleAdsPage() {
             wasted spend elimination, and conversion rate optimization to deliver profitable paid search results
             alongside your organic SEO strategy.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
+          <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Get Google Ads Audit <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
@@ -133,7 +133,7 @@ export default function GoogleAdsPage() {
             SEO rankings reduce dependency on paid traffic over time. Rohit Gupta manages both, which means your paid and
             organic strategy are aligned around the same conversion goals and keyword intelligence.
           </p>
-          <Link href="/services/seo" className="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-emerald-400 hover:text-emerald-300 transition-colors">
+          <Link href="/services/seo/" className="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-emerald-400 hover:text-emerald-300 transition-colors">
             Explore SEO Services <ArrowRight className="w-3 h-3" />
           </Link>
         </section>
@@ -143,7 +143,7 @@ export default function GoogleAdsPage() {
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Get a Google Ads account audit to find out where your budget is being wasted and how to improve your ROAS immediately.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
+          <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
             Request Google Ads Audit <ArrowRight className="w-4 h-4" />
           </Link>
         </section>

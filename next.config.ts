@@ -27,6 +27,7 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  trailingSlash: true,
   poweredByHeader: false,
   compress: true,
   outputFileTracingRoot: path.join(__dirname),

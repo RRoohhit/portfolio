@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -73,7 +73,7 @@ export default function AiSearchOptimizationPage() {
             improve the likelihood that their brand and content are understood, surfaced, and cited by AI-powered
             search systems.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
+          <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Discuss AI Search Strategy <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
@@ -141,7 +141,7 @@ export default function AiSearchOptimizationPage() {
             </p>
           </div>
           <Link
-            href="/ai-lab"
+            href="/ai-lab/"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-purple-400 text-black text-xs font-mono font-black uppercase tracking-wider hover:bg-purple-300 transition-colors shadow-md shrink-0"
           >
             Launch AI Lab
@@ -172,7 +172,7 @@ export default function AiSearchOptimizationPage() {
             Discuss your AI search visibility goals with Rohit Gupta. We will audit your current entity signals
             and build a practical roadmap for improving your presence in AI-powered search systems.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
+          <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
             Schedule AI Search Strategy Call <ArrowRight className="w-4 h-4" />
           </Link>
         </section>

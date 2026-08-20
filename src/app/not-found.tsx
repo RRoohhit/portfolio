@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Home, BookOpen, FolderGit2, Gauge, Bot, Phone } from "lucide-react";
 import { buildPageMetadata } from "@/lib/seo";
@@ -45,7 +45,7 @@ export default function NotFound() {
         </Link>
 
         <Link
-          href="/projects"
+          href="/projects/"
           className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition-all group flex flex-col justify-between space-y-4"
         >
           <div className="space-y-2">
@@ -61,7 +61,7 @@ export default function NotFound() {
         </Link>
 
         <Link
-          href="/seo-tools"
+          href="/seo-tools/"
           className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition-all group flex flex-col justify-between space-y-4"
         >
           <div className="space-y-2">
@@ -77,7 +77,7 @@ export default function NotFound() {
         </Link>
 
         <Link
-          href="/blog"
+          href="/blog/"
           className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition-all group flex flex-col justify-between space-y-4"
         >
           <div className="space-y-2">
@@ -95,7 +95,7 @@ export default function NotFound() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
         <Link
-          href="/ai-lab"
+          href="/ai-lab/"
           className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition-all group flex flex-col justify-between space-y-4"
         >
           <div className="space-y-2">
@@ -111,7 +111,7 @@ export default function NotFound() {
         </Link>
 
         <Link
-          href="/contact"
+          href="/contact/"
           className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-emerald-500/40 transition-all group flex flex-col justify-between space-y-4"
         >
           <div className="space-y-2">

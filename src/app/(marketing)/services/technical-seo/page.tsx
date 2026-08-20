@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -78,14 +78,14 @@ export default function TechnicalSeoPage() {
 
           <div className="flex flex-wrap gap-3 pt-2">
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg"
             >
               Request Technical Audit
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              href="/seo-audit"
+              href="/seo-audit/"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
             >
               Free SEO Audit Page
@@ -132,7 +132,7 @@ export default function TechnicalSeoPage() {
             </p>
           </div>
           <Link
-            href="/seo-analyzer"
+            href="/seo-analyzer/"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-wider hover:bg-emerald-300 transition-colors shadow-md shrink-0"
           >
             Launch Mind Map Analyzer
@@ -169,7 +169,7 @@ export default function TechnicalSeoPage() {
             Get a thorough technical audit of your site structure, performance metrics, and schema implementation.
           </p>
           <Link
-            href="/contact"
+            href="/contact/"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg"
           >
             Request Technical Audit

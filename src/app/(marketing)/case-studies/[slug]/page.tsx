@@ -180,10 +180,10 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
             Get a free, detailed technical and on-page SEO audit to uncover the exact growth opportunities for your website.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            <Link href="/seo-audit" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
+            <Link href="/seo-audit/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
               Request Free SEO Audit
             </Link>
-            <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors">
+            <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors">
               Contact Rohit Gupta
             </Link>
           </div>

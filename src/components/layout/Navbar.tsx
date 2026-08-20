@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -26,17 +26,18 @@ import {
 
 const TAB_PATHS: Record<string, string> = {
   home: "/",
-  "rohit-gupta": "/rohit-gupta",
-  services: "/services",
-  "seo-audit": "/seo-audit",
-  "case-studies": "/case-studies",
-  projects: "/projects",
-  "seo-tools": "/seo-tools",
-  "seo-analyzer": "/seo-analyzer",
-  "ai-lab": "/ai-lab",
-  blog: "/blog",
-  contact: "/contact",
+  "rohit-gupta": "/rohit-gupta/",
+  services: "/services/",
+  "seo-audit": "/seo-audit/",
+  "case-studies": "/case-studies/",
+  projects: "/projects/",
+  "seo-tools": "/seo-tools/",
+  "seo-analyzer": "/seo-analyzer/",
+  "ai-lab": "/ai-lab/",
+  blog: "/blog/",
+  contact: "/contact/",
 };
+
 
 const tabFromPath = (path: string): string => {
   if (path === "/" || path === "") return "home";
@@ -547,7 +548,7 @@ export const Navbar: React.FC = () => {
                 </a>
               </div>
               <Link
-                href="/contact"
+                href="/contact/"
                 onClick={handleMobileClose}
                 className="flex items-center justify-center gap-2 p-3 rounded-xl bg-white/[0.03] text-white/70 border border-white/[0.08] text-xs font-mono font-bold hover:bg-white/[0.07] hover:text-white transition-all"
               >

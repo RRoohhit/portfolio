@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -148,7 +148,7 @@ export default function SeoServicesPage() {
 
           <div className="flex flex-wrap gap-3 pt-2">
             <Link
-              href="/seo-audit"
+              href="/seo-audit/"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg"
             >
               Request Free SEO Audit
@@ -247,14 +247,14 @@ export default function SeoServicesPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link
-              href="/seo-audit"
+              href="/seo-audit/"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25"
             >
               Get Free SEO Audit
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
             >
               Contact Rohit Gupta

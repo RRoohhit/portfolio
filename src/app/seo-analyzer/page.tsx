@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { buildPageMetadata } from "@/lib/seo";
@@ -39,7 +39,7 @@ export default function Page() {
       {renderJsonLd(
         breadcrumbGraph([
           { name: "Home", path: "/" },
-          { name: "SEO Analyzer", path: "/seo-analyzer" },
+          { name: "SEO Analyzer", path: "/seo-analyzer"/ },
         ]),
         "jsonld-seo-analyzer-breadcrumb"
       )}

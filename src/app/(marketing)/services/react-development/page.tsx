@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -56,7 +56,7 @@ export default function ReactDevelopmentPage() {
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
             React is the industry-standard frontend library for building fast, interactive web applications. Rohit Gupta combines deep React.js expertise with SEO best practices, ensuring your application is not only interactive and responsive but also search engine friendly and blazingly fast.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
+          <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Hire React Developer <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
@@ -101,7 +101,7 @@ export default function ReactDevelopmentPage() {
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Discuss your project requirements with Rohit Gupta today.
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
+          <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
             Contact React Developer <ArrowRight className="w-4 h-4" />
           </Link>
         </section>

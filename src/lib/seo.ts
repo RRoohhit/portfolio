@@ -30,8 +30,9 @@ export function buildPageMetadata({
   noindex = false,
   imageUrl = OG_IMAGE,
 }: PageSeoOptions): Metadata {
-  // Normalize path: strip trailing slash to match actual Next.js URL (no redirect)
-  const cleanPath = path.endsWith("/") && path !== "/" ? path.slice(0, -1) : path;
+  // Normalize path: always keep a trailing slash to match trailingSlash:true behaviour in
+  // next.config.ts (which 308-redirects /foo → /foo/). Root "/" stays as-is.
+  const cleanPath = path === "/" ? "/" : (path.endsWith("/") ? path : `${path}/`);
   const canonicalUrl = new URL(cleanPath, SITE_URL).href;
 
   return {
