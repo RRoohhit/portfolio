@@ -34,7 +34,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Rohit Gupta — SEO Expert, Digital Marketing Consultant & Web Developer",
+  title: "Rohit Gupta — SEO Expert & Web Developer in India",
   description:
     "Rohit Gupta is an SEO expert, digital marketing consultant & full-stack web developer helping businesses improve organic search visibility, website performance and online growth.",
   keywords: [

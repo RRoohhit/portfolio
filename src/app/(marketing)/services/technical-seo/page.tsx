@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -142,7 +142,7 @@ export default function TechnicalSeoPage() {
 
         {/* Related links */}
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h2>
+          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Technical &amp; Core Vitals Services</h2>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "On-Page SEO", href: "/services/on-page-seo" },

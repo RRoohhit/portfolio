@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -8,7 +8,7 @@ import { Globe, CheckCircle2, ArrowRight, ShieldCheck } from "lucide-react";
 export const metadata: Metadata = buildPageMetadata({
   title: "International & Multi-Regional SEO Services — Rohit Gupta",
   description:
-    "International SEO services by Rohit Gupta: hreflang setup, ccTLD vs subfolder architecture, multi-country keyword mapping, geotargeting, and global ranking.",
+    "International SEO services by Rohit Gupta: hreflang setup, ccTLD architecture, multi-country keyword mapping, and global ranking.",
   path: "/services/international-seo/",
   keywords: [
     "International SEO Expert",
@@ -111,7 +111,7 @@ export default function InternationalSeoPage() {
 
         {/* Related links */}
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h2>
+          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Global &amp; Multi-Regional Services</h2>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Technical SEO", href: "/services/technical-seo" },

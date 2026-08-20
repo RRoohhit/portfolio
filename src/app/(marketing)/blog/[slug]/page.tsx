@@ -29,15 +29,15 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 
   const url = new URL(`/blog/${post.slug}/`, SITE_URL).href;
   return {
-    title: post.title,
-    description: post.excerpt.slice(0, 158),
+    title: `${post.title} | Rohit Gupta SEO`,
+    description: post.excerpt.slice(0, 148),
     alternates: { canonical: url },
     robots: { index: true, follow: true },
     category: post.category,
     openGraph: {
       type: "article",
       title: post.title,
-      description: post.excerpt.slice(0, 158),
+      description: post.excerpt.slice(0, 148),
       url,
       siteName: "Rohit Gupta - SEO Specialist & Full Stack Web Developer",
       authors: ["Rohit Gupta"],
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     twitter: {
       card: "summary_large_image",
       title: post.title,
-      description: post.excerpt.slice(0, 158),
+      description: post.excerpt.slice(0, 148),
       images: [OG_IMAGE],
     },
     keywords: [...post.keywords, "SEO", "Rohit Gupta", "technical SEO India"],

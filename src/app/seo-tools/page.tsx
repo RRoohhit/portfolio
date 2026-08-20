@@ -35,7 +35,6 @@ export default function SeoTools() {
             { name: "SEO Tools" },
           ]}
         />
-        <h1 className="sr-only">Free Technical SEO Tools: Audit, Schema Generator &amp; SERP Preview</h1>
         <SeoToolsPage />
       </div>
     </>

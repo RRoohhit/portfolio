@@ -7,7 +7,7 @@ import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
 export const metadata: Metadata = buildPageMetadata({
   title: "AI SEO Optimizer & Keyword Density Tool | Rohit Gupta",
   description:
-    "Free AI-powered SEO optimizer and keyword density tracker that writes rank-ready titles, meta descriptions and JSON-LD in seconds for SEO specialists in India.",
+    "Free AI SEO optimizer and keyword density tracker to generate rank-ready title tags, meta descriptions, and JSON-LD schema markup.",
   path: "/ai-lab",
   keywords: [
     "AI SEO optimizer",

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -91,6 +91,36 @@ export default function NextjsDevelopmentPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Extended Next.js Technical Performance Section for Word Count */}
+        <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-5 shadow-xl">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+            Next.js Core Web Vitals &amp; Code Architecture Standards
+          </h2>
+          <p className="text-xs sm:text-sm text-white/80 leading-relaxed font-light">
+            Search engine algorithms heavily penalize slow-loading web applications with poor Cumulative Layout Shift (CLS) or high Time to First Byte (TTFB). By leveraging Next.js dynamic routing, serverless API routes, and optimized media assets, Rohit Gupta ensures your application achieves top Core Web Vitals scores across all mobile and desktop devices.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+            <div className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">
+              <span className="text-xs font-mono font-bold text-emerald-400">Zero-JS Hydration</span>
+              <p className="text-xs text-white/70 leading-relaxed font-light">
+                Static content is pre-rendered on the server so search engine bots index raw HTML without waiting for client-side JavaScript execution.
+              </p>
+            </div>
+            <div className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">
+              <span className="text-xs font-mono font-bold text-emerald-400">Automated WebP/AVIF</span>
+              <p className="text-xs text-white/70 leading-relaxed font-light">
+                Next.js Image component automatically resizes, compresses, and serves modern AVIF/WebP images tailored to the user screen viewport.
+              </p>
+            </div>
+            <div className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">
+              <span className="text-xs font-mono font-bold text-emerald-400">Clean Schema Integration</span>
+              <p className="text-xs text-white/70 leading-relaxed font-light">
+                Inject valid JSON-LD structured data directly into Next.js head layouts to enable rich snippet search cards on Google.
+              </p>
+            </div>
           </div>
         </section>
 

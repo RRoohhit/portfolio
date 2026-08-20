@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -8,7 +8,7 @@ import { FileText, CheckCircle2, ArrowRight, Search, Target, BarChart3, ShieldCh
 export const metadata: Metadata = buildPageMetadata({
   title: "On-Page SEO Services | Rohit Gupta",
   description:
-    "On-Page SEO services by Rohit Gupta: keyword research, search intent optimization, meta tags, heading structure, internal linking, and content optimization.",
+    "On-Page SEO services by Rohit Gupta: keyword research, search intent optimization, meta tags, heading structure, and internal linking.",
   path: "/services/on-page-seo/",
   keywords: [
     "On-Page SEO Services",
@@ -185,7 +185,7 @@ export default function OnPageSeoPage() {
 
         {/* Related Services */}
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h2>
+          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related On-Page &amp; Content Optimization Services</h2>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Technical SEO", href: "/services/technical-seo" },

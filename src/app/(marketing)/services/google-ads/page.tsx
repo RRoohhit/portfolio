@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -8,7 +8,7 @@ import { TrendingUp, CheckCircle2, ArrowRight, ShieldCheck, Target, BarChart3 } 
 export const metadata: Metadata = buildPageMetadata({
   title: "Google Ads Management Services | Rohit Gupta",
   description:
-    "Google Ads management by Rohit Gupta: Search campaigns, Performance Max, ad copy, landing page optimization, conversion tracking, and high ROI PPC setup.",
+    "Google Ads management by Rohit Gupta: Search campaigns, Performance Max, ad copy, conversion tracking, and high ROI PPC optimization.",
   path: "/services/google-ads/",
   keywords: [
     "Google Ads Management",

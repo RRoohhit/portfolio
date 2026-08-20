@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -8,7 +8,7 @@ import { MapPin, CheckCircle2, ArrowRight, Star, Search, BarChart3, ShieldCheck,
 export const metadata: Metadata = buildPageMetadata({
   title: "Google Business Profile SEO Services — Rohit Gupta",
   description:
-    "Google Business Profile SEO by Rohit Gupta: GBP audit, category optimization, service optimization, review management, Google Posts, local landing pages, and Map Pack ranking for businesses in Noida, Delhi & India.",
+    "Google Business Profile SEO by Rohit Gupta: GBP audit, category optimization, review strategy, and Google Map Pack ranking for local businesses.",
   path: "/services/google-business-profile-seo/",
   keywords: [
     "Google Business Profile SEO",
@@ -254,7 +254,7 @@ export default function GoogleBusinessProfileSeoPage() {
 
         {/* Internal links */}
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h2>
+          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Google Business Profile &amp; Local Maps Services</h2>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Local SEO", href: "/services/local-seo" },

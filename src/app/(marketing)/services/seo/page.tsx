@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -7,7 +7,7 @@ import { Search, CheckCircle2, ArrowRight, ShieldCheck, Zap, Globe, MapPin, Targ
 import { CONTACT } from "@/config/site";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "SEO Services by Rohit Gupta",
+  title: "Professional SEO Services & Search Optimization | Rohit Gupta",
   description:
     "Data-driven SEO services by Rohit Gupta: Technical SEO, On-Page, Off-Page, Local SEO, E-Commerce SEO, and AI Search Optimization for sustainable growth.",
   path: "/services/seo/",

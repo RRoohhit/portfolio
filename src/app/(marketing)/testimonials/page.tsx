@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -90,7 +90,16 @@ export default function TestimonialsPage() {
           </p>
         </header>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <section className="space-y-6">
+          <div className="space-y-2">
+            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+              Verified Client Experience &amp; Organic Results
+            </h2>
+            <p className="text-xs sm:text-sm text-white/60">
+              Read authentic reviews from business owners, founders, and marketing leaders.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {TESTIMONIALS_LIST.map((item, idx) => (
             <div
               key={idx}
@@ -124,6 +133,7 @@ export default function TestimonialsPage() {
               </div>
             </div>
           ))}
+          </div>
         </section>
 
         {/* CTA */}

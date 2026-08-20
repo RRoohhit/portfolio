@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -26,7 +26,7 @@ const AUDIT_PILLARS = [
   {
     title: "Technical SEO Audit",
     icon: Zap,
-    desc: "Crawlability, indexation status, robots.txt, XML sitemap validation, canonical tags, 404 error detection, 301 redirect chains, and JavaScript rendering bottlenecks.",
+    desc: "Crawlability, indexation status, robots.txt, XML sitemap validation, canonical tags, broken link detection, 301 redirect chains, and JavaScript rendering bottlenecks.",
   },
   {
     title: "Core Web Vitals & Speed",

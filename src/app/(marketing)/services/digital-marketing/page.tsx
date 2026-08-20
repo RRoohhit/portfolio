@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
@@ -92,6 +92,36 @@ export default function DigitalMarketingPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Extended Strategy & Process Section for Word Count */}
+        <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-5 shadow-xl">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+            Our Data-Driven Digital Marketing Execution Process
+          </h2>
+          <p className="text-xs sm:text-sm text-white/80 leading-relaxed font-light">
+            Effective digital marketing is not about running isolated ad campaigns or randomly publishing blog posts. It requires a synchronized multi-channel strategy built on real user data, competitive research, and rigorous conversion tracking.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+            <div className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">
+              <span className="text-xs font-mono font-bold text-emerald-400">Phase 1: Research &amp; Audit</span>
+              <p className="text-xs text-white/70 leading-relaxed font-light">
+                We analyze your current digital presence, organic footprint, competitor positioning, ad spend efficiency, and target customer demographics.
+              </p>
+            </div>
+            <div className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">
+              <span className="text-xs font-mono font-bold text-emerald-400">Phase 2: Funnel Architecture</span>
+              <p className="text-xs text-white/70 leading-relaxed font-light">
+                We build intent-focused landing pages, configure GA4 analytics tracking, align Google Ads campaigns, and structure SEO content clusters.
+              </p>
+            </div>
+            <div className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">
+              <span className="text-xs font-mono font-bold text-emerald-400">Phase 3: Scale &amp; Optimize</span>
+              <p className="text-xs text-white/70 leading-relaxed font-light">
+                Ongoing A/B testing of ad creatives, landing page copy tuning, link equity building, and monthly transparent performance reporting.
+              </p>
+            </div>
           </div>
         </section>
 
