@@ -196,7 +196,7 @@ export default function GoogleAdsPage() {
           ].map(({ icon: Icon, title, text }) => (
             <div key={title} className="p-5 rounded-2xl bg-zinc-950 border border-white/10">
               <Icon className="w-5 h-5 text-emerald-400 mb-3" />
-              <h2 className="text-base font-bold text-white mb-2">{title}</h2>
+              <h3 className="text-base font-bold text-white mb-2">{title}</h3>
               <p className="text-sm text-white/70 leading-relaxed">{text}</p>
             </div>
           ))}
@@ -227,16 +227,16 @@ export default function GoogleAdsPage() {
         </section>
 
         <section className="space-y-5">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <Target className="w-5 h-5 text-emerald-400" />
             Our process
-          </h2>
+          </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {PROCESS_STEPS.map((step) => (
               <div key={step.step} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-blue-500/30 transition-colors space-y-2">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl font-black font-mono text-blue-400/40">{step.step}</span>
-                  <h3 className="text-sm font-bold text-white tracking-tight">{step.title}</h3>
+                  <h4 className="text-sm font-bold text-white tracking-tight">{step.title}</h4>
                 </div>
                 <p className="text-xs text-white/65 leading-relaxed">{step.desc}</p>
               </div>
@@ -245,10 +245,10 @@ export default function GoogleAdsPage() {
         </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
             <BarChart3 className="w-5 h-5 text-emerald-400" />
             Why ads and SEO work best together
-          </h2>
+          </h3>
           <p className="text-sm text-white/75 leading-relaxed">
             Paid ads get you visibility now, while SEO builds compounding organic growth for the future. The strongest marketing systems use both together: ads reveal the most valuable search intent quickly, and SEO turns those same keywords into lasting brand authority over time.
           </p>

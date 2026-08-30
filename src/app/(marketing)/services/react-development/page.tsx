@@ -40,28 +40,28 @@ const TECH_STACK = [
 const PROCESS_STEPS = [
   {
     step: "01",
-    title: "Requirement & Architecture Scoping",
-    desc: "We discuss your product vision, user flows, and technical requirements to design the optimal React architecture and component hierarchy.",
+    title: "Project Scope & Design",
+    desc: "We discuss your product goals, user flows, and tech requirements to design clean React components.",
   },
   {
     step: "02",
-    title: "Component-First Development",
-    desc: "We build a reusable component library from the ground up, ensuring each component is testable, documented, and ready for scaling.",
+    title: "Component Building",
+    desc: "We build a modular component library from scratch. Each piece is testable and easy to maintain.",
   },
   {
     step: "03",
-    title: "API Integration & State Management",
-    desc: "We integrate your backend APIs, set up robust state management, and handle loading/error states with best-practice patterns.",
+    title: "API & Data Integration",
+    desc: "We connect your backend APIs and handle loading and error states smoothly.",
   },
   {
     step: "04",
-    title: "Performance & SEO Optimization",
-    desc: "We optimize bundle sizes, implement lazy loading, set up Server-Side Rendering where needed, and tune Core Web Vitals.",
+    title: "Speed & SEO Tuning",
+    desc: "We optimize code bundles, add lazy loading, and tune Core Web Vitals for sub-second speeds.",
   },
   {
     step: "05",
-    title: "Testing & Deployment",
-    desc: "We write comprehensive tests, set up CI/CD pipelines, and deploy to production with zero-downtime releases and monitoring.",
+    title: "Testing & Launch",
+    desc: "We test across devices and browsers, set up CI/CD, and deploy with zero downtime.",
   },
 ];
 
@@ -89,7 +89,7 @@ export default function ReactDevelopmentPage() {
             React Development Services
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            React is the industry-standard frontend library for building fast, interactive web applications. Rohit Gupta combines deep React.js expertise with SEO best practices, ensuring your application is not only interactive and responsive but also search engine friendly and blazingly fast.
+            Build fast, modern React web applications. Rohit Gupta combines clean TypeScript code with technical SEO. We deliver reactive interfaces that load instantly and rank high on Google.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Hire React Developer <ArrowRight className="w-4 h-4" />
@@ -116,19 +116,20 @@ export default function ReactDevelopmentPage() {
           </div>
         </section>
 
-        {/* Tech Stack */}
-        <section className="space-y-4">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">Technologies We Use</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <section className="space-y-5">
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <Layers className="w-5 h-5 text-blue-400" />
+            Technologies &amp; Tools
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {TECH_STACK.map((group) => (
-              <div key={group.category} className="p-4 rounded-2xl bg-zinc-950 border border-blue-500/20 space-y-2">
-                <h3 className="text-xs font-bold text-blue-400 uppercase tracking-wider">{group.category}</h3>
-                <div className="space-y-1.5">
+              <div key={group.category} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 space-y-3">
+                <h4 className="text-xs font-mono uppercase text-blue-400 font-bold tracking-wider">{group.category}</h4>
+                <div className="flex flex-wrap gap-1.5">
                   {group.techs.map((tech) => (
-                    <div key={tech} className="text-xs text-white/80 flex items-center gap-2">
-                      <span className="w-1 h-1 rounded-full bg-emerald-400" />
+                    <span key={tech} className="px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 text-xs font-mono text-white/80">
                       {tech}
-                    </div>
+                    </span>
                   ))}
                 </div>
               </div>
@@ -136,18 +137,17 @@ export default function ReactDevelopmentPage() {
           </div>
         </section>
 
-        {/* Process */}
         <section className="space-y-5">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
-            <Layers className="w-5 h-5 text-blue-400" />
-            How We Build React Apps
-          </h2>
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <Code2 className="w-5 h-5 text-emerald-400" />
+            The React Development Process
+          </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {PROCESS_STEPS.map((step) => (
               <div key={step.step} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-blue-500/30 transition-colors space-y-2">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl font-black font-mono text-blue-400/40">{step.step}</span>
-                  <h3 className="text-sm font-bold text-white tracking-tight">{step.title}</h3>
+                  <h4 className="text-sm font-bold text-white tracking-tight">{step.title}</h4>
                 </div>
                 <p className="text-xs text-white/65 leading-relaxed">{step.desc}</p>
               </div>
@@ -155,32 +155,11 @@ export default function ReactDevelopmentPage() {
           </div>
         </section>
 
-        {/* FAQ */}
         <section className="space-y-4">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">Frequently Asked</h2>
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">Common Questions</h3>
           <div className="space-y-3">
             <details className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-blue-500/30 transition-colors group cursor-pointer">
               <summary className="flex items-center justify-between font-bold text-white tracking-tight text-sm">
-                How long does a React project typically take?
-                <span className="group-open:rotate-180 transition-transform">→</span>
-              </summary>
-              <p className="text-xs text-white/65 leading-relaxed mt-3">
-                Timelines vary based on scope. A simple dashboard typically takes 4-6 weeks. A full-featured application with API integration usually takes 3-6 months. We provide detailed estimates and milestone-based planning upfront.
-              </p>
-            </details>
-            <details className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-blue-500/30 transition-colors group cursor-pointer">
-              <summary className="flex items-center justify-between font-bold text-white tracking-tight text-sm">
-                Do you provide post-launch support?
-                <span className="group-open:rotate-180 transition-transform">→</span>
-              </summary>
-              <p className="text-xs text-white/65 leading-relaxed mt-3">
-                Yes. We offer retainer-based support packages including bug fixes, performance monitoring, feature enhancements, and dependency updates. Most clients keep us on for 3-6 months post-launch.
-              </p>
-            </details>
-            <details className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-blue-500/30 transition-colors group cursor-pointer">
-              <summary className="flex items-center justify-between font-bold text-white tracking-tight text-sm">
-                Why Next.js instead of plain React?
-                <span className="group-open:rotate-180 transition-transform">→</span>
               </summary>
               <p className="text-xs text-white/65 leading-relaxed mt-3">
                 Next.js adds Server-Side Rendering, Static Generation, API routes, and automatic code splitting — eliminating build config headaches. If you need SEO, fast page loads, or a full-stack app, Next.js is the obvious choice. Plain React works for dashboards and internal tools.

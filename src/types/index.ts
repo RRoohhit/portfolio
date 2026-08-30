@@ -69,6 +69,7 @@ export interface BacklinkItem {
 export interface BlogPost {
   id: string;
   title: string;
+  h1?: string;
   slug: string;
   excerpt: string;
   date: string;

@@ -121,9 +121,9 @@ export default function InternationalSeoExpertPage() {
 
         {/* Features */}
         <section className="space-y-4">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">
             Why International Brands Hire Me
-          </h2>
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {INTL_FEATURES.map((f, idx) => {
               const Icon = f.icon;
@@ -132,7 +132,7 @@ export default function InternationalSeoExpertPage() {
                   <div className="icon-3d w-10 h-10 rounded-xl text-cyan-400 shrink-0">
                     <Icon className="w-5 h-5" />
                   </div>
-                  <h3 className="text-sm font-bold text-white">{f.title}</h3>
+                  <h4 className="text-sm font-bold text-white">{f.title}</h4>
                   <p className="text-xs text-white/70 leading-relaxed font-light">{f.desc}</p>
                 </div>
               );
@@ -142,7 +142,7 @@ export default function InternationalSeoExpertPage() {
 
         {/* How remote collaboration works */}
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h2 className="text-xl font-black text-white tracking-tight">How Remote Collaboration Works</h2>
+          <h3 className="text-xl font-black text-white tracking-tight">How Remote Collaboration Works</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
               { step: "01", title: "Free Video Call & Audit", desc: "We review your site, goals and target countries in a free strategy call, then I audit your technical + content + authority baseline." },
@@ -151,7 +151,7 @@ export default function InternationalSeoExpertPage() {
             ].map((s) => (
               <div key={s.step} className="card-3d p-5 space-y-2">
                 <div className="text-xs font-mono font-black text-cyan-400">STEP {s.step}</div>
-                <h3 className="text-sm font-bold text-white">{s.title}</h3>
+                <h4 className="text-sm font-bold text-white">{s.title}</h4>
                 <p className="text-[11px] text-white/65 leading-relaxed font-light">{s.desc}</p>
               </div>
             ))}
@@ -160,11 +160,11 @@ export default function InternationalSeoExpertPage() {
 
         {/* FAQ */}
         <section className="space-y-4">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">International SEO — FAQs</h2>
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">International SEO — FAQs</h3>
           <div className="space-y-3">
             {FAQS.map((faq, idx) => (
               <div key={idx} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 space-y-2">
-                <h3 className="text-sm font-bold text-white">{faq.question}</h3>
+                <h4 className="text-sm font-bold text-white">{faq.question}</h4>
                 <p className="text-xs text-white/70 leading-relaxed font-light">{faq.answer}</p>
               </div>
             ))}

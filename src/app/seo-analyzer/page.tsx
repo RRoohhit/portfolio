@@ -64,7 +64,7 @@ export default function Page() {
           </h1>
 
           <p className="text-sm sm:text-base text-white/70 font-light max-w-2xl mx-auto leading-relaxed">
-            Crawl any website URL or upload your Next.js/React project ZIP. Instantly generate an interactive visual mind map highlighting technical bottlenecks, orphan routes, schema gaps, and step-by-step action plans.
+            Audit any website URL or upload your React project ZIP. See technical errors, orphan pages, schema gaps, and clear action steps on a visual 2D mind map.
           </p>
         </header>
 
@@ -73,31 +73,31 @@ export default function Page() {
         {/* Rich SEO Content for Indexing & Word Count */}
         <section className="bg-zinc-950 border border-white/10 p-6 sm:p-10 rounded-3xl space-y-6 shadow-2xl mt-12">
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
-            How the Visual SEO Mind Map &amp; Interactive Analyzer Works
+            How the Visual SEO Mind Map Works
           </h2>
           <div className="space-y-4 text-xs sm:text-sm text-white/75 leading-relaxed font-light">
             <p>
-              Traditional SEO audit tools dump long, flat lists of URLs, status codes, and issues into tabular spreadsheets that make it difficult to visualize how link equity flows across your site. The <strong>Rohit Gupta Interactive SEO Mind Map &amp; Visual Analyzer</strong> solves this by converting your website structure, internal links, crawl depth, and route hierarchy into an interactive 2D node map.
+              Most SEO audit tools show long spreadsheets. The <strong>Rohit Gupta Interactive SEO Mind Map</strong> turns your website pages into a visual map. You can see how link equity flows across your site.
             </p>
             <p>
-              By scanning your application routes, XML sitemaps, and folder hierarchy, our visual engine maps primary money pages, service landing pages, blog categories, and utility routes into interconnected nodes. You can inspect HTTP status codes (200 OK, 301 Redirects, broken page errors), identify orphan pages lacking internal links, evaluate rendering bottlenecks, and audit JSON-LD Schema markup in real time.
+              Our tool scans your URLs, sitemaps, and code folders. It maps your home page, services, blog posts, and tools into interactive nodes. You can check HTTP status codes, find orphan pages, and audit JSON-LD Schema markup in real time.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               <div className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">
-                <h3 className="text-sm font-bold text-emerald-400 font-mono">1. Route &amp; Link Equity Flow</h3>
+                <h3 className="text-sm font-bold text-emerald-400 font-mono">1. Page &amp; Link Flow</h3>
                 <p className="text-xs text-white/70 leading-relaxed font-light">
-                  Visualize parent-child route relationships, click depth from home, and anchor text distribution across key landing pages.
+                  See how pages connect to each other. Check click depth and anchor text distribution across key URLs.
                 </p>
               </div>
               <div className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">
-                <h3 className="text-sm font-bold text-emerald-400 font-mono">2. Orphan &amp; Redirect Diagnostics</h3>
+                <h3 className="text-sm font-bold text-emerald-400 font-mono">2. Orphan &amp; Redirect Audits</h3>
                 <p className="text-xs text-white/70 leading-relaxed font-light">
-                  Instantly flag pages isolated from main navigation or trapped in 301/302 redirect loops suppressing organic authority.
+                  Spot orphan pages missing from menus. Fix 301 redirect chains that slow down your crawl speed.
                 </p>
               </div>
             </div>
             <p>
-              Whether you are conducting a pre-migration site crawl, tuning Next.js App Router dynamic routes, or auditing Core Web Vitals performance, this visual analyzer gives developers and SEO strategists total clarity over technical architecture.
+              This visual tool gives web developers and SEO teams full clarity over technical site structure.
             </p>
           </div>
         </section>

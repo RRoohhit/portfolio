@@ -43,37 +43,38 @@ export default function SeoExpertHyderabadPage() {
             SEO Expert in Hyderabad — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Hyderabad&apos;s pharma, IT and real estate sectors are booming — and so is the competition for their search rankings. Rohit Gupta helps Hyderabad businesses across HITEC City, Gachibowli, Banjara Hills and Madhapur rank #1 on Google with technical audits, Google Business Profile optimization, local citations and high-intent content. Serving clients pan-India and remotely worldwide with equal senior expertise.
+            Grow your business in Hyderabad with proven SEO. Rohit Gupta helps IT firms, clinics, and local brands in HITEC City, Gachibowli, and Banjara Hills rank #1 on Google. We deliver fast site speed, local map pack growth, and high-converting search traffic.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Hyderabad SEO Specialist <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
-<section className="space-y-4">
+
+        <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
             SEO &amp; Growth Solutions for Hyderabad Businesses
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Ranking #1 in Hyderabad requires a mix of strong technical fundamentals and locally-relevant content that converts.
+            Win top rankings in Hyderabad with clean site fixes, Google Maps growth, and buyer-focused pages.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
-                title: "Hyderabad Local SEO & Google Map Pack",
-                desc: "Dominate Google Maps 3-Pack for Hyderabad searches — GBP optimization, local citations and 'near me' visibility across HITEC City, Gachibowli, Banjara Hills and Old City.",
+                title: "Hyderabad Local SEO & Map Pack",
+                desc: "Rank in the Google Maps 3-Pack in HITEC City and Gachibowli. Get more phone calls and store visits.",
               },
               {
-                title: "Real Estate & Pharma SEO",
-                desc: "Rank for high-value Hyderabad real estate and pharma/healthcare queries with property schema, location landing pages and authority-building content.",
+                title: "Real Estate & Healthcare SEO",
+                desc: "Rank for local buyer search terms. We build schema tags and fast pages that bring new leads.",
               },
               {
-                title: "Technical SEO & Core Web Vitals",
-                desc: "Fix crawl errors, indexation issues, slow LCP/INP and duplicate content so Hyderabad businesses pass Google speed and quality benchmarks.",
+                title: "Technical SEO & Speed Fixes",
+                desc: "Fix slow page loads and crawl errors. We make your website pass all Google speed tests.",
               },
               {
-                title: "Content Clusters & AI Search",
-                desc: "Win featured snippets and AI Overview citations with topical authority articles, FAQ schema and entity-rich structured data.",
+                title: "Content & AI Search Rankings",
+                desc: "Get cited by Google AI and ChatGPT. We write clear answers so AI tools quote your brand.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">
@@ -85,7 +86,7 @@ export default function SeoExpertHyderabadPage() {
         </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h2 className="text-xl font-black text-white tracking-tight">Key Service Areas in Hyderabad</h2>
+          <h3 className="text-xl font-black text-white tracking-tight">Key Service Areas in Hyderabad</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {[
               "HITEC City & Madhapur Tech Corridor",

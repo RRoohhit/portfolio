@@ -42,7 +42,7 @@ export default function SeoExpertAyodhyaPage() {
             SEO Expert in Ayodhya — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Ayodhya's economy is expanding rapidly across tourism, hospitality, retail, real estate, and local services. Rohit Gupta is permanently rooted in Ayodhya (UP 272130) and delivers specialized Local SEO, Google Business Profile management, and fast web applications for businesses establishing search dominance in Ayodhya.
+            Grow your business in Ayodhya with expert SEO. Rohit Gupta is based in Ayodhya and helps hotels, retail shops, and local services rank #1 on Google. We deliver Google Maps rankings, fast mobile pages, and steady tourist leads.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Ayodhya SEO Expert <ArrowRight className="w-4 h-4" />
@@ -54,26 +54,26 @@ export default function SeoExpertAyodhyaPage() {
             SEO &amp; Digital Growth Solutions for Ayodhya Businesses
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            As Ayodhya grows into a major national destination, establishing top organic search presence on Google and Google Maps ensures a steady flow of local customers and visiting travelers.
+            Get more local visits and tourist inquiries with Google Maps optimization and fast web pages.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
-                title: "Ayodhya Google Business Profile & Map Pack",
-                desc: "Dominate Google Maps searches for hotels, homestays, restaurants, and local services in Ayodhya with verified citations, photos, and review strategies.",
+                title: "Ayodhya Google Maps 3-Pack",
+                desc: "Rank on Google Maps for hotels and shops in Ayodhya. We fix your photos, reviews, and local listings.",
               },
               {
-                title: "Tourism & Travel Intent SEO",
-                desc: "Capture high-volume visitor search queries across India. Target key commercial phrases for travel, booking, tour guides, and regional transportation.",
+                title: "Tourism & Hotel SEO",
+                desc: "Target search terms from travelers across India. We help you win direct bookings and tour leads.",
               },
               {
-                title: "Mobile-First Speed & Performance",
-                desc: "Ensure your business website loads in under 1 second on mobile networks with optimized images, clean CSS/JS rendering, and sub-second TTFB.",
+                title: "Fast Mobile Performance",
+                desc: "Make your site load in under 1 second on phones. Fast pages help travelers book on the go.",
               },
               {
-                title: "Structured Schema & Local Entity Markup",
-                desc: "Implement Hotel, LocalBusiness, Restaurant, and FAQPage JSON-LD schema markup so Google and AI search engines present your business in rich snippets.",
+                title: "Rich Schema Markup",
+                desc: "Add hotel and local business schema tags. Google and AI tools then show your stars and address.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">
@@ -85,14 +85,14 @@ export default function SeoExpertAyodhyaPage() {
         </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h2 className="text-xl font-black text-white tracking-tight">Ayodhya Search Opportunities</h2>
+          <h3 className="text-xl font-black text-white tracking-tight">Ayodhya Search Opportunities</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
-              "Hotels, Homestays & Hospitality Search Optimization",
-              "Google Maps 3-Pack Placement for Local Services",
+              "Hotels, Homestays & Hospitality SEO",
+              "Google Maps 3-Pack for Local Services",
               "Tourism & Heritage Travel Guide SEO",
-              "Real Estate & Retail Business Visibility",
-              "Fast, Mobile-First Multilingual Websites",
+              "Real Estate & Retail Business SEO",
+              "Fast, Mobile-First Websites",
             ].map((item) => (
               <div key={item} className="flex items-start gap-2.5 text-xs sm:text-sm text-white/80">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />

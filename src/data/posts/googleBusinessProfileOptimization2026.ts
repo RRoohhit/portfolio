@@ -3,6 +3,7 @@ import { BlogPost } from "../../types";
 export const googleBusinessProfileOptimization2026: BlogPost = {
   id: "blog-18",
   title: "Google Business Profile SEO Playbook (2026 Guide)",
+  h1: "Google Business Profile SEO Optimization Playbook for Local Dominance",
   slug: "google-business-profile-optimization-2026",
   excerpt:
     "Rank in the Google Maps 3-Pack: step-by-step GBP optimization — categories, reviews, photos, posts, local citations, and ranking factors for India.",

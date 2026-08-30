@@ -259,9 +259,9 @@ export default function ServicesPage() {
             <Search className="w-4 h-4" />
             <span>Rank on Google — SEO Services</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
             Get Found by Customers Who Are Searching Right Now
-          </h2>
+          </h3>
           <p className="text-xs sm:text-sm text-white/60 max-w-3xl">
             These four services cover every way people find businesses on Google — pick the one you need or combine them for faster results.
           </p>
@@ -281,7 +281,7 @@ export default function ServicesPage() {
                       </div>
                       <ArrowRight className="w-4 h-4 text-white/20 group-hover:text-emerald-400 group-hover:translate-x-1 transition-all" />
                     </div>
-                    <h3 className="text-lg font-bold text-white tracking-tight leading-snug">{svc.title}</h3>
+                    <h4 className="text-lg font-bold text-white tracking-tight leading-snug">{svc.title}</h4>
                     <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light">{svc.desc}</p>
                     <ul className="space-y-1.5 pt-1">
                       {svc.includes.map((inc) => (
@@ -305,15 +305,16 @@ export default function ServicesPage() {
             })}
           </div>
         </section>
-{/* GROWTH SERVICES (ADS, SOCIAL, CONTENT) */}
+
+        {/* GROWTH SERVICES (ADS, SOCIAL, CONTENT) */}
         <section className="space-y-5">
           <div className="flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-wider text-amber-400">
             <TrendingUp className="w-4 h-4" />
             <span>Bring Customers Faster — Paid Ads, Social &amp; Content</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
             Grow Faster with Ads, Social Media &amp; Fresh Content
-          </h2>
+          </h3>
           <p className="text-xs sm:text-sm text-white/60 max-w-3xl">
             SEO takes a few months. These services bring visibility and engagement while it compounds — and keep your brand loved by customers every day.
           </p>
@@ -333,7 +334,7 @@ export default function ServicesPage() {
                       </div>
                       <ArrowRight className="w-4 h-4 text-white/20 group-hover:text-amber-400 group-hover:translate-x-1 transition-all" />
                     </div>
-                    <h3 className="text-base font-bold text-white tracking-tight leading-snug">{svc.title}</h3>
+                    <h4 className="text-base font-bold text-white tracking-tight leading-snug">{svc.title}</h4>
                     <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light">{svc.desc}</p>
                     <ul className="space-y-1.5 pt-1">
                       {svc.includes.map((inc) => (
@@ -357,15 +358,16 @@ export default function ServicesPage() {
             })}
           </div>
         </section>
-{/* BUILD SERVICES (WEB DEVELOPMENT) */}
+
+        {/* BUILD SERVICES (WEB DEVELOPMENT) */}
         <section className="space-y-5">
           <div className="flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-wider text-violet-400">
             <Code2 className="w-4 h-4" />
             <span>Building Blocks — Website &amp; CMS</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
             Build or Fix Your Website the Right Way
-          </h2>
+          </h3>
           <p className="text-xs sm:text-sm text-white/60 max-w-3xl">
             A great website is the foundation of everything. Whether you need a new site or your current one is slow and outdated — I build it fast, secure and SEO-ready.
           </p>
@@ -385,7 +387,7 @@ export default function ServicesPage() {
                       </div>
                       <ArrowRight className="w-4 h-4 text-white/20 group-hover:text-violet-400 group-hover:translate-x-1 transition-all" />
                     </div>
-                    <h3 className="text-lg font-bold text-white tracking-tight leading-snug">{svc.title}</h3>
+                    <h4 className="text-lg font-bold text-white tracking-tight leading-snug">{svc.title}</h4>
                     <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light">{svc.desc}</p>
                     <ul className="space-y-1.5 pt-1">
                       {svc.includes.map((inc) => (
@@ -409,11 +411,12 @@ export default function ServicesPage() {
             })}
           </div>
         </section>
-{/* HOW TO HIRE */}
+
+        {/* HOW TO HIRE */}
         <section className="card-3d-interactive p-6 sm:p-8 rounded-3xl space-y-5">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">
             How to Hire Me — It&apos;s Really This Simple
-          </h2>
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
               { step: "1", title: "Tell me what you need", desc: "Click any 'Start' button or WhatsApp me. Share your website link and your goal in one message." },
@@ -422,7 +425,7 @@ export default function ServicesPage() {
             ].map((s) => (
               <div key={s.step} className="card-3d p-5 space-y-2">
                 <div className="text-2xl font-black font-mono text-emerald-400">{s.step}</div>
-                <h3 className="text-sm font-bold text-white">{s.title}</h3>
+                <h4 className="text-sm font-bold text-white">{s.title}</h4>
                 <p className="text-[11px] text-white/65 leading-relaxed font-light">{s.desc}</p>
               </div>
             ))}
@@ -431,7 +434,7 @@ export default function ServicesPage() {
 
         {/* FAQ */}
         <section className="space-y-4">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">Common Questions</h2>
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">Common Questions</h3>
           <div className="space-y-3">
             {FAQS.map((faq, idx) => (
               <div key={idx} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 space-y-2">

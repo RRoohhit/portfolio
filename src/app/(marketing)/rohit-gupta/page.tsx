@@ -150,10 +150,10 @@ export default function RohitGuptaPage() {
         {/* Core Expertise Grid */}
         <section className="space-y-6">
           <div className="space-y-2">
-            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <Target className="w-5 h-5 text-emerald-400" />
               My Core Areas of Expertise
-            </h2>
+            </h3>
             <p className="text-xs sm:text-sm text-white/60">
               Key competencies across search engine optimization, web architecture, and digital marketing.
             </p>
@@ -174,10 +174,10 @@ export default function RohitGuptaPage() {
 
         {/* Professional Experience Section */}
         <section className="card-3d-interactive p-6 sm:p-8 space-y-5 shadow-2xl">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <Code2 className="w-5 h-5 text-emerald-400" />
             Professional Experience
-          </h2>
+          </h3>
           <div className="space-y-4 text-sm sm:text-base text-white/80 leading-relaxed font-light">
             <p>
               My experience covers SEO, web development, page speed optimization, keyword research, technical audits, and digital marketing.
@@ -190,10 +190,10 @@ export default function RohitGuptaPage() {
 
         {/* My Approach to SEO & White Hat Philosophy */}
         <section className="card-3d-interactive p-6 sm:p-8 space-y-5 shadow-2xl">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <Zap className="w-5 h-5 text-emerald-400" />
             My White-Hat SEO Philosophy &amp; Methodology
-          </h2>
+          </h3>
           <div className="space-y-4 text-sm sm:text-base text-white/80 leading-relaxed font-light">
             <p>
               I focus only on White-Hat SEO that follows Google&apos;s Search Essentials. I do not buy links, use private blog networks (PBNs), or stuff keywords. These shortcuts cause ranking drops and long-term penalties.
@@ -206,7 +206,7 @@ export default function RohitGuptaPage() {
                 { title: "4. Ethical Authority Building", desc: "Earn contextual dofollow links via digital PR, unlinked brand mentions, local citations, and resource outreach." },
               ].map((step, idx) => (
                 <div key={idx} className="p-4 rounded-2xl bg-zinc-950 border border-white/10 space-y-1">
-                  <h3 className="text-sm font-bold text-emerald-400 font-mono">{step.title}</h3>
+                  <h4 className="text-sm font-bold text-emerald-400 font-mono">{step.title}</h4>
                   <p className="text-xs text-white/70 leading-relaxed">{step.desc}</p>
                 </div>
               ))}
@@ -216,10 +216,10 @@ export default function RohitGuptaPage() {
 
         {/* Why Clients Choose Rohit */}
         <section className="card-3d-interactive p-6 sm:p-8 space-y-5 shadow-2xl">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <ShieldCheck className="w-5 h-5 text-emerald-400" />
             Why Clients Work With Me
-          </h2>
+          </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { title: "Developer + SEO Hybrid", desc: "I write clean React/Next.js/Node.js code myself — meaning I don't just point out technical errors, I fix them directly in the codebase." },
@@ -228,7 +228,7 @@ export default function RohitGuptaPage() {
               { title: "Direct Communication", desc: "You work directly with me — the technical specialist executing the work — ensuring zero miscommunication." },
             ].map((reason, idx) => (
               <div key={idx} className="p-4 rounded-2xl bg-zinc-950 border border-white/10 space-y-1">
-                <h3 className="text-sm font-bold text-white tracking-tight">{reason.title}</h3>
+                <h4 className="text-sm font-bold text-white tracking-tight">{reason.title}</h4>
                 <p className="text-xs text-white/70 leading-relaxed font-light">{reason.desc}</p>
               </div>
             ))}
@@ -237,10 +237,10 @@ export default function RohitGuptaPage() {
 
         {/* Industries & Locations Served */}
         <section className="card-3d-interactive p-6 sm:p-8 space-y-5 shadow-2xl">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <MapPin className="w-5 h-5 text-emerald-400" />
             Industries &amp; Locations Served
-          </h2>
+          </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm text-white/80">
             <div className="space-y-2">
               <h3 className="text-xs font-mono uppercase text-emerald-400 font-bold tracking-wider">Industries Served</h3>

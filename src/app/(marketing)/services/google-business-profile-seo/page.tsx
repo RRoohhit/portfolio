@@ -25,36 +25,36 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const GBP_AUDIT_ITEMS = [
-  "Primary and secondary category research and selection",
-  "Business description optimization and service clarity",
-  "Services and products setup with more useful descriptions",
-  "Attributes and business highlights",
-  "NAP consistency across directories and data sources",
-  "Hours, photos, and business profile trust signals",
-  "Website and phone link integrity checks",
-  "Review and reputation baseline analysis",
-  "Local competitor comparison",
-  "Map Pack ranking baseline tracking",
+  "Primary and secondary business categories",
+  "Clear business description and service terms",
+  "Products and services listing setup",
+  "Business hours and special holiday hours",
+  "NAP data consistency across web directories",
+  "High-resolution photos and cover pictures",
+  "Website links and phone numbers check",
+  "Customer reviews and star rating baseline",
+  "Local competitor map ranking review",
+  "Google Maps 3-Pack rank tracking",
 ];
 
 const GBP_OPTIMIZATION_ITEMS = [
-  "Keyword-rich primary and secondary category choices",
-  "Service-area and radius configuration",
-  "Profile photo and cover image refresh",
-  "Google Posts strategy and local offers",
-  "Review response templates and trust building",
-  "Local citation cleanup and consistency",
-  "Local landing pages built for city or service-area intent",
-  "Ongoing map visibility reporting and optimization",
+  "High-intent local category selection",
+  "Service area and geo-radius settings",
+  "Fresh profile photos and cover photos",
+  "Weekly Google Posts and special deals",
+  "Fast 5-star review response templates",
+  "Local directory citations cleanup",
+  "Fast service-area city landing pages",
+  "Monthly map visibility growth reports",
 ];
 
 const PROCESS_STEPS = [
-  { step: "01", title: "GBP audit and baseline", desc: "We review your profile against ranking factors and identify what is missing, outdated, or weakening your local visibility." },
-  { step: "02", title: "Category and service setup", desc: "We align your categories and services with actual local intent so your profile is clear, relevant, and easier for Google to rank." },
-  { step: "03", title: "Local consistency cleanup", desc: "We fix NAP and directory inconsistencies so Google sees one reliable business identity across the web." },
-  { step: "04", title: "Reviews and freshness", desc: "We improve your review profile, response system, and ongoing Google Posts so the profile remains active and trustworthy." },
-  { step: "05", title: "Local landing pages", desc: "We connect the GBP with service-area pages on your website so local intent and on-site authority support each other." },
-  { step: "06", title: "Ongoing tracking", desc: "We monitor improvements in profile views, calls, direction requests, and map placement so we can keep refining what works." },
+  { step: "01", title: "Profile Audit", desc: "We review your Google profile to find missing tags, old hours, and ranking gaps." },
+  { step: "02", title: "Category Setup", desc: "We pick top categories so Google matches your profile to local search terms." },
+  { step: "03", title: "NAP Cleanup", desc: "We make sure your name, address, and phone match across all web directories." },
+  { step: "04", title: "Reviews & Posts", desc: "We set up review workflows and regular posts to keep your profile active." },
+  { step: "05", title: "Landing Pages", desc: "We connect your profile to fast city landing pages on your website." },
+  { step: "06", title: "Track Results", desc: "We track phone calls, map views, and direction requests each month." },
 ];
 
 const SEARCH_QUERIES = [
@@ -131,10 +131,10 @@ export default function GoogleBusinessProfileSeoPage() {
         </header>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4 shadow-xl">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <Search className="w-5 h-5 text-emerald-400" />
             Who this is for
-          </h2>
+          </h3>
           <p className="text-sm sm:text-base text-white/75 leading-relaxed">
             Local service businesses, clinics, agencies, retailers, and professionals benefit most when their Google Business Profile looks strong, responds to local intent, and helps Google trust the business as relevant to the service area.
           </p>
@@ -162,10 +162,10 @@ export default function GoogleBusinessProfileSeoPage() {
 
         <section className="space-y-5">
           <div className="space-y-2">
-            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-400" />
               What we optimize
-            </h2>
+            </h3>
             <p className="text-xs sm:text-sm text-white/60">
               We improve the factors that help businesses show up in the map results and feel more trustworthy to potential customers.
             </p>
@@ -182,7 +182,7 @@ export default function GoogleBusinessProfileSeoPage() {
 
         <section className="space-y-5">
           <div className="space-y-2">
-            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">The process</h2>
+            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">The process</h3>
             <p className="text-xs sm:text-sm text-white/60">A simple, structured workflow focused on map visibility and local trust.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

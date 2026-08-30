@@ -42,7 +42,7 @@ export default function SeoExpertGurgaonPage() {
             SEO Expert in Gurgaon — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Gurgaon's thriving corporate, startup, and enterprise sector requires advanced B2B search engine optimization. Rohit Gupta provides data-driven technical audits, Core Web Vitals optimization, topic cluster strategies, and conversion tracking for tech companies in Cyber City, Golf Course Road, and Sohna Road.
+            Grow your business in Gurgaon with B2B SEO. Rohit Gupta helps startups and tech firms in Cyber City, Golf Course Road, and Sohna Road rank #1 on Google. We deliver technical SEO, fast page speeds, and high-value corporate leads.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Gurgaon SEO Specialist <ArrowRight className="w-4 h-4" />
@@ -54,26 +54,26 @@ export default function SeoExpertGurgaonPage() {
             B2B &amp; Corporate SEO Services for Gurgaon Enterprises
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Gurgaon is a fast-paced market where top ranking position requires technical superiority, rapid rendering speed, and deep keyword alignment.
+            Win top rankings in Gurgaon with clean code, fast page rendering, and high-intent buyer keywords.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
-                title: "B2B SaaS & Tech Keyword Clustering",
-                desc: "Target commercial search queries used by decision-makers in Cyber City and Gurgaon corporate hubs. Build topical relevance with structured content silos.",
+                title: "B2B SaaS & Tech Keywords",
+                desc: "Target terms used by decision-makers in Cyber City. We build topic hubs that bring qualified business inquiries.",
               },
               {
-                title: "Enterprise Technical SEO Audits",
-                desc: "Fix indexation issues, JavaScript rendering bottlenecks, canonical conflicts, and 301 redirect chains across complex Next.js and React enterprise applications.",
+                title: "Enterprise Technical Audits",
+                desc: "Fix indexing issues and slow rendering on Next.js and React web apps. We ensure fast and smooth crawling.",
               },
               {
-                title: "Google Ads & Conversion Rate Optimization",
-                desc: "Maximize pay-per-click ROI with targeted Search and Performance Max campaigns designed to capture high-intent inbound corporate leads.",
+                title: "Google Ads & Conversion Tuning",
+                desc: "Get high ROI on search ads. We design targeted PPC campaigns to win inbound business leads.",
               },
               {
-                title: "High-Authority Link Building & Digital PR",
-                desc: "Build sustainable domain authority using White Hat backlink outreach, guest editorial features, and niche directory placements.",
+                title: "White Hat Link Building",
+                desc: "Earn links from top tech blogs and industry publications. We build durable domain authority.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">
@@ -85,7 +85,7 @@ export default function SeoExpertGurgaonPage() {
         </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h2 className="text-xl font-black text-white tracking-tight">Enterprise &amp; B2B SEO Strategy</h2>
+          <h3 className="text-xl font-black text-white tracking-tight">Enterprise &amp; B2B SEO Strategy</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               "High-Intent B2B Keyword Research & Clustering",

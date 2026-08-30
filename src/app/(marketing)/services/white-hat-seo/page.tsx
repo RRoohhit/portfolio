@@ -56,7 +56,7 @@ export default function WhiteHatSeoPage() {
             White Hat SEO Services &amp; Firm India
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Rohit Gupta operates as a boutique <strong>White Hat SEO firm</strong> delivering ethical, sustainable <strong>White Hat SEO services</strong> strictly aligned with Google's Search Essentials. Unlike risky Black Hat shortcuts that trigger algorithmic deindexing from SpamBrain, our methods build unshakeable domain authority and top Google rankings that survive every core update.
+            Rank #1 on Google without risking penalties. Rohit Gupta runs a boutique White Hat SEO firm in India. We build lasting domain authority through clean code, helpful content, and real editorial backlinks. No spam or private blog networks.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
@@ -69,12 +69,12 @@ export default function WhiteHatSeoPage() {
         </header>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
             <BookOpen className="w-5 h-5 text-emerald-400" />
             Why Choose White Hat SEO Over Quick Shortcuts?
-          </h2>
+          </h3>
           <p className="text-sm text-white/75 leading-relaxed">
-            Search engine algorithm updates occur frequently. Websites relying on manipulative tactics (mass spam link building, automated content spinning, PBNs) often experience severe traffic drops during core updates. White Hat SEO builds a resilient organic baseline that consistently survives — and often gains traffic from — major search updates.
+            Google updates its search algorithms often. Sites using spam links and spun content lose traffic during core updates. White Hat SEO builds real domain authority that gains traffic from every update.
           </p>
         </section>
 

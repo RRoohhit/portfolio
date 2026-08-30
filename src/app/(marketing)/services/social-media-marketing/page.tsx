@@ -81,10 +81,10 @@ export default function SocialMediaMarketingPage() {
 
         {/* Platforms */}
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
             <BarChart3 className="w-5 h-5 text-emerald-400" />
             Platforms
-          </h2>
+          </h3>
           <div className="flex flex-wrap gap-3">
             {PLATFORMS.map((p) => (
               <span key={p.name} className={`px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-mono font-bold ${p.color}`}>

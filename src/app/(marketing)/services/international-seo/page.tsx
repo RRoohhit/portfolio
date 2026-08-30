@@ -22,18 +22,18 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const INCLUDED_CHECKLIST = [
-  { title: "International Keyword Research", desc: "Find region-specific search queries. We target how locals actually search, avoiding literal translations." },
-  { title: "Country-Level Keyword Mapping", desc: "Map target search terms to country pages. This matches user intent in every market." },
-  { title: "Language & Region Targeting", desc: "Set language (en, fr, es) and country (US, UK, IN, AE) rules across your site." },
-  { title: "Hreflang Tag Implementation", desc: "Add hreflang tags in the page head or sitemaps. This stops regional duplicate content issues." },
-  { title: "Domain Architecture Strategy", desc: "Choose ccTLDs (.co.uk), subdomains, or subdirectories. We pick the best setup for your goals." },
-  { title: "International URL Architecture", desc: "Build clean, clear URL structures. This helps search engines crawl each country version fast." },
-  { title: "Google Search Console Setup", desc: "Configure Search Console country settings. We help you track regional search growth easily." },
-  { title: "Duplicate Content Control", desc: "Use canonical tags and hreflang pairings. This protects your site from ranking penalties." },
-  { title: "Localization & Cultural SEO", desc: "Adapt currency, date formats, and tone. This builds trust with local buyers worldwide." },
-  { title: "International Schema Markup", desc: "Add localized Organization and currency schema. This wins rich search snippets in each country." },
-  { title: "Global Backlink Outreach", desc: "Earn quality backlinks from local news and blogs. This builds authority in target markets." },
-  { title: "Fast Global Page Speed", desc: "Deploy fast edge CDNs and cloud servers. Your pages load in under 1 second worldwide." },
+  { title: "Global Keyword Research", desc: "Find how buyers search in each country. We use local terms, not direct word swaps." },
+  { title: "Country Keyword Mapping", desc: "Match search words to each country page. We help users land on the right local page." },
+  { title: "Language & Region Rules", desc: "Set language and country tags. Search bots know which page serves each region." },
+  { title: "Hreflang Tags", desc: "Add hreflang tags to code and sitemaps. This stops duplicate page issues." },
+  { title: "Domain & URL Setup", desc: "Pick sub-folders or country domains. We choose the best option for your site." },
+  { title: "Clean URL Layout", desc: "Build neat, short URLs. Search bots can crawl each country version with ease." },
+  { title: "Search Console Setup", desc: "Set up country tracking in Google. We watch your global click growth each week." },
+  { title: "Duplicate Page Fixes", desc: "Use canonical tags and hreflang pairs. This stops ranking drops from copied pages." },
+  { title: "Local Content & Tone", desc: "Adapt currency and tone for each market. Buyers trust pages that feel local." },
+  { title: "Country Schema Tags", desc: "Add country and price schema markup. This helps win rich result cards in search." },
+  { title: "Link Building", desc: "Earn links from local news sites and blogs. We build trust in each country's search." },
+  { title: "Fast Page Speed", desc: "Use edge cloud servers near your users. Pages load in under 1 second worldwide." },
 ];
 
 export default function InternationalSeoPage() {
@@ -68,7 +68,7 @@ export default function InternationalSeoPage() {
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Grow your organic search traffic across global markets. Rohit Gupta sets up multi-language and multi-country websites that rank high on Google worldwide. We configure clean hreflang tags, fast site speed, and localized search strategies.
+            Rank in new countries and grow global traffic. We build multi-country websites that rank high on Google. We set up hreflang tags, fast page speed, and local search pages for each market.
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2">

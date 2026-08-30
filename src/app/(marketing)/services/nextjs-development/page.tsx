@@ -50,7 +50,7 @@ export default function NextjsDevelopmentPage() {
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Next.js combines high-speed frontend rendering with built-in search engine optimization features. Rohit Gupta builds full-stack Next.js applications engineered for maximum performance, clean code architecture, and high search engine rankings.
+            Build fast Next.js websites that rank high on Google. Rohit Gupta builds App Router applications engineered for 100/100 Lighthouse scores, clean code, and sub-second page loads.
           </p>
         </header>
 
@@ -59,26 +59,26 @@ export default function NextjsDevelopmentPage() {
             Why Next.js Is the Preferred Framework for Modern SEO
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Next.js combines server-side rendering (SSR), static site generation (SSG), and edge execution into a powerful framework that satisfies both Google search crawlers and modern web users.
+            Next.js renders pages fast on the server. This gives Googlebot clean HTML right away and loads pages instantly for users.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
                 title: "App Router & Server Components",
-                desc: "Leveraging React Server Components (RSC) to minimize client-side JavaScript bundle sizes and accelerate initial page loads.",
+                desc: "Send less JavaScript to the browser. Your pages load and run much faster on phones and laptops.",
               },
               {
-                title: "Built-In SEO & Dynamic Metadata API",
-                desc: "Utilizing Next.js metadata generation, canonical URL management, and open-graph image builders for automated social and SERP previews.",
+                title: "Built-In SEO & Metadata",
+                desc: "Generate custom titles and schema tags dynamically. We make sure every URL looks great on Google.",
               },
               {
-                title: "Edge Rendering & Incremental Static Regeneration",
-                desc: "Implementing ISR (Incremental Static Regeneration) and edge routes to render content dynamically while maintaining static speed benefits.",
+                title: "Edge Rendering & Fast Speed",
+                desc: "Serve pages from cloud servers close to your users. We combine fast static speed with live data.",
               },
               {
-                title: "Lighthouse 100/100 Optimization",
-                desc: "Fine-tuning font loading, image optimization (next/image), script priority (next/script), and layout shifts.",
+                title: "Lighthouse 100/100 Speed",
+                desc: "Optimize images, fonts, and scripts. We make sure your site passes all Google Core Web Vitals.",
               },
             ].map((item, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3 shadow-xl">
@@ -96,29 +96,29 @@ export default function NextjsDevelopmentPage() {
 
         {/* Extended Next.js Technical Performance Section for Word Count */}
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-5 shadow-xl">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">
             Next.js Core Web Vitals &amp; Code Architecture Standards
-          </h2>
+          </h3>
           <p className="text-xs sm:text-sm text-white/80 leading-relaxed font-light">
-            Search engine algorithms heavily penalize slow-loading web applications with poor Cumulative Layout Shift (CLS) or high Time to First Byte (TTFB). By leveraging Next.js dynamic routing, serverless API routes, and optimized media assets, Rohit Gupta ensures your application achieves top Core Web Vitals scores across all mobile and desktop devices.
+            Google ranks websites with fast server response and zero layout shifts. Rohit Gupta uses clean server components, optimized media, and fast caching to hit green Core Web Vitals.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
             <div className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">
-              <span className="text-xs font-mono font-bold text-emerald-400">Zero-JS Hydration</span>
+              <span className="text-xs font-mono font-bold text-emerald-400">Server Pre-Rendering</span>
               <p className="text-xs text-white/70 leading-relaxed font-light">
-                Static content is pre-rendered on the server so search engine bots index raw HTML without waiting for client-side JavaScript execution.
+                Pages are rendered on the server. Search engine bots index clean HTML immediately without waiting.
               </p>
             </div>
             <div className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">
-              <span className="text-xs font-mono font-bold text-emerald-400">Automated WebP/AVIF</span>
+              <span className="text-xs font-mono font-bold text-emerald-400">Modern AVIF &amp; WebP Images</span>
               <p className="text-xs text-white/70 leading-relaxed font-light">
-                Next.js Image component automatically resizes, compresses, and serves modern AVIF/WebP images tailored to the user screen viewport.
+                Images are resized and compressed automatically. They load fast on every screen size.
               </p>
             </div>
             <div className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">
-              <span className="text-xs font-mono font-bold text-emerald-400">Clean Schema Integration</span>
+              <span className="text-xs font-mono font-bold text-emerald-400">Structured Schema Markup</span>
               <p className="text-xs text-white/70 leading-relaxed font-light">
-                Inject valid JSON-LD structured data directly into Next.js head layouts to enable rich snippet search cards on Google.
+                Add clean JSON-LD structured data. This helps Google show rich review stars and FAQs in search.
               </p>
             </div>
           </div>

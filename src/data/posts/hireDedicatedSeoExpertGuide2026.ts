@@ -3,6 +3,7 @@ import { BlogPost } from "../../types";
 export const hireDedicatedSeoExpertGuide2026: BlogPost = {
   id: "blog-16",
   title: "Hire Dedicated SEO Expert & Team India (2026 Guide)",
+  h1: "Why and How to Hire a Dedicated SEO Expert & Team in India",
   slug: "hire-dedicated-seo-expert-india-guide",
   excerpt:
     "Playbook for hiring a dedicated SEO expert or team in India in 2026. Real cost benchmarks, vetting questions, White Hat deliverables, and contracts.",

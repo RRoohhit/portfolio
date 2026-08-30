@@ -188,7 +188,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
 
         <h1 className="text-2xl sm:text-4xl font-black text-white tracking-tight leading-snug">
-          {post.title}
+          {post.h1 || post.title}
         </h1>
 
         <div className="flex items-center gap-3 pt-2 border-t border-white/10">

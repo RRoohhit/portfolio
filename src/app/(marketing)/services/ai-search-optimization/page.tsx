@@ -24,15 +24,15 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const WHATS_INCLUDED = [
-  { title: "Google AI Overviews Visibility", desc: "Analyzing which of your pages are appearing (or missing) in Google AI Overviews and optimizing content structure, authority signals, and schema to improve coverage." },
-  { title: "Entity Optimization", desc: "Ensuring your brand, products, and key personnel are established as clear, consistent entities that AI systems can confidently identify, understand, and cite." },
-  { title: "Structured Data for AI Understanding", desc: "Implementing detailed JSON-LD schema (Organization, Person, Service, FAQ, HowTo) so AI search systems can accurately interpret your content and extract answers." },
-  { title: "Author & E-E-A-T Signal Building", desc: "Strengthening Experience, Expertise, Authoritativeness, and Trustworthiness signals — the core criteria AI systems use to evaluate content credibility." },
-  { title: "Question-Based Content Optimization", desc: "Structuring content around specific, well-formed questions that align with how people query AI systems — optimizing for direct answer extraction." },
-  { title: "Citation-Oriented Content Strategy", desc: "Creating content designed to be cited as a reference source by AI systems — factual, well-structured, authoritative, and backed by clear expertise signals." },
-  { title: "Knowledge Graph Optimization", desc: "Building consistent entity signals across your website, Google Business Profile, Wikipedia, Wikidata, and social profiles to strengthen knowledge graph presence." },
-  { title: "Perplexity & Bing Copilot Visibility", desc: "Reviewing and optimizing content to improve citability and visibility in Perplexity, Bing Copilot, and other AI-powered answer engines beyond Google." },
-  { title: "Brand Consistency Audit", desc: "Auditing brand name, description, and entity data across all online touchpoints to ensure AI systems receive consistent, unambiguous signals about your business." },
+  { title: "Google AI Overviews", desc: "Find out if your pages appear in AI Overviews. We optimize your content structure so AI engines quote your site." },
+  { title: "Entity Brand Optimization", desc: "Establish your brand as a trusted entity. We make sure AI tools understand who you are and what you do." },
+  { title: "Structured Schema Data", desc: "Add rich JSON-LD schema tags. We help AI search bots read and extract answers from your pages fast." },
+  { title: "E-E-A-T Trust Signals", desc: "Boost your trust and author expertise signals. AI models prefer citing credible, proven sources." },
+  { title: "Question-Based Content", desc: "Write content that answers user questions directly. We format answers so AI bots quote them verbatim." },
+  { title: "Citation-Focused Strategy", desc: "Build factual, well-researched guides. We help your site become the default source AI tools reference." },
+  { title: "Knowledge Graph Presence", desc: "Link your brand across your website, Google profile, and social links. We build entity trust." },
+  { title: "ChatGPT & Perplexity Reach", desc: "Optimize your content for ChatGPT, Perplexity, and Copilot. We help you win AI search citations." },
+  { title: "Brand Consistency Audit", desc: "Audit your brand details across all web profiles. We ensure AI engines get clear, uniform data." },
 ];
 
 const AI_PLATFORMS = [
@@ -67,11 +67,7 @@ export default function AiSearchOptimizationPage() {
             AI Search Optimization Services
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            AI-powered search systems — including Google AI Overviews, ChatGPT, Perplexity, and Bing Copilot — are changing
-            how users discover businesses and information. These systems decide which brands and sources to cite based on
-            entity clarity, content authority, structured data, and E-E-A-T signals. Rohit Gupta helps businesses
-            improve the likelihood that their brand and content are understood, surfaced, and cited by AI-powered
-            search systems.
+            Rank in Google AI Overviews, ChatGPT, and Perplexity. Rohit Gupta helps businesses get quoted and cited by AI answer engines. We optimize your structured data, entity trust, and helpful content.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">

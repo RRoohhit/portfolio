@@ -22,39 +22,39 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const WHATS_INCLUDED = [
-  { title: "Topical Authority Mapping", desc: "Building comprehensive topic clusters with pillar pages and supporting sub-topics to demonstrate complete domain authority to Google." },
-  { title: "Search Intent Alignment", desc: "Crafting content specifically tailored to informational, commercial, transactional, or navigational search queries." },
-  { title: "SEO Content Briefs", desc: "Creating detailed content briefs for writers, specifying word counts, required headings, target entities, FAQs, and internal links." },
-  { title: "Content Gap Analysis", desc: "Identifying topics and queries competitors rank for that your site is missing, and prioritizing high-impact content opportunities." },
-  { title: "E-E-A-T Content Upgrades", desc: "Enhancing content with author bios, expert citations, original insights, and verifiable references to satisfy Google's quality standards." },
-  { title: "Content Refresh & Optimization", desc: "Updating decaying historical blog posts and service pages to reclaim lost rankings and boost organic impression volume." },
+  { title: "Topic Clusters & Pillar Pages", desc: "Build topic hubs and sub-pages. We show Google your deep knowledge in your niche." },
+  { title: "Search Intent Matching", desc: "Write pages that match what buyers want. We target commercial and info queries." },
+  { title: "Detailed Content Briefs", desc: "Create easy briefs for writers. We define headers, target words, and internal links." },
+  { title: "Content Gap Audits", desc: "Find keywords your competitors rank for that you miss. We help you fill the gaps." },
+  { title: "E-E-A-T Quality Upgrades", desc: "Add author bios and real proof points. We help your content meet Google standards." },
+  { title: "Old Content Refreshes", desc: "Update old blog posts and landing pages. We help you win back lost search traffic." },
 ];
 
 const PROCESS_STEPS = [
   {
     step: "01",
-    title: "Content Audit & Gap Analysis",
-    desc: "We audit your existing content library, map it against target keywords, and identify high-priority gaps where competitors rank but you don't.",
+    title: "Content & Keyword Audit",
+    desc: "We review your site and find top keywords your competitors rank for.",
   },
   {
     step: "02",
-    title: "Topical Authority Mapping",
-    desc: "We structure your content into topic clusters with a clear pillar-to-supporting-content hierarchy, showing Google your deep topical expertise.",
+    title: "Topic Cluster Planning",
+    desc: "We organize your pages into logical clusters to build domain authority.",
   },
   {
     step: "03",
-    title: "SEO Brief & Content Creation",
-    desc: "We create detailed, SEO-optimized content briefs with keyword targets, intent mapping, and required H2/H3 structures — then either write or work with your team.",
+    title: "Writing Clear SEO Content",
+    desc: "We write clean, helpful articles or guide your team with clear outlines.",
   },
   {
     step: "04",
-    title: "E-E-A-T Enhancement",
-    desc: "We layer in author expertise signals, citations, original data, and credibility markers to satisfy Google's quality raters and improve rankings.",
+    title: "Author Trust & Proof Points",
+    desc: "We add author details, helpful FAQs, and real data to build reader trust.",
   },
   {
     step: "05",
-    title: "Performance Tracking",
-    desc: "Monthly tracking of new rankings, organic impressions, and CTR improvements — adjusting strategy based on data.",
+    title: "Track Search Click Growth",
+    desc: "We track your impressions and keyword ranks in Google Search Console.",
   },
 ];
 
@@ -111,16 +111,16 @@ export default function ContentSeoPage() {
 
         {/* Process */}
         <section className="space-y-5">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <FileText className="w-5 h-5 text-emerald-400" />
             The Content SEO Process
-          </h2>
+          </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {PROCESS_STEPS.map((step) => (
               <div key={step.step} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-emerald-500/30 transition-colors space-y-2">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl font-black font-mono text-emerald-400/40">{step.step}</span>
-                  <h3 className="text-sm font-bold text-white tracking-tight">{step.title}</h3>
+                  <h4 className="text-sm font-bold text-white tracking-tight">{step.title}</h4>
                 </div>
                 <p className="text-xs text-white/65 leading-relaxed">{step.desc}</p>
               </div>
@@ -130,7 +130,7 @@ export default function ContentSeoPage() {
 
         {/* FAQ */}
         <section className="space-y-4">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">Common Questions</h2>
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">Common Questions</h3>
           <div className="space-y-3">
             <details className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-emerald-500/30 transition-colors group cursor-pointer">
               <summary className="flex items-center justify-between font-bold text-white tracking-tight text-sm">
@@ -163,7 +163,7 @@ export default function ContentSeoPage() {
         </section>
 
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h2>
+          <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h3>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "On-Page SEO", href: "/services/on-page-seo" },

@@ -255,9 +255,9 @@ export default function WordPressDevelopmentPage() {
         {/* Comparison: Custom WordPress vs Bloated Builders */}
         <section className="card-3d-interactive p-6 sm:p-10 rounded-3xl space-y-6 shadow-2xl">
           <div className="space-y-2">
-            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
               Custom Engineered WordPress vs <span className="text-rose-400">Bloated Page Builders</span>
-            </h2>
+            </h3>
             <p className="text-sm text-white/65 leading-relaxed max-w-3xl">
               Why generic WordPress themes fail in 2026 search engines and how bespoke code unlocks exponential ranking performance.
             </p>
@@ -265,7 +265,7 @@ export default function WordPressDevelopmentPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             <div className="p-5 rounded-2xl bg-zinc-950 border border-rose-500/30 space-y-3">
-              <h3 className="text-sm font-bold text-rose-400 font-mono uppercase tracking-wider">Traditional Agency Builds (Elementor / Avada)</h3>
+              <h4 className="text-sm font-bold text-rose-400 font-mono uppercase tracking-wider">Traditional Agency Builds (Elementor / Avada)</h4>
               <ul className="space-y-2 text-xs text-white/70">
                 <li className="flex items-start gap-2">
                   <span className="text-rose-400 font-bold">✕</span>
@@ -287,7 +287,7 @@ export default function WordPressDevelopmentPage() {
             </div>
 
             <div className="p-5 rounded-2xl bg-zinc-950 border border-emerald-500/30 space-y-3">
-              <h3 className="text-sm font-bold text-emerald-400 font-mono uppercase tracking-wider">Rohit Gupta Custom WordPress Architecture</h3>
+              <h4 className="text-sm font-bold text-emerald-400 font-mono uppercase tracking-wider">Rohit Gupta Custom WordPress Architecture</h4>
               <ul className="space-y-2 text-xs text-white/80">
                 <li className="flex items-start gap-2">
                   <span className="text-emerald-400 font-bold">✓</span>
@@ -313,10 +313,10 @@ export default function WordPressDevelopmentPage() {
         {/* FAQs */}
         <section className="card-3d-interactive p-6 sm:p-10 rounded-3xl space-y-6 shadow-2xl">
           <div className="space-y-2">
-            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight flex items-center gap-2">
+            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight flex items-center gap-2">
               <HelpCircle className="w-6 h-6 text-blue-400" />
               WordPress Development FAQs
-            </h2>
+            </h3>
             <p className="text-xs sm:text-sm text-white/60">
               Common questions about custom WordPress themes, WooCommerce stores, speed optimization, and maintenance.
             </p>
@@ -325,7 +325,7 @@ export default function WordPressDevelopmentPage() {
           <div className="space-y-4 pt-2">
             {WP_FAQS.map((faq, idx) => (
               <div key={idx} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 space-y-2">
-                <h3 className="text-sm sm:text-base font-bold text-white tracking-tight">{faq.question}</h3>
+                <h4 className="text-sm sm:text-base font-bold text-white tracking-tight">{faq.question}</h4>
                 <p className="text-xs sm:text-sm text-white/75 leading-relaxed font-light">{faq.answer}</p>
               </div>
             ))}
@@ -334,9 +334,9 @@ export default function WordPressDevelopmentPage() {
 
         {/* CTA */}
         <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-blue-950/40 via-zinc-950 to-zinc-950 border border-blue-500/30 text-center space-y-6 shadow-2xl">
-          <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
+          <h3 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
             Build a Fast, Scalable <span className="text-blue-400">WordPress Website</span> Today
-          </h2>
+          </h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed font-light">
             Whether you need a brand-new custom WordPress theme, a high-converting WooCommerce store, or an urgent speed optimization overhaul, get in touch for a tailored proposal.
           </p>

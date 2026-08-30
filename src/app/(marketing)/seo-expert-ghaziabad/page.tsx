@@ -42,7 +42,7 @@ export default function SeoExpertGhaziabadPage() {
             SEO Expert in Ghaziabad — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Grow your organic search traffic in Ghaziabad, Indirapuram, Vaishali, Vasundhara, and Raj Nagar. Rohit Gupta provides white-hat SEO, Google Business Profile optimization, and fast web development tailored to the Ghaziabad market.
+            Grow your search traffic in Ghaziabad. Rohit Gupta helps businesses in Indirapuram, Vaishali, and Vasundhara rank #1 on Google. We deliver local map rankings, site speed fixes, and high-converting web design.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Ghaziabad SEO Expert <ArrowRight className="w-4 h-4" />
@@ -54,26 +54,26 @@ export default function SeoExpertGhaziabadPage() {
             SEO &amp; Digital Growth Services for Ghaziabad Businesses
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Local competition across Ghaziabad and Delhi NCR requires a clear, technical approach. Rohit Gupta delivers targeted SEO services engineered to convert regional search queries into paying customers.
+            Win more local customers in Ghaziabad with technical SEO, Google Maps rankings, and clean web development.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
-                title: "Ghaziabad Google Maps 3-Pack SEO",
-                desc: "Optimize your Google Business Profile with verified NAP data, geo-targeted category tags, customer review automation, and localized citations across Indirapuram and Vaishali.",
+                title: "Ghaziabad Google Maps 3-Pack",
+                desc: "Get more calls and visits. We optimize your Google Business Profile and local citations across Indirapuram and Vaishali.",
               },
               {
-                title: "Technical Site Speed & Core Web Vitals",
-                desc: "Fix slow page speeds, bad LCP/CLS metrics, render-blocking scripts, and layout shifts to ensure your website passes Google PageSpeed Insights with 90+ Lighthouse scores.",
+                title: "Site Speed & Core Web Vitals",
+                desc: "Fix slow page loads and bad LCP scores. We help your website pass Google PageSpeed tests with 90+ scores.",
               },
               {
-                title: "Commercial Keyword & Competitor Research",
-                desc: "Identify high-intent buyer keywords used by Ghaziabad customers. Uncover content gaps competitors have missed and rank for valuable commercial search terms.",
+                title: "Buyer Keyword Research",
+                desc: "Target terms used by buyers in Ghaziabad. We find keywords your competitors miss and rank your pages.",
               },
               {
-                title: "High-Speed Next.js & React Web Development",
-                desc: "Build custom, mobile-first websites designed for instant loading, seamless navigation, structured Schema markup, and high-converting contact inquiries.",
+                title: "Fast Next.js & React Websites",
+                desc: "Build mobile-friendly websites that load fast. We add structured schema to convert visitors into inquiries.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">
@@ -85,7 +85,7 @@ export default function SeoExpertGhaziabadPage() {
         </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h2 className="text-xl font-black text-white tracking-tight">Areas Covered in Ghaziabad</h2>
+          <h3 className="text-xl font-black text-white tracking-tight">Areas Covered in Ghaziabad</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {[
               "Indirapuram",

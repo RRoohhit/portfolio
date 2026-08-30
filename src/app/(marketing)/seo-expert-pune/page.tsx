@@ -43,37 +43,38 @@ export default function SeoExpertPunePage() {
             SEO Expert in Pune — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Pune&apos;s automotive, IT and education sectors are India&apos;s most established — and their SEO needs are as mature as their industries. Rohit Gupta helps Pune businesses across Hinjewadi, Baner, Koregaon Park and Kothrud build durable rankings through technical SEO, topical authority content, white hat links and AI-ready structured data. Fully remote-friendly from anywhere in India or worldwide.
+            Grow your business in Pune with expert SEO. Rohit Gupta helps IT companies, colleges, and local brands in Hinjewadi, Baner, and Koregaon Park rank #1 on Google. We deliver fast site speed, local map pack rankings, and steady leads.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Pune SEO Specialist <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
-<section className="space-y-4">
+
+        <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
             SEO &amp; Growth Solutions for Pune Businesses
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Pune&apos;s educated, tech-savvy buyers research deeply online — reach them with technical excellence and content that leads.
+            Reach tech-savvy buyers in Pune with fast web pages, structured data, and helpful content.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
-                title: "EdTech & Coaching Institute SEO",
-                desc: "Rank your Pune coaching institute or online academy for course-related queries with topical authority, FAQ schema and conversion-focused landing pages.",
+                title: "EdTech & Education SEO",
+                desc: "Rank your coaching institute or academy for top course keywords. We build FAQ schema and clean landing pages.",
               },
               {
-                title: "IT & Automotive Industry SEO",
-                desc: "Dominate B2B and consumer searches for Pune's IT services, automotive dealers and component manufacturers with technical SEO and high-intent content.",
+                title: "IT & Auto Industry SEO",
+                desc: "Dominate Google search for IT services and auto components. We build technical SEO and buyer content that converts.",
               },
               {
                 title: "Local SEO & Google Maps",
-                desc: "Win Google Maps 3-Pack placements across Hinjewadi, Baner, Koregaon Park and Kothrud through GBP optimization and local citation building.",
+                desc: "Win the Google Maps 3-Pack across Hinjewadi, Baner, and Kothrud. We boost your Google profile and local reviews.",
               },
               {
-                title: "Core Web Vitals & AI Search Readiness",
-                desc: "Engineer sub-second page speed and structure content so Google and AI answer engines (ChatGPT, Perplexity) cite your Pune brand.",
+                title: "Core Web Vitals & AI Search",
+                desc: "Get sub-second page speed. We structure answers so Google AI Overviews and ChatGPT cite your brand.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">
@@ -85,7 +86,7 @@ export default function SeoExpertPunePage() {
         </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h2 className="text-xl font-black text-white tracking-tight">Key Service Areas in Pune</h2>
+          <h3 className="text-xl font-black text-white tracking-tight">Key Service Areas in Pune</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {[
               "Hinjewadi & IT Park (Phase 1-3)",

@@ -23,43 +23,43 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const WHATS_INCLUDED = [
-  { title: "Backlink Audit", desc: "A thorough audit of your existing backlink profile using Ahrefs/Semrush to identify low-quality, spammy, or toxic links that may be suppressing your rankings." },
-  { title: "Competitor Backlink Analysis", desc: "Reverse-engineering the backlink profiles of your top-ranking competitors to identify link sources, types, and authority patterns worth replicating." },
-  { title: "Link Gap Analysis", desc: "Identifying websites that link to your competitors but not to you — revealing the highest-priority, most relevant link acquisition targets in your niche." },
-  { title: "Digital PR & Brand Mentions", desc: "Building awareness and editorial links through newsworthy content, data-driven studies, and outreach to relevant publications and journalists in your industry." },
-  { title: "Niche-Relevant Outreach", desc: "Manual outreach to topically relevant websites, blogs, and resource pages to earn contextual backlinks that improve both authority and organic rankings." },
-  { title: "Citation Building", desc: "Building accurate, consistent business citations across industry directories and local data aggregators — essential for both Local SEO and brand authority signals." },
-  { title: "Broken Link Reclamation", desc: "Identifying external websites with broken links pointing to similar resources and offering your content as a high-quality replacement — an efficient, white-hat link acquisition tactic." },
-  { title: "Unlinked Brand Mention Outreach", desc: "Finding websites that mention your business name without linking and converting those mentions into followed backlinks." },
-  { title: "Toxic Link Disavow", desc: "Where necessary, preparing a clean disavow file through Google Search Console to disassociate your site from spammy or harmful backlinks." },
-  { title: "Authority & Trust Signal Building", desc: "Ensuring your website's E-E-A-T signals (Experience, Expertise, Authoritativeness, Trustworthiness) are reinforced through high-quality, credible external references." },
+  { title: "Backlink Audit", desc: "Audit your backlink profile. We find and fix spammy or toxic links that hurt your Google rankings." },
+  { title: "Competitor Link Review", desc: "Check where your top rivals get links. We find quality backlink sources you can replicate." },
+  { title: "Link Gap Analysis", desc: "Find sites linking to competitors but not to you. We target the best link opportunities in your niche." },
+  { title: "Digital PR & Brand Links", desc: "Earn press links with data-driven studies and original stories. We pitch top industry blogs." },
+  { title: "Niche Editorial Outreach", desc: "Reach out to relevant blogs and resource pages. We earn natural links that build trust." },
+  { title: "Directory Citations", desc: "Build accurate citations on trusted directories. This helps local SEO and brand trust signals." },
+  { title: "Broken Link Fixes", desc: "Find broken links on niche sites and offer your guide as a replacement. It earns easy white-hat links." },
+  { title: "Brand Mention Outreach", desc: "Find sites that mention your business without linking. We ask them to turn mentions into links." },
+  { title: "Toxic Link Removal", desc: "Create a clean Google Search Console disavow file. This removes penalty risk from bad backlinks." },
+  { title: "Author & Trust Signals", desc: "Strengthen your E-E-A-T signals with authoritative links from respected industry sources." },
 ];
 
 const PROCESS_STEPS = [
   {
     step: "01",
-    title: "Backlink Audit",
-    desc: "Full audit of your existing link profile: domain ratings, anchor text distribution, follow/nofollow ratio, toxic links, and link velocity.",
+    title: "Backlink Profile Audit",
+    desc: "We check your current links, anchor text balance, and toxic spam signals.",
   },
   {
     step: "02",
-    title: "Competitor & Gap Analysis",
-    desc: "We map competitor backlink sources and find the exact links they have that you don't — then prioritize by relevance, authority, and reachability.",
+    title: "Competitor Link Gap",
+    desc: "We find the best links your competitors have that you are missing.",
   },
   {
     step: "03",
-    title: "Outreach Strategy",
-    desc: "We build a targeted list of link acquisition opportunities and craft personalized, value-first outreach to earn placements naturally.",
+    title: "Outreach & Pitching",
+    desc: "We build a curated outreach list and pitch helpful, custom content.",
   },
   {
     step: "04",
-    title: "Link Acquisition",
-    desc: "Execute the outreach, create supporting content where needed, and track placement confirmations — every link earned, logged, and verified.",
+    title: "Link Placement & Review",
+    desc: "We track every live link to verify indexation and anchor text quality.",
   },
   {
     step: "05",
-    title: "Monthly Reporting",
-    desc: "Monthly report showing new links acquired, domain authority changes, anchor text profile, and correlation with ranking improvements.",
+    title: "Monthly Progress Reports",
+    desc: "We report all new backlinks gained and track your organic ranking gains.",
   },
 ];
 
@@ -159,10 +159,10 @@ export default function OffPageSeoPage() {
 
         {/* Process */}
         <section className="space-y-5">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <Search className="w-5 h-5 text-emerald-400" />
             The Off-Page SEO Process
-          </h2>
+          </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {PROCESS_STEPS.map((step) => (
               <div key={step.step} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-emerald-500/30 transition-colors space-y-2">
