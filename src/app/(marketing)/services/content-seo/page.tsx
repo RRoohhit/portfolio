@@ -6,9 +6,9 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { FileText, CheckCircle2, ArrowRight, Target, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Content SEO Services — Search Intent, Topic Clusters & Copywriting | Rohit Gupta",
+  title: "Content SEO Services | Copywriting & Strategy — Rohit Gupta",
   description:
-    "Content SEO services by Rohit Gupta: search-intent content strategy, topical authority mapping, content briefs, copy optimization, E-E-A-T enhancement, and content gap analysis.",
+    "Content SEO services by Rohit Gupta: search-intent content strategy, topical authority mapping, copy optimization, E-E-A-T & content gap analysis.",
   path: "/services/content-seo/",
   keywords: [
     "Content SEO Services",
@@ -186,7 +186,7 @@ export default function ContentSeoPage() {
             <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
               Schedule Content Audit <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20Content%20SEO%20for%20my%20site" target="_blank" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
+            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20Content%20SEO%20for%20my%20site" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
               WhatsApp Now →
             </Link>
           </div>

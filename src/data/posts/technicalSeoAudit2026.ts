@@ -5,7 +5,7 @@ export const technicalSeoAudit2026: BlogPost = {
   title: "Technical SEO Audit Checklist 2026: Step-by-Step Guide",
   slug: "technical-seo-audit-checklist-guide-2026",
   excerpt:
-    "The complete 2026 technical SEO audit checklist: crawlability, indexation, Core Web Vitals, structured data, site architecture, log files and AI search readiness - with fix priorities for every issue found.",
+    "2026 technical SEO audit: crawlability, indexation, Core Web Vitals, structured data, site architecture, and AI search readiness — with fix priorities.",
   date: "2026-08-10",
   readTime: "32 min read",
   category: "Technical SEO",

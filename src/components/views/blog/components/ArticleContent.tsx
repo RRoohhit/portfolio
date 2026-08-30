@@ -49,7 +49,7 @@ function renderInline(text: string): React.ReactNode[] {
             key={key++}
             href={match[2]}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             className="text-emerald-400 font-semibold underline underline-offset-2 decoration-emerald-400/40 hover:text-emerald-300 transition-colors"
           >
             {match[1]}

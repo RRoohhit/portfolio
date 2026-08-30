@@ -7,7 +7,7 @@ import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
 export const metadata: Metadata = buildPageMetadata({
   title: "SEO Case Studies & Rank #1 Results | Rohit Gupta India",
   description:
-    "See verified SEO case studies: 4,766% organic traffic growth, 99/100 Core Web Vitals and Rank #1 Google results engineered for Noida, Delhi & India businesses.",
+    "Verified SEO case studies: 4,766% organic traffic growth, 99/100 Core Web Vitals and Rank #1 Google results for Noida, Delhi & India businesses.",
   path: "/projects",
   keywords: [
     "SEO case studies",

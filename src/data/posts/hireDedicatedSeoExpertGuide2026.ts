@@ -2,10 +2,10 @@ import { BlogPost } from "../../types";
 
 export const hireDedicatedSeoExpertGuide2026: BlogPost = {
   id: "blog-16",
-  title: "How to Hire a Dedicated SEO Expert & SEO Team in India (2026 Playbook: Costs, SLAs & Vetting)",
+  title: "Hire a Dedicated SEO Expert & Team in India (2026 Guide)",
   slug: "hire-dedicated-seo-expert-india-guide",
   excerpt:
-    "The ultimate executive playbook for hiring a dedicated SEO expert or team in India in 2026. Learn real cost benchmarks, interview questions, White Hat deliverables, and contract frameworks.",
+    "Playbook for hiring a dedicated SEO expert or team in India in 2026. Real cost benchmarks, vetting questions, White Hat deliverables, and contracts.",
   date: "2026-08-27",
   readTime: "22 min read",
   category: "SEO Hiring",

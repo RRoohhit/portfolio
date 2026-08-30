@@ -2,10 +2,10 @@ import { BlogPost } from "../../types";
 
 export const rank1GoogleSystem2026: BlogPost = {
   id: "blog-19",
-  title: "How to Rank #1 on Google in 2026: The Complete 12-Step Organic Ranking System",
+  title: "How to Rank #1 on Google 2026: Complete 12-Step System",
   slug: "rank-1-google-12-step-system-2026",
   excerpt:
-    "The complete, honest system for ranking #1 on Google in 2026: keyword selection, E-E-A-T content, Core Web Vitals, technical SEO, white hat links, AI search readiness and the 90-day execution plan used by Rohit Gupta for clients across India.",
+    "Complete system for ranking #1 on Google in 2026: keyword selection, E-E-A-T content, Core Web Vitals, technical SEO, white hat links, 90-day plan.",
   date: "2026-08-30",
   readTime: "18 min read",
   category: "SEO Guide",

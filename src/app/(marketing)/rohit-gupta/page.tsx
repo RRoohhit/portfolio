@@ -11,9 +11,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "About Rohit Gupta — Web Developer & SEO Expert Freelancer in Noida, India",
+  title: "About Rohit Gupta | SEO Expert & Web Developer in Noida",
   description:
-    "Rohit Gupta is a top SEO expert in India, full-stack web developer freelancer, and digital marketing consultant. Learn about Rohit's White Hat SEO services, custom WordPress builds, and AI search optimization.",
+    "About Rohit Gupta: Senior SEO expert, web developer & digital marketing consultant in Noida, India. Specializing in technical SEO, WordPress & growth.",
   path: "/rohit-gupta/",
   keywords: [
     "Rohit Gupta",

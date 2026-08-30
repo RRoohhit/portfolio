@@ -6,9 +6,9 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { ShieldCheck, CheckCircle2, ArrowRight, BookOpen, AlertTriangle } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "White Hat SEO Services & Firm India | 100% Penalty-Free — Rohit Gupta",
+  title: "White Hat SEO Services India | Penalty-Free — Rohit Gupta",
   description:
-    "White Hat SEO Services & Firm by Rohit Gupta: 100% Google Search Essentials compliant search optimization, editorial link building, and Core Web Vitals speed tuning with zero penalty risks.",
+    "White Hat SEO services by Rohit Gupta: 100% Google Search Essentials compliant SEO, editorial link building & Core Web Vitals with zero penalty risk.",
   path: "/services/white-hat-seo/",
   keywords: [
     "white hat seo services",
@@ -62,7 +62,7 @@ export default function WhiteHatSeoPage() {
             <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
               Consult White Hat SEO Firm <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20White%20Hat%20SEO%20services%20for%20my%20business" target="_blank" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
+            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20White%20Hat%20SEO%20services%20for%20my%20business" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
               WhatsApp Now →
             </Link>
           </div>

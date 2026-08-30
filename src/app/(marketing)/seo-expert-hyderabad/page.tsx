@@ -8,7 +8,7 @@ import { MapPin, CheckCircle2, ArrowRight, Globe2, Building2 } from "lucide-reac
 export const metadata: Metadata = buildPageMetadata({
   title: "SEO Expert in Hyderabad | Rohit Gupta — Local & Growth SEO",
   description:
-    "Hire Rohit Gupta — SEO expert in Hyderabad. Technical SEO, local SEO, Google Business Profile & white hat link building for Hyderabad businesses. Pan India + international remote SEO.",
+    "Hire Rohit Gupta — SEO expert in Hyderabad. Technical SEO, local SEO, Google Business Profile & white hat link building for Hyderabad businesses.",
   path: "/seo-expert-hyderabad/",
   keywords: [
     "SEO Expert in Hyderabad",

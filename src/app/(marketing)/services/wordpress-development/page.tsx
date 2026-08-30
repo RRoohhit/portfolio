@@ -10,9 +10,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "WordPress Development Company India | Custom Themes & Speed — Rohit Gupta",
+  title: "WordPress Development Company India | Custom Themes — Rohit Gupta",
   description:
-    "Leading WordPress Development Company & Consultant in India: Custom Gutenberg themes, WooCommerce development, sub-second Core Web Vitals speed optimization, and Headless WordPress with Next.js.",
+    "WordPress Development in India by Rohit Gupta: custom Gutenberg themes, WooCommerce, sub-second Core Web Vitals, and Headless WordPress with Next.js.",
   path: "/services/wordpress-development/",
   keywords: [
     "wordpress development company",

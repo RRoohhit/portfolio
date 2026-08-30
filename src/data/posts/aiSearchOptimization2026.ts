@@ -5,7 +5,7 @@ export const aiSearchOptimization2026: BlogPost = {
   title: "AEO & GEO 2026: Rank in ChatGPT, AI Overviews & Perplexity",
   slug: "ai-search-optimization-aeo-geo-guide-2026",
   excerpt:
-    "The complete AEO & GEO playbook for 2026: how Google AI Overviews, ChatGPT, Perplexity and Gemini choose citations, and how to structure content, schema and entities to be recommended and quoted by AI search.",
+    "AEO & GEO playbook 2026: how AI Overviews, ChatGPT, Perplexity and Gemini choose citations, and how to structure content, schema and entities to be cited.",
   date: "2026-08-08",
   readTime: "33 min read",
   category: "AI Search Optimization",

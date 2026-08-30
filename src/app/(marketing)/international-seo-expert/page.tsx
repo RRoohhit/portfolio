@@ -7,9 +7,9 @@ import { Globe2, CheckCircle2, ArrowRight, Clock, MessageSquare, ShieldCheck, Do
 import { CONTACT } from "@/config/site";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "International SEO Expert | Hire Remote SEO Specialist — Rohit Gupta",
+  title: "International SEO Expert | Remote SEO Specialist — Rohit Gupta",
   description:
-    "Hire Rohit Gupta as your international SEO expert. Multi-country SEO, hreflang, English keyword strategy, AI search & remote web development for USA, UK, UAE, Australia, Canada & more.",
+    "Hire Rohit Gupta as your international SEO expert. Multi-country SEO, hreflang, AI search & remote web development for USA, UK, UAE, Australia & more.",
   path: "/international-seo-expert/",
   keywords: [
     "International SEO Expert",

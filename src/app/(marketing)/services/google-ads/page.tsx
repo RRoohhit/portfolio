@@ -20,7 +20,7 @@ import {
 export const metadata: Metadata = buildPageMetadata({
   title: "Google Ads Management Services | Rohit Gupta",
   description:
-    "Google Ads management by Rohit Gupta: campaign setup, search ads, Performance Max, landing page optimization, trackable ROI and conversion-focused growth for businesses in India.",
+    "Google Ads by Rohit Gupta: campaign setup, search ads, Performance Max, landing page optimization, trackable ROI and conversion-focused growth for India businesses.",
   path: "/services/google-ads/",
   keywords: [
     "Google Ads Management",

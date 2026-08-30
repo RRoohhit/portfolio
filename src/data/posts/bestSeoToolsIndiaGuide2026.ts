@@ -2,10 +2,10 @@ import { BlogPost } from "../../types";
 
 export const bestSeoToolsIndiaGuide2026: BlogPost = {
   id: "blog-17",
-  title: "15 Best SEO Tools in India 2026 (Free & Paid): The Honest Comparison for Indian Businesses",
+  title: "15 Best SEO Tools India 2026 (Free & Paid): Comparison",
   slug: "best-seo-tools-india-2026",
   excerpt:
-    "The practical, plain-English guide to the best SEO tools in India for 2026 — free and paid, English and Hindi keyword support, rupee pricing, and which tool genuinely matters for Indian small businesses, agencies and eCommerce stores.",
+    "Best SEO tools in India for 2026 — free and paid, rupee pricing, Hindi keyword support, and which tool matters for Indian businesses and agencies.",
   date: "2026-08-30",
   readTime: "15 min read",
   category: "SEO Tools",

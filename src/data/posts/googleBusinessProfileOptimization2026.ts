@@ -2,10 +2,10 @@ import { BlogPost } from "../../types";
 
 export const googleBusinessProfileOptimization2026: BlogPost = {
   id: "blog-18",
-  title: "Google Business Profile Optimization 2026: The Complete GBP SEO Playbook for Indian Businesses",
+  title: "Google Business Profile Optimization 2026: GBP SEO Playbook",
   slug: "google-business-profile-optimization-2026",
   excerpt:
-    "Rank in the Google Maps 3-Pack with this step-by-step Google Business Profile optimization playbook for Indian businesses — categories, reviews, photos, posts, GBP posts, local citations, and the GBP ranking factors that actually matter in 2026.",
+    "Rank in the Google Maps 3-Pack: step-by-step GBP optimization — categories, reviews, photos, posts, local citations, and ranking factors for India.",
   date: "2026-08-30",
   readTime: "16 min read",
   category: "Local SEO",

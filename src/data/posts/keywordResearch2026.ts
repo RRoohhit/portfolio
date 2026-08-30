@@ -5,7 +5,7 @@ export const keywordResearch2026: BlogPost = {
   title: "Keyword Research 2026: Find Low-Competition Keywords Fast",
   slug: "keyword-research-find-low-competition-keywords",
   excerpt:
-    "The complete keyword research system for 2026: finding low-competition keywords, search intent, semantic coverage, keyword clustering, AI-era question keywords, and the tools and process to rank fast.",
+    "Keyword research system for 2026: low-competition keywords, search intent, semantic clustering, AI-era question keywords, and the process to rank fast.",
   date: "2026-07-20",
   readTime: "29 min read",
   category: "Keyword Research",

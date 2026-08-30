@@ -11,9 +11,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Hire SEO Expert in India | Dedicated SEO Specialist & Team — Rohit Gupta",
+  title: "Hire SEO Expert India | Dedicated SEO Specialist — Rohit Gupta",
   description:
-    "Hire SEO Expert India: Dedicated SEO specialist, consultant, and expert team for businesses looking for #1 Google rankings, 99/100 Core Web Vitals, and 100% White Hat growth.",
+    "Hire SEO Expert India: dedicated specialist and team for #1 Google rankings, 99/100 Core Web Vitals, and 100% White Hat growth — Rohit Gupta.",
   path: "/services/hire-seo-expert/",
   keywords: [
     "hire seo expert india",

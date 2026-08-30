@@ -8,7 +8,7 @@ import { MapPin, CheckCircle2, ArrowRight, Globe2, ShoppingBag } from "lucide-re
 export const metadata: Metadata = buildPageMetadata({
   title: "SEO Expert in Chennai | Rohit Gupta — Local & eCommerce SEO",
   description:
-    "Hire Rohit Gupta — SEO expert in Chennai. Local SEO, eCommerce SEO, technical audits & Google Maps dominance for Chennai businesses. Pan India + international remote SEO.",
+    "Hire Rohit Gupta — SEO expert in Chennai. Local SEO, eCommerce SEO, technical audits & Google Maps dominance for Chennai businesses. Pan India remote.",
   path: "/seo-expert-chennai/",
   keywords: [
     "SEO Expert in Chennai",

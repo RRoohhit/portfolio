@@ -5,7 +5,7 @@ export const localSeoGuide2026: BlogPost = {
   title: "Local SEO Guide 2026: Rank #1 on Google Maps & Near Me",
   slug: "local-seo-guide-rank-google-maps-2026",
   excerpt:
-    "The complete 2026 local SEO playbook: Google Business Profile optimization, map pack ranking factors, local citations, reviews, link building and AEO for 'near me' searches across India.",
+    "2026 local SEO playbook: Google Business Profile, map pack factors, local citations, reviews, link building and AEO for 'near me' searches in India.",
   date: "2026-08-11",
   readTime: "31 min read",
   category: "Local SEO",

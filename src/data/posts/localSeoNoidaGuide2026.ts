@@ -2,10 +2,10 @@ import { BlogPost } from "../../types";
 
 export const localSeoNoidaGuide2026: BlogPost = {
   id: "blog-14",
-  title: "Local SEO Services in Noida 2026: How Rohit Gupta Gets Noida Businesses to Rank #1",
+  title: "Local SEO Services Noida 2026: Rank #1 on Google Maps",
   slug: "local-seo-services-noida-guide-2026",
   excerpt:
-    "A definitive, practical guide to local SEO services in Noida covering Google Business Profile optimisation, Map Pack 3-Pack strategy, Noida sector geo-targeting, and citation architecture — by Rohit Gupta, SEO Expert in Noida.",
+    "Local SEO guide for Noida: Google Business Profile, Map Pack 3-Pack strategy, sector geo-targeting, and citation building by Rohit Gupta, SEO Expert.",
   date: "2026-08-27",
   readTime: "16 min read",
   category: "Local SEO",

@@ -6,9 +6,9 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { Star, Quote, ArrowRight, ShieldCheck, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Rohit Web Developer & SEO Expert Freelancer Noida Reviews | Testimonials",
+  title: "Client Reviews & Testimonials | Rohit Gupta SEO Expert",
   description:
-    "Verified client reviews and ratings for Rohit Web Developer & SEO Expert Freelancer in Noida. Read feedback from founders and marketing heads on technical SEO and rankings.",
+    "Verified reviews for Rohit Gupta, SEO Expert & Web Developer in Noida. Read feedback from founders and marketing heads on technical SEO and rankings.",
   path: "/testimonials/",
   keywords: [
     "rohit web developer & seo expert freelancer noida reviews",

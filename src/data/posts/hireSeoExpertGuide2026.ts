@@ -2,10 +2,10 @@ import { BlogPost } from "../../types";
 
 export const hireSeoExpertGuide2026: BlogPost = {
   id: "blog-13",
-  title: "How to Hire SEO Expert in India: Complete 2026 Guide to Hiring an SEO Specialist",
+  title: "How to Hire an SEO Expert in India: 2026 Hiring Guide",
   slug: "hire-seo-expert-guide-2026",
   excerpt:
-    "Should you hire an SEO expert, hire an SEO specialist, or bring on a dedicated SEO team? This plain-English guide walks through every question a business owner needs answered before hiring an SEO professional in India in 2026.",
+    "Hire an SEO expert or specialist in India in 2026: every question answered, team vs freelancer, costs, vetting checklist, and red flags to avoid.",
   date: "2026-08-25",
   readTime: "14 min read",
   category: "SEO Hiring Guide",

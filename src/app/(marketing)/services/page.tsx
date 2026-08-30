@@ -11,9 +11,9 @@ import {
 import { CONTACT } from "@/config/site";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Services | SEO, Google Ads, Social Media, WordPress & Web Development — Rohit Gupta",
+  title: "SEO, Marketing & Web Development Services | Rohit Gupta",
   description:
-    "Explore all services by Rohit Gupta: complete website SEO, local SEO & Google Business Profile, backlinks, technical SEO, Google Ads, social media marketing, WordPress/CMS, content updates & website development. Hire easy.",
+    "All services by Rohit Gupta: SEO, local SEO, backlinks, technical SEO, Google Ads, social media, WordPress, content & web development. Hire easy.",
   path: "/services/",
   keywords: [
     "hire seo expert india",

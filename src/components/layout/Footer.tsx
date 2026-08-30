@@ -114,7 +114,8 @@ export const Footer: React.FC = () => {
           <div className="space-y-5">
             <div className="flex items-center gap-3">
               <Link href="/rohit-gupta/" aria-label="About Rohit Gupta SEO Specialist" className="w-11 h-11 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-400 text-black font-extrabold flex items-center justify-center text-sm font-mono shadow-lg shadow-emerald-500/30 hover:scale-105 transition-transform">
-                {AUTHOR.initials}
+                <span className="sr-only">About Rohit Gupta SEO Specialist</span>
+                <span>{AUTHOR.initials}</span>
               </Link>
               <div>
                 <Link href="/rohit-gupta/" className="text-white font-extrabold tracking-tight text-lg leading-none hover:text-emerald-400 transition-colors">
@@ -205,6 +206,7 @@ export const Footer: React.FC = () => {
                   className="icon-btn-3d w-9 h-9 text-amber-400 hover:text-black hover:bg-amber-400 transition-all"
                 >
                   <Star className="w-4 h-4" />
+                  <span className="sr-only">Client Reviews &amp; Testimonials</span>
                 </Link>
               </div>
             </div>

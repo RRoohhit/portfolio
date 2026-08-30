@@ -6,9 +6,9 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { MapPin, CheckCircle2, ArrowRight, Globe2, Cpu } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "SEO Expert in Bangalore (Bengaluru) | Rohit Gupta — SaaS & Tech SEO",
+  title: "SEO Expert in Bangalore | Rohit Gupta — SaaS & Tech SEO",
   description:
-    "Hire Rohit Gupta — SEO expert in Bangalore. SaaS SEO, technical SEO, Core Web Vitals & AI search optimization for Bengaluru startups and tech brands. Pan India + international.",
+    "Hire Rohit Gupta — SEO expert in Bangalore. SaaS SEO, technical SEO, Core Web Vitals & AI search optimization for Bengaluru startups and tech brands.",
   path: "/seo-expert-bangalore/",
   keywords: [
     "SEO Expert in Bangalore",

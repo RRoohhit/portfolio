@@ -3,8 +3,7 @@ import path from "path";
 
 const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
-  // X-Frame-Options removed — CSP frame-ancestors below controls framing.
-  // Keeping it caused Bing's preview iframe renderer to abort the render step.
+  { key: "X-Frame-Options", value: "SAMEORIGIN" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
   {
     key: "Permissions-Policy",

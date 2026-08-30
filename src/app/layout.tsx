@@ -45,9 +45,9 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Rohit Gupta | Hire SEO Expert India, Web Developer in Noida",
+  title: "Rohit Gupta | SEO Expert India & Web Developer in Noida",
   description:
-    "Rohit Gupta: top SEO expert in Noida & India. Hire dedicated SEO specialists, white hat SEO firm services, WordPress development & local SEO for #1 Google rankings.",
+    "Rohit Gupta: top SEO expert in Noida & India. Hire dedicated SEO specialists, white hat SEO, WordPress development & local SEO for #1 Google rankings.",
   keywords: [
     "rohit gupta",
     "hire seo expert india",
