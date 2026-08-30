@@ -36,12 +36,15 @@ export default function Contact() {
             { name: "Contact" },
           ]}
         />
-        <div className="space-y-4 max-w-4xl mx-auto text-center sm:text-left">
+        <div className="space-y-4 max-w-5xl mx-auto text-center sm:text-left">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] sm:text-xs font-mono uppercase font-bold tracking-widest">
+            <span>Free Consultation • Custom Quote</span>
+          </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
-            Contact SEO Specialist &amp; Web Developer Rohit Gupta
+            Book a Free SEO Consultation &amp; Growth Strategy Call
           </h1>
-          <p className="text-sm sm:text-base text-white/80 leading-relaxed font-light">
-            Ready to scale your organic search visibility, eliminate technical SEO bottlenecks, or build a high-speed React / Next.js web application? Get in touch directly with Rohit Gupta. Whether you need a comprehensive website audit, local Google Maps 3-Pack optimization in Noida/Delhi NCR, or a full digital growth strategy, submit your inquiry below or reach out via WhatsApp and phone for immediate assistance.
+          <p className="text-sm sm:text-base text-white/80 leading-relaxed font-light max-w-3xl">
+            Whether you need local SEO, technical website fixes, e-commerce growth, Google Business Profile optimization, paid ads strategy, or a full digital marketing setup — this is where we define the right scope, budget, and next steps for your business.
           </p>
         </div>
         <ContactSection />

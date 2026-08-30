@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
-import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
+import { breadcrumbGraph, faqGraph, renderJsonLd } from "@/lib/jsonld";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { Zap, CheckCircle2, ArrowRight, Code2, Gauge, Search, Layers, ShieldCheck } from "lucide-react";
+import { CONTACT } from "@/config/site";
+import { Zap, CheckCircle2, ArrowRight, ShieldCheck, MessageSquare } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Technical SEO Services | Rohit Gupta",
@@ -23,22 +24,34 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const INCLUDED_CHECKLIST = [
-  { title: "Technical SEO Audit", desc: "Comprehensive diagnostic scan covering crawl logs, index coverage, site structure, server response codes, and code-level bottlenecks." },
-  { title: "Crawlability & Bot Access", desc: "Analyzing how search engine spiders crawl your site architecture and ensuring crawl budget is focused on priority money pages." },
-  { title: "Indexation & Coverage Fixes", desc: "Resolving Google Search Console indexation issues (Discovered - currently not indexed, Crawled - currently not indexed, soft 404s)." },
-  { title: "Robots.txt Optimization", desc: "Configuring robots.txt directives correctly to block unnecessary admin/temp URLs without blocking vital CSS/JS assets." },
-  { title: "XML Sitemap Management", desc: "Structuring, validating, and submitting clean dynamic XML sitemaps to ensure fast discovery of new and updated URLs." },
-  { title: "Canonical Tag Configuration", desc: "Setting up self-referential and cross-domain canonical tags to prevent duplicate content dilution and consolidate link equity." },
-  { title: "Redirect & URL Hygiene", desc: "Identifying and resolving 301 redirect chains, 302 temporary redirects, and broken 404 links across the site." },
-  { title: "JavaScript SEO & SSR/SSG", desc: "Evaluating hydration, client-side rendering issues, and framework performance in React, Next.js, and modern JS stacks." },
-  { title: "Core Web Vitals Tuning", desc: "Optimizing LCP (Largest Contentful Paint), INP (Interaction to Next Paint), and CLS (Cumulative Layout Shift) for top sub-second performance." },
-  { title: "Page Speed & Server Latency", desc: "Tuning Time to First Byte (TTFB), CDN caching, image formats (WebP/AVIF), asset compression, and code splitting." },
-  { title: "Mobile SEO & Responsiveness", desc: "Ensuring mobile-first indexing compliance, viewport responsiveness, touch target sizing, and mobile usability." },
-  { title: "Structured Data / JSON-LD", desc: "Injecting valid Schema.org markup (Organization, Person, Product, FAQPage, Article, Breadcrumb) for rich snippets." },
-  { title: "Log-File Analysis", desc: "Analyzing server access logs to uncover exact Googlebot crawl frequency, crawl waste, and status code behavior." },
-  { title: "Duplicate Content Control", desc: "Resolving duplicate content caused by URL parameters, HTTP/HTTPS variants, trailing slashes, or copied text." },
-  { title: "Internal Link Architecture", desc: "Optimizing internal anchor text and link equity distribution to elevate high-priority commercial landing pages." },
-  { title: "Website Migration Support", desc: "Managing URL mapping, 301 redirects, sitemap submission, and post-launch monitoring during CMS or domain migrations." },
+  { title: "Technical SEO audit", desc: "We review the site architecture, indexation patterns, crawlability, server health, page performance, and structure to find what is actually blocking rankings." },
+  { title: "Crawlability and bot access", desc: "We make sure Googlebot can reach the pages you want indexed and waste less crawl budget on low-value URLs and duplicate routes." },
+  { title: "Indexation and coverage fixes", desc: "We resolve indexation issues such as pages being discovered but not indexed, soft 404s, poor canonical signals, and low-value duplicate content." },
+  { title: "Robots.txt and sitemap management", desc: "We configure the instructions and URL map so your important pages are discoverable and the site stays clean and indexable." },
+  { title: "Canonical and redirect hygiene", desc: "We fix redirect loops, chain redirects, and duplicate URL patterns so authority flows to the right pages instead of getting diluted." },
+  { title: "JavaScript SEO and rendering review", desc: "We check how modern frameworks render important content so Google can understand the page content instead of seeing a broken or incomplete version." },
+  { title: "Core Web Vitals tuning", desc: "We optimize LCP, INP, and CLS to improve user experience and keep page speed aligned with modern search expectations." },
+  { title: "Page speed and server performance", desc: "We reduce render blocking, improve server response time, compress assets, and streamline performance so pages load faster and convert better." },
+  { title: "Mobile-first and responsiveness checks", desc: "We make sure the site is optimized for real-world mobile interactions and the way Google now prioritizes page experience." },
+  { title: "Structured data and schema markup", desc: "We add schema where it helps users and search engines understand the business, content, offers, and page context more clearly." },
+  { title: "Duplicate content control", desc: "We find and fix issues caused by parameterized URLs, variant pages, multiple slugs, and repeated content across the site." },
+  { title: "Internal link architecture", desc: "We improve the flow of authority and context across the website so important pages get the visibility and credibility they deserve." },
+  { title: "Website migration support", desc: "We support migrations, re-platforming, and redesigns so rankings are preserved, redirects are correct, and content remains discoverable." },
+];
+
+const FAQS = [
+  {
+    question: "Why is technical SEO important if my content is already good?",
+    answer: "Because good content still cannot rank if search engines cannot crawl, index, or understand the page properly. Technical SEO is the foundation behind every solid ranking strategy.",
+  },
+  {
+    question: "Can technical SEO help my website speed?",
+    answer: "Yes. Technical SEO and speed optimization are closely related. If the page loads slowly or has render issues, it hurts both rankings and conversion rates.",
+  },
+  {
+    question: "Do you work on React and Next.js websites?",
+    answer: "Yes. Many modern websites are built on React or Next.js, and those stacks need careful technical SEO handling to ensure content gets rendered and indexed correctly.",
+  },
 ];
 
 export default function TechnicalSeoPage() {
@@ -51,57 +64,51 @@ export default function TechnicalSeoPage() {
   return (
     <>
       {renderJsonLd(breadcrumbData, "jsonld-tech-seo-breadcrumb")}
+      {renderJsonLd(faqGraph(FAQS), "jsonld-tech-seo-faq")}
 
       <div className="space-y-12 sm:space-y-16 pt-24 lg:pt-28 pb-16 max-w-5xl mx-auto">
-        <Breadcrumbs
-          items={[
-            { name: "Home", href: "/" },
-            { name: "Services", href: "/services" },
-            { name: "Technical SEO" },
-          ]}
-        />
+        <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Services", href: "/services" }, { name: "Technical SEO" }]} />
 
         <header className="bg-zinc-950 border border-white/10 p-6 sm:p-10 rounded-3xl space-y-5 shadow-2xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono font-bold uppercase tracking-wider">
             <Zap className="w-4 h-4" />
-            Technical Architecture &amp; Performance
+            Technical foundation & speed
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            Technical SEO Services by Rohit Gupta
+            Technical SEO that makes your site easier to trust, rank, and convert.
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Technical SEO forms the foundation of all organic search success. If search engine bots cannot properly crawl, index, render, and understand your website's architecture, even the best content will fail to rank. Rohit Gupta conducts comprehensive technical audits and code-level optimizations to diagnose and eliminate technical bottlenecks.
+            The best content still struggles if the site has crawl issues, slow pages, duplicate URLs, or a weak technical structure. We fix the underlying issues that stop Google from understanding your site and stop users from staying long enough to convert.
           </p>
 
-          <div className="flex flex-wrap gap-3 pt-2">
-            <Link
-              href="/contact/"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg"
-            >
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">
+            <Link href="/contact/" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
               Request Technical Audit
               <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link
-              href="/seo-audit/"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
+            <a
+              href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I want a technical SEO audit for my website.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
             >
-              Free SEO Audit Page
-            </Link>
+              <MessageSquare className="w-4 h-4 text-emerald-400" />
+              WhatsApp Consultation
+            </a>
           </div>
         </header>
 
-        {/* Detailed What's Included Checklist */}
         <section className="space-y-6">
           <div className="space-y-2">
             <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-400" />
-              What's Included in Technical SEO
+              What technical SEO covers
             </h2>
             <p className="text-xs sm:text-sm text-white/60">
-              A comprehensive 16-point technical SEO execution plan.
+              We fix the hidden issues that often keep a website from growing, even when the business is strong.
             </p>
           </div>
 
@@ -112,50 +119,39 @@ export default function TechnicalSeoPage() {
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                   <h3 className="text-sm font-bold text-white tracking-tight">{item.title}</h3>
                 </div>
-                <p className="text-xs text-white/70 leading-relaxed font-light pl-6">
-                  {item.desc}
-                </p>
+                <p className="text-xs text-white/70 leading-relaxed font-light pl-6">{item.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Interactive Tool Banner */}
         <section className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-emerald-950/60 via-zinc-950 to-zinc-950 border border-emerald-500/30 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-xl">
           <div className="space-y-1">
             <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 text-[10px] font-mono font-bold uppercase border border-emerald-500/30">
-              Interactive Technical Tool
+              SEO visibility tool
             </span>
-            <h3 className="text-lg font-bold text-white tracking-tight">Try the Visual SEO Mind Map Analyzer</h3>
+            <h3 className="text-lg font-bold text-white tracking-tight">Check your site structure with the SEO analyzer</h3>
             <p className="text-xs text-white/70 leading-relaxed max-w-xl">
-              Visualize site hierarchy, crawl depth, internal link distribution, and orphan page risk in real time.
+              See the hierarchy, internal linking, and technical structure of your site in a clearer visual way.
             </p>
           </div>
-          <Link
-            href="/seo-analyzer/"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-wider hover:bg-emerald-300 transition-colors shadow-md shrink-0"
-          >
-            Launch Mind Map Analyzer
+          <Link href="/seo-analyzer/" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-wider hover:bg-emerald-300 transition-colors shadow-md shrink-0">
+            Open analyzer
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </section>
 
-        {/* Related links */}
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Technical &amp; Core Vitals Services</h3>
+          <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related technical & growth services</h3>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "On-Page SEO", href: "/services/on-page-seo" },
               { label: "Local SEO", href: "/services/local-seo" },
-              { label: "International SEO", href: "/services/international-seo" },
+              { label: "Google Ads", href: "/services/google-ads" },
               { label: "Web Development", href: "/services/web-development" },
               { label: "SEO Audit", href: "/seo-audit" },
             ].map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-mono font-bold text-white/80 hover:text-emerald-400 hover:border-emerald-500/30 transition-colors"
-              >
+              <Link key={link.href} href={link.href} className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-mono font-bold text-white/80 hover:text-emerald-400 hover:border-emerald-500/30 transition-colors">
                 {link.label}
                 <ArrowRight className="w-3 h-3" />
               </Link>
@@ -164,15 +160,12 @@ export default function TechnicalSeoPage() {
         </section>
 
         <section className="p-8 sm:p-10 rounded-3xl bg-zinc-950 border border-white/10 space-y-4 text-center">
-          <h3 className="text-xl font-bold text-white tracking-tight">Need a Technical SEO Audit?</h3>
+          <h3 className="text-xl font-bold text-white tracking-tight">Need a technical cleanup before growth accelerates?</h3>
           <p className="text-xs sm:text-sm text-white/70 max-w-xl mx-auto">
-            Get a thorough technical audit of your site structure, performance metrics, and schema implementation.
+            We’ll find the blockers holding your site back and build a technical roadmap that supports sustainable rankings.
           </p>
-          <Link
-            href="/contact/"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg"
-          >
-            Request Technical Audit
+          <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
+            Request Audit
             <ArrowRight className="w-4 h-4" />
           </Link>
         </section>

@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Phone, Mail, MapPin, Search, Linkedin, Github, Instagram, Twitter, MessageSquare, ArrowUp, Zap, ArrowRight, ExternalLink } from "lucide-react";
+import { Phone, Mail, MapPin, Search, Linkedin, Instagram, MessageSquare, ArrowUp, Zap, ArrowRight, ExternalLink, Star } from "lucide-react";
 import { CONTACT, SOCIALS, SITE_NAME, AUTHOR } from "@/config/site";
 import BackToTopButton from "./BackToTopButton";
 
@@ -19,24 +19,40 @@ const QUICK_NAV = [
 ];
 
 const SERVICE_LINKS = [
+  { href: "/services/hire-seo-expert/", label: "Hire SEO Expert India" },
+  { href: "/services/wordpress-development/", label: "WordPress Development Company" },
+  { href: "/services/white-hat-seo/", label: "White Hat SEO Firm" },
+  { href: "/services/digital-marketing/", label: "Rohit Digital Marketing" },
   { href: "/services/technical-seo/", label: "Technical SEO & Speed" },
   { href: "/services/google-business-profile-seo/", label: "Google Business Profile SEO" },
   { href: "/services/on-page-seo/", label: "On-Page SEO & Content" },
-  { href: "/services/off-page-seo/", label: "Off-Page SEO & Link Building" },
   { href: "/services/ecommerce-seo/", label: "E-Commerce SEO" },
-  { href: "/services/ai-search-optimization/", label: "AI Search Optimization" },
-  { href: "/services/google-ads/", label: "Google Ads & PPC" },
-  { href: "/services/web-development/", label: "React & Next.js Web Dev" },
+  { href: "/services/ai-search-optimization/", label: "AI Search Optimization (AEO)" },
 ];
 
 const LOCAL_LINKS = [
   { href: "/seo-expert-noida/", label: "SEO Expert in Noida" },
-  { href: "/local-seo-noida/", label: "Local SEO Noida" },
-  { href: "/google-business-profile-seo-noida/", label: "GBP SEO Noida" },
-  { href: "/seo-expert-delhi/", label: "SEO Expert in Delhi" },
+  { href: "/local-seo-noida/", label: "Local SEO Services in Noida" },
+  { href: "/seo-expert-delhi/", label: "SEO Expert in Delhi NCR" },
   { href: "/seo-expert-gurgaon/", label: "SEO Expert in Gurgaon" },
+  { href: "/seo-expert-mumbai/", label: "SEO Expert in Mumbai" },
+  { href: "/seo-expert-bangalore/", label: "SEO Expert in Bangalore" },
+  { href: "/seo-expert-hyderabad/", label: "SEO Expert in Hyderabad" },
+  { href: "/seo-expert-chennai/", label: "SEO Expert in Chennai" },
+  { href: "/seo-expert-pune/", label: "SEO Expert in Pune" },
+  { href: "/seo-expert-kolkata/", label: "SEO Expert in Kolkata" },
   { href: "/seo-expert-ghaziabad/", label: "SEO Expert in Ghaziabad" },
   { href: "/seo-expert-ayodhya/", label: "SEO Expert in Ayodhya" },
+  { href: "/international-seo-expert/", label: "International SEO Expert (USA, UK, UAE & more)" },
+];
+
+const BLOG_GUIDE_LINKS = [
+  { href: "/blog/rank-1-google-12-step-system-2026/", label: "How to Rank #1 on Google 2026" },
+  { href: "/blog/best-seo-tools-india-2026/", label: "15 Best SEO Tools in India 2026" },
+  { href: "/blog/google-business-profile-optimization-2026/", label: "Google Business Profile SEO 2026" },
+  { href: "/blog/technical-seo-audit-checklist-guide-2026/", label: "Technical SEO Audit Checklist" },
+  { href: "/blog/local-seo-guide-rank-google-maps-2026/", label: "Local SEO & Google Maps Guide" },
+  { href: "/blog/white-hat-link-building-backlinks-guide-2026/", label: "White Hat Link Building 2026" },
 ];
 
 export const Footer: React.FC = () => {
@@ -91,8 +107,8 @@ export const Footer: React.FC = () => {
           </div>
         )}
 
-        {/* 4 Column Main Footer Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+        {/* 5 Column Main Footer Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
 
           {/* Col 1: Brand & Contact Info */}
           <div className="space-y-5">
@@ -182,16 +198,14 @@ export const Footer: React.FC = () => {
                 >
                   <Instagram className="w-4 h-4" />
                 </a>
-                <a
-                  href={SOCIALS.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub"
-                  title="GitHub — Rohit Gupta"
-                  className="icon-btn-3d w-9 h-9 text-white hover:text-black hover:bg-white transition-all"
+                <Link
+                  href="/testimonials/"
+                  aria-label="Client Reviews and Testimonials"
+                  title="Client Reviews — Rohit Gupta SEO"
+                  className="icon-btn-3d w-9 h-9 text-amber-400 hover:text-black hover:bg-amber-400 transition-all"
                 >
-                  <Github className="w-4 h-4" />
-                </a>
+                  <Star className="w-4 h-4" />
+                </Link>
               </div>
             </div>
           </div>
@@ -250,6 +264,26 @@ export const Footer: React.FC = () => {
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-zinc-700 group-hover:bg-emerald-400 transition-colors flex-shrink-0" />
                     {nav.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Col 5: Top SEO Guides 2026 */}
+          <div className="space-y-3">
+            <h4 className="text-xs font-mono uppercase text-white font-bold tracking-wider border-b border-white/10 pb-2">
+              Top SEO Guides 2026
+            </h4>
+            <ul className="space-y-2 text-xs font-mono">
+              {BLOG_GUIDE_LINKS.map((guide) => (
+                <li key={guide.href}>
+                  <Link
+                    href={guide.href}
+                    className="text-zinc-300 hover:text-emerald-400 transition-colors flex items-center gap-1.5 group w-fit"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-zinc-700 group-hover:bg-emerald-400 transition-colors flex-shrink-0" />
+                    {guide.label}
                   </Link>
                 </li>
               ))}

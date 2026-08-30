@@ -5,6 +5,14 @@ import type { ReactElement } from "react";
 import { SITE_URL, OG_IMAGE, SOCIALS } from "@/config/site";
 import { CONTACT } from "@/config/site";
 
+// Only real, working profile URLs belong in `sameAs` — placeholder "#" links
+// weaken entity resolution in Google's Knowledge Graph and AI answer engines.
+const REAL_PROFILES: string[] = [
+  SOCIALS.linkedin,
+  SOCIALS.instagram,
+  SOCIALS.whatsapp,
+].filter((u) => Boolean(u) && u.startsWith("http"));
+
 export interface BreadcrumbItem {
   name: string;
   path: string;
@@ -73,12 +81,7 @@ export function organizationGraph(): object {
         },
         "alumniOf": "Dronacharya Group of Institutions, AKTU University, Greater Noida",
         "worksFor": { "@id": `${SITE_URL}/#service` },
-        "sameAs": [
-          SOCIALS.linkedin,
-          SOCIALS.instagram,
-          SOCIALS.github,
-          SOCIALS.twitter,
-        ],
+        "sameAs": REAL_PROFILES,
         "knowsAbout": [
           "Search Engine Optimization",
           "Technical SEO",
@@ -126,12 +129,17 @@ export function organizationGraph(): object {
           "opens": "09:00",
           "closes": "19:00",
         },
-        "sameAs": [
-          SOCIALS.linkedin,
-          SOCIALS.instagram,
-          SOCIALS.github,
-          SOCIALS.twitter,
-        ],
+        "hasMap": CONTACT.googleMaps,
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": CONTACT.phone.replace(/\s+/g, ""),
+          "contactType": "sales",
+          "availableLanguage": ["en", "hi"],
+        },
+        "availableLanguage": ["en", "hi"],
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "UPI, Bank Transfer, PayPal",
+        "sameAs": REAL_PROFILES,
         "areaServed": [
           { "@type": "City", "name": "Noida" },
           { "@type": "City", "name": "Delhi" },
@@ -139,7 +147,18 @@ export function organizationGraph(): object {
           { "@type": "City", "name": "Ghaziabad" },
           { "@type": "City", "name": "Lucknow" },
           { "@type": "City", "name": "Ayodhya" },
+          { "@type": "City", "name": "Mumbai" },
+          { "@type": "City", "name": "Bengaluru" },
+          { "@type": "City", "name": "Hyderabad" },
+          { "@type": "City", "name": "Chennai" },
+          { "@type": "City", "name": "Pune" },
+          { "@type": "City", "name": "Kolkata" },
           { "@type": "Country", "name": "India" },
+          { "@type": "Country", "name": "United States" },
+          { "@type": "Country", "name": "United Kingdom" },
+          { "@type": "Country", "name": "United Arab Emirates" },
+          { "@type": "Country", "name": "Australia" },
+          { "@type": "Country", "name": "Canada" },
           { "@type": "Country", "name": "Worldwide" },
         ],
         "makesOffer": [
@@ -147,9 +166,36 @@ export function organizationGraph(): object {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
+              "name": "Hire Dedicated SEO Expert & Specialist India",
+              "serviceType": "Search Engine Optimization",
+              "url": `${SITE_URL}/services/hire-seo-expert/`,
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "WordPress Development Company Services",
+              "serviceType": "WordPress Development",
+              "url": `${SITE_URL}/services/wordpress-development/`,
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
               "name": "SEO Specialist Services India",
               "serviceType": "Search Engine Optimization",
               "url": `${SITE_URL}/services/seo/`,
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "White Hat SEO Firm & Services",
+              "serviceType": "White Hat SEO",
+              "url": `${SITE_URL}/services/white-hat-seo/`,
             },
           },
           {
@@ -192,9 +238,9 @@ export function organizationGraph(): object {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Local SEO Services",
+              "name": "Local SEO Services in Noida",
               "serviceType": "Local SEO",
-              "url": `${SITE_URL}/services/local-seo/`,
+              "url": `${SITE_URL}/local-seo-noida/`,
             },
           },
           {
@@ -210,7 +256,7 @@ export function organizationGraph(): object {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "AI Search Optimization (AEO / GEO)",
+              "name": "AI Search Optimization (AEO Tools / GEO)",
               "serviceType": "AI Search Optimization",
               "url": `${SITE_URL}/services/ai-search-optimization/`,
             },
@@ -219,9 +265,9 @@ export function organizationGraph(): object {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Google Ads & PPC Management",
-              "serviceType": "PPC Management",
-              "url": `${SITE_URL}/services/google-ads/`,
+              "name": "Rohit Digital Marketing Services & Google Ads",
+              "serviceType": "Digital Marketing",
+              "url": `${SITE_URL}/services/digital-marketing/`,
             },
           },
           {

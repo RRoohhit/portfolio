@@ -11,17 +11,20 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "About Rohit Gupta — Technical SEO Specialist & Developer",
+  title: "About Rohit Gupta — Web Developer & SEO Expert Freelancer in Noida, India",
   description:
-    "About Rohit Gupta — SEO specialist & web developer focused on technical SEO, Core Web Vitals, Next.js web applications, and measurable business growth.",
+    "Rohit Gupta is a top SEO expert in India, full-stack web developer freelancer, and digital marketing consultant. Learn about Rohit's White Hat SEO services, custom WordPress builds, and AI search optimization.",
   path: "/rohit-gupta/",
   keywords: [
     "Rohit Gupta",
-    "Rohit Gupta SEO",
+    "rohit web developer & seo expert freelancer",
+    "rohit digital marketing services",
+    "hire seo expert india",
+    "hire dedicated seo expert",
+    "seo expert in noida",
+    "white hat seo services",
+    "wordpress development company",
     "Rohit Gupta SEO expert",
-    "Rohit Gupta digital marketing",
-    "Rohit Gupta web developer",
-    "About Rohit Gupta",
     "Technical SEO Specialist",
   ],
 });
@@ -75,15 +78,15 @@ export default function RohitGuptaPage() {
               </div>
 
               <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-                About Rohit Gupta
+                Rohit Gupta — Web Developer &amp; SEO Expert Freelancer
               </h1>
 
               <p className="text-lg sm:text-xl text-emerald-400 font-mono font-bold">
-                SEO Expert, Digital Marketing Consultant &amp; Full-Stack Web Developer
+                Hire SEO Expert in India · Rohit Digital Marketing Services · White Hat SEO Firm
               </p>
 
               <p className="text-sm sm:text-base text-white/80 leading-relaxed pt-2">
-                I’m <strong>Rohit Gupta</strong>, an SEO specialist and full-stack web developer focused on helping businesses improve their search visibility, website performance and digital growth.
+                I&apos;m <strong>Rohit Gupta</strong> — a professional <strong>web developer &amp; SEO expert freelancer</strong> based in Noida, India. I help businesses hire dedicated SEO expertise, build lightning-fast WordPress and Next.js websites, and achieve #1 Google rankings through 100% White Hat SEO services.
               </p>
 
               {/* Contact info badges */}
@@ -133,13 +136,13 @@ export default function RohitGuptaPage() {
           </h2>
           <div className="space-y-4 text-sm sm:text-base text-white/80 leading-relaxed font-light">
             <p>
-              My work combines technical SEO, white hat SEO, local SEO, international SEO, on-page optimization, keyword research, Google Business Profile optimization and modern web development.
+              I operate as a boutique <strong>White Hat SEO firm</strong> and freelance agency — offering everything from dedicated monthly SEO retainers to one-off technical audits. Companies across India, the UK, the UAE, and the US <strong>hire me as their dedicated SEO expert</strong> to own their entire organic search channel: crawlability, Core Web Vitals, entity schema, topical authority, and AI Overview citations.
             </p>
             <p>
-              On the development side, I work with technologies including React.js, Next.js, JavaScript, TypeScript, Node.js, databases and modern web performance practices.
+              On the development side, I engineer custom <strong>WordPress development company</strong>-grade solutions — Gutenberg block themes, WooCommerce stores, and Headless WordPress with Next.js — all achieving sub-second LCP scores (&lt;1.2s) on real-world Chrome UX Report data.
             </p>
             <p>
-              My approach is focused on building websites and SEO strategies that are technically sound, useful to users and designed for sustainable organic growth.
+              <strong>Rohit Digital Marketing Services</strong> extend beyond SEO into high-ROI Google Ads PPC, conversion rate optimisation (CRO), AI search visibility (AEO/GEO), and multi-channel attribution modelling — giving clients a single point of accountability for all digital growth.
             </p>
           </div>
         </section>
@@ -254,10 +257,10 @@ export default function RohitGuptaPage() {
               <ul className="space-y-1 text-xs text-white/75">
                 <li>• <Link href="/seo-expert-noida/" className="hover:text-emerald-400 underline">Noida & Greater Noida</Link> (Current Base)</li>
                 <li>• <Link href="/seo-expert-delhi/" className="hover:text-emerald-400 underline">Delhi NCR</Link> (Connaught Place, South/West Delhi)</li>
-                <li>• <Link href="/seo-expert-gurgaon/" className="hover:text-emerald-400 underline">Gurgaon</Link> (Cyber City, B2B Hubs)</li>
-                <li>• <Link href="/seo-expert-ghaziabad/" className="hover:text-emerald-400 underline">Ghaziabad & Lucknow</Link></li>
-                <li>• <Link href="/seo-expert-ayodhya/" className="hover:text-emerald-400 underline">Ayodhya</Link> (Permanent Base)</li>
-                <li>• All of India & International Remote Clients</li>
+                <li>• <Link href="/seo-expert-mumbai/" className="hover:text-emerald-400 underline">Mumbai</Link> & <Link href="/seo-expert-pune/" className="hover:text-emerald-400 underline">Pune</Link> (Maharashtra)</li>
+                <li>• <Link href="/seo-expert-bangalore/" className="hover:text-emerald-400 underline">Bengaluru</Link>, <Link href="/seo-expert-hyderabad/" className="hover:text-emerald-400 underline">Hyderabad</Link>, <Link href="/seo-expert-chennai/" className="hover:text-emerald-400 underline">Chennai</Link> & <Link href="/seo-expert-kolkata/" className="hover:text-emerald-400 underline">Kolkata</Link></li>
+                <li>• <Link href="/seo-expert-gurgaon/" className="hover:text-emerald-400 underline">Gurgaon</Link>, Ghaziabad, <Link href="/seo-expert-ayodhya/" className="hover:text-emerald-400 underline">Ayodhya</Link> & 100+ Indian cities</li>
+                <li>• <Link href="/international-seo-expert/" className="hover:text-emerald-400 underline">International Remote Clients</Link> — USA, UK, UAE, Australia, Canada &amp; beyond</li>
               </ul>
             </div>
           </div>

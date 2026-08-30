@@ -1,61 +1,81 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
-import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
+import { breadcrumbGraph, faqGraph, renderJsonLd } from "@/lib/jsonld";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { Search, CheckCircle2, ArrowRight, ShieldCheck, Zap, Globe, MapPin, Target, FileText, ShoppingCart, Sparkles, Layers, MessageSquare } from "lucide-react";
+import {
+  Search,
+  ArrowRight,
+  ShieldCheck,
+  Zap,
+  Globe,
+  MapPin,
+  Target,
+  FileText,
+  ShoppingCart,
+  Sparkles,
+  MessageSquare,
+  Users,
+} from "lucide-react";
 import { CONTACT } from "@/config/site";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Professional SEO Services & Search Optimization | Rohit Gupta",
+  title: "Hire SEO Expert India — Professional SEO Services | Rohit Gupta",
   description:
-    "Data-driven SEO services by Rohit Gupta: Technical SEO, On-Page, Off-Page, Local SEO, E-Commerce SEO, and AI Search Optimization for sustainable growth.",
+    "Hire a dedicated SEO expert or team with Rohit Gupta: Technical SEO, White Hat SEO Firm, On-Page, Local SEO in Noida, E-Commerce SEO, and AI Search Optimization.",
   path: "/services/seo/",
   keywords: [
-    "SEO Services by Rohit Gupta",
+    "hire seo expert india",
+    "hire dedicated seo expert",
+    "hire seo specialist",
+    "hire seo professional",
+    "hire seo experts",
+    "white hat seo services",
+    "seo expert in noida",
     "Technical SEO Specialist",
-    "On-Page SEO Services",
-    "Off-Page Link Building",
-    "Local SEO Services India",
-    "Google Business Profile SEO",
-    "International SEO",
-    "E-Commerce SEO Expert",
-    "AI Search Optimization",
     "White Hat SEO Specialist",
   ],
 });
 
 const SEO_HUB_SECTIONS = [
   {
+    id: "hire-seo-expert",
+    title: "Hire a dedicated SEO expert",
+    badge: "Hiring Retainers",
+    icon: Users,
+    desc: "You get direct support, strategic SEO execution, and a clear roadmap without juggling multiple freelancers or generic agencies.",
+    link: "/services/hire-seo-expert/",
+  },
+  {
     id: "technical-seo",
-    title: "Technical SEO & Core Web Vitals",
+    title: "Technical SEO and site health",
     badge: "Infrastructure",
     icon: Zap,
-    desc: "Crawl logs audit, indexation fix, robots.txt, dynamic XML sitemaps, canonical tags, 301 redirects, JavaScript SEO, and Core Web Vitals (LCP, INP, CLS) optimization.",
+    desc: "We fix crawl issues, indexing gaps, page speed problems, schema gaps, redirects, and technical blockers that stop Google from trusting the site.",
     link: "/services/technical-seo/",
   },
   {
     id: "on-page-seo",
-    title: "On-Page SEO & Content Intent",
+    title: "On-page SEO and content strategy",
     badge: "Content",
     icon: FileText,
-    desc: "Intent-based keyword research, title tag & meta description tuning, semantic H1-H6 heading hierarchy, internal link equity distribution, and CTR optimization.",
+    desc: "We improve keyword intent, titles, meta descriptions, headings, content structure, internal linking, and the pages that convert traffic into enquiries.",
     link: "/services/on-page-seo/",
   },
   {
     id: "off-page-seo",
-    title: "Off-Page SEO & Link Building",
+    title: "Off-page SEO and authority growth",
     badge: "Authority",
     icon: Target,
-    desc: "Backlink profile audits, competitor link gap analysis, digital PR, citation building, unlinked brand mention reclamation, and ethical White-Hat outreach.",
+    desc: "We build the backlinks, citations, and digital PR signals that make your website stronger in the eyes of search engines and customers alike.",
     link: "/services/off-page-seo/",
   },
   {
     id: "local-seo",
-    title: "Local SEO & Geo-Targeting",
+    title: "Local SEO and Google Maps growth",
     badge: "Local",
     icon: MapPin,
-    desc: "Map Pack 3-Pack placement, local citations, NAP consistency, geo-targeted content, and city landing page architecture across Noida, Delhi NCR & India.",
+    desc: "Perfect for service businesses that want more calls, local leads, and visibility in “near me” searches and the map pack.",
     link: "/services/local-seo/",
   },
   {
@@ -63,49 +83,88 @@ const SEO_HUB_SECTIONS = [
     title: "Google Business Profile SEO",
     badge: "GBP",
     icon: MapPin,
-    desc: "Profile audit, primary & secondary category optimization, service catalog management, Google Posts, and review acquisition strategies.",
+    desc: "We improve your profile visibility, categories, reviews, posts, service catalog, and photos so more people trust and choose your business.",
     link: "/services/google-business-profile-seo/",
   },
   {
     id: "ecommerce-seo",
-    title: "E-Commerce SEO",
+    title: "E-commerce SEO",
     badge: "Store",
     icon: ShoppingCart,
-    desc: "Shopify & WooCommerce SEO, product page optimization, category page hierarchy, Product JSON-LD schema, and faceted navigation duplicate content resolution.",
+    desc: "We optimize category pages, product pages, internal linking, and technical structure so more shoppers find your products and buy.",
     link: "/services/ecommerce-seo/",
   },
   {
     id: "international-seo",
-    title: "International SEO & Hreflang",
+    title: "International SEO and geo targeting",
     badge: "Global",
     icon: Globe,
-    desc: "Hreflang implementation, ccTLD vs subfolder architecture, multi-currency site structure, global keyword mapping, and cross-border organic growth.",
+    desc: "We help brands reach new countries and language audiences with the right architecture, hreflang setup, and segmented keyword strategy.",
     link: "/services/international-seo/",
   },
   {
     id: "ai-search-optimization",
-    title: "AI Search Optimization (AEO / GEO)",
+    title: "AI search optimization (AEO / GEO)",
     badge: "AI Search",
     icon: Sparkles,
-    desc: "Entity optimization, structured data, author E-E-A-T signals, and question-based content to maximize brand citations in Google AI Overviews & ChatGPT.",
+    desc: "We structure content and signals so your brand is easier to discover in Google AI Overviews, ChatGPT, and answer-based search experiences.",
     link: "/services/ai-search-optimization/",
   },
   {
     id: "white-hat-seo",
-    title: "White Hat SEO Philosophy",
+    title: "White-hat SEO that builds lasting trust",
     badge: "Ethical",
     icon: ShieldCheck,
-    desc: "100% Search Essentials compliant tactics focused on technical excellence, search intent, user experience, and penalty-free domain equity.",
+    desc: "No shortcuts, no spammy tricks. Just clean execution based on usability, search intent, and long-term domain quality.",
     link: "/services/white-hat-seo/",
   },
 ];
 
 const SEO_PROCESS = [
-  { step: "01", title: "Comprehensive Audit", desc: "We run deep technical, on-page, keyword, and backlink diagnostics to identify indexation blockers and quick-win growth targets." },
-  { step: "02", title: "Strategy & Roadmap", desc: "We prioritize fixes based on business ROI — addressing critical code errors first, followed by content expansion and authority building." },
-  { step: "03", title: "Implementation & Fixes", desc: "Direct code-level execution on React, Next.js, WordPress, or Shopify, plus optimized meta tags, internal links, and JSON-LD schema." },
-  { step: "04", title: "Authority & Content Expansion", desc: "Execute White-Hat outreach, local citation building, and topic cluster creation to establish category dominance." },
-  { step: "05", title: "Monitoring & Monthly Reports", desc: "Track ranking progress, organic traffic growth, impression volume, and conversions in Google Search Console & GA4." },
+  {
+    step: "01",
+    title: "Deep audit and diagnosis",
+    desc: "We review the site from the perspective of both users and Google to identify technical blockers, ranking gaps, and growth opportunities.",
+  },
+  {
+    step: "02",
+    title: "Strategy with business context",
+    desc: "We define the right opportunities based on your market, your ideal customer, and what will actually drive leads or revenue.",
+  },
+  {
+    step: "03",
+    title: "Implementation and cleanup",
+    desc: "We fix technical problems, strengthen on-page content, and improve the site structure so rankings can improve with real momentum.",
+  },
+  {
+    step: "04",
+    title: "Authority building",
+    desc: "We strengthen backlinks, citations, and topical relevance so the site grows in trust and visibility over time.",
+  },
+  {
+    step: "05",
+    title: "Tracking and reporting",
+    desc: "We monitor traffic, rankings, and conversions to make sure the SEO work is actually moving the business forward.",
+  },
+];
+
+const FAQS = [
+  {
+    question: "What does a good SEO service actually include?",
+    answer: "A good SEO service includes technical fixes, keyword strategy, content improvements, internal linking, local visibility, and authority growth. The right mix depends on your site and market.",
+  },
+  {
+    question: "How long does SEO take to show results?",
+    answer: "Most businesses see early movement in a few weeks to a few months, while stronger ranking gains usually build over several months of consistent implementation and authority work.",
+  },
+  {
+    question: "Do you work with current websites or new ones?",
+    answer: "Both. We can optimize an existing website, fix technical issues, improve the content, and create a roadmap for growth, or help build the right foundation from the start.",
+  },
+  {
+    question: "Do you only do SEO or can you help with growth beyond that?",
+    answer: "We can support the wider growth system too, including Google Ads, local SEO, content strategy, and web improvements that make the site stronger for both users and search engines.",
+  },
 ];
 
 export default function SeoServicesPage() {
@@ -118,6 +177,7 @@ export default function SeoServicesPage() {
   return (
     <>
       {renderJsonLd(breadcrumbData, "jsonld-seo-services-hub-breadcrumb")}
+      {renderJsonLd(faqGraph(FAQS), "jsonld-seo-services-faq")}
 
       <div className="space-y-12 sm:space-y-16 pt-24 lg:pt-28 pb-16 max-w-5xl mx-auto">
         <Breadcrumbs
@@ -128,52 +188,63 @@ export default function SeoServicesPage() {
           ]}
         />
 
-        {/* Hero Header */}
         <header className="bg-zinc-950 border border-white/10 p-6 sm:p-10 rounded-3xl space-y-5 shadow-2xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono font-bold uppercase tracking-wider">
             <Search className="w-4 h-4" />
-            Organic Search &amp; Growth Hub
+            Organic search & growth system
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            SEO Services by Rohit Gupta
+            SEO that helps your business get found, trusted, and chosen.
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Search engine optimization is not a single trick — it is an interconnected ecosystem of technical infrastructure,
-            on-page intent, content authority, local entity signals, and ethical link building. Rohit Gupta provides
-            end-to-end SEO services designed to turn organic search into a predictable revenue driver for your business.
+            SEO is not just rankings. It is how your website earns trust, shows up at the right moment, and turns searches into real enquiries.
+            We build a practical SEO system around your business, your market, and your growth goals so the traffic you attract is both relevant and valuable.
           </p>
 
-          <div className="flex flex-wrap gap-3 pt-2">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">
             <Link
               href="/seo-audit/"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg"
             >
               Request Free SEO Audit
               <ArrowRight className="w-4 h-4" />
             </Link>
             <a
-              href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I would like to discuss SEO services for my website.")}`}
+              href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I want to discuss SEO services for my website.")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
             >
               <MessageSquare className="w-4 h-4 text-emerald-400" />
-              WhatsApp Consultation
+              WhatsApp Strategy Call
             </a>
           </div>
         </header>
 
-        {/* All SEO Capabilities Grid */}
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { icon: Search, title: "Ranking is not enough", text: "We care about the quality of traffic, not just vanity numbers." },
+            { icon: ShieldCheck, title: "White-hat and practical", text: "No risky shortcuts. Just durable SEO built around trust and user intent." },
+            { icon: Target, title: "Built for business goals", text: "The work is aligned to leads, calls, sales, and long-term brand growth." },
+          ].map(({ icon: Icon, title, text }) => (
+            <div key={title} className="p-5 rounded-2xl bg-zinc-950 border border-white/10">
+              <Icon className="w-5 h-5 text-emerald-400 mb-3" />
+              <h2 className="text-base font-bold text-white mb-2">{title}</h2>
+              <p className="text-sm text-white/70 leading-relaxed">{text}</p>
+            </div>
+          ))}
+        </section>
+
         <section className="space-y-6">
           <div className="space-y-2">
             <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
-              Comprehensive SEO Capabilities
+              SEO services designed for real business growth
             </h2>
             <p className="text-xs sm:text-sm text-white/60">
-              Explore specialized search engine optimization services tailored to your market and site architecture.
+              Whether you need technical fixes, better content, local rankings, or a full search growth strategy, these are the core services that power it.
             </p>
           </div>
 
@@ -192,19 +263,15 @@ export default function SeoServicesPage() {
                       </span>
                       <Icon className="w-5 h-5 text-white/50 group-hover:text-emerald-400 transition-colors" />
                     </div>
-                    <h3 className="text-base font-bold text-white tracking-tight leading-snug">
-                      {sec.title}
-                    </h3>
-                    <p className="text-xs text-white/70 leading-relaxed font-light">
-                      {sec.desc}
-                    </p>
+                    <h3 className="text-base font-bold text-white tracking-tight leading-snug">{sec.title}</h3>
+                    <p className="text-xs text-white/70 leading-relaxed font-light">{sec.desc}</p>
                   </div>
 
                   <Link
                     href={sec.link}
                     className="inline-flex items-center justify-between w-full pt-3 border-t border-white/5 text-xs font-mono font-bold text-emerald-400 hover:text-emerald-300 transition-colors"
                   >
-                    <span>View Dedicated Page</span>
+                    <span>View dedicated page</span>
                     <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </div>
@@ -213,16 +280,13 @@ export default function SeoServicesPage() {
           </div>
         </section>
 
-        {/* Process Section */}
         <section className="space-y-5">
           <div className="space-y-2">
             <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-400" />
-              The 5-Step SEO Growth Methodology
+              The SEO process
             </h2>
-            <p className="text-xs sm:text-sm text-white/60">
-              A structured, transparent approach from audit to top search rankings.
-            </p>
+            <p className="text-xs sm:text-sm text-white/60">Simple, structured, and focused on sustainable growth.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {SEO_PROCESS.map((step) => (
@@ -237,13 +301,12 @@ export default function SeoServicesPage() {
           </div>
         </section>
 
-        {/* Callout to SEO Audit */}
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/50 via-zinc-950 to-zinc-950 border border-emerald-500/30 text-center space-y-5 shadow-2xl">
           <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-            Ready to Improve Your Organic Visibility?
+            Ready to grow your visibility without guessing?
           </h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
-            Get in touch with Rohit Gupta to audit your existing SEO foundation and build a practical roadmap for organic search growth.
+            Let’s review your current site, identify what is holding rankings back, and map out a realistic growth plan.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link
@@ -253,12 +316,15 @@ export default function SeoServicesPage() {
               Get Free SEO Audit
               <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link
-              href="/contact/"
+            <a
+              href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I want to improve my SEO and need a strategy call.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
             >
-              Contact Rohit Gupta
-            </Link>
+              <MessageSquare className="w-4 h-4 text-emerald-400" />
+              Ask on WhatsApp
+            </a>
           </div>
         </section>
       </div>

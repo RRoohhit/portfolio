@@ -110,6 +110,13 @@ export default function OffPageSeoPage() {
               Get Backlink Audit
               <ArrowRight className="w-4 h-4" />
             </Link>
+            <Link
+              href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20off-page%20SEO%20and%20link%20building%20for%20my%20site"
+              target="_blank"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors"
+            >
+              WhatsApp Now →
+            </Link>
           </div>
         </header>
 
@@ -199,13 +206,22 @@ export default function OffPageSeoPage() {
             Get a backlink audit and competitor link analysis to understand exactly where your site stands and
             what quality links you need to outrank the competition.
           </p>
-          <Link
-            href="/contact/"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25"
-          >
-            Request Backlink Audit
-            <ArrowRight className="w-4 h-4" />
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Link
+              href="/contact/"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25"
+            >
+              Request Backlink Audit
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20get%20a%20backlink%20audit%20for%20my%20website"
+              target="_blank"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors"
+            >
+              WhatsApp Now →
+            </Link>
+          </div>
         </section>
       </div>
     </>

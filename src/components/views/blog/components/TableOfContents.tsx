@@ -63,6 +63,15 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ items, variant
             <li key={item.index}>
               <a
                 href={`#section-${item.index}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  const target = document.getElementById(`section-${item.index}`);
+                  if (target) {
+                    const topOffset = target.getBoundingClientRect().top + window.scrollY - 90;
+                    window.scrollTo({ top: topOffset, behavior: "smooth" });
+                    history.pushState(null, "", `#section-${item.index}`);
+                  }
+                }}
                 aria-current={isActive ? "location" : undefined}
                 className={`group flex items-start gap-2.5 text-sm leading-relaxed transition-colors ${
                   isActive

@@ -30,6 +30,34 @@ const WHATS_INCLUDED = [
   { title: "Content Refresh & Optimization", desc: "Updating decaying historical blog posts and service pages to reclaim lost rankings and boost organic impression volume." },
 ];
 
+const PROCESS_STEPS = [
+  {
+    step: "01",
+    title: "Content Audit & Gap Analysis",
+    desc: "We audit your existing content library, map it against target keywords, and identify high-priority gaps where competitors rank but you don't.",
+  },
+  {
+    step: "02",
+    title: "Topical Authority Mapping",
+    desc: "We structure your content into topic clusters with a clear pillar-to-supporting-content hierarchy, showing Google your deep topical expertise.",
+  },
+  {
+    step: "03",
+    title: "SEO Brief & Content Creation",
+    desc: "We create detailed, SEO-optimized content briefs with keyword targets, intent mapping, and required H2/H3 structures — then either write or work with your team.",
+  },
+  {
+    step: "04",
+    title: "E-E-A-T Enhancement",
+    desc: "We layer in author expertise signals, citations, original data, and credibility markers to satisfy Google's quality raters and improve rankings.",
+  },
+  {
+    step: "05",
+    title: "Performance Tracking",
+    desc: "Monthly tracking of new rankings, organic impressions, and CTR improvements — adjusting strategy based on data.",
+  },
+];
+
 export default function ContentSeoPage() {
   const breadcrumbData = breadcrumbGraph([
     { name: "Home", path: "/" },
@@ -81,6 +109,59 @@ export default function ContentSeoPage() {
           </div>
         </section>
 
+        {/* Process */}
+        <section className="space-y-5">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <FileText className="w-5 h-5 text-emerald-400" />
+            The Content SEO Process
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {PROCESS_STEPS.map((step) => (
+              <div key={step.step} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-emerald-500/30 transition-colors space-y-2">
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl font-black font-mono text-emerald-400/40">{step.step}</span>
+                  <h3 className="text-sm font-bold text-white tracking-tight">{step.title}</h3>
+                </div>
+                <p className="text-xs text-white/65 leading-relaxed">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">Common Questions</h2>
+          <div className="space-y-3">
+            <details className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-emerald-500/30 transition-colors group cursor-pointer">
+              <summary className="flex items-center justify-between font-bold text-white tracking-tight text-sm">
+                How long until we see ranking improvements?
+                <span className="group-open:rotate-180 transition-transform">→</span>
+              </summary>
+              <p className="text-xs text-white/65 leading-relaxed mt-3">
+                Most clients see initial ranking movement within 4-6 weeks. Significant improvements typically appear within 2-3 months. Content SEO is a compounding effort — the more high-quality content you publish, the faster your overall domain authority grows.
+              </p>
+            </details>
+            <details className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-emerald-500/30 transition-colors group cursor-pointer">
+              <summary className="flex items-center justify-between font-bold text-white tracking-tight text-sm">
+                Do you write content for us, or do we?
+                <span className="group-open:rotate-180 transition-transform">→</span>
+              </summary>
+              <p className="text-xs text-white/65 leading-relaxed mt-3">
+                We can do either. We provide detailed SEO briefs that your internal team can execute, or we can write the content directly. Most clients prefer a hybrid: we handle strategic/technical content, and your team handles brand voice and customer stories.
+              </p>
+            </details>
+            <details className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-emerald-500/30 transition-colors group cursor-pointer">
+              <summary className="flex items-center justify-between font-bold text-white tracking-tight text-sm">
+                How does Content SEO differ from content marketing?
+                <span className="group-open:rotate-180 transition-transform">→</span>
+              </summary>
+              <p className="text-xs text-white/65 leading-relaxed mt-3">
+                Content marketing is about audience engagement and brand storytelling. Content SEO is specifically about keyword research, search intent alignment, and technical optimization to rank in Google. We focus on the intersection: great content that serves both users and search engines.
+              </p>
+            </details>
+          </div>
+        </section>
+
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
           <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h2>
           <div className="flex flex-wrap gap-3">
@@ -99,11 +180,16 @@ export default function ContentSeoPage() {
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-amber-950/30 via-zinc-950 to-zinc-950 border border-amber-500/20 text-center space-y-5 shadow-2xl">
           <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to Build Topical Authority?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
-            Get in touch to audit your content gap and plan a search-intent content roadmap.
+            Get in touch to audit your content gap and plan a search-intent content roadmap. We'll show you exactly which topics will drive the most organic traffic and how to structure them for maximum SEO impact.
           </p>
-          <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
-            Contact Content SEO Specialist <ArrowRight className="w-4 h-4" />
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
+              Schedule Content Audit <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20Content%20SEO%20for%20my%20site" target="_blank" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
+              WhatsApp Now →
+            </Link>
+          </div>
         </section>
       </div>
     </>

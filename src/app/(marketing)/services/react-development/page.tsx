@@ -3,7 +3,7 @@ import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { Code2, CheckCircle2, ArrowRight, Zap, ShieldCheck, Layers } from "lucide-react";
+import { Code2, CheckCircle2, ArrowRight, Zap, ShieldCheck, Layers, FileText } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "React Development Services | Rohit Gupta",
@@ -28,6 +28,41 @@ const WHATS_INCLUDED = [
   { title: "State Management & Data Flow", desc: "Implementing clean state management (React Context, Zustand, Redux Toolkit) for complex interactive features and seamless user flows." },
   { title: "REST & GraphQL API Integration", desc: "Connecting React frontends to Node.js, Express, Headless CMS, or third-party APIs with robust error handling and loading states." },
   { title: "Core Web Vitals & Speed Optimization", desc: "Optimizing bundle sizes, code splitting, lazy loading, and rendering performance for sub-second page loads." },
+];
+
+const TECH_STACK = [
+  { category: "Frontend", techs: ["React 18+", "TypeScript", "Next.js", "Tailwind CSS", "Shadcn/UI"] },
+  { category: "State & Data", techs: ["React Context", "Zustand", "TanStack Query", "GraphQL", "REST APIs"] },
+  { category: "Testing", techs: ["Jest", "React Testing Library", "Cypress", "Vitest"] },
+  { category: "DevOps", techs: ["Vercel", "GitHub Actions", "Docker", "AWS", "CI/CD"] },
+];
+
+const PROCESS_STEPS = [
+  {
+    step: "01",
+    title: "Requirement & Architecture Scoping",
+    desc: "We discuss your product vision, user flows, and technical requirements to design the optimal React architecture and component hierarchy.",
+  },
+  {
+    step: "02",
+    title: "Component-First Development",
+    desc: "We build a reusable component library from the ground up, ensuring each component is testable, documented, and ready for scaling.",
+  },
+  {
+    step: "03",
+    title: "API Integration & State Management",
+    desc: "We integrate your backend APIs, set up robust state management, and handle loading/error states with best-practice patterns.",
+  },
+  {
+    step: "04",
+    title: "Performance & SEO Optimization",
+    desc: "We optimize bundle sizes, implement lazy loading, set up Server-Side Rendering where needed, and tune Core Web Vitals.",
+  },
+  {
+    step: "05",
+    title: "Testing & Deployment",
+    desc: "We write comprehensive tests, set up CI/CD pipelines, and deploy to production with zero-downtime releases and monitoring.",
+  },
 ];
 
 export default function ReactDevelopmentPage() {
@@ -81,6 +116,79 @@ export default function ReactDevelopmentPage() {
           </div>
         </section>
 
+        {/* Tech Stack */}
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">Technologies We Use</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {TECH_STACK.map((group) => (
+              <div key={group.category} className="p-4 rounded-2xl bg-zinc-950 border border-blue-500/20 space-y-2">
+                <h3 className="text-xs font-bold text-blue-400 uppercase tracking-wider">{group.category}</h3>
+                <div className="space-y-1.5">
+                  {group.techs.map((tech) => (
+                    <div key={tech} className="text-xs text-white/80 flex items-center gap-2">
+                      <span className="w-1 h-1 rounded-full bg-emerald-400" />
+                      {tech}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Process */}
+        <section className="space-y-5">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <Layers className="w-5 h-5 text-blue-400" />
+            How We Build React Apps
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {PROCESS_STEPS.map((step) => (
+              <div key={step.step} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-blue-500/30 transition-colors space-y-2">
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl font-black font-mono text-blue-400/40">{step.step}</span>
+                  <h3 className="text-sm font-bold text-white tracking-tight">{step.title}</h3>
+                </div>
+                <p className="text-xs text-white/65 leading-relaxed">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">Frequently Asked</h2>
+          <div className="space-y-3">
+            <details className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-blue-500/30 transition-colors group cursor-pointer">
+              <summary className="flex items-center justify-between font-bold text-white tracking-tight text-sm">
+                How long does a React project typically take?
+                <span className="group-open:rotate-180 transition-transform">→</span>
+              </summary>
+              <p className="text-xs text-white/65 leading-relaxed mt-3">
+                Timelines vary based on scope. A simple dashboard typically takes 4-6 weeks. A full-featured application with API integration usually takes 3-6 months. We provide detailed estimates and milestone-based planning upfront.
+              </p>
+            </details>
+            <details className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-blue-500/30 transition-colors group cursor-pointer">
+              <summary className="flex items-center justify-between font-bold text-white tracking-tight text-sm">
+                Do you provide post-launch support?
+                <span className="group-open:rotate-180 transition-transform">→</span>
+              </summary>
+              <p className="text-xs text-white/65 leading-relaxed mt-3">
+                Yes. We offer retainer-based support packages including bug fixes, performance monitoring, feature enhancements, and dependency updates. Most clients keep us on for 3-6 months post-launch.
+              </p>
+            </details>
+            <details className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-blue-500/30 transition-colors group cursor-pointer">
+              <summary className="flex items-center justify-between font-bold text-white tracking-tight text-sm">
+                Why Next.js instead of plain React?
+                <span className="group-open:rotate-180 transition-transform">→</span>
+              </summary>
+              <p className="text-xs text-white/65 leading-relaxed mt-3">
+                Next.js adds Server-Side Rendering, Static Generation, API routes, and automatic code splitting — eliminating build config headaches. If you need SEO, fast page loads, or a full-stack app, Next.js is the obvious choice. Plain React works for dashboards and internal tools.
+              </p>
+            </details>
+          </div>
+        </section>
+
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
           <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related React &amp; Web Application Services</h3>
           <div className="flex flex-wrap gap-3">
@@ -97,13 +205,18 @@ export default function ReactDevelopmentPage() {
         </section>
 
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-blue-950/40 via-zinc-950 to-zinc-950 border border-blue-500/30 text-center space-y-5 shadow-2xl">
-          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Need a High-Performance React Web App?</h3>
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to Build Your React Application?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
-            Discuss your project requirements with Rohit Gupta today.
+            Describe your project vision and we'll scope requirements, provide an estimate, and discuss the architecture. Most clients see their first working prototype within 2-3 weeks.
           </p>
-          <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
-            Contact React Developer <ArrowRight className="w-4 h-4" />
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
+              Get Project Estimate <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20a%20React%20project" target="_blank" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
+              WhatsApp Now →
+            </Link>
+          </div>
         </section>
       </div>
     </>

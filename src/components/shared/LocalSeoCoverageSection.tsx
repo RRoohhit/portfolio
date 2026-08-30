@@ -1,8 +1,8 @@
 ﻿"use client";
 import React from "react";
 import Link from "next/link";
-import { LOCAL_COVERAGE, WHY_HIRE } from "@/data/portfolioData";
-import { MapPin, ArrowRight, Sparkles, Map, TrendingUp, CheckCircle2, Phone } from "lucide-react";
+import { LOCAL_COVERAGE, INTERNATIONAL_COVERAGE, WHY_HIRE } from "@/data/portfolioData";
+import { MapPin, ArrowRight, Sparkles, Map, TrendingUp, CheckCircle2, Phone, Globe2 } from "lucide-react";
 
 interface LocalSeoCoverageSectionProps {
   onContact?: () => void;
@@ -18,13 +18,13 @@ export const LocalSeoCoverageSection: React.FC<LocalSeoCoverageSectionProps> = (
         <div className="space-y-3 max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-mono uppercase tracking-widest font-bold">
             <MapPin className="w-3.5 h-3.5" />
-            <span>Based in Noida &amp; Ayodhya · Serving Clients Across India &amp; Worldwide</span>
+            <span>Based in Noida &amp; Ayodhya · Serving Everywhere — Pan India + Worldwide</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight uppercase">
-            Local SEO &amp; Data-Driven Web Development Across <span className="text-emerald-400">India &amp; Internationally</span>
+            SEO &amp; Web Development Across <span className="text-emerald-400">100+ Indian Cities &amp; Worldwide</span>
           </h2>
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-            Rohit Gupta works with clients locally in Noida and Delhi NCR, permanently from Ayodhya, UP, and remotely across India and international markets — building fast web applications and implementing ethical, long-term search growth strategies.
+            Rohit Gupta is not limited to Noida or Delhi — he works with businesses in every major Indian city (Mumbai, Bengaluru, Hyderabad, Chennai, Pune, Kolkata, Lucknow &amp; 100+ more) and with remote international clients in the USA, UK, UAE, Canada, Australia, Singapore and beyond — building fast web applications and implementing ethical, long-term search growth strategies anywhere in the world.
           </p>
         </div>
 
@@ -39,15 +39,18 @@ export const LocalSeoCoverageSection: React.FC<LocalSeoCoverageSectionProps> = (
         </div>
       </div>
 
-      {/* ===== Service Regions */}
+      {/* ===== Pan-India Service Regions */}
       <div className="space-y-2">
         <div className="flex items-center gap-2 text-xs font-mono text-white/60 uppercase tracking-wider">
           <Map className="w-4 h-4 text-emerald-400" />
-          <span>Regional Focus &amp; Remote Capabilities</span>
+          <span>Pan India Presence — Remote &amp; On-Site Available</span>
         </div>
         <h3 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight mt-1">
-          Serving Businesses Across Key Markets
+          Serving Businesses Across Every Major Indian Market
         </h3>
+        <p className="text-xs sm:text-sm text-white/60 leading-relaxed max-w-3xl">
+          From Delhi NCR to Mumbai, Bengaluru, Hyderabad, Chennai, Pune and Kolkata — get the same senior SEO specialist, remotely or on-site, with zero location bias.
+        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -71,6 +74,11 @@ export const LocalSeoCoverageSection: React.FC<LocalSeoCoverageSectionProps> = (
               </div>
 
               <p className="text-xs text-white/75 leading-relaxed font-light">{item.blurb}</p>
+              <div className="flex flex-wrap gap-1.5">
+                {(item.tags as readonly string[]).slice(0, 2).map((tag) => (
+                  <span key={tag} className="px-2 py-0.5 rounded-full bg-white/5 border border-white/10 text-[9px] font-mono text-white/55">{tag}</span>
+                ))}
+              </div>
             </div>
 
             <Link
@@ -78,6 +86,59 @@ export const LocalSeoCoverageSection: React.FC<LocalSeoCoverageSectionProps> = (
               className="inline-flex items-center gap-1 text-[11px] font-mono text-emerald-400 hover:underline pt-2 border-t border-white/5"
             >
               <span>Explore Local SEO Solutions</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+        ))}
+      </div>
+
+      {/* ===== International Markets */}
+      <div className="space-y-2 pt-2">
+        <div className="flex items-center gap-2 text-xs font-mono text-white/60 uppercase tracking-wider">
+          <Globe2 className="w-4 h-4 text-cyan-400" />
+          <span>International &amp; Remote — Worldwide Reach</span>
+        </div>
+        <h3 className="text-xl sm:text-3xl font-extrabold text-white tracking-tight mt-1">
+          Global SEO &amp; Web Development for International Brands
+        </h3>
+        <p className="text-xs sm:text-sm text-white/60 leading-relaxed max-w-3xl">
+          Hire a senior Indian SEO expert remotely — cost-effective &amp; timezone-friendly (IST &amp; flexible hours) — to rank your business on Google in the USA, UK, UAE, Australia, Singapore and beyond.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {INTERNATIONAL_COVERAGE.map((item, idx) => (
+          <div
+            key={idx}
+            className="card-3d-interactive p-5 space-y-3 flex flex-col justify-between border-cyan-500/10"
+          >
+            <div className="space-y-3">
+              <div className="flex items-start justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <div className="icon-3d w-10 h-10 rounded-xl text-cyan-400 shrink-0">
+                    <Globe2 className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-bold text-white uppercase tracking-wide">{item.heading}</h4>
+                    <span className="text-[10px] font-mono text-white/50 uppercase">{item.region}</span>
+                  </div>
+                </div>
+                <Sparkles className="w-4 h-4 text-cyan-400 shrink-0" />
+              </div>
+
+              <p className="text-xs text-white/75 leading-relaxed font-light">{item.blurb}</p>
+              <div className="flex flex-wrap gap-1.5">
+                {(item.tags as readonly string[]).slice(0, 2).map((tag) => (
+                  <span key={tag} className="px-2 py-0.5 rounded-full bg-cyan-500/5 border border-cyan-500/15 text-[9px] font-mono text-cyan-200/60">{tag}</span>
+                ))}
+              </div>
+            </div>
+
+            <Link
+              href="/services/international-seo/"
+              className="inline-flex items-center gap-1 text-[11px] font-mono text-cyan-400 hover:underline pt-2 border-t border-white/5"
+            >
+              <span>Explore International SEO</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
@@ -107,7 +168,7 @@ export const LocalSeoCoverageSection: React.FC<LocalSeoCoverageSectionProps> = (
               Discuss Your Website &amp; Organic Search Goals
             </h3>
             <p className="text-xs text-white/75 leading-relaxed font-light">
-              Get in touch with Rohit Gupta to review your website's technical health, local SEO visibility, and digital growth roadmap.
+              Get in touch with Rohit Gupta to review your website&apos;s technical health, local SEO visibility, and digital growth roadmap — whether your business is in Noida, Mumbai, the USA or anywhere else. Hindi &amp; English support.
             </p>
           </div>
           <Link

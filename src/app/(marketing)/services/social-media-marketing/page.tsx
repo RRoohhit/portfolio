@@ -72,9 +72,14 @@ export default function SocialMediaMarketingPage() {
             LinkedIn — focused on organic growth, brand positioning, and converting social audiences into website visitors
             and qualified leads.
           </p>
-          <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
-            Discuss Social Strategy <ArrowRight className="w-4 h-4" />
-          </Link>
+          <div className="flex flex-wrap gap-3 pt-2">
+            <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
+              Discuss Social Strategy <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20social%20media%20marketing%20for%20my%20business" target="_blank" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
+              WhatsApp Now →
+            </Link>
+          </div>
         </header>
 
         {/* Platforms */}
@@ -136,9 +141,14 @@ export default function SocialMediaMarketingPage() {
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             Get in touch to discuss a social media strategy aligned with your business goals and target audience.
           </p>
-          <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
-            Get Social Media Strategy <ArrowRight className="w-4 h-4" />
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
+              Get Social Media Strategy <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20social%20media%20marketing%20for%20my%20business" target="_blank" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
+              WhatsApp Now →
+            </Link>
+          </div>
         </section>
       </div>
     </>

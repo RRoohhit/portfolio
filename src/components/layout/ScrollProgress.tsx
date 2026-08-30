@@ -8,14 +8,15 @@ import React, { useState, useEffect, useRef } from "react";
  * respects prefers-reduced-motion.
  */
 export const ScrollProgress: React.FC = () => {
-  const [progress, setProgress] = useState(0);
+  const barRef = useRef<HTMLDivElement>(null);
   const rafRef = useRef<number>(0);
 
   useEffect(() => {
     const update = () => {
+      if (!barRef.current) return;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const pct = docHeight > 0 ? Math.min(100, (window.scrollY / docHeight) * 100) : 0;
-      setProgress(pct);
+      const progress = docHeight > 0 ? Math.min(1, Math.max(0, window.scrollY / docHeight)) : 0;
+      barRef.current.style.transform = `scaleX(${progress})`;
     };
 
     const onScroll = () => {
@@ -43,10 +44,10 @@ export const ScrollProgress: React.FC = () => {
       style={{ background: "transparent" }}
     >
       <div
-        className="h-full rounded-r-full bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 shadow-[0_0_10px_rgba(52,211,153,0.7)]"
+        ref={barRef}
+        className="h-full w-full origin-left rounded-r-full bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 shadow-[0_0_10px_rgba(52,211,153,0.7)] will-change-transform"
         style={{
-          width: `${progress}%`,
-          transition: progress === 0 ? "none" : "width 0.1s linear",
+          transform: "scaleX(0)",
         }}
       />
     </div>

@@ -1,23 +1,34 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans, Outfit, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { AuditProvider } from "@/components/providers/AuditProvider";
 import { StructuredData } from "@/components/shared/StructuredData";
 import ScrollProgress from "@/components/layout/ScrollProgress";
+import SmoothScrollHandler from "@/components/layout/SmoothScrollHandler";
 import FloatingContactClient from "@/components/layout/FloatingContactClient";
 import { SITE_URL, OG_IMAGE } from "@/lib/seo";
 import { CONTACT } from "@/config/site";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-// Variable fonts: one single woff2 file per family covers every weight
-const inter = Inter({
+// Premium modern typography pairing:
+// - Plus Jakarta Sans: Primary sans for ultra-clean, crisp body text and UI elements
+// - Outfit: Bold, geometric high-impact font for hero headlines and section titles
+// - JetBrains Mono: Crisp monospaced font for stats, metrics, badges, and technical tags
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-jakarta",
+  variable: "--font-sans",
   display: "swap",
-  axes: ["opsz"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 const jetBrainsMono = JetBrains_Mono({
@@ -34,29 +45,36 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Rohit Gupta — SEO Expert & Web Developer in India",
+  title: "Rohit Gupta | Hire SEO Expert India, Web Developer in Noida",
   description:
-    "Rohit Gupta is an SEO expert, digital marketing consultant & full-stack web developer helping businesses improve organic search visibility, website performance and online growth.",
+    "Rohit Gupta: top SEO expert in Noida & India. Hire dedicated SEO specialists, white hat SEO firm services, WordPress development & local SEO for #1 Google rankings.",
   keywords: [
-    "Rohit Gupta",
-    "Rohit Gupta SEO",
-    "Rohit Gupta SEO expert",
-    "Rohit Gupta digital marketing",
-    "Rohit Gupta web developer",
-    "rohitguptaseo.in",
+    "rohit gupta",
+    "hire seo expert india",
+    "hire seo expert",
+    "hire seo specialist",
+    "hire professional seo expert",
+    "hire dedicated seo expert",
+    "hire seo professional",
+    "hire dedicated seo expert india",
+    "hire seo experts",
+    "hire seo expert team",
+    "hire seo",
+    "hiring an seo expert",
+    "rohit web developer & seo expert freelancer",
+    "rohit web developer & seo expert freelancer noida reviews",
+    "rohit digital marketing services",
+    "seo expert in noida",
+    "white hat seo services",
+    "white hat seo firm",
+    "wordpress development company",
+    "local seo services in noida",
+    "aeo tools available in india for ai search",
+    "seo ekspert",
     "SEO Expert India",
-    "SEO Expert Noida",
-    "SEO Expert Delhi NCR",
     "Technical SEO Specialist",
-    "Local SEO Expert India",
-    "International SEO Expert",
-    "Full Stack Web Developer India",
-    "Next.js Developer India",
-    "React Developer India",
     "Digital Marketing Consultant",
     "Core Web Vitals Expert",
-    "Google Ads Expert India",
-    "Schema JSON-LD Expert",
   ],
   authors: [{ name: "Rohit Gupta", url: `${SITE_URL}/rohit-gupta` }],
   creator: "Rohit Gupta",
@@ -163,8 +181,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="en-IN"
       suppressHydrationWarning
-      data-scroll-behavior="smooth"
-      className={`dark scroll-smooth ${inter.variable} ${jetBrainsMono.variable}`}
+      className={`dark ${plusJakartaSans.variable} ${outfit.variable} ${jetBrainsMono.variable}`}
       style={{ colorScheme: "dark" }}
     >
       <head>
@@ -179,8 +196,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </noscript>
       </head>
       <body className="bg-black text-zinc-100 font-sans antialiased selection:bg-emerald-400 selection:text-black min-h-screen [overflow-x:clip]">
-        <div aria-hidden="true" className="noise-overlay hidden md:block" />
         <ScrollProgress />
+        <SmoothScrollHandler />
         <AuditProvider>
           <div className="min-h-screen bg-[#050505] text-white flex flex-col font-sans selection:bg-emerald-400 selection:text-black [overflow-x:clip]">
             <Navbar />

@@ -53,17 +53,17 @@ export const Reveal: React.FC<RevealProps> = ({
   return (
     <Tag
       className={className}
-      initial={reduceMotion ? false : { opacity: 0, x: distanceX, y: distanceY, filter: "blur(4px)" }}
+      initial={reduceMotion ? false : { opacity: 0, x: distanceX, y: distanceY }}
       whileInView={
         reduceMotion
           ? undefined
-          : { opacity: 1, x: 0, y: 0, filter: "blur(0px)" }
+          : { opacity: 1, x: 0, y: 0 }
       }
       viewport={{ once, amount }}
       transition={{
-        duration: 0.65,
+        duration: 0.5,
         delay,
-        ease: [0.22, 1, 0.36, 1],
+        ease: [0.16, 1, 0.3, 1],
       }}
     >
       {children}

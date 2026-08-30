@@ -6,15 +6,17 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { MapPin, CheckCircle2, ArrowRight, Star } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Local SEO Services Noida | Rohit Gupta",
+  title: "Local SEO Services in Noida | #1 SEO Expert in Noida — Rohit Gupta",
   description:
-    "Dominate local search in Noida with Rohit Gupta: Google Business Profile optimization, local citations, geo-targeted content, and Google Maps rankings.",
+    "Dominate local search with top local SEO services in Noida by Rohit Gupta: Google Business Profile optimization, local citations, and Google Maps 3-Pack rankings.",
   path: "/local-seo-noida/",
   keywords: [
+    "local seo services in noida",
+    "seo expert in noida",
     "Local SEO Noida",
-    "Local SEO Services Noida",
     "Google Map Pack Noida",
     "Google Business Profile Noida",
+    "hire seo specialist noida",
     "Rohit Gupta Local SEO",
   ],
 });

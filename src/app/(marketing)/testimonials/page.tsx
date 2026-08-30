@@ -6,15 +6,18 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { Star, Quote, ArrowRight, ShieldCheck, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Client Testimonials & Feedback — Rohit Gupta",
+  title: "Rohit Web Developer & SEO Expert Freelancer Noida Reviews | Testimonials",
   description:
-    "Read client feedback and testimonials for Rohit Gupta's technical SEO, local SEO, digital marketing, and web development services.",
+    "Verified client reviews and ratings for Rohit Web Developer & SEO Expert Freelancer in Noida. Read feedback from founders and marketing heads on technical SEO and rankings.",
   path: "/testimonials/",
   keywords: [
+    "rohit web developer & seo expert freelancer noida reviews",
+    "rohit gupta reviews",
+    "seo expert in noida reviews",
+    "hire seo expert reviews",
+    "web developer reviews noida",
     "Rohit Gupta Testimonials",
-    "SEO Expert Reviews",
     "Client Feedback SEO",
-    "Web Developer Reviews India",
   ],
 });
 
@@ -64,12 +67,38 @@ const TESTIMONIALS_LIST = [
 export default function TestimonialsPage() {
   const breadcrumbData = breadcrumbGraph([
     { name: "Home", path: "/" },
-    { name: "Testimonials", path: "/testimonials/" },
+    { name: "Reviews & Testimonials", path: "/testimonials/" },
   ]);
+
+  const reviewSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Rohit Gupta — SEO & Web Development Services",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "4",
+      "bestRating": "5",
+      "worstRating": "1",
+    },
+    "review": TESTIMONIALS_LIST.map((t) => ({
+      "@type": "Review",
+      "author": { "@type": "Person", "name": t.name },
+      "datePublished": "2026-01-15",
+      "reviewBody": t.quote,
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": t.rating.toString(),
+        "bestRating": "5",
+        "worstRating": "1",
+      },
+    })),
+  };
 
   return (
     <>
       {renderJsonLd(breadcrumbData, "jsonld-testimonials-breadcrumb")}
+      {renderJsonLd(reviewSchema, "jsonld-testimonials-reviews")}
 
       <div className="space-y-12 sm:space-y-16 pt-24 lg:pt-28 pb-16 max-w-5xl mx-auto">
         <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Testimonials" }]} />
@@ -78,15 +107,15 @@ export default function TestimonialsPage() {
           <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono font-bold uppercase tracking-wider">
             <ShieldCheck className="w-4 h-4" />
-            Verified Client Reviews &amp; Feedback
+            Verified Client Reviews &amp; Ratings
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            Client Testimonials &amp; Reviews
+            Rohit Web Developer &amp; SEO Expert Freelancer Noida Reviews
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Real feedback from clients and companies who have worked with Rohit Gupta for technical SEO, local search optimization, digital marketing, and web development.
+            Read real client feedback, verified testimonials, and organic growth reviews for <strong>Rohit Gupta</strong> — Freelance Web Developer, Technical SEO Specialist, and Digital Marketing Consultant based in Noida and serving clients worldwide.
           </p>
         </header>
 

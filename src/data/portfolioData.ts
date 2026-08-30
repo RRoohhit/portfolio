@@ -4,25 +4,26 @@ export { BLOG_POSTS } from "./blogPosts";
 
 export const ROHIT_PROFILE = {
   name: "ROHIT GUPTA",
-  title: "Full Stack Web Developer & Technical SEO Specialist",
-  seoTitle: "SEO Specialist & Expert | Hire SEO Consultant in Noida, Delhi & India",
+  title: "Rohit — Freelance Web Developer, SEO Expert & Digital Marketing Consultant",
+  seoTitle: "Rohit Gupta | Hire Dedicated SEO Expert India & Web Developer Freelancer",
   phone: "+91 96966 21216",
   email: "rohitguptacodec96@gmail.com",
-  location: "Ayodhya, Uttar Pradesh – 272130",
-  serving: "Serving Noida, Delhi, Gurgaon, Ghaziabad, Lucknow, Ayodhya & all of India — remote worldwide",
-  summary: "Passionate and results-driven SEO Specialist and Full Stack Web Developer with 2 years of White Hat SEO experience. I help companies across Noida, Delhi and all of India rank #1 on Google and win AI search (ChatGPT, Google AI Overviews, Copilot). Proven record: 200+ websites optimized, 4,700%+ organic traffic and 99/100 Core Web Vitals. Businesses hire me as their SEO specialist, SEO consultant or SEO executive to turn technical audits, keyword research, schema and speed into verifiable revenue growth.",
+  location: "Mamura, Sector 66, Noida, Uttar Pradesh (Current) · Ayodhya, Uttar Pradesh – 272130 (Permanent)",
+  serving:
+    "Serving clients across all of India — Mumbai, Delhi NCR, Bengaluru, Hyderabad, Chennai, Pune, Kolkata, Lucknow, Ayodhya & 100+ cities — plus remote clients worldwide (USA, UK, UAE, Canada, Australia & more)",
+  summary: "Rohit Gupta is a top-rated SEO expert, full-stack web developer freelancer, and digital marketing consultant with 2+ years of verified White Hat SEO experience. He works with businesses across all of India and with remote clients internationally — from Mumbai startups to London eCommerce brands to US SaaS companies. Whether you need to hire an SEO expert in India, hire a dedicated SEO specialist, hire an SEO expert team, engage a custom WordPress development company, or optimize for AI search (AEO tools, ChatGPT & Google AI Overviews), Rohit delivers sub-second speeds (99/100 Core Web Vitals) and sustainable #1 Google rankings — in India or anywhere in the world.",
   certifications: [
     { title: "Infosys Certified", course: "Core Java Programming Revisited", issuer: "Infosys" },
     { title: "Cisco Certified", course: "Computer Networks Essentials", issuer: "Cisco" }
   ],
   areasOfInterest: [
-    "Full Stack Web Development",
-    "Search Engine Optimization (SEO)",
-    "Artificial Intelligence (AI)",
-    "Modern Web Technologies",
-    "Open Source Development",
-    "Cloud Computing & DevOps",
-    "Performance Optimization"
+    "Hire SEO Expert India & Dedicated SEO Services",
+    "WordPress Development Company & Custom Themes",
+    "Technical SEO & Core Web Vitals Optimization",
+    "White Hat SEO Firm & Link Building",
+    "Answer Engine Optimization (AEO Tools & GEO)",
+    "Full Stack React & Next.js Development",
+    "Rohit Digital Marketing Services & Google Ads",
   ]
 };
 
@@ -81,11 +82,11 @@ export const EDUCATIONS: EducationItem[] = [
 ];
 
 export const TECHNICAL_SKILLS = [
-  { category: "Frontend Development", items: ["React.js", "Next.js", "JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Responsive Design"] },
-  { category: "Backend Development", items: ["Node.js", "Express.js", "REST API Development", "Middleware", "SSR / SSG"] },
-  { category: "Databases", items: ["MongoDB", "MySQL", "PostgreSQL", "Prisma / Mongoose"] },
-  { category: "SEO & Growth", items: ["On-Page SEO", "Off-Page SEO", "Technical SEO", "White Hat SEO", "Keyword Research", "Google Search Console", "Google Ads", "Schema JSON-LD"] },
-  { category: "DevOps & Tools", items: ["Git", "GitHub", "Docker", "Vercel", "Netlify", "Canva", "Postman", "VS Code"] }
+  { category: "Frontend & CMS", items: ["React.js", "Next.js", "WordPress Development", "WooCommerce", "TypeScript", "JavaScript (ES6+)", "Tailwind CSS", "HTML5/CSS3"] },
+  { category: "Backend Development", items: ["Node.js", "Express.js", "REST API Development", "Middleware", "SSR / SSG / ISR"] },
+  { category: "Databases & DevOps", items: ["MongoDB", "MySQL", "PostgreSQL", "Git / GitHub", "Docker", "Vercel", "Linux / Nginx"] },
+  { category: "SEO & Growth", items: ["Technical SEO", "White Hat SEO", "Hire Dedicated SEO", "On-Page SEO", "Off-Page SEO", "Schema JSON-LD", "Core Web Vitals", "Google Search Console", "Google Ads"] },
+  { category: "AI Search & AEO", items: ["AEO Tools", "GEO Optimization", "ChatGPT Search", "Perplexity AI", "llms.txt Engineering", "AI Overviews"] }
 ];
 
 export const SEO_TOOLS = [
@@ -94,7 +95,7 @@ export const SEO_TOOLS = [
   { name: "Ahrefs & Semrush", desc: "Competitor gap analysis, backlink health & keyword rank tracking", icon: "Target" },
   { name: "Google PageSpeed Insights", desc: "Lighthouse audit, Core Web Vitals analysis & lab performance metric tracking", icon: "Zap" },
   { name: "Screaming Frog SEO Spider", desc: "Technical crawl audits, duplicate content detection & canonical checks", icon: "Bug" },
-  { name: "AI SEO Accelerators", desc: "Gemini AI & OpenAI LLMs for semantic content optimization & schema generation", icon: "Cpu" }
+  { name: "AEO Tools & AI Accelerators", desc: "Perplexity API, Gemini AI & OpenAI LLMs for semantic content optimization & schema generation", icon: "Cpu" }
 ];
 
 export const CASE_STUDIES: ProjectCaseStudy[] = [
@@ -237,34 +238,34 @@ export const BACKLINKS_DATA: BacklinkItem[] = [
 
 export const HIRING_SERVICES = [
   {
-    title: "Hire SEO Specialist",
-    desc: "A dedicated technical SEO specialist who audits, optimizes and ranks your website #1 on Google & AI search.",
-    badges: ["SEO Specialist Near Me", "SEO Expert for Hire", "SEO Services India"]
+    title: "Hire Dedicated SEO Expert India",
+    desc: "A dedicated senior technical SEO specialist and consultant who audits, optimizes and ranks your business #1 on Google & AI search.",
+    badges: ["Hire SEO Expert India", "Hire Dedicated SEO Expert", "Hire Professional SEO Expert"]
   },
   {
-    title: "Hire SEO Executive",
-    desc: "Hands-on SEO executive managing on-page, off-page, keyword and content execution every week on schedule.",
-    badges: ["SEO Executive Near Me", "SEO Executive in Noida", "SEO Executive in Delhi"]
+    title: "Hire SEO Expert Team",
+    desc: "A full-spectrum SEO powerhouse managing technical architecture, authoritative White Hat links, and conversion content roadmaps.",
+    badges: ["Hire SEO Expert Team", "Hire SEO Experts", "Dedicated SEO Team India"]
   },
   {
-    title: "SEO Consultant India",
-    desc: "Strategy-level SEO consultant aligning your campaigns with revenue goals, market share and AI search trends.",
-    badges: ["SEO Consultant Noida", "SEO Consultant Delhi", "Freelance SEO Consultant India"]
+    title: "WordPress Development Company",
+    desc: "Custom Gutenberg theme development, WooCommerce scaling, sub-second speed optimization, and Headless Next.js architecture.",
+    badges: ["WordPress Development Company", "WooCommerce Experts", "Custom WordPress India"]
   },
   {
-    title: "Technical SEO Audit & Fix",
-    desc: "Deep-crawl technical audit across Core Web Vitals, indexing, schema, redirects and internal link architecture.",
-    badges: ["Technical SEO Specialist", "Website Speed Optimization", "Core Web Vitals Expert"]
+    title: "White Hat SEO Firm & Services",
+    desc: "100% Google Search Essentials compliant organic strategies that build long-term domain authority with zero penalty risks.",
+    badges: ["White Hat SEO Services", "White Hat SEO Firm", "Penalty-Free SEO India"]
   },
   {
-    title: "Local SEO — Dominating Map Pack",
-    desc: "Google Business Profile, local citations and 'near me' rankings to capture customers searching in your city.",
-    badges: ["SEO Services Near Me", "Local SEO Noida", "Local SEO Delhi"]
+    title: "Local SEO Services in Noida & NCR",
+    desc: "Google Business Profile optimization, local citations and Map Pack 3-Pack rankings to dominate local customer searches in Noida.",
+    badges: ["SEO Expert in Noida", "Local SEO Services in Noida", "GBP 3-Pack Noida"]
   },
   {
-    title: "E-Commerce SEO Expert",
-    desc: "Product page architecture, category funnels and schema for Shopify, WooCommerce and custom Next.js stores.",
-    badges: ["E-Commerce SEO Expert", "Online Store Ranking", "PDP Schema Optimization"]
+    title: "AEO Tools & AI Search Optimization",
+    desc: "Answer Engine Optimization (AEO/GEO) to ensure your brand is cited across ChatGPT Search, Perplexity AI, and Google AI Overviews.",
+    badges: ["AEO Tools India", "ChatGPT Optimization", "AI Overviews Citation"]
   }
 ] as const;
 
@@ -272,16 +273,16 @@ export const LOCAL_COVERAGE = [
   {
     city: "Noida",
     region: "Uttar Pradesh / Delhi NCR",
-    heading: "SEO Specialist in Noida",
-    blurb: "Rank #1 for your Noida business in Sector-18, Sector-63, Greater Noida & the whole NCR market. Local SEO, high-speed web builds and Google Maps dominance for startups and enterprises.",
-    tags: ["SEO specialist in Noida", "SEO executive in Noida", "SEO services in Noida", "SEO company Noida"]
+    heading: "SEO Expert in Noida & Local SEO Services",
+    blurb: "Rank #1 for your Noida business in Sector-18, Sector-62, Sector-63, Greater Noida & the whole NCR market. Local SEO services in Noida, high-speed web builds, and Google Maps dominance.",
+    tags: ["SEO expert in Noida", "Local SEO services in Noida", "SEO specialist in Noida", "WordPress development Noida"]
   },
   {
     city: "Delhi",
     region: "Delhi NCR",
-    heading: "SEO Expert in Delhi",
-    blurb: "From Connaught Place to Janakpuri — proven Delhi SEO strategy for service businesses, e-commerce, and corporate portals seeking Rank #1 SERP & higher organic sales.",
-    tags: ["SEO specialist in Delhi", "SEO expert in Delhi", "SEO services Delhi", "Digital marketing Delhi"]
+    heading: "SEO Expert in Delhi — Hire Dedicated SEO",
+    blurb: "From Connaught Place to South Delhi — proven Delhi SEO strategy for service businesses, e-commerce, and corporate portals seeking Rank #1 SERP & higher organic sales.",
+    tags: ["Hire SEO expert Delhi", "SEO specialist in Delhi", "SEO expert in Delhi", "Digital marketing Delhi"]
   },
   {
     city: "Gurgaon",
@@ -310,12 +311,100 @@ export const LOCAL_COVERAGE = [
     heading: "SEO Specialist in Ayodhya",
     blurb: "Ayodhya heritage & hospitality projects — tourism SEO, local guides and geo-targeted visibility for the fast-growing Ayodhya economy.",
     tags: ["SEO specialist in Ayodhya", "Local SEO Ayodhya", "SEO company UP"]
+  },
+  {
+    city: "Mumbai",
+    region: "Maharashtra",
+    heading: "SEO Expert in Mumbai — Pan India & Global Reach",
+    blurb: "Rank #1 for Mumbai businesses across Andheri, Bandra, BKC, Lower Parel & Navi Mumbai — technical SEO, local SEO, eCommerce scaling and white hat link building for India's most competitive market.",
+    tags: ["SEO expert in Mumbai", "SEO services Mumbai", "Digital marketing Mumbai", "Ecommerce SEO Mumbai"]
+  },
+  {
+    city: "Bengaluru",
+    region: "Karnataka",
+    heading: "SEO Specialist in Bengaluru",
+    blurb: "Bengaluru's SaaS, fintech & startup ecosystem gets modern, technical-first SEO — Core Web Vitals, programmatic SEO, content clusters and AI search optimization that convert developer-heavy markets.",
+    tags: ["SEO expert in Bangalore", "SaaS SEO Bengaluru", "Tech SEO India", "SEO agency Bangalore"]
+  },
+  {
+    city: "Hyderabad",
+    region: "Telangana",
+    heading: "SEO Expert in Hyderabad",
+    blurb: "Hyderabad's pharma, IT & real estate sectors rank with full-stack SEO — technical audits, Google Business Profile optimization, and high-intent content built for the city's fast-growing economy.",
+    tags: ["SEO expert in Hyderabad", "SEO services Hyderabad", "Local SEO Hyderabad", "Real estate SEO India"]
+  },
+  {
+    city: "Chennai",
+    region: "Tamil Nadu",
+    heading: "SEO Specialist in Chennai",
+    blurb: "From T Nagar retailers to OMR and ECR businesses — white hat SEO, Google Maps dominance and conversion-focused web development for Chennai's diverse commercial landscape.",
+    tags: ["SEO expert in Chennai", "SEO company Chennai", "Local SEO Chennai", "Backlink building Chennai"]
+  },
+  {
+    city: "Pune",
+    region: "Maharashtra",
+    heading: "SEO Expert in Pune",
+    blurb: "Pune's automotive, IT and education sectors gain durable rankings through technical SEO, topical authority content and AI-ready structured data — served remotely from anywhere in India.",
+    tags: ["SEO expert in Pune", "SEO services Pune", "Hire SEO specialist Pune", "EdTech SEO India"]
+  },
+  {
+    city: "Kolkata",
+    region: "West Bengal",
+    heading: "SEO Specialist in Kolkata",
+    blurb: "Kolkata businesses in heritage trade, education and manufacturing rank with nationwide SEO campaigns — white hat link building and Google Business Profile dominance across West Bengal.",
+    tags: ["SEO expert in Kolkata", "SEO services Kolkata", "Local SEO West Bengal", "Hire SEO expert India"]
+  }
+] as const;
+
+/** Countries & regions Rohit Gupta serves remotely as an international SEO & web expert. */
+export const INTERNATIONAL_COVERAGE = [
+  {
+    country: "United States & Canada",
+    region: "North America",
+    heading: "SEO Expert for US & Canadian Companies",
+    blurb: "Rank on Google.com & Bing across US states — hreflang setup, English-language keyword strategy, local citations and fast Core Web Vitals for North American audiences.",
+    tags: ["US SEO expert", "Canada SEO specialist", "North America SEO", "hire SEO expert USA"]
+  },
+  {
+    country: "United Kingdom & Europe",
+    region: "UK · EU",
+    heading: "SEO Services for UK & European Brands",
+    blurb: "Google.co.uk rankings, GDPR-safe tracking, .co.uk / ccTLD architecture and cultural content localization for UK, Germany, France and European eCommerce brands.",
+    tags: ["UK SEO expert", "Europe SEO services", "London SEO", "EU multi-lingual SEO"]
+  },
+  {
+    country: "UAE & Middle East",
+    region: "Gulf · GCC",
+    heading: "SEO Expert for UAE & Gulf Businesses",
+    blurb: "Rank in Dubai, Abu Dhabi & Saudi Arabia — Arabic-English keyword strategy, Google Maps position, and localized content for Gulf eCommerce and real estate brands.",
+    tags: ["UAE SEO expert", "Dubai SEO services", "Gulf SEO", "Arabic SEO"]
+  },
+  {
+    country: "Australia & New Zealand",
+    region: "Oceania",
+    heading: "SEO Specialist for Australia & NZ",
+    blurb: "Google.com.au and NZ rankings with Australian English keyword mapping, local citation building and high-speed web builds that satisfy strict LCP/INP targets.",
+    tags: ["Australia SEO expert", "NZ SEO services", "Sydney SEO", "Melbourne SEO"]
+  },
+  {
+    country: "Singapore & Southeast Asia",
+    region: "APAC",
+    heading: "SEO for Singapore & SEA Markets",
+    blurb: "Multi-lingual SEO across Singapore, Malaysia & Indonesia — regional search intent, structured data and scalable eCommerce SEO for fast-growing APAC brands.",
+    tags: ["Singapore SEO expert", "SEA SEO services", "APAC SEO", "Multi-country SEO"]
+  },
+  {
+    country: "Rest of the World",
+    region: "100% Remote · Worldwide",
+    heading: "Global SEO & Web Development — Anywhere",
+    blurb: "From your office, anywhere on Earth: remote-first SEO consultants, technical audits, AI search (AEO) and full-stack development delivered in English & Hindi.",
+    tags: ["international SEO", "remote SEO services", "global web developer", "hire remote SEO expert"]
   }
 ] as const;
 
 export const WHY_HIRE = [
-  { metric: "200+ Sites", label: "optimized & ranked across India" },
-  { metric: "2 Years", label: "White Hat SEO & Dev experience" },
+  { metric: "200+ Sites", label: "optimized across India & worldwide" },
+  { metric: "100+ Cities", label: "served across India + global clients" },
   { metric: "4,766%", label: "avg. organic traffic growth" },
   { metric: "99/100", label: "Core Web Vitals achieved" },
   { metric: "Top-3", label: "targeted search visibility" },
@@ -323,19 +412,34 @@ export const WHY_HIRE = [
 ] as const;
 
 export const SEO_KEYWORD_CITIES = [
-  "SEO Specialist in Noida",
+  "Hire SEO Expert India",
+  "Hire Dedicated SEO Expert India",
+  "Hire SEO Specialist",
+  "Hire Professional SEO Expert",
+  "Hire SEO Expert Team",
+  "WordPress Development Company",
+  "SEO Expert in Noida",
+  "Local SEO Services in Noida",
+  "White Hat SEO Services",
+  "White Hat SEO Firm",
+  "Rohit Web Developer & SEO Expert Freelancer",
+  "Rohit Digital Marketing Services",
+  "AEO Tools Available in India for AI Search",
   "SEO Expert in Delhi",
   "SEO Specialist in Gurgaon",
-  "SEO Expert in Ghaziabad",
-  "SEO Specialist in Lucknow",
-  "SEO Executive in India",
-  "SEO Specialist near Me",
   "SEO Expert near Me",
   "SEO Services in India",
-  "Hire SEO Specialist",
-  "Freelance SEO Expert India",
-  "SEO Consultant in Delhi NCR",
   "Technical SEO Specialist",
-  "Local SEO Services near Me",
-  "E-Commerce SEO Expert India"
+  "SEO Expert in Mumbai",
+  "SEO Expert in Bangalore",
+  "SEO Expert in Hyderabad",
+  "SEO Expert in Chennai",
+  "SEO Expert in Pune",
+  "SEO Expert in Kolkata",
+  "International SEO Expert",
+  "US SEO Expert",
+  "UK SEO Expert",
+  "UAE SEO Expert",
+  "Australia SEO Expert",
+  "Hire Remote SEO Expert"
 ] as const;

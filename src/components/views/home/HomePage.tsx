@@ -9,27 +9,31 @@ import { ROHIT_PROFILE, EXPERIENCES, EDUCATIONS, TECHNICAL_SKILLS, SEO_TOOLS } f
 import { LazySection } from "@/components/ui/LazySection";
 import { Reveal } from "@/components/ui/Reveal";
 import { useAudit } from "@/components/providers/AuditProvider";
+import { TestimonialsStrip } from "@/components/views/home/TestimonialsStrip";
+import { ProcessSection } from "@/components/views/home/ProcessSection";
+import { WhyHireMeSection } from "@/components/views/home/WhyHireMeSection";
+import { HireCtaBanner } from "@/components/views/home/HireCtaBanner";
+import { PricingSection } from "@/components/views/home/PricingSection";
 import heroPortraitImg from "@/assets/images/rohit-gupta-seo.webp";
 import { CONTACT } from "@/config/site";
 import {
   TrendingUp, Award, Zap, ArrowRight, CheckCircle2, MapPin,
   Sparkles, Code2, Search, Target, Gauge, Star,
-  Activity, Globe, BarChart3, Layers, ShieldCheck,
+  Activity, Globe, BarChart3, Layers, ShieldCheck, Users,
   Cpu, LayoutGrid, Check, ExternalLink, Route, LineChart, FileText, FastForward, MessageSquare,
 } from "lucide-react";
 
 const MARQUEE_SERVICES = [
-  { label: "SEO Strategy", icon: Target },
-  { label: "AI Search Optimization", icon: Sparkles },
-  { label: "Technical SEO", icon: Search },
-  { label: "Website Development", icon: Code2 },
-  { label: "Local SEO", icon: MapPin },
+  { label: "Hire SEO Expert India", icon: Target },
+  { label: "WordPress Development Company", icon: Code2 },
+  { label: "Hire Dedicated SEO Specialist", icon: Users },
+  { label: "White Hat SEO Firm", icon: ShieldCheck },
+  { label: "SEO Expert in Noida", icon: MapPin },
+  { label: "Local SEO Services in Noida", icon: MapPin },
+  { label: "AEO Tools & AI Search", icon: Sparkles },
   { label: "Performance Optimization", icon: Gauge },
-  { label: "Core Web Vitals", icon: Zap },
+  { label: "Core Web Vitals 99+", icon: Zap },
   { label: "Schema JSON-LD", icon: Search },
-  { label: "E-Commerce SEO", icon: TrendingUp },
-  { label: "Page Speed Audit", icon: Activity },
-  { label: "Keyword Research", icon: Target },
   { label: "React & Next.js Apps", icon: Code2 },
   { label: "Organic Growth", icon: Award },
 ];
@@ -38,49 +42,49 @@ const SERVICES = [
   {
     number: "01",
     icon: Search,
-    title: "Technical SEO Audit",
-    desc: "Deep crawl analysis, Core Web Vitals, structured data, indexation & schema — everything to unlock #1 rankings.",
-    highlights: ["Core Web Vitals 99/100", "Schema JSON-LD", "Crawl & Indexation Fix"],
+    title: "Hire Dedicated SEO Expert & Team",
+    desc: "Deploy a dedicated SEO specialist or expert team for technical audits, Core Web Vitals (99/100), and 100% White Hat #1 rankings.",
+    highlights: ["Dedicated Monthly Retainer", "100% White Hat SEO", "Direct Senior Collaboration"],
     color: "emerald",
   },
   {
     number: "02",
     icon: Code2,
-    title: "React & Next.js Development",
-    desc: "Blazing-fast, SEO-first web apps built with Next.js 15, server components, and edge caching for perfect Lighthouse scores.",
-    highlights: ["Next.js 15 / App Router", "Server Components", "Edge Performance"],
+    title: "WordPress Development Company",
+    desc: "Custom Gutenberg themes, WooCommerce store engineering, sub-second speed optimization, and Headless WordPress with Next.js.",
+    highlights: ["Zero Page Builder Bloat", "Sub-Second LCP < 1.0s", "Custom WooCommerce Builds"],
     color: "blue",
   },
   {
     number: "03",
     icon: Globe,
-    title: "Local & National SEO",
-    desc: "Dominate 'near me' searches in Noida, Delhi NCR & pan-India with hyper-local content, GBP optimization, and citation building.",
-    highlights: ["Google Business Profile", "Local Citations", "Geo-Targeted Content"],
+    title: "Local SEO Services in Noida & NCR",
+    desc: "Dominate Google Maps 3-Pack and 'near me' local searches across Noida Sector 18, 62, 63, Greater Noida, and Delhi NCR.",
+    highlights: ["Google Business Profile", "Local Citation Architecture", "Geo-Targeted Landing Pages"],
     color: "violet",
   },
   {
     number: "04",
     icon: Sparkles,
-    title: "AI Search Optimization",
-    desc: "Get cited in ChatGPT, Perplexity & Google AI Overviews. Future-proof your content for the AEO/GEO era.",
-    highlights: ["AEO / GEO Strategy", "AI Citation Building", "E-E-A-T Signals"],
+    title: "AI Search Optimization (AEO Tools)",
+    desc: "Win high-converting citations in ChatGPT Search, Perplexity AI & Google AI Overviews. Future-proof your entity for AEO/GEO.",
+    highlights: ["AEO / GEO Strategy", "AI Citation Building", "llms.txt Architecture"],
     color: "amber",
   },
   {
     number: "05",
     icon: BarChart3,
-    title: "Content & Keyword Strategy",
-    desc: "Data-driven keyword clustering, topical authority maps, and conversion-optimized on-page copy that ranks and converts.",
-    highlights: ["Topical Authority Map", "Competitor Gap Analysis", "Content Calendar"],
+    title: "Rohit Digital Marketing Services",
+    desc: "Data-driven keyword clustering, Google Ads management, conversion rate optimization (CRO), and high-ROI multi-channel growth.",
+    highlights: ["High-ROI Google Ads PPC", "Topical Authority Mapping", "Conversion-Focused Copy"],
     color: "rose",
   },
   {
     number: "06",
     icon: Layers,
-    title: "E-Commerce SEO",
-    desc: "Product-level SEO, faceted navigation fixes, structured data for rich snippets, and category page authority for Shopify & WooCommerce.",
-    highlights: ["Product Rich Snippets", "Category Optimization", "Faceted Nav Fix"],
+    title: "White Hat SEO Firm & Technical Audits",
+    desc: "Deep crawl analysis, Schema JSON-LD structured data, and ethical link acquisition aligned with Google Search Essentials.",
+    highlights: ["Zero Penalty Risk", "Core Web Vitals Fix", "1,400+ Quality Backlinks"],
     color: "teal",
   },
 ];
@@ -171,10 +175,10 @@ export const HomePage: React.FC = () => {
       >
         <div className="absolute inset-0 -z-20 bg-grid-pattern opacity-40 pointer-events-none" />
         <div className="absolute inset-0 -z-20 bg-radial-glow pointer-events-none" />
-        {/* Animated ambient blobs */}
-        <div className="absolute -top-32 -left-32 w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-emerald-500/15 blur-[100px] -z-10 pointer-events-none animate-blob" />
-        <div className="absolute top-1/3 -right-32 w-64 sm:w-80 h-64 sm:h-80 rounded-full bg-emerald-400/10 blur-[80px] -z-10 pointer-events-none animate-blob animation-delay-2000" />
-        <div className="absolute bottom-16 left-1/3 w-56 sm:w-72 h-56 sm:h-72 rounded-full bg-teal-500/10 blur-[90px] -z-10 pointer-events-none animate-blob animation-delay-4000" />
+        {/* Ambient GPU-accelerated background lighting */}
+        <div className="absolute -top-32 -left-32 w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-[radial-gradient(circle,rgba(16,185,129,0.18)_0%,transparent_70%)] -z-10 pointer-events-none" />
+        <div className="absolute top-1/3 -right-32 w-64 sm:w-80 h-64 sm:h-80 rounded-full bg-[radial-gradient(circle,rgba(52,211,153,0.12)_0%,transparent_70%)] -z-10 pointer-events-none" />
+        <div className="absolute bottom-16 left-1/3 w-56 sm:w-72 h-56 sm:h-72 rounded-full bg-[radial-gradient(circle,rgba(20,184,166,0.14)_0%,transparent_70%)] -z-10 pointer-events-none" />
         <div className="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-b from-transparent to-[#050505] -z-10 pointer-events-none" />
 
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center py-8 sm:py-10 lg:py-0">
@@ -191,19 +195,22 @@ export const HomePage: React.FC = () => {
               <h1 className="text-[1.75rem] sm:text-4xl lg:text-[2.75rem] xl:text-5xl font-black text-white tracking-tight leading-[1.1] sm:leading-[1.08]">
                 Rohit Gupta —{" "}
                 <span className="relative inline-block text-emerald-400">
-                  SEO Expert &amp; Full-Stack Web Developer
+                  SEO Expert in India &amp; Worldwide
                   <svg className="absolute -bottom-1.5 left-0 w-full" viewBox="0 0 200 10" fill="none" preserveAspectRatio="none" aria-hidden="true">
                     <path d="M2 7C60 2 140 2 198 7" stroke="#34d399" strokeWidth="2.5" strokeLinecap="round" opacity="0.65" />
                   </svg>
                 </span>
               </h1>
               <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-xl">
-                I help businesses improve organic search visibility, website performance and online growth through{" "}
-                <Link href="/services/technical-seo/" className="text-white hover:text-emerald-400 font-semibold underline">technical SEO</Link>,{" "}
-                <Link href="/services/local-seo/" className="text-white hover:text-emerald-400 font-semibold underline">local SEO</Link>,{" "}
-                <Link href="/services/international-seo/" className="text-white hover:text-emerald-400 font-semibold underline">international SEO</Link>,{" "}
-                <Link href="/services/digital-marketing/" className="text-white hover:text-emerald-400 font-semibold underline">digital marketing</Link> and{" "}
-                <Link href="/services/web-development/" className="text-white hover:text-emerald-400 font-semibold underline">high-performance web development</Link>.
+                Namaste! 🙏 I&apos;m Rohit Gupta, the SEO expert that Indian businesses trust to rank #1 on Google — and I work with clients <strong className="text-white">across all of India &amp; worldwide</strong>. Whether your business is in {" "}
+                <Link href="/seo-expert-noida/" className="text-white hover:text-emerald-400 font-semibold underline">Noida</Link>,{" "}
+                <Link href="/seo-expert-delhi/" className="text-white hover:text-emerald-400 font-semibold underline">Delhi</Link>,{" "}
+                <Link href="/seo-expert-mumbai/" className="text-white hover:text-emerald-400 font-semibold underline">Mumbai</Link>,{" "}
+                <Link href="/seo-expert-bangalore/" className="text-white hover:text-emerald-400 font-semibold underline">Bengaluru</Link>, Hyderabad, Chennai, Pune, Kolkata — or you&apos;re in the USA, UK, UAE or Australia and need a senior remote SEO expert — I deliver. You can{" "}
+                <Link href="/services/hire-seo-expert/" className="text-white hover:text-emerald-400 font-semibold underline">hire a dedicated SEO expert</Link>, build a lightning-fast{" "}
+                <Link href="/services/wordpress-development/" className="text-white hover:text-emerald-400 font-semibold underline">WordPress website</Link>, dominate{" "}
+                <Link href="/services/local-seo/" className="text-white hover:text-emerald-400 font-semibold underline">local SEO</Link>, or get your brand cited by{" "}
+                <Link href="/services/ai-search-optimization/" className="text-white hover:text-emerald-400 font-semibold underline">ChatGPT and Google AI Overviews</Link> — 100% white hat strategies backed by real code, data and measurable results.
               </p>
             </div>
 
@@ -327,6 +334,9 @@ export const HomePage: React.FC = () => {
         </div>
       </div>
 
+      {/* SOCIAL PROOF STRIP */}
+      <TestimonialsStrip />
+
       {/* CORE WEB VITALS PERFORMANCE BENCHMARK BAR */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
         <div className="p-4 sm:p-6 lg:p-8 card-3d-interactive space-y-5 sm:space-y-6 relative overflow-hidden">
@@ -397,14 +407,16 @@ export const HomePage: React.FC = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="text-sm font-bold text-white tracking-wide">{svc.title}</h3>
-                    <p className="text-xs sm:text-[13px] text-white/65 leading-relaxed">{svc.desc}</p>
+                    <h3 className="text-base sm:text-lg font-display font-black text-white tracking-tight group-hover:text-emerald-300 transition-colors">
+                      {svc.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light">{svc.desc}</p>
                   </div>
-                  <ul className="space-y-1.5">
+                  <ul className="space-y-2 pt-1 border-t border-white/5">
                     {svc.highlights.map((h) => (
-                      <li key={h} className="flex items-center gap-2 text-xs text-white/75">
+                      <li key={h} className="flex items-center gap-2 text-xs font-mono text-white/80">
                         <CheckCircle2 className={`w-3.5 h-3.5 ${c.text} shrink-0`} />
-                        {h}
+                        <span>{h}</span>
                       </li>
                     ))}
                   </ul>
@@ -424,6 +436,9 @@ export const HomePage: React.FC = () => {
           </Link>
         </Reveal>
       </section>
+
+      {/* HOW I WORK PROCESS */}
+      <ProcessSection />
 
       {/* INTERACTIVE LIVE SEO TOOLS QUICK LAUNCH */}
       <section aria-labelledby="tools-suite-heading" className="space-y-6 sm:space-y-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -489,10 +504,10 @@ export const HomePage: React.FC = () => {
             <div className="card-3d-interactive p-5 sm:p-8 space-y-5 sm:space-y-6 shadow-2xl h-full flex flex-col justify-between">
               <div className="space-y-4">
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-black text-white tracking-tight">
-                  Rohit Gupta — SEO Expert, Digital Marketing Consultant &amp; Web Developer
+                  Rohit — Web Developer &amp; SEO Expert Freelancer in Noida
                 </h2>
                 <p className="text-sm leading-relaxed text-white/75">
-                  I&apos;m Rohit Gupta, an SEO specialist and full-stack web developer focused on helping businesses improve their search visibility, website performance and digital growth through ethical, data-backed strategies.
+                  I&apos;m Rohit Gupta, a freelance web developer and SEO specialist from Noida with roots in Ayodhya. Over 2+ years I&apos;ve helped 200+ businesses — from Noida salons and coaching institutes to Mumbai startups, Bengaluru SaaS brands, and UK/US eCommerce companies — rank higher, load faster and convert better through 100% ethical White Hat SEO. What makes me different? I&apos;m the strategist who also writes the code: the person who audits your Core Web Vitals fixes them, and the person who plans your keyword clusters builds the schema that powers them. My clients span across India and internationally, and I&apos;m available on-site in Delhi NCR &amp; Ayodhya, and 100% remote everywhere else.
                 </p>
               </div>
 
@@ -564,6 +579,9 @@ export const HomePage: React.FC = () => {
 
         </div>
       </section>
+
+      {/* WHY HIRE ROHIT COMPARISON */}
+      <WhyHireMeSection />
 
       {/* LOCAL SEO COVERAGE */}
       <section className="space-y-6">
@@ -640,6 +658,14 @@ export const HomePage: React.FC = () => {
           </Suspense>
         </LazySection>
       </section>
+
+      {/* PRICING & PACKAGES SECTION */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <PricingSection />
+      </section>
+
+      {/* FINAL HIRE CTA BANNER */}
+      <HireCtaBanner />
 
       {/* FAQ SECTION */}
       <section className="space-y-6 cv-auto">

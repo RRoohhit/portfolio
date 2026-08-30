@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
-import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
+import { breadcrumbGraph, faqGraph, renderJsonLd } from "@/lib/jsonld";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
+import { CONTACT } from "@/config/site";
 import { MapPin, CheckCircle2, ArrowRight, Star, Search, BarChart3, ShieldCheck, Globe, MessageSquare } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
@@ -24,64 +25,36 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const GBP_AUDIT_ITEMS = [
-  "Primary & secondary category research and selection",
-  "Business description optimization (750 character limit)",
-  "Services and products optimization with descriptions",
-  "Attributes and highlights setup",
-  "NAP (Name, Address, Phone) consistency check",
-  "Hours, special hours, and holiday hours accuracy",
-  "Website and phone number link verification",
-  "Photo and video audit — quality and quantity",
-  "Q&A section management and seeding",
-  "Review score and volume benchmarking",
-  "Competitor GBP comparison analysis",
-  "Map Pack position baseline tracking",
+  "Primary and secondary category research and selection",
+  "Business description optimization and service clarity",
+  "Services and products setup with more useful descriptions",
+  "Attributes and business highlights",
+  "NAP consistency across directories and data sources",
+  "Hours, photos, and business profile trust signals",
+  "Website and phone link integrity checks",
+  "Review and reputation baseline analysis",
+  "Local competitor comparison",
+  "Map Pack ranking baseline tracking",
 ];
 
 const GBP_OPTIMIZATION_ITEMS = [
-  "Keyword-rich primary category selection",
-  "Strategic secondary category addition",
-  "Service area and radius configuration",
-  "Professional cover photo and logo upload",
-  "Product/service listings with prices and descriptions",
-  "Google Posts strategy (offers, events, updates)",
-  "Review response templates and reputation strategy",
-  "Local citation building aligned with GBP data",
-  "Local landing page creation aligned to service areas",
-  "Ongoing Map Pack rank tracking and reporting",
+  "Keyword-rich primary and secondary category choices",
+  "Service-area and radius configuration",
+  "Profile photo and cover image refresh",
+  "Google Posts strategy and local offers",
+  "Review response templates and trust building",
+  "Local citation cleanup and consistency",
+  "Local landing pages built for city or service-area intent",
+  "Ongoing map visibility reporting and optimization",
 ];
 
 const PROCESS_STEPS = [
-  {
-    step: "01",
-    title: "GBP Audit & Baseline",
-    desc: "A thorough audit of your current Google Business Profile against 30+ ranking factors. We document baseline rankings, review scores, competitor position, and identify every missing or incorrect element.",
-  },
-  {
-    step: "02",
-    title: "Category & Service Optimization",
-    desc: "Primary category research, secondary category selection, and complete service/product listing setup with keyword-informed descriptions that match what local customers actually search.",
-  },
-  {
-    step: "03",
-    title: "Citations & NAP Consistency",
-    desc: "We audit your business name, address, and phone number across 50+ local directories and data aggregators, correcting inconsistencies that suppress Map Pack visibility.",
-  },
-  {
-    step: "04",
-    title: "Review Strategy & Google Posts",
-    desc: "Implement an ethical review acquisition strategy, respond to existing reviews, and set up a consistent Google Posts schedule to keep your profile active and fresh.",
-  },
-  {
-    step: "05",
-    title: "Local Landing Pages",
-    desc: "Build unique, useful local landing pages on your website for each service area — each aligned with your GBP services and targeted to local search intent.",
-  },
-  {
-    step: "06",
-    title: "Monthly Reporting",
-    desc: "Monthly GBP performance reports covering profile views, direction requests, phone calls, Map Pack positions for target keywords, and review score trends.",
-  },
+  { step: "01", title: "GBP audit and baseline", desc: "We review your profile against ranking factors and identify what is missing, outdated, or weakening your local visibility." },
+  { step: "02", title: "Category and service setup", desc: "We align your categories and services with actual local intent so your profile is clear, relevant, and easier for Google to rank." },
+  { step: "03", title: "Local consistency cleanup", desc: "We fix NAP and directory inconsistencies so Google sees one reliable business identity across the web." },
+  { step: "04", title: "Reviews and freshness", desc: "We improve your review profile, response system, and ongoing Google Posts so the profile remains active and trustworthy." },
+  { step: "05", title: "Local landing pages", desc: "We connect the GBP with service-area pages on your website so local intent and on-site authority support each other." },
+  { step: "06", title: "Ongoing tracking", desc: "We monitor improvements in profile views, calls, direction requests, and map placement so we can keep refining what works." },
 ];
 
 const SEARCH_QUERIES = [
@@ -91,8 +64,23 @@ const SEARCH_QUERIES = [
   "Google Maps ranking",
   "Local SEO consultant",
   "Google Business Profile expert",
-  "Map Pack optimization Noida",
-  "GBP audit India",
+  "Map Pack optimization",
+  "GBP audit",
+];
+
+const FAQS = [
+  {
+    question: "Why is Google Business Profile SEO important?",
+    answer: "Because many high-intent customers do not visit your website first—they search locally and choose the business that looks strongest, most relevant, and most trustworthy in the map results.",
+  },
+  {
+    question: "Can this help a local service business even if I already have a website?",
+    answer: "Yes. Your website helps with broader search discovery, but your GBP helps capture people who are searching specifically for businesses near them right now.",
+  },
+  {
+    question: "How long does GBP SEO take to show results?",
+    answer: "Some people see profile improvements quickly, but better map-pack visibility usually builds steadily over weeks when the profile is cleaned up and kept active consistently.",
+  },
 ];
 
 export default function GoogleBusinessProfileSeoPage() {
@@ -105,82 +93,61 @@ export default function GoogleBusinessProfileSeoPage() {
   return (
     <>
       {renderJsonLd(breadcrumbData, "jsonld-gbp-seo-breadcrumb")}
+      {renderJsonLd(faqGraph(FAQS), "jsonld-gbp-seo-faq")}
 
       <div className="space-y-12 sm:space-y-16 pt-24 lg:pt-28 pb-16 max-w-5xl mx-auto">
-        <Breadcrumbs
-          items={[
-            { name: "Home", href: "/" },
-            { name: "Services", href: "/services" },
-            { name: "Google Business Profile SEO" },
-          ]}
-        />
+        <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Services", href: "/services" }, { name: "Google Business Profile SEO" }]} />
 
-        {/* Hero Header */}
         <header className="bg-zinc-950 border border-white/10 p-6 sm:p-10 rounded-3xl space-y-5 shadow-2xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono font-bold uppercase tracking-wider">
             <MapPin className="w-4 h-4" />
-            Local Map Pack Visibility
+            Local map pack visibility
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            Google Business Profile SEO Services
+            Google Business Profile SEO that helps nearby customers choose you.
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Your Google Business Profile is one of the most powerful local search assets you own. A properly optimised GBP
-            drives map pack visibility, direction requests, phone calls, and direct business — all from customers searching
-            for your services right now. Rohit Gupta provides expert GBP SEO services to help local businesses in Noida,
-            Delhi NCR, and across India rank prominently in Google Maps and the local 3-pack.
+            Your GBP is often the first thing people see before they ever visit your website. When it is strong, it can drive calls, directions, website visits, and local trust from customers ready to buy. We optimize your profile so it looks more relevant, more reliable, and more likely to win the local map pack.
           </p>
 
-          <div className="flex flex-wrap gap-3 pt-2">
-            <Link
-              href="/contact/"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg"
-            >
-              Get GBP Audit
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">
+            <Link href="/contact/" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
+              Get GBP audit
               <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link
-              href="/services/local-seo/"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
+            <a
+              href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I want to improve my Google Business Profile and local visibility.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
             >
-              View Local SEO Services
-            </Link>
+              <MessageSquare className="w-4 h-4 text-emerald-400" />
+              WhatsApp consultation
+            </a>
           </div>
         </header>
 
-        {/* Who is this for */}
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4 shadow-xl">
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <Search className="w-5 h-5 text-emerald-400" />
-            Who Is Google Business Profile SEO For?
+            Who this is for
           </h2>
           <p className="text-sm sm:text-base text-white/75 leading-relaxed">
-            Google Business Profile SEO is critical for any business that serves customers in a specific location or service area.
-            This includes local service businesses (plumbers, lawyers, doctors, consultants), retail shops, restaurants, clinics, agencies,
-            and any company that wants to appear in <strong className="text-white">"near me"</strong> and city-based searches.
+            Local service businesses, clinics, agencies, retailers, and professionals benefit most when their Google Business Profile looks strong, responds to local intent, and helps Google trust the business as relevant to the service area.
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
-            {["Service Businesses", "Local Retail Shops", "Medical / Clinics", "Legal Professionals", "Restaurants & Hospitality", "Agencies & Consultants"].map((type) => (
-              <div key={type} className="flex items-center gap-2 text-xs sm:text-sm text-white/70 font-mono">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                {type}
-              </div>
-            ))}
-          </div>
         </section>
 
-        {/* GBP Audit */}
         <section className="space-y-5">
           <div className="space-y-2">
             <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <BarChart3 className="w-5 h-5 text-emerald-400" />
-              GBP Audit — What We Review
+              What we review first
             </h2>
             <p className="text-xs sm:text-sm text-white/60">
-              Every GBP engagement starts with a full profile audit against 30+ local ranking factors.
+              Every optimization starts with a real audit against local ranking factors and profile quality indicators.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -193,15 +160,14 @@ export default function GoogleBusinessProfileSeoPage() {
           </div>
         </section>
 
-        {/* What's Included */}
         <section className="space-y-5">
           <div className="space-y-2">
             <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-400" />
-              What's Included — Full GBP Optimization
+              What we optimize
             </h2>
             <p className="text-xs sm:text-sm text-white/60">
-              End-to-end Google Business Profile optimization to maximize your Map Pack presence.
+              We improve the factors that help businesses show up in the map results and feel more trustworthy to potential customers.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -214,15 +180,10 @@ export default function GoogleBusinessProfileSeoPage() {
           </div>
         </section>
 
-        {/* Process */}
         <section className="space-y-5">
           <div className="space-y-2">
-            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
-              The GBP SEO Process
-            </h2>
-            <p className="text-xs sm:text-sm text-white/60">
-              A structured 6-step approach to building and maintaining Map Pack visibility.
-            </p>
+            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">The process</h2>
+            <p className="text-xs sm:text-sm text-white/60">A simple, structured workflow focused on map visibility and local trust.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {PROCESS_STEPS.map((step) => (
@@ -237,70 +198,35 @@ export default function GoogleBusinessProfileSeoPage() {
           </div>
         </section>
 
-        {/* Search queries this page targets */}
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
           <h3 className="text-lg font-bold text-white font-mono uppercase tracking-wider flex items-center gap-2">
             <Globe className="w-4 h-4 text-emerald-400" />
-            Search Queries This Service Covers
+            Search queries this covers
           </h3>
           <div className="flex flex-wrap gap-2">
             {SEARCH_QUERIES.map((q) => (
-              <span key={q} className="px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
-                {q}
-              </span>
+              <span key={q} className="px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">{q}</span>
             ))}
           </div>
         </section>
 
-        {/* Internal links */}
-        <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Google Business Profile &amp; Local Maps Services</h3>
-          <div className="flex flex-wrap gap-3">
-            {[
-              { label: "Local SEO", href: "/services/local-seo" },
-              { label: "On-Page SEO", href: "/services/on-page-seo" },
-              { label: "Technical SEO", href: "/services/technical-seo" },
-              { label: "SEO Audit", href: "/seo-audit" },
-            ].map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-mono font-bold text-white/80 hover:text-emerald-400 hover:border-emerald-500/30 transition-colors"
-              >
-                {link.label}
-                <ArrowRight className="w-3 h-3" />
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        {/* CTA */}
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/50 via-zinc-950 to-zinc-950 border border-emerald-500/30 text-center space-y-5 shadow-2xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono font-bold uppercase tracking-wider">
             <Star className="w-4 h-4" />
-            Free GBP Audit Included
+            Free GBP audit included
           </div>
-          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-            Ready to Rank in Google Maps?
-          </h3>
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to show up stronger in local search?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
-            Get a free Google Business Profile audit and find out exactly what's stopping your business from appearing
-            in the local 3-pack. Contact Rohit Gupta today.
+            Let’s check your GBP and see what is missing, outdated, or under-optimized in your local profile.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 pt-2">
-            <Link
-              href="/contact/"
-              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25"
-            >
-              Request Free GBP Audit
+            <Link href="/contact/" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
+              Request free GBP audit
               <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link
-              href="/seo-audit/"
-              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
-            >
+            <Link href="/seo-audit/" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors">
               <MessageSquare className="w-4 h-4 text-emerald-400" />
-              Full SEO Audit
+              Full SEO audit
             </Link>
           </div>
         </section>

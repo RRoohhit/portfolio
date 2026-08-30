@@ -101,5 +101,65 @@ export const FAQ_DATA: FaqItem[] = [
     answer: "MERN stands for MongoDB, Express.js, React and Node.js — a JavaScript-only stack for building full stack web apps. SEO on MERN is possible but needs care: because React renders client-side, you must add server-side rendering, prerendering or hybrid rendering so crawlers get HTML. The safest path is to pair React UI with a Next.js layer for public pages. For 200+ client sites, Rohit delivers MERN and Next.js architectures that keep both developer speed and Google crawlability.",
     keywords: ["MERN stack developer", "MERN SEO", "full stack web development"],
     category: "Web Development"
+  },
+  {
+    question: "How do I hire a dedicated SEO expert or hire an SEO expert team in India?",
+    answer: "You can hire Rohit Gupta directly as your dedicated SEO specialist or deploy a full SEO expert team. Rohit offers transparent monthly retainers covering technical audits, Core Web Vitals (99/100), keyword clustering, 100% White Hat contextual link building, and AI search optimization with zero agency overhead.",
+    keywords: ["hire dedicated seo expert india", "hire seo expert team", "hire seo specialist", "hiring an seo expert"],
+    category: "Hiring & Pricing"
+  },
+  {
+    question: "Do you offer WordPress development company services for custom themes and WooCommerce?",
+    answer: "Yes! Rohit provides custom WordPress development company solutions including bespoke native Gutenberg themes, WooCommerce store optimization, sub-second speed tuning (LCP < 1.2s), malware cleanup, and Headless WordPress architectures using Next.js 15 frontends.",
+    keywords: ["wordpress development company", "wordpress development company in india", "woocommerce development", "custom wordpress development"],
+    category: "Web Development"
+  },
+  {
+    question: "What are the top AEO tools available in India for AI search optimization?",
+    answer: "The leading AEO tools available in India include Perplexity Pro / API, Semrush AI Search Overviews Tracker, Ahrefs Web Explorer, Schema App JSON-LD entity graph builders, and Rohit Gupta's proprietary AI Lab tools for generating llms.txt and AI bot crawler directives.",
+    keywords: ["aeo tools available in india for ai search", "AEO tools India", "AI search optimization tools", "ChatGPT SEO tools"],
+    category: "AI & Technical SEO"
+  },
+  {
+    question: "Where can I read client reviews for Rohit Web Developer & SEO Expert Freelancer in Noida?",
+    answer: "You can read verified client reviews and case study feedback on the Testimonials page (/testimonials/) as well as on verified LinkedIn and Google profiles. Rohit has an established track record across Delhi NCR and global clients for 4,700%+ organic traffic growth.",
+    keywords: ["rohit web developer & seo expert freelancer noida reviews", "rohit gupta reviews", "seo expert in noida reviews"],
+    category: "Hiring & Pricing"
+  },
+  {
+    question: "What are the best SEO tools in India in 2026 for small businesses?",
+    answer: "For Indian small businesses, start free with Google Search Console, Keyword Planner, PageSpeed Insights, Google Trends and the Google Business Profile dashboard. When budgets allow, Semrush Pro or Ahrefs Lite (₹5,000–₹8,600/month billed annually) add Indian-language keyword volume, rank tracking and backlink analysis. Screaming Frog is a one-time ~₹15,000 licence for deep technical crawls.",
+    keywords: ["best seo tools india", "seo tools price india", "free seo tools for small business"],
+    category: "Strategy"
+  },
+  {
+    question: "Is SEO or Google Ads better for my business in 2026?",
+    answer: "Google Ads gives instant visibility the day your campaign launches, ideal for promotions, launches and local competition where budgets are strong. SEO builds durable, compounding rankings that keep delivering after the work is done, but takes 3–6 months. Most successful clients run both — ads for immediate leads, SEO for long-term margins — and most should shift budget toward SEO after ranking gains materialise.",
+    keywords: ["seo vs google ads", "SEO or Google Ads better India", "digital marketing ROI"],
+    category: "Google Ads & Speed"
+  },
+  {
+    question: "Can a new website rank on Google? How long does it take?",
+    answer: "Yes, but plan a 6–12 month horizon. New domains lack trust and backlinks, so the winning strategy is targeting low-competition long-tail keywords, publishing genuinely helpful content weekly, earning 5–15 quality white hat links per month, and fixing every technical weakness early. Rohit Gupta typically sees new Indian websites on page one for easy-medium keywords within 3–5 months and sustainable #1 positions in 6–12 months.",
+    keywords: ["new website seo", "how long new website rank google", "SEO for new website India"],
+    category: "Strategy"
+  },
+  {
+    question: "What does a professional SEO audit include in 2026?",
+    answer: "A modern SEO audit covers crawlability and indexation, duplicate and thin content, Core Web Vitals field data, internal linking and site architecture, schema/structured data validation, backlink health and toxic link detection, keyword ranking benchmarks, local SEO and Google Business Profile health, mobile usability, and AI search readiness (llms.txt, entity signals, AI-overview citability). Rohit Gupta delivers a prioritised fix roadmap with effort estimates for every finding.",
+    keywords: ["SEO audit checklist", "technical SEO audit cost", "free website SEO audit"],
+    category: "Technical SEO"
+  },
+  {
+    question: "Do you provide SEO services for eCommerce stores (WooCommerce and Shopify)?",
+    answer: "Yes. Rohit Gupta specialises in eCommerce SEO for WooCommerce and Shopify stores: product page schema, category page optimisation, cannibalisation fixes, faceted navigation cleansing, Core Web Vitals speed optimisation, and AI-search-ready descriptions. Deliverables include ranking tracking for product keywords and technical fixes executed directly in the store's codebase.",
+    keywords: ["ecommerce seo india", "shopify seo expert", "woocommerce seo services"],
+    category: "Technical SEO"
+  },
+  {
+    question: "Is SEO worth it for small local businesses in 2026?",
+    answer: "For local businesses, SEO is the highest-ROI channel available because local searches mean ready-to-buy customers. The fastest wins come from the Google Maps 3-Pack via a fully optimised Google Business Profile, steady reviews and local citations — often ranking within 4–8 weeks — followed by geo-targeted landing pages for 'near me' and city + service queries. Rohit Gupta's local SEO services in Noida, Delhi and India are built exactly around this sequence.",
+    keywords: ["is seo worth it", "local SEO ROI India", "SEO for local business"],
+    category: "Local SEO"
   }
 ];

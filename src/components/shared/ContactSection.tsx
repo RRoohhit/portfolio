@@ -24,8 +24,8 @@ const INITIAL_FORM: FormData = {
   name: "",
   email: "",
   phone: "",
-  projectType: "Full Technical SEO & Web Revamp",
-  budget: "$500 - $2,000",
+  projectType: "",
+  budget: "",
   message: "",
 };
 
@@ -145,17 +145,29 @@ export const ContactSection: React.FC = () => {
       
       {/* Top Banner */}
       <Reveal>
-      <div className="card-3d-interactive p-6 sm:p-8 space-y-3 shadow-2xl">
+      <div className="card-3d-interactive p-6 sm:p-8 space-y-4 shadow-2xl">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-mono">
           <MessageSquare className="w-3.5 h-3.5" />
-          <span>Available for High-Growth SEO & Development Projects</span>
+          <span>Available for High-Growth SEO & Digital Growth Projects</span>
         </div>
         <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Let's Scale Your Website Traffic & SERP Dominance
+          Let&apos;s Build the Right Growth Plan for Your Business
         </h2>
         <p className="text-xs sm:text-sm text-zinc-400 max-w-2xl leading-relaxed">
-          Need a high-performing Full Stack website, Core Web Vitals optimization, or Rank #1 Search Engine Positioning? Get in touch with Rohit Gupta today.
+          Need a better online presence, more leads, higher rankings, or a faster website? Tell me your goals and I&apos;ll suggest the most effective SEO, ads, or web strategy for your brand.
         </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+          {[
+            "Free SEO / Website Audit",
+            "Custom Growth Strategy",
+            "WhatsApp Fast Response",
+          ].map((item) => (
+            <div key={item} className="card-3d p-3 text-center text-[10px] sm:text-xs font-mono font-bold text-emerald-300 uppercase tracking-wide">
+              {item}
+            </div>
+          ))}
+        </div>
       </div>
       </Reveal>
 
@@ -166,6 +178,10 @@ export const ContactSection: React.FC = () => {
         <div className="space-y-6">
           <div className="card-3d-interactive p-6 space-y-6 shadow-2xl">
             <h3 className="text-lg font-extrabold text-white">Direct Contact Info</h3>
+
+            <div className="rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-3.5 text-[10px] sm:text-xs font-mono text-emerald-300">
+              Response time: usually within 2 hours on WhatsApp or email.
+            </div>
 
             <div className="space-y-4 text-xs font-mono">
               <a
@@ -352,11 +368,14 @@ export const ContactSection: React.FC = () => {
                   onChange={(e) => setField("projectType", e.target.value)}
                   className="w-full bg-black border border-zinc-800 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-400/80 transition-colors"
                 >
-                  <option>Full Technical SEO & Web Revamp</option>
-                  <option>Rank #1 Keyword Search Optimization</option>
-                  <option>Next.js / React Web Application Development</option>
-                  <option>Core Web Vitals & Speed Optimization</option>
-                  <option>Google Ads & Conversion Campaign</option>
+                  <option value="">Select a service</option>
+                  <option value="Website SEO & Technical Optimization">Website SEO & Technical Optimization</option>
+                  <option value="Google Business Profile Optimization">Google Business Profile Optimization</option>
+                  <option value="E-commerce SEO Growth">E-commerce SEO Growth</option>
+                  <option value="Social Media & Digital Marketing">Social Media & Digital Marketing</option>
+                  <option value="Google Ads & Meta Ads Campaign">Google Ads & Meta Ads Campaign</option>
+                  <option value="Website Design / Next.js Development">Website Design / Next.js Development</option>
+                  <option value="Custom Full Digital Growth Package">Custom Full Digital Growth Package</option>
                 </select>
               </div>
             </div>
@@ -371,17 +390,18 @@ export const ContactSection: React.FC = () => {
                   onChange={(e) => setField("budget", e.target.value)}
                   className="w-full bg-black border border-zinc-800 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-400/80 transition-colors"
                 >
-                  <option>Under $500</option>
-                  <option>$500 - $2,000</option>
-                  <option>$2,000 - $5,000</option>
-                  <option>$5,000 - $10,000</option>
-                  <option>$10,000+</option>
+                  <option value="">Select budget range</option>
+                  <option value="Under $500">Under $500</option>
+                  <option value="$500 - $2,000">$500 - $2,000</option>
+                  <option value="$2,000 - $5,000">$2,000 - $5,000</option>
+                  <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                  <option value="$10,000+">$10,000+</option>
                 </select>
               </div>
 
               <div className="flex items-end pb-0.5">
                 <p className="text-[10px] font-mono text-zinc-500 leading-relaxed">
-                  No payment needed now. This form opens a pre-filled email — review and hit send.
+                  No payment is required upfront. This form opens a pre-filled email so you can review and send it instantly.
                 </p>
               </div>
             </div>

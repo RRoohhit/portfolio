@@ -6,17 +6,19 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { ShieldCheck, CheckCircle2, ArrowRight, BookOpen, AlertTriangle } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "White Hat SEO Services | Rohit Gupta",
+  title: "White Hat SEO Services & Firm India | 100% Penalty-Free — Rohit Gupta",
   description:
-    "White Hat SEO services by Rohit Gupta: ethical search optimization aligned with Google guidelines. Sustainable organic rankings without penalty risks.",
+    "White Hat SEO Services & Firm by Rohit Gupta: 100% Google Search Essentials compliant search optimization, editorial link building, and Core Web Vitals speed tuning with zero penalty risks.",
   path: "/services/white-hat-seo/",
   keywords: [
-    "White Hat SEO",
-    "Ethical SEO Services",
-    "Google Compliant SEO",
-    "Sustainable Organic Growth",
-    "Penalty-Free SEO",
-    "White Hat Link Building",
+    "white hat seo services",
+    "white hat seo firm",
+    "white hat seo agency india",
+    "ethical seo services",
+    "penalty-free seo india",
+    "google compliant seo",
+    "white hat link building",
+    "hire white hat seo expert",
     "Rohit Gupta White Hat SEO",
   ],
 });
@@ -48,19 +50,22 @@ export default function WhiteHatSeoPage() {
           <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono font-bold uppercase tracking-wider">
             <ShieldCheck className="w-4 h-4" />
-            Ethical & Sustainable Growth
+            100% Ethical White Hat SEO Firm &amp; Services
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            White Hat SEO Services
+            White Hat SEO Services &amp; Firm India
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            White Hat SEO is the practice of optimizing websites strictly within Google's Search Essentials and webmaster guidelines.
-            Unlike risky shortcuts that risk manual actions or algorithmic deindexing, White Hat SEO focuses on technical soundess,
-            exceptional user experience, valuable content, and authentic domain authority.
+            Rohit Gupta operates as a boutique <strong>White Hat SEO firm</strong> delivering ethical, sustainable <strong>White Hat SEO services</strong> strictly aligned with Google's Search Essentials. Unlike risky Black Hat shortcuts that trigger algorithmic deindexing from SpamBrain, our methods build unshakeable domain authority and top Google rankings that survive every core update.
           </p>
-          <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
-            Consult White Hat SEO Expert <ArrowRight className="w-4 h-4" />
-          </Link>
+          <div className="flex flex-wrap gap-3 pt-2">
+            <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
+              Consult White Hat SEO Firm <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20White%20Hat%20SEO%20services%20for%20my%20business" target="_blank" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
+              WhatsApp Now →
+            </Link>
+          </div>
         </header>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">

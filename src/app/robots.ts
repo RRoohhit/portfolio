@@ -40,13 +40,21 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/", "/temp-uploads/"],
       },
-      // ── AI / LLM crawlers: allow for brand visibility ──
+      // ── AI / LLM crawlers: allow for brand AEO visibility ──
       {
         userAgent: "GPTBot",
         allow: "/",
       },
       {
         userAgent: "ChatGPT-User",
+        allow: "/",
+      },
+      {
+        userAgent: "OAI-SearchBot",
+        allow: "/",
+      },
+      {
+        userAgent: "PerplexityBot",
         allow: "/",
       },
       {
@@ -61,6 +69,10 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "Claude-Web",
         allow: "/",
       },
+      {
+        userAgent: "Google-Extended",
+        allow: "/",
+      },
       // ── SEO tools ──
       {
         userAgent: "AhrefsBot",
@@ -73,7 +85,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       },
     ],
-    sitemap: `${SITE_URL}/sitemap.xml`,
+    sitemap: [`${SITE_URL}/sitemap.xml`, `${SITE_URL}/llms.txt`],
     host: SITE_URL,
   };
 }

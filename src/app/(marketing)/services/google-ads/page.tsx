@@ -1,14 +1,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
-import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
+import { breadcrumbGraph, faqGraph, renderJsonLd } from "@/lib/jsonld";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { TrendingUp, CheckCircle2, ArrowRight, ShieldCheck, Target, BarChart3 } from "lucide-react";
+import { CONTACT } from "@/config/site";
+import {
+  TrendingUp,
+  CheckCircle2,
+  ArrowRight,
+  ShieldCheck,
+  Target,
+  BarChart3,
+  Search,
+  BadgeCheck,
+  Zap,
+  MessageSquare,
+} from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Google Ads Management Services | Rohit Gupta",
   description:
-    "Google Ads management by Rohit Gupta: Search campaigns, Performance Max, ad copy, conversion tracking, and high ROI PPC optimization.",
+    "Google Ads management by Rohit Gupta: campaign setup, search ads, Performance Max, landing page optimization, trackable ROI and conversion-focused growth for businesses in India.",
   path: "/services/google-ads/",
   keywords: [
     "Google Ads Management",
@@ -24,26 +36,105 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const WHATS_INCLUDED = [
-  { title: "Google Ads Account Audit", desc: "Complete audit of your existing account: campaign structure, Quality Scores, wasted spend, keyword overlap, negative keyword gaps, and conversion tracking accuracy." },
-  { title: "Keyword Research & Planning", desc: "In-depth keyword research using Google Keyword Planner, search query data, and competitor analysis to identify the highest-intent, best-ROI search terms for your budget." },
-  { title: "Campaign Structure & Ad Groups", desc: "Building tightly-themed ad groups with clear keyword-to-ad-to-landing-page relevance chains that improve Quality Score and lower your cost-per-click." },
-  { title: "Ad Copy Creation", desc: "Writing compelling responsive search ads (RSAs) and testing multiple headline/description combinations to improve CTR and conversion rates over time." },
-  { title: "Negative Keyword Management", desc: "Building and continuously refining negative keyword lists to eliminate irrelevant searches and reduce wasted spend — one of the highest-ROI optimizations in Google Ads." },
-  { title: "Performance Max Campaigns", desc: "Setting up and optimizing Performance Max campaigns with proper asset groups, audience signals, and conversion goals to maximize reach while maintaining profitability." },
-  { title: "Landing Page Alignment", desc: "Reviewing and advising on landing page relevance, speed (Core Web Vitals), and conversion optimization to maximize the conversion rate of your paid traffic." },
-  { title: "Conversion Tracking & GA4", desc: "Setting up accurate conversion tracking via Google Tag Manager and GA4 so every lead, call, form submission, or purchase is measured correctly." },
-  { title: "Quality Score Optimization", desc: "Systematically improving Ad Relevance, Expected CTR, and Landing Page Experience scores to lower your CPCs and improve ad position competitively." },
-  { title: "Search Term Analysis", desc: "Weekly search term reports to find new profitable keywords, identify irrelevant traffic, and continuously refine targeting for better ROI." },
-  { title: "Bid Strategy Management", desc: "Selecting and adjusting smart bidding strategies (Target CPA, Target ROAS, Maximize Conversions) based on account data maturity and business goals." },
-  { title: "Monthly Performance Reporting", desc: "Monthly report covering spend, impressions, clicks, CTR, conversions, cost-per-conversion, ROAS, and actionable next-step recommendations." },
+  {
+    title: "Account audit before we spend a rupee",
+    desc: "We review your current account, search terms, quality scores, bidding logic, and conversion setup to find where budget is leaking before we even optimize anything.",
+  },
+  {
+    title: "Keyword research built around buying intent",
+    desc: "We target the searches that are closest to a sale, not just high-volume keywords. That means better CTR, lower CPC, and more profitable campaigns.",
+  },
+  {
+    title: "Campaign structure that is actually manageable",
+    desc: "Tightly grouped campaigns, keyword themes, and proper match type controls help your account stay clean, scalable, and easier to optimize over time.",
+  },
+  {
+    title: "Ad copy that speaks like a real person",
+    desc: "We write ads that match customer intent, highlight your offer clearly, and improve relevance so Google rewards your campaigns with lower costs.",
+  },
+  {
+    title: "Negative keywords that save wasted spend",
+    desc: "We cut out irrelevant traffic early. This is one of the fastest ways to lower wasted clicks, especially for new or under-optimized accounts.",
+  },
+  {
+    title: "Performance Max campaigns with control",
+    desc: "When used correctly, Performance Max can scale fast. We structure the campaign around the right goals, assets, signals, and conversion tracking so it does not burn budget blindly.",
+  },
+  {
+    title: "Landing page alignment",
+    desc: "Even good ads underperform when the landing page is weak. We check message match, speed, offer clarity, and conversion flow before scaling traffic.",
+  },
+  {
+    title: "Precise conversion tracking",
+    desc: "If the data is wrong, your decisions are wrong. We set up proper tracking so you know exactly which campaigns, keywords, and pages are actually driving leads and sales.",
+  },
+  {
+    title: "Quality Score optimization",
+    desc: "We improve ad relevance, expected CTR, and landing page experience so your ads become more efficient and easier to scale without rising costs.",
+  },
+  {
+    title: "Search term pruning and expansion",
+    desc: "Every month we look at what search terms are working, which are wasting budget, and which gaps can be turned into new profitable clicks.",
+  },
+  {
+    title: "Budget pacing and bid strategy",
+    desc: "We manage spend with enough control to keep learning and enough aggression to scale the campaigns that are producing real business results.",
+  },
+  {
+    title: "Clear monthly reporting",
+    desc: "You get a simple, honest report: spend, clicks, cost per lead, conversions, ROAS, and the next optimization steps for the month ahead.",
+  },
 ];
 
 const PROCESS_STEPS = [
-  { step: "01", title: "Account Audit & Goal Setting", desc: "Audit existing account performance (or start fresh), define conversion goals, set KPIs, and establish baseline cost-per-conversion benchmarks." },
-  { step: "02", title: "Keyword Research & Campaign Build", desc: "Research target keywords, build campaign structure, write ad copy, and set up conversion tracking before launch." },
-  { step: "03", title: "Launch & Monitor", desc: "Launch campaigns with conservative budgets, monitor search terms daily in the first 2 weeks, add negative keywords immediately, and adjust bids based on early data." },
-  { step: "04", title: "Optimize & Scale", desc: "Pause low-performers, scale high-converters, refine ad copy, test new ad variants, and improve landing pages based on conversion data." },
-  { step: "05", title: "Report & Plan", desc: "Monthly performance review, ROAS/CPA analysis, competitive insights, and a clear plan for the next month's optimizations." },
+  {
+    step: "01",
+    title: "Audit and goal mapping",
+    desc: "We review the current account, customer intent, and business targets to identify the biggest leaks and the fastest opportunities for ROI.",
+  },
+  {
+    step: "02",
+    title: "Keyword and campaign build",
+    desc: "We research intent-based keywords, build the structure, set up ad groups, and align everything around the right landing page experience.",
+  },
+  {
+    step: "03",
+    title: "Launch with smart controls",
+    desc: "We launch in a controlled way, monitor early performance, and remove wasted traffic before it grows into a costly problem.",
+  },
+  {
+    step: "04",
+    title: "Optimize for efficiency",
+    desc: "We keep testing keywords, ad variations, negative terms, bids, and landing page improvements so the account becomes more efficient month by month.",
+  },
+  {
+    step: "05",
+    title: "Scale what works",
+    desc: "Once the account is stable, we scale the campaigns and channels that are producing leads, calls, and sales at a healthy cost.",
+  },
+];
+
+const FAQS = [
+  {
+    question: "Do I need Google Ads if I already have SEO?",
+    answer:
+      "SEO is the long game, but Google Ads gives you immediate visibility when you need leads now. The best approach is usually both: SEO builds long-term authority and ads give you quick, measurable demand.",
+  },
+  {
+    question: "How fast can I expect results?",
+    answer:
+      "Some businesses start seeing clicks and leads within days of launch, especially if the account setup, keywords, and landing page are strong. Real optimization and scale usually happens over the first few weeks.",
+  },
+  {
+    question: "Is Google Ads worth it for small businesses?",
+    answer:
+      "Yes, when it is managed properly. The real issue is not whether ads work — it is whether your budget is being spent intelligently and whether the traffic is converting on your site.",
+  },
+  {
+    question: "Can you optimize my existing account?",
+    answer:
+      "Absolutely. We can audit an existing Google Ads account, find what is wasting money, fix the structure, improve targeting, and help you unlock better conversion efficiency.",
+  },
 ];
 
 export default function GoogleAdsPage() {
@@ -56,6 +147,7 @@ export default function GoogleAdsPage() {
   return (
     <>
       {renderJsonLd(breadcrumbData, "jsonld-google-ads-breadcrumb")}
+      {renderJsonLd(faqGraph(FAQS), "jsonld-google-ads-faq")}
 
       <div className="space-y-12 sm:space-y-16 pt-24 lg:pt-28 pb-16 max-w-5xl mx-auto">
         <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Services", href: "/services" }, { name: "Google Ads" }]} />
@@ -66,29 +158,61 @@ export default function GoogleAdsPage() {
             <TrendingUp className="w-4 h-4" />
             Paid Search & Performance Marketing
           </div>
+
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            Google Ads Management Services
+            Google Ads that bring ready-to-buy leads, not just clicks.
           </h1>
+
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Google Ads gives your business immediate visibility for high-intent search queries — but poorly managed accounts
-            waste budget fast. Rohit Gupta manages Google Ads campaigns with a focus on quality score improvement,
-            wasted spend elimination, and conversion rate optimization to deliver profitable paid search results
-            alongside your organic SEO strategy.
+            If your ads are not generating quality leads, it is usually not a budget problem. It is usually a strategy problem.
+            We build Google Ads campaigns around intent, relevance, and conversion data so your budget works harder and your business gets more qualified enquiries.
           </p>
-          <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
-            Get Google Ads Audit <ArrowRight className="w-4 h-4" />
-          </Link>
+
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">
+            <Link
+              href="/contact/"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg"
+            >
+              Get a Free Ads Audit
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <a
+              href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I want to improve my Google Ads performance and need a strategy call.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
+            >
+              <MessageSquare className="w-4 h-4 text-emerald-400" />
+              WhatsApp Strategy Call
+            </a>
+          </div>
         </header>
 
-        {/* What's Included */}
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { icon: Search, title: "Intent-first campaigns", text: "We focus on the searches that matter most to your business, not just broad traffic." },
+            { icon: BadgeCheck, title: "Lower wasted spend", text: "Poor targeting and weak match types kill budgets fast. We clean that up systematically." },
+            { icon: Zap, title: "Better conversion efficiency", text: "From ad copy to landing pages, every layer is tuned to turn clicks into leads and sales." },
+          ].map(({ icon: Icon, title, text }) => (
+            <div key={title} className="p-5 rounded-2xl bg-zinc-950 border border-white/10">
+              <Icon className="w-5 h-5 text-emerald-400 mb-3" />
+              <h2 className="text-base font-bold text-white mb-2">{title}</h2>
+              <p className="text-sm text-white/70 leading-relaxed">{text}</p>
+            </div>
+          ))}
+        </section>
+
         <section className="space-y-5">
           <div className="space-y-2">
             <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-400" />
-              What's Included — Google Ads Management
+              What we handle for your Google Ads account
             </h2>
-            <p className="text-xs sm:text-sm text-white/60">Full-service Google Ads management across 12 key areas.</p>
+            <p className="text-xs sm:text-sm text-white/60">
+              The goal is simple: more qualified clicks, lower wasted spend, and a cleaner path to revenue.
+            </p>
           </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {WHATS_INCLUDED.map((item) => (
               <div key={item.title} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-blue-500/30 transition-colors space-y-2">
@@ -102,11 +226,10 @@ export default function GoogleAdsPage() {
           </div>
         </section>
 
-        {/* Process */}
         <section className="space-y-5">
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <Target className="w-5 h-5 text-emerald-400" />
-            The Google Ads Process
+            Our process
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {PROCESS_STEPS.map((step) => (
@@ -121,17 +244,13 @@ export default function GoogleAdsPage() {
           </div>
         </section>
 
-        {/* Why combine with SEO */}
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
           <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
             <BarChart3 className="w-5 h-5 text-emerald-400" />
-            Why Combine Google Ads with SEO?
+            Why ads and SEO work best together
           </h2>
           <p className="text-sm text-white/75 leading-relaxed">
-            Google Ads and SEO work best together. Ads deliver immediate traffic and conversion data; SEO builds long-term
-            organic authority. The Google Ads search term reports reveal the highest-converting queries to target with SEO;
-            SEO rankings reduce dependency on paid traffic over time. Rohit Gupta manages both, which means your paid and
-            organic strategy are aligned around the same conversion goals and keyword intelligence.
+            Paid ads get you visibility now, while SEO builds compounding organic growth for the future. The strongest marketing systems use both together: ads reveal the most valuable search intent quickly, and SEO turns those same keywords into lasting brand authority over time.
           </p>
           <Link href="/services/seo/" className="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-emerald-400 hover:text-emerald-300 transition-colors">
             Explore SEO Services <ArrowRight className="w-3 h-3" />
@@ -139,9 +258,9 @@ export default function GoogleAdsPage() {
         </section>
 
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-blue-950/40 via-zinc-950 to-zinc-950 border border-blue-500/30 text-center space-y-5 shadow-2xl">
-          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to Get More from Your Ad Budget?</h3>
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to make your ad spend finally work for you?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
-            Get a Google Ads account audit to find out where your budget is being wasted and how to improve your ROAS immediately.
+            Tell me your website, your goal, and your current ad setup. I’ll show you where the leaks are and what we should fix first.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
             Request Google Ads Audit <ArrowRight className="w-4 h-4" />

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { MessageCircle, Phone, Mail, Sparkles, X, Send } from "lucide-react";
+import { MessageCircle, Phone, Mail, Sparkles, X, Send, Gauge } from "lucide-react";
 import { ROHIT_PROFILE } from "@/data/portfolioData";
 import { useAudit } from "@/components/providers/AuditProvider";
 
@@ -93,6 +93,23 @@ export const FloatingContact: React.FC = () => {
                 <div className="text-[9px] text-emerald-400 font-semibold">Instant reply on WhatsApp</div>
               </div>
             </a>
+
+            {/* Free SEO Audit — opens audit modal */}
+            <button
+              onClick={() => {
+                setExpanded(false);
+                openAudit();
+              }}
+              className="card-3d w-full flex items-center gap-3 p-3 text-white hover:border-emerald-400/60 transition-all hover:scale-[1.02] active:scale-[0.98] group text-left cursor-pointer"
+            >
+              <div className="icon-3d w-9 h-9 rounded-xl text-amber-400 shrink-0">
+                <Gauge className="w-4 h-4" />
+              </div>
+              <div className="min-w-0">
+                <div className="text-xs font-black uppercase tracking-wider text-white group-hover:text-amber-300">Free SEO Audit</div>
+                <div className="text-[9px] text-amber-400 font-semibold">Get instant website score</div>
+              </div>
+            </button>
 
             {/* Direct Phone Call */}
             <a

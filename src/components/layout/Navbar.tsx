@@ -20,6 +20,12 @@ import {
   MessageSquare,
   ArrowRight,
   Zap,
+  Users,
+  Code2,
+  ShieldCheck,
+  MapPin,
+  Star,
+  Globe,
 } from "lucide-react";
 
 /* ── Constants (module-level — not recreated on every render) ── */
@@ -28,6 +34,14 @@ const TAB_PATHS: Record<string, string> = {
   home: "/",
   "rohit-gupta": "/rohit-gupta/",
   services: "/services/",
+  "hire-seo-expert": "/services/hire-seo-expert/",
+  "wordpress-development": "/services/wordpress-development/",
+  "white-hat-seo": "/services/white-hat-seo/",
+  "local-seo-noida": "/local-seo-noida/",
+  "international-seo-expert": "/international-seo-expert/",
+  "seo-expert-mumbai": "/seo-expert-mumbai/",
+  "seo-expert-bangalore": "/seo-expert-bangalore/",
+  testimonials: "/testimonials/",
   "seo-audit": "/seo-audit/",
   "case-studies": "/case-studies/",
   projects: "/projects/",
@@ -76,6 +90,16 @@ const NAV_ITEMS = [
 
 const categorizedNav: NavCategory[] = [
   {
+    category: "Hire & Core Services",
+    items: [
+      { id: "hire-seo-expert", label: "Hire Dedicated SEO Expert", icon: Users, desc: "Dedicated Specialist & Expert Team Retainers", badge: "High-Intent" },
+      { id: "wordpress-development", label: "WordPress Development Company", icon: Code2, desc: "Custom Gutenberg, WooCommerce & Headless Next.js", badge: "Fast" },
+      { id: "white-hat-seo", label: "White Hat SEO Firm", icon: ShieldCheck, desc: "100% Google Search Essentials Compliant", badge: "Ethical" },
+      { id: "local-seo-noida", label: "Local SEO Services Noida", icon: MapPin, desc: "Google Maps 3-Pack & Noida Sector Ranking", badge: "Local" },
+      { id: "testimonials", label: "Client Reviews & Ratings", icon: Star, desc: "Verified 5.0 Star Ratings & Results", badge: "5.0 ★" },
+    ],
+  },
+  {
     category: "Core Pages",
     items: [
       { id: "home", label: "Home Overview", icon: Home, desc: "Featured Highlights & Expertise" },
@@ -117,6 +141,15 @@ const categorizedNav: NavCategory[] = [
     category: "Knowledge & Articles",
     items: [
       { id: "blog", label: "SEO Blog & Insights", icon: BookOpen, desc: "Technical Articles & Case Studies" },
+    ],
+  },
+  {
+    category: "Locations & International",
+    items: [
+      { id: "international-seo-expert", label: "International SEO Expert", icon: Globe, desc: "USA, UK, UAE, Australia, Canada & 20+ Countries", badge: "Worldwide" },
+      { id: "seo-expert-mumbai", label: "SEO Expert in Mumbai", icon: MapPin, desc: "Mumbai, Navi Mumbai & Maharashtra" },
+      { id: "seo-expert-bangalore", label: "SEO Expert in Bangalore", icon: MapPin, desc: "Bengaluru, Karnataka & SaaS Hub" },
+      { id: "local-seo-noida", label: "More Cities…", icon: MapPin, desc: "Delhi, Hyderabad, Chennai, Pune, Kolkata & 100+ cities", badge: "100+ City" },
     ],
   },
 ];
@@ -428,7 +461,7 @@ export const Navbar: React.FC = () => {
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping absolute opacity-75" />
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 relative" />
                 </span>
-                <span className="text-white font-bold">Ayodhya • Delhi NCR</span>
+                <span className="text-white font-bold">Ayodhya • Delhi NCR • Pan India • Worldwide</span>
               </div>
               <span className="text-[10px] text-emerald-300 font-bold uppercase px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/35">
                 Available for Hire

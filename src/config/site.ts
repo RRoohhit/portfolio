@@ -14,7 +14,8 @@ export const CONTACT = {
   permanentLocation: "Ayodhya, Uttar Pradesh, India",
   currentLocation: "Gali No. 7, Block M, Mamura, Sector 66, Noida, Uttar Pradesh 201309",
   location: "Noida & Ayodhya, UP, India",
-  serving: "Based in Noida & Ayodhya, UP, India · Serving clients across India and internationally",
+  serving:
+    "Serving clients across all of India (Mumbai, Delhi NCR, Bengaluru, Hyderabad, Chennai, Pune, Kolkata & 100+ cities) and worldwide — USA, UK, UAE, Canada, Australia & more",
   googleMaps: "https://share.google/cqewWmS35Q5m53u5C",
 } as const;
 

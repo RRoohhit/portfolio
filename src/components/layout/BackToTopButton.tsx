@@ -5,16 +5,32 @@ import { ArrowUp } from "lucide-react";
 
 const BackToTopButton: React.FC = () => {
   const [visible, setVisible] = useState(false);
-  const [scrollPercent, setScrollPercent] = useState(0);
+  const circleRef = useRef<SVGCircleElement>(null);
   const rafRef = useRef<number>(0);
+  const isVisibleRef = useRef(false);
+
+  /* SVG ring dimensions */
+  const size = 44;
+  const stroke = 3;
+  const radius = (size - stroke * 2) / 2;
+  const circumference = 2 * Math.PI * radius;
 
   const updateState = useCallback(() => {
     const scrollY = window.scrollY;
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const pct = docHeight > 0 ? Math.min(100, (scrollY / docHeight) * 100) : 0;
-    setVisible(scrollY > 400);
-    setScrollPercent(pct);
-  }, []);
+    const pct = docHeight > 0 ? Math.min(100, Math.max(0, (scrollY / docHeight) * 100)) : 0;
+    
+    const shouldBeVisible = scrollY > 400;
+    if (shouldBeVisible !== isVisibleRef.current) {
+      isVisibleRef.current = shouldBeVisible;
+      setVisible(shouldBeVisible);
+    }
+
+    if (circleRef.current) {
+      const offset = circumference - (pct / 100) * circumference;
+      circleRef.current.style.strokeDashoffset = `${offset}`;
+    }
+  }, [circumference]);
 
   useEffect(() => {
     const onScroll = () => {
@@ -33,19 +49,12 @@ const BackToTopButton: React.FC = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  /* SVG ring dimensions */
-  const size = 44;
-  const stroke = 3;
-  const radius = (size - stroke * 2) / 2;
-  const circumference = 2 * Math.PI * radius;
-  const offset = circumference - (scrollPercent / 100) * circumference;
-
   if (!visible) return null;
 
   return (
     <button
       onClick={scrollToTop}
-      aria-label={`Back to top — ${Math.round(scrollPercent)}% scrolled`}
+      aria-label="Back to top"
       title="Back to top"
       className="fixed bottom-6 right-4 sm:right-6 z-40 btop-visible group focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 rounded-full"
     >
@@ -69,6 +78,7 @@ const BackToTopButton: React.FC = () => {
           />
           {/* Progress */}
           <circle
+            ref={circleRef}
             cx={size / 2}
             cy={size / 2}
             r={radius}
@@ -76,9 +86,8 @@ const BackToTopButton: React.FC = () => {
             strokeWidth={stroke}
             fill="none"
             strokeDasharray={circumference}
-            strokeDashoffset={offset}
+            strokeDashoffset={circumference}
             strokeLinecap="round"
-            className="transition-[stroke-dashoffset] duration-100"
           />
         </svg>
 

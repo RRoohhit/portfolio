@@ -5,6 +5,14 @@ import { aiSearchOptimization2026 } from "./posts/aiSearchOptimization2026";
 import { whiteHatLinkBuilding2026 } from "./posts/whiteHatLinkBuilding2026";
 import { keywordResearch2026 } from "./posts/keywordResearch2026";
 import { seoServicesCostIndia2026 } from "./posts/seoServicesCostIndia2026";
+import { aeoToolsIndiaGuide2026 } from "./posts/aeoToolsIndiaGuide2026";
+import { wordpressDevelopmentGuide2026 } from "./posts/wordpressDevelopmentGuide2026";
+import { hireSeoExpertGuide2026 } from "./posts/hireSeoExpertGuide2026";
+import { localSeoNoidaGuide2026 } from "./posts/localSeoNoidaGuide2026";
+import { hireDedicatedSeoExpertGuide2026 } from "./posts/hireDedicatedSeoExpertGuide2026";
+import { bestSeoToolsIndiaGuide2026 } from "./posts/bestSeoToolsIndiaGuide2026";
+import { googleBusinessProfileOptimization2026 } from "./posts/googleBusinessProfileOptimization2026";
+import { rank1GoogleSystem2026 } from "./posts/rank1GoogleSystem2026";
 
 // Single source of truth for all articles.
 // Consumed by: /blog listing, /blog/[slug] pages, home page grid and reader modal.
@@ -1274,4 +1282,12 @@ I have spent my career doing exactly this for businesses across Noida, Delhi and
   whiteHatLinkBuilding2026,
   keywordResearch2026,
   seoServicesCostIndia2026,
+  aeoToolsIndiaGuide2026,
+  wordpressDevelopmentGuide2026,
+  hireDedicatedSeoExpertGuide2026,
+  hireSeoExpertGuide2026,
+  localSeoNoidaGuide2026,
+  bestSeoToolsIndiaGuide2026,
+  googleBusinessProfileOptimization2026,
+  rank1GoogleSystem2026,
 ];
