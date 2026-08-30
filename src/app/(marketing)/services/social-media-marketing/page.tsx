@@ -23,16 +23,16 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const WHATS_INCLUDED = [
-  { title: "Social Media Strategy", desc: "A platform-specific content and growth strategy aligned with your business goals, target audience, and competitive landscape — not a generic template." },
-  { title: "Profile Optimization", desc: "Optimizing bio, description, profile photo, cover image, contact details, and links across Instagram, Facebook, and LinkedIn for maximum discoverability and trust." },
-  { title: "Content Planning & Calendar", desc: "Building a monthly content calendar with post types, themes, formats (reels, carousels, stories), and publishing cadence suited to each platform's algorithm." },
-  { title: "Instagram Marketing", desc: "Reel strategy, carousel creation, hashtag research, story engagement, highlight organization, and profile optimization for Instagram business and creator accounts." },
-  { title: "Facebook Marketing", desc: "Page optimization, post strategy, Facebook group engagement, audience targeting, and content types that drive reach and engagement for Facebook's current algorithm." },
-  { title: "LinkedIn Marketing", desc: "Professional brand building, thought leadership content, company page optimization, employee advocacy, and B2B lead generation through LinkedIn's network." },
-  { title: "Competitor Analysis", desc: "Analyzing competitor social media presence: content themes, posting frequency, engagement rates, follower growth, and the gaps and opportunities you can capitalize on." },
-  { title: "Organic Growth Strategy", desc: "Growing your following through authentic engagement, strategic hashtag use, collaboration outreach, and content that earns shares — without paid follower schemes." },
-  { title: "Social Media SEO", desc: "Optimizing social profiles, bios, and posts for searchability within platforms and in Google search — social profiles often rank highly for brand queries." },
-  { title: "Lead Generation via Social", desc: "Creating lead-generating content and calls-to-action that convert social media followers into website visitors, inquiry form completions, or WhatsApp conversations." },
+  { title: "Social Media Strategy", desc: "A tailored growth plan for your business goals and audience. No generic templates." },
+  { title: "Profile Optimization", desc: "Optimize your bio, links, and photos across Instagram, Facebook, and LinkedIn." },
+  { title: "Monthly Content Calendar", desc: "Plan monthly reels, carousels, and stories to keep your audience engaged." },
+  { title: "Instagram Marketing", desc: "Grow on Instagram with viral reels, helpful carousels, and smart hashtag use." },
+  { title: "Facebook Marketing", desc: "Build an active community on Facebook with engaging posts and group outreach." },
+  { title: "LinkedIn B2B Growth", desc: "Grow your personal brand and company page. Attract high-value business leads." },
+  { title: "Competitor Research", desc: "Analyze rival accounts to find what works best in your niche." },
+  { title: "Organic Follower Growth", desc: "Gain real followers through quality posts and genuine engagement. No fake bots." },
+  { title: "Social Search Optimization", desc: "Make your social profiles easy to find on Instagram, LinkedIn, and Google search." },
+  { title: "Lead Generation Calls-to-Action", desc: "Turn profile visitors into website clicks, WhatsApp chats, and paying clients." },
 ];
 
 const PLATFORMS = [
@@ -67,16 +67,13 @@ export default function SocialMediaMarketingPage() {
             Social Media Marketing Services
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Social media is where your audience discovers brands, evaluates credibility, and decides who to trust before
-            making a purchase decision. Rohit Gupta provides social media marketing strategy for Instagram, Facebook, and
-            LinkedIn — focused on organic growth, brand positioning, and converting social audiences into website visitors
-            and qualified leads.
+            Build a strong brand and grow your audience online. Rohit Gupta helps businesses stand out on Instagram, Facebook, and LinkedIn. We turn followers into website traffic, phone calls, and paying customers.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
               Discuss Social Strategy <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20social%20media%20marketing%20for%20my%20business" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
+            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20social%20media%20marketing%20for%20my%20business" target="_blank" rel="nofollow noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
               WhatsApp Now →
             </Link>
           </div>
@@ -145,7 +142,7 @@ export default function SocialMediaMarketingPage() {
             <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
               Get Social Media Strategy <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20social%20media%20marketing%20for%20my%20business" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
+            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20social%20media%20marketing%20for%20my%20business" target="_blank" rel="nofollow noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
               WhatsApp Now →
             </Link>
           </div>

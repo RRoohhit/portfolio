@@ -61,7 +61,7 @@ export default function SeoExpertNoidaPage() {
             SEO Expert in Noida — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Looking for a proven SEO specialist in Noida to outrank local competitors, dominate Google Maps, and drive targeted organic leads? Rohit Gupta provides full-funnel technical SEO, Google Business Profile optimization, on-page content strategy, and speed optimization for businesses across Noida and Greater Noida.
+            Rank higher in Noida with expert SEO. Rohit Gupta helps IT firms, clinics, and retail stores in Noida and Greater Noida get more leads from Google. We deliver local SEO, page speed fixes, and strong backlinks.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
@@ -80,7 +80,7 @@ export default function SeoExpertNoidaPage() {
             The Noida Search Competition Landscape
           </h2>
           <p className="text-sm text-white/75 leading-relaxed">
-            Noida is home to thousands of tech companies, IT parks, educational institutes, legal firms, healthcare clinics, and retail hubs. Ranking on Page 1 in Noida requires more than basic keywords — it requires code-level Technical SEO, precise schema markup, local citation authority, and active Google Business Profile management.
+            Noida has thousands of IT firms, clinics, and retail shops. Page 1 rankings here need more than basic keywords. You need clean code, local citations, and active Google Business Profile management.
           </p>
         </section>
 

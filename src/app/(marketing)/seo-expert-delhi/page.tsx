@@ -43,7 +43,7 @@ export default function SeoExpertDelhiPage() {
             SEO Expert in Delhi — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Delhi is one of the most competitive search markets in India. From corporate firms in Connaught Place to retail brands in South Delhi and B2B services in Janakpuri and Dwarka, Rohit Gupta delivers technical SEO, white hat link building, and conversion-focused digital marketing that drives top organic rankings.
+            Delhi is a busy search market. Rohit Gupta helps businesses in Connaught Place, South Delhi, and West Delhi rank on Google. We deliver technical SEO, local search growth, and fast web design.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Delhi SEO Specialist <ArrowRight className="w-4 h-4" />
@@ -55,26 +55,26 @@ export default function SeoExpertDelhiPage() {
             SEO &amp; Web Growth Solutions for Delhi Businesses
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Ranking #1 in Delhi requires technical SEO precision, Google Business Profile optimization, and authoritative backlink profiles.
+            Rank higher in Delhi with technical SEO, Google Maps optimization, and authoritative backlinks.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
                 title: "Delhi Local SEO & Google Map Pack",
-                desc: "Drive targeted local walk-ins and phone calls across Connaught Place, South Delhi, and West Delhi with optimized Google Business Profiles and local citations.",
+                desc: "Get more calls and store visits across Delhi. We optimize your Google Business Profile and local citations.",
               },
               {
                 title: "Technical Audits & Core Web Vitals",
-                desc: "Identify and resolve crawl errors, JavaScript rendering issues, slow LCP/CLS scores, and duplicate content to pass Google PageSpeed benchmarks.",
+                desc: "Fix crawl errors, slow page loads, and broken links. We help your site pass Google Core Web Vitals.",
               },
               {
-                title: "High-Intent Keyword & Intent Mapping",
-                desc: "Capture high-converting commercial searches in your industry. Align title tags, H1-H6 headers, and content depth with exact buyer intent.",
+                title: "High-Intent Keyword Mapping",
+                desc: "Target buyer search terms in your niche. We write titles and content that match what your customers search.",
               },
               {
                 title: "Custom Next.js & React Web Apps",
-                desc: "Build modern, mobile-responsive web applications featuring built-in Schema JSON-LD structured data and lightning-fast page load times.",
+                desc: "Build fast, mobile-friendly websites with clean code and built-in schema markup.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">

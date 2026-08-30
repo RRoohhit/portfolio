@@ -136,13 +136,13 @@ export default function RohitGuptaPage() {
           </h2>
           <div className="space-y-4 text-sm sm:text-base text-white/80 leading-relaxed font-light">
             <p>
-              I operate as a boutique <strong>White Hat SEO firm</strong> and freelance agency — offering everything from dedicated monthly SEO retainers to one-off technical audits. Companies across India, the UK, the UAE, and the US <strong>hire me as their dedicated SEO expert</strong> to own their entire organic search channel: crawlability, Core Web Vitals, entity schema, topical authority, and AI Overview citations.
+              I run a boutique <strong>White Hat SEO firm</strong> and freelance agency. Clients in India, the UK, the UAE, and the US <strong>hire me as their dedicated SEO expert</strong>. I own their full organic search channel — crawlability, Core Web Vitals, schema, content, and AI Overview citations.
             </p>
             <p>
-              On the development side, I engineer custom <strong>WordPress development company</strong>-grade solutions — Gutenberg block themes, WooCommerce stores, and Headless WordPress with Next.js — all achieving sub-second LCP scores (&lt;1.2s) on real-world Chrome UX Report data.
+              On the web development side, I build custom <strong>WordPress sites and WooCommerce stores</strong>. I also build Headless WordPress with Next.js. All sites load in under 1.2 seconds on real Chrome data.
             </p>
             <p>
-              <strong>Rohit Digital Marketing Services</strong> extend beyond SEO into high-ROI Google Ads PPC, conversion rate optimisation (CRO), AI search visibility (AEO/GEO), and multi-channel attribution modelling — giving clients a single point of accountability for all digital growth.
+              <strong>Rohit Digital Marketing Services</strong> also covers Google Ads PPC, conversion rate optimization (CRO), and AI search visibility (AEO/GEO). You get one point of contact for all digital growth.
             </p>
           </div>
         </section>
@@ -180,10 +180,10 @@ export default function RohitGuptaPage() {
           </h2>
           <div className="space-y-4 text-sm sm:text-base text-white/80 leading-relaxed font-light">
             <p>
-              My professional experience includes SEO, web development, website performance optimization, search strategy, keyword research, technical audits and digital marketing.
+              My experience covers SEO, web development, page speed optimization, keyword research, technical audits, and digital marketing.
             </p>
             <p>
-              For every project, I focus on understanding the business objective first and then developing a practical strategy around search visibility, technical performance, content, user experience and conversions.
+              For every project, I start with the business goal. Then I build a clear strategy around search visibility, site speed, content, and conversions.
             </p>
           </div>
         </section>
@@ -196,7 +196,7 @@ export default function RohitGuptaPage() {
           </h2>
           <div className="space-y-4 text-sm sm:text-base text-white/80 leading-relaxed font-light">
             <p>
-              I focus exclusively on ethical, White-Hat SEO tactics aligned with Google's official Search Essentials guidelines. I do not use private blog networks (PBNs), link buying schemes, or automated keyword-stuffed content — tactics that create temporary spikes followed by permanent algorithmic penalties.
+              I focus only on White-Hat SEO that follows Google&apos;s Search Essentials. I do not buy links, use private blog networks (PBNs), or stuff keywords. These shortcuts cause ranking drops and long-term penalties.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               {[
@@ -273,7 +273,7 @@ export default function RohitGuptaPage() {
             <a
               href={SOCIALS.linkedin}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-3d-dark text-xs font-mono font-bold"
             >
               <Linkedin className="w-4 h-4 text-blue-400" />
@@ -282,7 +282,7 @@ export default function RohitGuptaPage() {
             <a
               href={SOCIALS.instagram}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-3d-dark text-xs font-mono font-bold"
             >
               <Instagram className="w-4 h-4 text-pink-400" />
@@ -291,7 +291,7 @@ export default function RohitGuptaPage() {
             <a
               href={SOCIALS.github}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-3d-dark text-xs font-mono font-bold"
             >
               <Github className="w-4 h-4 text-white" />
@@ -300,7 +300,7 @@ export default function RohitGuptaPage() {
             <a
               href={SOCIALS.twitter}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-3d-dark text-xs font-mono font-bold"
             >
               <Twitter className="w-4 h-4 text-sky-400" />

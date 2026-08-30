@@ -10,9 +10,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "WordPress Development Company India | Custom Themes — Rohit Gupta",
+  title: "WordPress Development Company India | Rohit Gupta",
   description:
-    "WordPress Development in India by Rohit Gupta: custom Gutenberg themes, WooCommerce, sub-second Core Web Vitals, and Headless WordPress with Next.js.",
+    "WordPress development in India: custom Gutenberg themes, WooCommerce, Core Web Vitals speed, and Headless Next.js architecture.",
   path: "/services/wordpress-development/",
   keywords: [
     "wordpress development company",
@@ -32,7 +32,7 @@ const WORDPRESS_SOLUTIONS = [
   {
     icon: Layout,
     title: "Custom WordPress Theme & Gutenberg Block Development",
-    desc: "Lightweight, modular WordPress themes built from scratch without bloated page builders like Elementor or Divi, ensuring fast load times and clean HTML5 semantics.",
+    desc: "We build lightweight WordPress themes from scratch. No bloated page builders like Elementor or Divi. Clean HTML5, fast load times.",
     features: [
       "Custom Native Gutenberg Blocks",
       "Full Site Editing (FSE) Compatibility",
@@ -43,7 +43,7 @@ const WORDPRESS_SOLUTIONS = [
   {
     icon: ShoppingCart,
     title: "WooCommerce Development & Optimization",
-    desc: "High-converting online stores engineered for high transaction volume, seamless payment gateways (Razorpay, Stripe), product schema JSON-LD, and faceted filtering.",
+    desc: "Build a high-converting online store. We add Razorpay and Stripe, set up product schema, and make checkout blazing fast.",
     features: [
       "Custom WooCommerce Checkout Flows",
       "Product & Category Schema Markup",
@@ -54,7 +54,7 @@ const WORDPRESS_SOLUTIONS = [
   {
     icon: Gauge,
     title: "WordPress Core Web Vitals & Speed Optimization",
-    desc: "Transform slow, sluggish WordPress sites into blazing-fast machines with 95+ PageSpeed scores, LCP < 1.2s, INP < 50ms, and Redis object caching.",
+    desc: "Turn your slow WordPress site into a 95+ PageSpeed machine. We target LCP < 1.2s, INP < 50ms, and fast server response.",
     features: [
       "Redis / Memcached Object Caching",
       "Next-Gen AVIF / WebP Image Delivery",
@@ -65,7 +65,7 @@ const WORDPRESS_SOLUTIONS = [
   {
     icon: Layers,
     title: "Headless WordPress with Next.js & React",
-    desc: "The ultimate modern architecture: use WordPress as a headless content management backend paired with a blazingly fast Next.js 15 SSR frontend.",
+    desc: "Use WordPress as your CMS backend and Next.js 15 as your frontend. You get fast page loads, great SEO, and easy content editing.",
     features: [
       "WPGraphQL / REST API Integration",
       "Next.js App Router & Server Components",
@@ -76,7 +76,7 @@ const WORDPRESS_SOLUTIONS = [
   {
     icon: ShieldCheck,
     title: "WordPress Security Hardening & Malware Cleanup",
-    desc: "Enterprise-grade security protocols, database sanitization, Cloudflare WAF integration, brute force protection, and emergency compromised site recovery.",
+    desc: "We protect your site with Cloudflare WAF, strong admin rules, and automated daily backups. Fast cleanup if your site is hacked.",
     features: [
       "Database Prefix & Vulnerability Audits",
       "Automated Daily Off-Site Backups",
@@ -87,7 +87,7 @@ const WORDPRESS_SOLUTIONS = [
   {
     icon: RefreshCw,
     title: "WordPress Migration & SEO Equity Preservation",
-    desc: "Migrate legacy websites, Shopify stores, or Drupal portals to custom WordPress (or WordPress to Next.js) with 100% 301 URL redirect preservation.",
+    desc: "We move your site to WordPress or Next.js with full 301 redirects. No ranking drops. No broken pages.",
     features: [
       "Zero Ranking Drop Guarantee",
       "Automated 301 Redirect Mapping",
@@ -99,29 +99,29 @@ const WORDPRESS_SOLUTIONS = [
 
 const WP_FAQS = [
   {
-    question: "Why should I choose Rohit Gupta over a traditional WordPress development company?",
+    question: "Why choose Rohit Gupta over a WordPress development company?",
     answer:
-      "Unlike traditional agencies that use heavy pre-made themes and install dozens of conflicting plugins, I build lean, custom-engineered WordPress architectures paired with deep Technical SEO expertise. You get bespoke code, 95+ Lighthouse scores, sub-second load times, and direct communication with a senior developer.",
+      "I build lean, custom WordPress sites with no heavy plugins or bloated themes. You get fast load times, clean code, and direct access to a senior developer who also understands technical SEO.",
   },
   {
     question: "Can you fix the Core Web Vitals and slow speed of my current WordPress site?",
     answer:
-      "Yes. Most WordPress sites suffer from unoptimized images, render-blocking scripts, heavy page builders, and unindexed database queries. I audit and refactor your codebase, implement server-level caching, optimize assets, and bring your site into the green zone for LCP, INP, and CLS.",
+      "Yes. Most slow WordPress sites have unoptimized images, heavy plugins, and render-blocking scripts. I audit your site, set up server caching, and fix the root causes to hit green scores for LCP, INP, and CLS.",
   },
   {
-    question: "Do you develop custom WooCommerce stores for Indian and international clients?",
+    question: "Do you build custom WooCommerce stores for Indian and international clients?",
     answer:
-      "Yes. I develop custom WooCommerce solutions with customized checkout experiences, native payment gateways (Razorpay, Paytm, Stripe, PayPal), logistics integrations, and Product JSON-LD schema to rank in Google Shopping rich results.",
+      "Yes. I build WooCommerce stores with custom checkouts, Razorpay, Paytm, Stripe, and PayPal. I also add Product schema so your items appear in Google Shopping results.",
   },
   {
     question: "What is Headless WordPress and is it right for my business?",
     answer:
-      "Headless WordPress decouples your editorial backend (WordPress) from your public frontend (Next.js/React). It offers enterprise-grade security, instant sub-second page transitions, and perfect Lighthouse SEO scores while allowing your marketing team to continue using the familiar WordPress editing interface.",
+      "Headless WordPress uses WordPress as your content editor but serves pages via Next.js. This gives you faster page loads, better security, and higher SEO scores while keeping your team on the WordPress dashboard they already know.",
   },
   {
-    question: "How do you ensure our SEO rankings are protected during a WordPress redesign?",
+    question: "How do you protect SEO rankings during a WordPress redesign?",
     answer:
-      "I execute a rigorous pre-and-post migration protocol: complete URL mapping, automated 1-to-1 301 redirects, title/meta tag preservation, canonical validation, and Search Console crawl monitoring to ensure zero traffic loss.",
+      "I run a full URL mapping before and after migration. I set up 301 redirects, preserve meta tags, and monitor Search Console for crawl errors after launch. This protects your organic traffic.",
   },
 ];
 
@@ -160,7 +160,7 @@ export default function WordPressDevelopmentPage() {
               <span className="text-blue-400">Fast, Custom &amp; SEO-First</span>
             </h1>
             <p className="text-base sm:text-lg text-white/85 leading-relaxed max-w-3xl font-light">
-              Looking for an expert <strong>WordPress development company</strong> or dedicated consultant in India? Rohit Gupta builds lightning-fast, custom Gutenberg WordPress websites and WooCommerce stores engineered for top Google search rankings, military-grade security, and 99/100 Core Web Vitals.
+              Need a fast, custom WordPress website? Rohit Gupta builds <strong>WordPress sites and WooCommerce stores</strong> in India that load fast, rank well on Google, and stay secure. No bloated themes or page builders.
             </p>
           </div>
 
@@ -176,7 +176,7 @@ export default function WordPressDevelopmentPage() {
             <a
               href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I would like to discuss a custom WordPress development project.")}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-3d-dark text-xs font-mono font-bold py-3.5 px-5 flex items-center gap-2 text-emerald-400"
             >
               <MessageSquare className="w-4 h-4" />

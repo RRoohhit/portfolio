@@ -5,9 +5,9 @@ import { breadcrumbGraph, faqGraph, renderJsonLd } from "@/lib/jsonld";
 import { FAQ_DATA } from "@/data/faqData";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Rohit Gupta — SEO Expert India | Rank #1 on Google Pan India",
+  title: "Rohit Gupta — SEO Expert India | Rank #1 on Google",
   description:
-    "Hire Rohit Gupta, SEO expert in India (Mumbai, Delhi, Bengaluru, Hyderabad, Chennai, Pune & 100+ cities) and worldwide. White hat SEO, WordPress & local SEO.",
+    "Hire Rohit Gupta: SEO expert in India for #1 Google rankings, technical audits, WordPress development & local SEO across India and globally.",
   path: "/",
   keywords: [
     "Rohit Gupta",

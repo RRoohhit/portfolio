@@ -110,7 +110,7 @@ export default function GoogleBusinessProfileSeoPage() {
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Your GBP is often the first thing people see before they ever visit your website. When it is strong, it can drive calls, directions, website visits, and local trust from customers ready to buy. We optimize your profile so it looks more relevant, more reliable, and more likely to win the local map pack.
+            Your Google profile is what local buyers see first. A strong profile brings phone calls, store visits, and local trust. We optimize your profile to rank in the Google Maps 3-Pack.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">
@@ -121,7 +121,7 @@ export default function GoogleBusinessProfileSeoPage() {
             <a
               href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I want to improve my Google Business Profile and local visibility.")}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
             >
               <MessageSquare className="w-4 h-4 text-emerald-400" />

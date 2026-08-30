@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const technicalSeoAudit2026: BlogPost = {
   id: "blog-7",
-  title: "Technical SEO Audit Checklist 2026: Step-by-Step Guide",
+  title: "Technical SEO Audit Checklist 2026: Full Guide",
   slug: "technical-seo-audit-checklist-guide-2026",
   excerpt:
     "2026 technical SEO audit: crawlability, indexation, Core Web Vitals, structured data, site architecture, and AI search readiness — with fix priorities.",

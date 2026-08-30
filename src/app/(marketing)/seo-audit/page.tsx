@@ -26,32 +26,32 @@ const AUDIT_PILLARS = [
   {
     title: "Technical SEO Audit",
     icon: Zap,
-    desc: "Crawlability, indexation status, robots.txt, XML sitemap validation, canonical tags, broken link detection, 301 redirect chains, and JavaScript rendering bottlenecks.",
+    desc: "We check indexing status, sitemaps, robots.txt, broken links, 301 redirects, and page rendering.",
   },
   {
     title: "Core Web Vitals & Speed",
     icon: BarChart3,
-    desc: "LCP (Largest Contentful Paint), INP (Interaction to Next Paint), CLS (Cumulative Layout Shift), TTFB, image compression, script blocking, and cache optimization.",
+    desc: "We test your LCP, INP, and CLS scores. We help you fix render-blocking code and slow images.",
   },
   {
-    title: "On-Page & Keyword Analysis",
+    title: "On-Page & Keyword Review",
     icon: FileText,
-    desc: "Title tag & meta description review, H1-H6 heading hierarchy, search intent alignment, target keyword optimization, and content cannibalization checks.",
+    desc: "We review titles, meta tags, and H1 headings. We make sure your content matches search intent.",
   },
   {
-    title: "Local & GBP Audit",
+    title: "Local & Google Map Pack",
     icon: MapPin,
-    desc: "Google Business Profile optimization status, NAP consistency across citations, local 3-pack rankings, review signals, and localized content readiness.",
+    desc: "We audit your Google Business Profile, local citations, reviews, and Google Maps 3-Pack rank.",
   },
   {
-    title: "Backlink & Authority Review",
+    title: "Backlink & Domain Authority",
     icon: ShieldCheck,
-    desc: "Backlink profile health, domain authority signals, toxic link identification, anchor text diversity, and competitor link gap analysis.",
+    desc: "We check your link health, spot spam links, and find top link opportunities your rivals use.",
   },
   {
-    title: "Structured Data / Schema",
+    title: "Schema Markup & Rich Snippets",
     icon: Globe,
-    desc: "JSON-LD schema validation (Organization, Person, LocalBusiness, Article, Product, FAQPage) for rich snippet eligibility in Google Search.",
+    desc: "We test your JSON-LD structured data. This wins star ratings and rich results on Google.",
   },
 ];
 
@@ -81,14 +81,14 @@ export default function SeoAuditPage() {
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Discover what is blocking your website from ranking higher on Google. Rohit Gupta provides actionable, data-backed SEO audits covering technical infrastructure, Core Web Vitals, on-page optimization, content relevance, local search visibility, and backlink health.
+            Find out what is holding your site back on Google. Rohit Gupta delivers a practical SEO audit covering page speed, on-page keywords, technical fixes, and backlink health.
           </p>
 
           <div className="flex flex-wrap justify-center sm:justify-start gap-4 pt-2">
             <a
               href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I would like to request a Free SEO Audit for my website.")}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/20"
             >
               <MessageSquare className="w-4 h-4" />

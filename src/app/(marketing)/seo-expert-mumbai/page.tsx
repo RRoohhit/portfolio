@@ -44,37 +44,38 @@ export default function SeoExpertMumbaiPage() {
             SEO Expert in Mumbai — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Mumbai is India&apos;s most competitive search market — and its highest-value one. From D2C brands in Andheri to B2B firms in BKC and retailers in Lower Parel, Rohit Gupta delivers technical SEO, white hat link building, Core Web Vitals engineering and conversion-focused digital marketing that helps Mumbai businesses rank #1 on Google. And because he works remotely across India and internationally, you get the same senior specialist — whether you&apos;re in Mumbai or overseas.
+            Mumbai is India&apos;s top search market. Rohit Gupta helps D2C brands in Andheri, B2B firms in BKC, and retailers in Bandra rank #1 on Google. We deliver technical SEO, fast page speed, and strong local search results.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Mumbai SEO Specialist <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
-<section className="space-y-4">
+
+        <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
             SEO &amp; Web Growth Solutions for Mumbai Businesses
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Ranking #1 in Mumbai requires technical SEO precision, authoritative backlinks and content that matches the city&apos;s fast-moving buyer intent.
+            Rank higher in Mumbai with technical SEO, local search, and content that matches what your buyers want.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
-                title: "Mumbai Local SEO & Google Map Pack",
-                desc: "Dominate Google Maps 3-Pack for Mumbai searches — optimized Google Business Profiles, local citations and 'near me' visibility across Andheri, Bandra, BKC, Powai and Navi Mumbai.",
+                title: "Mumbai Local SEO & Map Pack",
+                desc: "Rank in Google Maps across Andheri, BKC, and Bandra. We boost your Google Business Profile and local reviews.",
               },
               {
-                title: "eCommerce SEO for Mumbai D2C & Retail",
-                desc: "Scale your online store with product schema, category optimization, faceted navigation fixes and sub-second Core Web Vitals — built for shoppers who compare fast.",
+                title: "eCommerce SEO for D2C & Retail",
+                desc: "Grow your online store with fast pages, product schema, and category SEO that converts shoppers.",
               },
               {
                 title: "Technical Audits & Core Web Vitals",
-                desc: "Identify and resolve crawl errors, JavaScript rendering issues, slow LCP/INP scores and duplicate content so your Mumbai pages pass Google PageSpeed benchmarks.",
+                desc: "Fix crawl issues and slow page load times. We help your site pass all Google speed benchmarks.",
               },
               {
-                title: "High-Intent Content & AEO / AI Search",
-                desc: "Win featured snippets and AI Overview citations with keyword-clustered content, FAQ schema and entity signals — future-proofing your Mumbai brand for AI search.",
+                title: "AI Search & Featured Snippets",
+                desc: "Win Google AI Overviews and featured snippets. We write crisp answers that get quoted by AI tools.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">

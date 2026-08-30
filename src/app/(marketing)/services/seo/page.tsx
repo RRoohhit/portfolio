@@ -20,9 +20,9 @@ import {
 import { CONTACT } from "@/config/site";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Hire SEO Expert India — Professional SEO Services | Rohit Gupta",
+  title: "Hire SEO Expert India | SEO Services — Rohit Gupta",
   description:
-    "Hire a dedicated SEO expert or team with Rohit Gupta: Technical SEO, White Hat SEO Firm, On-Page, Local SEO in Noida, E-Commerce SEO, and AI Search Optimization.",
+    "Hire a dedicated SEO expert or team: Technical SEO, White Hat SEO, On-Page, Local SEO in Noida, E-Commerce & AI Search Optimization.",
   path: "/services/seo/",
   keywords: [
     "hire seo expert india",

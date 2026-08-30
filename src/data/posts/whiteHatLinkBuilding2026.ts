@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const whiteHatLinkBuilding2026: BlogPost = {
   id: "blog-9",
-  title: "White Hat Link Building 2026: Backlink Strategies That Rank",
+  title: "White Hat Link Building Guide 2026: Backlinks",
   slug: "white-hat-link-building-backlinks-guide-2026",
   excerpt:
     "White hat link building 2026: what makes backlinks valuable, guest posting, digital PR, broken link building, original data, and AI-era authority building.",

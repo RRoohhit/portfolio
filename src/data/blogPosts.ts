@@ -19,7 +19,7 @@ import { rank1GoogleSystem2026 } from "./posts/rank1GoogleSystem2026";
 export const BLOG_POSTS: BlogPost[] = [
   {
     id: "blog-1",
-    title: "Core Web Vitals Guide: React & Next.js Optimization 2026",
+    title: "Core Web Vitals Guide: React & Next.js (2026)",
     slug: "core-web-vitals-react-nextjs",
     excerpt:
       "Learn how to achieve 100/100 Lighthouse scores by fixing LCP, INP, and CLS using SSR, Next Image, and dynamic script deferral.",
@@ -179,7 +179,7 @@ Speed is one layer of the complete ranking system. Continue with the related gui
   },
   {
     id: "blog-2",
-    title: "White Hat vs. Black Hat SEO: Sustainable Rankings in 2026",
+    title: "White Hat vs Black Hat SEO: 2026 Rankings Guide",
     slug: "white-hat-vs-black-hat-seo",
     excerpt:
       "Why short-term Black Hat shortcuts fail Google SpamBrain AI algorithms, and how ethical White Hat technical strategies build long-term domain authority.",
@@ -332,7 +332,7 @@ White hat strategy depends on the execution layers around it. Continue with thes
   },
   {
     id: "blog-3",
-    title: "JSON-LD Schema Markup Guide: Get Rich Snippets Fast",
+    title: "JSON-LD Schema Markup Guide for Rich Snippets 2026",
     slug: "json-ld-schema-markup-guide",
     excerpt:
       "A step-by-step tutorial on generating dynamic Schema.org JSON-LD structured data for Google Search and AI Overviews.",
@@ -654,7 +654,7 @@ Before you hire, understand the work the right specialist will run. Continue wit
   },
   {
     id: "blog-5",
-    title: "SEO & Web Dev Guide 2026: On-Page, Backlinks & Next.js",
+    title: "SEO & Web Development Guide: Backlinks & Next.js",
     slug: "seo-and-web-development-complete-guide-2026",
     excerpt:
       "End-to-end guide: on-page SEO, backlinks, white hat SEO, MERN stack, Next.js vs React, WordPress & Shopify — rank #1 on Google and AI search.",

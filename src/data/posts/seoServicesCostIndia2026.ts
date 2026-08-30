@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const seoServicesCostIndia2026: BlogPost = {
   id: "blog-11",
-  title: "SEO Services Cost in India 2026: Complete Pricing Guide",
+  title: "SEO Services Cost in India: 2026 Pricing Guide",
   slug: "seo-services-cost-price-india-2026",
   excerpt:
     "2026 SEO pricing in India: monthly retainers, freelance vs agency rates, packages, hidden costs, and how to avoid overpaying at every budget level.",

@@ -24,18 +24,18 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const WHATS_INCLUDED = [
-  { title: "Shopify SEO", desc: "Full Shopify store optimization: theme performance, canonical tags, collection page structure, app impact on Core Web Vitals, and JSON-LD product schema." },
-  { title: "WooCommerce SEO", desc: "WordPress/WooCommerce-specific optimization: Yoast/RankMath configuration, product taxonomy structure, category hierarchy, and plugin performance impact." },
-  { title: "Product Page Optimization", desc: "Keyword research for product-level queries, optimized title tags, rich product descriptions, alt-text for product images, unique content for each product." },
-  { title: "Category Page Optimization", desc: "Category pages are your highest-traffic, highest-value e-commerce pages. We optimize headings, filters, content introductions, and internal link structure for maximum organic reach." },
-  { title: "Product Schema & Rich Snippets", desc: "Implementing valid Product, Offer, and AggregateRating structured data so your products appear with price, availability, and review stars directly in search results." },
-  { title: "Faceted Navigation & Filter Management", desc: "Preventing crawl budget waste and duplicate content from filter/facet URLs using noindex, canonical, or parameter handling — one of the most common e-commerce SEO issues." },
-  { title: "Duplicate Product URL Resolution", desc: "Identifying and fixing duplicate content from multiple URL paths pointing to the same product (e.g., /product/name vs /category/product/name) using canonical tags and URL structure review." },
-  { title: "Pagination Handling", desc: "Correct implementation of paginated collection pages using proper canonical tags to ensure PageRank flows correctly and deep pages are indexed." },
-  { title: "Internal Linking for E-Commerce", desc: "Building internal link pathways from blog content to product/category pages, from category to product, and from the homepage to priority collections." },
-  { title: "E-Commerce Keyword Research", desc: "Mapping buyer-intent keywords (product keywords, comparison keywords, best-of keywords) to the right product and category pages for maximum conversion potential." },
-  { title: "Merchant / Feed SEO", desc: "Optimizing product data feeds for Google Merchant Center to improve Shopping ad quality and organic shopping visibility." },
-  { title: "Conversion Optimization", desc: "Analyzing product page UX, trust signals (reviews, badges, security), and CTA placement to improve add-to-cart and checkout conversion rates alongside ranking improvements." },
+  { title: "Shopify SEO", desc: "Optimize your Shopify store. We speed up themes, fix tags, and set up Product schema." },
+  { title: "WooCommerce SEO", desc: "Tune your WordPress shop. We set up categories, clean tags, and speed up plugins." },
+  { title: "Product Page SEO", desc: "Find buyer keywords for every item. We write crisp titles, tags, and product copy." },
+  { title: "Category Page SEO", desc: "Boost your main collection pages. We add clear text, filters, and smart links." },
+  { title: "Product Schema Markup", desc: "Show review stars, prices, and stock status directly in Google search results." },
+  { title: "Filter & URL Management", desc: "Stop duplicate pages from product filters. We help Google crawl your top pages fast." },
+  { title: "Duplicate URL Fixes", desc: "Clean up duplicate links. We use canonical tags so the right product page ranks." },
+  { title: "Collection Page Setup", desc: "Set up clean product page lists. This helps buyers and search bots find items easily." },
+  { title: "Internal Link Building", desc: "Link blog posts to top products. We guide shoppers directly to your best items." },
+  { title: "Buyer Keyword Research", desc: "Target words people use when ready to buy. We turn organic traffic into sales." },
+  { title: "Google Merchant Feed SEO", desc: "Optimize your product data feed. We boost your free Google Shopping clicks." },
+  { title: "Conversion Optimization", desc: "Improve trust signals and buy buttons. We help you turn more visitors into buyers." },
 ];
 
 const PLATFORMS = [
@@ -47,11 +47,11 @@ const PLATFORMS = [
 ];
 
 const PROCESS_STEPS = [
-  { step: "01", title: "E-Commerce SEO Audit", desc: "Technical audit specific to e-commerce: crawl budget, faceted navigation, duplicate products, schema, category structure, and Core Web Vitals." },
-  { step: "02", title: "Keyword & Intent Mapping", desc: "Map buyer-intent keywords to each product and category page, identifying gaps where products exist but pages are missing or under-optimized." },
-  { step: "03", title: "On-Page & Schema Implementation", desc: "Optimize product titles, descriptions, H1s, schema markup, and internal links — starting with highest-traffic / highest-revenue pages first." },
-  { step: "04", title: "Technical Fixes", desc: "Resolve faceted navigation issues, canonical conflicts, pagination problems, and Core Web Vitals issues that slow down the store and hurt crawl efficiency." },
-  { step: "05", title: "Track & Scale", desc: "Monitor organic revenue, product impressions, and category rankings in Google Search Console and scale what is working." },
+  { step: "01", title: "E-Commerce Store Audit", desc: "We review your site speed, product schema, filters, and indexing health." },
+  { step: "02", title: "Buyer Keyword Mapping", desc: "We map high-intent search terms to each product and category page." },
+  { step: "03", title: "On-Page Optimization", desc: "We write clean titles, meta tags, and structured data for top products." },
+  { step: "04", title: "Technical Speed Fixes", desc: "We speed up page load times and fix filter URLs for better crawl rates." },
+  { step: "05", title: "Track Sales Growth", desc: "We track your clicks, keyword ranks, and sales growth in Search Console." },
 ];
 
 export default function EcommerceSeoPage() {
@@ -78,16 +78,13 @@ export default function EcommerceSeoPage() {
             E-Commerce SEO Services by Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            E-commerce stores face unique SEO challenges: thousands of product pages, faceted navigation creating duplicate
-            content, crawl budget waste, and fierce competition for buyer-intent keywords. Rohit Gupta provides
-            e-commerce-specific SEO covering Shopify, WooCommerce, and custom-built stores — focused on driving
-            organic revenue through product visibility, category dominance, and conversion optimization.
+            Sell more products through Google organic search. Rohit Gupta helps online stores rank for high-intent buyer keywords. We optimize Shopify, WooCommerce, and custom stores to drive more clicks, sales, and revenue.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
               Get E-Commerce SEO Audit <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20e-commerce%20SEO%20for%20my%20store" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
+            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20e-commerce%20SEO%20for%20my%20store" target="_blank" rel="nofollow noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
               WhatsApp Now →
             </Link>
           </div>

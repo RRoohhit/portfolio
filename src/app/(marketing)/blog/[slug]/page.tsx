@@ -29,8 +29,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 
   const url = new URL(`/blog/${post.slug}/`, SITE_URL).href;
   return {
-    title: `${post.title} | Rohit Gupta SEO`,
-    description: post.excerpt.slice(0, 148),
+    title: post.title,
+    description: post.excerpt.slice(0, 140),
     alternates: { canonical: url },
     robots: { index: true, follow: true },
     category: post.category,

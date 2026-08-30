@@ -43,37 +43,38 @@ export default function SeoExpertBangalorePage() {
             SEO Expert in Bangalore — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Bengaluru is India&apos;s startup and SaaS capital — and its search landscape demands a technical-first SEO specialist. Rohit Gupta works with Bengaluru SaaS companies, fintech platforms and developer-focused brands across HSR Layout, Koramangala, Indiranagar and Whitefield to rank #1 on Google with Core Web Vitals engineering, programmatic SEO, content clusters and AI search (AEO) optimization. Remote-friendly, pan-India and international — the same senior expert, wherever your team sits.
+            Bengaluru is India&apos;s startup and SaaS capital. Rohit Gupta helps SaaS companies and tech startups in Koramangala, Indiranagar, and HSR Layout rank #1 on Google. We deliver fast site speed, clean code, and AI search optimization.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Bangalore SEO Specialist <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
-<section className="space-y-4">
+
+        <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
             SaaS &amp; Tech SEO Solutions for Bengaluru Brands
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Tech buyers search differently. Win them with technical depth, sub-second speed and content that answers developer and decision-maker questions.
+            Tech buyers search with high intent. We help you win top rankings with fast pages and clear content.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
                 title: "SaaS & B2B Keyword Strategy",
-                desc: "Map buyer-intent keywords across awareness-to-decision, build topical authority clusters and capture comparison-stage queries your Bengaluru competitors ignore.",
+                desc: "Target high-intent search terms for your SaaS product. We find terms your competitors miss.",
               },
               {
-                title: "Core Web Vitals & Speed Engineering",
-                desc: "Engineer LCP under 1.2s, INP under 100ms and CLS at zero — the technical edge that converts crawler budget into rankings for Bengaluru's fast-moving market.",
+                title: "Core Web Vitals & Speed",
+                desc: "Get sub-second page speed. We tune your site so it passes all Google speed tests.",
               },
               {
-                title: "Programmatic SEO & Documentation Pages",
-                desc: "Scale rankings with programmatic resource pages, API docs SEO and structured data — ideal for developer-first products headquartered in Bengaluru.",
+                title: "Documentation & Resource Pages",
+                desc: "Rank your API docs, help centers, and guide pages with clean code and structured data.",
               },
               {
-                title: "AI Search (AEO) & Entity Optimization",
-                desc: "Get cited by ChatGPT, Perplexity and Google AI Overviews with llms.txt, entity schema and verbatim answers — a massive edge for Bengaluru's tech audience.",
+                title: "AI Search (AEO) Optimization",
+                desc: "Get cited by ChatGPT, Perplexity, and Google AI Overviews. We format answers so AI tools quote you.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">

@@ -6,9 +6,9 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { MapPin, CheckCircle2, ArrowRight, Globe2, ShoppingBag } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "SEO Expert in Chennai | Rohit Gupta — Local & eCommerce SEO",
+  title: "SEO Expert in Chennai | Rohit Gupta",
   description:
-    "Hire Rohit Gupta — SEO expert in Chennai. Local SEO, eCommerce SEO, technical audits & Google Maps dominance for Chennai businesses. Pan India remote.",
+    "SEO expert in Chennai: Local SEO, eCommerce SEO, technical audits & Google Maps rankings for Chennai and Tamil Nadu businesses.",
   path: "/seo-expert-chennai/",
   keywords: [
     "SEO Expert in Chennai",
@@ -43,37 +43,38 @@ export default function SeoExpertChennaiPage() {
             SEO Expert in Chennai — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            From T Nagar retailers to businesses on OMR and ECR, Chennai&apos;s diverse commercial landscape needs SEO that understands both local discovery and online scale. Rohit Gupta helps Chennai brands dominate Google Maps, rank for local and national keywords, and convert traffic through white hat link building and high-performance web development — served pan-India and remotely worldwide.
+            Grow your business in Chennai with expert SEO. Rohit Gupta helps retail shops and tech firms in T Nagar, Anna Nagar, and OMR rank #1 on Google. We deliver local map rankings, online store growth, and fast web design.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Chennai SEO Specialist <ArrowRight className="w-4 h-4" />
           </Link>
         </header>
-<section className="space-y-4">
+
+        <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
             SEO &amp; Growth Solutions for Chennai Businesses
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Chennai shoppers and B2B buyers research before they buy — win them with a fast, trustworthy, well-ranked web presence.
+            Chennai buyers search before they buy. Win more local clicks with a fast and trusted website.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
-                title: "Chennai Local SEO & Google Map Pack",
-                desc: "Dominate Google Maps 3-Pack across T Nagar, Adyar, Velachery, Anna Nagar and OMR — optimized GBP, local citations and review velocity systems.",
+                title: "Chennai Local SEO & Map Pack",
+                desc: "Rank in the Google Maps 3-Pack across T Nagar, Adyar, and Anna Nagar. We boost your local calls and reviews.",
               },
               {
-                title: "eCommerce & Retail SEO",
-                desc: "Scale online stores with product schema, category optimization, faceted navigation fixes and high-conversion landing pages for Chennai's retail brands.",
+                title: "eCommerce & Store SEO",
+                desc: "Grow your online store sales. We optimize product titles, categories, and review schema tags.",
               },
               {
-                title: "Technical SEO & Core Web Vitals",
-                desc: "Crawl audit, indexation fixes, LCP/INP engineering and structured data — the technical foundation every Chennai ranking depends on.",
+                title: "Technical SEO & Speed",
+                desc: "Fix slow load times and indexing bugs. We make sure your site loads in under 1 second.",
               },
               {
-                title: "White Hat Link Building & Digital PR",
-                desc: "Earn authoritative editorial links from Indian media and industry sites that compound Chennai brand authority over time.",
+                title: "White Hat Backlink Outreach",
+                desc: "Earn high-quality links from trusted blogs and news sites. We build lasting domain authority.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">

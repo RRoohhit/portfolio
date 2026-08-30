@@ -97,7 +97,7 @@ export const Footer: React.FC = () => {
               <a
                 href={`${CONTACT.whatsapp}?text=${encodeURIComponent(CONTACT.whatsappText)}`}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="btn-3d-dark text-xs font-mono font-bold inline-flex items-center gap-2"
               >
                 <MessageSquare className="w-4 h-4 text-emerald-400" />
@@ -150,7 +150,7 @@ export const Footer: React.FC = () => {
               <a
                 href={CONTACT.googleMaps}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 title="View Rohit Gupta Location on Google Maps"
                 className="flex items-start gap-2.5 p-2.5 rounded-xl bg-zinc-950 border border-white/10 hover:border-emerald-500/40 text-zinc-300 hover:text-emerald-400 transition-all group"
               >
@@ -172,7 +172,7 @@ export const Footer: React.FC = () => {
                 <a
                   href={CONTACT.whatsapp}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                   aria-label="WhatsApp"
                   title="WhatsApp Rohit Gupta"
                   className="icon-btn-3d w-9 h-9 text-emerald-400 hover:text-black hover:bg-emerald-400 transition-all"
@@ -182,7 +182,7 @@ export const Footer: React.FC = () => {
                 <a
                   href={SOCIALS.linkedin}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                   aria-label="LinkedIn"
                   title="LinkedIn — Rohit Gupta"
                   className="icon-btn-3d w-9 h-9 text-sky-400 hover:text-black hover:bg-sky-400 transition-all"
@@ -192,7 +192,7 @@ export const Footer: React.FC = () => {
                 <a
                   href={SOCIALS.instagram}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                   aria-label="Instagram"
                   title="Instagram — Rohit Gupta SEO"
                   className="icon-btn-3d w-9 h-9 text-pink-400 hover:text-black hover:bg-pink-400 transition-all"

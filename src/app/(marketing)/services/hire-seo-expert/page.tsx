@@ -11,9 +11,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Hire SEO Expert India | Dedicated SEO Specialist — Rohit Gupta",
+  title: "Hire SEO Expert India | Dedicated SEO Specialist",
   description:
-    "Hire SEO Expert India: dedicated specialist and team for #1 Google rankings, 99/100 Core Web Vitals, and 100% White Hat growth — Rohit Gupta.",
+    "Hire a dedicated SEO expert in India for #1 Google rankings, Core Web Vitals speed, and 100% white hat organic search growth.",
   path: "/services/hire-seo-expert/",
   keywords: [
     "hire seo expert india",
@@ -39,7 +39,7 @@ const ENGAGEMENT_MODELS = [
   {
     title: "Dedicated SEO Specialist (Full-Time / Part-Time)",
     tag: "Most Popular for Growing Brands",
-    desc: "Hire Rohit Gupta as your dedicated SEO specialist. Direct communication, daily execution across technical audits, on-page optimization, keyword architecture, and content roadmaps.",
+    desc: "Work directly with Rohit Gupta. Get daily SEO execution — technical fixes, keyword strategy, and on-page optimization — with no agency middlemen.",
     deliverables: [
       "100% dedicated focus on your domain(s)",
       "Daily/Weekly sprint updates via Slack or WhatsApp",
@@ -52,7 +52,7 @@ const ENGAGEMENT_MODELS = [
   {
     title: "Hire Dedicated SEO Expert Team",
     tag: "For E-Commerce & Enterprise Scale",
-    desc: "Deploy a full-stack SEO powerhouse managed by Rohit Gupta. Includes technical SEO engineering, high-authority White Hat link building, content writers, and React/Next.js developers.",
+    desc: "Get a full SEO team led by Rohit Gupta. We cover technical SEO, White Hat link building, content writing, and React/Next.js development.",
     deliverables: [
       "Multi-disciplinary execution (Tech + Content + Links)",
       "Large-scale programmatic SEO & faceted navigation fixes",
@@ -65,7 +65,7 @@ const ENGAGEMENT_MODELS = [
   {
     title: "SEO Advisory & Technical Audit Retainer",
     tag: "For In-House Marketing Teams",
-    desc: "Strategic guidance and technical leadership for founders, CTOs, and marketing heads who already have content creators but need senior SEO direction.",
+    desc: "Senior SEO guidance for founders and marketing teams. Great if you have content writers but need a specialist to set strategy and fix technical issues.",
     deliverables: [
       "Deep crawl audits (Screaming Frog, GSC, Semrush)",
       "Custom JSON-LD schema engineering & architecture",
@@ -135,34 +135,34 @@ const VETTING_CHECKLIST = [
 
 const HIRE_FAQS = [
   {
-    question: "Why should I hire an SEO expert in India instead of a local agency in the US/UK?",
+    question: "Why hire an SEO expert in India instead of a US/UK agency?",
     answer:
-      "Hiring an SEO expert in India like Rohit Gupta delivers senior-level technical expertise, 100% white-hat methodologies, and rapid agile execution at a fraction of Western agency retainers (saving 60% to 75% in overhead). You receive direct 1-on-1 collaboration with a specialized developer-SEO hybrid rather than being passed off to junior account executives.",
+      "An SEO expert in India like Rohit Gupta gives you senior-level skill at 60–75% lower cost than a Western agency. You work directly with a developer-SEO specialist — not a junior account manager.",
   },
   {
-    question: "What is the difference between hiring a freelancer vs a dedicated SEO expert team?",
+    question: "What is the difference between a freelancer and a dedicated SEO team?",
     answer:
-      "A dedicated SEO specialist provides hands-on, high-focus optimization for small to mid-sized businesses, handling technical audits, on-page optimization, and keyword strategy directly. An SEO expert team is ideal for enterprise and high-SKU e-commerce stores requiring simultaneous mass content production, large-scale digital PR, and custom web engineering.",
+      "A dedicated SEO specialist is ideal for small to mid-sized businesses. They handle audits, on-page fixes, and keyword strategy directly. An SEO team is better for large e-commerce stores that need content, links, and web development at scale.",
   },
   {
-    question: "How quickly will my website rank on Google after hiring an SEO expert?",
+    question: "How quickly will my site rank after hiring an SEO expert?",
     answer:
-      "Initial technical crawl fixes and schema validations typically show indexing impact within 1 to 2 weeks. Noticeable keyword rank improvements and impression surges usually take 4 to 8 weeks, while competitive commercial keywords reach top 3 positions within 3 to 6 months of consistent White Hat execution.",
+      "Technical fixes and schema changes often show results in 1–2 weeks. Keyword ranking gains typically appear in 4–8 weeks. Competitive terms usually reach top 3 in 3–6 months of consistent White Hat SEO.",
   },
   {
-    question: "What tools do you use for SEO audits and rank tracking?",
+    question: "What tools do you use for SEO audits and tracking?",
     answer:
-      "I utilize industry-standard enterprise intelligence tools including Google Search Console, Google Analytics 4, Screaming Frog SEO Spider, Ahrefs, Semrush, Google PageSpeed Insights, Chrome UX Report (CrUX), and AI Search Citation parsers.",
+      "I use Google Search Console, Google Analytics 4, Screaming Frog, Ahrefs, Semrush, PageSpeed Insights, and Chrome UX Report (CrUX) for comprehensive tracking.",
   },
   {
-    question: "Do you offer white hat SEO services with zero risk of Google penalties?",
+    question: "Are your SEO services 100% White Hat with no penalty risk?",
     answer:
-      "Yes. Every strategy strictly adheres to Google's official Search Essentials guidelines. I never buy links, use private blog networks (PBNs), or engage in automated keyword stuffing. Your domain's search equity is built to compound sustainably across core algorithm updates.",
+      "Yes. Every strategy follows Google's Search Essentials guidelines. I never buy links, use PBNs, or keyword-stuff content. Your domain authority grows safely through real editorial links and quality content.",
   },
   {
-    question: "How do we get started with hiring Rohit Gupta as our SEO expert?",
+    question: "How do we get started?",
     answer:
-      "Getting started is simple: click 'Request Free SEO Consultation' or reach out via WhatsApp (+91 96966 21216). We'll schedule a discovery call, perform a free 24-hour technical audit of your website, and present a tailored 90-day SEO growth roadmap.",
+      "Click 'Hire Dedicated SEO Expert' or WhatsApp +91 96966 21216. We will schedule a discovery call, run a free 24-hour technical audit, and share a 90-day SEO growth roadmap.",
   },
 ];
 
@@ -201,7 +201,7 @@ export default function HireSeoExpertPage() {
               <span className="text-emerald-400">Dedicated SEO Specialist &amp; Team</span>
             </h1>
             <p className="text-base sm:text-lg text-white/85 leading-relaxed max-w-3xl font-light">
-              Accelerate your organic growth with a dedicated, full-stack <strong>SEO expert &amp; web developer</strong>. Whether you need to <strong>hire an SEO specialist</strong> for technical Core Web Vitals audits, <strong>hire a dedicated SEO expert in India</strong>, or scale with a high-performance <strong>SEO expert team</strong>, I deliver verified #1 Google rankings through 100% ethical White Hat strategies.
+              Grow faster on Google with a dedicated <strong>SEO expert &amp; developer</strong>. Hire Rohit Gupta as your <strong>SEO specialist</strong> for technical SEO, Core Web Vitals, and content strategy. Or scale with a full <strong>SEO expert team</strong> for enterprise growth. All 100% White Hat — zero spam.
             </p>
           </div>
 
@@ -217,7 +217,7 @@ export default function HireSeoExpertPage() {
             <a
               href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I would like to discuss hiring you as our SEO expert / specialist.")}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-3d-dark text-xs font-mono font-bold py-3.5 px-5 flex items-center gap-2 text-emerald-400"
             >
               <MessageSquare className="w-4 h-4" />

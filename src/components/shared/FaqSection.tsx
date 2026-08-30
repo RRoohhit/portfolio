@@ -279,7 +279,7 @@ export const FaqSection: React.FC = () => {
                 "Hi Rohit, I have a question about my website SEO."
               )}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="px-4 py-2.5 bg-[#25D366] text-black font-mono font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-[#20bd5a] transition-all flex items-center gap-1.5 shadow-lg active:scale-95"
             >
               <MessageCircle className="w-4 h-4" />

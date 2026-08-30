@@ -105,7 +105,7 @@ export const CASE_STUDIES: ProjectCaseStudy[] = [
     category: "Full Stack Development & Technical SEO",
     client: "Megamind Tech Client (Delhi)",
     timeline: "3 Months (2026)",
-    summary: "Rebuilt a bloated legacy PHP WordPress store into a blazingly fast Next.js / React SSR web app paired with comprehensive White Hat Technical SEO, schema JSON-LD injection, and automated backlink monitoring.",
+    summary: "E-Commerce SEO case study: +4,766% organic traffic, 99/100 Core Web Vitals speed, and Position #2 Google rankings in 3 months.",
     beforeImageUrl: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1000&q=80",
     afterImageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80",
     beforeDescription: "Legacy website suffered from 5.4s load time, zero Schema markup, broken mobile layout, 2,400+ unindexed URLs, and average SERP ranking at Position #42.",

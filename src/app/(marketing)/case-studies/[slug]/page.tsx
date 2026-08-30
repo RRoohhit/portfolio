@@ -88,7 +88,7 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
           <div className="space-y-2">
             <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <TrendingUp className="w-5 h-5 text-emerald-400" />
-              Case Study Execution &amp; Results Breakdown
+              {cs.title} — Strategy &amp; Results Breakdown
             </h2>
             <p className="text-xs sm:text-sm text-white/60">
               A 5-stage technical analysis, implementation roadmap, and verified organic growth metrics for {cs.client}.

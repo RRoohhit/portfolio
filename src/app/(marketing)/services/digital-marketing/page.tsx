@@ -7,9 +7,9 @@ import { CONTACT } from "@/config/site";
 import { BarChart3, CheckCircle2, ArrowRight, MessageSquare } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Rohit Digital Marketing Services & SEO Consultant | Rohit Gupta",
+  title: "Digital Marketing Services & SEO | Rohit Gupta",
   description:
-    "Rohit Digital Marketing Services: Full-funnel digital growth combining Technical SEO, Google Ads PPC, conversion copywriting, and AI search optimization.",
+    "Full-funnel digital marketing services: Technical SEO, Google Ads PPC, conversion copywriting, and AI search optimization.",
   path: "/services/digital-marketing/",
   keywords: [
     "rohit digital marketing services",

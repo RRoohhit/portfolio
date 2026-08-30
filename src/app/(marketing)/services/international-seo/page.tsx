@@ -22,18 +22,18 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const INCLUDED_CHECKLIST = [
-  { title: "International Keyword Research", desc: "Targeting region-specific search queries and local search phrasing rather than direct literal translations." },
-  { title: "Country-Level Keyword Mapping", desc: "Mapping target keywords to specific country and language landing pages to ensure proper search intent alignment." },
-  { title: "Language & Region Targeting", desc: "Defining clear language (e.g. en, fr, es) and country (e.g. US, UK, IN, AE) targeting rules across all site sections." },
-  { title: "Hreflang Tag Implementation", desc: "Mapping hreflang tags in HTML head, HTTP headers, or XML sitemaps to prevent cross-region duplicate content." },
-  { title: "Domain Architecture Strategy", desc: "Evaluating ccTLDs (.co.uk, .de), subdomains (uk.domain.com), or subdirectories (domain.com/uk/) for crawl efficiency and brand equity." },
-  { title: "International URL Architecture", desc: "Structuring clean, consistent URL hierarchies that make regional versions easily indexable for search engines." },
-  { title: "Google Search Console Geotargeting", desc: "Configuring Search Console international targeting parameters and country-level property management." },
-  { title: "Duplicate Content Control", desc: "Implementing canonical tags and hreflang pairings to prevent penalty risks from similar regional content." },
-  { title: "Localization & Cultural SEO", desc: "Adapting content tone, currencies, date formats, and cultural search nuances to resonate with target international audiences." },
-  { title: "International Schema Markup", desc: "Injecting localized Organization, PostalAddress, and priceCurrency structured data for multi-region rich snippets." },
-  { title: "Global Backlink Acquisition Strategy", desc: "Building local authority backlinks from country-specific media, blogs, and industry directories." },
-  { title: "CDN & International Page Speed", desc: "Leveraging edge CDNs and multi-region server infrastructure for fast sub-second rendering across all continents." },
+  { title: "International Keyword Research", desc: "Find region-specific search queries. We target how locals actually search, avoiding literal translations." },
+  { title: "Country-Level Keyword Mapping", desc: "Map target search terms to country pages. This matches user intent in every market." },
+  { title: "Language & Region Targeting", desc: "Set language (en, fr, es) and country (US, UK, IN, AE) rules across your site." },
+  { title: "Hreflang Tag Implementation", desc: "Add hreflang tags in the page head or sitemaps. This stops regional duplicate content issues." },
+  { title: "Domain Architecture Strategy", desc: "Choose ccTLDs (.co.uk), subdomains, or subdirectories. We pick the best setup for your goals." },
+  { title: "International URL Architecture", desc: "Build clean, clear URL structures. This helps search engines crawl each country version fast." },
+  { title: "Google Search Console Setup", desc: "Configure Search Console country settings. We help you track regional search growth easily." },
+  { title: "Duplicate Content Control", desc: "Use canonical tags and hreflang pairings. This protects your site from ranking penalties." },
+  { title: "Localization & Cultural SEO", desc: "Adapt currency, date formats, and tone. This builds trust with local buyers worldwide." },
+  { title: "International Schema Markup", desc: "Add localized Organization and currency schema. This wins rich search snippets in each country." },
+  { title: "Global Backlink Outreach", desc: "Earn quality backlinks from local news and blogs. This builds authority in target markets." },
+  { title: "Fast Global Page Speed", desc: "Deploy fast edge CDNs and cloud servers. Your pages load in under 1 second worldwide." },
 ];
 
 export default function InternationalSeoPage() {
@@ -68,7 +68,7 @@ export default function InternationalSeoPage() {
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Expanding into international markets requires precise technical setup and cultural search intent alignment. Rohit Gupta structures multi-lingual and multi-regional websites to rank effectively across global search engine environments while avoiding duplicate content issues.
+            Grow your organic search traffic across global markets. Rohit Gupta sets up multi-language and multi-country websites that rank high on Google worldwide. We configure clean hreflang tags, fast site speed, and localized search strategies.
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2">
@@ -82,7 +82,7 @@ export default function InternationalSeoPage() {
             <Link
               href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20international%20SEO%20for%20my%20business"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors"
             >
               WhatsApp Now →
