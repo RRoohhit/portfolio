@@ -10,10 +10,6 @@ import { LazySection } from "@/components/ui/LazySection";
 import { Reveal } from "@/components/ui/Reveal";
 import { useAudit } from "@/components/providers/AuditProvider";
 import { TestimonialsStrip } from "@/components/views/home/TestimonialsStrip";
-import { ProcessSection } from "@/components/views/home/ProcessSection";
-import { WhyHireMeSection } from "@/components/views/home/WhyHireMeSection";
-import { HireCtaBanner } from "@/components/views/home/HireCtaBanner";
-import { PricingSection } from "@/components/views/home/PricingSection";
 import heroPortraitImg from "@/assets/images/rohit-gupta-seo.webp";
 import { CONTACT } from "@/config/site";
 import {
@@ -22,6 +18,23 @@ import {
   Activity, Globe, BarChart3, Layers, ShieldCheck, Users,
   Cpu, LayoutGrid, Check, ExternalLink, Route, LineChart, FileText, FastForward, MessageSquare,
 } from "lucide-react";
+
+const ProcessSection = dynamic(
+  () => import("@/components/views/home/ProcessSection").then((m) => ({ default: m.ProcessSection })),
+  { loading: () => <div className="min-h-[280px]" /> }
+);
+const WhyHireMeSection = dynamic(
+  () => import("@/components/views/home/WhyHireMeSection").then((m) => ({ default: m.WhyHireMeSection })),
+  { loading: () => <div className="min-h-[320px]" /> }
+);
+const PricingSection = dynamic(
+  () => import("@/components/views/home/PricingSection").then((m) => ({ default: m.PricingSection })),
+  { loading: () => <div className="min-h-[400px]" /> }
+);
+const HireCtaBanner = dynamic(
+  () => import("@/components/views/home/HireCtaBanner").then((m) => ({ default: m.HireCtaBanner })),
+  { loading: () => <div className="min-h-[220px]" /> }
+);
 
 const MARQUEE_SERVICES = [
   { label: "Hire SEO Expert India", icon: Target },
@@ -373,7 +386,7 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* SERVICES GRID */}
-      <section className="space-y-6 sm:space-y-8">
+      <section className="space-y-6 sm:space-y-8 cv-auto">
         <Reveal className="space-y-3 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-mono uppercase tracking-widest font-bold">
             <Zap className="w-3 h-3" />
@@ -440,7 +453,7 @@ export const HomePage: React.FC = () => {
       <ProcessSection />
 
       {/* INTERACTIVE LIVE SEO TOOLS QUICK LAUNCH */}
-      <section className="space-y-6 sm:space-y-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="space-y-6 sm:space-y-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 cv-auto">
         <Reveal className="space-y-2 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-[10px] font-mono uppercase tracking-widest font-bold">
             <Cpu className="w-3.5 h-3.5" />
@@ -484,7 +497,7 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* ABOUT & BIO */}
-      <section id="about-us-section" className="scroll-mt-24 space-y-6">
+      <section id="about-us-section" className="scroll-mt-24 space-y-6 cv-auto">
         <Reveal as="div">
           <div className="flex items-center justify-between">
             <span id="about-heading" className="text-[10px] uppercase text-white/40 tracking-[0.2em] font-bold flex items-center gap-2">
@@ -583,12 +596,12 @@ export const HomePage: React.FC = () => {
       <WhyHireMeSection />
 
       {/* LOCAL SEO COVERAGE */}
-      <section className="space-y-6">
+      <section className="space-y-6 cv-auto">
         <LocalSeoCoverageSection onContact={() => router.push("/contact")} />
       </section>
 
       {/* SKILLS RADAR CHART */}
-      <section className="space-y-6">
+      <section className="space-y-6 cv-auto">
         <LazySection minHeight="420px">
           <Suspense fallback={<SectionLoader />}>
             <SkillsRadarChart />
