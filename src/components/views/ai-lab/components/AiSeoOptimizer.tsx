@@ -86,9 +86,9 @@ export const AiSeoOptimizer: React.FC = () => {
             <Sparkles className="w-3.5 h-3.5" />
             <span>Powered by Gemini 3.6 Flash Server Engine</span>
           </div>
-          <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
+          <h3 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
             AI-Driven Content & Keyword Optimizer
-          </h2>
+          </h3>
           <p className="text-xs sm:text-sm text-zinc-400 max-w-2xl leading-relaxed">
             Enter a focus keyword, topic, or content draft. Rohit's server-side AI model will generate tailored meta tags, LSI keyword clusters, structured JSON-LD schema, and speed optimization strategies.
           </p>

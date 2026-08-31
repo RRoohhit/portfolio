@@ -170,7 +170,6 @@ export const HomePage: React.FC = () => {
 
       {/* HERO SECTION */}
       <section
-        aria-label="Hero"
         className="hero-full-bleed relative min-h-[85dvh] sm:min-h-[90dvh] lg:min-h-screen flex flex-col justify-center lg:justify-start isolate pt-16 sm:pt-20"
       >
         <div className="absolute inset-0 -z-20 bg-grid-pattern opacity-40 pointer-events-none" />
@@ -237,7 +236,7 @@ export const HomePage: React.FC = () => {
                 <a
                   href={`${CONTACT.whatsapp}?text=${encodeURIComponent(CONTACT.whatsappText)}`}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                   className="btn-3d-dark text-[10px] sm:text-xs font-mono font-bold text-center justify-center flex items-center gap-1.5 py-3 px-2 sm:px-4 leading-none hover:text-emerald-400 truncate"
                 >
                   <MessageSquare className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
@@ -374,7 +373,7 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* SERVICES GRID */}
-      <section aria-labelledby="services-heading" className="space-y-6 sm:space-y-8">
+      <section className="space-y-6 sm:space-y-8">
         <Reveal className="space-y-3 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-mono uppercase tracking-widest font-bold">
             <Zap className="w-3 h-3" />
@@ -441,7 +440,7 @@ export const HomePage: React.FC = () => {
       <ProcessSection />
 
       {/* INTERACTIVE LIVE SEO TOOLS QUICK LAUNCH */}
-      <section aria-labelledby="tools-suite-heading" className="space-y-6 sm:space-y-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="space-y-6 sm:space-y-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal className="space-y-2 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-[10px] font-mono uppercase tracking-widest font-bold">
             <Cpu className="w-3.5 h-3.5" />
@@ -485,7 +484,7 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* ABOUT & BIO */}
-      <section id="about-us-section" aria-labelledby="about-heading" className="scroll-mt-24 space-y-6">
+      <section id="about-us-section" className="scroll-mt-24 space-y-6">
         <Reveal as="div">
           <div className="flex items-center justify-between">
             <span id="about-heading" className="text-[10px] uppercase text-white/40 tracking-[0.2em] font-bold flex items-center gap-2">
@@ -598,7 +597,7 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* TECHNICAL SKILLS MATRIX */}
-      <section aria-labelledby="tech-stack-heading" className="space-y-6 sm:space-y-8 cv-auto">
+      <section className="space-y-6 sm:space-y-8 cv-auto">
         <Reveal className="space-y-2">
           <div className="flex items-center gap-2 text-xs font-mono text-white/60 uppercase tracking-wider">
             <Zap className="w-4 h-4 text-white" />
@@ -673,7 +672,7 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* EXPERIENCE TIMELINE */}
-      <section aria-labelledby="experience-heading" className="space-y-6 sm:space-y-8 cv-auto">
+      <section className="space-y-6 sm:space-y-8 cv-auto">
         <Reveal className="space-y-2">
           <div className="flex items-center gap-2 text-xs font-mono text-white/60 uppercase tracking-wider">
             <Award className="w-4 h-4 text-white" />

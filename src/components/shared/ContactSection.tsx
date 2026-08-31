@@ -213,7 +213,7 @@ export const ContactSection: React.FC = () => {
               <a
                 href={CONTACT.googleMaps}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 title="Open location in Google Maps"
                 className="card-3d flex items-center gap-3.5 p-3.5 hover:border-emerald-500/40 transition-colors group cursor-pointer"
               >
@@ -235,7 +235,7 @@ export const ContactSection: React.FC = () => {
             <a
               href={`${CONTACT.whatsapp}?text=${encodeURIComponent(CONTACT.whatsappText)}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-3d-emerald flex items-center justify-center gap-2 w-full py-3.5 text-xs font-mono font-black shadow-lg"
             >
               <MessageSquare className="w-4 h-4 fill-black" />

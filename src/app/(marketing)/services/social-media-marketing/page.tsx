@@ -73,7 +73,7 @@ export default function SocialMediaMarketingPage() {
             <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
               Discuss Social Strategy <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20social%20media%20marketing%20for%20my%20business" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
+            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20social%20media%20marketing%20for%20my%20business" target="_blank" rel="nofollow noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
               WhatsApp Now →
             </Link>
           </div>
@@ -121,9 +121,9 @@ export default function SocialMediaMarketingPage() {
           <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h3>
           <div className="flex flex-wrap gap-3">
             {[
-              { label: "Digital Marketing", href: "/services/digital-marketing" },
-              { label: "Google Ads", href: "/services/google-ads" },
-              { label: "Local SEO", href: "/services/local-seo" },
+              { label: "Digital Marketing", href: "/services/digital-marketing/" },
+              { label: "Google Ads", href: "/services/google-ads/" },
+              { label: "Local SEO", href: "/services/local-seo/" },
               { label: "Contact", href: "/contact" },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-mono font-bold text-white/80 hover:text-emerald-400 hover:border-emerald-500/30 transition-colors">
@@ -142,7 +142,7 @@ export default function SocialMediaMarketingPage() {
             <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
               Get Social Media Strategy <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20social%20media%20marketing%20for%20my%20business" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
+            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20social%20media%20marketing%20for%20my%20business" target="_blank" rel="nofollow noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
               WhatsApp Now →
             </Link>
           </div>

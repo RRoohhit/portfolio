@@ -82,7 +82,7 @@ export default function InternationalSeoPage() {
             <Link
               href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20international%20SEO%20for%20my%20business"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors"
             >
               WhatsApp Now →
@@ -122,10 +122,10 @@ export default function InternationalSeoPage() {
           <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Global &amp; Multi-Regional Services</h3>
           <div className="flex flex-wrap gap-3">
             {[
-              { label: "Technical SEO", href: "/services/technical-seo" },
-              { label: "On-Page SEO", href: "/services/on-page-seo" },
-              { label: "E-Commerce SEO", href: "/services/ecommerce-seo" },
-              { label: "SEO Audit", href: "/seo-audit" },
+              { label: "Technical SEO", href: "/services/technical-seo/" },
+              { label: "On-Page SEO", href: "/services/on-page-seo/" },
+              { label: "E-Commerce SEO", href: "/services/ecommerce-seo/" },
+              { label: "SEO Audit", href: "/seo-audit/" },
             ].map((link) => (
               <Link
                 key={link.href}

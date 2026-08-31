@@ -166,9 +166,9 @@ export default function ContentSeoPage() {
           <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h3>
           <div className="flex flex-wrap gap-3">
             {[
-              { label: "On-Page SEO", href: "/services/on-page-seo" },
-              { label: "AI Search Optimization", href: "/services/ai-search-optimization" },
-              { label: "SEO Audit", href: "/seo-audit" },
+              { label: "On-Page SEO", href: "/services/on-page-seo/" },
+              { label: "AI Search Optimization", href: "/services/ai-search-optimization/" },
+              { label: "SEO Audit", href: "/seo-audit/" },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-mono font-bold text-white/80 hover:text-emerald-400 hover:border-emerald-500/30 transition-colors">
                 {link.label} <ArrowRight className="w-3 h-3" />
@@ -186,7 +186,7 @@ export default function ContentSeoPage() {
             <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
               Schedule Content Audit <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20Content%20SEO%20for%20my%20site" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
+            <Link href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20Content%20SEO%20for%20my%20site" target="_blank" rel="nofollow noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors">
               WhatsApp Now →
             </Link>
           </div>

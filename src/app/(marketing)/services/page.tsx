@@ -181,7 +181,7 @@ export default function ServicesPage() {
             <a
               href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I'd like to know which services fit my business.")}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-3d-dark text-xs font-mono font-bold py-3.5 px-7 flex items-center gap-2 hover:text-emerald-400"
             >
               <MessageSquare className="w-4 h-4 text-emerald-400" />
@@ -461,7 +461,7 @@ export default function ServicesPage() {
             <a
               href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I need help deciding which service fits my business.")}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-3d-dark text-xs font-mono font-bold py-3.5 px-7 inline-flex items-center justify-center gap-2 hover:text-emerald-400"
             >
               <MessageSquare className="w-4 h-4 text-emerald-400" />

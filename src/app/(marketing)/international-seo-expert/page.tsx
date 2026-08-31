@@ -96,7 +96,7 @@ export default function InternationalSeoExpertPage() {
             <a
               href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I'm interested in hiring you as an international SEO expert for my business.")}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
             >
               <MessageSquare className="w-4 h-4 text-emerald-400" /> WhatsApp Me

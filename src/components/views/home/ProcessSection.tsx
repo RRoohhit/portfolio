@@ -39,7 +39,7 @@ const STEPS = [
 
 export const ProcessSection: React.FC = () => {
   return (
-    <section aria-labelledby="process-heading" className="space-y-6 sm:space-y-8">
+    <section className="space-y-6 sm:space-y-8">
       <Reveal className="space-y-3 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-mono uppercase tracking-widest font-bold">
           <Rocket className="w-3 h-3" />
@@ -89,7 +89,7 @@ export const ProcessSection: React.FC = () => {
         <a
           href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I'd like to understand your 4-step process better.")}`}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
           className="btn-3d-dark text-xs font-mono font-bold py-3.5 px-7 flex items-center gap-2 hover:text-emerald-400"
         >
           <MessageSquare className="w-4 h-4 text-emerald-400" />

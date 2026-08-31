@@ -366,7 +366,7 @@ export const Navbar: React.FC = () => {
             <a
               href={`${CONTACT.whatsapp}?text=${encodeURIComponent(CONTACT.whatsappText)}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className={[
                 "group relative hidden lg:inline-flex items-center gap-2",
                 "h-[36px] px-4 rounded-full overflow-hidden",
@@ -564,7 +564,7 @@ export const Navbar: React.FC = () => {
                 <a
                   href={`${CONTACT.whatsapp}?text=${encodeURIComponent(CONTACT.whatsappText)}`}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                   onClick={handleMobileClose}
                   className="relative flex items-center justify-center gap-2 p-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-400 text-black text-xs font-mono font-black uppercase tracking-wider hover:opacity-90 transition-all shadow-lg shadow-emerald-500/20 active:scale-95 overflow-hidden"
                 >

@@ -94,7 +94,7 @@ export default function WebDevelopmentPage() {
             <a
               href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I want to build or improve my website and need a technical discussion.")}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-purple-500/40 transition-colors"
             >
               <MessageSquare className="w-4 h-4 text-emerald-400" />
@@ -148,10 +148,10 @@ export default function WebDevelopmentPage() {
           <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related services</h3>
           <div className="flex flex-wrap gap-3">
             {[
-              { label: "React Development", href: "/services/react-development" },
-              { label: "Next.js Development", href: "/services/nextjs-development" },
-              { label: "Technical SEO", href: "/services/technical-seo" },
-              { label: "SEO Audit", href: "/seo-audit" },
+              { label: "React Development", href: "/services/react-development/" },
+              { label: "Next.js Development", href: "/services/nextjs-development/" },
+              { label: "Technical SEO", href: "/services/technical-seo/" },
+              { label: "SEO Audit", href: "/seo-audit/" },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-mono font-bold text-white/80 hover:text-purple-400 hover:border-purple-500/30 transition-colors">
                 {link.label}

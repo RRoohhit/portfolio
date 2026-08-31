@@ -166,9 +166,9 @@ To improve loading speeds, developers should optimize image compression, leverag
             <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
             <span>AI Lab Real-Time On-Page Analysis Engine</span>
           </div>
-          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
             AI Keyword Density & SERP Optimization Tracker
-          </h3>
+          </h2>
           <p className="text-xs text-zinc-400 mt-1 max-w-xl font-light leading-relaxed">
             Analyze your article draft or sales copy against focus search terms in real-time. Reach the recommended 2.0% – 3.0% density benchmark to prevent algorithmic keyword stuffing penalties.
           </p>

@@ -59,8 +59,9 @@ import type { ToolsSubTab } from "@/types/seo-tools";
 export type { ToolsSubTab };
 
 const ToolLoader: React.FC = () => (
-  <div className="flex items-center justify-center py-16" role="status" aria-label="Loading tool">
+  <div className="flex items-center justify-center py-16" role="status">
     <div className="w-8 h-8 rounded-full border-2 border-white/10 border-t-emerald-400 animate-spin" />
+    <span className="sr-only">Loading tool...</span>
   </div>
 );
 

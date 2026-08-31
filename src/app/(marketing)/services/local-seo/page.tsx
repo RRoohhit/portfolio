@@ -96,7 +96,7 @@ export default function LocalSeoPage() {
             <a
               href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I want to improve my local SEO and capture more nearby leads.")}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
             >
               <MessageSquare className="w-4 h-4 text-emerald-400" />
@@ -148,10 +148,10 @@ export default function LocalSeoPage() {
           <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related services</h3>
           <div className="flex flex-wrap gap-3">
             {[
-              { label: "Google Business Profile SEO", href: "/services/google-business-profile-seo" },
-              { label: "On-Page SEO", href: "/services/on-page-seo" },
-              { label: "Technical SEO", href: "/services/technical-seo" },
-              { label: "SEO Audit", href: "/seo-audit" },
+              { label: "Google Business Profile SEO", href: "/services/google-business-profile-seo/" },
+              { label: "On-Page SEO", href: "/services/on-page-seo/" },
+              { label: "Technical SEO", href: "/services/technical-seo/" },
+              { label: "SEO Audit", href: "/seo-audit/" },
             ].map((link) => (
               <Link
                 key={link.href}

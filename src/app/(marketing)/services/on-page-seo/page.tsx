@@ -101,7 +101,7 @@ export default function OnPageSeoPage() {
             <a
               href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I want to improve on-page SEO and strengthen my existing website pages.")}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
             >
               <MessageSquare className="w-4 h-4 text-emerald-400" />
@@ -167,10 +167,10 @@ export default function OnPageSeoPage() {
           <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related services</h3>
           <div className="flex flex-wrap gap-3">
             {[
-              { label: "Technical SEO", href: "/services/technical-seo" },
-              { label: "Off-Page SEO", href: "/services/off-page-seo" },
-              { label: "E-Commerce SEO", href: "/services/ecommerce-seo" },
-              { label: "SEO Audit", href: "/seo-audit" },
+              { label: "Technical SEO", href: "/services/technical-seo/" },
+              { label: "Off-Page SEO", href: "/services/off-page-seo/" },
+              { label: "E-Commerce SEO", href: "/services/ecommerce-seo/" },
+              { label: "SEO Audit", href: "/seo-audit/" },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-mono font-bold text-white/80 hover:text-emerald-400 hover:border-emerald-500/30 transition-colors">
                 {link.label}

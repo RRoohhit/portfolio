@@ -52,7 +52,7 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
             ]}
           />
           <Link
-            href="/case-studies"
+            href="/case-studies/"
             className="inline-flex items-center gap-1.5 text-xs font-mono text-white/60 hover:text-emerald-400 transition-colors"
           >
             <ArrowLeft className="w-3.5 h-3.5" />

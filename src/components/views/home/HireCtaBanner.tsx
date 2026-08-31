@@ -8,7 +8,7 @@ import { CONTACT } from "@/config/site";
 
 export const HireCtaBanner: React.FC = () => {
   return (
-    <section aria-labelledby="hire-cta-heading" className="space-y-6">
+    <section className="space-y-6">
       <Reveal>
         <div className="relative overflow-hidden card-3d-interactive p-6 sm:p-10 rounded-3xl border border-emerald-500/40 bg-gradient-to-r from-emerald-950/50 via-zinc-950 to-zinc-950 shadow-2xl">
           {/* Ambient glows */}
@@ -41,7 +41,7 @@ export const HireCtaBanner: React.FC = () => {
               <a
                 href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I want to discuss my website growth. Can we talk?")}`}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="btn-3d-dark text-xs font-mono font-bold py-4 px-8 flex items-center justify-center gap-2 hover:text-emerald-400"
               >
                 <MessageSquare className="w-4 h-4 text-emerald-400" />

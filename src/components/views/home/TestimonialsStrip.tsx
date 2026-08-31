@@ -37,7 +37,7 @@ const STRIP_REVIEWS = [
 
 function Stars({ n }: { n: number }) {
   return (
-    <div className="flex items-center gap-0.5" aria-label={`${n} out of 5 stars`}>
+    <div className="flex items-center gap-0.5" role="img" aria-label={`${n} out of 5 stars`}>
       {Array.from({ length: n }).map((_, i) => (
         <Star key={i} className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
       ))}
@@ -47,7 +47,7 @@ function Stars({ n }: { n: number }) {
 
 export const TestimonialsStrip: React.FC = () => {
   return (
-    <section aria-labelledby="social-proof-heading" className="space-y-6 sm:space-y-8">
+    <section className="space-y-6 sm:space-y-8">
       <Reveal className="space-y-3 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 text-[10px] font-mono uppercase tracking-widest font-bold">
           <BadgeCheck className="w-3 h-3" />

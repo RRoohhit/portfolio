@@ -217,7 +217,7 @@ export default function HireSeoExpertPage() {
             <a
               href={`${CONTACT.whatsapp}?text=${encodeURIComponent("Hi Rohit, I would like to discuss hiring you as our SEO expert / specialist.")}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-3d-dark text-xs font-mono font-bold py-3.5 px-5 flex items-center gap-2 text-emerald-400"
             >
               <MessageSquare className="w-4 h-4" />
