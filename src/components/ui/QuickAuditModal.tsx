@@ -302,7 +302,7 @@ export const QuickAuditModal: React.FC<QuickAuditModalProps> = ({ isOpen, onClos
               <a
                 href={`${CONTACT.whatsapp}?text=Hi%20Rohit,%20I%20ran%20a%20Quick%20Performance%20Audit%20for%20${encodeURIComponent(auditData.domain)}%20and%20would%20like%20to%20discuss%20a%20full%20fix.`}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="noopener noreferrer"
                 className="px-5 py-2.5 rounded-xl bg-black text-white text-xs font-mono font-bold uppercase tracking-wider hover:bg-emerald-500 hover:text-black transition-all whitespace-nowrap flex items-center gap-2 shrink-0 shadow-lg"
               >
                 <span>Request Custom Audit</span>

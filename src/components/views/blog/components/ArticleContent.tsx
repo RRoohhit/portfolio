@@ -5,11 +5,11 @@ import { CopyCodeButton } from "./CopyCodeButton";
 // Lightweight markdown-ish renderer shared by the /blog/[slug] pages (server)
 // and the client-side article reader modal. Uses no external deps.
 export interface ArticleBlock {
-  type: "h2" | "h3" | "p" | "ul" | "code";
+  type: "h2" | "h3" | "h4" | "p" | "ul" | "code";
   text?: string;
   items?: string[];
   lang?: string;
-  /** Pre-computed anchor ID for h2 blocks so render stays pure */
+  /** Pre-computed anchor ID for h2/h3 blocks so render stays pure */
   sectionId?: string;
 }
 
@@ -122,18 +122,18 @@ export function parseArticleContent(content: string): ArticleBlock[] {
       continue;
     }
 
-    // H3
+    // H4 (### in markdown → h4 in DOM, as h1=title, h2=first section, h3=subsequent sections)
     if (line.startsWith("### ")) {
-      blocks.push({ type: "h3", text: line.slice(4) });
+      blocks.push({ type: "h4", text: line.slice(4) });
       i++;
       continue;
     }
 
-    // H2 — compute section ID here so render stays pure
+    // H2/H3 — first ## becomes h2, subsequent ## become h3
     if (line.startsWith("## ")) {
       h2Count += 1;
       blocks.push({
-        type: "h2",
+        type: h2Count === 1 ? "h2" : "h3",
         text: line.slice(3),
         sectionId: `section-${h2Count}`,
       });
@@ -191,10 +191,22 @@ export const ArticleContent: React.FC<{ content: string; className?: string }> =
           return (
             <h3
               key={idx}
-              className="text-base sm:text-lg font-bold text-emerald-300 tracking-tight pt-3 leading-snug"
+              id={block.sectionId}
+              className="scroll-mt-24 text-base sm:text-xl font-extrabold text-white tracking-tight pt-4 border-l-[3px] border-emerald-400/60 pl-4 leading-snug"
             >
               {block.text}
             </h3>
+          );
+        }
+
+        if (block.type === "h4") {
+          return (
+            <h4
+              key={idx}
+              className="text-base sm:text-lg font-bold text-emerald-300 tracking-tight pt-3 leading-snug"
+            >
+              {block.text}
+            </h4>
           );
         }
 

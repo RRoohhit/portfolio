@@ -346,9 +346,9 @@ export const HomePage: React.FC = () => {
                 <FastForward className="w-3.5 h-3.5 text-emerald-400" />
                 <span>Sub-Second Performance &amp; Google Core Web Vitals</span>
               </div>
-              <h3 className="text-base sm:text-xl lg:text-2xl font-black text-white uppercase tracking-tight leading-tight">
+              <p className="text-base sm:text-xl lg:text-2xl font-black text-white uppercase tracking-tight leading-tight">
                 Verified 99–100/100 Lighthouse Performance Benchmarks
-              </h3>
+              </p>
             </div>
             <div className="btn-3d-emerald text-[10px] sm:text-xs py-2 px-4 shrink-0 pointer-events-none">
               ⚡ Lighthouse 99/100 Certified
@@ -679,9 +679,9 @@ export const HomePage: React.FC = () => {
             <Award className="w-4 h-4 text-white" />
             <span>Professional Career Experience</span>
           </div>
-          <h2 id="experience-heading" className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+          <h3 id="experience-heading" className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
             Work Experience (<span className="text-gradient">SEO &amp; Development</span>)
-          </h2>
+          </h3>
         </Reveal>
 
         <div className="space-y-4 sm:space-y-5">
