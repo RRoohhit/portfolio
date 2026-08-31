@@ -346,9 +346,9 @@ export const HomePage: React.FC = () => {
                 <FastForward className="w-3.5 h-3.5 text-emerald-400" />
                 <span>Sub-Second Performance &amp; Google Core Web Vitals</span>
               </div>
-              <h2 className="text-base sm:text-xl lg:text-2xl font-black text-white uppercase tracking-tight leading-tight">
+              <h3 className="text-base sm:text-xl lg:text-2xl font-black text-white uppercase tracking-tight leading-tight">
                 Verified 99–100/100 Lighthouse Performance Benchmarks
-              </h2>
+              </h3>
             </div>
             <div className="btn-3d-emerald text-[10px] sm:text-xs py-2 px-4 shrink-0 pointer-events-none">
               ⚡ Lighthouse 99/100 Certified
@@ -447,9 +447,9 @@ export const HomePage: React.FC = () => {
             <Cpu className="w-3.5 h-3.5" />
             <span>Built-In Live SEO &amp; AI Intelligence Tools</span>
           </div>
-          <h2 id="tools-suite-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
+          <h3 id="tools-suite-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
             Test Drive My <span className="text-gradient">Proprietary SEO Tools</span>
-          </h2>
+          </h3>
           <p className="text-sm text-white/60 max-w-2xl mx-auto leading-relaxed">
             Free interactive tools built directly into this portfolio for audit engineers, developers, and marketing leads.
           </p>
@@ -503,9 +503,9 @@ export const HomePage: React.FC = () => {
           <Reveal direction="right" distance={32} className="lg:col-span-7">
             <div className="card-3d-interactive p-5 sm:p-8 space-y-5 sm:space-y-6 shadow-2xl h-full flex flex-col justify-between">
               <div className="space-y-4">
-                <h2 className="text-lg sm:text-xl lg:text-2xl font-black text-white tracking-tight">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-white tracking-tight">
                   Rohit — Web Developer &amp; SEO Expert Freelancer in Noida
-                </h2>
+                </h3>
                 <p className="text-sm leading-relaxed text-white/75">
                   I&apos;m Rohit Gupta, a freelance web developer and SEO specialist from Noida with roots in Ayodhya. Over 2+ years I&apos;ve helped 200+ businesses — from Noida salons and coaching institutes to Mumbai startups, Bengaluru SaaS brands, and UK/US eCommerce companies — rank higher, load faster and convert better through 100% ethical White Hat SEO. What makes me different? I&apos;m the strategist who also writes the code: the person who audits your Core Web Vitals fixes them, and the person who plans your keyword clusters builds the schema that powers them. My clients span across India and internationally, and I&apos;m available on-site in Delhi NCR &amp; Ayodhya, and 100% remote everywhere else.
                 </p>
@@ -604,9 +604,9 @@ export const HomePage: React.FC = () => {
             <Zap className="w-4 h-4 text-white" />
             <span>Technology &amp; Tools Stack</span>
           </div>
-          <h2 id="tech-stack-heading" className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+          <h3 id="tech-stack-heading" className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
             The <span className="text-gradient">Tech Stack</span> Behind the Rankings
-          </h2>
+          </h3>
         </Reveal>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">

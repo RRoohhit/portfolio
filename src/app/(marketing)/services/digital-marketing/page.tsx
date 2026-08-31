@@ -130,12 +130,12 @@ export default function DigitalMarketingPage() {
         </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-5 shadow-xl">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">How we work</h2>
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">How we work</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
             {PROCESS.map((step) => (
               <div key={step.step} className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">
                 <span className="text-xs font-mono font-bold text-emerald-400">{step.step}</span>
-                <h3 className="text-sm font-bold text-white tracking-tight">{step.title}</h3>
+                <h4 className="text-sm font-bold text-white tracking-tight">{step.title}</h4>
                 <p className="text-xs text-white/70 leading-relaxed font-light">{step.desc}</p>
               </div>
             ))}

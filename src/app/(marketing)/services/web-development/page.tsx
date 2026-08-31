@@ -119,7 +119,7 @@ export default function WebDevelopmentPage() {
               <div key={idx} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 space-y-2 hover:border-purple-500/30 transition-colors">
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
-                  <h3 className="text-sm font-bold text-white tracking-tight">{item.title}</h3>
+                  <h4 className="text-sm font-bold text-white tracking-tight">{item.title}</h4>
                 </div>
                 <p className="text-xs text-white/70 leading-relaxed font-light pl-6">{item.desc}</p>
               </div>
@@ -128,14 +128,14 @@ export default function WebDevelopmentPage() {
         </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-5 shadow-xl">
-          <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
             <Layers className="w-5 h-5 text-purple-400" />
             Technology stack
-          </h2>
+          </h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {TECH_STACK.map((col, idx) => (
               <div key={idx} className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">
-                <h3 className="text-xs font-mono font-bold uppercase text-purple-400">{col.category}</h3>
+                <h4 className="text-xs font-mono font-bold uppercase text-purple-400">{col.category}</h4>
                 <ul className="space-y-1 text-xs font-mono text-white/80">
                   {col.tools.map((t) => <li key={t}>• {t}</li>)}
                 </ul>

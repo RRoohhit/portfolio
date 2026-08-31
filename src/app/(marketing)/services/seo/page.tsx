@@ -224,25 +224,31 @@ export default function SeoServicesPage() {
           </div>
         </header>
 
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {[
-            { icon: Search, title: "Ranking is not enough", text: "We care about the quality of traffic, not just vanity numbers." },
-            { icon: ShieldCheck, title: "White-hat and practical", text: "No risky shortcuts. Just durable SEO built around trust and user intent." },
-            { icon: Target, title: "Built for business goals", text: "The work is aligned to leads, calls, sales, and long-term brand growth." },
-          ].map(({ icon: Icon, title, text }) => (
-            <div key={title} className="p-5 rounded-2xl bg-zinc-950 border border-white/10">
-              <Icon className="w-5 h-5 text-emerald-400 mb-3" />
-              <h2 className="text-base font-bold text-white mb-2">{title}</h2>
-              <p className="text-sm text-white/70 leading-relaxed">{text}</p>
-            </div>
-          ))}
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <Search className="w-5 h-5 text-emerald-400" />
+            Strategic SEO Philosophy
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {[
+              { icon: Search, title: "Ranking is not enough", text: "We care about the quality of traffic, not just vanity numbers." },
+              { icon: ShieldCheck, title: "White-hat and practical", text: "No risky shortcuts. Just durable SEO built around trust and user intent." },
+              { icon: Target, title: "Built for business goals", text: "The work is aligned to leads, calls, sales, and long-term brand growth." },
+            ].map(({ icon: Icon, title, text }) => (
+              <div key={title} className="p-5 rounded-2xl bg-zinc-950 border border-white/10">
+                <Icon className="w-5 h-5 text-emerald-400 mb-3" />
+                <h3 className="text-base font-bold text-white mb-2">{title}</h3>
+                <p className="text-sm text-white/70 leading-relaxed">{text}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section className="space-y-6">
           <div className="space-y-2">
-            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">
               SEO services designed for real business growth
-            </h2>
+            </h3>
             <p className="text-xs sm:text-sm text-white/60">
               Whether you need technical fixes, better content, local rankings, or a full search growth strategy, these are the core services that power it.
             </p>
@@ -263,7 +269,7 @@ export default function SeoServicesPage() {
                       </span>
                       <Icon className="w-5 h-5 text-white/50 group-hover:text-emerald-400 transition-colors" />
                     </div>
-                    <h3 className="text-base font-bold text-white tracking-tight leading-snug">{sec.title}</h3>
+                    <h4 className="text-base font-bold text-white tracking-tight leading-snug">{sec.title}</h4>
                     <p className="text-xs text-white/70 leading-relaxed font-light">{sec.desc}</p>
                   </div>
 
@@ -282,10 +288,10 @@ export default function SeoServicesPage() {
 
         <section className="space-y-5">
           <div className="space-y-2">
-            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-400" />
               The SEO process
-            </h2>
+            </h3>
             <p className="text-xs sm:text-sm text-white/60">Simple, structured, and focused on sustainable growth.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -293,7 +299,7 @@ export default function SeoServicesPage() {
               <div key={step.step} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-emerald-500/30 transition-colors space-y-2">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl font-black font-mono text-emerald-400/40">{step.step}</span>
-                  <h3 className="text-sm font-bold text-white tracking-tight">{step.title}</h3>
+                  <h4 className="text-sm font-bold text-white tracking-tight">{step.title}</h4>
                 </div>
                 <p className="text-xs text-white/65 leading-relaxed">{step.desc}</p>
               </div>

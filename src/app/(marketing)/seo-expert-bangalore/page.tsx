@@ -86,7 +86,7 @@ export default function SeoExpertBangalorePage() {
         </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h2 className="text-xl font-black text-white tracking-tight">Key Service Areas in Bengaluru</h2>
+          <h3 className="text-xl font-black text-white tracking-tight">Key Service Areas in Bengaluru</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {[
               "Koramangala & HSR Layout Startups",

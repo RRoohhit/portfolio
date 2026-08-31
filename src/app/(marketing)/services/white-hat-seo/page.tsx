@@ -24,12 +24,12 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const PRINCIPLES = [
-  { title: "Search Intent Alignment", desc: "Focusing deeply on matching the user's intent with high-quality content rather than stuffing keywords or manipulating search engines." },
-  { title: "Google Search Essentials Compliance", desc: "Every strategy strictly adheres to official Google webmaster & Search Essentials guidelines to eliminate algorithm penalty risks." },
-  { title: "E-E-A-T Signal Reinforcement", desc: "Establishing Experience, Expertise, Authoritativeness, and Trustworthiness through transparent authorship, accurate schema, and verifiable credentials." },
-  { title: "Ethical & Relevant Link Acquisition", desc: "Earning contextual backlinks through digital PR, guest contributions, broken link reclamation, and useful resources — never paid link networks or PBNs." },
-  { title: "Technical Excellence", desc: "Building fast, accessible, mobile-friendly websites with clean code, sub-second load times, and structured data that search engines can easily parse." },
-  { title: "Long-Term Value Creation", desc: "Creating assets (guides, tools, comprehensive articles) that build sustainable search equity month after month, surviving algorithm updates." },
+  { title: "User Search Intent", desc: "We write helpful answers that match what users search for. We never stuff keywords." },
+  { title: "Google Rules Compliant", desc: "Every step follows Google Search Essentials. Your website stays 100% safe from penalties." },
+  { title: "Trust & Expert Signals", desc: "We show clear author names, real reviews, and verified data to build domain trust." },
+  { title: "Real Editorial Backlinks", desc: "We earn natural links from trusted blogs and news sites. We never buy link packages or PBNs." },
+  { title: "Fast Technical Code", desc: "We build clean code that loads in under one second. Pages are easy for search bots to crawl." },
+  { title: "Long-Term Traffic Growth", desc: "We create useful guides and tools that gain clicks and links year after year." },
 ];
 
 export default function WhiteHatSeoPage() {
@@ -69,10 +69,10 @@ export default function WhiteHatSeoPage() {
         </header>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h3 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+          <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
             <BookOpen className="w-5 h-5 text-emerald-400" />
             Why Choose White Hat SEO Over Quick Shortcuts?
-          </h3>
+          </h2>
           <p className="text-sm text-white/75 leading-relaxed">
             Google updates its search algorithms often. Sites using spam links and spun content lose traffic during core updates. White Hat SEO builds real domain authority that gains traffic from every update.
           </p>
@@ -80,17 +80,17 @@ export default function WhiteHatSeoPage() {
 
         <section className="space-y-5">
           <div className="space-y-2">
-            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-400" />
               Our Core White Hat Principles
-            </h2>
+            </h3>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {PRINCIPLES.map((item) => (
               <div key={item.title} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-emerald-500/30 transition-colors space-y-2">
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <h3 className="text-sm font-bold text-white tracking-tight">{item.title}</h3>
+                  <h4 className="text-sm font-bold text-white tracking-tight">{item.title}</h4>
                 </div>
                 <p className="text-xs text-white/65 leading-relaxed pl-6">{item.desc}</p>
               </div>

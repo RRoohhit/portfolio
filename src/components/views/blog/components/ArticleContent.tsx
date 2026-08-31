@@ -34,12 +34,22 @@ function renderInline(text: string): React.ReactNode[] {
 
     if (match[1] !== undefined && match[2] !== undefined) {
       // Link: [label](url)
-      const isInternal = match[2].startsWith("/");
+      const rawUrl = match[2];
+      const isInternal =
+        rawUrl.startsWith("/") ||
+        rawUrl.startsWith("#") ||
+        rawUrl.includes("rohitguptaseo.in") ||
+        rawUrl.includes("rohitguptaseo.com");
+
+      const cleanHref = isInternal && (rawUrl.startsWith("http://") || rawUrl.startsWith("https://"))
+        ? rawUrl.replace(/^https?:\/\/(www\.)?rohitguptaseo\.(in|com)/i, "") || "/"
+        : rawUrl;
+
       parts.push(
         isInternal ? (
           <Link
             key={key++}
-            href={match[2]}
+            href={cleanHref}
             className="text-emerald-400 font-semibold underline underline-offset-2 decoration-emerald-400/40 hover:text-emerald-300 transition-colors"
           >
             {match[1]}
@@ -47,9 +57,9 @@ function renderInline(text: string): React.ReactNode[] {
         ) : (
           <a
             key={key++}
-            href={match[2]}
+            href={rawUrl}
             target="_blank"
-            rel="nofollow noopener noreferrer"
+            rel="noopener noreferrer"
             className="text-emerald-400 font-semibold underline underline-offset-2 decoration-emerald-400/40 hover:text-emerald-300 transition-colors"
           >
             {match[1]}

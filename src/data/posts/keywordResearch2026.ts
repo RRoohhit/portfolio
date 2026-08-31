@@ -3,7 +3,7 @@ import { BlogPost } from "../../types";
 export const keywordResearch2026: BlogPost = {
   id: "blog-10",
   title: "Keyword Research Guide: Find Low-Competition Terms",
-  h1: "Keyword Research Masterclass: Finding Low-Competition, High-ROI Terms",
+  h1: "Keyword Research Playbook: Find Low-Competition Terms",
   slug: "keyword-research-find-low-competition-keywords",
   excerpt:
     "Keyword research system for 2026: low-competition keywords, search intent, semantic clustering, AI-era question keywords, and the process to rank fast.",

@@ -1,9 +1,9 @@
 import { BlogPost } from "../../types";
 
 export const wordpressDevelopmentGuide2026: BlogPost = {
-  id: "blog-15",
+  id: "blog-12",
   title: "WordPress Development Guide: Speed & Custom Themes",
-  h1: "How to Choose a WordPress Development Company: Speed, Themes & SEO",
+  h1: "How to Choose a WordPress Company: Speed & SEO",
   slug: "wordpress-development-company-guide-2026",
   excerpt:
     "How to choose a WordPress development company in India for custom Gutenberg themes, WooCommerce scaling, Core Web Vitals, and Headless Next.js.",

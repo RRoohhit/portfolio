@@ -122,10 +122,10 @@ export default function OnPageSeoPage() {
 
         <section className="space-y-5">
           <div className="space-y-2">
-            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-400" />
               What on-page SEO includes
-            </h2>
+            </h3>
             <p className="text-xs sm:text-sm text-white/60">
               A practical, page-level optimization system built around clarity, search intent, and user usefulness.
             </p>
@@ -135,7 +135,7 @@ export default function OnPageSeoPage() {
               <div key={item.title} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-emerald-500/30 transition-colors space-y-2">
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <h3 className="text-sm font-bold text-white tracking-tight">{item.title}</h3>
+                  <h4 className="text-sm font-bold text-white tracking-tight">{item.title}</h4>
                 </div>
                 <p className="text-xs text-white/65 leading-relaxed pl-6">{item.desc}</p>
               </div>
@@ -145,17 +145,17 @@ export default function OnPageSeoPage() {
 
         <section className="space-y-5">
           <div className="space-y-2">
-            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <Target className="w-5 h-5 text-emerald-400" />
               The process
-            </h2>
+            </h3>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {PROCESS_STEPS.map((step) => (
               <div key={step.step} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-emerald-500/30 transition-colors space-y-2">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl font-black font-mono text-emerald-400/40">{step.step}</span>
-                  <h3 className="text-sm font-bold text-white tracking-tight">{step.title}</h3>
+                  <h4 className="text-sm font-bold text-white tracking-tight">{step.title}</h4>
                 </div>
                 <p className="text-xs text-white/65 leading-relaxed">{step.desc}</p>
               </div>

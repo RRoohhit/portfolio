@@ -3,7 +3,7 @@ import { BlogPost } from "../../types";
 export const aeoToolsIndiaGuide2026: BlogPost = {
   id: "blog-12",
   title: "Top AEO Tools in India for AI Search (2026)",
-  h1: "Top AEO Tools in India for AI Search Optimization & Citations",
+  h1: "Top AEO Tools in India for AI Search & Citations",
   slug: "aeo-tools-available-in-india-for-ai-search",
   excerpt:
     "The best AEO tools available in India for AI search optimization in 2026. Track ChatGPT citations, optimize for Google AI Overviews, and generate llms.txt.",

@@ -53,9 +53,9 @@ export const TestimonialsStrip: React.FC = () => {
           <BadgeCheck className="w-3 h-3" />
           <span>Verified Client Results</span>
         </div>
-        <h2 id="social-proof-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
+        <h3 id="social-proof-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
           Businesses That <span className="text-gradient">Trust Rohit</span>
-        </h2>
+        </h3>
         <div className="flex items-center justify-center gap-2 pt-1">
           <div className="flex items-center gap-1">
             {Array.from({ length: 5 }).map((_, i) => (

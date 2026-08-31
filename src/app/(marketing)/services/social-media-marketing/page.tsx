@@ -23,16 +23,16 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const WHATS_INCLUDED = [
-  { title: "Social Media Strategy", desc: "A tailored growth plan for your business goals and audience. No generic templates." },
-  { title: "Profile Optimization", desc: "Optimize your bio, links, and photos across Instagram, Facebook, and LinkedIn." },
-  { title: "Monthly Content Calendar", desc: "Plan monthly reels, carousels, and stories to keep your audience engaged." },
-  { title: "Instagram Marketing", desc: "Grow on Instagram with viral reels, helpful carousels, and smart hashtag use." },
-  { title: "Facebook Marketing", desc: "Build an active community on Facebook with engaging posts and group outreach." },
-  { title: "LinkedIn B2B Growth", desc: "Grow your personal brand and company page. Attract high-value business leads." },
-  { title: "Competitor Research", desc: "Analyze rival accounts to find what works best in your niche." },
-  { title: "Organic Follower Growth", desc: "Gain real followers through quality posts and genuine engagement. No fake bots." },
-  { title: "Social Search Optimization", desc: "Make your social profiles easy to find on Instagram, LinkedIn, and Google search." },
-  { title: "Lead Generation Calls-to-Action", desc: "Turn profile visitors into website clicks, WhatsApp chats, and paying clients." },
+  { title: "Custom Growth Plan", desc: "A tailored plan for your brand. We focus on your real goals." },
+  { title: "Profile Setup", desc: "We tune your bio, links, and photos on all social apps." },
+  { title: "Monthly Posts", desc: "We plan reels and image posts that keep fans engaged." },
+  { title: "Instagram Growth", desc: "Grow with viral reels and clean photo carousels." },
+  { title: "Facebook Page Reach", desc: "Build an active group of local buyers on Facebook." },
+  { title: "LinkedIn Brand Reach", desc: "Build your personal brand. Win high-value business deals." },
+  { title: "Rival Account Review", desc: "See what top rivals do and find what works best." },
+  { title: "Real Organic Fans", desc: "Get real fans with quality posts. No fake bots." },
+  { title: "Social Search Rank", desc: "Make your page rank high on Instagram and Google search." },
+  { title: "Lead Generation", desc: "Turn views into website visits, calls, and chats." },
 ];
 
 const PLATFORMS = [
@@ -67,7 +67,7 @@ export default function SocialMediaMarketingPage() {
             Social Media Marketing Services
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Build a strong brand and grow your audience online. Rohit Gupta helps businesses stand out on Instagram, Facebook, and LinkedIn. We turn followers into website traffic, phone calls, and paying customers.
+            Grow your brand online. We help your business stand out on Instagram, Facebook, and LinkedIn. Turn profile views into phone calls, chats, and sales.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
@@ -81,10 +81,10 @@ export default function SocialMediaMarketingPage() {
 
         {/* Platforms */}
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h3 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+          <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
             <BarChart3 className="w-5 h-5 text-emerald-400" />
-            Platforms
-          </h3>
+            Platforms We Cover
+          </h2>
           <div className="flex flex-wrap gap-3">
             {PLATFORMS.map((p) => (
               <span key={p.name} className={`px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-mono font-bold ${p.color}`}>
@@ -97,10 +97,10 @@ export default function SocialMediaMarketingPage() {
         {/* What's Included */}
         <section className="space-y-5">
           <div className="space-y-2">
-            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-400" />
               What's Included — Social Media Marketing
-            </h2>
+            </h3>
             <p className="text-xs sm:text-sm text-white/60">10-point social media marketing and organic growth service.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -108,7 +108,7 @@ export default function SocialMediaMarketingPage() {
               <div key={item.title} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-pink-500/30 transition-colors space-y-2">
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-pink-400 shrink-0 mt-0.5" />
-                  <h3 className="text-sm font-bold text-white tracking-tight">{item.title}</h3>
+                  <h4 className="text-sm font-bold text-white tracking-tight">{item.title}</h4>
                 </div>
                 <p className="text-xs text-white/65 leading-relaxed pl-6">{item.desc}</p>
               </div>
@@ -136,7 +136,7 @@ export default function SocialMediaMarketingPage() {
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-pink-950/30 via-zinc-950 to-zinc-950 border border-pink-500/20 text-center space-y-5 shadow-2xl">
           <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to Grow Your Social Presence?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
-            Get in touch to discuss a social media strategy aligned with your business goals and target audience.
+            Get in touch to build a social plan that fits your business goals.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">

@@ -21,9 +21,9 @@ export const HireCtaBanner: React.FC = () => {
                 <Clock className="w-3.5 h-3.5" />
                 Response within 2 hours · Free 20-min strategy call
               </div>
-              <h2 id="hire-cta-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+              <h3 id="hire-cta-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
                 Ready to <span className="text-gradient">Rank #1 on Google</span> and Grow Your Revenue?
-              </h2>
+              </h3>
               <p className="text-sm sm:text-base text-white/70 leading-relaxed">
                 Book a free 20-minute strategy call. You will leave with a clear picture of why you are not ranking yet — and a practical roadmap to fix it. No pressure, no jargon, no obligation.
               </p>

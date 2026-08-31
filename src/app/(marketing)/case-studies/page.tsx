@@ -54,6 +54,7 @@ export default function CaseStudiesPage() {
         </header>
 
         <section className="space-y-6">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">Featured Client Case Studies</h2>
           {CASE_STUDIES.map((cs) => (
             <div
               key={cs.id}
@@ -64,9 +65,9 @@ export default function CaseStudiesPage() {
                   <span className="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-[10px] font-mono font-bold uppercase border border-emerald-500/20">
                     {cs.category}
                   </span>
-                  <h2 className="text-lg sm:text-xl font-bold text-white tracking-tight mt-2">
+                  <h3 className="text-lg sm:text-xl font-bold text-white tracking-tight mt-2">
                     {cs.title}
-                  </h2>
+                  </h3>
                   <p className="text-xs font-mono text-white/50 mt-1">Client: {cs.client} · Timeline: {cs.timeline}</p>
                 </div>
 
@@ -100,9 +101,9 @@ export default function CaseStudiesPage() {
         {/* Detailed Methodology & Verified Results Guide */}
         <section className="bg-zinc-950 border border-white/10 p-6 sm:p-10 rounded-3xl space-y-8 shadow-2xl">
           <div className="space-y-3">
-            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">
               Our 5-Stage SEO Engineering &amp; Growth Framework
-            </h2>
+            </h3>
             <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light">
               Every client project executed by Rohit Gupta follows an evidence-based, data-backed roadmap designed for sustainable organic visibility and conversion growth.
             </p>
@@ -110,31 +111,31 @@ export default function CaseStudiesPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="p-5 rounded-2xl bg-black border border-white/10 space-y-2">
-              <span className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 1 · Deep Technical Audit</span>
+              <h4 className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 1 · Deep Technical Audit</h4>
               <p className="text-xs text-white/70 leading-relaxed font-light">
                 Full-site crawl auditing crawl depth, indexation gaps, status codes, JavaScript rendering hurdles, and Core Web Vitals performance benchmarks.
               </p>
             </div>
             <div className="p-5 rounded-2xl bg-black border border-white/10 space-y-2">
-              <span className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 2 · Entity &amp; Intent Mapping</span>
+              <h4 className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 2 · Entity &amp; Intent Mapping</h4>
               <p className="text-xs text-white/70 leading-relaxed font-light">
                 Topical keyword clustering, search intent classification, schema graph architecture, and parent-child internal link hierarchy planning.
               </p>
             </div>
             <div className="p-5 rounded-2xl bg-black border border-white/10 space-y-2">
-              <span className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 3 · Codebase Implementation</span>
+              <h4 className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 3 · Codebase Implementation</h4>
               <p className="text-xs text-white/70 leading-relaxed font-light">
                 Direct code-level optimization in React, Next.js, or CMS templates, eliminating hydration drag, layout shift, and server response latency.
               </p>
             </div>
             <div className="p-5 rounded-2xl bg-black border border-white/10 space-y-2">
-              <span className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 4 · Ethical Authority Building</span>
+              <h4 className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 4 · Ethical Authority Building</h4>
               <p className="text-xs text-white/70 leading-relaxed font-light">
                 White-hat digital PR outreach, local citation reclamation, unlinked brand mention conversion, and contextual editorial link acquisition.
               </p>
             </div>
             <div className="p-5 rounded-2xl bg-black border border-white/10 space-y-2">
-              <span className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 5 · Performance Monitoring</span>
+              <h4 className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 5 · Performance Monitoring</h4>
               <p className="text-xs text-white/70 leading-relaxed font-light">
                 Continuous Google Search Console position tracking, CrUX real-user monitoring, algorithm update immunity verification, and conversion audits.
               </p>

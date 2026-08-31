@@ -188,26 +188,32 @@ export default function GoogleAdsPage() {
           </div>
         </header>
 
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {[
-            { icon: Search, title: "Intent-first campaigns", text: "We focus on the searches that matter most to your business, not just broad traffic." },
-            { icon: BadgeCheck, title: "Lower wasted spend", text: "Poor targeting and weak match types kill budgets fast. We clean that up systematically." },
-            { icon: Zap, title: "Better conversion efficiency", text: "From ad copy to landing pages, every layer is tuned to turn clicks into leads and sales." },
-          ].map(({ icon: Icon, title, text }) => (
-            <div key={title} className="p-5 rounded-2xl bg-zinc-950 border border-white/10">
-              <Icon className="w-5 h-5 text-emerald-400 mb-3" />
-              <h3 className="text-base font-bold text-white mb-2">{title}</h3>
-              <p className="text-sm text-white/70 leading-relaxed">{text}</p>
-            </div>
-          ))}
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <Zap className="w-5 h-5 text-emerald-400" />
+            High-Intent Google Ads Management
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {[
+              { icon: Search, title: "Intent-first campaigns", text: "We focus on the searches that matter most to your business, not just broad traffic." },
+              { icon: BadgeCheck, title: "Lower wasted spend", text: "Poor targeting and weak match types kill budgets fast. We clean that up systematically." },
+              { icon: Zap, title: "Better conversion efficiency", text: "From ad copy to landing pages, every layer is tuned to turn clicks into leads and sales." },
+            ].map(({ icon: Icon, title, text }) => (
+              <div key={title} className="p-5 rounded-2xl bg-zinc-950 border border-white/10">
+                <Icon className="w-5 h-5 text-emerald-400 mb-3" />
+                <h3 className="text-base font-bold text-white mb-2">{title}</h3>
+                <p className="text-sm text-white/70 leading-relaxed">{text}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section className="space-y-5">
           <div className="space-y-2">
-            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-400" />
               What we handle for your Google Ads account
-            </h2>
+            </h3>
             <p className="text-xs sm:text-sm text-white/60">
               The goal is simple: more qualified clicks, lower wasted spend, and a cleaner path to revenue.
             </p>
@@ -218,7 +224,7 @@ export default function GoogleAdsPage() {
               <div key={item.title} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-blue-500/30 transition-colors space-y-2">
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
-                  <h3 className="text-sm font-bold text-white tracking-tight">{item.title}</h3>
+                  <h4 className="text-sm font-bold text-white tracking-tight">{item.title}</h4>
                 </div>
                 <p className="text-xs text-white/65 leading-relaxed pl-6">{item.desc}</p>
               </div>
