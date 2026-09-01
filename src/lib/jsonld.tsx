@@ -2,8 +2,7 @@
 // All schema URLs resolve from APP_URL so every environment (dev/preview/prod)
 // emits the same entity graph with the correct canonical host.
 import type { ReactElement } from "react";
-import { SITE_URL, OG_IMAGE, SOCIALS } from "@/config/site";
-import { CONTACT } from "@/config/site";
+import { SITE_URL, OG_IMAGE, SOCIALS, CONTACT } from "@/config/site";
 
 // Only real, working profile URLs belong in `sameAs` — placeholder "#" links
 // weaken entity resolution in Google's Knowledge Graph and AI answer engines.
@@ -11,19 +10,25 @@ const REAL_PROFILES: string[] = [
   SOCIALS.linkedin,
   SOCIALS.instagram,
   SOCIALS.whatsapp,
-].filter((u) => Boolean(u) && u.startsWith("http"));
+  (SOCIALS as Record<string, string>).github,
+  (SOCIALS as Record<string, string>).twitter,
+].filter((u): u is string => typeof u === "string" && u.trim().length > 0 && u.startsWith("http"));
 
 export interface BreadcrumbItem {
   name: string;
   path: string;
 }
 
+/**
+ * Safely renders JSON-LD script tag with escaped HTML brackets to prevent injection issues.
+ */
 export function renderJsonLd(data: object, id?: string): ReactElement {
+  const safeJson = JSON.stringify(data).replace(/</g, "\\u003c");
   return (
     <script
       id={id}
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: safeJson }}
       suppressHydrationWarning
     />
   );
@@ -34,22 +39,25 @@ export function profilePageGraph(): object {
   return {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
+    "@id": `${SITE_URL}/rohit-gupta/#profilepage`,
+    "url": `${SITE_URL}/rohit-gupta/`,
+    "name": "Rohit Gupta — Profile & Biography",
+    "inLanguage": "en-IN",
     "mainEntity": {
       "@type": "Person",
+      "@id": `${SITE_URL}/#person`,
       "name": "Rohit Gupta",
       "jobTitle": "SEO Expert, Digital Marketing Consultant & Full-Stack Web Developer",
       "url": `${SITE_URL}/rohit-gupta/`,
-      "sameAs": [
-        SOCIALS.linkedin,
-        SOCIALS.instagram,
-        SOCIALS.github,
-        SOCIALS.twitter,
-      ],
+      "image": OG_IMAGE,
+      "description":
+        "Rohit Gupta is an SEO expert, digital marketing consultant & full-stack web developer helping businesses improve organic search visibility, website performance and online growth.",
+      "sameAs": REAL_PROFILES,
     },
   };
 }
 
-/** Organization-level graph: Person, ProfessionalService and WebSite (with sitelinks searchbox). */
+/** Organization-level graph: Person, ProfessionalService, WebSite and SiteNavigationElement. */
 export function organizationGraph(): object {
   return {
     "@context": "https://schema.org",
@@ -290,7 +298,7 @@ export function organizationGraph(): object {
           "Rohit Gupta",
           "Rohit Gupta SEO Expert",
           "rohitguptaseo.in",
-          "Rohit Web Developer & SEO Expert"
+          "Rohit Web Developer & SEO Expert",
         ],
         "publisher": { "@id": `${SITE_URL}/#person` },
         "inLanguage": "en-IN",
@@ -371,11 +379,18 @@ export function organizationGraph(): object {
 }
 
 /** FAQPage graph derived from the same data the visible FAQ accordion renders. */
-export function faqGraph(faqs: { question: string; answer: string }[]): object {
+export function faqGraph(
+  faqs: { question: string; answer: string }[],
+  pageUrl?: string
+): object {
+  const pageId = pageUrl
+    ? `${pageUrl.replace(/\/$/, "")}/#faq`
+    : `${SITE_URL}/#faq`;
+
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "@id": `${SITE_URL}/#faq`,
+    "@id": pageId,
     "mainEntity": faqs.map((f) => ({
       "@type": "Question",
       "name": f.question,
@@ -384,17 +399,43 @@ export function faqGraph(faqs: { question: string; answer: string }[]): object {
   };
 }
 
-/** BreadcrumbList for any page. */
+/** BreadcrumbList for any page with canonical trailing-slash normalization. */
 export function breadcrumbGraph(items: BreadcrumbItem[]): object {
+  if (!items || items.length === 0) {
+    return {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [],
+    };
+  }
+
+  const lastItem = items[items.length - 1];
+  const normalizedLastPath = lastItem.path.startsWith("/")
+    ? lastItem.path
+    : `/${lastItem.path}`;
+  const canonicalLastUrl =
+    normalizedLastPath === "/"
+      ? `${SITE_URL}/`
+      : `${SITE_URL}${normalizedLastPath.endsWith("/") ? normalizedLastPath : `${normalizedLastPath}/`}`;
+
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "@id": `${SITE_URL}${items[items.length - 1].path}#breadcrumb`,
-    "itemListElement": items.map((item, idx) => ({
-      "@type": "ListItem",
-      position: idx + 1,
-      name: item.name,
-      item: `${SITE_URL}${item.path}`,
-    })),
+    "@id": `${canonicalLastUrl}#breadcrumb`,
+    "itemListElement": items.map((item, idx) => {
+      const normalizedPath = item.path.startsWith("/")
+        ? item.path
+        : `/${item.path}`;
+      const canonicalItemUrl =
+        normalizedPath === "/"
+          ? `${SITE_URL}/`
+          : `${SITE_URL}${normalizedPath.endsWith("/") ? normalizedPath : `${normalizedPath}/`}`;
+      return {
+        "@type": "ListItem",
+        "position": idx + 1,
+        "name": item.name,
+        "item": canonicalItemUrl,
+      };
+    }),
   };
 }
