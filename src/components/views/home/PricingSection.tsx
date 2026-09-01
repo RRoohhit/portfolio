@@ -181,7 +181,7 @@ export function PricingSection() {
 
         {/* Custom Package CTA */}
         <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-emerald-950/40 via-zinc-900/50 to-zinc-900/50 border border-emerald-500/30 text-center space-y-5">
-          <h4 className="text-lg sm:text-xl font-bold text-white">Chat on WhatsApp and Decide the Right Project Price</h4>
+          <p className="text-lg sm:text-xl font-bold text-white">Chat on WhatsApp and Decide the Right Project Price</p>
           <p className="text-sm sm:text-base text-white/70 max-w-2xl mx-auto leading-relaxed">
             Share your website, business goals, and current challenges. We&apos;ll discuss the project scope, required services, and final pricing together — no guessing, no fixed one-size-fits-all package.
           </p>

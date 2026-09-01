@@ -69,6 +69,13 @@ const nextConfig: NextConfig = {
         source: "/(.*)",
         headers: securityHeaders,
       },
+      // Long immutable cache for static assets (icons, fonts, images)
+      {
+        source: "/:path(.*\\.(?:svg|ico|png|jpg|jpeg|webp|avif|woff|woff2))",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
       // Short cache for the generated SEO files (sitemap.xml, robots.txt)
       {
         source: "/:path(sitemap.xml|robots.txt|manifest.webmanifest|manifest.json)",

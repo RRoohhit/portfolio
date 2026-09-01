@@ -21,8 +21,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Contact SEO Specialist Rohit Gupta | Free SEO Audit & Consultation",
-  description: `Contact Rohit Gupta — senior SEO specialist & full-stack web developer in Noida, Delhi NCR & India. Get a free technical SEO audit, custom ranking proposal, or quick consultation. Call/WhatsApp ${CONTACT.phone}.`,
+  title: "Contact Rohit Gupta | SEO Specialist India",
+  description: "Contact Rohit Gupta, SEO specialist in Noida & India. Get a free website audit, pricing proposal, or consultation. Call/WhatsApp +91-9696621216.",
   path: "/contact/",
   keywords: [
     "hire SEO specialist",
@@ -135,8 +135,7 @@ export default function ContactPage() {
         </header>
 
         {/* Main Interactive Contact Section (Form + Direct Info) */}
-        <section aria-labelledby="contact-form-heading" className="space-y-4">
-          <h2 id="contact-form-heading" className="sr-only">Direct Contact Channels &amp; Consultation Form</h2>
+        <section aria-label="Direct Consultation and Contact Form" className="space-y-4">
           <ContactSection />
         </section>
 
@@ -227,9 +226,9 @@ export default function ContactPage() {
 
         {/* Quick Direct CTA */}
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/40 via-zinc-950 to-zinc-950 border border-emerald-500/30 text-center space-y-5 shadow-2xl">
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
             Prefer Direct Conversation Right Now?
-          </h2>
+          </h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed font-light">
             Skip the form and message Rohit Gupta directly on WhatsApp for an immediate response within 2 hours.
           </p>

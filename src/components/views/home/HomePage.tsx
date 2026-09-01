@@ -524,7 +524,7 @@ export const HomePage: React.FC = () => {
               </div>
 
               <div className="space-y-3 pt-2">
-                <h4 className="text-[10px] uppercase text-white/40 font-bold tracking-[0.2em] font-mono">Core Service Capabilities:</h4>
+                <h3 className="text-[10px] uppercase text-white/40 font-bold tracking-[0.2em] font-mono">Core Service Capabilities:</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
                   {[
                     "Technical SEO & Schema JSON-LD",
@@ -572,7 +572,7 @@ export const HomePage: React.FC = () => {
             </div>
 
             <div className="card-3d-interactive p-5 sm:p-6 space-y-3 shadow-2xl">
-              <h4 className="text-[10px] uppercase text-white/40 tracking-[0.2em] font-mono font-bold">Education Credentials</h4>
+              <h3 className="text-[10px] uppercase text-white/40 tracking-[0.2em] font-mono font-bold">Education Credentials</h3>
               <div className="space-y-2.5 text-xs sm:text-[13px]">
                 {EDUCATIONS.map((edu, idx) => (
                   <div key={idx} className="card-3d p-3 space-y-1">
