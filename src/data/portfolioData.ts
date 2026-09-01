@@ -5,7 +5,7 @@ export { BLOG_POSTS } from "./blogPosts";
 export const ROHIT_PROFILE = {
   name: "ROHIT GUPTA",
   title: "Rohit — Freelance Web Developer, SEO Expert & Digital Marketing Consultant",
-  seoTitle: "Rohit Gupta | Hire Dedicated SEO Expert India & Web Developer Freelancer",
+  seoTitle: "SEO Expert in India | Digital Marketing & Web Development | Rohit Gupta",
   phone: "+91 96966 21216",
   email: "rohitguptacodec96@gmail.com",
   location: "Mamura, Sector 66, Noida, Uttar Pradesh (Current) · Ayodhya, Uttar Pradesh – 272130 (Permanent)",
