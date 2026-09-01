@@ -150,9 +150,9 @@ export const ContactSection: React.FC = () => {
           <MessageSquare className="w-3.5 h-3.5" />
           <span>Available for High-Growth SEO & Digital Growth Projects</span>
         </div>
-        <h3 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+        <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
           Let&apos;s Build the Right Growth Plan for Your Business
-        </h3>
+        </h2>
         <p className="text-xs sm:text-sm text-zinc-400 max-w-2xl leading-relaxed">
           Need a better online presence, more leads, higher rankings, or a faster website? Tell me your goals and I&apos;ll suggest the most effective SEO, ads, or web strategy for your brand.
         </p>
@@ -177,7 +177,7 @@ export const ContactSection: React.FC = () => {
         <Reveal direction="right" className="lg:col-span-2">
         <div className="space-y-6">
           <div className="card-3d-interactive p-6 space-y-6 shadow-2xl">
-            <h4 className="text-lg font-extrabold text-white">Direct Contact Info</h4>
+            <h3 className="text-lg font-extrabold text-white">Direct Contact Info</h3>
 
             <div className="rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-3.5 text-[10px] sm:text-xs font-mono text-emerald-300">
               Response time: usually within 2 hours on WhatsApp or email.

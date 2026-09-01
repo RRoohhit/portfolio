@@ -146,9 +146,9 @@ export default function ContactPage() {
               <Zap className="w-3.5 h-3.5" />
               <span>Transparent Collaboration</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
               What Happens After You Contact Rohit Gupta?
-            </h2>
+            </h3>
             <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light max-w-3xl">
               We respect your time. When you reach out, you speak directly with the specialist doing the work — not an aggressive salesperson or an account manager. Here is our 4-step onboarding flow:
             </p>
@@ -158,7 +158,7 @@ export default function ContactPage() {
             {WORKING_STEPS.map((step) => (
               <div key={step.step} className="p-5 rounded-2xl bg-black border border-white/10 space-y-2">
                 <div className="text-xs font-mono font-black text-emerald-400 uppercase tracking-wider">{step.step} · Process</div>
-                <h3 className="text-base font-bold text-white tracking-tight">{step.title}</h3>
+                <h4 className="text-base font-bold text-white tracking-tight">{step.title}</h4>
                 <p className="text-xs text-white/70 leading-relaxed font-light">{step.desc}</p>
               </div>
             ))}
