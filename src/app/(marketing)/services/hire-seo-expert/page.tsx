@@ -448,9 +448,9 @@ export default function HireSeoExpertPage() {
 
         {/* Final CTA */}
         <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-emerald-950/50 via-zinc-950 to-zinc-950 border border-emerald-500/30 text-center space-y-6 shadow-2xl">
-          <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
+          <h3 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
             Ready to Hire a Top-Rated <span className="text-emerald-400">SEO Expert in India</span>?
-          </h2>
+          </h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed font-light">
             Claim your free 24-hour technical SEO audit and discover how we can take your target keywords to Position #1 on Google.
           </p>

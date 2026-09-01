@@ -41,9 +41,20 @@ function renderInline(text: string): React.ReactNode[] {
         rawUrl.includes("rohitguptaseo.in") ||
         rawUrl.includes("rohitguptaseo.com");
 
-      const cleanHref = isInternal && (rawUrl.startsWith("http://") || rawUrl.startsWith("https://"))
+      let cleanHref = isInternal && (rawUrl.startsWith("http://") || rawUrl.startsWith("https://"))
         ? rawUrl.replace(/^https?:\/\/(www\.)?rohitguptaseo\.(in|com)/i, "") || "/"
         : rawUrl;
+
+      // Ensure internal routes have canonical trailing slashes for zero-redirect crawling
+      if (isInternal && cleanHref.startsWith("/") && !cleanHref.startsWith("//")) {
+        const [pathAndQuery, hash] = cleanHref.split("#");
+        const [path, query] = pathAndQuery.split("?");
+        let normalizedPath = path;
+        if (!normalizedPath.endsWith("/") && !normalizedPath.includes(".")) {
+          normalizedPath += "/";
+        }
+        cleanHref = normalizedPath + (query ? `?${query}` : "") + (hash ? `#${hash}` : "");
+      }
 
       parts.push(
         isInternal ? (

@@ -176,9 +176,9 @@ Monthly at minimum, because every deployment can regress speed. Use the Search C
 
 ### Continue Reading
 Speed is one layer of the complete ranking system. Continue with the related guides on this site.
-- [White hat vs black hat SEO: sustainable rankings in the AI era](/blog/white-hat-vs-black-hat-seo) - the strategy layer that turns fast pages into trusted pages
-- [Programmatic JSON-LD schema markup for rich snippets](/blog/json-ld-schema-markup-guide) - structured data that converts fast pages into rich results
-- [Technical SEO audit: the complete 2026 checklist](/blog/technical-seo-audit-checklist-guide-2026) - finding every speed, crawl and schema issue in one audit`,
+- [White hat vs black hat SEO: sustainable rankings in the AI era](/blog/white-hat-vs-black-hat-seo/) - the strategy layer that turns fast pages into trusted pages
+- [Programmatic JSON-LD schema markup for rich snippets](/blog/json-ld-schema-markup-guide/) - structured data that converts fast pages into rich results
+- [Technical SEO audit: the complete 2026 checklist](/blog/technical-seo-audit-checklist-guide-2026/) - finding every speed, crawl and schema issue in one audit`,
   },
   {
     id: "blog-2",
@@ -330,9 +330,9 @@ Check Search Console Security and Manual Actions for manual penalties, and compa
 
 ### Continue Reading
 White hat strategy depends on the execution layers around it. Continue with these related guides on this site.
-- [White hat link building: the complete 2026 guide](/blog/white-hat-link-building-backlinks-guide-2026) - earning the authority this guide protects
-- [Core Web Vitals optimization in React and Next.js](/blog/core-web-vitals-react-nextjs) - the technical foundation white hat rankings stand on
-- [How to hire a good SEO expert in India](/blog/how-to-hire-seo-expert-india) - vetting for white hat methods before you sign`,
+- [White hat link building: the complete 2026 guide](/blog/white-hat-link-building-backlinks-guide-2026/) - earning the authority this guide protects
+- [Core Web Vitals optimization in React and Next.js](/blog/core-web-vitals-react-nextjs/) - the technical foundation white hat rankings stand on
+- [How to hire a good SEO expert in India](/blog/how-to-hire-seo-expert-india/) - vetting for white hat methods before you sign`,
   },
   {
     id: "blog-3",
@@ -492,9 +492,9 @@ Product, Offer and genuine AggregateRating, plus BreadcrumbList and Organization
 
 ### Continue Reading
 Structured data works hardest when the rest of the page is optimized. Continue with these related guides on this site.
-- [AI search optimization: AEO and GEO for Google AI Overviews](/blog/ai-search-optimization-aeo-geo-guide-2026) - the citation layer your schema feeds
-- [Core Web Vitals optimization in React and Next.js](/blog/core-web-vitals-react-nextjs) - fast pages that rich results convert
-- [Local SEO: rank in Google Maps](/blog/local-seo-guide-rank-google-maps-2026) - LocalBusiness schema in action`,
+- [AI search optimization: AEO and GEO for Google AI Overviews](/blog/ai-search-optimization-aeo-geo-guide-2026/) - the citation layer your schema feeds
+- [Core Web Vitals optimization in React and Next.js](/blog/core-web-vitals-react-nextjs/) - fast pages that rich results convert
+- [Local SEO: rank in Google Maps](/blog/local-seo-guide-rank-google-maps-2026/) - LocalBusiness schema in action`,
   },
   {
     id: "blog-4",
@@ -654,9 +654,9 @@ In-house suits permanent daily SEO needs at higher cost; outsourcing brings seni
 
 ### Continue Reading
 Before you hire, understand the work the right specialist will run. Continue with these related guides on this site.
-- [SEO services cost and pricing in India 2026](/blog/seo-services-cost-price-india-2026) - honest budget ranges for every service
-- [White hat vs black hat SEO: sustainable rankings](/blog/white-hat-vs-black-hat-seo) - the method questions every candidate must pass
-- [Technical SEO audit: the 2026 checklist](/blog/technical-seo-audit-checklist-guide-2026) - the deliverable that separates real specialists`,
+- [SEO services cost and pricing in India 2026](/blog/seo-services-cost-price-india-2026/) - honest budget ranges for every service
+- [White hat vs black hat SEO: sustainable rankings](/blog/white-hat-vs-black-hat-seo/) - the method questions every candidate must pass
+- [Technical SEO audit: the 2026 checklist](/blog/technical-seo-audit-checklist-guide-2026/) - the deliverable that separates real specialists`,
   },
   {
     id: "blog-5",

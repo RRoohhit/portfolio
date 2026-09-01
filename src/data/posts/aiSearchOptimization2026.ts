@@ -490,10 +490,10 @@ The skill set adds language and structure expertise, entity graphs, schema and A
 
 This guide covers the AI search layer. The complete system for 2026 also includes these guides on this site:
 
-- [Keyword research: finding low-competition keywords that AI and Google both reward](/blog/keyword-research-find-low-competition-keywords) - the research side of answer-first content
-- [Technical SEO audit: the machine-readability checklist behind every AI citation](/blog/technical-seo-audit-checklist-guide-2026) - rendering, schema and crawlability for AI engines
-- [Programmatic JSON-LD schema markup for rich snippets](/blog/json-ld-schema-markup-guide) - the structured data that AI engines quote
-- [The complete 2026 SEO and web development guide](/blog/seo-and-web-development-complete-guide-2026) - on-page, off-page, backlinks and development in one playbook
+- [Keyword research: finding low-competition keywords that AI and Google both reward](/blog/keyword-research-find-low-competition-keywords/) - the research side of answer-first content
+- [Technical SEO audit: the machine-readability checklist behind every AI citation](/blog/technical-seo-audit-checklist-guide-2026/) - rendering, schema and crawlability for AI engines
+- [Programmatic JSON-LD schema markup for rich snippets](/blog/json-ld-schema-markup-guide/) - the structured data that AI engines quote
+- [The complete 2026 SEO and web development guide](/blog/seo-and-web-development-complete-guide-2026/) - on-page, off-page, backlinks and development in one playbook
 
 ## Final words from Rohit Gupta
 

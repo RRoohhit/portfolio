@@ -92,7 +92,7 @@ export default function LocalSeoPage() {
         <Breadcrumbs
           items={[
             { name: "Home", href: "/" },
-            { name: "Services", href: "/services" },
+            { name: "Services", href: "/services/" },
             { name: "Local SEO" },
           ]}
         />
@@ -172,7 +172,7 @@ export default function LocalSeoPage() {
         </section>
 
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related services</h2>
+          <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related services</h3>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Google Business Profile SEO", href: "/services/google-business-profile-seo/" },
@@ -193,7 +193,7 @@ export default function LocalSeoPage() {
         </section>
 
         <section className="p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4 text-center">
-          <h2 className="text-xl font-bold text-white tracking-tight">Ready to get more local calls and walk-ins?</h2>
+          <h3 className="text-xl font-bold text-white tracking-tight">Ready to get more local calls and walk-ins?</h3>
           <p className="text-xs sm:text-sm text-white/70 max-w-xl mx-auto">
             Let us review your local presence and create a simple plan to help nearby customers choose you.
           </p>

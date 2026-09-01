@@ -187,6 +187,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta name="google-site-verification" content="cOS3XGFct508GjSXqJ8sOKgYDLll8jZo2WqzsLvBWs4" />
         <StructuredData />
+      </head>
+      <body className="bg-black text-zinc-100 font-sans antialiased selection:bg-emerald-400 selection:text-black min-h-screen [overflow-x:clip]">
         <noscript>
           <div style={{ maxWidth: "720px", margin: "0 auto", padding: "40px 20px", fontFamily: "system-ui,sans-serif", color: "#eee" }}>
             <p style={{ fontSize: "1.5rem", fontWeight: 700, margin: "0 0 12px" }}>Rohit Gupta — SEO Expert, Digital Marketing Consultant &amp; Web Developer</p>
@@ -194,8 +196,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <p>Call/WhatsApp: <a href={CONTACT.phoneHref} style={{ color: "#34d399" }}>{CONTACT.phone}</a> &nbsp;|&nbsp; Email: <a href={`mailto:${CONTACT.email}`} style={{ color: "#34d399" }}>{CONTACT.email}</a></p>
           </div>
         </noscript>
-      </head>
-      <body className="bg-black text-zinc-100 font-sans antialiased selection:bg-emerald-400 selection:text-black min-h-screen [overflow-x:clip]">
         <ScrollProgress />
         <SmoothScrollHandler />
         <AuditProvider>

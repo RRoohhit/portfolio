@@ -445,9 +445,9 @@ Narrow scope to your highest-value keywords, do part of the work in-house, start
 
 Understanding pricing matters more when you know the work behind it. Continue with these guides on this site:
 
-- [How to hire a good SEO expert in India: the complete 2026 checklist](/blog/how-to-hire-seo-expert-india) - vetting specialists before you pay
-- [White hat vs black hat SEO: sustainable rankings](/blog/white-hat-vs-black-hat-seo) - why the cheapest campaigns cost the most
-- [Technical SEO audit: the checklist behind a serious quote](/blog/technical-seo-audit-checklist-guide-2026) - what a real audit covers
+- [How to hire a good SEO expert in India: the complete 2026 checklist](/blog/how-to-hire-seo-expert-india/) - vetting specialists before you pay
+- [White hat vs black hat SEO: sustainable rankings](/blog/white-hat-vs-black-hat-seo/) - why the cheapest campaigns cost the most
+- [Technical SEO audit: the checklist behind a serious quote](/blog/technical-seo-audit-checklist-guide-2026/) - what a real audit covers
 
 ## Final words from Rohit Gupta
 

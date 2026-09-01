@@ -44,7 +44,7 @@ export default function WhiteHatSeoPage() {
       {renderJsonLd(breadcrumbData, "jsonld-white-hat-seo-breadcrumb")}
 
       <div className="space-y-12 sm:space-y-16 pt-24 lg:pt-28 pb-16 max-w-5xl mx-auto">
-        <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Services", href: "/services" }, { name: "White Hat SEO" }]} />
+        <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Services", href: "/services/" }, { name: "White Hat SEO" }]} />
 
         <header className="bg-zinc-950 border border-white/10 p-6 sm:p-10 rounded-3xl space-y-5 shadow-2xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -122,7 +122,7 @@ export default function WhiteHatSeoPage() {
         </section>
 
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h2>
+          <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h3>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Technical SEO", href: "/services/technical-seo/" },
@@ -138,7 +138,7 @@ export default function WhiteHatSeoPage() {
         </section>
 
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/40 via-zinc-950 to-zinc-950 border border-emerald-500/20 text-center space-y-5 shadow-2xl">
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Grow Your Traffic the Safe Way</h2>
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Grow Your Traffic the Safe Way</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             If you're tired of quick fixes that fall apart, let's build something that lasts. Tell me where your business stands and I'll show you a clean, white hat path forward.
           </p>

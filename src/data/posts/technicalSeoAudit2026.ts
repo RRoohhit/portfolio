@@ -483,10 +483,10 @@ Look for tool fluency, real before-and-after data, an insistence on field Core W
 
 Technical SEO is the base; these guides build on it:
 
-- [Core Web Vitals optimization in React and Next.js](/blog/core-web-vitals-react-nextjs) - the performance half of every technical audit
-- [Programmatic JSON-LD schema markup for rich snippets](/blog/json-ld-schema-markup-guide) - the structured data layer to audit
-- [White hat link building: the authority engine](/blog/white-hat-link-building-backlinks-guide-2026) - off-page health every technical audit must verify
-- [AI search optimization: AEO and GEO for 2026](/blog/ai-search-optimization-aeo-geo-guide-2026) - the AI-readiness checklist
+- [Core Web Vitals optimization in React and Next.js](/blog/core-web-vitals-react-nextjs/) - the performance half of every technical audit
+- [Programmatic JSON-LD schema markup for rich snippets](/blog/json-ld-schema-markup-guide/) - the structured data layer to audit
+- [White hat link building: the authority engine](/blog/white-hat-link-building-backlinks-guide-2026/) - off-page health every technical audit must verify
+- [AI search optimization: AEO and GEO for 2026](/blog/ai-search-optimization-aeo-geo-guide-2026/) - the AI-readiness checklist
 
 ## Final words from Rohit Gupta
 

@@ -542,10 +542,10 @@ AEO structures your content so answer engines cite and recommend you. For local 
 
 Local search is one channel of the full system. Pair this guide with:
 
-- [Keyword research: how to find low-competition local keywords](/blog/keyword-research-find-low-competition-keywords) - the research behind map pack growth
-- [Programmatic JSON-LD schema for LocalBusiness and FAQ rich results](/blog/json-ld-schema-markup-guide) - the schema layer for local pages
-- [AI search optimization: getting recommended as the local answer](/blog/ai-search-optimization-aeo-geo-guide-2026) - winning AI recommendations in your city
-- [The complete 2026 SEO and web development guide](/blog/seo-and-web-development-complete-guide-2026) - on-page and off-page SEO together
+- [Keyword research: how to find low-competition local keywords](/blog/keyword-research-find-low-competition-keywords/) - the research behind map pack growth
+- [Programmatic JSON-LD schema for LocalBusiness and FAQ rich results](/blog/json-ld-schema-markup-guide/) - the schema layer for local pages
+- [AI search optimization: getting recommended as the local answer](/blog/ai-search-optimization-aeo-geo-guide-2026/) - winning AI recommendations in your city
+- [The complete 2026 SEO and web development guide](/blog/seo-and-web-development-complete-guide-2026/) - on-page and off-page SEO together
 
 ## Final words from Rohit Gupta
 

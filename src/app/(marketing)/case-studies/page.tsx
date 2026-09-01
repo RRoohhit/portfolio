@@ -72,7 +72,7 @@ export default function CaseStudiesPage() {
                 </div>
 
                 <Link
-                  href={`/case-studies/${cs.id}`}
+                  href={`/case-studies/${cs.id}/`}
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-wider hover:bg-emerald-300 transition-colors shadow-lg shrink-0 self-start sm:self-center"
                 >
                   View Case Study

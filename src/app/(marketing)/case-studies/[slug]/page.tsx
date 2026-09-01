@@ -47,7 +47,7 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
           <Breadcrumbs
             items={[
               { name: "Home", href: "/" },
-              { name: "Case Studies", href: "/case-studies" },
+              { name: "Case Studies", href: "/case-studies/" },
               { name: cs.title },
             ]}
           />
