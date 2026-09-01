@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/", "/temp-uploads/"],
       },
-      // ── Google: full access including images ──
+      // ── Google: full access including images & video ──
       {
         userAgent: "Googlebot",
         allow: "/",
@@ -18,6 +18,19 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: "Googlebot-Image",
+        allow: "/",
+      },
+      {
+        userAgent: "Googlebot-Video",
+        allow: "/",
+      },
+      // ── Google AI & Gemini: allow for AI Overviews & Gemini indexing ──
+      {
+        userAgent: "Google-Extended",
+        allow: "/",
+      },
+      {
+        userAgent: "Gemini",
         allow: "/",
       },
       // ── Microsoft Bing: full access including preview & rendering ──
@@ -40,7 +53,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/", "/temp-uploads/"],
       },
-      // ── AI / LLM crawlers: allow for brand AEO visibility ──
+      // ── OpenAI / ChatGPT bots ──
       {
         userAgent: "GPTBot",
         allow: "/",
@@ -53,14 +66,12 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "OAI-SearchBot",
         allow: "/",
       },
+      // ── Perplexity AI ──
       {
         userAgent: "PerplexityBot",
         allow: "/",
       },
-      {
-        userAgent: "CCBot",
-        allow: "/",
-      },
+      // ── Anthropic / Claude ──
       {
         userAgent: "anthropic-ai",
         allow: "/",
@@ -69,11 +80,55 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "Claude-Web",
         allow: "/",
       },
+      // ── Common Crawl (LLM training datasets) ──
       {
-        userAgent: "Google-Extended",
+        userAgent: "CCBot",
         allow: "/",
       },
-      // ── SEO tools ──
+      // ── Meta AI (Llama training & Meta AI search) ──
+      {
+        userAgent: "Meta-ExternalAgent",
+        allow: "/",
+      },
+      {
+        userAgent: "Meta-ExternalFetcher",
+        allow: "/",
+      },
+      // ── Apple Intelligence / Applebot ──
+      {
+        userAgent: "Applebot",
+        allow: "/",
+      },
+      {
+        userAgent: "Applebot-Extended",
+        allow: "/",
+      },
+      // ── You.com AI search ──
+      {
+        userAgent: "YouBot",
+        allow: "/",
+      },
+      // ── Cohere AI (Command R search) ──
+      {
+        userAgent: "cohere-ai",
+        allow: "/",
+      },
+      // ── Diffbot (knowledge graph & structured data AI) ──
+      {
+        userAgent: "Diffbot",
+        allow: "/",
+      },
+      // ── ByteDance / Bytespider (TikTok AI, Doubao) ──
+      {
+        userAgent: "Bytespider",
+        allow: "/",
+      },
+      // ── Amazon Alexa / Amazonbot ──
+      {
+        userAgent: "Amazonbot",
+        allow: "/",
+      },
+      // ── SEO tools (allow read access, block API) ──
       {
         userAgent: "AhrefsBot",
         allow: "/",
@@ -84,8 +139,17 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/"],
       },
+      {
+        userAgent: "DotBot",
+        allow: "/",
+        disallow: ["/api/"],
+      },
     ],
-    sitemap: [`${SITE_URL}/sitemap.xml`, `${SITE_URL}/llms.txt`],
+    sitemap: [
+      `${SITE_URL}/sitemap.xml`,
+      `${SITE_URL}/llms.txt`,
+      `${SITE_URL}/llms-full.txt`,
+    ],
     host: SITE_URL,
   };
 }

@@ -2,6 +2,10 @@
 
 > Rohit Gupta is a senior SEO specialist, digital marketing consultant, and full-stack web developer based in Noida and Ayodhya, Uttar Pradesh, India. Providing 100% ethical White Hat SEO, Core Web Vitals engineering (99+ Lighthouse), technical audits, and AI search visibility (AEO/GEO) for businesses in India and worldwide.
 
+> **Entity Type**: Person / ProfessionalService | **Location**: Noida, UP, India | **Rating**: 4.9/5 (47 reviews) | **Experience**: 4+ years | **Languages**: English, Hindi | **Available**: Mon–Sat 09:00–19:00 IST | **Contact**: +91-9368483165 | rohitgupta.seo9@gmail.com
+
+> **Extended context** (entity facts, Q&A, pricing, case studies) available at: https://rohitguptaseo.in/llms-full.txt
+
 ## Core SEO & Development Services
 - [SEO Services Hub](https://rohitguptaseo.in/services/seo/): Comprehensive organic search strategy, technical SEO audits, and revenue-focused optimization.
 - [Hire Dedicated SEO Expert](https://rohitguptaseo.in/services/hire-seo-expert/): Dedicated monthly retainer models for senior SEO specialist collaboration with direct code access.
