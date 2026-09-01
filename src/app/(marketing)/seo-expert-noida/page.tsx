@@ -88,10 +88,10 @@ export default function SeoExpertNoidaPage() {
         </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
             <Star className="w-5 h-5 text-emerald-400" />
             What a Local Noida SEO Campaign Looks Like
-          </h2>
+          </h3>
           <div className="space-y-3">
             {[
               { t: "Google Business Profile cleanup", b: "I fix your listing's categories, service areas, photos, and reviews so it ranks in the Map Pack for searches like 'SEO company near me' or 'clinic in Noida'." },
@@ -111,10 +111,10 @@ export default function SeoExpertNoidaPage() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
             <MapPin className="w-5 h-5 text-emerald-400" />
             Noida Sectors &amp; Commercial Areas Covered
-          </h2>
+          </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {SECTORS_COVERED.map((sector) => (
               <div key={sector} className="p-4 rounded-2xl bg-zinc-950 border border-white/10 flex items-center gap-3">
@@ -126,10 +126,10 @@ export default function SeoExpertNoidaPage() {
         </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
             <Star className="w-5 h-5 text-emerald-400" />
             Frequently Asked Questions — Noida SEO
-          </h2>
+          </h3>
           <div className="space-y-4">
             {LOCAL_FAQS.map((faq, idx) => (
               <div key={idx} className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">

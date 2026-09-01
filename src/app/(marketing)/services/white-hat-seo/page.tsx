@@ -79,10 +79,10 @@ export default function WhiteHatSeoPage() {
         </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
-          <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
             <AlertTriangle className="w-5 h-5 text-amber-400" />
             What I Refuse to Do (and Why It Protects You)
-          </h2>
+          </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               { t: "Buy links or use link farms", b: "Paid link packages and private blog networks can get your domain deindexed. I never touch them." },
@@ -103,10 +103,10 @@ export default function WhiteHatSeoPage() {
 
         <section className="space-y-5">
           <div className="space-y-2">
-            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-400" />
               Our Core White Hat Principles
-            </h2>
+            </h3>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {PRINCIPLES.map((item) => (

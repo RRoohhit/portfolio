@@ -189,6 +189,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       style={{ colorScheme: "dark" }}
     >
       <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <meta name="google-site-verification" content="cOS3XGFct508GjSXqJ8sOKgYDLll8jZo2WqzsLvBWs4" />
         <StructuredData />
       </head>

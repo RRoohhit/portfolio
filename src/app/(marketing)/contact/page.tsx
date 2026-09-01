@@ -146,9 +146,9 @@ export default function ContactPage() {
               <Zap className="w-3.5 h-3.5" />
               <span>Transparent Collaboration</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
               What Happens After You Contact Rohit Gupta?
-            </h2>
+            </h3>
             <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light max-w-3xl">
               We respect your time. When you reach out, you speak directly with the specialist doing the work — not an aggressive salesperson or an account manager. Here is our 4-step onboarding flow:
             </p>
@@ -172,9 +172,9 @@ export default function ContactPage() {
               <Award className="w-3.5 h-3.5" />
               <span>Explore Full Capabilities</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
               Explore Core SEO Services &amp; Growth Solutions
-            </h2>
+            </h3>
             <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light">
               Discover dedicated services, diagnostic tools, and in-depth educational resources tailored for modern search visibility:
             </p>
@@ -206,9 +206,9 @@ export default function ContactPage() {
               <HelpCircle className="w-3.5 h-3.5" />
               <span>Direct Answers</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
               Frequently Asked Questions About Consultation &amp; Hiring
-            </h2>
+            </h3>
             <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light">
               Clear answers regarding turnaround times, audit inclusions, retainer terms, and working methodologies.
             </p>

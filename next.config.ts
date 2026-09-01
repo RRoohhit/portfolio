@@ -48,7 +48,7 @@ const nextConfig: NextConfig = {
     ],
   },
   experimental: {
-    optimizePackageImports: ["lucide-react", "recharts", "motion"],
+    optimizePackageImports: ["lucide-react", "recharts", "motion", "framer-motion", "@radix-ui/react-icons"],
   },
   // Raise the static-page generation timeout for slower build environments.
   staticPageGenerationTimeout: 120,

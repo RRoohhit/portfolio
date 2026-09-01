@@ -322,9 +322,9 @@ export default function HireSeoExpertPage() {
               <Briefcase className="w-3.5 h-3.5" />
               <span>Flexible Hiring Models</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
               Choose How You Want to <span className="text-emerald-400">Hire SEO Talent</span>
-            </h2>
+            </h3>
             <p className="text-sm text-white/60 max-w-2xl leading-relaxed">
               Startups, mid-size companies, and even other agencies all hire SEO help for different reasons. Pick the setup that fits how much work you need and how you like to work.
             </p>
@@ -374,9 +374,9 @@ export default function HireSeoExpertPage() {
         {/* Why Hire Rohit Gupta Section */}
         <section className="card-3d-interactive p-6 sm:p-10 rounded-3xl space-y-6 shadow-2xl">
           <div className="space-y-2">
-            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
               Why Businesses Hire Rohit Gupta as Their <span className="text-emerald-400">SEO Professional</span>
-            </h2>
+            </h3>
             <p className="text-sm text-white/65 leading-relaxed max-w-3xl">
               Most SEO consultants send static recommendations and wait for your developers to act. As a seasoned full-stack engineer and technical SEO specialist, I audit, code, optimize, and rank your web assets from start to finish.
             </p>
@@ -405,9 +405,9 @@ export default function HireSeoExpertPage() {
               <FileCheck className="w-3.5 h-3.5" />
               <span>Hiring Best Practices</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
               The 4-Step Checklist for <span className="text-amber-400">Hiring an SEO Expert</span>
-            </h2>
+            </h3>
             <p className="text-sm text-white/60 max-w-2xl leading-relaxed">
               Use this short list when you interview candidates — it's the same checklist I'd use if I were hiring for my own clients. It separates real SEO professionals from people who talk a good game.
             </p>
@@ -427,10 +427,10 @@ export default function HireSeoExpertPage() {
         {/* SEO FAQs */}
         <section className="card-3d-interactive p-6 sm:p-10 rounded-3xl space-y-6 shadow-2xl">
           <div className="space-y-2">
-            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight flex items-center gap-2">
+            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight flex items-center gap-2">
               <HelpCircle className="w-6 h-6 text-emerald-400" />
               Frequently Asked Questions About Hiring an SEO Expert
-            </h2>
+            </h3>
             <p className="text-xs sm:text-sm text-white/60">
               Straight answers on pricing, how long results take, what's white hat, and how we'd work together.
             </p>
