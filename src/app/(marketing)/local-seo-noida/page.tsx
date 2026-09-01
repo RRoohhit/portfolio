@@ -44,7 +44,7 @@ export default function LocalSeoNoidaPage() {
             Local SEO Services in Noida
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            The quickest way to get more customers locally is to show up when someone in Noida searches "near me" — and that's where I focus. I'm Rohit Gupta, based right here in Sector 66, and I help businesses in Sector 18, Sector 62, and Greater Noida rank in the Google Maps 3-Pack so nearby buyers actually find and choose them. It's not about vanity rankings — it's about getting you calls and store visits from people already looking for what you sell.
+            The quickest way to get more customers locally is to show up when someone in Noida searches "near me" — and that's where I focus. I'm Rohit Gupta, based right here in <a href="https://maps.app.goo.gl/bjJDqfUJRuJPqHBT6" target="_blank" rel="noopener noreferrer" title="View Rohit Gupta Location on Google Maps" className="text-emerald-400 font-semibold underline hover:text-emerald-300">Sector 66</a>, and I help businesses in Sector 18, Sector 62, and Greater Noida rank in the Google Maps 3-Pack so nearby buyers actually find and choose them. It's not about vanity rankings — it's about getting you calls and store visits from people already looking for what you sell.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Get Local SEO Consultation <ArrowRight className="w-4 h-4" />

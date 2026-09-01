@@ -64,7 +64,7 @@ export default function SeoExpertNoidaPage() {
             SEO Expert in Noida — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            I'm Rohit Gupta, and I do my SEO work right from Sector 66, Noida. I've helped IT companies, clinics, and local retail shops across Noida and Greater Noida get more customers from Google — real leads, not just vanity traffic numbers. My focus is the kind of SEO that actually works for a local business: getting you into the Google Map Pack and onto page one for the searches people around you are actually typing.
+            I'm Rohit Gupta, and I do my SEO work right from <a href="https://maps.app.goo.gl/bjJDqfUJRuJPqHBT6" target="_blank" rel="noopener noreferrer" title="View Rohit Gupta Location on Google Maps" className="text-emerald-400 font-semibold underline hover:text-emerald-300">Sector 66, Noida</a>. I've helped IT companies, clinics, and local retail shops across Noida and Greater Noida get more customers from Google — real leads, not just vanity traffic numbers. My focus is the kind of SEO that actually works for a local business: getting you into the Google Map Pack and onto page one for the searches people around you are actually typing.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">

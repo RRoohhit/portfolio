@@ -16,7 +16,7 @@ export const CONTACT = {
   location: "Noida & Ayodhya, UP, India",
   serving:
     "Serving clients across all of India (Mumbai, Delhi NCR, Bengaluru, Hyderabad, Chennai, Pune, Kolkata & 100+ cities) and worldwide — USA, UK, UAE, Canada, Australia & more",
-  googleMaps: "https://share.google/cqewWmS35Q5m53u5C",
+  googleMaps: "https://maps.app.goo.gl/bjJDqfUJRuJPqHBT6",
 } as const;
 
 export const SOCIALS = {

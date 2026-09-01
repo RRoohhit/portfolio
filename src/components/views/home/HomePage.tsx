@@ -560,7 +560,15 @@ export const HomePage: React.FC = () => {
                 <p className="text-sm sm:text-base lg:text-lg font-extrabold tracking-tight font-mono break-all text-black">{ROHIT_PROFILE.email}</p>
               </div>
               <div className="pt-4 border-t border-black/10 flex justify-between items-center">
-                <span className="text-[10px] font-mono uppercase font-bold text-black/70">NOIDA (CURRENT) · AYODHYA (PERMANENT)</span>
+                <a
+                  href="https://maps.app.goo.gl/bjJDqfUJRuJPqHBT6"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  title="View Rohit Gupta Location on Google Maps (Mamura, Sector 66, Noida)"
+                  className="text-[10px] font-mono uppercase font-bold text-black/70 hover:text-black hover:underline transition-colors"
+                >
+                  NOIDA SECTOR 66 (CURRENT) · AYODHYA (PERMANENT) ↗
+                </a>
                 <Link
                   href="/rohit-gupta/"
                   className="arrow-3d w-9 h-9 flex items-center justify-center font-bold text-black shadow-md hover:scale-110 transition-transform"

@@ -138,7 +138,7 @@ export default function NextjsDevelopmentPage() {
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              href="https://wa.me/919999922123?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20a%20Next.js%20development%20project"
+              href="https://wa.me/919696621216?text=Hi%20Rohit%2C%20I%27d%20like%20to%20discuss%20a%20Next.js%20development%20project"
               target="_blank"
               rel="nofollow noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 border border-emerald-500/30 text-white text-xs font-mono font-bold uppercase tracking-widest hover:bg-white/20 transition-colors"

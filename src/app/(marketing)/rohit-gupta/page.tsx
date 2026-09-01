@@ -105,10 +105,16 @@ export default function RohitGuptaPage() {
                   <Mail className="w-3.5 h-3.5 text-emerald-400" />
                   {CONTACT.email}
                 </a>
-                <div className="card-3d inline-flex items-center gap-1.5 px-3 py-1.5 text-white/70">
+                <a
+                  href="https://maps.app.goo.gl/bjJDqfUJRuJPqHBT6"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  title="View Rohit Gupta Location on Google Maps (Mamura, Sector 66, Noida)"
+                  className="card-3d inline-flex items-center gap-1.5 px-3 py-1.5 text-white/70 hover:text-emerald-400 hover:border-emerald-500/40 transition-colors"
+                >
                   <MapPin className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>Noida, UP (Current) · Ayodhya, UP (Permanent)</span>
-                </div>
+                  <span>Mamura, Sector 66, Noida (Current) · Ayodhya (Permanent) ↗</span>
+                </a>
               </div>
             </div>
 
