@@ -11,7 +11,6 @@ const REAL_PROFILES: string[] = [
   SOCIALS.instagram,
   SOCIALS.whatsapp,
   (SOCIALS as Record<string, string>).github,
-  (SOCIALS as Record<string, string>).twitter,
 ].filter((u): u is string => typeof u === "string" && u.trim().length > 0 && u.startsWith("http"));
 
 export interface BreadcrumbItem {

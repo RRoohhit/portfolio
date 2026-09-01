@@ -146,9 +146,9 @@ export default function ContactPage() {
               <Zap className="w-3.5 h-3.5" />
               <span>Transparent Collaboration</span>
             </div>
-            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
               What Happens After You Contact Rohit Gupta?
-            </h3>
+            </h2>
             <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light max-w-3xl">
               We respect your time. When you reach out, you speak directly with the specialist doing the work — not an aggressive salesperson or an account manager. Here is our 4-step onboarding flow:
             </p>
@@ -188,10 +188,10 @@ export default function ContactPage() {
                 className="p-4 rounded-2xl bg-black border border-white/10 hover:border-emerald-500/40 transition-colors group flex flex-col justify-between space-y-2"
               >
                 <div>
-                  <h3 className="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors flex items-center justify-between">
+                  <h4 className="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors flex items-center justify-between">
                     <span>{link.title}</span>
                     <ArrowRight className="w-3.5 h-3.5 text-white/40 group-hover:text-emerald-400 group-hover:translate-x-0.5 transition-all" />
-                  </h3>
+                  </h4>
                   <p className="text-xs text-white/60 leading-relaxed font-light mt-1">{link.desc}</p>
                 </div>
               </Link>
@@ -217,7 +217,7 @@ export default function ContactPage() {
           <div className="space-y-3.5 pt-2">
             {CONTACT_FAQS.map((faq, idx) => (
               <div key={idx} className="p-5 rounded-2xl bg-black border border-white/10 space-y-2">
-                <h3 className="text-sm sm:text-base font-bold text-white tracking-tight">{faq.question}</h3>
+                <h4 className="text-sm sm:text-base font-bold text-white tracking-tight">{faq.question}</h4>
                 <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light">{faq.answer}</p>
               </div>
             ))}

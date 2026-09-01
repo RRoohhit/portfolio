@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { CONTACT, SOCIALS } from "@/config/site";
 import heroPortraitImg from "@/assets/images/rohit-gupta-seo.webp";
 import {
-  CheckCircle2, ArrowRight, MapPin, Mail, Phone, Code2, Search, Target, Globe, Zap, ShieldCheck, Linkedin, Github, Twitter, Instagram
+  CheckCircle2, ArrowRight, MapPin, Mail, Phone, Code2, Search, Target, Globe, Zap, ShieldCheck, Linkedin, Github, Instagram
 } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
@@ -302,15 +302,6 @@ export default function RohitGuptaPage() {
             >
               <Github className="w-4 h-4 text-white" />
               GitHub Profile
-            </a>
-            <a
-              href={SOCIALS.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-3d-dark text-xs font-mono font-bold"
-            >
-              <Twitter className="w-4 h-4 text-sky-400" />
-              X (Twitter) Profile
             </a>
           </div>
         </section>
