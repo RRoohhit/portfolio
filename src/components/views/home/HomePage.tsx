@@ -459,9 +459,9 @@ export const HomePage: React.FC = () => {
             <Cpu className="w-3.5 h-3.5" />
             <span>Built-In Live SEO &amp; AI Intelligence Tools</span>
           </div>
-          <h3 id="tools-suite-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
+          <h2 id="tools-suite-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
             Test Drive My <span className="text-gradient">Proprietary SEO Tools</span>
-          </h3>
+          </h2>
           <p className="text-sm text-white/60 max-w-2xl mx-auto leading-relaxed">
             Free interactive tools built directly into this portfolio for audit engineers, developers, and marketing leads.
           </p>
@@ -515,9 +515,9 @@ export const HomePage: React.FC = () => {
           <Reveal direction="right" distance={32} className="lg:col-span-7">
             <div className="card-3d-interactive p-5 sm:p-8 space-y-5 sm:space-y-6 shadow-2xl h-full flex flex-col justify-between">
               <div className="space-y-4">
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-white tracking-tight">
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-black text-white tracking-tight">
                   Rohit — Web Developer &amp; SEO Expert Freelancer in Noida
-                </h3>
+                </h2>
                 <p className="text-sm leading-relaxed text-white/75">
                   I&apos;m Rohit Gupta, a freelance web developer and SEO specialist from Noida with roots in Ayodhya. Over 2+ years I&apos;ve helped 200+ businesses — from Noida salons and coaching institutes to Mumbai startups, Bengaluru SaaS brands, and UK/US eCommerce companies — rank higher, load faster and convert better through 100% ethical White Hat SEO. What makes me different? I&apos;m the strategist who also writes the code: the person who audits your Core Web Vitals fixes them, and the person who plans your keyword clusters builds the schema that powers them. My clients span across India and internationally, and I&apos;m available on-site in Delhi NCR &amp; Ayodhya, and 100% remote everywhere else.
                 </p>
@@ -616,9 +616,9 @@ export const HomePage: React.FC = () => {
             <Zap className="w-4 h-4 text-white" />
             <span>Technology &amp; Tools Stack</span>
           </div>
-          <h3 id="tech-stack-heading" className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+          <h2 id="tech-stack-heading" className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
             The <span className="text-gradient">Tech Stack</span> Behind the Rankings
-          </h3>
+          </h2>
         </Reveal>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
@@ -691,9 +691,9 @@ export const HomePage: React.FC = () => {
             <Award className="w-4 h-4 text-white" />
             <span>Professional Career Experience</span>
           </div>
-          <h3 id="experience-heading" className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+          <h2 id="experience-heading" className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
             Work Experience (<span className="text-gradient">SEO &amp; Development</span>)
-          </h3>
+          </h2>
         </Reveal>
 
         <div className="space-y-4 sm:space-y-5">

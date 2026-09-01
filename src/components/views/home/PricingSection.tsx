@@ -92,9 +92,9 @@ export function PricingSection() {
           <Zap className="w-3.5 h-3.5" />
           Pricing & Packages
         </div>
-        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
           Project Pricing Based on <span className="text-gradient">Your Goals</span>
-        </h3>
+        </h2>
         <p className="text-sm sm:text-base text-white/70 max-w-2xl mx-auto leading-relaxed">
           Instead of forcing a fixed price, we discuss your business, growth goals, website status, and required services — then decide the right package and budget together.
         </p>

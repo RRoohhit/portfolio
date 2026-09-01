@@ -93,7 +93,7 @@ export default function WhiteHatSeoPage() {
               <div key={item.t} className="flex items-start gap-3 p-4 rounded-2xl bg-black border border-white/10">
                 <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-sm font-bold text-white">{item.t}</p>
+                  <h3 className="text-sm font-bold text-white">{item.t}</h3>
                   <p className="text-xs text-white/70 leading-relaxed font-light">{item.b}</p>
                 </div>
               </div>
@@ -103,17 +103,17 @@ export default function WhiteHatSeoPage() {
 
         <section className="space-y-5">
           <div className="space-y-2">
-            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
+            <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-400" />
               Our Core White Hat Principles
-            </h3>
+            </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {PRINCIPLES.map((item) => (
               <div key={item.title} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-emerald-500/30 transition-colors space-y-2">
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <h4 className="text-sm font-bold text-white tracking-tight">{item.title}</h4>
+                  <h3 className="text-sm font-bold text-white tracking-tight">{item.title}</h3>
                 </div>
                 <p className="text-xs text-white/65 leading-relaxed pl-6">{item.desc}</p>
               </div>
@@ -122,7 +122,7 @@ export default function WhiteHatSeoPage() {
         </section>
 
         <section className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3">
-          <h3 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h3>
+          <h2 className="text-base font-bold text-white uppercase tracking-wider font-mono">Related Services</h2>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Technical SEO", href: "/services/technical-seo/" },
@@ -138,7 +138,7 @@ export default function WhiteHatSeoPage() {
         </section>
 
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/40 via-zinc-950 to-zinc-950 border border-emerald-500/20 text-center space-y-5 shadow-2xl">
-          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Grow Your Traffic the Safe Way</h3>
+          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Grow Your Traffic the Safe Way</h2>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
             If you're tired of quick fixes that fall apart, let's build something that lasts. Tell me where your business stands and I'll show you a clean, white hat path forward.
           </p>

@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const whiteHatSeoServicesIndia2026: BlogPost = {
   id: "blog-20",
-  title: "White Hat SEO Services India: What They Really Include (2026)",
+  title: "White Hat SEO Services India: Complete 2026 Guide",
   h1: "White Hat SEO Services in India: What You Actually Get in 2026",
   slug: "white-hat-seo-services-india-guide-2026",
   excerpt:

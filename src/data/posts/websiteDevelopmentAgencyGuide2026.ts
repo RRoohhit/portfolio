@@ -2,8 +2,8 @@ import { BlogPost } from "../../types";
 
 export const websiteDevelopmentAgencyGuide2026: BlogPost = {
   id: "blog-21",
-  title: "How to Choose a Website Development Agency in India (2026)",
-  h1: "How to Choose a Website Development Agency in India That Actually Delivers",
+  title: "Choosing a Website Development Agency in India (2026)",
+  h1: "How to Choose a Website Development Agency in India",
   slug: "website-development-agency-india-guide-2026",
   excerpt:
     "Choosing a website development agency in India? This guide covers what to look for, red flags to avoid, costs, and why developers who also understand SEO give you a serious advantage.",

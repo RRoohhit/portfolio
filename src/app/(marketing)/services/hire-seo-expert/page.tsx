@@ -374,9 +374,9 @@ export default function HireSeoExpertPage() {
         {/* Why Hire Rohit Gupta Section */}
         <section className="card-3d-interactive p-6 sm:p-10 rounded-3xl space-y-6 shadow-2xl">
           <div className="space-y-2">
-            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
               Why Businesses Hire Rohit Gupta as Their <span className="text-emerald-400">SEO Professional</span>
-            </h3>
+            </h2>
             <p className="text-sm text-white/65 leading-relaxed max-w-3xl">
               Most SEO consultants send static recommendations and wait for your developers to act. As a seasoned full-stack engineer and technical SEO specialist, I audit, code, optimize, and rank your web assets from start to finish.
             </p>
@@ -390,7 +390,7 @@ export default function HireSeoExpertPage() {
                   <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
                     <Icon className="w-4 h-4" />
                   </div>
-                  <h4 className="text-sm font-bold text-white tracking-tight">{item.title}</h4>
+                  <h3 className="text-sm font-bold text-white tracking-tight">{item.title}</h3>
                   <p className="text-xs text-white/65 leading-relaxed font-light">{item.desc}</p>
                 </div>
               );
@@ -405,9 +405,9 @@ export default function HireSeoExpertPage() {
               <FileCheck className="w-3.5 h-3.5" />
               <span>Hiring Best Practices</span>
             </div>
-            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
               The 4-Step Checklist for <span className="text-amber-400">Hiring an SEO Expert</span>
-            </h3>
+            </h2>
             <p className="text-sm text-white/60 max-w-2xl leading-relaxed">
               Use this short list when you interview candidates — it's the same checklist I'd use if I were hiring for my own clients. It separates real SEO professionals from people who talk a good game.
             </p>
@@ -417,7 +417,7 @@ export default function HireSeoExpertPage() {
             {VETTING_CHECKLIST.map((step) => (
               <div key={step.step} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">
                 <div className="text-xs font-mono font-black text-amber-400">{step.step}</div>
-                <h4 className="text-base font-bold text-white tracking-tight">{step.title}</h4>
+                <h3 className="text-base font-bold text-white tracking-tight">{step.title}</h3>
                 <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light">{step.desc}</p>
               </div>
             ))}
@@ -427,10 +427,10 @@ export default function HireSeoExpertPage() {
         {/* SEO FAQs */}
         <section className="card-3d-interactive p-6 sm:p-10 rounded-3xl space-y-6 shadow-2xl">
           <div className="space-y-2">
-            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight flex items-center gap-2">
+            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight flex items-center gap-2">
               <HelpCircle className="w-6 h-6 text-emerald-400" />
               Frequently Asked Questions About Hiring an SEO Expert
-            </h3>
+            </h2>
             <p className="text-xs sm:text-sm text-white/60">
               Straight answers on pricing, how long results take, what's white hat, and how we'd work together.
             </p>
@@ -439,7 +439,7 @@ export default function HireSeoExpertPage() {
           <div className="space-y-4 pt-2">
             {HIRE_FAQS.map((faq, idx) => (
               <div key={idx} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 space-y-2">
-                <h4 className="text-sm sm:text-base font-bold text-white tracking-tight">{faq.question}</h4>
+                <h3 className="text-sm sm:text-base font-bold text-white tracking-tight">{faq.question}</h3>
                 <p className="text-xs sm:text-sm text-white/75 leading-relaxed font-light">{faq.answer}</p>
               </div>
             ))}
@@ -448,9 +448,9 @@ export default function HireSeoExpertPage() {
 
         {/* Final CTA */}
         <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-emerald-950/50 via-zinc-950 to-zinc-950 border border-emerald-500/30 text-center space-y-6 shadow-2xl">
-          <h3 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
             Ready to Hire a Top-Rated <span className="text-emerald-400">SEO Expert in India</span>?
-          </h3>
+          </h2>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed font-light">
             Claim your free 24-hour technical SEO audit and discover how we can take your target keywords to Position #1 on Google.
           </p>

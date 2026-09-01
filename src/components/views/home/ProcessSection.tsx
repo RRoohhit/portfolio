@@ -45,9 +45,9 @@ export const ProcessSection: React.FC = () => {
           <Rocket className="w-3 h-3" />
           <span>Simple, Transparent Process</span>
         </div>
-        <h3 id="process-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
+        <h2 id="process-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
           How Working With Me <span className="text-gradient">Feels</span>
-        </h3>
+        </h2>
         <p className="text-sm text-white/60 max-w-2xl mx-auto leading-relaxed">
           No jargon, no junior account managers, no 40-page reports nobody reads. Four clear steps from first audit to compounding rankings.
         </p>
