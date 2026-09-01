@@ -22,8 +22,8 @@ export const CONTACT = {
 export const SOCIALS = {
   linkedin: "https://www.linkedin.com/in/rohit-gupta-seo1",
   instagram: "https://www.instagram.com/rohitguptaseoin",
-  github: "#",
-  twitter: "#",
+  github: "https://github.com/RRoohhit",
+  twitter: "https://x.com/rohitguptaseoin",
   whatsapp: CONTACT.whatsapp,
 } as const;
 

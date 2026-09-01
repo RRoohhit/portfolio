@@ -50,9 +50,9 @@ export const WhyHireMeSection: React.FC = () => {
           <Crown className="w-3 h-3" />
           <span>The Honest Comparison</span>
         </div>
-        <h2 id="why-hire-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
+        <h3 id="why-hire-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
           Why Hire Me Over <span className="text-gradient">an Agency or Freelancer?</span>
-        </h2>
+        </h3>
         <p className="text-sm text-white/60 max-w-2xl mx-auto leading-relaxed">
           You deserve to know exactly what you are paying for. Here is how hiring Rohit Gupta compares to the common alternatives in India — no marketing spin.
         </p>

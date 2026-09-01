@@ -459,9 +459,9 @@ export const HomePage: React.FC = () => {
             <Cpu className="w-3.5 h-3.5" />
             <span>Built-In Live SEO &amp; AI Intelligence Tools</span>
           </div>
-          <h2 id="tools-suite-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
-            Test Drive My <span className="text-gradient">Proprietary SEO Tools</span>
-          </h2>
+          <h3 id="tools-suite-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
+            10+ Free Production-Grade <span className="text-gradient">SEO Tools</span>
+          </h3>
           <p className="text-sm text-white/60 max-w-2xl mx-auto leading-relaxed">
             Free interactive tools built directly into this portfolio for audit engineers, developers, and marketing leads.
           </p>
@@ -624,9 +624,9 @@ export const HomePage: React.FC = () => {
             <Zap className="w-4 h-4 text-white" />
             <span>Technology &amp; Tools Stack</span>
           </div>
-          <h2 id="tech-stack-heading" className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+          <h3 id="tech-stack-heading" className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
             The <span className="text-gradient">Tech Stack</span> Behind the Rankings
-          </h2>
+          </h3>
         </Reveal>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
@@ -699,9 +699,9 @@ export const HomePage: React.FC = () => {
             <Award className="w-4 h-4 text-white" />
             <span>Professional Career Experience</span>
           </div>
-          <h2 id="experience-heading" className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
-            Work Experience (<span className="text-gradient">SEO &amp; Development</span>)
-          </h2>
+          <h3 id="experience-heading" className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+            2+ Years of <span className="text-gradient">Proven Client Results</span>
+          </h3>
         </Reveal>
 
         <div className="space-y-4 sm:space-y-5">

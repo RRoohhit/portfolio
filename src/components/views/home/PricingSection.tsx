@@ -92,9 +92,9 @@ export function PricingSection() {
           <Zap className="w-3.5 h-3.5" />
           Pricing & Packages
         </div>
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
           Project Pricing Based on <span className="text-gradient">Your Goals</span>
-        </h2>
+        </h3>
         <p className="text-sm sm:text-base text-white/70 max-w-2xl mx-auto leading-relaxed">
           Instead of forcing a fixed price, we discuss your business, growth goals, website status, and required services — then decide the right package and budget together.
         </p>
@@ -119,7 +119,7 @@ export function PricingSection() {
 
               <div className="space-y-4 sm:space-y-5 h-full flex flex-col">
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight mb-2">{pkg.name}</h3>
+                  <h4 className="text-xl sm:text-2xl font-black text-white tracking-tight mb-2">{pkg.name}</h4>
                   <p className="text-xs sm:text-sm text-white/65 mt-3 leading-relaxed">{pkg.description}</p>
                 </div>
 
@@ -150,9 +150,9 @@ export function PricingSection() {
       {/* Customization Section */}
       <div className="mt-8 sm:mt-12 pt-8 sm:pt-12 border-t border-white/10">
         <div className="text-center space-y-3 sm:space-y-4 mb-8">
-          <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white tracking-tight">
+          <h4 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white tracking-tight">
             Need a Custom Package?
-          </h3>
+          </h4>
           <p className="text-sm sm:text-base text-white/70 max-w-2xl mx-auto leading-relaxed">
             Every business is different. Tell us about your goals, website, and marketing needs — and we&apos;ll decide the right project price and customization together.
           </p>
@@ -207,7 +207,7 @@ export function PricingSection() {
 
       {/* FAQ */}
       <div className="mt-8 sm:mt-12 pt-8 sm:pt-12 border-t border-white/10 space-y-5">
-        <h3 className="text-xl sm:text-2xl font-bold text-white text-center">Pricing FAQs</h3>
+        <h4 className="text-xl sm:text-2xl font-bold text-white text-center">Pricing FAQs</h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
             {

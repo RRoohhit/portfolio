@@ -279,7 +279,7 @@ export default function RohitGuptaPage() {
             <a
               href={SOCIALS.linkedin}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="noopener noreferrer"
               className="btn-3d-dark text-xs font-mono font-bold"
             >
               <Linkedin className="w-4 h-4 text-blue-400" />
@@ -288,7 +288,7 @@ export default function RohitGuptaPage() {
             <a
               href={SOCIALS.instagram}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="noopener noreferrer"
               className="btn-3d-dark text-xs font-mono font-bold"
             >
               <Instagram className="w-4 h-4 text-pink-400" />
@@ -297,7 +297,7 @@ export default function RohitGuptaPage() {
             <a
               href={SOCIALS.github}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="noopener noreferrer"
               className="btn-3d-dark text-xs font-mono font-bold"
             >
               <Github className="w-4 h-4 text-white" />
@@ -306,7 +306,7 @@ export default function RohitGuptaPage() {
             <a
               href={SOCIALS.twitter}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="noopener noreferrer"
               className="btn-3d-dark text-xs font-mono font-bold"
             >
               <Twitter className="w-4 h-4 text-sky-400" />

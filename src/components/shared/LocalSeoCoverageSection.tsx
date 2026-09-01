@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React from "react";
 import Link from "next/link";
 import { LOCAL_COVERAGE, INTERNATIONAL_COVERAGE, WHY_HIRE } from "@/data/portfolioData";
@@ -20,9 +20,9 @@ export const LocalSeoCoverageSection: React.FC<LocalSeoCoverageSectionProps> = (
             <MapPin className="w-3.5 h-3.5" />
             <span>Based in Noida &amp; Ayodhya · Serving Everywhere — Pan India + Worldwide</span>
           </div>
-          <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight uppercase">
+          <h3 className="text-2xl sm:text-4xl font-black text-white tracking-tight uppercase">
             SEO &amp; Web Development Across <span className="text-emerald-400">100+ Indian Cities &amp; Worldwide</span>
-          </h2>
+          </h3>
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
             Rohit Gupta is not limited to Noida or Delhi — he works with businesses in every major Indian city (Mumbai, Bengaluru, Hyderabad, Chennai, Pune, Kolkata, Lucknow &amp; 100+ more) and with remote international clients in the USA, UK, UAE, Canada, Australia, Singapore and beyond — building fast web applications and implementing ethical, long-term search growth strategies anywhere in the world.
           </p>

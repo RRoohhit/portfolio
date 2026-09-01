@@ -92,9 +92,9 @@ export const FaqSection: React.FC = () => {
           <span>SEO Knowledge Base &amp; Hiring Guide</span>
         </div>
         
-        <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight uppercase">
+        <h3 className="text-2xl sm:text-4xl font-black text-white tracking-tight uppercase">
           Frequently Asked Questions About <span className="text-gradient">SEO Services &amp; Hiring</span>
-        </h2>
+        </h3>
         
         <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
           Clear, transparent answers from Rohit Gupta on hiring SEO experts, Core Web Vitals, AI search optimization (AEO/GEO), rankings timelines, and technical web architecture.
@@ -192,9 +192,9 @@ export const FaqSection: React.FC = () => {
                       </span>
                     </div>
 
-                    <h3 className="text-sm sm:text-base font-bold text-white group-hover:text-emerald-300 transition-colors leading-snug">
+                    <h4 className="text-sm sm:text-base font-bold text-white group-hover:text-emerald-300 transition-colors leading-snug">
                       {item.question}
-                    </h3>
+                    </h4>
                   </div>
 
                   <div
