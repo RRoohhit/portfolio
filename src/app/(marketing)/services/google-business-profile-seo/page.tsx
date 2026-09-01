@@ -49,12 +49,12 @@ const GBP_OPTIMIZATION_ITEMS = [
 ];
 
 const PROCESS_STEPS = [
-  { step: "01", title: "Profile Audit", desc: "We review your Google profile to find missing tags, old hours, and ranking gaps." },
-  { step: "02", title: "Category Setup", desc: "We pick top categories so Google matches your profile to local search terms." },
-  { step: "03", title: "NAP Cleanup", desc: "We make sure your name, address, and phone match across all web directories." },
-  { step: "04", title: "Reviews & Posts", desc: "We set up review workflows and regular posts to keep your profile active." },
-  { step: "05", title: "Landing Pages", desc: "We connect your profile to fast city landing pages on your website." },
-  { step: "06", title: "Track Results", desc: "We track phone calls, map views, and direction requests each month." },
+  { step: "01", title: "Profile Audit", desc: "I review your Google profile to find missing tags, old hours, and ranking gaps." },
+  { step: "02", title: "Category Setup", desc: "I pick the right categories so Google matches your profile to local search terms." },
+  { step: "03", title: "NAP Cleanup", desc: "I make sure your name, address, and phone match exactly across all web directories." },
+  { step: "04", title: "Reviews & Posts", desc: "I set up review workflows and regular posts to keep your profile active and trusted." },
+  { step: "05", title: "Landing Pages", desc: "I connect your profile to fast, local city landing pages on your website." },
+  { step: "06", title: "Track Results", desc: "I track phone calls, map views, and direction requests each month so you see real progress." },
 ];
 
 const SEARCH_QUERIES = [
@@ -71,11 +71,11 @@ const SEARCH_QUERIES = [
 const FAQS = [
   {
     question: "Why is Google Business Profile SEO important?",
-    answer: "Because many high-intent customers do not visit your website first—they search locally and choose the business that looks strongest, most relevant, and most trustworthy in the map results.",
+    answer: "Because many high-intent customers never visit your website first — they search locally and pick the business that looks strongest, most relevant, and most trustworthy right in the map results.",
   },
   {
     question: "Can this help a local service business even if I already have a website?",
-    answer: "Yes. Your website helps with broader search discovery, but your GBP helps capture people who are searching specifically for businesses near them right now.",
+    answer: "Yes. Your website helps with broader search discovery, but your GBP captures the people searching specifically for businesses near them right now — the hottest leads you can get.",
   },
   {
     question: "How long does GBP SEO take to show results?",

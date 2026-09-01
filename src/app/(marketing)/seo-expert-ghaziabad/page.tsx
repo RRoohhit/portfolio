@@ -42,7 +42,7 @@ export default function SeoExpertGhaziabadPage() {
             SEO Expert in Ghaziabad — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Grow your search traffic in Ghaziabad. Rohit Gupta helps businesses in Indirapuram, Vaishali, and Vasundhara rank #1 on Google. We deliver local map rankings, site speed fixes, and high-converting web design.
+            Ghaziabad is right next door to Noida, and it shares all of NCR&apos;s competition — so businesses here need smart local SEO, not guesswork. I&apos;m Rohit Gupta, and I help businesses in Indirapuram, Vaishali, and Vasundhara rank on Google Maps and search, fix the speed issues that quietly hurt them, and build websites that actually turn visits into enquiries.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Ghaziabad SEO Expert <ArrowRight className="w-4 h-4" />
@@ -54,26 +54,26 @@ export default function SeoExpertGhaziabadPage() {
             SEO &amp; Digital Growth Services for Ghaziabad Businesses
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Win more local customers in Ghaziabad with technical SEO, Google Maps rankings, and clean web development.
+            Winning customers in Ghaziabad means being found locally, loading fast, and giving people a reason to call you. That&apos;s exactly where I put the effort.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
                 title: "Ghaziabad Google Maps 3-Pack",
-                desc: "Get more calls and visits. We optimize your Google Business Profile and local citations across Indirapuram and Vaishali.",
+                desc: "I optimise your Google Business Profile and local citations across Indirapuram and Vaishali, so more calls and visits come from your area.",
               },
               {
                 title: "Site Speed & Core Web Vitals",
-                desc: "Fix slow page loads and bad LCP scores. We help your website pass Google PageSpeed tests with 90+ scores.",
+                desc: "I fix slow page loads and poor LCP scores directly in the code, helping your site pass Google's PageSpeed tests with strong scores.",
               },
               {
                 title: "Buyer Keyword Research",
-                desc: "Target terms used by buyers in Ghaziabad. We find keywords your competitors miss and rank your pages.",
+                desc: "I find the terms buyers in Ghaziabad actually search — including the ones your competitors missed — and build your pages around them.",
               },
               {
                 title: "Fast Next.js & React Websites",
-                desc: "Build mobile-friendly websites that load fast. We add structured schema to convert visitors into inquiries.",
+                desc: "I build mobile-friendly websites that load quickly and carry structured schema, so visits turn into enquiries.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">

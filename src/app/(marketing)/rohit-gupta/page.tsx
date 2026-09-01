@@ -86,7 +86,7 @@ export default function RohitGuptaPage() {
               </p>
 
               <p className="text-sm sm:text-base text-white/80 leading-relaxed pt-2">
-                I&apos;m <strong>Rohit Gupta</strong> — a professional <strong>web developer &amp; SEO expert freelancer</strong> based in Noida, India. I help businesses hire dedicated SEO expertise, build lightning-fast WordPress and Next.js websites, and achieve #1 Google rankings through 100% White Hat SEO services.
+                I&apos;m <strong>Rohit Gupta</strong> — a freelance <strong>web developer and SEO expert</strong> based in Noida. I started doing this because I kept seeing small businesses get sold overpriced SEO packages that did nothing. So I built my practice on the opposite idea: do the work myself, explain everything in plain language, and only earn results you can actually measure. I help businesses launch fast WordPress and Next.js websites, fix the things holding their rankings back, and rank on Google the clean, white hat way — no shortcuts that could come back to bite them.
               </p>
 
               {/* Contact info badges */}
@@ -136,13 +136,13 @@ export default function RohitGuptaPage() {
           </h2>
           <div className="space-y-4 text-sm sm:text-base text-white/80 leading-relaxed font-light">
             <p>
-              I run a boutique <strong>White Hat SEO firm</strong> and freelance agency. Clients in India, the UK, the UAE, and the US <strong>hire me as their dedicated SEO expert</strong>. I own their full organic search channel — crawlability, Core Web Vitals, schema, content, and AI Overview citations.
+              I run a small white hat SEO practice — not a factory with dozens of clients you never hear back from. When you work with me, I own your entire organic search channel myself: how well Google can crawl your site, how fast it loads, your schema, your content, and your visibility in AI search answers.
             </p>
             <p>
-              On the web development side, I build custom <strong>WordPress sites and WooCommerce stores</strong>. I also build Headless WordPress with Next.js. All sites load in under 1.2 seconds on real Chrome data.
+              On the web development side, I build custom <strong>WordPress sites and WooCommerce stores</strong>, plus headless WordPress on Next.js when a project needs a more modern stack. Every site I ship is built to load fast on real devices — I don't just claim it, I test it.
             </p>
             <p>
-              <strong>Rohit Digital Marketing Services</strong> also covers Google Ads PPC, conversion rate optimization (CRO), and AI search visibility (AEO/GEO). You get one point of contact for all digital growth.
+              The <strong>Rohit Digital Marketing Services</strong> side handles Google Ads, conversion optimization, and getting you cited by AI search engines. The point is simple: you get one person who actually understands all of it, so you're never stuck coordinating between five different vendors.
             </p>
           </div>
         </section>
@@ -196,14 +196,14 @@ export default function RohitGuptaPage() {
           </h3>
           <div className="space-y-4 text-sm sm:text-base text-white/80 leading-relaxed font-light">
             <p>
-              I focus only on White-Hat SEO that follows Google&apos;s Search Essentials. I do not buy links, use private blog networks (PBNs), or stuff keywords. These shortcuts cause ranking drops and long-term penalties.
+              I only work with white hat methods that follow Google&apos;s own rules. I don&apos;t buy links, don&apos;t use private blog networks, and don&apos;t stuff keywords. Those shortcuts might look good for a month, but they cause ranking crashes and long-term damage — and I&apos;d rather earn you a ranking that lasts.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               {[
-                { title: "1. Technical Foundation", desc: "Audit and fix crawlability, Core Web Vitals, indexation, sitemaps, canonicals, and schema markup." },
-                { title: "2. Intent & Keyword Architecture", desc: "Research exact buyer & user intent, map keywords to specific landing pages, and structure content logically." },
-                { title: "3. On-Page & Semantic SEO", desc: "Optimize title tags, H1-H6 headers, internal link equity, alt-text, entities, and rich content depth." },
-                { title: "4. Ethical Authority Building", desc: "Earn contextual dofollow links via digital PR, unlinked brand mentions, local citations, and resource outreach." },
+                { title: "1. Technical Foundation", desc: "Audit and fix crawlability, Core Web Vitals, indexation, sitemaps, canonicals, and schema markup — the boring stuff that quietly decides whether anyone can rank at all." },
+                { title: "2. Intent & Keyword Architecture", desc: "Research what your customers are actually typing and why, then map those searches to the right pages instead of cramming every keyword onto one." },
+                { title: "3. On-Page & Semantic SEO", desc: "Optimize title tags, headings, internal links, alt-text, and content depth so each page clearly answers the question it's meant to answer." },
+                { title: "4. Ethical Authority Building", desc: "Earn contextual links the honest way — digital PR, unlinked mentions, local citations, and genuinely useful content people want to reference." },
               ].map((step, idx) => (
                 <div key={idx} className="p-4 rounded-2xl bg-zinc-950 border border-white/10 space-y-1">
                   <h4 className="text-sm font-bold text-emerald-400 font-mono">{step.title}</h4>
@@ -222,10 +222,10 @@ export default function RohitGuptaPage() {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { title: "Developer + SEO Hybrid", desc: "I write clean React/Next.js/Node.js code myself — meaning I don't just point out technical errors, I fix them directly in the codebase." },
-              { title: "Transparent & Measurable", desc: "No opaque reporting or fluff metrics. Monthly reports track ranking movements, organic traffic growth, impressions, and conversions." },
-              { title: "100% Penalty-Free Guarantee", desc: "Strict adherence to White-Hat standards means your website's search equity is protected across Google core updates." },
-              { title: "Direct Communication", desc: "You work directly with me — the technical specialist executing the work — ensuring zero miscommunication." },
+              { title: "Developer + SEO Hybrid", desc: "I write clean React, Next.js, and Node.js code myself — so I don't just point out technical problems, I fix them directly in your codebase." },
+              { title: "Transparent & Measurable", desc: "No jargon reports or vanity numbers. Every month you see real movements in rankings, organic traffic, and conversions." },
+              { title: "100% Penalty-Free", desc: "Because I stay strictly white hat, your site's search standing is protected even through Google's core updates." },
+              { title: "Direct Communication", desc: "You talk straight to me — the person doing the work — so nothing gets lost in translation between account managers." },
             ].map((reason, idx) => (
               <div key={idx} className="p-4 rounded-2xl bg-zinc-950 border border-white/10 space-y-1">
                 <h4 className="text-sm font-bold text-white tracking-tight">{reason.title}</h4>

@@ -25,41 +25,41 @@ export const metadata: Metadata = buildPageMetadata({
 const GROWTH_CHANNELS = [
   {
     title: "Search engine optimization",
-    desc: "We build the foundation of organic growth using technical SEO, keyword strategy, local visibility, and content alignment with user intent.",
+    desc: "I build the organic foundation with technical SEO, keyword strategy, local visibility, and content that matches what customers actually search for.",
   },
   {
     title: "Google Ads and paid acquisition",
-    desc: "We structure campaigns around real business goals and keep refining them so spend supports leads, calls, and revenue—not just clicks.",
+    desc: "I structure campaigns around real business goals and keep refining the targeting, so your spend produces leads and revenue — not just clicks and numbers on a screen.",
   },
   {
     title: "Content strategy and conversion copy",
-    desc: "We create pages and content that both rank and convert, helping the website do more than just attract traffic.",
+    desc: "I create pages and content that both rank and convert, so the website earns back its keep by bringing in enquiries, not just visitors.",
   },
   {
     title: "Conversion rate optimization",
-    desc: "We reduce friction in the funnel so more of the traffic you already get turns into real enquiry and business action.",
+    desc: "I reduce friction in the funnel so more of the traffic you already have turns into real enquiries and sales action.",
   },
 ];
 
 const PROCESS = [
-  { step: "01", title: "Audit and diagnosis", desc: "We review your current channels, traffic sources, conversions, and positioning to identify what is actually limiting growth." },
-  { step: "02", title: "Growth plan", desc: "We define the right mix of SEO, ads, offer positioning, and landing page strategy around your revenue goals." },
-  { step: "03", title: "Execution", desc: "We build the campaign structure, service pages, tracking, and content system so everything works together instead of in isolation." },
-  { step: "04", title: "Optimization", desc: "We monitor data monthly and improve based on what is converting, what is wasting budget, and what is scaling efficiently." },
+  { step: "01", title: "Audit and diagnosis", desc: "I review your current channels, traffic, conversions, and positioning to find what is actually holding growth back." },
+  { step: "02", title: "Growth plan", desc: "I map the right mix of SEO, ads, offer positioning, and landing pages around your revenue goals — and explain it in plain language." },
+  { step: "03", title: "Execution", desc: "I build the campaign structure, service pages, tracking, and content system so everything works together instead of in isolation." },
+  { step: "04", title: "Optimization", desc: "I monitor the data monthly and improve based on what is converting, what is wasting budget, and what is scaling efficiently." },
 ];
 
 const FAQS = [
   {
     question: "Do I need SEO and ads together?",
-    answer: "In many cases, yes. SEO builds long-term visibility while ads bring immediate demand. The strongest systems use both together without wasting budget or over-relying on one channel.",
+    answer: "In many cases, yes. SEO builds long-term visibility while ads bring immediate demand. I help you run both together so they reinforce each other, without wasting budget or depending too much on one channel.",
   },
   {
     question: "Is digital marketing right for small businesses?",
-    answer: "Yes, when it is focused. The key is not to do everything at once; it is to prioritize the channels and offers that will create the best return for your real business goals.",
+    answer: "Yes — when it's focused. The trick is not to do everything at once. I help you pick the channels and offers that will create the best return for your specific business instead of spreading a small budget too thin.",
   },
   {
     question: "Can you help with both strategy and execution?",
-    answer: "Yes. We can help shape the growth strategy, build the technical and content foundation, and support execution across the relevant channels.",
+    answer: "Yes. I shape the growth strategy and also do the execution across the channels that matter — so you're not stuck coordinating between consultants who never talk to each other.",
   },
 ];
 
@@ -90,7 +90,7 @@ export default function DigitalMarketingPage() {
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            We do not believe in isolated marketing tactics. Good digital marketing works like a system: search visibility, content trust, paid acquisition, and conversion flow all need to work together for the business to grow consistently.
+            I don't believe in isolated marketing tricks — and I think you already know they don't work. Real digital marketing works like a system: search visibility, content trust, paid ads, and conversion flow all feed each other. I help you connect those pieces so the business grows consistently instead of jumping between one-off tactics.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">

@@ -39,7 +39,7 @@ const ENGAGEMENT_MODELS = [
   {
     title: "Dedicated SEO Specialist (Full-Time / Part-Time)",
     tag: "Most Popular for Growing Brands",
-    desc: "Work directly with Rohit Gupta. Get daily SEO execution — technical fixes, keyword strategy, and on-page optimization — with no agency middlemen.",
+    desc: "You work directly with me — no account manager in the middle. I handle the technical fixes, keyword research, and on-page work myself, and you get daily or weekly updates on exactly what's changing on your site.",
     deliverables: [
       "100% dedicated focus on your domain(s)",
       "Daily/Weekly sprint updates via Slack or WhatsApp",
@@ -52,7 +52,7 @@ const ENGAGEMENT_MODELS = [
   {
     title: "Hire Dedicated SEO Expert Team",
     tag: "For E-Commerce & Enterprise Scale",
-    desc: "Get a full SEO team led by Rohit Gupta. We cover technical SEO, White Hat link building, content writing, and React/Next.js development.",
+    desc: "Need more than one pair of hands? I put together a small team around your project — so you get technical SEO, white hat link building, content writing, and React/Next.js development running in parallel instead of waiting on one person.",
     deliverables: [
       "Multi-disciplinary execution (Tech + Content + Links)",
       "Large-scale programmatic SEO & faceted navigation fixes",
@@ -65,7 +65,7 @@ const ENGAGEMENT_MODELS = [
   {
     title: "SEO Advisory & Technical Audit Retainer",
     tag: "For In-House Marketing Teams",
-    desc: "Senior SEO guidance for founders and marketing teams. Great if you have content writers but need a specialist to set strategy and fix technical issues.",
+    desc: "You already have writers and marketers — you just need a senior SEO brain to set the strategy, fix the technical stuff, and keep the plan on track. I step in as your consultant and audit specialist without taking over your whole team.",
     deliverables: [
       "Deep crawl audits (Screaming Frog, GSC, Semrush)",
       "Custom JSON-LD schema engineering & architecture",
@@ -81,32 +81,32 @@ const WHY_HIRE_ROHIT = [
   {
     icon: ShieldCheck,
     title: "100% White Hat & Penalty-Free",
-    desc: "Strict adherence to Google Search Essentials. No automated link spam, PBNs, or low-quality tricks that risk algorithmic deindexing.",
+    desc: "I follow Google's Search Essentials to the letter. No automated link spam, no private blog networks, no low-quality tricks. That's how I keep sites safe from penalties while they grow.",
   },
   {
     icon: Zap,
     title: "Developer + SEO Specialist Hybrid",
-    desc: "I don't just export audit spreadsheets; I write clean React, Next.js, and TypeScript code to directly implement speed and schema fixes.",
+    desc: "I don't just hand over audit spreadsheets and hope your developers figure them out. I write the clean React, Next.js, and TypeScript code myself to fix speed and schema issues.",
   },
   {
     icon: TrendingUp,
     title: "Proven 4,700%+ Organic Traffic Growth",
-    desc: "Track record of scaling niche portals, e-commerce stores, and B2B platforms to Top-3 rankings for ultra-competitive commercial queries.",
+    desc: "I've scaled niche portals, e-commerce stores, and B2B platforms to top-3 rankings on tough commercial keywords — and I can show you the actual before/after data.",
   },
   {
     icon: Globe,
     title: "AI Search & AEO/GEO Ready",
-    desc: "Future-proof your organic presence to capture citations across ChatGPT Search, Google AI Overviews, and Perplexity AI.",
+    desc: "Search isn't just Google anymore. I set up your content so it gets picked up and cited by ChatGPT Search, Google AI Overviews, and Perplexity too.",
   },
   {
     icon: Award,
     title: "Direct Access to Senior Expert",
-    desc: "No middlemen or junior account managers. You collaborate directly with Rohit Gupta from strategy conception to technical execution.",
+    desc: "No middlemen, no handoffs to juniors. You talk to me — the person who plans your strategy and writes the code — from day one.",
   },
   {
     icon: Target,
     title: "Measurable Revenue & ROI Focus",
-    desc: "Rankings are only meaningful if they drive conversions. Every sprint is aligned with qualified inbound leads and organic sales.",
+    desc: "Rankings only matter if they bring customers. I tie every piece of work to leads and sales, not just vanity metrics.",
   },
 ];
 
@@ -114,22 +114,22 @@ const VETTING_CHECKLIST = [
   {
     step: "01",
     title: "Review Verifiable Case Studies & Real SERP Data",
-    desc: "Look for transparent before/after traffic curves, keyword position histories, and Core Web Vitals achievements rather than generic promises.",
+    desc: "Don't accept \"we get great results\" on faith. Ask for real before/after traffic curves, keyword position histories, and Core Web Vitals screenshots — not vague promises.",
   },
   {
     step: "02",
-    title: "Evaluate Technical Code-Level Competency",
-    desc: "Ensure your SEO professional understands JavaScript hydration, Server-Side Rendering (SSR), canonical hierarchies, and Schema JSON-LD.",
+    title: "Check They Can Actually Code",
+    desc: "A good SEO person understands JavaScript, server-side rendering, canonicals, and schema. If they can't speak to these, they'll leave the hard fixes to your developers.",
   },
   {
     step: "03",
-    title: "Insist on Transparent White-Hat Link Practices",
-    desc: "A legitimate SEO expert earns contextual links through digital PR, thought leadership, and resource outreach—never paid link farms.",
+    title: "Ask Exactly How They Build Links",
+    desc: "Real experts earn links through digital PR, guest spots, and genuinely useful resources — not by buying them. Anyone hesitating on this is hiding something.",
   },
   {
     step: "04",
-    title: "Verify Clear Monthly Reporting & SLA Cadence",
-    desc: "Demand plain-language monthly reports tracking keyword movements, organic impressions, qualified leads, and next month's priorities.",
+    title: "Demand Plain-English Monthly Reports",
+    desc: "You should be able to read your report and understand it. If it's full of jargon and vanity numbers, they're managing your impression, not your rankings.",
   },
 ];
 
@@ -163,6 +163,26 @@ const HIRE_FAQS = [
     question: "How do we get started?",
     answer:
       "Click 'Hire Dedicated SEO Expert' or WhatsApp +91 96966 21216. We will schedule a discovery call, run a free 24-hour technical audit, and share a 90-day SEO growth roadmap.",
+  },
+  {
+    question: "How much does it cost to hire an SEO expert in India?",
+    answer:
+      "It honestly depends on your goals. A one-time technical audit usually runs ₹8,000 to ₹20,000, while an ongoing monthly retainer with me is typically in the ₹15,000 to ₹60,000 range depending on how much content, link building, and development you need. You'll always know exactly what's included before you commit — no hidden surprises at renewal.",
+  },
+  {
+    question: "Can you improve my Core Web Vitals and site speed?",
+    answer:
+      "That's one of my strengths, because I'm a developer too. Instead of just listing what's slow, I go in and fix the actual code — image formats, render-blocking scripts, server response times — so your site is genuinely fast, not just 'scheduled for later' by another consultant.",
+  },
+  {
+    question: "I already have a marketing team. Do I still need an SEO expert?",
+    answer:
+      "If your marketing team is doing paid ads and social media while organic search is stuck, then yes — SEO is too specialised to wing it. Plenty of my clients are agencies and in-house teams who bring me in just for the technical SEO and strategy layer they can't cover themselves. You keep your team; I handle what they can't.",
+  },
+  {
+    question: "Should I hire one SEO expert or build my own in-house team?",
+    answer:
+      "For most businesses, hiring an experienced SEO expert is far cheaper and faster than building an in-house team. A full-time SEO hire plus a link builder plus a content writer can cost a lakh or more every month. With me you get a senior specialist who writes code too, without the overhead of multiple salaries and training.",
   },
 ];
 
@@ -201,7 +221,7 @@ export default function HireSeoExpertPage() {
               <span className="text-emerald-400">Dedicated SEO Specialist &amp; Team</span>
             </h1>
             <p className="text-base sm:text-lg text-white/85 leading-relaxed max-w-3xl font-light">
-              Grow faster on Google with a dedicated <strong>SEO expert &amp; developer</strong>. Hire Rohit Gupta as your <strong>SEO specialist</strong> for technical SEO, Core Web Vitals, and content strategy. Or scale with a full <strong>SEO expert team</strong> for enterprise growth. All 100% White Hat — zero spam.
+              I'm Rohit Gupta — a freelance SEO expert and full-stack developer working out of Noida. For years I've helped small businesses, online stores, and even other agencies get more customers from Google. The difference? I do the work myself. I don't hand you a pretty report and disappear — I dig into your site, fix the code, build the links, and stay on top of it. You can hire me directly as your dedicated <strong>SEO specialist</strong>, or bring in my small team when you need content, links, and web development at scale. Every project is clean, white hat SEO — no spam, no shortcuts, nothing that puts your domain at risk.
             </p>
           </div>
 
@@ -253,6 +273,48 @@ export default function HireSeoExpertPage() {
           </div>
         </header>
 
+        {/* How I Work - human/E-E-A-T section */}
+        <section className="space-y-6">
+          <div className="space-y-2">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-mono uppercase tracking-widest font-bold">
+              <Check className="w-3.5 h-3.5" />
+              <span>How I Actually Work</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+              What It Looks Like When You <span className="text-emerald-400">Hire Me</span>
+            </h2>
+            <p className="text-sm text-white/60 max-w-2xl leading-relaxed">
+              I've noticed most business owners are burned by SEO before they even start — an agency sold them a package, nothing moved, and they cancelled after six months. So let's be clear about how I work from the very first week.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {[
+              {
+                title: "Week one — I dig in before I promise anything",
+                body: "I start with a real technical audit of your site, not a template. I look at your crawl, your code, your speed, your keywords, and what your competitors are actually ranking for. Within a week you get a plain-language breakdown of what's broken and what's worth fixing first.",
+              },
+              {
+                title: "I fix problems myself, not just report them",
+                body: "Because I write code, I don't send you a list of issues and wait. If your site needs schema, faster images, or a cleaner crawl path, I implement it. This is the part most agencies simply hand back to your already-busy developers.",
+              },
+              {
+                title: "We agree on honest targets",
+                body: "I won't tell you 'guaranteed #1 in a week', because anyone who does is lying. Instead we set realistic goals — which keywords we're after, what timeline is fair, and how we'll measure it — and I report against those same numbers every month.",
+              },
+              {
+                title: "Monthly reports you can actually read",
+                body: "Every month you get: what I did, what moved (organic sessions, keyword positions, Core Web Vitals), and what's next. In plain words. If something isn't working, you'll hear it from me first — not when it's too late to fix.",
+              },
+            ].map((step) => (
+              <div key={step.title} className="p-5 sm:p-6 rounded-2xl bg-zinc-950 border border-white/10 space-y-1.5">
+                <h3 className="text-base font-bold text-white tracking-tight">{step.title}</h3>
+                <p className="text-xs sm:text-sm text-white/70 leading-relaxed font-light">{step.body}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Engagement Models */}
         <section className="space-y-6">
           <div className="space-y-2">
@@ -264,7 +326,7 @@ export default function HireSeoExpertPage() {
               Choose How You Want to <span className="text-emerald-400">Hire SEO Talent</span>
             </h2>
             <p className="text-sm text-white/60 max-w-2xl leading-relaxed">
-              Tailored engagement structures suited for startups, mid-market enterprises, and digital marketing agencies across India and worldwide.
+              Startups, mid-size companies, and even other agencies all hire SEO help for different reasons. Pick the setup that fits how much work you need and how you like to work.
             </p>
           </div>
 
@@ -347,7 +409,7 @@ export default function HireSeoExpertPage() {
               The 4-Step Checklist for <span className="text-amber-400">Hiring an SEO Expert</span>
             </h3>
             <p className="text-sm text-white/60 max-w-2xl leading-relaxed">
-              Use this framework when interviewing candidates to separate true technical authorities from short-term tricksters.
+              Use this short list when you interview candidates — it's the same checklist I'd use if I were hiring for my own clients. It separates real SEO professionals from people who talk a good game.
             </p>
           </div>
 
@@ -370,7 +432,7 @@ export default function HireSeoExpertPage() {
               Frequently Asked Questions About Hiring an SEO Expert
             </h3>
             <p className="text-xs sm:text-sm text-white/60">
-              Clear answers regarding pricing, timelines, white hat deliverables, and hiring engagement processes.
+              Straight answers on pricing, how long results take, what's white hat, and how we'd work together.
             </p>
           </div>
 

@@ -47,11 +47,11 @@ const PLATFORMS = [
 ];
 
 const PROCESS_STEPS = [
-  { step: "01", title: "E-Commerce Store Audit", desc: "We review your site speed, product schema, filters, and indexing health." },
-  { step: "02", title: "Buyer Keyword Mapping", desc: "We map high-intent search terms to each product and category page." },
-  { step: "03", title: "On-Page Optimization", desc: "We write clean titles, meta tags, and structured data for top products." },
-  { step: "04", title: "Technical Speed Fixes", desc: "We speed up page load times and fix filter URLs for better crawl rates." },
-  { step: "05", title: "Track Sales Growth", desc: "We track your clicks, keyword ranks, and sales growth in Search Console." },
+  { step: "01", title: "E-Commerce Store Audit", desc: "I review your site speed, product schema, filters, and indexing health." },
+  { step: "02", title: "Buyer Keyword Mapping", desc: "I map high-intent search terms to each product and category page." },
+  { step: "03", title: "On-Page Optimization", desc: "I write clean titles, meta tags, and structured data for your top products." },
+  { step: "04", title: "Technical Speed Fixes", desc: "I speed up page load times and fix filter URLs so Google can crawl more of your store." },
+  { step: "05", title: "Track Sales Growth", desc: "I track your clicks, keyword ranks, and sales growth in Search Console." },
 ];
 
 export default function EcommerceSeoPage() {
@@ -78,7 +78,7 @@ export default function EcommerceSeoPage() {
             E-Commerce SEO Services by Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Sell more products through Google organic search. Rohit Gupta helps online stores rank for high-intent buyer keywords. We optimize Shopify, WooCommerce, and custom stores to drive more clicks, sales, and revenue.
+            Sell more products through Google organic search. I'm Rohit Gupta, and I help online stores rank for the high-intent buyer keywords that actually bring in customers — whether you're on Shopify, WooCommerce, or a custom build. My focus is optimising your store so it drives more clicks, sales, and revenue, not just traffic.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">

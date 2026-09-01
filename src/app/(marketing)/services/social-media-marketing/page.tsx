@@ -23,15 +23,15 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const WHATS_INCLUDED = [
-  { title: "Custom Growth Plan", desc: "A tailored plan for your brand. We focus on your real goals." },
-  { title: "Profile Setup", desc: "We tune your bio, links, and photos on all social apps." },
-  { title: "Monthly Posts", desc: "We plan reels and image posts that keep fans engaged." },
-  { title: "Instagram Growth", desc: "Grow with viral reels and clean photo carousels." },
-  { title: "Facebook Page Reach", desc: "Build an active group of local buyers on Facebook." },
-  { title: "LinkedIn Brand Reach", desc: "Build your personal brand. Win high-value business deals." },
-  { title: "Rival Account Review", desc: "See what top rivals do and find what works best." },
-  { title: "Real Organic Fans", desc: "Get real fans with quality posts. No fake bots." },
-  { title: "Social Search Rank", desc: "Make your page rank high on Instagram and Google search." },
+  { title: "Custom Growth Plan", desc: "A tailored plan for your brand, built around your real goals — not a generic template." },
+  { title: "Profile Setup", desc: "I tune your bio, links, and photos on all social apps so everything looks professional." },
+  { title: "Monthly Posts", desc: "I plan reels and image posts that actually keep your audience engaged." },
+  { title: "Instagram Growth", desc: "Grow with viral reels and clean photo carousels that fit your brand." },
+  { title: "Facebook Page Reach", desc: "Build an active community of local buyers on Facebook." },
+  { title: "LinkedIn Brand Reach", desc: "Build your personal brand and win high-value business deals." },
+  { title: "Rival Account Review", desc: "I study what top rivals do so we can use what actually works." },
+  { title: "Real Organic Fans", desc: "Real followers gained with quality posts — no fake bots or bought likes." },
+  { title: "Social Search Rank", desc: "I help your page rank higher on Instagram and Google search." },
   { title: "Lead Generation", desc: "Turn views into website visits, calls, and chats." },
 ];
 

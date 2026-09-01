@@ -50,7 +50,7 @@ export default function NextjsDevelopmentPage() {
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Build fast Next.js websites that rank high on Google. Rohit Gupta builds App Router applications engineered for 100/100 Lighthouse scores, clean code, and sub-second page loads.
+            I build fast Next.js websites that rank well on Google — App Router applications engineered for strong Lighthouse scores, clean code, and sub-second page loads. If you want a site that's both fast for users and easy for search engines to crawl, Next.js is usually the right call, and I'll build it properly.
           </p>
         </header>
 

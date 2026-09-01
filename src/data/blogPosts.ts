@@ -13,6 +13,8 @@ import { hireDedicatedSeoExpertGuide2026 } from "./posts/hireDedicatedSeoExpertG
 import { bestSeoToolsIndiaGuide2026 } from "./posts/bestSeoToolsIndiaGuide2026";
 import { googleBusinessProfileOptimization2026 } from "./posts/googleBusinessProfileOptimization2026";
 import { rank1GoogleSystem2026 } from "./posts/rank1GoogleSystem2026";
+import { whiteHatSeoServicesIndia2026 } from "./posts/whiteHatSeoServicesIndia2026";
+import { websiteDevelopmentAgencyGuide2026 } from "./posts/websiteDevelopmentAgencyGuide2026";
 
 // Single source of truth for all articles.
 // Consumed by: /blog listing, /blog/[slug] pages, home page grid and reader modal.
@@ -1295,4 +1297,6 @@ I have spent my career doing exactly this for businesses across Noida, Delhi and
   bestSeoToolsIndiaGuide2026,
   googleBusinessProfileOptimization2026,
   rank1GoogleSystem2026,
+  whiteHatSeoServicesIndia2026,
+  websiteDevelopmentAgencyGuide2026,
 ];

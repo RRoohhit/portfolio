@@ -42,7 +42,7 @@ export default function SeoExpertAyodhyaPage() {
             SEO Expert in Ayodhya — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Grow your business in Ayodhya with expert SEO. Rohit Gupta is based in Ayodhya and helps hotels, retail shops, and local services rank #1 on Google. We deliver Google Maps rankings, fast mobile pages, and steady tourist leads.
+            Ayodhya is my hometown, so helping its businesses grow is personal. I&apos;m Rohit Gupta, and I work with hotels, retail shops, and local services here to get found on Google Maps and search. My focus is simple: get you seen by the tourists and locals who are already looking for what you offer, with fast mobile pages and honest, white-hat optimisation.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Ayodhya SEO Expert <ArrowRight className="w-4 h-4" />
@@ -54,26 +54,26 @@ export default function SeoExpertAyodhyaPage() {
             SEO &amp; Digital Growth Solutions for Ayodhya Businesses
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Get more local visits and tourist inquiries with Google Maps optimization and fast web pages.
+            Ayodhya&apos;s tourism boom means more people searching than ever — and the businesses that show up correctly win. I focus on Google Maps visibility and fast pages that turn that search interest into bookings and visits.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
                 title: "Ayodhya Google Maps 3-Pack",
-                desc: "Rank on Google Maps for hotels and shops in Ayodhya. We fix your photos, reviews, and local listings.",
+                desc: "I help hotels and shops rank on Google Maps here by fixing your photos, reviews, and local listings — the details that decide who gets the click.",
               },
               {
                 title: "Tourism & Hotel SEO",
-                desc: "Target search terms from travelers across India. We help you win direct bookings and tour leads.",
+                desc: "I target the search terms travellers use to plan their Ayodhya visit, so you win more direct bookings and tour enquiries.",
               },
               {
                 title: "Fast Mobile Performance",
-                desc: "Make your site load in under 1 second on phones. Fast pages help travelers book on the go.",
+                desc: "I make sure your site loads in under a second on phones, because travellers book on the go and won't wait for a slow page.",
               },
               {
                 title: "Rich Schema Markup",
-                desc: "Add hotel and local business schema tags. Google and AI tools then show your stars and address.",
+                desc: "I add hotel and local business schema, so Google and AI tools show your stars, address, and availability right in the results.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">

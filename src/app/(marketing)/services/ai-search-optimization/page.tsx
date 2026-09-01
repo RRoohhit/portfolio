@@ -24,15 +24,15 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const WHATS_INCLUDED = [
-  { title: "Google AI Overviews", desc: "Find out if your pages appear in AI Overviews. We optimize your content structure so AI engines quote your site." },
-  { title: "Entity Brand Optimization", desc: "Establish your brand as a trusted entity. We make sure AI tools understand who you are and what you do." },
-  { title: "Structured Schema Data", desc: "Add rich JSON-LD schema tags. We help AI search bots read and extract answers from your pages fast." },
-  { title: "E-E-A-T Trust Signals", desc: "Boost your trust and author expertise signals. AI models prefer citing credible, proven sources." },
-  { title: "Question-Based Content", desc: "Write content that answers user questions directly. We format answers so AI bots quote them verbatim." },
-  { title: "Citation-Focused Strategy", desc: "Build factual, well-researched guides. We help your site become the default source AI tools reference." },
-  { title: "Knowledge Graph Presence", desc: "Link your brand across your website, Google profile, and social links. We build entity trust." },
-  { title: "ChatGPT & Perplexity Reach", desc: "Optimize your content for ChatGPT, Perplexity, and Copilot. We help you win AI search citations." },
-  { title: "Brand Consistency Audit", desc: "Audit your brand details across all web profiles. We ensure AI engines get clear, uniform data." },
+  { title: "Google AI Overviews", desc: "Find out if your pages appear in AI Overviews. I optimise your content structure so AI engines quote your site." },
+  { title: "Entity Brand Optimization", desc: "I help establish your brand as a trusted entity, so AI tools clearly understand who you are and what you do." },
+  { title: "Structured Schema Data", desc: "I add rich JSON-LD schema so AI search bots can read and extract answers from your pages quickly." },
+  { title: "E-E-A-T Trust Signals", desc: "I boost your trust and author expertise signals, because AI models prefer citing credible, proven sources." },
+  { title: "Question-Based Content", desc: "I write content that answers user questions directly, formatted so AI bots can quote it accurately." },
+  { title: "Citation-Focused Strategy", desc: "I build factual, well-researched guides that make your site the default source AI tools reference." },
+  { title: "Knowledge Graph Presence", desc: "I link your brand across your website, Google profile, and social profiles to build consistent entity trust." },
+  { title: "ChatGPT & Perplexity Reach", desc: "I optimise your content for ChatGPT, Perplexity, and Copilot so you win AI search citations, not just Google." },
+  { title: "Brand Consistency Audit", desc: "I audit your brand details across all web profiles so AI engines get clear, uniform data about you." },
 ];
 
 const AI_PLATFORMS = [
@@ -67,7 +67,7 @@ export default function AiSearchOptimizationPage() {
             AI Search Optimization Services
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Rank in Google AI Overviews, ChatGPT, and Perplexity. Rohit Gupta helps businesses get quoted and cited by AI answer engines. We optimize your structured data, entity trust, and helpful content.
+            Search is changing, and AI answer engines like Google AI Overviews, ChatGPT, and Perplexity are now part of how customers find you. I help businesses get quoted and cited by these systems — by cleaning up your structured data, building entity trust, and writing content that answers questions directly. It's a newer kind of SEO, but the fundamentals are the same: be clear, be credible, be helpful.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">

@@ -43,7 +43,7 @@ export default function SeoExpertKolkataPage() {
             SEO Expert in Kolkata — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Kolkata is a market of heritage brands and new ambitions alike — and its businesses deserve SEO that understands both. Rohit Gupta helps Kolkata and West Bengal companies across Park Street, Salt Lake, New Town and Howrah rank #1 on Google with technical audits, local SEO, WordPress development and white hat link building. Fully remote &amp; professional support pan-India and internationally.
+            Kolkata is a market of heritage brands and new ambitions alike — and its businesses deserve SEO that understands both. I&apos;m Rohit Gupta, and I work with companies across Kolkata and West Bengal — from Park Street and Salt Lake to New Town and Howrah — on technical SEO, local visibility, WordPress development, and white hat link building. Because I work remotely, clients across India and internationally get the same senior-level attention, no matter where they&apos;re based.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Kolkata SEO Specialist <ArrowRight className="w-4 h-4" />
@@ -54,26 +54,26 @@ export default function SeoExpertKolkataPage() {
             SEO &amp; Web Solutions for Kolkata &amp; West Bengal Businesses
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            From heritage trade and manufacturing to education and modern eCommerce — win Kolkata&apos;s growing digital search demand.
+            From heritage trade and manufacturing to education and modern eCommerce — I help Kolkata and West Bengal businesses win the growing digital search demand across the region.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
                 title: "Kolkata Local SEO & Google Maps",
-                desc: "Rank your Kolkata business in the Google Maps 3-Pack across Park Street, Salt Lake, New Town and Howrah with GBP optimization and local citations.",
+                desc: "I help your Kolkata business rank in the Google Maps 3-Pack across Park Street, Salt Lake, New Town and Howrah through Google Business Profile optimization and consistent local citations.",
               },
               {
                 title: "WordPress & eCommerce Development",
-                desc: "Build fast, SEO-ready WordPress and WooCommerce sites with custom Gutenberg themes, structured data and sub-second Core Web Vitals.",
+                desc: "I build fast, SEO-ready WordPress and WooCommerce sites with custom themes, structured data, and sub-second Core Web Vitals — no bloated builders slowing you down.",
               },
               {
                 title: "Technical SEO & Core Web Vitals",
-                desc: "Crawl audits, indexation fixes, speed engineering and schema — the technical foundation that turns Kolkata traffic into rankings.",
+                desc: "Crawl audits, indexation fixes, speed engineering, and schema — the technical foundation I build behind every ranking that turns Kolkata traffic into customers.",
               },
               {
                 title: "White Hat Link Building & Content",
-                desc: "Earn editorial links from Indian media and industry authorities while publishing content that builds long-term West Bengal brand trust.",
+                desc: "I earn editorial links from Indian media and industry authorities while publishing content that builds long-term trust for West Bengal brands.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">

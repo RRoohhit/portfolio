@@ -24,19 +24,19 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const INCLUDED_CHECKLIST = [
-  { title: "Technical SEO audit", desc: "We review the site architecture, indexation patterns, crawlability, server health, page performance, and structure to find what is actually blocking rankings." },
-  { title: "Crawlability and bot access", desc: "We make sure Googlebot can reach the pages you want indexed and waste less crawl budget on low-value URLs and duplicate routes." },
-  { title: "Indexation and coverage fixes", desc: "We resolve indexation issues such as pages being discovered but not indexed, soft 404s, poor canonical signals, and low-value duplicate content." },
-  { title: "Robots.txt and sitemap management", desc: "We configure the instructions and URL map so your important pages are discoverable and the site stays clean and indexable." },
-  { title: "Canonical and redirect hygiene", desc: "We fix redirect loops, chain redirects, and duplicate URL patterns so authority flows to the right pages instead of getting diluted." },
-  { title: "JavaScript SEO and rendering review", desc: "We check how modern frameworks render important content so Google can understand the page content instead of seeing a broken or incomplete version." },
-  { title: "Core Web Vitals tuning", desc: "We optimize LCP, INP, and CLS to improve user experience and keep page speed aligned with modern search expectations." },
-  { title: "Page speed and server performance", desc: "We reduce render blocking, improve server response time, compress assets, and streamline performance so pages load faster and convert better." },
-  { title: "Mobile-first and responsiveness checks", desc: "We make sure the site is optimized for real-world mobile interactions and the way Google now prioritizes page experience." },
-  { title: "Structured data and schema markup", desc: "We add schema where it helps users and search engines understand the business, content, offers, and page context more clearly." },
-  { title: "Duplicate content control", desc: "We find and fix issues caused by parameterized URLs, variant pages, multiple slugs, and repeated content across the site." },
-  { title: "Internal link architecture", desc: "We improve the flow of authority and context across the website so important pages get the visibility and credibility they deserve." },
-  { title: "Website migration support", desc: "We support migrations, re-platforming, and redesigns so rankings are preserved, redirects are correct, and content remains discoverable." },
+  { title: "Technical SEO audit", desc: "I review the site architecture, indexation patterns, crawlability, server health, page performance, and structure to find what is actually blocking rankings." },
+  { title: "Crawlability and bot access", desc: "I make sure Googlebot can reach the pages you want indexed and stops wasting crawl budget on low-value URLs and duplicate routes." },
+  { title: "Indexation and coverage fixes", desc: "I resolve issues like pages being discovered but not indexed, soft 404s, weak canonical signals, and low-value duplicate content." },
+  { title: "Robots.txt and sitemap management", desc: "I configure the instructions and URL map so your important pages are discoverable and the site stays clean and indexable." },
+  { title: "Canonical and redirect hygiene", desc: "I fix redirect loops, chain redirects, and duplicate URL patterns so authority flows to the right pages instead of getting diluted." },
+  { title: "JavaScript SEO and rendering review", desc: "I check how your modern framework renders important content so Google understands the page instead of seeing a broken or incomplete version." },
+  { title: "Core Web Vitals tuning", desc: "I optimise LCP, INP, and CLS to improve user experience and keep page speed aligned with modern search expectations — measured with real field data." },
+  { title: "Page speed and server performance", desc: "I reduce render blocking, improve server response time, compress assets, and streamline performance so pages load faster and convert better." },
+  { title: "Mobile-first and responsiveness checks", desc: "I make sure the site is optimised for real-world mobile interactions and the way Google now prioritises page experience." },
+  { title: "Structured data and schema markup", desc: "I add schema where it helps users and search engines understand the business, content, offers, and page context more clearly." },
+  { title: "Duplicate content control", desc: "I find and fix issues caused by parameterised URLs, variant pages, multiple slugs, and repeated content across the site." },
+  { title: "Internal link architecture", desc: "I improve the flow of authority and context across the website so important pages get the visibility and credibility they deserve." },
+  { title: "Website migration support", desc: "I support migrations, re-platforming, and redesigns so rankings are preserved, redirects are correct, and content remains discoverable." },
 ];
 
 const FAQS = [

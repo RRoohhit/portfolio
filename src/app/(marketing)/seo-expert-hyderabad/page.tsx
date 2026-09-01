@@ -43,7 +43,7 @@ export default function SeoExpertHyderabadPage() {
             SEO Expert in Hyderabad — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Grow your business in Hyderabad with proven SEO. Rohit Gupta helps IT firms, clinics, and local brands in HITEC City, Gachibowli, and Banjara Hills rank #1 on Google. We deliver fast site speed, local map pack growth, and high-converting search traffic.
+            Hyderabad is a fast-growing market where IT, real estate, and healthcare all compete for attention. I&apos;m Rohit Gupta, and I help IT firms, clinics, and local brands in HITEC City, Gachibowli, and Banjara Hills grow on Google with fast sites, stronger map-pack presence, and search traffic that actually converts.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Hyderabad SEO Specialist <ArrowRight className="w-4 h-4" />
@@ -55,26 +55,26 @@ export default function SeoExpertHyderabadPage() {
             SEO &amp; Growth Solutions for Hyderabad Businesses
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Win top rankings in Hyderabad with clean site fixes, Google Maps growth, and buyer-focused pages.
+            I focus on the searches that bring Hyderabad businesses real customers — clean site fixes, Google Maps growth, and pages built around local buying intent.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
                 title: "Hyderabad Local SEO & Map Pack",
-                desc: "Rank in the Google Maps 3-Pack in HITEC City and Gachibowli. Get more phone calls and store visits.",
+                desc: "I get you into the Google Maps 3-Pack in HITEC City and Gachibowli, so your business shows up when nearby customers search — and they actually call.",
               },
               {
                 title: "Real Estate & Healthcare SEO",
-                desc: "Rank for local buyer search terms. We build schema tags and fast pages that bring new leads.",
+                desc: "I target the local buyer terms that matter for property and clinics, with schema and fast pages that turn searches into leads.",
               },
               {
                 title: "Technical SEO & Speed Fixes",
-                desc: "Fix slow page loads and crawl errors. We make your website pass all Google speed tests.",
+                desc: "I fix slow page loads and crawl errors directly in the code, so your site passes Google's speed tests instead of just being told to.",
               },
               {
                 title: "Content & AI Search Rankings",
-                desc: "Get cited by Google AI and ChatGPT. We write clear answers so AI tools quote your brand.",
+                desc: "I write clear answers to the questions your customers ask, so Google AI Overviews and ChatGPT quote your brand.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">

@@ -26,26 +26,26 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const WHATS_INCLUDED = [
-  { title: "Keyword and intent research", desc: "We identify the exact keywords and intent patterns that matter for your business so every page targets the right audience and stage of the buyer journey." },
-  { title: "Search intent alignment", desc: "We match content format and structure to what users expect at each stage of the journey—informational, navigational, commercial, or transactional." },
-  { title: "Title and meta optimization", desc: "We rewrite titles and meta descriptions so they are relevant, clickable, and aligned with actual search query intent." },
-  { title: "Heading and structure clarity", desc: "We create a clean H1–H6 hierarchy that supports readability, keyword relevance, and content comprehension for both users and search engines." },
-  { title: "Content content improvements", desc: "We improve the quality and depth of content so pages answer the user’s question more completely and feel more trustworthy to both Google and customers." },
-  { title: "Internal linking strategy", desc: "We link related pages logically so your site distributes authority better and makes navigation easier for real users." },
-  { title: "Image and media optimization", desc: "We optimize image names, alt text, file sizes, and loading patterns so pages become lighter and more search-friendly." },
-  { title: "Semantic and topic relevance", desc: "We enrich the content with useful entities, supporting context, and topical depth so it is easier for search engines to understand the page’s relevance." },
-  { title: "Canonical and URL review", desc: "We fix duplication risks, poor slug structure, and canonical mismatches so authority is consolidated and ranking signals are not diluted." },
-  { title: "CTR improvement", desc: "We look at real search performance data and improve page metadata to increase click-through rate where pages are already ranking well." },
-  { title: "Content cannibalization checks", desc: "We find cases where multiple pages compete for the same keyword and resolve the issue so ranking strength is clearer and more effective." },
-  { title: "Content briefs and planning", desc: "We create a content roadmap for new pages and updates so the website grows with more direction and better topical authority." },
+  { title: "Keyword and intent research", desc: "I identify the exact keywords and intent patterns that matter for your business so every page targets the right audience and stage of the buyer journey." },
+  { title: "Search intent alignment", desc: "I match content format and structure to what users expect at each stage of the journey — informational, navigational, commercial, or transactional." },
+  { title: "Title and meta optimization", desc: "I rewrite titles and meta descriptions so they're relevant, clickable, and aligned with actual search query intent." },
+  { title: "Heading and structure clarity", desc: "I create a clean H1–H6 hierarchy that supports readability and keyword relevance for both users and search engines." },
+  { title: "Content improvements", desc: "I improve the quality and depth of content so pages answer the user's question more completely and feel more trustworthy to both Google and customers." },
+  { title: "Internal linking strategy", desc: "I link related pages logically so your site distributes authority better and makes navigation easier for real users." },
+  { title: "Image and media optimization", desc: "I optimize image names, alt text, file sizes, and loading patterns so pages become lighter and more search-friendly." },
+  { title: "Semantic and topic relevance", desc: "I enrich the content with useful entities, supporting context, and topical depth so search engines understand the page's relevance." },
+  { title: "Canonical and URL review", desc: "I fix duplication risks, poor slug structure, and canonical mismatches so authority is consolidated and ranking signals stay clean." },
+  { title: "CTR improvement", desc: "I look at real search performance data and improve page metadata to increase click-through rate where pages are already ranking well." },
+  { title: "Content cannibalization checks", desc: "I find cases where multiple pages compete for the same keyword and resolve them so ranking strength is clearer and more effective." },
+  { title: "Content briefs and planning", desc: "I create a content roadmap for new pages and updates so the website grows with direction and better topical authority." },
 ];
 
 const PROCESS_STEPS = [
-  { step: "01", title: "Keyword and intent review", desc: "We study which terms matter to your business and which search intent each page should satisfy before making any content change." },
-  { step: "02", title: "Page-by-page audit", desc: "We review titles, H1s, metadata, internal links, page structure, and content depth to find issues that limit rankings or clicks." },
-  { step: "03", title: "Gap analysis", desc: "We compare the content against competitors and the current SERP to identify what is missing or underdeveloped." },
-  { step: "04", title: "Implementation", desc: "We improve the actual page content and structure, then apply the necessary on-page changes directly to the website or CMS." },
-  { step: "05", title: "Track and refine", desc: "We monitor performance and keep improving based on ranking movement, CTR, and actual search visibility results." },
+  { step: "01", title: "Keyword and intent review", desc: "I study which terms matter to your business and which search intent each page should satisfy before making any content change." },
+  { step: "02", title: "Page-by-page audit", desc: "I review titles, H1s, metadata, internal links, page structure, and content depth to find issues that limit rankings or clicks." },
+  { step: "03", title: "Gap analysis", desc: "I compare the content against competitors and the current SERP to identify what is missing or underdeveloped." },
+  { step: "04", title: "Implementation", desc: "I improve the actual page content and structure, then apply the necessary on-page changes directly to the website or CMS." },
+  { step: "05", title: "Track and refine", desc: "I monitor performance and keep improving based on ranking movement, CTR, and actual search visibility results." },
 ];
 
 const FAQS = [
@@ -183,7 +183,7 @@ export default function OnPageSeoPage() {
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/50 via-zinc-950 to-zinc-950 border border-emerald-500/30 text-center space-y-5 shadow-2xl">
           <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to make your pages work harder for you?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
-            We can audit your most important pages, improve the structure, and lift the clarity and relevance that help you rank and convert better.
+            I can audit your most important pages, improve the structure, and lift the clarity and relevance that help you rank and convert better.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
             Request On-Page Audit

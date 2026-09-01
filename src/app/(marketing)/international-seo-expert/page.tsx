@@ -145,7 +145,7 @@ export default function InternationalSeoExpertPage() {
           <h3 className="text-xl font-black text-white tracking-tight">How Remote Collaboration Works</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
-              { step: "01", title: "Free Video Call & Audit", desc: "We review your site, goals and target countries in a free strategy call, then I audit your technical + content + authority baseline." },
+              { step: "01", title: "Free Video Call & Audit", desc: "I review your site, goals and target countries in a free strategy call, then audit your technical, content, and authority baseline." },
               { step: "02", title: "90-Day International Roadmap", desc: "You get a country-by-country keyword plan, hreflang/architecture recommendations and priorities — in plain English." },
               { step: "03", title: "Weekly Sprints + Live Dashboard", desc: "I execute every week with real Search Console reporting, async updates on your timezone, and a live KPI dashboard." },
             ].map((s) => (

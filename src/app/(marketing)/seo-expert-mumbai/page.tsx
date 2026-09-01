@@ -44,7 +44,7 @@ export default function SeoExpertMumbaiPage() {
             SEO Expert in Mumbai — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Mumbai is India&apos;s top search market. Rohit Gupta helps D2C brands in Andheri, B2B firms in BKC, and retailers in Bandra rank #1 on Google. We deliver technical SEO, fast page speed, and strong local search results.
+            Mumbai is India&apos;s biggest commercial market — and one of the toughest to rank in. I&apos;m Rohit Gupta, and I help D2C brands in Andheri, B2B firms in BKC, and retailers in Bandra get found on Google the right way. My work covers technical SEO, fast page speed, and local search that actually brings in customers — not just visits.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Mumbai SEO Specialist <ArrowRight className="w-4 h-4" />
@@ -56,26 +56,26 @@ export default function SeoExpertMumbaiPage() {
             SEO &amp; Web Growth Solutions for Mumbai Businesses
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Rank higher in Mumbai with technical SEO, local search, and content that matches what your buyers want.
+            Here&apos;s how I help Mumbai businesses rank — with technical SEO, local search, and content that matches what buyers in this city actually type.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
                 title: "Mumbai Local SEO & Map Pack",
-                desc: "Rank in Google Maps across Andheri, BKC, and Bandra. We boost your Google Business Profile and local reviews.",
+                desc: "Get found in Google Maps across Andheri, BKC, and Bandra. I optimise your Google Business Profile and reviews so local customers can find and trust you.",
               },
               {
                 title: "eCommerce SEO for D2C & Retail",
-                desc: "Grow your online store with fast pages, product schema, and category SEO that converts shoppers.",
+                desc: "I help online stores rank with fast pages, product schema, and category pages built to convert shoppers — not just attract clicks.",
               },
               {
                 title: "Technical Audits & Core Web Vitals",
-                desc: "Fix crawl issues and slow page load times. We help your site pass all Google speed benchmarks.",
+                desc: "I don't just list crawl issues and slow pages — I fix them in the code, so your site actually passes Google's speed benchmarks.",
               },
               {
                 title: "AI Search & Featured Snippets",
-                desc: "Win Google AI Overviews and featured snippets. We write crisp answers that get quoted by AI tools.",
+                desc: "I structure your answers so Google AI Overviews and featured snippets quote you — one of the cheapest ways to win extra visibility.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">

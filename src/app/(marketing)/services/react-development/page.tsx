@@ -41,27 +41,27 @@ const PROCESS_STEPS = [
   {
     step: "01",
     title: "Project Scope & Design",
-    desc: "We discuss your product goals, user flows, and tech requirements to design clean React components.",
+    desc: "I discuss your product goals, user flows, and tech requirements to design clean React components.",
   },
   {
     step: "02",
     title: "Component Building",
-    desc: "We build a modular component library from scratch. Each piece is testable and easy to maintain.",
+    desc: "I build a modular component library from scratch — each piece testable and easy to maintain.",
   },
   {
     step: "03",
     title: "API & Data Integration",
-    desc: "We connect your backend APIs and handle loading and error states smoothly.",
+    desc: "I connect your backend APIs and handle loading and error states smoothly.",
   },
   {
     step: "04",
     title: "Speed & SEO Tuning",
-    desc: "We optimize code bundles, add lazy loading, and tune Core Web Vitals for sub-second speeds.",
+    desc: "I optimise code bundles, add lazy loading, and tune Core Web Vitals for sub-second speeds.",
   },
   {
     step: "05",
     title: "Testing & Launch",
-    desc: "We test across devices and browsers, set up CI/CD, and deploy with zero downtime.",
+    desc: "I test across devices and browsers, set up CI/CD, and deploy with zero downtime.",
   },
 ];
 

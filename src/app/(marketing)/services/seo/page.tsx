@@ -51,7 +51,7 @@ const SEO_HUB_SECTIONS = [
     title: "Technical SEO and site health",
     badge: "Infrastructure",
     icon: Zap,
-    desc: "We fix crawl issues, indexing gaps, page speed problems, schema gaps, redirects, and technical blockers that stop Google from trusting the site.",
+    desc: "I fix crawl issues, indexing gaps, page speed problems, schema gaps, redirects, and technical blockers that stop Google from trusting the site.",
     link: "/services/technical-seo/",
   },
   {
@@ -59,7 +59,7 @@ const SEO_HUB_SECTIONS = [
     title: "On-page SEO and content strategy",
     badge: "Content",
     icon: FileText,
-    desc: "We improve keyword intent, titles, meta descriptions, headings, content structure, internal linking, and the pages that convert traffic into enquiries.",
+    desc: "I improve keyword intent, titles, meta descriptions, headings, content structure, internal linking, and the pages that convert traffic into enquiries.",
     link: "/services/on-page-seo/",
   },
   {
@@ -67,7 +67,7 @@ const SEO_HUB_SECTIONS = [
     title: "Off-page SEO and authority growth",
     badge: "Authority",
     icon: Target,
-    desc: "We build the backlinks, citations, and digital PR signals that make your website stronger in the eyes of search engines and customers alike.",
+    desc: "I build the backlinks, citations, and digital PR signals that make your website stronger in the eyes of search engines and customers alike.",
     link: "/services/off-page-seo/",
   },
   {
@@ -83,7 +83,7 @@ const SEO_HUB_SECTIONS = [
     title: "Google Business Profile SEO",
     badge: "GBP",
     icon: MapPin,
-    desc: "We improve your profile visibility, categories, reviews, posts, service catalog, and photos so more people trust and choose your business.",
+    desc: "I improve your profile visibility, categories, reviews, posts, service catalog, and photos so more people trust and choose your business.",
     link: "/services/google-business-profile-seo/",
   },
   {
@@ -91,7 +91,7 @@ const SEO_HUB_SECTIONS = [
     title: "E-commerce SEO",
     badge: "Store",
     icon: ShoppingCart,
-    desc: "We optimize category pages, product pages, internal linking, and technical structure so more shoppers find your products and buy.",
+    desc: "I optimize category pages, product pages, internal linking, and technical structure so more shoppers find your products and buy.",
     link: "/services/ecommerce-seo/",
   },
   {
@@ -99,7 +99,7 @@ const SEO_HUB_SECTIONS = [
     title: "International SEO and geo targeting",
     badge: "Global",
     icon: Globe,
-    desc: "We help brands reach new countries and language audiences with the right architecture, hreflang setup, and segmented keyword strategy.",
+    desc: "I help brands reach new countries and language audiences with the right architecture, hreflang setup, and segmented keyword strategy.",
     link: "/services/international-seo/",
   },
   {
@@ -107,7 +107,7 @@ const SEO_HUB_SECTIONS = [
     title: "AI search optimization (AEO / GEO)",
     badge: "AI Search",
     icon: Sparkles,
-    desc: "We structure content and signals so your brand is easier to discover in Google AI Overviews, ChatGPT, and answer-based search experiences.",
+    desc: "I structure content and signals so your brand is easier to discover in Google AI Overviews, ChatGPT, and answer-based search experiences.",
     link: "/services/ai-search-optimization/",
   },
   {
@@ -124,27 +124,27 @@ const SEO_PROCESS = [
   {
     step: "01",
     title: "Deep audit and diagnosis",
-    desc: "We review the site from the perspective of both users and Google to identify technical blockers, ranking gaps, and growth opportunities.",
+    desc: "I review the site from the perspective of both users and Google to identify technical blockers, ranking gaps, and growth opportunities.",
   },
   {
     step: "02",
     title: "Strategy with business context",
-    desc: "We define the right opportunities based on your market, your ideal customer, and what will actually drive leads or revenue.",
+    desc: "I define the right opportunities based on your market, your ideal customer, and what will actually drive leads or revenue.",
   },
   {
     step: "03",
     title: "Implementation and cleanup",
-    desc: "We fix technical problems, strengthen on-page content, and improve the site structure so rankings can improve with real momentum.",
+    desc: "I fix technical problems, strengthen on-page content, and improve the site structure so rankings can improve with real momentum.",
   },
   {
     step: "04",
     title: "Authority building",
-    desc: "We strengthen backlinks, citations, and topical relevance so the site grows in trust and visibility over time.",
+    desc: "I strengthen backlinks, citations, and topical relevance so the site grows in trust and visibility over time.",
   },
   {
     step: "05",
     title: "Tracking and reporting",
-    desc: "We monitor traffic, rankings, and conversions to make sure the SEO work is actually moving the business forward.",
+    desc: "I monitor traffic, rankings, and conversions to make sure the SEO work is actually moving the business forward.",
   },
 ];
 
@@ -159,11 +159,11 @@ const FAQS = [
   },
   {
     question: "Do you work with current websites or new ones?",
-    answer: "Both. We can optimize an existing website, fix technical issues, improve the content, and create a roadmap for growth, or help build the right foundation from the start.",
+    answer: "Both. I can optimize an existing website, fix technical issues, improve the content, and create a roadmap for growth — or help build the right foundation from the start.",
   },
   {
     question: "Do you only do SEO or can you help with growth beyond that?",
-    answer: "We can support the wider growth system too, including Google Ads, local SEO, content strategy, and web improvements that make the site stronger for both users and search engines.",
+    answer: "I can support the wider growth system too, including Google Ads, local SEO, content strategy, and web improvements that make the site stronger for both users and search engines. One person, one strategy, zero handoffs.",
   },
 ];
 
@@ -231,7 +231,7 @@ export default function SeoServicesPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
-              { icon: Search, title: "Ranking is not enough", text: "We care about the quality of traffic, not just vanity numbers." },
+              { icon: Search, title: "Ranking is not enough", text: "I care about the quality of traffic, not just vanity numbers that look good in a report." },
               { icon: ShieldCheck, title: "White-hat and practical", text: "No risky shortcuts. Just durable SEO built around trust and user intent." },
               { icon: Target, title: "Built for business goals", text: "The work is aligned to leads, calls, sales, and long-term brand growth." },
             ].map(({ icon: Icon, title, text }) => (

@@ -38,47 +38,47 @@ export const metadata: Metadata = buildPageMetadata({
 const WHATS_INCLUDED = [
   {
     title: "Account audit before we spend a rupee",
-    desc: "We review your current account, search terms, quality scores, bidding logic, and conversion setup to find where budget is leaking before we even optimize anything.",
+    desc: "I review your current account, search terms, quality scores, bidding logic, and conversion setup to find where your budget is leaking before we optimise anything.",
   },
   {
     title: "Keyword research built around buying intent",
-    desc: "We target the searches that are closest to a sale, not just high-volume keywords. That means better CTR, lower CPC, and more profitable campaigns.",
+    desc: "I target the searches closest to a sale, not just high-volume keywords. That means better CTR, lower cost per click, and more profitable campaigns.",
   },
   {
     title: "Campaign structure that is actually manageable",
-    desc: "Tightly grouped campaigns, keyword themes, and proper match type controls help your account stay clean, scalable, and easier to optimize over time.",
+    desc: "Tightly grouped campaigns, keyword themes, and proper match type controls keep your account clean, scalable, and easier to optimise over time.",
   },
   {
     title: "Ad copy that speaks like a real person",
-    desc: "We write ads that match customer intent, highlight your offer clearly, and improve relevance so Google rewards your campaigns with lower costs.",
+    desc: "I write ads that match customer intent and highlight your offer clearly, so Google rewards your campaigns with lower costs for better relevance.",
   },
   {
     title: "Negative keywords that save wasted spend",
-    desc: "We cut out irrelevant traffic early. This is one of the fastest ways to lower wasted clicks, especially for new or under-optimized accounts.",
+    desc: "I cut out irrelevant traffic early — one of the fastest ways to stop wasted clicks, especially in new or under-optimised accounts.",
   },
   {
     title: "Performance Max campaigns with control",
-    desc: "When used correctly, Performance Max can scale fast. We structure the campaign around the right goals, assets, signals, and conversion tracking so it does not burn budget blindly.",
+    desc: "When used correctly, Performance Max scales fast. I structure it around the right goals, assets, and tracking so it doesn't burn budget blindly.",
   },
   {
     title: "Landing page alignment",
-    desc: "Even good ads underperform when the landing page is weak. We check message match, speed, offer clarity, and conversion flow before scaling traffic.",
+    desc: "Even good ads underperform on a weak landing page. I check message match, speed, offer clarity, and conversion flow before scaling traffic.",
   },
   {
     title: "Precise conversion tracking",
-    desc: "If the data is wrong, your decisions are wrong. We set up proper tracking so you know exactly which campaigns, keywords, and pages are actually driving leads and sales.",
+    desc: "If the data is wrong, your decisions are wrong. I set up proper tracking so you know exactly which campaigns, keywords, and pages drive real results.",
   },
   {
     title: "Quality Score optimization",
-    desc: "We improve ad relevance, expected CTR, and landing page experience so your ads become more efficient and easier to scale without rising costs.",
+    desc: "I improve ad relevance, expected CTR, and landing page experience so your ads get more efficient and easier to scale without rising costs.",
   },
   {
     title: "Search term pruning and expansion",
-    desc: "Every month we look at what search terms are working, which are wasting budget, and which gaps can be turned into new profitable clicks.",
+    desc: "Every month I review which search terms are working, which are wasting budget, and which gaps can become new profitable clicks.",
   },
   {
     title: "Budget pacing and bid strategy",
-    desc: "We manage spend with enough control to keep learning and enough aggression to scale the campaigns that are producing real business results.",
+    desc: "I manage spend with enough control to keep learning and enough aggression to scale the campaigns that are producing real business results.",
   },
   {
     title: "Clear monthly reporting",
@@ -90,22 +90,22 @@ const PROCESS_STEPS = [
   {
     step: "01",
     title: "Audit and goal mapping",
-    desc: "We review the current account, customer intent, and business targets to identify the biggest leaks and the fastest opportunities for ROI.",
+    desc: "I review the current account, customer intent, and business targets to identify the biggest leaks and the fastest opportunities for ROI.",
   },
   {
     step: "02",
     title: "Keyword and campaign build",
-    desc: "We research intent-based keywords, build the structure, set up ad groups, and align everything around the right landing page experience.",
+    desc: "I research intent-based keywords, build the structure, set up ad groups, and align everything around the right landing page experience.",
   },
   {
     step: "03",
     title: "Launch with smart controls",
-    desc: "We launch in a controlled way, monitor early performance, and remove wasted traffic before it grows into a costly problem.",
+    desc: "I launch in a controlled way, monitor early performance, and remove wasted traffic before it grows into a costly problem.",
   },
   {
     step: "04",
     title: "Optimize for efficiency",
-    desc: "We keep testing keywords, ad variations, negative terms, bids, and landing page improvements so the account becomes more efficient month by month.",
+    desc: "I keep testing keywords, ad variations, negative terms, bids, and landing page improvements so the account becomes more efficient month by month.",
   },
   {
     step: "05",
@@ -195,8 +195,8 @@ export default function GoogleAdsPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
-              { icon: Search, title: "Intent-first campaigns", text: "We focus on the searches that matter most to your business, not just broad traffic." },
-              { icon: BadgeCheck, title: "Lower wasted spend", text: "Poor targeting and weak match types kill budgets fast. We clean that up systematically." },
+              { icon: Search, title: "Intent-first campaigns", text: "I focus on the searches that matter most to your business, not just broad traffic." },
+              { icon: BadgeCheck, title: "Lower wasted spend", text: "Poor targeting and weak match types kill budgets fast. I clean that up systematically." },
               { icon: Zap, title: "Better conversion efficiency", text: "From ad copy to landing pages, every layer is tuned to turn clicks into leads and sales." },
             ].map(({ icon: Icon, title, text }) => (
               <div key={title} className="p-5 rounded-2xl bg-zinc-950 border border-white/10">

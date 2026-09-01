@@ -23,43 +23,43 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const WHATS_INCLUDED = [
-  { title: "Backlink Audit", desc: "Audit your backlink profile. We find and fix spammy or toxic links that hurt your Google rankings." },
-  { title: "Competitor Link Review", desc: "Check where your top rivals get links. We find quality backlink sources you can replicate." },
-  { title: "Link Gap Analysis", desc: "Find sites linking to competitors but not to you. We target the best link opportunities in your niche." },
-  { title: "Digital PR & Brand Links", desc: "Earn press links with data-driven studies and original stories. We pitch top industry blogs." },
-  { title: "Niche Editorial Outreach", desc: "Reach out to relevant blogs and resource pages. We earn natural links that build trust." },
-  { title: "Directory Citations", desc: "Build accurate citations on trusted directories. This helps local SEO and brand trust signals." },
-  { title: "Broken Link Fixes", desc: "Find broken links on niche sites and offer your guide as a replacement. It earns easy white-hat links." },
-  { title: "Brand Mention Outreach", desc: "Find sites that mention your business without linking. We ask them to turn mentions into links." },
-  { title: "Toxic Link Removal", desc: "Create a clean Google Search Console disavow file. This removes penalty risk from bad backlinks." },
-  { title: "Author & Trust Signals", desc: "Strengthen your E-E-A-T signals with authoritative links from respected industry sources." },
+  { title: "Backlink Audit", desc: "I audit your backlink profile and find any spammy or toxic links that are quietly hurting your rankings." },
+  { title: "Competitor Link Review", desc: "I check where your top rivals get links, so we can target the same quality sources for you." },
+  { title: "Link Gap Analysis", desc: "I find sites linking to competitors but not to you, and prioritise the best opportunities in your niche." },
+  { title: "Digital PR & Brand Links", desc: "I earn press links with data-driven studies and original stories, and pitch them to top industry blogs." },
+  { title: "Niche Editorial Outreach", desc: "I reach out to relevant blogs and resource pages to earn natural links that build real trust." },
+  { title: "Directory Citations", desc: "I build accurate citations on trusted directories, which supports local SEO and brand trust signals." },
+  { title: "Broken Link Fixes", desc: "I find broken links on niche sites and offer your guide as a replacement — a clean way to earn white-hat links." },
+  { title: "Brand Mention Outreach", desc: "I find sites that mention your business without linking, and ask them to turn those mentions into links." },
+  { title: "Toxic Link Removal", desc: "I create a clean disavow file for Google Search Console, removing penalty risk from bad backlinks." },
+  { title: "Author & Trust Signals", desc: "I strengthen your E-E-A-T signals with authoritative links from respected industry sources." },
 ];
 
 const PROCESS_STEPS = [
   {
     step: "01",
     title: "Backlink Profile Audit",
-    desc: "We check your current links, anchor text balance, and toxic spam signals.",
+    desc: "I check your current links, anchor text balance, and toxic spam signals.",
   },
   {
     step: "02",
     title: "Competitor Link Gap",
-    desc: "We find the best links your competitors have that you are missing.",
+    desc: "I find the best links your competitors have that you are missing.",
   },
   {
     step: "03",
     title: "Outreach & Pitching",
-    desc: "We build a curated outreach list and pitch helpful, custom content.",
+    desc: "I build a curated outreach list and pitch helpful, custom content.",
   },
   {
     step: "04",
     title: "Link Placement & Review",
-    desc: "We track every live link to verify indexation and anchor text quality.",
+    desc: "I track every live link to verify it's indexed and the anchor text is clean.",
   },
   {
     step: "05",
     title: "Monthly Progress Reports",
-    desc: "We report all new backlinks gained and track your organic ranking gains.",
+    desc: "I report all new backlinks gained and track your organic ranking gains.",
   },
 ];
 

@@ -43,7 +43,7 @@ export default function SeoExpertDelhiPage() {
             SEO Expert in Delhi — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Delhi is a busy search market. Rohit Gupta helps businesses in Connaught Place, South Delhi, and West Delhi rank on Google. We deliver technical SEO, local search growth, and fast web design.
+            Delhi is one of the most competitive search markets in India — everyone is fighting for the same customers. I'm Rohit Gupta, and I help businesses across Connaught Place, South Delhi, and West Delhi actually get found on Google. Not with gimmicks, but with solid technical SEO, local Google Maps optimization, and fast, clean websites that turn searches into customers.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Delhi SEO Specialist <ArrowRight className="w-4 h-4" />
@@ -52,29 +52,29 @@ export default function SeoExpertDelhiPage() {
 
         <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
-            SEO &amp; Web Growth Solutions for Delhi Businesses
+            SEO &amp; Web Growth for Delhi Businesses
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Rank higher in Delhi with technical SEO, Google Maps optimization, and authoritative backlinks.
+            Here's the honest truth about ranking in Delhi: it takes more than a few keywords. It takes a site that loads fast, content that answers real questions, and local signals that prove to Google you're a genuine Delhi business. That's exactly what I focus on — let me walk you through what that looks like.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
                 title: "Delhi Local SEO & Google Map Pack",
-                desc: "Get more calls and store visits across Delhi. We optimize your Google Business Profile and local citations.",
+                desc: "Get more calls and store visits from Delhi customers. I optimize your Google Business Profile, fix inconsistent local listings, and get you into the Map Pack for 'near me' searches.",
               },
               {
                 title: "Technical Audits & Core Web Vitals",
-                desc: "Fix crawl errors, slow page loads, and broken links. We help your site pass Google Core Web Vitals.",
+                desc: "I go beyond pointing out crawl errors and slow loads — I fix them in the code. So your site actually passes Google's Core Web Vitals instead of just being told it should.",
               },
               {
                 title: "High-Intent Keyword Mapping",
-                desc: "Target buyer search terms in your niche. We write titles and content that match what your customers search.",
+                desc: "I target the search terms your Delhi customers actually type when they're ready to buy — and match each one to the page that answers their intent.",
               },
               {
                 title: "Custom Next.js & React Web Apps",
-                desc: "Build fast, mobile-friendly websites with clean code and built-in schema markup.",
+                desc: "Fast, mobile-friendly websites built with clean code and built-in schema markup, so speed and structure help your rankings instead of hurting them.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">

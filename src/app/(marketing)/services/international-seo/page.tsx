@@ -22,18 +22,18 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const INCLUDED_CHECKLIST = [
-  { title: "Global Keyword Research", desc: "Find how buyers search in each country. We use local terms, not direct word swaps." },
-  { title: "Country Keyword Mapping", desc: "Match search words to each country page. We help users land on the right local page." },
-  { title: "Language & Region Rules", desc: "Set language and country tags. Search bots know which page serves each region." },
-  { title: "Hreflang Tags", desc: "Add hreflang tags to code and sitemaps. This stops duplicate page issues." },
-  { title: "Domain & URL Setup", desc: "Pick sub-folders or country domains. We choose the best option for your site." },
-  { title: "Clean URL Layout", desc: "Build neat, short URLs. Search bots can crawl each country version with ease." },
-  { title: "Search Console Setup", desc: "Set up country tracking in Google. We watch your global click growth each week." },
-  { title: "Duplicate Page Fixes", desc: "Use canonical tags and hreflang pairs. This stops ranking drops from copied pages." },
-  { title: "Local Content & Tone", desc: "Adapt currency and tone for each market. Buyers trust pages that feel local." },
-  { title: "Country Schema Tags", desc: "Add country and price schema markup. This helps win rich result cards in search." },
-  { title: "Link Building", desc: "Earn links from local news sites and blogs. We build trust in each country's search." },
-  { title: "Fast Page Speed", desc: "Use edge cloud servers near your users. Pages load in under 1 second worldwide." },
+  { title: "Global Keyword Research", desc: "I find how buyers search in each country, using local terms rather than direct word swaps." },
+  { title: "Country Keyword Mapping", desc: "I match search words to each country page so users land on the right local version." },
+  { title: "Language & Region Rules", desc: "I set language and country tags so search bots know which page serves each region." },
+  { title: "Hreflang Tags", desc: "I add hreflang tags to code and sitemaps — the fix that stops duplicate-page issues." },
+  { title: "Domain & URL Setup", desc: "I help you pick between sub-folders or country domains based on what suits your site." },
+  { title: "Clean URL Layout", desc: "I build neat, short URLs so search bots can crawl each country version easily." },
+  { title: "Search Console Setup", desc: "I set up country tracking in Google Search Console to watch your global click growth." },
+  { title: "Duplicate Page Fixes", desc: "I use canonical tags and hreflang pairs to stop ranking drops from copied pages." },
+  { title: "Local Content & Tone", desc: "I adapt currency and tone for each market, because buyers trust pages that feel local." },
+  { title: "Country Schema Tags", desc: "I add country and price schema markup to win rich result cards in international search." },
+  { title: "Link Building", desc: "I earn links from local news sites and blogs to build trust in each country's search." },
+  { title: "Fast Page Speed", desc: "I use edge cloud servers near your users so pages load fast worldwide." },
 ];
 
 export default function InternationalSeoPage() {

@@ -32,7 +32,7 @@ const WORDPRESS_SOLUTIONS = [
   {
     icon: Layout,
     title: "Custom WordPress Theme & Gutenberg Block Development",
-    desc: "We build lightweight WordPress themes from scratch. No bloated page builders like Elementor or Divi. Clean HTML5, fast load times.",
+    desc: "I build lightweight WordPress themes from scratch — no bloated page builders like Elementor or Divi. Just clean HTML5 and fast load times.",
     features: [
       "Custom Native Gutenberg Blocks",
       "Full Site Editing (FSE) Compatibility",
@@ -43,7 +43,7 @@ const WORDPRESS_SOLUTIONS = [
   {
     icon: ShoppingCart,
     title: "WooCommerce Development & Optimization",
-    desc: "Build a high-converting online store. We add Razorpay and Stripe, set up product schema, and make checkout blazing fast.",
+    desc: "I build high-converting online stores with Razorpay and Stripe set up, product schema in place, and a checkout that's genuinely fast.",
     features: [
       "Custom WooCommerce Checkout Flows",
       "Product & Category Schema Markup",
@@ -54,7 +54,7 @@ const WORDPRESS_SOLUTIONS = [
   {
     icon: Gauge,
     title: "WordPress Core Web Vitals & Speed Optimization",
-    desc: "Turn your slow WordPress site into a 95+ PageSpeed machine. We target LCP < 1.2s, INP < 50ms, and fast server response.",
+    desc: "I turn slow WordPress sites into 95+ PageSpeed machines, targeting LCP under 1.2s, fast INP, and quick server response.",
     features: [
       "Redis / Memcached Object Caching",
       "Next-Gen AVIF / WebP Image Delivery",
@@ -65,7 +65,7 @@ const WORDPRESS_SOLUTIONS = [
   {
     icon: Layers,
     title: "Headless WordPress with Next.js & React",
-    desc: "Use WordPress as your CMS backend and Next.js 15 as your frontend. You get fast page loads, great SEO, and easy content editing.",
+    desc: "Use WordPress as your CMS and Next.js as the frontend. You get fast loads, strong SEO, and a content editor your team will actually enjoy.",
     features: [
       "WPGraphQL / REST API Integration",
       "Next.js App Router & Server Components",
@@ -76,7 +76,7 @@ const WORDPRESS_SOLUTIONS = [
   {
     icon: ShieldCheck,
     title: "WordPress Security Hardening & Malware Cleanup",
-    desc: "We protect your site with Cloudflare WAF, strong admin rules, and automated daily backups. Fast cleanup if your site is hacked.",
+    desc: "I protect your site with Cloudflare WAF, strong admin rules, and automated daily backups — and clean it up fast if it ever gets hacked.",
     features: [
       "Database Prefix & Vulnerability Audits",
       "Automated Daily Off-Site Backups",
@@ -87,7 +87,7 @@ const WORDPRESS_SOLUTIONS = [
   {
     icon: RefreshCw,
     title: "WordPress Migration & SEO Equity Preservation",
-    desc: "We move your site to WordPress or Next.js with full 301 redirects. No ranking drops. No broken pages.",
+    desc: "I move your site to WordPress or Next.js with full 301 redirects in place — no ranking drops, no broken pages.",
     features: [
       "Zero Ranking Drop Guarantee",
       "Automated 301 Redirect Mapping",

@@ -24,12 +24,12 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const PRINCIPLES = [
-  { title: "User Search Intent", desc: "We write helpful answers that match what users search for. We never stuff keywords." },
-  { title: "Google Rules Compliant", desc: "Every step follows Google Search Essentials. Your website stays 100% safe from penalties." },
-  { title: "Trust & Expert Signals", desc: "We show clear author names, real reviews, and verified data to build domain trust." },
-  { title: "Real Editorial Backlinks", desc: "We earn natural links from trusted blogs and news sites. We never buy link packages or PBNs." },
-  { title: "Fast Technical Code", desc: "We build clean code that loads in under one second. Pages are easy for search bots to crawl." },
-  { title: "Long-Term Traffic Growth", desc: "We create useful guides and tools that gain clicks and links year after year." },
+  { title: "We write for people, not search bots", desc: "Every page starts with what a real customer is trying to find out. If it's useful to a human, it tends to rank well too — no keyword stuffing needed." },
+  { title: "We stay inside Google's rules", desc: "Google publishes what it considers spam and what it doesn't. I stay on the safe side of that line on purpose, so you never wake up to a penalty and a crashed ranking." },
+  { title: "We build real trust and expertise", desc: "Clear author names, honest reviews, and verifiable data. Google rewards sites that look like they're run by real experts — because that's what they want to show users." },
+  { title: "We earn links, we don't buy them", desc: "I get links the slow, honest way: genuinely useful content, guest spots on sites that matter, and relationships. It takes longer, but it lasts — and it can't be taken away." },
+  { title: "We build fast, clean websites", desc: "A slow site struggles to rank no matter what. I write clean code that loads quickly and is easy for Google to crawl, so your speed helps you instead of holding you back." },
+  { title: "We play the long game", desc: "I'm not chasing a quick spike that dips next month. I create content and authority that keep bringing in clicks and links for years, steadily compounding." },
 ];
 
 export default function WhiteHatSeoPage() {
@@ -56,7 +56,7 @@ export default function WhiteHatSeoPage() {
             White Hat SEO Services &amp; Firm India
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Rank #1 on Google without risking penalties. Rohit Gupta runs a boutique White Hat SEO firm in India. We build lasting domain authority through clean code, helpful content, and real editorial backlinks. No spam or private blog networks.
+            "White hat" simply means earning your rankings the proper way — through a fast, well-built website, genuinely helpful content, and links that real people actually want to share. It's the only kind of SEO I do. I run a small white hat SEO practice from Noida, and my real goal is to grow your search traffic in a way that survives Google's updates — not one that crashes after the next core update rolls out.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
@@ -71,11 +71,34 @@ export default function WhiteHatSeoPage() {
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
           <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
             <BookOpen className="w-5 h-5 text-emerald-400" />
-            Why Choose White Hat SEO Over Quick Shortcuts?
+            Why White Hat Beats the Quick Shortcuts
           </h2>
           <p className="text-sm text-white/75 leading-relaxed">
-            Google updates its search algorithms often. Sites using spam links and spun content lose traffic during core updates. White Hat SEO builds real domain authority that gains traffic from every update.
+            Google updates its algorithm regularly, and every update is a surprise test. Sites that got ahead with spammy links, spun content, or paid link networks tend to crater the moment a core update lands — and recovering from a manual action takes months. White hat SEO is slower to start, but it builds real domain authority that actually gains ground after every update instead of losing it. I'd rather grow you steadily than spike you and lose you.
           </p>
+        </section>
+
+        <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
+          <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-amber-400" />
+            What I Refuse to Do (and Why It Protects You)
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              { t: "Buy links or use link farms", b: "Paid link packages and private blog networks can get your domain deindexed. I never touch them." },
+              { t: "Stuff keywords or hide text", b: "Writing for search bots instead of people backfires and reads terribly. It's bad SEO and bad content." },
+              { t: "Spin or copy content", b: "Duplicated and spun articles add no real value and carry real risk. Every piece I write is original." },
+              { t: "Promise '#1 in a week'", b: "Nobody can honestly guarantee instant rankings. I set realistic timelines and meet them." },
+            ].map((item) => (
+              <div key={item.t} className="flex items-start gap-3 p-4 rounded-2xl bg-black border border-white/10">
+                <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-sm font-bold text-white">{item.t}</p>
+                  <p className="text-xs text-white/70 leading-relaxed font-light">{item.b}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section className="space-y-5">
@@ -115,9 +138,9 @@ export default function WhiteHatSeoPage() {
         </section>
 
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/40 via-zinc-950 to-zinc-950 border border-emerald-500/20 text-center space-y-5 shadow-2xl">
-          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Protect &amp; Scale Your Search Traffic</h3>
+          <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Grow Your Traffic the Safe Way</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
-            Invest in organic search strategies that build long-term value without penalty risk.
+            If you're tired of quick fixes that fall apart, let's build something that lasts. Tell me where your business stands and I'll show you a clean, white hat path forward.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
             Get Ethical SEO Advice <ArrowRight className="w-4 h-4" />

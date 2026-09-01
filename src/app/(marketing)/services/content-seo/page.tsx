@@ -22,39 +22,39 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const WHATS_INCLUDED = [
-  { title: "Topic Clusters & Pillar Pages", desc: "Build topic hubs and sub-pages. We show Google your deep knowledge in your niche." },
-  { title: "Search Intent Matching", desc: "Write pages that match what buyers want. We target commercial and info queries." },
-  { title: "Detailed Content Briefs", desc: "Create easy briefs for writers. We define headers, target words, and internal links." },
-  { title: "Content Gap Audits", desc: "Find keywords your competitors rank for that you miss. We help you fill the gaps." },
-  { title: "E-E-A-T Quality Upgrades", desc: "Add author bios and real proof points. We help your content meet Google standards." },
-  { title: "Old Content Refreshes", desc: "Update old blog posts and landing pages. We help you win back lost search traffic." },
+  { title: "Topic Clusters & Pillar Pages", desc: "I build topic hubs and sub-pages that show Google the depth of your knowledge in your niche." },
+  { title: "Search Intent Matching", desc: "I write pages that match what buyers really want, targeting both commercial and informational queries." },
+  { title: "Detailed Content Briefs", desc: "I create easy briefs for writers — clear headers, target keywords, and internal links to guide them." },
+  { title: "Content Gap Audits", desc: "I find the keywords your competitors rank for that you're missing, and help you fill those gaps." },
+  { title: "E-E-A-T Quality Upgrades", desc: "I add author bios and real proof points so your content meets the trust standards Google rewards." },
+  { title: "Old Content Refreshes", desc: "I update old blog posts and landing pages to win back search traffic that's slowly slipping away." },
 ];
 
 const PROCESS_STEPS = [
   {
     step: "01",
     title: "Content & Keyword Audit",
-    desc: "We review your site and find top keywords your competitors rank for.",
+    desc: "I review your site and find the top keywords your competitors rank for.",
   },
   {
     step: "02",
     title: "Topic Cluster Planning",
-    desc: "We organize your pages into logical clusters to build domain authority.",
+    desc: "I organize your pages into logical clusters to build stronger domain authority.",
   },
   {
     step: "03",
     title: "Writing Clear SEO Content",
-    desc: "We write clean, helpful articles or guide your team with clear outlines.",
+    desc: "I write clean, helpful articles or guide your team with clear outlines.",
   },
   {
     step: "04",
     title: "Author Trust & Proof Points",
-    desc: "We add author details, helpful FAQs, and real data to build reader trust.",
+    desc: "I add author details, helpful FAQs, and real data to build reader trust.",
   },
   {
     step: "05",
     title: "Track Search Click Growth",
-    desc: "We track your impressions and keyword ranks in Google Search Console.",
+    desc: "I track your impressions and keyword ranks in Google Search Console.",
   },
 ];
 

@@ -43,7 +43,7 @@ export default function SeoExpertChennaiPage() {
             SEO Expert in Chennai — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Grow your business in Chennai with expert SEO. Rohit Gupta helps retail shops and tech firms in T Nagar, Anna Nagar, and OMR rank #1 on Google. We deliver local map rankings, online store growth, and fast web design.
+            Chennai buyers are loyal, but they research carefully before they choose. I&apos;m Rohit Gupta, and I help retail shops and tech firms in T Nagar, Anna Nagar, and OMR get found on Google — with local map rankings, better online-store visibility, and websites that load fast enough to keep their attention.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Chennai SEO Specialist <ArrowRight className="w-4 h-4" />
@@ -55,26 +55,26 @@ export default function SeoExpertChennaiPage() {
             SEO &amp; Growth Solutions for Chennai Businesses
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Chennai buyers search before they buy. Win more local clicks with a fast and trusted website.
+            Chennai shoppers search before they buy. I help local businesses win those clicks with fast, trustworthy websites and strong local search visibility.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
                 title: "Chennai Local SEO & Map Pack",
-                desc: "Rank in the Google Maps 3-Pack across T Nagar, Adyar, and Anna Nagar. We boost your local calls and reviews.",
+                desc: "I get you ranking in the Google Maps 3-Pack across T Nagar, Adyar, and Anna Nagar — boosting the calls and reviews that bring customers through the door.",
               },
               {
                 title: "eCommerce & Store SEO",
-                desc: "Grow your online store sales. We optimize product titles, categories, and review schema tags.",
+                desc: "I grow online store sales by optimising product titles, categories, and review schema so shoppers find and trust your products.",
               },
               {
                 title: "Technical SEO & Speed",
-                desc: "Fix slow load times and indexing bugs. We make sure your site loads in under 1 second.",
+                desc: "I fix slow load times and indexing bugs in the code, so your site genuinely loads fast instead of just being told it should.",
               },
               {
                 title: "White Hat Backlink Outreach",
-                desc: "Earn high-quality links from trusted blogs and news sites. We build lasting domain authority.",
+                desc: "I earn quality links from trusted blogs and news sites the honest way, building domain authority that lasts.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">

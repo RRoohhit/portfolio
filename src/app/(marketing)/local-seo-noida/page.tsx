@@ -44,7 +44,7 @@ export default function LocalSeoNoidaPage() {
             Local SEO Services in Noida
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Get more local phone calls and store visits in Noida. Rohit Gupta helps businesses in Sector 18, Sector 62, and Greater Noida rank in the Google Maps 3-Pack. We optimize your profile and citations so nearby buyers choose you.
+            The quickest way to get more customers locally is to show up when someone in Noida searches "near me" — and that's where I focus. I'm Rohit Gupta, based right here in Sector 66, and I help businesses in Sector 18, Sector 62, and Greater Noida rank in the Google Maps 3-Pack so nearby buyers actually find and choose them. It's not about vanity rankings — it's about getting you calls and store visits from people already looking for what you sell.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Get Local SEO Consultation <ArrowRight className="w-4 h-4" />
@@ -53,29 +53,29 @@ export default function LocalSeoNoidaPage() {
 
         <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
-            Comprehensive Local SEO Solutions for Noida Businesses
+            Local SEO That Gets Noida Customers to Actually Call You
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Local buyers in Noida search Google Maps every day. We position your business at the top of local map results.
+            Local buyers in Noida search Google Maps every single day. My job is to make sure your business is the one they see at the top — here's what that takes.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
-                title: "Google Maps 3-Pack Dominance",
-                desc: "Win top rank on Google Maps for high-intent 'near me' searches across Noida Sector 18, 62, 63, and Greater Noida.",
+                title: "Google Maps 3-Pack Ranking",
+                desc: "Optimise your Google Business Profile so you win the map results for high-intent searches across Sector 18, 62, 63, and Greater Noida — the searches most likely to become calls.",
               },
               {
                 title: "Sector-Specific Landing Pages",
-                desc: "Build fast pages for key business hubs in Noida. We include LocalBusiness Schema markup to boost local trust.",
+                desc: "Fast, honest pages for each Noida business hub you serve, with LocalBusiness schema that helps Google understand exactly where you operate.",
               },
               {
-                title: "Directory Citations & NAP Audits",
-                desc: "Fix your Name, Address, and Phone details across IndiaMART, Justdial, and Google. We keep data consistent.",
+                title: "Directory Citations & NAP Consistency",
+                desc: "I fix your Name, Address, and Phone details across Justdial, IndiaMART, and Google. These three little details are one of the most common reasons local businesses don't rank — and easiest to get wrong.",
               },
               {
                 title: "Customer Review Management",
-                desc: "Get more 5-star Google reviews from happy clients. We set up easy review workflows to build trust.",
+                desc: "I set up simple workflows that turn happy customers into Google reviews — because consistent fresh reviews are one of the strongest local ranking signals.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">

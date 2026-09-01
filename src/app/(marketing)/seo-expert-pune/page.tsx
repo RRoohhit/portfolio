@@ -43,7 +43,7 @@ export default function SeoExpertPunePage() {
             SEO Expert in Pune — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Grow your business in Pune with expert SEO. Rohit Gupta helps IT companies, colleges, and local brands in Hinjewadi, Baner, and Koregaon Park rank #1 on Google. We deliver fast site speed, local map pack rankings, and steady leads.
+            Pune&apos;s tech, auto, and education sectors all search very differently — and that&apos;s exactly why a one-size approach doesn&apos;t work here. I&apos;m Rohit Gupta, and I help IT companies, colleges, and local brands in Hinjewadi, Baner, and Koregaon Park rank on Google with fast sites, stronger map presence, and a steady flow of real leads.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Pune SEO Specialist <ArrowRight className="w-4 h-4" />
@@ -55,26 +55,26 @@ export default function SeoExpertPunePage() {
             SEO &amp; Growth Solutions for Pune Businesses
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Reach tech-savvy buyers in Pune with fast web pages, structured data, and helpful content.
+            Pune buyers research before they buy — especially in education and tech. I build fast pages, clean structure, and content that earns their trust.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
                 title: "EdTech & Education SEO",
-                desc: "Rank your coaching institute or academy for top course keywords. We build FAQ schema and clean landing pages.",
+                desc: "I help coaching institutes and academies rank for the courses students actually search, with FAQ schema and clean landing pages.",
               },
               {
                 title: "IT & Auto Industry SEO",
-                desc: "Dominate Google search for IT services and auto components. We build technical SEO and buyer content that converts.",
+                desc: "I dominate the searches that matter for IT services and auto suppliers — with technical SEO and buyer-focused content that converts.",
               },
               {
                 title: "Local SEO & Google Maps",
-                desc: "Win the Google Maps 3-Pack across Hinjewadi, Baner, and Kothrud. We boost your Google profile and local reviews.",
+                desc: "I win the Google Maps 3-Pack across Hinjewadi, Baner, and Kothrud by optimising your profile, listing consistency, and reviews.",
               },
               {
                 title: "Core Web Vitals & AI Search",
-                desc: "Get sub-second page speed. We structure answers so Google AI Overviews and ChatGPT cite your brand.",
+                desc: "I get your site to sub-second load times and structure answers so Google AI Overviews and ChatGPT cite your brand.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">

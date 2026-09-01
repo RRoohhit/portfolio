@@ -26,32 +26,32 @@ const AUDIT_PILLARS = [
   {
     title: "Technical SEO Audit",
     icon: Zap,
-    desc: "We check indexing status, sitemaps, robots.txt, broken links, 301 redirects, and page rendering.",
+    desc: "I check your indexing status, sitemaps, robots.txt, broken links, 301 redirects, and page rendering.",
   },
   {
     title: "Core Web Vitals & Speed",
     icon: BarChart3,
-    desc: "We test your LCP, INP, and CLS scores. We help you fix render-blocking code and slow images.",
+    desc: "I test your LCP, INP, and CLS scores, then help fix the render-blocking code and slow images behind them.",
   },
   {
     title: "On-Page & Keyword Review",
     icon: FileText,
-    desc: "We review titles, meta tags, and H1 headings. We make sure your content matches search intent.",
+    desc: "I review your titles, meta tags, and H1 headings, and make sure your content matches real search intent.",
   },
   {
     title: "Local & Google Map Pack",
     icon: MapPin,
-    desc: "We audit your Google Business Profile, local citations, reviews, and Google Maps 3-Pack rank.",
+    desc: "I audit your Google Business Profile, local citations, reviews, and Google Maps 3-Pack rank.",
   },
   {
     title: "Backlink & Domain Authority",
     icon: ShieldCheck,
-    desc: "We check your link health, spot spam links, and find top link opportunities your rivals use.",
+    desc: "I check your link health, spot spam links, and find the top link opportunities your rivals already use.",
   },
   {
     title: "Schema Markup & Rich Snippets",
     icon: Globe,
-    desc: "We test your JSON-LD structured data. This wins star ratings and rich results on Google.",
+    desc: "I test your JSON-LD structured data — the stuff that wins star ratings and rich results on Google.",
   },
 ];
 

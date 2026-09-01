@@ -25,14 +25,14 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const BUSINESS_SOLUTIONS = [
-  { title: "Business website development", desc: "We build clear, credible, conversion-focused websites that help prospects understand the offer and trust the business quickly." },
-  { title: "SEO-friendly architecture", desc: "We build with crawlability, site structure, and performance in mind so the website supports ranking and user experience together." },
-  { title: "React and Next.js builds", desc: "We create fast, modern frontends with strong UX and performance optimization for complex business websites and growth-focused digital products." },
-  { title: "E-commerce and storefront development", desc: "We help brands build or improve storefronts that support product discovery, trust, and simple customer journeys." },
-  { title: "Website redesign and refactoring", desc: "We modernize outdated or slow websites without losing SEO value, keeping the site strategic while improving speed and usability." },
-  { title: "Speed and Core Web Vitals", desc: "We optimize performance so pages load faster, feel smoother, and improve both user satisfaction and search visibility." },
-  { title: "API and backend support", desc: "We develop the backend layer where needed, including secure APIs, data integration, and business logic for digital services." },
-  { title: "Headless CMS integration", desc: "We connect modern frontends to CMS systems so content can stay flexible and easy to manage without hurting delivery speed." },
+  { title: "Business website development", desc: "I build clear, credible, conversion-focused websites that help prospects understand your offer quickly and trust you enough to get in touch." },
+  { title: "SEO-friendly architecture", desc: "I build with crawlability, site structure, and performance in mind, so the website supports both rankings and user experience from day one." },
+  { title: "React and Next.js builds", desc: "I create fast, modern frontends with solid performance for complex business websites and growth-focused digital products — code I write and maintain myself." },
+  { title: "E-commerce and storefront development", desc: "I help brands build or improve storefronts that make products easy to find and buying simple — the details that decide whether carts get completed." },
+  { title: "Website redesign and refactoring", desc: "I modernize outdated or slow websites without losing their SEO value, keeping what works while improving speed, structure, and usability." },
+  { title: "Speed and Core Web Vitals", desc: "I optimise performance so pages load faster and feel smoother, which helps both user satisfaction and search visibility." },
+  { title: "API and backend support", desc: "I build the backend layer where needed — secure APIs, data integration, and business logic for digital services." },
+  { title: "Headless CMS integration", desc: "I connect modern frontends to CMS systems so your team can manage content easily without sacrificing delivery speed." },
 ];
 
 const TECH_STACK = [
@@ -44,15 +44,15 @@ const TECH_STACK = [
 const FAQS = [
   {
     question: "Do you build websites only or also help with SEO?",
-    answer: "We design and build for both. A website should be fast, clear, and search-friendly—not just visually good. That is why performance and SEO are part of the build process.",
+    answer: "I design and build for both. A website should be fast, clear, and search-friendly — not just visually good. That's why performance and SEO are built into the process from the start, not added later.",
   },
   {
     question: "Can you redesign an existing website?",
-    answer: "Yes. We can redesign slow or dated websites, improve the structure, and modernize the experience while preserving what already works and protecting search visibility.",
+    answer: "Yes. I can redesign slow or dated websites, improve the structure, and modernise the experience while preserving what already works and protecting your search visibility through the move.",
   },
   {
     question: "Do you build custom business websites or only landing pages?",
-    answer: "We can do both. Whether it is a simple business site, a service platform, or a more complex marketing site, we design around the business goal and conversion flow.",
+    answer: "Both. Whether it's a simple business site, a service platform, or a larger marketing site, I design around the business goal and the path that turns visitors into customers.",
   },
 ];
 
@@ -83,7 +83,7 @@ export default function WebDevelopmentPage() {
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            A great website should do more than look good. It should build trust quickly, explain the offer clearly, and make it easy for the right people to enquire, buy, or book. We build websites that balance design, speed, conversion flow, and long-term SEO value.
+            A great website should do more than look good. It should build trust quickly, explain exactly what you offer, and make it easy for the right people to enquire, buy, or book. I build websites that balance design, speed, conversion, and long-term SEO value — because a pretty site nobody ranks for is just an expensive brochure.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">

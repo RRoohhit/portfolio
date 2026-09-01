@@ -43,7 +43,7 @@ export default function SeoExpertBangalorePage() {
             SEO Expert in Bangalore — Rohit Gupta
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Bengaluru is India&apos;s startup and SaaS capital. Rohit Gupta helps SaaS companies and tech startups in Koramangala, Indiranagar, and HSR Layout rank #1 on Google. We deliver fast site speed, clean code, and AI search optimization.
+            Bengaluru is India&apos;s startup and SaaS capital — and ranking here means keeping up with fast-moving, technically sharp competitors. I&apos;m Rohit Gupta, and I help SaaS companies and tech startups in Koramangala, Indiranagar, and HSR Layout grow on Google with fast-loading sites, clean code, and AI search visibility that gets them noticed.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Consult Bangalore SEO Specialist <ArrowRight className="w-4 h-4" />
@@ -55,26 +55,26 @@ export default function SeoExpertBangalorePage() {
             SaaS &amp; Tech SEO Solutions for Bengaluru Brands
           </h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
-            Tech buyers search with high intent. We help you win top rankings with fast pages and clear content.
+            Tech buyers search with high intent — they know what they want before they type. My job is to make sure they find you first, with fast pages and content that answers their questions clearly.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {[
               {
                 title: "SaaS & B2B Keyword Strategy",
-                desc: "Target high-intent search terms for your SaaS product. We find terms your competitors miss.",
+                desc: "I find the high-intent terms your SaaS buyers search before they purchase — including the ones your competitors are missing.",
               },
               {
                 title: "Core Web Vitals & Speed",
-                desc: "Get sub-second page speed. We tune your site so it passes all Google speed tests.",
+                desc: "I tune your site myself to reach sub-second load times, so speed helps your rankings instead of hurting them.",
               },
               {
                 title: "Documentation & Resource Pages",
-                desc: "Rank your API docs, help centers, and guide pages with clean code and structured data.",
+                desc: "Your API docs, help centre, and guides can rank too. I make sure they're cleanly coded and structured for search.",
               },
               {
                 title: "AI Search (AEO) Optimization",
-                desc: "Get cited by ChatGPT, Perplexity, and Google AI Overviews. We format answers so AI tools quote you.",
+                desc: "I format your content so ChatGPT, Perplexity, and Google AI Overviews cite your brand when people ask questions.",
               },
             ].map((pillar, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-2 shadow-xl">

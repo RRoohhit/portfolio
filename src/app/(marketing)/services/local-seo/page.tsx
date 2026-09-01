@@ -24,28 +24,28 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const INCLUDED_CHECKLIST = [
-  { title: "Google Business Profile optimization", desc: "We fix the profile details people trust most: categories, services, photos, business description, and local signals that support better Map Pack rankings." },
-  { title: "Citation and NAP consistency", desc: "We audit your business name, address, and phone number across local directories so Google sees one clean, consistent business identity." },
-  { title: "Local link and authority building", desc: "We build geo-relevant links and local trust signals that help your business earn visibility in the right service areas and cities." },
-  { title: "Geo-targeted service pages", desc: "We create city-specific and service-area pages that speak to local intent without stuffing keywords or creating spammy duplicate content." },
-  { title: "Local competitor gap analysis", desc: "We examine the top local competitors and identify the exact ranking factors they are winning on so we can outperform them strategically." },
-  { title: "Map Pack ranking strategy", desc: "We improve your proximity signals, review velocity, and consistency so your business earns stronger visibility in the local 3-pack." },
-  { title: "Review management and response system", desc: "We create a realistic system for collecting reviews, responding professionally, and strengthening the trust signals Google rewards." },
-  { title: "Local schema and structured data", desc: "We add the right LocalBusiness markup so your site better communicates business details, timings, and service areas to search engines." },
+  { title: "Google Business Profile optimization", desc: "I fix the profile details people trust most: categories, services, photos, business description, and the local signals that support stronger Map Pack rankings." },
+  { title: "Citation and NAP consistency", desc: "I audit your business name, address, and phone number across local directories so Google sees one clean, consistent business identity — inconsistency quietly kills local rankings." },
+  { title: "Local link and authority building", desc: "I build geo-relevant links and local trust signals that help your business earn visibility in the right service areas and cities." },
+  { title: "Geo-targeted service pages", desc: "I create city-specific and service-area pages that speak to local intent, without stuffing keywords or creating spammy duplicate content." },
+  { title: "Local competitor gap analysis", desc: "I examine your top local competitors and identify the exact factors they're winning on, so we can outrank them strategically rather than guessing." },
+  { title: "Map Pack ranking strategy", desc: "I improve your proximity signals, review velocity, and consistency so your business earns stronger visibility in the local 3-pack." },
+  { title: "Review management and response system", desc: "I set up a realistic system for collecting reviews, responding professionally, and strengthening the trust signals Google rewards." },
+  { title: "Local schema and structured data", desc: "I add the right LocalBusiness markup so your site clearly communicates business details, timings, and service areas to search engines." },
 ];
 
 const FAQS = [
   {
     question: "Do I need Local SEO if I already have a website?",
-    answer: "Yes, especially if your customers are nearby or search by city/service-area terms. A good website attracts broader traffic, but local SEO captures the buyers who are ready to act right now.",
+    answer: "Yes, especially if your customers are nearby or search by city/service-area terms. A good website attracts broader traffic, but local SEO captures the buyers who are ready to act right now — the people actively looking for a business like yours nearby.",
   },
   {
     question: "How long does Local SEO take?",
-    answer: "Most businesses start seeing improved local visibility within a few weeks, but map-pack stability and stronger rankings usually build over a few months of steady optimization.",
+    answer: "Most businesses start seeing improved local visibility within a few weeks, but map-pack stability and stronger rankings usually build over a few months of steady, consistent optimisation.",
   },
   {
     question: "Is Google Business Profile optimization the same as Local SEO?",
-    answer: "They are closely connected. GBP optimization is a major part of Local SEO, but the full strategy also includes citations, site pages, reviews, and local authority signals.",
+    answer: "They're closely connected. GBP optimization is a major part of Local SEO, but the full strategy also includes citations, site pages, reviews, and local authority signals. I handle the whole picture, not just the profile.",
   },
 ];
 
