@@ -62,6 +62,9 @@ const CATEGORY_COLORS: Record<string, string> = {
   "AI Search": "bg-amber-500/15 text-amber-300 border-amber-500/25",
   "Content Strategy": "bg-rose-500/15 text-rose-300 border-rose-500/25",
   "E-Commerce SEO": "bg-teal-500/15 text-teal-300 border-teal-500/25",
+  "SEO Hiring Guide": "bg-fuchsia-500/15 text-fuchsia-300 border-fuchsia-500/25",
+  "Digital Marketing": "bg-orange-500/15 text-orange-300 border-orange-500/25",
+  "SEO Strategy": "bg-indigo-500/15 text-indigo-300 border-indigo-500/25",
 };
 const getCategoryColor = (cat: string) =>
   CATEGORY_COLORS[cat] ?? "bg-white/10 text-white/60 border-white/15";

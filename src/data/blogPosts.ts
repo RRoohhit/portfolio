@@ -15,6 +15,18 @@ import { googleBusinessProfileOptimization2026 } from "./posts/googleBusinessPro
 import { rank1GoogleSystem2026 } from "./posts/rank1GoogleSystem2026";
 import { whiteHatSeoServicesIndia2026 } from "./posts/whiteHatSeoServicesIndia2026";
 import { websiteDevelopmentAgencyGuide2026 } from "./posts/websiteDevelopmentAgencyGuide2026";
+import { seoExpertDelhiGuide2026 } from "./posts/seoExpertDelhiGuide2026";
+import { seoExpertNoidaGuide2026 } from "./posts/seoExpertNoidaGuide2026";
+import { hireProfessionalSeoExpertVetting2026 } from "./posts/hireProfessionalSeoExpertVetting2026";
+import { localSeoExpertNearMeGuide2026 } from "./posts/localSeoExpertNearMeGuide2026";
+import { digitalMarketingServicesNearMeGuide2026 } from "./posts/digitalMarketingServicesNearMeGuide2026";
+import { ppcExpertNoidaGuide2026 } from "./posts/ppcExpertNoidaGuide2026";
+import { seoTeamIndiaGuide2026 } from "./posts/seoTeamIndiaGuide2026";
+import { whiteHatSeoFirmGuide2026 } from "./posts/whiteHatSeoFirmGuide2026";
+import { rohitGuptaSeoPortfolioReviews2026 } from "./posts/rohitGuptaSeoPortfolioReviews2026";
+import { whatIsSeoCompleteGuide2026 } from "./posts/whatIsSeoCompleteGuide2026";
+import { hireAiSeoExpertsIndiaGuide2026 } from "./posts/hireAiSeoExpertsIndiaGuide2026";
+import { googleAiOverviewsAeoGeoStrategy2026 } from "./posts/googleAiOverviewsAeoGeoStrategy2026";
 
 // Single source of truth for all articles.
 // Consumed by: /blog listing, /blog/[slug] pages, home page grid and reader modal.
@@ -1299,4 +1311,16 @@ I have spent my career doing exactly this for businesses across Noida, Delhi and
   rank1GoogleSystem2026,
   whiteHatSeoServicesIndia2026,
   websiteDevelopmentAgencyGuide2026,
+  seoExpertDelhiGuide2026,
+  seoExpertNoidaGuide2026,
+  hireProfessionalSeoExpertVetting2026,
+  localSeoExpertNearMeGuide2026,
+  digitalMarketingServicesNearMeGuide2026,
+  ppcExpertNoidaGuide2026,
+  seoTeamIndiaGuide2026,
+  whiteHatSeoFirmGuide2026,
+  rohitGuptaSeoPortfolioReviews2026,
+  whatIsSeoCompleteGuide2026,
+  hireAiSeoExpertsIndiaGuide2026,
+  googleAiOverviewsAeoGeoStrategy2026,
 ];

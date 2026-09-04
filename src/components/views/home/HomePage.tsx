@@ -554,24 +554,24 @@ export const HomePage: React.FC = () => {
 
           <Reveal direction="left" distance={32} delay={0.1} className="lg:col-span-5">
             <div className="space-y-4 sm:space-y-6 h-full flex flex-col justify-between">
-            <div className="card-3d-interactive bg-gradient-to-br from-white via-zinc-100 to-zinc-200 text-black p-5 sm:p-6 rounded-3xl flex flex-col justify-between space-y-4 shadow-2xl">
+            <div className="card-3d-interactive p-5 sm:p-6 rounded-3xl flex flex-col justify-between space-y-4 shadow-2xl">
               <div>
-                <p className="text-[10px] uppercase text-black/60 mb-1.5 tracking-widest font-mono font-bold">Contact Rohit Gupta</p>
-                <p className="text-sm sm:text-base lg:text-lg font-extrabold tracking-tight font-mono break-all text-black">{ROHIT_PROFILE.email}</p>
+                <p className="text-[10px] uppercase text-white/40 mb-1.5 tracking-widest font-mono font-bold">Contact Rohit Gupta</p>
+                <p className="text-sm sm:text-base lg:text-lg font-extrabold tracking-tight font-mono break-all text-white">{ROHIT_PROFILE.email}</p>
               </div>
-              <div className="pt-4 border-t border-black/10 flex justify-between items-center">
+              <div className="pt-4 border-t border-white/10 flex justify-between items-center">
                 <a
                   href="https://maps.app.goo.gl/bjJDqfUJRuJPqHBT6"
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   title="View Rohit Gupta Location on Google Maps (Mamura, Sector 66, Noida)"
-                  className="text-[10px] font-mono uppercase font-bold text-black/70 hover:text-black hover:underline transition-colors"
+                  className="text-[10px] font-mono uppercase font-bold text-white/70 hover:text-white hover:underline transition-colors"
                 >
                   NOIDA SECTOR 66 (CURRENT) · AYODHYA (PERMANENT) ↗
                 </a>
                 <Link
                   href="/rohit-gupta/"
-                  className="arrow-3d w-9 h-9 flex items-center justify-center font-bold text-black shadow-md hover:scale-110 transition-transform"
+                  className="arrow-3d w-9 h-9 flex items-center justify-center font-bold text-white shadow-md hover:scale-110 transition-transform"
                   aria-label="View Rohit Gupta profile page"
                 >
                   →
