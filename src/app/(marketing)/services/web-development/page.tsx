@@ -107,7 +107,7 @@ export default function WebDevelopmentPage() {
           <div className="space-y-2">
             <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-purple-400" />
-              What we build
+              What I build
             </h2>
             <p className="text-xs sm:text-sm text-white/60">
               Websites and digital experiences designed around speed, clarity, and business outcomes.
@@ -164,7 +164,7 @@ export default function WebDevelopmentPage() {
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-purple-950/40 via-zinc-950 to-zinc-950 border border-purple-500/30 text-center space-y-5 shadow-2xl">
           <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Need a site that actually helps your business move forward?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
-            We can talk about the current website, the business goal, and the best technical path to make the website more effective.
+            I can talk with you about the current website, the business goal, and the best technical path to make the website more effective.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
             Start project

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Clock, Calendar, User, Tag, ArrowLeft, BookOpen, ChevronRight, Share2, MessageCircleQuestion } from "lucide-react";
-import { BLOG_POSTS } from "@/data/blogPosts";
+import { BLOG_POSTS, getClusterForPost, getPostsForCluster } from "@/data/blogPosts";
 import { ROHIT_PROFILE } from "@/data/portfolioData";
 import { ArticleContent, parseArticleContent } from "@/components/views/blog/components/ArticleContent";
 import { TableOfContents } from "@/components/views/blog/components/TableOfContents";
@@ -120,7 +120,39 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     ],
   };
 
-  const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== post.slug).slice(0, 2);
+  // SEO topic-cluster navigation: which guide series this article belongs to
+  const postClusters = getClusterForPost(post.slug);
+  const cluster =
+    postClusters.length > 0
+      ? { ...postClusters[0], posts: getPostsForCluster(postClusters[0].slug) }
+      : null;
+  let clusterIndex = -1;
+  if (cluster) {
+    for (let i = 0; i < cluster.posts.length; i++) {
+      if (cluster.posts[i].slug === post.slug) {
+        clusterIndex = i;
+        break;
+      }
+    }
+  }
+  const clusterPrev = cluster && clusterIndex > 0 ? cluster.posts[clusterIndex - 1] : null;
+  const clusterNext = cluster && clusterIndex >= 0 && clusterIndex < cluster.posts.length - 1 ? cluster.posts[clusterIndex + 1] : null;
+  // Cluster-aware related posts: prefer siblings from the same topic-cluster(s)
+  // so readers (and crawlers) follow a coherent learning path, then fall back
+  // to the newest articles so the slot is never empty.
+  const siblingSlugs = new Set(
+    postClusters
+      .flatMap((c) => getPostsForCluster(c.slug))
+      .map((p) => p.slug)
+  );
+  const relatedPosts = BLOG_POSTS
+    .filter((p) => p.slug !== post.slug)
+    .sort((a, b) => {
+      const aIn = siblingSlugs.has(a.slug) ? 0 : 1;
+      const bIn = siblingSlugs.has(b.slug) ? 0 : 1;
+      return aIn - bIn;
+    })
+    .slice(0, 2);
 
   // Table of contents: pulled straight from the article's own headings so it
   // always matches the rendered content.
@@ -328,9 +360,73 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </aside>
       )}
       </div>
+      {/* ── Guide Series / Cluster navigation ── */}
+      {cluster && (
+        <div className="p-5 sm:p-6 rounded-2xl bg-black/40 border border-emerald-500/20 space-y-3">
+          <div className="text-[10px] font-mono uppercase text-emerald-400 font-bold tracking-wider flex items-center gap-2">
+            <BookOpen className="w-3.5 h-3.5" />
+            <span>Part of the {cluster.title} series</span>
+          </div>
+          {cluster.pillarSlug && (
+            <p className="text-xs text-white/70 leading-relaxed">
+              New here? Start with the pillar guide:{' '}
+              <Link
+                href={`/blog/${cluster.pillarSlug}`}
+                className="text-emerald-400 hover:underline font-medium"
+              >
+                {cluster.posts.find((p) => p.slug === cluster.pillarSlug)?.title ??
+                  cluster.title}
+              </Link>{' '}
+              to build the full picture in order.
+            </p>
+          )}
+          <div className="flex flex-wrap gap-2 items-center">
+            {clusterPrev && (
+              <Link
+                href={`/blog/${clusterPrev.slug}`}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-xs font-mono text-white/70 hover:text-white transition-colors"
+              >
+                <ArrowLeft className="w-3 h-3" />
+                Prev: {clusterPrev.title}
+              </Link>
+            )}
+            {clusterNext && (
+              <Link
+                href={`/blog/${clusterNext.slug}`}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-400/10 border border-emerald-500/25 text-xs font-mono text-emerald-400 hover:bg-emerald-400 hover:text-black transition-colors"
+              >
+                Next: {clusterNext.title}
+                <ArrowLeft className="w-3 h-3 rotate-180" />
+              </Link>
+            )}
+          </div>
+          <div className="flex flex-wrap gap-1.5">
+            {cluster.posts.slice(0, 12).map((p) => (
+              <Link
+                key={p.slug}
+                href={`/blog/${p.slug}`}
+                className={`px-2.5 py-1 rounded-full text-[10px] font-mono border ${
+                  p.slug === post.slug
+                    ? "bg-emerald-400 text-black border-emerald-400"
+                    : "card-3d text-white/55 hover:text-white"
+                }`}
+              >
+                {p.slug === post.slug ? `You are here · ${p.title}` : p.title}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+
       <div className="space-y-4">
         <h3 className="text-xs font-mono uppercase text-white/50 tracking-[0.2em] font-bold">
-          More Technical SEO Articles
+          {cluster ? (
+            <>
+              Continue the {cluster.title} series
+            </>
+          ) : (
+            "More Technical SEO Articles"
+          )}
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {relatedPosts.map((rec) => (

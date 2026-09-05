@@ -29,7 +29,7 @@ const WHATS_INCLUDED = [
   { title: "Instagram Growth", desc: "Grow with viral reels and clean photo carousels that fit your brand." },
   { title: "Facebook Page Reach", desc: "Build an active community of local buyers on Facebook." },
   { title: "LinkedIn Brand Reach", desc: "Build your personal brand and win high-value business deals." },
-  { title: "Rival Account Review", desc: "I study what top rivals do so we can use what actually works." },
+  { title: "Rival Account Review", desc: "I study what top rivals do so I can use what actually works." },
   { title: "Real Organic Fans", desc: "Real followers gained with quality posts — no fake bots or bought likes." },
   { title: "Social Search Rank", desc: "I help your page rank higher on Instagram and Google search." },
   { title: "Lead Generation", desc: "Turn views into website visits, calls, and chats." },
@@ -67,7 +67,7 @@ export default function SocialMediaMarketingPage() {
             Social Media Marketing Services
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Grow your brand online. We help your business stand out on Instagram, Facebook, and LinkedIn. Turn profile views into phone calls, chats, and sales.
+            Grow your brand online. I help your business stand out on Instagram, Facebook, and LinkedIn. Turn profile views into phone calls, chats, and sales.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
@@ -83,7 +83,7 @@ export default function SocialMediaMarketingPage() {
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
           <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
             <BarChart3 className="w-5 h-5 text-emerald-400" />
-            Platforms We Cover
+            Platforms I Cover
           </h2>
           <div className="flex flex-wrap gap-3">
             {PLATFORMS.map((p) => (

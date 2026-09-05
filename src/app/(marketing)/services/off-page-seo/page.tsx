@@ -24,7 +24,7 @@ export const metadata: Metadata = buildPageMetadata({
 
 const WHATS_INCLUDED = [
   { title: "Backlink Audit", desc: "I audit your backlink profile and find any spammy or toxic links that are quietly hurting your rankings." },
-  { title: "Competitor Link Review", desc: "I check where your top rivals get links, so we can target the same quality sources for you." },
+  { title: "Competitor Link Review", desc: "I check where your top rivals get links, so I can target the same quality sources for you." },
   { title: "Link Gap Analysis", desc: "I find sites linking to competitors but not to you, and prioritise the best opportunities in your niche." },
   { title: "Digital PR & Brand Links", desc: "I earn press links with data-driven studies and original stories, and pitch them to top industry blogs." },
   { title: "Niche Editorial Outreach", desc: "I reach out to relevant blogs and resource pages to earn natural links that build real trust." },

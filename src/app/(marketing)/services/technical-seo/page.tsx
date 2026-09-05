@@ -81,7 +81,7 @@ export default function TechnicalSeoPage() {
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            The best content still struggles if the site has crawl issues, slow pages, duplicate URLs, or a weak technical structure. We fix the underlying issues that stop Google from understanding your site and stop users from staying long enough to convert.
+            The best content still struggles if the site has crawl issues, slow pages, duplicate URLs, or a weak technical structure. I'm Rohit Gupta, and because I'm also a developer, I don't just diagnose these problems in a report — I get into the code and fix the underlying issues that stop Google from understanding your site and stop users from staying long enough to convert.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">
@@ -108,7 +108,7 @@ export default function TechnicalSeoPage() {
               What technical SEO covers
             </h2>
             <p className="text-xs sm:text-sm text-white/60">
-              We fix the hidden issues that often keep a website from growing, even when the business is strong.
+              I fix the hidden issues that often keep a website from growing, even when the business is strong.
             </p>
           </div>
 
@@ -162,7 +162,7 @@ export default function TechnicalSeoPage() {
         <section className="p-8 sm:p-10 rounded-3xl bg-zinc-950 border border-white/10 space-y-4 text-center">
           <h3 className="text-xl font-bold text-white tracking-tight">Need a technical cleanup before growth accelerates?</h3>
           <p className="text-xs sm:text-sm text-white/70 max-w-xl mx-auto">
-            We’ll find the blockers holding your site back and build a technical roadmap that supports sustainable rankings.
+            I'll find the blockers holding your site back and build a technical roadmap that supports sustainable rankings.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Request Audit

@@ -27,6 +27,33 @@ import { rohitGuptaSeoPortfolioReviews2026 } from "./posts/rohitGuptaSeoPortfoli
 import { whatIsSeoCompleteGuide2026 } from "./posts/whatIsSeoCompleteGuide2026";
 import { hireAiSeoExpertsIndiaGuide2026 } from "./posts/hireAiSeoExpertsIndiaGuide2026";
 import { googleAiOverviewsAeoGeoStrategy2026 } from "./posts/googleAiOverviewsAeoGeoStrategy2026";
+import { hireSeoExpertHrGuide2026 } from "./posts/hireSeoExpertHrGuide2026";
+import { hireWebDeveloperIndiaHrGuide2026 } from "./posts/hireWebDeveloperIndiaHrGuide2026";
+import { hireDigitalMarketingExpertHrGuide2026 } from "./posts/hireDigitalMarketingExpertHrGuide2026";
+import { hireWordPressDeveloperHrGuide2026 } from "./posts/hireWordPressDeveloperHrGuide2026";
+import { hireFreelanceSeoExpertHrGuide2026 } from "./posts/hireFreelanceSeoExpertHrGuide2026";
+import { digitalMarketingAgencyVsFreelancerGuide2026 } from "./posts/digitalMarketingAgencyVsFreelancerGuide2026";
+import { hireReactNextJsDeveloperHrGuide2026 } from "./posts/hireReactNextJsDeveloperHrGuide2026";
+import { hireFullStackDeveloperHrGuide2026 } from "./posts/hireFullStackDeveloperHrGuide2026";
+import { hireDigitalMarketingAgencyHrGuide2026 } from "./posts/hireDigitalMarketingAgencyHrGuide2026";
+import { hireWooCommerceDeveloperHrGuide2026 } from "./posts/hireWooCommerceDeveloperHrGuide2026";
+import { hireSeoAgencyHrGuide2026 } from "./posts/hireSeoAgencyHrGuide2026";
+import { websiteCostIndiaBudgetGuide2026 } from "./posts/websiteCostIndiaBudgetGuide2026";
+import { hireContentWriterHrGuide2026 } from "./posts/hireContentWriterHrGuide2026";
+import { hireSocialMediaManagerHrGuide2026 } from "./posts/hireSocialMediaManagerHrGuide2026";
+import { seoPricingIndiaGuide2026 } from "./posts/seoPricingIndiaGuide2026";
+import { hireGoogleAdsExpertHrGuide2026 } from "./posts/hireGoogleAdsExpertHrGuide2026";
+import { digitalMarketingPricingIndiaGuide2026 } from "./posts/digitalMarketingPricingIndiaGuide2026";
+import { hireGraphicVideoDesignerHrGuide2026 } from "./posts/hireGraphicVideoDesignerHrGuide2026";
+import { digitalMarketingVsSeoGuide2026 } from "./posts/digitalMarketingVsSeoGuide2026";
+import { hireFreelanceWebDeveloperIndiaGuide2026 } from "./posts/hireFreelanceWebDeveloperIndiaGuide2026";
+import { localSeoVsNationalSeoGuide2026 } from "./posts/localSeoVsNationalSeoGuide2026";
+import { seoVsSemGuide2026 } from "./posts/seoVsSemGuide2026";
+import { wordpressVsShopifyGuide2026 } from "./posts/wordpressVsShopifyGuide2026";
+import { organicVsPaidMarketingGuide2026 } from "./posts/organicVsPaidMarketingGuide2026";
+import { hireVideoEditorIndiaGuide2026 } from "./posts/hireVideoEditorIndiaGuide2026";
+import { seoAuditCostIndiaGuide2026 } from "./posts/seoAuditCostIndiaGuide2026";
+import { hireShopifyDeveloperIndiaGuide2026 } from "./posts/hireShopifyDeveloperIndiaGuide2026";
 
 // Single source of truth for all articles.
 // Consumed by: /blog listing, /blog/[slug] pages, home page grid and reader modal.
@@ -115,7 +142,7 @@ date: "2026-08-10",
           "Check monthly at minimum, because each deployment, script addition or content change can regress speed. Set up the Search Console Core Web Vitals report and CrUX dashboard to alert you to field-data regressions, and run a Lighthouse pass on every pull request before merge. The sites that hold 99/100 scores treat performance as a continuous discipline, not a one-time fix.",
       },
     ],
-    content: `Core Web Vitals are official Google ranking factors. In 2026, pages with an LCP above 2.5s or an INP above 200ms lose SERP visibility regardless of content quality. This guide is the exact architecture playbook Rohit Gupta uses to bring React and Next.js applications to sub-second load times.
+    content: `Core Web Vitals are official Google ranking factors, and they're the part of SEO I love most because they're the part I can actually fix with code — not just talk about. In 2026, pages with an LCP above 2.5s or an INP above 200ms lose SERP visibility regardless of content quality. This guide is the exact architecture playbook I use day to day to bring React and Next.js applications to sub-second load times. I'm Rohit Gupta, a developer who does SEO — so every metric below comes with the code to fix it, not another report.
 
 ## 1. Fix Largest Contentful Paint (LCP) First
 The LCP element is usually the hero image or above-the-fold text. Serve it with Next.js Image using priority, explicit dimensions and modern formats (AVIF/WebP). Remove any client-side slide-show that delays the first paint of meaningful content.
@@ -276,7 +303,7 @@ Speed is one layer of the complete ranking system. Continue with the related gui
           "Check Google Search Console under Security and Manual Actions for manual penalties. For algorithmic drops, compare your traffic chart against known update dates using the Google Search Central blog: a sudden loss that correlates with a core or spam update is algorithmic. Tools like Ahrefs and Semrush also track algorithm updates and flag toxic links in your profile that may have triggered a drop.",
       },
     ],
-    content: `While Black Hat SEO (private blog networks, hidden text, doorway pages) promises quick traffic, Google's AI core updates penalise unnatural link velocity within weeks. White Hat technical SEO, entity graph mapping and high-quality outreach deliver resilient search dominance instead.
+    content: `I'll be honest with you up front: there is no point in ranking today if you're going to disappear tomorrow. That's the entire difference between white hat and black hat SEO, and it's a gap I've watched close on real client websites more times than I can count. Black Hat SEO — private blog networks, hidden text, doorway pages — promises quick traffic, but Google's AI core updates penalise unnatural link velocity within weeks. White Hat technical SEO, entity graph mapping and high-quality outreach deliver resilient search dominance instead. I'm Rohit Gupta, and I've built my whole practice around the honest version, because it's the only one that survives.
 
 ## 1. Why Speed Kills Black Hat Campaigns
 SpamBrain and the 2026 core update detect scaled link patterns in days, not months. Sites caught lose not only their rankings but their eligibility for future AI-driven search features.
@@ -430,7 +457,7 @@ date: "2026-06-20",
           "Product schema with name, image, price, currency, availability and SKU, plus Offer and AggregateRating blocks when you have genuine reviews. BreadcrumbList for navigation and Organization for the brand. Review schema requires real user reviews; never mark up fake ratings, because Google can issue structured data manual actions that strip all rich results from the domain.",
       },
     ],
-    content: `Search engines rely on structured data to parse page context instantly. Embedding JSON-LD (TechArticle, Organization, FAQPage, Product) earns rich results, star ratings and direct inclusion in Google AI Overview answers.
+    content: `If you've ever wondered why some pages show up with rich star ratings, FAQ dropdowns and AI-generated summaries while yours look plain, the answer is almost always structured data. Search engines rely on structured data to parse page context instantly, and embedding JSON-LD (TechArticle, Organization, FAQPage, Product) earns rich results, star ratings and direct inclusion in Google AI Overview answers. I'm Rohit Gupta, and I generate JSON-LD programmatically on every site I build — here's the exact system I use so you get the same clean setup.
 
 ## 1. JSON-LD Beats Microdata
 Google explicitly recommends JSON-LD because it lives in a clean script tag, separate from presentation HTML, and survives React hydration untouched.
@@ -592,7 +619,7 @@ Structured data works hardest when the rest of the page is optimized. Continue w
           "In-house works when SEO is a permanent, daily function for a growing team, but a single in-house hire is expensive and isolated without agency context. Outsourcing to a specialist or agency works when you need senior skill, tools and cross-industry experience without full-time payroll. Many companies strike the middle path: an in-house marketer coordinating a specialist or agency, which keeps accountability internal and execution expert.",
       },
     ],
-    content: `Hiring the right SEO specialist is the difference between a #1 ranking funnel and a burned budget. Use this five-point checklist to evaluate any SEO candidate in India before you sign.
+    content: `I've seen the same scene play out too many times: a business owner proudly shares that they've just "hired an SEO guy," only to realize months later they got a burned budget and a domain that now has to recover. Hiring the right SEO specialist really is the difference between a #1 ranking funnel and a burned budget. I'm Rohit Gupta, an SEO specialist who has worked both sides of this table — as the candidate being interviewed and, on behalf of clients, as the person reviewing other people's work. Use this five-point checklist to evaluate any SEO candidate in India before you sign.
 
 ## 1. Demand Verifiable Case Study Data
 Real SEO specialists share anonymised dashboards: monthly organic sessions, SERP position changes and Core Web Vitals before/after. Vague "we ranked many sites" claims without numbers are a red flag.
@@ -1323,4 +1350,143 @@ I have spent my career doing exactly this for businesses across Noida, Delhi and
   whatIsSeoCompleteGuide2026,
   hireAiSeoExpertsIndiaGuide2026,
   googleAiOverviewsAeoGeoStrategy2026,
+  hireSeoExpertHrGuide2026,
+  hireWebDeveloperIndiaHrGuide2026,
+  hireDigitalMarketingExpertHrGuide2026,
+  hireWordPressDeveloperHrGuide2026,
+  hireFreelanceSeoExpertHrGuide2026,
+  digitalMarketingAgencyVsFreelancerGuide2026,
+  hireReactNextJsDeveloperHrGuide2026,
+  hireFullStackDeveloperHrGuide2026,
+  hireDigitalMarketingAgencyHrGuide2026,
+  hireWooCommerceDeveloperHrGuide2026,
+  hireSeoAgencyHrGuide2026,
+  websiteCostIndiaBudgetGuide2026,
+  hireContentWriterHrGuide2026,
+  hireSocialMediaManagerHrGuide2026,
+  seoPricingIndiaGuide2026,
+  hireGoogleAdsExpertHrGuide2026,
+  digitalMarketingPricingIndiaGuide2026,
+  hireGraphicVideoDesignerHrGuide2026,
+  digitalMarketingVsSeoGuide2026,
+  hireFreelanceWebDeveloperIndiaGuide2026,
+  localSeoVsNationalSeoGuide2026,
+  seoVsSemGuide2026,
+  wordpressVsShopifyGuide2026,
+  organicVsPaidMarketingGuide2026,
+  hireVideoEditorIndiaGuide2026,
+  seoAuditCostIndiaGuide2026,
+  hireShopifyDeveloperIndiaGuide2026,
 ];
+
+// ── SEO Topic Clusters ──────────────────────────────────────────────────────
+// Each cluster groups related articles into a search-engine-friendly topic hub
+// for strong internal linking. A post can belong to more than one cluster.
+// Posts are matched first by `category`, and `memberSlugs` force-includes any
+// stragglers whose category doesn't map cleanly.
+
+export interface BlogCluster {
+  id: string;
+  slug: string;
+  title: string;
+  intro: string;
+  pillarSlug?: string;
+  categories: string[];
+  memberSlugs?: string[];
+}
+
+export const BLOG_CLUSTERS: BlogCluster[] = [
+  {
+    id: "technical-seo",
+    slug: "technical-seo",
+    title: "Technical SEO & Website Speed",
+    intro:
+      "Indexing, crawlability, Core Web Vitals, schema and site architecture — the technical engine behind #1 rankings.",
+    pillarSlug: "core-web-vitals-react-nextjs",
+    categories: ["Technical SEO", "Core Web Vitals", "SEO Tools", "Structured Data"],
+    memberSlugs: ["json-ld-schema-markup-guide", "seo-and-web-development-complete-guide-2026"],
+  },
+  {
+    id: "local-seo",
+    slug: "local-seo",
+    title: "Local SEO & Google Business Profile",
+    intro:
+      "Rank in the Google Maps 3-Pack and win “near me” searches in Noida, Delhi and cities across India.",
+    pillarSlug: "local-seo-guide-rank-google-maps-2026",
+    categories: ["Local SEO"],
+  },
+  {
+    id: "ai-search",
+    slug: "ai-search",
+    title: "AI Search, AEO & GEO",
+    intro:
+      "Get cited in Google AI Overviews, ChatGPT, Perplexity and Gemini with Answer Engine Optimization.",
+    pillarSlug: "ai-search-optimization-aeo-geo-guide-2026",
+    categories: ["AI Search", "AI Search Optimization"],
+  },
+  {
+    id: "white-hat",
+    slug: "white-hat-seo",
+    title: "White Hat SEO & Link Building",
+    intro:
+      "Ethical ranking strategies and authority building that survive Google updates — the only kind worth buying.",
+    pillarSlug: "white-hat-vs-black-hat-seo",
+    categories: ["White Hat SEO", "Off-Page SEO"],
+    memberSlugs: ["white-hat-vs-black-hat-seo"],
+  },
+  {
+    id: "hire-seo-expert",
+    slug: "hire-seo-expert",
+    title: "Hire an SEO Expert in India",
+    intro:
+      "How to vet, hire and manage an SEO specialist, team or agency in India — with red flags and fair pricing.",
+    pillarSlug: "how-to-hire-seo-expert-india",
+    categories: ["SEO Hiring", "SEO Hiring Guide", "SEO Guide"],
+  },
+  {
+    id: "seo-strategy",
+    slug: "seo-strategy",
+    title: "Keyword Research & SEO Strategy",
+    intro:
+      "Find low-competition keywords, price SEO honestly and build a repeatable system to rank #1 on Google.",
+    pillarSlug: "keyword-research-find-low-competition-keywords",
+    categories: ["Keyword Research", "SEO Strategy", "Content Strategy"],
+  },
+  {
+    id: "web-development",
+    slug: "web-development",
+    title: "Web Development & WordPress",
+    intro:
+      "Choose a WordPress or web development agency that builds fast, SEO-ready sites — and actually ships.",
+    pillarSlug: "wordpress-development-company-guide-2026",
+    categories: ["Web Development"],
+    memberSlugs: ["seo-and-web-development-complete-guide-2026", "wordpress-vs-shopify-2026-complete-guide"],
+  },
+  {
+    id: "digital-marketing",
+    slug: "digital-marketing",
+    title: "Digital Marketing & Google Ads",
+    intro:
+      "Paid and social campaigns that complement SEO — Google Ads ROI, social media and full-funnel digital marketing.",
+    pillarSlug: "ppc-expert-in-noida-google-ads-roi-2026",
+    categories: ["Digital Marketing"],
+  },
+];
+
+/** Returns every cluster a given article belongs to (by category or explicit slug). */
+export function getClusterForPost(slug: string): BlogCluster[] {
+  const post = BLOG_POSTS.find((p) => p.slug === slug);
+  if (!post) return [];
+  return BLOG_CLUSTERS.filter(
+    (c) => c.categories.includes(post.category) || (c.memberSlugs ?? []).includes(post.slug)
+  );
+}
+
+/** Returns all articles that belong to a given cluster slug. */
+export function getPostsForCluster(clusterSlug: string): BlogPost[] {
+  const cluster = BLOG_CLUSTERS.find((c) => c.slug === clusterSlug);
+  if (!cluster) return [];
+  return BLOG_POSTS.filter(
+    (p) => cluster.categories.includes(p.category) || (cluster.memberSlugs ?? []).includes(p.slug)
+  );
+}

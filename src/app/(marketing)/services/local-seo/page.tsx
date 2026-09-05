@@ -26,35 +26,35 @@ export const metadata: Metadata = buildPageMetadata({
 const INCLUDED_CHECKLIST = [
   {
     title: "Google Business Profile setup",
-    desc: "We optimize your profile so it stands out in Google Maps and local 3-pack search results.",
+    desc: "I optimize your profile so it stands out in Google Maps and local 3-pack search results.",
   },
   {
     title: "Accurate business info everywhere",
-    desc: "We ensure your business name, address, and phone number match across all online directories.",
+    desc: "I make sure your business name, address, and phone number match across all online directories.",
   },
   {
     title: "Local backlinks and trust",
-    desc: "We help you earn links from local websites and community pages to build trust with Google.",
+    desc: "I help you earn links from local websites and community pages to build trust with Google.",
   },
   {
     title: "City and service area pages",
-    desc: "We create clear, helpful pages for each city or neighbourhood you serve.",
+    desc: "I create clear, helpful pages for each city or neighbourhood you serve.",
   },
   {
     title: "Local competitor check",
-    desc: "We review what top local rivals do and help you outrank them with better content and citations.",
+    desc: "I review what top local rivals do and help you outrank them with better content and citations.",
   },
   {
     title: "Google Map Pack ranking",
-    desc: "We optimize your presence so your business ranks in the top 3 Google Maps results.",
+    desc: "I optimize your presence so your business ranks in the top 3 Google Maps results.",
   },
   {
     title: "Customer review support",
-    desc: "We set up an easy way to collect real reviews from happy clients and reply to them.",
+    desc: "I set up an easy way to collect real reviews from happy clients and reply to them.",
   },
   {
     title: "Local business schema markup",
-    desc: "We add simple structured code so Google clearly knows your opening hours, location, and services.",
+    desc: "I add simple structured code so Google clearly knows your opening hours, location, and services.",
   },
 ];
 
@@ -109,7 +109,7 @@ export default function LocalSeoPage() {
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Want more local customers? When people nearby search on Google or Google Maps, we help your business show up at the top. You get more direct calls, store visits, and real sales.
+            If you run a local business, your customers are probably searching for you on Google Maps while they're standing right near your shop. I help you show up at the top of that "near me" search — so you get more direct calls, more people walking through your door, and sales from customers who were already ready to buy.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">
@@ -139,12 +139,28 @@ export default function LocalSeoPage() {
           </div>
           <p className="text-lg font-bold text-white tracking-tight">Need dedicated Google Maps optimization?</p>
           <p className="text-xs sm:text-sm text-white/75 leading-relaxed">
-            We offer full local SEO for your entire site, plus a dedicated service focused 100% on your Google Business Profile.
+            I offer full local SEO for your entire site, plus a dedicated service focused 100% on your Google Business Profile — whichever part of your local presence is holding you back.
           </p>
           <Link href="/services/google-business-profile-seo/" className="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-emerald-400 hover:text-emerald-300 transition-colors">
             <span>View Google Business Profile SEO</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
+        </section>
+
+        <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
+          <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+            <MapPin className="w-5 h-5 text-emerald-400" />
+            How local SEO works in the real world
+          </h2>
+          <p className="text-sm text-white/75 leading-relaxed font-light">
+            Let me walk you through an example that happens every day. Someone in Noida pulls out their phone and types "best dental clinic near me." Google doesn't show a list of random websites — it shows a Map Pack with three businesses, their reviews, ratings, and a button to call them directly. If your business isn't in that pack, that customer is going to your competitor a few doors down without you ever knowing you lost them.
+          </p>
+          <p className="text-sm text-white/75 leading-relaxed font-light">
+            Local SEO is the work that decides whether that "near me" search finds you. And honestly, it's where I've seen small businesses win fastest — because unlike national rankings, the map pack is decided by a handful of things I can fix quickly: a fully completed and consistent Google Business Profile, accurate business details spread across online directories, real recent reviews, and local signals like nearby citations and links. Get those right, and you can outrank businesses that have been around for years.
+          </p>
+          <p className="text-sm text-white/75 leading-relaxed font-light">
+            I'm based in Noida myself, so I understand the local landscape firsthand — the sectors, the suburbs, how Delhi NCR customers actually search, and which directories actually matter here. That local know-how is baked into every campaign, not tacked on as an afterthought.
+          </p>
         </section>
 
         <section className="space-y-6">
@@ -154,7 +170,7 @@ export default function LocalSeoPage() {
               What local SEO includes
             </h2>
             <p className="text-xs sm:text-sm text-white/60">
-              Everything you need to build local trust and attract ready-to-buy customers.
+              The practical pieces I handle so nearby customers actually find and choose you.
             </p>
           </div>
 
@@ -195,7 +211,7 @@ export default function LocalSeoPage() {
         <section className="p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4 text-center">
           <h3 className="text-xl font-bold text-white tracking-tight">Ready to get more local calls and walk-ins?</h3>
           <p className="text-xs sm:text-sm text-white/70 max-w-xl mx-auto">
-            Let us review your local presence and create a simple plan to help nearby customers choose you.
+            Let me take a quick look at your current local presence and give you a simple, honest plan for how nearby customers can start choosing you.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Get Local SEO Advice

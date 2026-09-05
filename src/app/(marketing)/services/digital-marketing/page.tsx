@@ -111,7 +111,7 @@ export default function DigitalMarketingPage() {
         </header>
 
         <section className="space-y-4">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">The channels we connect</h2>
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">The channels I connect</h2>
           <p className="text-xs sm:text-sm text-white/70 font-light leading-relaxed">
             Real growth happens when the right channels reinforce each other instead of competing for attention.
           </p>
@@ -130,7 +130,7 @@ export default function DigitalMarketingPage() {
         </section>
 
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-5 shadow-xl">
-          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">How we work</h3>
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">How I work</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
             {PROCESS.map((step) => (
               <div key={step.step} className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">

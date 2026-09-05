@@ -70,15 +70,15 @@ export default function NextjsDevelopmentPage() {
               },
               {
                 title: "Built-In SEO & Metadata",
-                desc: "Generate custom titles and schema tags dynamically. We make sure every URL looks great on Google.",
+                desc: "Generate custom titles and schema tags dynamically. I make sure every URL looks great on Google.",
               },
               {
                 title: "Edge Rendering & Fast Speed",
-                desc: "Serve pages from cloud servers close to your users. We combine fast static speed with live data.",
+                desc: "Serve pages from cloud servers close to your users. I combine fast static speed with live data.",
               },
               {
                 title: "Lighthouse 100/100 Speed",
-                desc: "Optimize images, fonts, and scripts. We make sure your site passes all Google Core Web Vitals.",
+                desc: "Optimize images, fonts, and scripts. I make sure your site passes all Google Core Web Vitals.",
               },
             ].map((item, idx) => (
               <div key={idx} className="p-6 rounded-3xl bg-zinc-950 border border-white/10 space-y-3 shadow-xl">

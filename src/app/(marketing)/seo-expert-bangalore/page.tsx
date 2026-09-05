@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
-import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
+import { breadcrumbGraph, faqGraph, renderJsonLd } from "@/lib/jsonld";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { MapPin, CheckCircle2, ArrowRight, Globe2, Cpu } from "lucide-react";
+import { MapPin, CheckCircle2, ArrowRight, Globe2, Cpu, Star } from "lucide-react";
+import { SITE_URL } from "@/config/site";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "SEO Expert in Bangalore | Rohit Gupta — SaaS & Tech SEO",
@@ -20,6 +21,34 @@ export const metadata: Metadata = buildPageMetadata({
   ],
 });
 
+const LOCAL_FAQS = [
+  {
+    question: "What's different about SEO for SaaS companies in Bangalore?",
+    answer:
+      "SaaS buyers research for weeks before they buy, so the classic playbook — thin pages stuffed with keywords — fails. What works in Bangalore's SaaS market is building topic clusters around each feature and problem your product solves, publishing genuinely useful comparison and documentation pages, and earning links from tech publications. I also make sure AI search engines can cite you, which is where a growing share of SaaS demand now comes from.",
+  },
+  {
+    question: "Do you work with Bangalore startups remotely?",
+    answer:
+      "Yes, and most of my startup clients prefer it. We work on a clear cadence: shared dashboards, weekly or biweekly reviews, and direct messaging when something needs attention. For funded startups scaling quickly, I can also plug into your existing tools and sprint rhythm so SEO moves at the same speed as your product.",
+  },
+  {
+    question: "Can you handle technical SEO for Next.js and React products?",
+    answer:
+      "That's one of my core strengths. As a developer who also does SEO, I fix rendering and indexing issues directly in the code — JavaScript SEO, meta handling, structured data, and Core Web Vitals. Most agencies can only recommend fixes; I can ship them, which matters a lot for tech brands in Bangalore where poor implementation is the main reason good products don't rank.",
+  },
+  {
+    question: "Which areas of Bengaluru do you cover for local SEO?",
+    answer:
+      "All of Bengaluru — Koramangala, HSR Layout, Indiranagar, Whitefield, the Outer Ring Road corridor, Electronic City, and south Bengaluru. Even for a SaaS company, a strong Google Business Profile and service-area pages for your office locations build local trust while your content strategy captures the national and global demand.",
+  },
+  {
+    question: "How long does SEO take for a Bangalore startup?",
+    answer:
+      "Early wins usually appear in 6 to 12 weeks — improved indexing, clean technical health, and initial rankings for lower-competition terms. Meaningful organic traffic and competitive keyword rankings typically build over 4 to 9 months for SaaS, because the buying cycle itself is longer and demands more content depth than a local business.",
+  },
+];
+
 export default function SeoExpertBangalorePage() {
   const breadcrumbData = breadcrumbGraph([
     { name: "Home", path: "/" },
@@ -29,6 +58,7 @@ export default function SeoExpertBangalorePage() {
   return (
     <>
       {renderJsonLd(breadcrumbData, "jsonld-seo-bangalore-breadcrumb")}
+      {renderJsonLd(faqGraph(LOCAL_FAQS, new URL("/seo-expert-bangalore/", SITE_URL).href), "jsonld-seo-bangalore-faq")}
 
       <div className="space-y-12 sm:space-y-16 pt-24 lg:pt-28 pb-16 max-w-5xl mx-auto">
         <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "SEO Expert in Bangalore" }]} />
@@ -98,6 +128,21 @@ export default function SeoExpertBangalorePage() {
               <div key={region} className="p-4 rounded-2xl bg-black border border-white/10 flex items-center gap-3">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
                 <span className="text-xs sm:text-sm font-mono text-white/85">{region}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
+          <h3 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+            <Star className="w-5 h-5 text-emerald-400" />
+            Frequently Asked Questions — Bangalore SEO
+          </h3>
+          <div className="space-y-4">
+            {LOCAL_FAQS.map((faq, idx) => (
+              <div key={idx} className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">
+                <h4 className="text-sm font-bold text-white">{faq.question}</h4>
+                <p className="text-xs text-white/70 leading-relaxed font-light">{faq.answer}</p>
               </div>
             ))}
           </div>

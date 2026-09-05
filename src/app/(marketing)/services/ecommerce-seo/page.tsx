@@ -24,18 +24,18 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const WHATS_INCLUDED = [
-  { title: "Shopify SEO", desc: "Optimize your Shopify store. We speed up themes, fix tags, and set up Product schema." },
-  { title: "WooCommerce SEO", desc: "Tune your WordPress shop. We set up categories, clean tags, and speed up plugins." },
-  { title: "Product Page SEO", desc: "Find buyer keywords for every item. We write crisp titles, tags, and product copy." },
-  { title: "Category Page SEO", desc: "Boost your main collection pages. We add clear text, filters, and smart links." },
-  { title: "Product Schema Markup", desc: "Show review stars, prices, and stock status directly in Google search results." },
-  { title: "Filter & URL Management", desc: "Stop duplicate pages from product filters. We help Google crawl your top pages fast." },
-  { title: "Duplicate URL Fixes", desc: "Clean up duplicate links. We use canonical tags so the right product page ranks." },
-  { title: "Collection Page Setup", desc: "Set up clean product page lists. This helps buyers and search bots find items easily." },
-  { title: "Internal Link Building", desc: "Link blog posts to top products. We guide shoppers directly to your best items." },
-  { title: "Buyer Keyword Research", desc: "Target words people use when ready to buy. We turn organic traffic into sales." },
-  { title: "Google Merchant Feed SEO", desc: "Optimize your product data feed. We boost your free Google Shopping clicks." },
-  { title: "Conversion Optimization", desc: "Improve trust signals and buy buttons. We help you turn more visitors into buyers." },
+  { title: "Shopify SEO", desc: "I optimize your Shopify store — speeding up themes, fixing tags, and setting up Product schema." },
+  { title: "WooCommerce SEO", desc: "I tune your WordPress shop, setting up categories, cleaning tags, and streamlining plugins." },
+  { title: "Product Page SEO", desc: "I find buyer keywords for every item and write crisp titles, tags, and product copy that converts." },
+  { title: "Category Page SEO", desc: "I boost your main collection pages with clear text, smart filters, and sensible internal links." },
+  { title: "Product Schema Markup", desc: "I show review stars, prices, and stock status directly in Google search results so your listings stand out." },
+  { title: "Filter & URL Management", desc: "I stop duplicate pages created by product filters and help Google crawl your top pages fast." },
+  { title: "Duplicate URL Fixes", desc: "I clean up duplicate links with canonical tags so the right product page gets the ranking." },
+  { title: "Collection Page Setup", desc: "I set up clean product lists that help both buyers and search bots find items easily." },
+  { title: "Internal Link Building", desc: "I link blog posts to your top products and guide shoppers directly to your best items." },
+  { title: "Buyer Keyword Research", desc: "I target the words people use when they're ready to buy — and turn organic traffic into sales." },
+  { title: "Google Merchant Feed SEO", desc: "I optimize your product data feed to win more free Google Shopping clicks." },
+  { title: "Conversion Optimization", desc: "I improve trust signals and buy buttons so more visitors turn into buyers." },
 ];
 
 const PLATFORMS = [

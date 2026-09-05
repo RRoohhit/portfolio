@@ -97,7 +97,7 @@ export default function AiSearchOptimizationPage() {
         <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
           <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
             <Search className="w-5 h-5 text-emerald-400" />
-            AI Platforms We Optimize For
+            AI Platforms I Optimize For
           </h2>
           <div className="flex flex-wrap gap-3">
             {AI_PLATFORMS.map((p) => (
@@ -170,7 +170,7 @@ export default function AiSearchOptimizationPage() {
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-purple-950/40 via-zinc-950 to-zinc-950 border border-purple-500/30 text-center space-y-5 shadow-2xl">
           <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready for the AI Search Era?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
-            Discuss your AI search visibility goals with Rohit Gupta. We will audit your current entity signals
+            Discuss your AI search visibility goals with Rohit Gupta. I will audit your current entity signals
             and build a practical roadmap for improving your presence in AI-powered search systems.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">

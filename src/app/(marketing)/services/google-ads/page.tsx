@@ -37,8 +37,8 @@ export const metadata: Metadata = buildPageMetadata({
 
 const WHATS_INCLUDED = [
   {
-    title: "Account audit before we spend a rupee",
-    desc: "I review your current account, search terms, quality scores, bidding logic, and conversion setup to find where your budget is leaking before we optimise anything.",
+    title: "Account audit before another rupee leaks",
+    desc: "I review your current account, search terms, quality scores, bidding logic, and conversion setup to find where your budget is leaking before I change anything.",
   },
   {
     title: "Keyword research built around buying intent",
@@ -110,7 +110,7 @@ const PROCESS_STEPS = [
   {
     step: "05",
     title: "Scale what works",
-    desc: "Once the account is stable, we scale the campaigns and channels that are producing leads, calls, and sales at a healthy cost.",
+    desc: "Once the account is stable, I scale the campaigns and channels that are producing leads, calls, and sales at a healthy cost.",
   },
 ];
 
@@ -133,7 +133,7 @@ const FAQS = [
   {
     question: "Can you optimize my existing account?",
     answer:
-      "Absolutely. We can audit an existing Google Ads account, find what is wasting money, fix the structure, improve targeting, and help you unlock better conversion efficiency.",
+      "Absolutely. I can audit an existing Google Ads account, find what is wasting money, fix the structure, improve targeting, and help you unlock better conversion efficiency.",
   },
 ];
 
@@ -165,7 +165,7 @@ export default function GoogleAdsPage() {
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
             If your ads are not generating quality leads, it is usually not a budget problem. It is usually a strategy problem.
-            We build Google Ads campaigns around intent, relevance, and conversion data so your budget works harder and your business gets more qualified enquiries.
+            I build Google Ads campaigns around intent, relevance, and conversion data so your budget works harder and your business gets more qualified enquiries.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">
@@ -212,7 +212,7 @@ export default function GoogleAdsPage() {
           <div className="space-y-2">
             <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-400" />
-              What we handle for your Google Ads account
+              What I handle for your Google Ads account
             </h3>
             <p className="text-xs sm:text-sm text-white/60">
               The goal is simple: more qualified clicks, lower wasted spend, and a cleaner path to revenue.
@@ -235,7 +235,7 @@ export default function GoogleAdsPage() {
         <section className="space-y-5">
           <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <Target className="w-5 h-5 text-emerald-400" />
-            Our process
+            My engine room: the Google Ads process
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {PROCESS_STEPS.map((step) => (
@@ -266,7 +266,7 @@ export default function GoogleAdsPage() {
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-blue-950/40 via-zinc-950 to-zinc-950 border border-blue-500/30 text-center space-y-5 shadow-2xl">
           <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to make your ad spend finally work for you?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
-            Tell me your website, your goal, and your current ad setup. I’ll show you where the leaks are and what we should fix first.
+            Tell me your website, your goal, and your current ad setup. I’ll show you where the leaks are and what I’d fix first.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">
             Request Google Ads Audit <ArrowRight className="w-4 h-4" />

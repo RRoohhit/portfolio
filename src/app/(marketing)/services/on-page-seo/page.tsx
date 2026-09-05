@@ -59,7 +59,7 @@ const FAQS = [
   },
   {
     question: "Do you optimize existing pages or create new ones too?",
-    answer: "Both. We can improve existing pages, fix weak pages, and build content strategy for new pages that support the business goals and target categories.",
+    answer: "Both. I can improve existing pages, fix weak pages, and build content strategy for new pages that support the business goals and target categories.",
   },
 ];
 
@@ -90,7 +90,7 @@ export default function OnPageSeoPage() {
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            On-page SEO is where a website becomes easier for Google to understand and easier for customers to trust. It is about more than keywords—it is about matching the page to the actual intent behind the search and making the content feel genuinely helpful.
+            On-page SEO is where a website becomes easier for Google to understand and easier for customers to trust. It is about more than keywords—it is about matching the page to the actual intent behind the search and making the content feel genuinely helpful. I'm Rohit Gupta, and when I optimize a page I work through the same checklist I use on every site I ship: sharpen the intent, strengthen the structure, and make the words serve real people first.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">

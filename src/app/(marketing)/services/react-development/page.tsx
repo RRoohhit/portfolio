@@ -89,7 +89,7 @@ export default function ReactDevelopmentPage() {
             React Development Services
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Build fast, modern React web applications. Rohit Gupta combines clean TypeScript code with technical SEO. We deliver reactive interfaces that load instantly and rank high on Google.
+            Build fast, modern React web applications. I combine clean TypeScript code with technical SEO so the reactive interfaces I deliver load instantly and rank high on Google.
           </p>
           <Link href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg">
             Hire React Developer <ArrowRight className="w-4 h-4" />
@@ -186,7 +186,7 @@ export default function ReactDevelopmentPage() {
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-blue-950/40 via-zinc-950 to-zinc-950 border border-blue-500/30 text-center space-y-5 shadow-2xl">
           <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to Build Your React Application?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
-            Describe your project vision and we'll scope requirements, provide an estimate, and discuss the architecture. Most clients see their first working prototype within 2-3 weeks.
+            Describe your project vision and I'll scope requirements, provide an estimate, and discuss the architecture. Most clients see their first working prototype within 2-3 weeks.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">

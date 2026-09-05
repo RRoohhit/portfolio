@@ -201,7 +201,7 @@ export default function SeoServicesPage() {
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
             SEO is not just rankings. It is how your website earns trust, shows up at the right moment, and turns searches into real enquiries.
-            We build a practical SEO system around your business, your market, and your growth goals so the traffic you attract is both relevant and valuable.
+            I build a practical SEO system around your business, your market, and your growth goals so the traffic you attract is both relevant and valuable.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">

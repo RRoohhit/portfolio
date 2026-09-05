@@ -24,12 +24,12 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const PRINCIPLES = [
-  { title: "We write for people, not search bots", desc: "Every page starts with what a real customer is trying to find out. If it's useful to a human, it tends to rank well too — no keyword stuffing needed." },
-  { title: "We stay inside Google's rules", desc: "Google publishes what it considers spam and what it doesn't. I stay on the safe side of that line on purpose, so you never wake up to a penalty and a crashed ranking." },
-  { title: "We build real trust and expertise", desc: "Clear author names, honest reviews, and verifiable data. Google rewards sites that look like they're run by real experts — because that's what they want to show users." },
-  { title: "We earn links, we don't buy them", desc: "I get links the slow, honest way: genuinely useful content, guest spots on sites that matter, and relationships. It takes longer, but it lasts — and it can't be taken away." },
-  { title: "We build fast, clean websites", desc: "A slow site struggles to rank no matter what. I write clean code that loads quickly and is easy for Google to crawl, so your speed helps you instead of holding you back." },
-  { title: "We play the long game", desc: "I'm not chasing a quick spike that dips next month. I create content and authority that keep bringing in clicks and links for years, steadily compounding." },
+  { title: "I write for people, not search bots", desc: "Every page starts with what a real customer is trying to find out. If it's useful to a human, it tends to rank well too — no keyword stuffing needed." },
+  { title: "I stay inside Google's rules", desc: "Google publishes what it considers spam and what it doesn't. I stay on the safe side of that line on purpose, so you never wake up to a penalty and a crashed ranking." },
+  { title: "I build real trust and expertise", desc: "Clear author names, honest reviews, and verifiable data. Google rewards sites that look like they're run by real experts — because that's what it wants to show users." },
+  { title: "I earn links, I don't buy them", desc: "I get links the slow, honest way: genuinely useful content, guest spots on sites that matter, and relationships. It takes longer, but it lasts — and it can't be taken away." },
+  { title: "I build fast, clean websites", desc: "A slow site struggles to rank no matter what. I write clean code that loads quickly and is easy for Google to crawl, so your speed helps you instead of holding you back." },
+  { title: "I play the long game", desc: "I'm not chasing a quick spike that dips next month. I create content and authority that keep bringing in clicks and links for years, steadily compounding." },
 ];
 
 export default function WhiteHatSeoPage() {
@@ -105,7 +105,7 @@ export default function WhiteHatSeoPage() {
           <div className="space-y-2">
             <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-400" />
-              Our Core White Hat Principles
+              My Core White Hat Principles
             </h3>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
-import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
+import { breadcrumbGraph, faqGraph, renderJsonLd } from "@/lib/jsonld";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { MapPin, CheckCircle2, ArrowRight, ShieldCheck, Star, Search, Phone } from "lucide-react";
-import { CONTACT } from "@/config/site";
+import { CONTACT, SITE_URL } from "@/config/site";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "SEO Expert in Noida | Local SEO Services — Rohit Gupta",
@@ -50,6 +50,7 @@ export default function SeoExpertNoidaPage() {
   return (
     <>
       {renderJsonLd(breadcrumbData, "jsonld-seo-noida-breadcrumb")}
+      {renderJsonLd(faqGraph(LOCAL_FAQS, new URL("/seo-expert-noida/", SITE_URL).href), "jsonld-seo-noida-faq")}
 
       <div className="space-y-12 sm:space-y-16 pt-24 lg:pt-28 pb-16 max-w-5xl mx-auto">
         <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "SEO Expert in Noida" }]} />

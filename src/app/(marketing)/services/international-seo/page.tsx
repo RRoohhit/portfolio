@@ -68,7 +68,7 @@ export default function InternationalSeoPage() {
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Rank in new countries and grow global traffic. We build multi-country websites that rank high on Google. We set up hreflang tags, fast page speed, and local search pages for each market.
+            Rank in new countries and grow global traffic. I build multi-country websites that rank high on Google — setting up hreflang tags, fast page speed, and local search pages for each market I target.
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2">

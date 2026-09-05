@@ -150,6 +150,9 @@ export default function RohitGuptaPage() {
             <p>
               The <strong>Rohit Digital Marketing Services</strong> side handles Google Ads, conversion optimization, and getting you cited by AI search engines. The point is simple: you get one person who actually understands all of it, so you're never stuck coordinating between five different vendors.
             </p>
+            <p>
+              A bit of my story, so you know who you'd be working with. I started where a lot of small businesses do — watching great services get ignored online because nobody could find them. That bothered me, so I taught myself how search actually works, and then taught myself to code so I could fix the problems other people only wrote reports about. Years later, that combination is the whole job: I still get genuinely excited when a client's phone starts ringing because a "near me" search finally finds them. It never gets old.
+            </p>
           </div>
         </section>
 

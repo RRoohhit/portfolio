@@ -110,7 +110,7 @@ export default function GoogleBusinessProfileSeoPage() {
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Your Google profile is what local buyers see first. A strong profile brings phone calls, store visits, and local trust. We optimize your profile to rank in the Google Maps 3-Pack.
+            Your Google profile is what local buyers see first. A strong profile brings phone calls, store visits, and local trust. I'm Rohit Gupta, and I optimize profiles to rank in the Google Maps 3-Pack — so nearby customers choose you instead of scrolling past.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">
@@ -144,10 +144,10 @@ export default function GoogleBusinessProfileSeoPage() {
           <div className="space-y-2">
             <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <BarChart3 className="w-5 h-5 text-emerald-400" />
-              What we review first
+              What I review first
             </h3>
             <p className="text-xs sm:text-sm text-white/60">
-              We check your profile against local ranking factors and map signals.
+              I check your profile against local ranking factors and map signals.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -164,10 +164,10 @@ export default function GoogleBusinessProfileSeoPage() {
           <div className="space-y-2">
             <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-emerald-400" />
-              What we optimize
+              What I optimize
             </h3>
             <p className="text-xs sm:text-sm text-white/60">
-              We fix factors that help your business rank high on Google Maps.
+              I fix the factors that help your business rank high on Google Maps.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
-import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
+import { breadcrumbGraph, faqGraph, renderJsonLd } from "@/lib/jsonld";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { MapPin, CheckCircle2, ArrowRight } from "lucide-react";
+import { MapPin, CheckCircle2, ArrowRight, Star } from "lucide-react";
+import { SITE_URL } from "@/config/site";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "SEO Expert in Delhi | Rohit Gupta",
@@ -20,6 +21,34 @@ export const metadata: Metadata = buildPageMetadata({
   ],
 });
 
+const LOCAL_FAQS = [
+  {
+    question: "Is SEO in Delhi really more competitive than other Indian cities?",
+    answer:
+      "Yes, honestly. Delhi has a density of businesses competing for the same commercial searches — from Connaught Place to South Delhi markets — that you rarely see elsewhere. But that competition is also why a properly executed technical and local SEO foundation wins so decisively here: most competitors still rely on shortcuts. I focus on the fundamentals that actually hold up: fast pages, clean site structure, real local signals, and content that answers what Delhi customers actually type.",
+  },
+  {
+    question: "Do you meet Delhi clients in person?",
+    answer:
+      "Yes. I'm based in Noida, Sector 66, so meeting clients around South Delhi, Connaught Place, or the NCR border areas is easy for project kickoffs and monthly reviews. For clients outside Delhi or who prefer remote, we run the same process over video calls with shared dashboards — the work itself never depends on location.",
+  },
+  {
+    question: "My business serves all of Delhi NCR, not just one neighbourhood. Can you help?",
+    answer:
+      "Absolutely — and that's a common situation. Instead of one cramped page trying to rank for everything, I build geo-targeted pages for the specific areas you serve (South Delhi, West Delhi, Noida, Gurgaon), align your Google Business Profile service areas, and structure internal links so each location has its own chance to rank. It's more work, but it's how a multi-area business wins across NCR instead of ranking for nothing everywhere.",
+  },
+  {
+    question: "How long does it take to see results for competitive Delhi keywords?",
+    answer:
+      "Realistically, map-pack and local visibility improvements can show up within 4 to 8 weeks because the Google Maps 3-Pack is decided by a smaller set of factors. Solid organic rankings for competitive commercial keywords in Delhi usually take 3 to 6 months of consistent work. If someone promises faster for a competitive Delhi market, they're probably planning to cut corners you'll pay for later.",
+  },
+  {
+    question: "Which Delhi businesses do you usually work with?",
+    answer:
+      "A practical mix — clinics and dentists, CA and law firms, real estate developers, restaurants and cafés, retail shops, and digital agencies that want white-hat SEO done properly. If your customers search for what you offer in Delhi, I can build a strategy that fits your industry's actual buying behaviour.",
+  },
+];
+
 export default function SeoExpertDelhiPage() {
   const breadcrumbData = breadcrumbGraph([
     { name: "Home", path: "/" },
@@ -29,6 +58,7 @@ export default function SeoExpertDelhiPage() {
   return (
     <>
       {renderJsonLd(breadcrumbData, "jsonld-seo-delhi-breadcrumb")}
+      {renderJsonLd(faqGraph(LOCAL_FAQS, new URL("/seo-expert-delhi/", SITE_URL).href), "jsonld-seo-delhi-faq")}
 
       <div className="space-y-12 sm:space-y-16 pt-24 lg:pt-28 pb-16 max-w-5xl mx-auto">
         <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "SEO Expert in Delhi" }]} />
@@ -98,6 +128,21 @@ export default function SeoExpertDelhiPage() {
               <div key={region} className="p-4 rounded-2xl bg-black border border-white/10 flex items-center gap-3">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
                 <span className="text-xs sm:text-sm font-mono text-white/85">{region}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
+          <h3 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+            <Star className="w-5 h-5 text-emerald-400" />
+            Frequently Asked Questions — Delhi SEO
+          </h3>
+          <div className="space-y-4">
+            {LOCAL_FAQS.map((faq, idx) => (
+              <div key={idx} className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">
+                <h4 className="text-sm font-bold text-white">{faq.question}</h4>
+                <p className="text-xs text-white/70 leading-relaxed font-light">{faq.answer}</p>
               </div>
             ))}
           </div>

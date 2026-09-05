@@ -147,7 +147,7 @@ export default function ContentSeoPage() {
                 <span className="group-open:rotate-180 transition-transform">→</span>
               </summary>
               <p className="text-xs text-white/65 leading-relaxed mt-3">
-                We can do either. We provide detailed SEO briefs that your internal team can execute, or we can write the content directly. Most clients prefer a hybrid: we handle strategic/technical content, and your team handles brand voice and customer stories.
+                I can do either. I provide detailed SEO briefs that your internal team can execute, or I can write the content directly. Most clients prefer a hybrid: I handle the strategic and technical content, and your team handles brand voice and customer stories.
               </p>
             </details>
             <details className="p-5 rounded-2xl bg-zinc-950 border border-white/10 hover:border-emerald-500/30 transition-colors group cursor-pointer">
@@ -156,7 +156,7 @@ export default function ContentSeoPage() {
                 <span className="group-open:rotate-180 transition-transform">→</span>
               </summary>
               <p className="text-xs text-white/65 leading-relaxed mt-3">
-                Content marketing is about audience engagement and brand storytelling. Content SEO is specifically about keyword research, search intent alignment, and technical optimization to rank in Google. We focus on the intersection: great content that serves both users and search engines.
+                Content marketing is about audience engagement and brand storytelling. Content SEO is specifically about keyword research, search intent alignment, and technical optimization to rank in Google. I focus on the intersection: great content that serves both users and search engines.
               </p>
             </details>
           </div>
@@ -180,7 +180,7 @@ export default function ContentSeoPage() {
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-amber-950/30 via-zinc-950 to-zinc-950 border border-amber-500/20 text-center space-y-5 shadow-2xl">
           <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Ready to Build Topical Authority?</h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
-            Get in touch to audit your content gap and plan a search-intent content roadmap. We'll show you exactly which topics will drive the most organic traffic and how to structure them for maximum SEO impact.
+            Get in touch to audit your content gap and plan a search-intent content roadmap. I'll show you exactly which topics will drive the most organic traffic and how to structure them for maximum SEO impact.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link href="/contact/" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-500/25">

@@ -55,6 +55,19 @@ const BLOG_GUIDE_LINKS = [
   { href: "/blog/white-hat-link-building-backlinks-guide-2026/", label: "White Hat Link Building 2026" },
 ];
 
+// Keep these slugs in sync with BLOG_CLUSTERS in src/data/blogPosts.ts so
+// every topic cluster stays crawlable from the footer (deep link → ?cluster=<slug>).
+const BLOG_CLUSTER_LINKS = [
+  { href: "/blog?cluster=technical-seo", label: "Cluster · Technical SEO & Speed" },
+  { href: "/blog?cluster=local-seo", label: "Cluster · Local SEO & Google Maps" },
+  { href: "/blog?cluster=ai-search", label: "Cluster · AI Search, AEO & GEO" },
+  { href: "/blog?cluster=white-hat-seo", label: "Cluster · White Hat & Link Building" },
+  { href: "/blog?cluster=hire-seo-expert", label: "Cluster · Hire an SEO Expert India" },
+	{ href: "/blog?cluster=seo-strategy", label: "Cluster · Keywords & SEO Strategy" },
+	{ href: "/blog?cluster=web-development", label: "Cluster · Web Dev & WordPress" },
+	{ href: "/blog?cluster=digital-marketing", label: "Cluster · Google Ads & Digital Mktg" },
+];
+
 export const Footer: React.FC = () => {
   const pathname = usePathname();
   const isCtaPage =
@@ -290,6 +303,26 @@ export const Footer: React.FC = () => {
                 </li>
               ))}
             </ul>
+
+            <div className="pt-2">
+              <h5 className="text-[10px] font-mono uppercase text-emerald-400/80 font-bold tracking-wider mb-2 flex items-center gap-1.5">
+                <Search className="w-3 h-3" />
+                Blog Topic Clusters
+              </h5>
+              <ul className="space-y-2 text-xs font-mono">
+                {BLOG_CLUSTER_LINKS.map((cluster) => (
+                  <li key={cluster.href}>
+                    <Link
+                      href={cluster.href}
+                      className="text-zinc-400 hover:text-emerald-400 transition-colors flex items-center gap-1.5 group w-fit"
+                    >
+                      <span className="w-1 h-1 rounded-full bg-emerald-700/70 group-hover:bg-emerald-400 transition-colors flex-shrink-0" />
+                      {cluster.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
         </div>

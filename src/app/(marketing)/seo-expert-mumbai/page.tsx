@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
-import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
+import { breadcrumbGraph, faqGraph, renderJsonLd } from "@/lib/jsonld";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
-import { MapPin, CheckCircle2, ArrowRight, Globe2 } from "lucide-react";
+import { MapPin, CheckCircle2, ArrowRight, Globe2, Star } from "lucide-react";
+import { SITE_URL } from "@/config/site";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "SEO Expert in Mumbai | Rohit Gupta — Pan India & Global SEO",
@@ -21,6 +22,34 @@ export const metadata: Metadata = buildPageMetadata({
   ],
 });
 
+const LOCAL_FAQS = [
+  {
+    question: "What's the biggest SEO mistake Mumbai businesses make?",
+    answer:
+      "Chasing one-page rankings for generic terms like 'digital marketing in Mumbai' instead of building a site that matches how people actually search and buy here. The businesses that win in Mumbai are the ones with fast, clean pages for each service and local area, a properly optimised Google Business Profile, and content that answers real buying questions. I fix the foundation first — everything else compounds on top of it.",
+  },
+  {
+    question: "Do you work with Mumbai clients remotely, or do you visit?",
+    answer:
+      "Both work well. I'm based in Noida, so for Mumbai clients I operate 100% remote with weekly reports, shared dashboards, and video reviews — distance never affects the quality of the work. For bigger projects, I also travel for on-site strategy sessions and kickoffs when needed.",
+  },
+  {
+    question: "Can you help D2C and e-commerce brands in Mumbai specifically?",
+    answer:
+      "Yes, and that's a big part of what I do. Mumbai is a D2C hub, so I work on Shopify, WooCommerce, and Next.js storefronts — product page optimisation, category structure, Product schema, and technical speed so stores stop losing shoppers to slow pages and messy navigation. The goal is revenue from organic search, not vanity traffic.",
+  },
+  {
+    question: "Between local SEO and national rankings, which should a Mumbai business start with?",
+    answer:
+      "Start local if your customers are in Mumbai — the Map Pack and 'near me' searches convert fastest and build trust quickly. Start national if your customers are spread across India. In most cases I combine them: local visibility drives immediate calls while the broader pages bring compounding traffic over the months that follow.",
+  },
+  {
+    question: "How long before a Mumbai business sees results?",
+    answer:
+      "Map Pack and Google Business Profile improvements for local searches often show within 4 to 8 weeks. Competitive organic keywords in a market like Mumbai typically take 3 to 6 months of consistent work. Anyone promising overnight rankings in Mumbai is asking you to pay for shortcuts that eventually get penalised.",
+  },
+];
+
 export default function SeoExpertMumbaiPage() {
   const breadcrumbData = breadcrumbGraph([
     { name: "Home", path: "/" },
@@ -30,6 +59,7 @@ export default function SeoExpertMumbaiPage() {
   return (
     <>
       {renderJsonLd(breadcrumbData, "jsonld-seo-mumbai-breadcrumb")}
+      {renderJsonLd(faqGraph(LOCAL_FAQS, new URL("/seo-expert-mumbai/", SITE_URL).href), "jsonld-seo-mumbai-faq")}
 
       <div className="space-y-12 sm:space-y-16 pt-24 lg:pt-28 pb-16 max-w-5xl mx-auto">
         <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "SEO Expert in Mumbai" }]} />
@@ -98,6 +128,21 @@ export default function SeoExpertMumbaiPage() {
               <div key={region} className="p-4 rounded-2xl bg-black border border-white/10 flex items-center gap-3">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
                 <span className="text-xs sm:text-sm font-mono text-white/85">{region}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="p-6 sm:p-8 rounded-3xl bg-zinc-950 border border-white/10 space-y-4">
+          <h3 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+            <Star className="w-5 h-5 text-emerald-400" />
+            Frequently Asked Questions — Mumbai SEO
+          </h3>
+          <div className="space-y-4">
+            {LOCAL_FAQS.map((faq, idx) => (
+              <div key={idx} className="p-4 rounded-2xl bg-black border border-white/10 space-y-2">
+                <h4 className="text-sm font-bold text-white">{faq.question}</h4>
+                <p className="text-xs text-white/70 leading-relaxed font-light">{faq.answer}</p>
               </div>
             ))}
           </div>

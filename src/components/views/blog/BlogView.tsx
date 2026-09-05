@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { ReadingProgressBar } from "./components/ReadingProgressBar";
 import { ArticleContent } from "./components/ArticleContent";
 import { formatShortDate as formatDate } from "@/lib/utils/date";
-import { BLOG_POSTS } from "@/data/blogPosts";
+import { BLOG_POSTS, BLOG_CLUSTERS, getClusterForPost, getPostsForCluster } from "@/data/blogPosts";
 import {
   X,
   BookOpen,
@@ -24,6 +24,7 @@ import {
   ChevronRight,
   Bookmark,
   Hash,
+  Layers3,
 } from "lucide-react";
 
 // ── Module-level derived constants ───────────────────────────────────────────
@@ -74,7 +75,27 @@ export const BlogView: React.FC = () => {
   const [selectedArticle, setSelectedArticle] = useState<Post | null>(null);
   const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<string>("All");
+  const [selectedCluster, setSelectedCluster] = useState<string | null>(null);
   const searchInputRef = React.useRef<HTMLInputElement>(null);
+
+  /* Read an optional ?cluster=<slug> deep link from the URL (SEO-friendly) */
+  useEffect(() => {
+    const cluster = new URLSearchParams(window.location.search).get("cluster");
+    if (cluster && BLOG_CLUSTERS.some((c) => c.slug === cluster)) {
+      setSelectedCluster(cluster);
+    }
+  }, []);
+
+  /* Keep the URL in sync so every filtered cluster view is shareable & indexable */
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    if (selectedCluster) {
+      url.searchParams.set("cluster", selectedCluster);
+    } else {
+      url.searchParams.delete("cluster");
+    }
+    window.history.replaceState(null, "", url.toString());
+  }, [selectedCluster]);
 
   /* Press "/" to focus search (unless typing in a field or reading an article) */
   useEffect(() => {
@@ -118,19 +139,33 @@ export const BlogView: React.FC = () => {
     return counts;
   }, []);
 
+  const activeClusterPosts = useMemo(
+    () => (selectedCluster ? getPostsForCluster(selectedCluster) : []),
+    [selectedCluster]
+  );
+
+  const featuredClusters = useMemo(
+    () =>
+      BLOG_CLUSTERS
+        .map((c) => ({ ...c, posts: getPostsForCluster(c.slug) }))
+        .filter((c) => c.posts.length > 0),
+    []
+  );
+
   const filteredPosts = useMemo(() => {
     return BLOG_POSTS.filter((post) => {
+      const inCluster = !selectedCluster || activeClusterPosts.some((p) => p.id === post.id);
       const matchesCategory =
-        activeCategory === "All" || post.category === activeCategory;
+        selectedCluster || activeCategory === "All" || post.category === activeCategory;
       const q = query.trim().toLowerCase();
       const matchesQuery =
         !q ||
         post.title.toLowerCase().includes(q) ||
         post.excerpt.toLowerCase().includes(q) ||
         post.keywords.some((k) => k.toLowerCase().includes(q));
-      return matchesCategory && matchesQuery;
+      return inCluster && matchesCategory && matchesQuery;
     });
-  }, [activeCategory, query]);
+  }, [activeCategory, query, selectedCluster, activeClusterPosts]);
 
   const [featuredPost, ...restPosts] = filteredPosts;
 
@@ -250,6 +285,19 @@ export const BlogView: React.FC = () => {
                   <span className="text-emerald-400 font-bold">{activeCategory}</span>
                 </>
               )}
+              {selectedCluster && (
+                <>
+                  {" "}in cluster{" "}
+                  <button
+                    type="button"
+                    onClick={() => setSelectedCluster(null)}
+                    className="inline-flex items-center gap-1 text-emerald-400 font-bold underline decoration-emerald-400/40 underline-offset-2"
+                    title="Clear the cluster filter"
+                  >
+                    {BLOG_CLUSTERS.find((c) => c.slug === selectedCluster)?.title ?? selectedCluster} ✕
+                  </button>
+                </>
+              )}
             </span>
             <span className="hidden sm:inline">
               Press{" "}
@@ -267,6 +315,86 @@ export const BlogView: React.FC = () => {
       </div>
 
       {/* ── Featured Post ────────────────────────────────────────────────── */}
+      {/* ── Content Clusters Hub ─────────────────────────────── */}
+      {featuredClusters.length > 0 && (
+        <section aria-labelledby="blog-clusters-heading" className="relative space-y-6">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div className="space-y-2">
+              <div className="text-[10px] font-mono uppercase tracking-widest text-white/50 font-bold flex items-center gap-2">
+                <Layers3 className="w-3.5 h-3.5 text-emerald-400" />
+                <span>SEO Topic Clusters · Published Guide Series</span>
+              </div>
+              <h2 id="blog-clusters-heading" className="text-base sm:text-xl lg:text-2xl font-black text-white tracking-tight">
+                Explore the Library by <span className="text-gradient">Topic Cluster</span>
+              </h2>
+            </div>
+            <span className="px-3 py-1 rounded-full card-3d text-[10px] font-mono text-white/50 flex items-center gap-1.5">
+              <LayoutGrid className="w-3.5 h-3.5 text-emerald-400" />
+              {featuredClusters.length} clusters · {POST_COUNT} articles
+            </span>
+          </div>
+
+          <p className="text-xs sm:text-sm text-white/60 max-w-3xl leading-relaxed font-light">
+            Every article belongs to a bigger guide. Pick a cluster below to follow a complete learning path — each one
+            links its pillar guide to the deeper articles that support it. Tap any card to filter, or start with the pillar guide.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 items-stretch">
+            {featuredClusters.map((cluster) => (
+              <div
+                key={cluster.id}
+                className={`card-3d-interactive p-4 sm:p-5 flex flex-col space-y-2.5 group h-full ${
+                  selectedCluster === cluster.slug ? "border-emerald-500/40" : ""
+                }`}
+              >
+                <h3 className="text-sm font-extrabold text-white leading-snug flex items-center gap-1.5">
+                  <Hash className="w-3 h-3 text-emerald-400/70 shrink-0" />
+                  {cluster.title}
+                </h3>
+                <p className="text-[11px] text-white/55 leading-relaxed line-clamp-3 font-light">{cluster.intro}</p>
+                <div className="flex flex-wrap gap-1">
+                  <span className="px-1.5 py-0.5 rounded-md text-[9px] font-mono text-emerald-400 font-bold">
+                    {cluster.posts.length} articles
+                  </span>
+                  {cluster.posts.slice(0, 3).map((p) => (
+                    <span key={p.slug} className="px-1.5 py-0.5 rounded-md card-3d text-[9px] font-mono text-white/55">
+                      {p.category}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex items-center justify-between gap-2 pt-1 border-t border-white/5">
+                  {cluster.pillarSlug ? (
+                    <Link
+                      href={`/blog/${cluster.pillarSlug}`}
+                      className="inline-flex items-center gap-1.5 text-[10px] font-mono text-emerald-400 font-bold group-hover:text-emerald-300"
+                    >
+                      Start with the guide
+                      <ArrowRight className="w-3 h-3" />
+                    </Link>
+                  ) : (
+                    <span className="text-[10px] font-mono text-white/35">Start with any article</span>
+                  )}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSelectedCluster(cluster.slug);
+                      setActiveCategory("All");
+                      setQuery("");
+                    }}
+                    aria-pressed={selectedCluster === cluster.slug}
+                    className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[10px] font-mono font-bold text-white/60 hover:text-white border border-white/10 hover:border-emerald-500/30 transition-all"
+                  >
+                    <Search className="w-3 h-3" />
+                    Filter
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       {featuredPost && (
         <article className="group relative overflow-hidden card-3d-interactive shadow-2xl border-emerald-500/30">
           {/* Background accent */}
