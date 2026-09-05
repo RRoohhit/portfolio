@@ -2,8 +2,8 @@ import { BlogPost } from "../../types";
 
 export const localSeoVsNationalSeoGuide2026: BlogPost = {
   id: "blog-62",
-  title: "Local SEO vs National SEO: Which Should Your Business Use in 2026?",
-  h1: "Local SEO vs National SEO: Which Should Your Business Focus On in 2026?",
+  title: "Local SEO vs National SEO: Which Should You Use?",
+  h1: "Local SEO vs National SEO: Which Strategy Should You Focus On?",
   slug: "local-seo-vs-national-seo-guide-2026",
   excerpt:
     "Local SEO vs national SEO — which does your business actually need in 2026? This honest, plain-English guide compares cost, speed and results, and shows you when to do each — and how local and national SEO work together.",

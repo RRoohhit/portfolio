@@ -7,7 +7,7 @@ import { MapPin, CheckCircle2, ArrowRight, Globe2, Star } from "lucide-react";
 import { SITE_URL } from "@/config/site";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "SEO Expert in Mumbai | Rohit Gupta — Pan India & Global SEO",
+  title: "SEO Expert in Mumbai | Rohit Gupta — Pan India",
   description:
     "Hire Rohit Gupta — SEO expert in Mumbai. Technical SEO, local SEO, eCommerce scaling & white hat link building for Mumbai businesses. Pan India.",
   path: "/seo-expert-mumbai/",

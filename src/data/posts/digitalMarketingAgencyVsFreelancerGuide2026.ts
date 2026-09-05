@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const digitalMarketingAgencyVsFreelancerGuide2026: BlogPost = {
   id: "blog-47",
-  title: "Digital Marketing Agency vs Freelancer: Which to Hire in 2026",
+  title: "Digital Marketing Agency vs Freelancer: Which to Hire?",
   h1: "Digital Marketing Agency vs Freelancer: The Honest 2026 Comparison",
   slug: "digital-marketing-agency-vs-freelancer-hire-2026",
   excerpt:

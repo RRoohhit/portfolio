@@ -2,7 +2,7 @@
 
 export const seoTeamIndiaGuide2026: BlogPost = {
   id: "blog-36",
-  title: "SEO Team India: Build or Hire a Growth-Ready SEO Team in 2026",
+  title: "SEO Team India: Build or Hire a Growth-Ready Team",
   h1: "SEO Team India: How to Build or Hire a Growth-Ready SEO Team in 2026",
   slug: "seo-team-india-build-hire-2026",
   excerpt:

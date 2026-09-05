@@ -2,7 +2,7 @@
 
 export const hireAiSeoExpertsIndiaGuide2026: BlogPost = {
   id: "blog-40",
-  title: "Hire AI SEO Experts in India: AEO-First Hiring Guide (2026)",
+  title: "Hire AI SEO Experts in India: AEO-First Guide (2026)",
   h1: "How to Hire AI SEO Experts in India: The 2026 AEO-First Hiring Guide",
   slug: "hire-ai-seo-experts-india-aeo-first-2026",
   excerpt:

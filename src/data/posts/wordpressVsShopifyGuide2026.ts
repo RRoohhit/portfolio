@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const wordpressVsShopifyGuide2026: BlogPost = {
   id: "blog-64",
-  title: "WordPress vs Shopify in 2026: Which Is Better for Your Online Store?",
+  title: "WordPress vs Shopify: Which Is Better for Your Store?",
   h1: "WordPress vs Shopify in 2026: The Honest Comparison for Your Store",
   slug: "wordpress-vs-shopify-2026-complete-guide",
   excerpt:

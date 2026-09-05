@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const hireShopifyDeveloperIndiaGuide2026: BlogPost = {
   id: "blog-68",
-  title: "How to Hire a Shopify Developer in India: 2026 Complete Guide",
+  title: "How to Hire a Shopify Developer in India",
   h1: "How to Hire a Shopify Developer in India: Complete 2026 Guide",
   slug: "hire-shopify-developer-india-guide-2026",
   excerpt:

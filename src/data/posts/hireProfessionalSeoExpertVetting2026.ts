@@ -2,7 +2,7 @@
 
 export const hireProfessionalSeoExpertVetting2026: BlogPost = {
   id: "blog-32",
-  title: "Hire Professional SEO Expert: The Complete 2026 Vetting Checklist",
+  title: "Hire a Professional SEO Expert: Vetting Checklist",
   h1: "How to Hire a Professional SEO Expert: The 2026 Vetting Checklist",
   slug: "hire-professional-seo-expert-vetting-checklist-2026",
   excerpt:

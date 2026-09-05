@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const hireReactNextJsDeveloperHrGuide2026: BlogPost = {
   id: "blog-48",
-  title: "How to Hire a React & Next.js Developer in India: 2026 Guide",
+  title: "How to Hire a React & Next.js Developer in India",
   h1: "How to Hire a React & Next.js Developer in India: Complete 2026 Guide",
   slug: "hire-react-nextjs-developer-india-guide-2026",
   excerpt:

@@ -27,6 +27,11 @@ export default function NotFound() {
         </p>
       </div>
 
+{/* Section heading to keep heading hierarchy sequential: h1 → h2 → h3 cards */}
+      <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight text-center">
+        Explore the website instead
+      </h2>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <Link
           href="/"
@@ -34,7 +39,7 @@ export default function NotFound() {
         >
           <div className="space-y-2">
             <Home className="w-6 h-6 text-emerald-400" />
-            <h2 className="text-sm font-bold text-white">Home</h2>
+            <h3 className="text-sm font-bold text-white">Home</h3>
             <p className="text-xs text-white/60">
               SEO specialist &amp; web developer hiring page.
             </p>
@@ -50,7 +55,7 @@ export default function NotFound() {
         >
           <div className="space-y-2">
             <FolderGit2 className="w-6 h-6 text-emerald-400" />
-            <h2 className="text-sm font-bold text-white">Case Studies</h2>
+            <h3 className="text-sm font-bold text-white">Case Studies</h3>
             <p className="text-xs text-white/60">
               Verified Rank #1 &amp; 4,766% traffic growth proof.
             </p>
@@ -66,7 +71,7 @@ export default function NotFound() {
         >
           <div className="space-y-2">
             <Gauge className="w-6 h-6 text-emerald-400" />
-            <h2 className="text-sm font-bold text-white">Free SEO Tools</h2>
+            <h3 className="text-sm font-bold text-white">Free SEO Tools</h3>
             <p className="text-xs text-white/60">
               Audit, schema generator, SERP preview &amp; AI optimizer.
             </p>
@@ -82,7 +87,7 @@ export default function NotFound() {
         >
           <div className="space-y-2">
             <BookOpen className="w-6 h-6 text-emerald-400" />
-            <h2 className="text-sm font-bold text-white">SEO Blog</h2>
+            <h3 className="text-sm font-bold text-white">SEO Blog</h3>
             <p className="text-xs text-white/60">
               Core Web Vitals, JSON-LD &amp; White Hat guides.
             </p>
@@ -100,7 +105,7 @@ export default function NotFound() {
         >
           <div className="space-y-2">
             <Bot className="w-6 h-6 text-emerald-400" />
-            <h2 className="text-sm font-bold text-white">AI SEO Lab</h2>
+            <h3 className="text-sm font-bold text-white">AI SEO Lab</h3>
             <p className="text-xs text-white/60">
               Keyword density, AI search optimizer &amp; content tools.
             </p>
@@ -116,7 +121,7 @@ export default function NotFound() {
         >
           <div className="space-y-2">
             <Phone className="w-6 h-6 text-emerald-400" />
-            <h2 className="text-sm font-bold text-white">Contact Rohit</h2>
+            <h3 className="text-sm font-bold text-white">Contact Rohit</h3>
             <p className="text-xs text-white/60">
               Free SEO audit &amp; 90-day ranking roadmap. Noida, Delhi, India.
             </p>

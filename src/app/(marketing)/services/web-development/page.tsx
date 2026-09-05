@@ -119,7 +119,7 @@ export default function WebDevelopmentPage() {
               <div key={idx} className="p-5 rounded-2xl bg-zinc-950 border border-white/10 space-y-2 hover:border-purple-500/30 transition-colors">
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
-                  <h4 className="text-sm font-bold text-white tracking-tight">{item.title}</h4>
+                  <h3 className="text-sm font-bold text-white tracking-tight">{item.title}</h3>
                 </div>
                 <p className="text-xs text-white/70 leading-relaxed font-light pl-6">{item.desc}</p>
               </div>

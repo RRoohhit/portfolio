@@ -2,8 +2,8 @@
 
 export const rohitGuptaSeoPortfolioReviews2026: BlogPost = {
   id: "blog-38",
-  title: "Rohit Gupta: SEO Expert Portfolio, Reviews & Freelancer Profile",
-  h1: "Rohit Gupta, Web Developer & SEO Expert Freelancer: Portfolio, Reviews & How to Work With Him",
+  title: "Rohit Gupta: SEO Expert Portfolio & Client Reviews",
+  h1: "Rohit Gupta: Web Developer & SEO Expert — Portfolio & Reviews",
   slug: "rohit-gupta-seo-expert-portfolio-reviews",
   excerpt:
     "Everything about Rohit Gupta, the web developer and SEO expert freelancer from Noida: his services, portfolio highlights, client reviews, pricing, process and contact details.",

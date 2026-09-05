@@ -78,22 +78,29 @@ export const BlogView: React.FC = () => {
   const [selectedCluster, setSelectedCluster] = useState<string | null>(null);
   const searchInputRef = React.useRef<HTMLInputElement>(null);
 
-  /* Read an optional ?cluster=<slug> deep link from the URL (SEO-friendly) */
+  /* Read an optional #cluster=<slug> fragment (with a legacy ?cluster= fallback)
+     so topic-cluster deep links stay shareable WITHOUT creating parameterized
+     URLs that canonicalize back to /blog/. */
   useEffect(() => {
-    const cluster = new URLSearchParams(window.location.search).get("cluster");
-    if (cluster && BLOG_CLUSTERS.some((c) => c.slug === cluster)) {
-      setSelectedCluster(cluster);
-    }
+    const resolveCluster = () => {
+      const fromHash = new URLSearchParams(window.location.hash.replace(/^#/, "")).get("cluster");
+      if (fromHash && BLOG_CLUSTERS.some((c) => c.slug === fromHash)) return fromHash;
+      const fromQuery = new URLSearchParams(window.location.search).get("cluster");
+      if (fromQuery && BLOG_CLUSTERS.some((c) => c.slug === fromQuery)) return fromQuery;
+      return null;
+    };
+    setSelectedCluster(resolveCluster());
+    const onHashChange = () => setSelectedCluster(resolveCluster());
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
   }, []);
 
-  /* Keep the URL in sync so every filtered cluster view is shareable & indexable */
+  /* Keep the URL in sync using a hash fragment (never a query string) so every
+     filtered cluster view stays shareable and parameter-free. */
   useEffect(() => {
     const url = new URL(window.location.href);
-    if (selectedCluster) {
-      url.searchParams.set("cluster", selectedCluster);
-    } else {
-      url.searchParams.delete("cluster");
-    }
+    url.search = ""; // strip any legacy ?cluster= query string
+    url.hash = selectedCluster ? `cluster=${selectedCluster}` : "";
     window.history.replaceState(null, "", url.toString());
   }, [selectedCluster]);
 

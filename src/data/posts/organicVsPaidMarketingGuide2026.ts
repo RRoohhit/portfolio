@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const organicVsPaidMarketingGuide2026: BlogPost = {
   id: "blog-65",
-  title: "Organic vs Paid Marketing in 2026: Which Should Your Business Use?",
+  title: "Organic vs Paid Marketing: Which Is Right for You?",
   h1: "Organic vs Paid Marketing in 2026: The Honest Comparison and Right Mix",
   slug: "organic-vs-paid-marketing-guide-2026",
   excerpt:

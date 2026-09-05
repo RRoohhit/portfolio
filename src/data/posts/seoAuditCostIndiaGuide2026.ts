@@ -2,7 +2,7 @@
 
 export const seoAuditCostIndiaGuide2026: BlogPost = {
   id: "blog-67",
-  title: "How Much Does an SEO Audit Cost in India? (2026 Honest Guide)",
+  title: "How Much Does an SEO Audit Cost in India?",
   h1: "SEO Audit Cost in India in 2026: Honest Rates & What You Get",
   slug: "seo-audit-cost-india-guide-2026",
   excerpt:

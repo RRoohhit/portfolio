@@ -2,7 +2,7 @@
 
 export const localSeoExpertNearMeGuide2026: BlogPost = {
   id: "blog-33",
-  title: "Local SEO Expert Near Me: How to Find, Hire & Rank in 2026",
+  title: "Local SEO Expert Near Me: How to Find & Hire Fast",
   h1: "Local SEO Expert Near Me: How to Find, Hire & Rank in 2026",
   slug: "local-seo-expert-near-me-find-hire-rank-2026",
   excerpt:

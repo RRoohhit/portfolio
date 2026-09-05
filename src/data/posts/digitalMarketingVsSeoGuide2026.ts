@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const digitalMarketingVsSeoGuide2026: BlogPost = {
   id: "blog-60",
-  title: "Digital Marketing vs SEO: Which Should You Start With in 2026?",
+  title: "Digital Marketing vs SEO: Which Should You Start With?",
   h1: "Digital Marketing vs SEO: Which Should You Invest In First in 2026?",
   slug: "digital-marketing-vs-seo-which-first-2026",
   excerpt:

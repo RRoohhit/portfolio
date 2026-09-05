@@ -56,16 +56,18 @@ const BLOG_GUIDE_LINKS = [
 ];
 
 // Keep these slugs in sync with BLOG_CLUSTERS in src/data/blogPosts.ts so
-// every topic cluster stays crawlable from the footer (deep link → ?cluster=<slug>).
+// every topic cluster stays reachable from the footer. Deep links use a
+// #cluster=<slug> hash fragment (not a query string) so each cluster view
+// keeps the canonical /blog/ URL without creating parameterized URLs.
 const BLOG_CLUSTER_LINKS = [
-  { href: "/blog?cluster=technical-seo", label: "Cluster · Technical SEO & Speed" },
-  { href: "/blog?cluster=local-seo", label: "Cluster · Local SEO & Google Maps" },
-  { href: "/blog?cluster=ai-search", label: "Cluster · AI Search, AEO & GEO" },
-  { href: "/blog?cluster=white-hat-seo", label: "Cluster · White Hat & Link Building" },
-  { href: "/blog?cluster=hire-seo-expert", label: "Cluster · Hire an SEO Expert India" },
-	{ href: "/blog?cluster=seo-strategy", label: "Cluster · Keywords & SEO Strategy" },
-	{ href: "/blog?cluster=web-development", label: "Cluster · Web Dev & WordPress" },
-	{ href: "/blog?cluster=digital-marketing", label: "Cluster · Google Ads & Digital Mktg" },
+  { href: "/blog/#cluster=technical-seo", label: "Cluster · Technical SEO & Speed" },
+  { href: "/blog/#cluster=local-seo", label: "Cluster · Local SEO & Google Maps" },
+  { href: "/blog/#cluster=ai-search", label: "Cluster · AI Search, AEO & GEO" },
+  { href: "/blog/#cluster=white-hat-seo", label: "Cluster · White Hat & Link Building" },
+  { href: "/blog/#cluster=hire-seo-expert", label: "Cluster · Hire an SEO Expert India" },
+	{ href: "/blog/#cluster=seo-strategy", label: "Cluster · Keywords & SEO Strategy" },
+	{ href: "/blog/#cluster=web-development", label: "Cluster · Web Dev & WordPress" },
+	{ href: "/blog/#cluster=digital-marketing", label: "Cluster · Google Ads & Digital Mktg" },
 ];
 
 export const Footer: React.FC = () => {

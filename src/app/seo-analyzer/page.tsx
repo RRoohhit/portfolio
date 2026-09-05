@@ -68,13 +68,17 @@ export default function Page() {
           </p>
         </header>
 
+        {/* Section heading so the interactive tool starts with an h2 (second
+            heading level after the page h1) before the tool's h3 sub-sections. */}
+        <h2 className="sr-only">Website SEO Analyzer &amp; Site Structure Tool</h2>
+
         <SeoAnalyzerPage />
         
         {/* Rich SEO Content for Indexing & Word Count */}
         <section className="bg-zinc-950 border border-white/10 p-6 sm:p-10 rounded-3xl space-y-6 shadow-2xl mt-12">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">
             How the Visual SEO Mind Map Works
-          </h2>
+          </h3>
           <div className="space-y-4 text-xs sm:text-sm text-white/75 leading-relaxed font-light">
             <p>
               Most SEO audit tools show long spreadsheets. The <strong>Rohit Gupta Interactive SEO Mind Map</strong> turns your website pages into a visual map. You can see how link equity flows across your site.

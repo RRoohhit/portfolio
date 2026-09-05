@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const digitalMarketingPricingIndiaGuide2026: BlogPost = {
   id: "blog-58",
-  title: "Digital Marketing Cost in India in 2026: Honest Pricing Guide",
+  title: "Digital Marketing Cost in India: Honest Pricing Guide",
   h1: "Digital Marketing Cost in India in 2026: The Complete Pricing Guide",
   slug: "digital-marketing-cost-india-2026-guide",
   excerpt:

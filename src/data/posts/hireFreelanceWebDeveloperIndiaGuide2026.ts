@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const hireFreelanceWebDeveloperIndiaGuide2026: BlogPost = {
   id: "blog-61",
-  title: "How to Hire a Freelance Web Developer in India: 2026 HR Guide",
+  title: "How to Hire a Freelance Web Developer in India",
   h1: "How to Hire a Freelance Web Developer in India: Complete 2026 Guide",
   slug: "hire-freelance-web-developer-india-guide-2026",
   excerpt:

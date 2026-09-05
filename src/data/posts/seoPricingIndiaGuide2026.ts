@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const seoPricingIndiaGuide2026: BlogPost = {
   id: "blog-56",
-  title: "SEO Pricing in India in 2026: Honest Rates & What You Get",
+  title: "SEO Pricing in India 2026: Honest Rates & Costs",
   h1: "SEO Pricing in India in 2026: Honest Rates & What You Get",
   slug: "seo-pricing-india-2026-complete-guide",
   excerpt:

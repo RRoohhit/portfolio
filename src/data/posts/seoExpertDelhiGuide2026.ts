@@ -2,7 +2,7 @@
 
 export const seoExpertDelhiGuide2026: BlogPost = {
   id: "blog-30",
-  title: "SEO Expert in Delhi: Complete 2026 Guide to Hiring & Ranking",
+  title: "SEO Expert in Delhi: Complete Hiring & Ranking Guide",
   h1: "SEO Expert in Delhi: The Complete 2026 Guide to Hiring & Ranking",
   slug: "seo-expert-in-delhi-complete-2026-guide",
   excerpt:

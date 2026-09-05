@@ -2,7 +2,7 @@
 
 export const googleAiOverviewsAeoGeoStrategy2026: BlogPost = {
   id: "blog-41",
-  title: "Google AI Overviews & AEO/GEO: Get Cited in AI Search (2026)",
+  title: "Google AI Overviews & AEO/GEO: Get AI Citations (2026)",
   h1: "Google AI Overviews and AEO/GEO: How to Get Cited by AI Search in 2026",
   slug: "google-ai-overviews-aeo-geo-get-cited-2026",
   excerpt:

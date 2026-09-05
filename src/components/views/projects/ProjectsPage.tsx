@@ -115,10 +115,10 @@ export const ProjectsPage: React.FC = () => {
 
       {/* Grid of Project Cards */}
       <div className="space-y-4">
-        <h3 className="text-xs font-mono uppercase text-white/50 tracking-widest font-bold flex items-center gap-2">
+        <h2 className="text-xs font-mono uppercase text-white/50 tracking-widest font-bold flex items-center gap-2">
           <Layers className="w-3.5 h-3.5 text-white" />
           <span>Select A Project Case Study ({filteredProjects.length} Available)</span>
-        </h3>
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <AnimatePresence mode="popLayout">

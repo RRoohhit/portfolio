@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const hireGraphicVideoDesignerHrGuide2026: BlogPost = {
   id: "blog-59",
-  title: "How to Hire a Graphic & Video Designer in India: 2026 Guide",
+  title: "How to Hire a Graphic & Video Designer in India",
   h1: "How to Hire a Graphic & Video Designer in India: Complete 2026 Guide",
   slug: "hire-graphic-video-designer-india-guide-2026",
   excerpt:

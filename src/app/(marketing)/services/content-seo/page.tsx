@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { FileText, CheckCircle2, ArrowRight, Target, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Content SEO Services | Copywriting & Strategy — Rohit Gupta",
+  title: "Content SEO Services & Strategy | Rohit Gupta",
   description:
     "Content SEO services by Rohit Gupta: search-intent content strategy, topical authority mapping, copy optimization, E-E-A-T & content gap analysis.",
   path: "/services/content-seo/",

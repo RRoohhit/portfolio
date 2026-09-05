@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const hireDigitalMarketingAgencyHrGuide2026: BlogPost = {
   id: "blog-50",
-  title: "How to Hire a Digital Marketing Agency in India: 2026 Guide",
+  title: "How to Hire a Digital Marketing Agency in India",
   h1: "How to Hire a Digital Marketing Agency in India: Complete 2026 Guide",
   slug: "hire-digital-marketing-agency-india-guide-2026",
   excerpt:

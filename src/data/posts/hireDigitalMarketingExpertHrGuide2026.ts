@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const hireDigitalMarketingExpertHrGuide2026: BlogPost = {
   id: "blog-44",
-  title: "How to Hire a Digital Marketing Expert: 2026 HR Hiring Guide",
+  title: "How to Hire a Digital Marketing Expert: 2026 Guide",
   h1: "How to Hire a Digital Marketing Expert in 2026: Complete HR Guide",
   slug: "hire-digital-marketing-expert-hr-recruiter-guide-2026",
   excerpt:

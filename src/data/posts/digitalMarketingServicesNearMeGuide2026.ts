@@ -3,7 +3,7 @@
 export const digitalMarketingServicesNearMeGuide2026: BlogPost = {
   id: "blog-34",
   title: "Digital Marketing Services Near Me: How to Choose in 2026",
-  h1: "Digital Marketing Services Near Me: How to Choose the Right One in 2026",
+  h1: "Digital Marketing Services Near Me: How to Choose the Right One",
   slug: "digital-marketing-services-near-me-choose-2026",
   excerpt:
     "How to find and choose digital marketing services near you in 2026: what full-service marketing includes, SEO vs ads vs social, local providers, costs and vetting.",

@@ -92,11 +92,11 @@
 - [SEO Audit Cost in India (2026)](https://rohitguptaseo.in/blog/seo-audit-cost-india-guide-2026/): Honest pricing, what a real audit includes, and how to spot a cheap fake audit.
 - [How to Hire a Shopify Developer in India](https://rohitguptaseo.in/blog/hire-shopify-developer-india-guide-2026/): Rates, live-store vetting, India payments/GST and the paid mini-project test.
 ## SEO Topic Clusters (Guided Learning Paths)
-- [Technical SEO & Website Speed Cluster](https://rohitguptaseo.in/blog/?cluster=technical-seo): Crawlability, Core Web Vitals, schema and site architecture guides.
-- [Local SEO & Google Business Profile Cluster](https://rohitguptaseo.in/blog/?cluster=local-seo): Google Maps 3-Pack, GBP optimization, local citations and "near me" rankings.
-- [AI Search, AEO & GEO Cluster](https://rohitguptaseo.in/blog/?cluster=ai-search): Get cited in Google AI Overviews, ChatGPT, Perplexity and Gemini.
-- [White Hat SEO & Link Building Cluster](https://rohitguptaseo.in/blog/?cluster=white-hat-seo): Ethical rank growth and penalty-free authority building.
-- [Hire an SEO Expert in India Cluster](https://rohitguptaseo.in/blog/?cluster=hire-seo-expert): Vetting, hiring and managing SEO specialists, teams and agencies.
-- [Keyword Research & SEO Strategy Cluster](https://rohitguptaseo.in/blog/?cluster=seo-strategy): Low-competition keywords, pricing and repeatable ranking systems.
-- [Web Development & WordPress Cluster](https://rohitguptaseo.in/blog/?cluster=web-development): Choose fast, SEO-ready WordPress and web development partners.
-- [Digital Marketing & Google Ads Cluster](https://rohitguptaseo.in/blog/?cluster=digital-marketing): Google Ads ROI, PPC and full-funnel digital marketing guides.
+- [Technical SEO & Website Speed Cluster](https://rohitguptaseo.in/blog/#cluster=technical-seo): Crawlability, Core Web Vitals, schema and site architecture guides.
+- [Local SEO & Google Business Profile Cluster](https://rohitguptaseo.in/blog/#cluster=local-seo): Google Maps 3-Pack, GBP optimization, local citations and "near me" rankings.
+- [AI Search, AEO & GEO Cluster](https://rohitguptaseo.in/blog/#cluster=ai-search): Get cited in Google AI Overviews, ChatGPT, Perplexity and Gemini.
+- [White Hat SEO & Link Building Cluster](https://rohitguptaseo.in/blog/#cluster=white-hat-seo): Ethical rank growth and penalty-free authority building.
+- [Hire an SEO Expert in India Cluster](https://rohitguptaseo.in/blog/#cluster=hire-seo-expert): Vetting, hiring and managing SEO specialists, teams and agencies.
+- [Keyword Research & SEO Strategy Cluster](https://rohitguptaseo.in/blog/#cluster=seo-strategy): Low-competition keywords, pricing and repeatable ranking systems.
+- [Web Development & WordPress Cluster](https://rohitguptaseo.in/blog/#cluster=web-development): Choose fast, SEO-ready WordPress and web development partners.
+- [Digital Marketing & Google Ads Cluster](https://rohitguptaseo.in/blog/#cluster=digital-marketing): Google Ads ROI, PPC and full-funnel digital marketing guides.

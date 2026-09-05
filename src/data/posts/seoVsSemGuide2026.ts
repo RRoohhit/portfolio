@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const seoVsSemGuide2026: BlogPost = {
   id: "blog-63",
-  title: "SEO vs SEM in 2026: What's the Difference and Which Should You Use?",
+  title: "SEO vs SEM: What's the Difference and Which to Use?",
   h1: "SEO vs SEM in 2026: The Honest Difference and How to Choose",
   slug: "seo-vs-sem-difference-guide-2026",
   excerpt:

@@ -2,7 +2,7 @@ import { BlogPost } from "../../types";
 
 export const websiteCostIndiaBudgetGuide2026: BlogPost = {
   id: "blog-53",
-  title: "How Much Does a Website Cost in India in 2026? Honest Pricing",
+  title: "How Much Does a Website Cost in India? Honest Pricing",
   h1: "How Much Does a Website Cost in India in 2026? The Complete Guide",
   slug: "website-cost-india-2026-complete-guide",
   excerpt:
