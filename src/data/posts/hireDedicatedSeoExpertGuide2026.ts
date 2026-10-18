@@ -113,7 +113,7 @@ Use these direct questions to separate top 1% SEO professionals from generalists
 
 ## 5. Get Started: Hire Rohit Gupta as Your Dedicated SEO Partner
 
-With over 2 years of proven White-Hat SEO experience, 200+ optimized web properties, verified 99/100 Core Web Vitals achievements, and 4,700%+ organic traffic surges, **Rohit Gupta** is the trusted partner for brands seeking undeniable Google search dominance.
+With over 2 years of proven White-Hat SEO experience, 2 live websites built from scratch, fast, mobile-first website builds, and white-hat organic growth, **Rohit Gupta** is the trusted partner for brands seeking undeniable Google search dominance.
 
 Ready to take your search visibility to the next level? Explore our [Dedicated SEO Hiring Services](/services/hire-seo-expert/) or [Book a Free SEO Consultation](/contact/) today.`,
 };

@@ -83,13 +83,7 @@ export const SerpMetaPreview: React.FC = () => {
         },
         telephone: CONTACT.phone,
         email: CONTACT.email,
-        ...(enableStarRating && {
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: "5.0",
-            reviewCount: "48",
-          },
-        }),
+        // Visual SERP preview only — schema rating removed until real GBP numbers confirmed.
       },
     ];
 

@@ -23,13 +23,13 @@ export const SeoDashboard: React.FC = () => {
         <div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 text-xs font-mono mb-2">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>Live SERP & Organic Growth Monitoring Engine</span>
+            <span>Sample SEO Metrics Playground (Demo Data)</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-            SEO Performance & Rank Metrics Dashboard
+            SEO Performance Demo — Sample Metrics Explorer
           </h2>
           <p className="text-xs text-white/60 mt-1">
-            Real-time visual tracking of organic traffic surges, keyword SERP ranks, domain authority, and backlink health.
+            Interactive demo with sample data to explore traffic, rank and backlink visualizations. Connect Search Console for live client metrics.
           </p>
         </div>
 
@@ -71,53 +71,53 @@ export const SeoDashboard: React.FC = () => {
         </div>
       </div>
 
-      {/* Metric High-Level Cards */}
+      {/* Metric High-Level Cards — sample demo data */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-2">
           <div className="flex items-center justify-between text-xs text-white/60 font-mono">
-            <span>Monthly Organic Visitors</span>
+            <span>Sample Organic Visitors</span>
             <TrendingUp className="w-4 h-4 text-emerald-400" />
           </div>
-          <div className="text-2xl sm:text-3xl font-black text-white font-mono">58,400</div>
+          <div className="text-2xl sm:text-3xl font-black text-white font-mono">8,400</div>
           <div className="text-[11px] text-emerald-400 font-mono flex items-center gap-1">
-            <span>+4,766% Growth</span>
-            <span className="text-white/40">vs baseline</span>
+            <span>Sample demo</span>
+            <span className="text-white/40">not client data</span>
           </div>
         </div>
 
         <div className="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-2">
           <div className="flex items-center justify-between text-xs text-white/60 font-mono">
-            <span>Average SERP Rank</span>
+            <span>Sample Avg. Position</span>
             <Search className="w-4 h-4 text-amber-400" />
           </div>
-          <div className="text-2xl sm:text-3xl font-black text-white font-mono">#2.1</div>
+          <div className="text-2xl sm:text-3xl font-black text-white font-mono">#12.4</div>
           <div className="text-[11px] text-emerald-400 font-mono flex items-center gap-1">
-            <span>Top 3 Dominance</span>
-            <span className="text-white/40">for 35 keywords</span>
+            <span>Demo keywords</span>
+            <span className="text-white/40">sample set</span>
           </div>
         </div>
 
         <div className="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-2">
           <div className="flex items-center justify-between text-xs text-white/60 font-mono">
-            <span>Domain Authority (DA)</span>
+            <span>Sample Authority Score</span>
             <Award className="w-4 h-4 text-purple-400" />
           </div>
-          <div className="text-2xl sm:text-3xl font-black text-white font-mono">DA 46</div>
+          <div className="text-2xl sm:text-3xl font-black text-white font-mono">DR 28</div>
           <div className="text-[11px] text-purple-400 font-mono flex items-center gap-1">
-            <span>+32 Points</span>
-            <span className="text-white/40">Ahrefs DR 48</span>
+            <span>Sample demo</span>
+            <span className="text-white/40">illustrative</span>
           </div>
         </div>
 
         <div className="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-2">
           <div className="flex items-center justify-between text-xs text-white/60 font-mono">
-            <span>Quality Dofollow Backlinks</span>
+            <span>Sample Backlink Rows</span>
             <Link2 className="w-4 h-4 text-blue-400" />
           </div>
-          <div className="text-2xl sm:text-3xl font-black text-white font-mono">1,420</div>
+          <div className="text-2xl sm:text-3xl font-black text-white font-mono">86</div>
           <div className="text-[11px] text-blue-400 font-mono flex items-center gap-1">
-            <span>0% Toxic Links</span>
-            <span className="text-white/40">White Hat Links</span>
+            <span>Sample table</span>
+            <span className="text-white/40">demo data</span>
           </div>
         </div>
       </div>

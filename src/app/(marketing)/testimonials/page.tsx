@@ -6,9 +6,9 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { Star, Quote, ArrowRight, ShieldCheck, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Client Reviews & Testimonials | Rohit Gupta SEO Expert",
+  title: "Work Experience & Live Projects | Rohit Gupta",
   description:
-    "Verified reviews for Rohit Gupta, SEO Expert & Web Developer in Noida. Read feedback from founders and marketing heads on technical SEO and rankings.",
+    "Rohit Gupta work summary — MegaMind Technosoft (Delhi) me 2 live websites scratch se build + SEO, aur Thingbiz (Noida) me on-page/off-page/technical SEO aur Google Ads work.",
   path: "/testimonials/",
   keywords: [
     "rohit web developer & seo expert freelancer noida reviews",
@@ -23,44 +23,24 @@ export const metadata: Metadata = buildPageMetadata({
 
 const TESTIMONIALS_LIST = [
   {
-    name: "Megamind Technosoft Team",
-    company: "Megamind Technosoft",
+    name: "Work Engagement — MegaMind Technosoft",
+    company: "MegaMind Technosoft",
     location: "Delhi, India",
     service: "Full Stack Development & Technical SEO",
     rating: 5,
-    date: "2026",
+    date: "2025 – 2026",
     quote:
-      "Rohit transformed our web performance and technical SEO architecture. Our Core Web Vitals went from failing grades to top 99/100 Lighthouse scores, and organic search traffic increased substantially across key commercial queries.",
+      "Wahan maine megamindindia.in aur attendancesolution.in dono websites scratch se design, develop aur SEO-optimize ki — dynamic product catalog, admin panel, on-page aur technical SEO setup ke saath.",
   },
   {
-    name: "Thingbiz Management",
+    name: "Work Engagement — Thingbiz Hightech",
     company: "Thingbiz Hightech Private Limited",
     location: "Noida, UP",
     service: "On-Page, Off-Page & Local SEO",
     rating: 5,
     date: "2025 - 2026",
     quote:
-      "Working with Rohit on our Google Ads and local SEO positioning delivered impressive ROI. He restructured our campaign keywords and technical setup, giving us steady qualified inbound leads.",
-  },
-  {
-    name: "Ayodhya Hospitality Partner",
-    company: "Ayodhya Heritage Stays",
-    location: "Ayodhya, UP",
-    service: "Local SEO & Google Maps Ranking",
-    rating: 5,
-    date: "2026",
-    quote:
-      "Rohit optimized our Google Business Profile and local citation presence in Ayodhya. We saw a dramatic rise in direct calls and Map Pack visibility for local tourism and stay searches.",
-  },
-  {
-    name: "E-Commerce Brand Director",
-    company: "Direct-to-Consumer Apparel",
-    location: "India & Global",
-    service: "Shopify SEO & Speed Tuning",
-    rating: 5,
-    date: "2025",
-    quote:
-      "Our store speed and product page indexation improved dramatically. Rohit fixed faceted navigation issues, added Product Schema JSON-LD, and helped us scale revenue through white-hat organic search.",
+      "Wahan maine client portals par on-page, off-page aur technical SEO, keyword research aur Google Ads optimization par kaam kiya — white-hat practices ke saath.",
   },
 ];
 
@@ -77,7 +57,7 @@ export default function TestimonialsPage() {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "4",
+      "reviewCount": "2",
       "bestRating": "5",
       "worstRating": "1",
     },
@@ -107,25 +87,25 @@ export default function TestimonialsPage() {
           <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono font-bold uppercase tracking-wider">
             <ShieldCheck className="w-4 h-4" />
-            Verified Client Reviews &amp; Ratings
+            Work Experience &amp; Live Project Notes
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            Rohit Web Developer &amp; SEO Expert Freelancer Noida Reviews
+            Rohit Gupta — Work Experience & Live Projects
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Read real client feedback, verified testimonials, and organic growth reviews for <strong>Rohit Gupta</strong> — Freelance Web Developer, Technical SEO Specialist, and Digital Marketing Consultant based in Noida and serving clients worldwide.
+            Mere do work engagements ka summary aur unme kiye gaye kaam ka honest note — <strong>Rohit Gupta</strong>, Web Developer & SEO (Delhi & Noida).
           </p>
         </header>
 
         <section className="space-y-6">
           <div className="space-y-2">
             <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
-              Verified Client Experience &amp; Organic Results
+              Work Done In Delhi & Noida Engagements
             </h2>
             <p className="text-xs sm:text-sm text-white/60">
-              Read authentic reviews from business owners, founders, and marketing leaders.
+              Kaam ka summary — live websites aur SEO engagements.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

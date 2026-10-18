@@ -10,7 +10,7 @@ interface MetaTagAnalyzerProps {
 export const MetaTagAnalyzer: React.FC<MetaTagAnalyzerProps> = ({ domain = "https://example.com" }) => {
   const [title, setTitle] = useState("Technical SEO Specialist in Noida, Delhi & India | Rohit Gupta");
   const [description, setDescription] = useState(
-    "Hire an expert technical SEO specialist ranking 200+ sites #1 on Google & AI search. Core Web Vitals, JSON-LD schema, local SEO & white-hat link building for India businesses."
+    "Hire a web developer + SEO who builds live websites from scratch — MegaMind India (Next.js + Supabase) & AttendanceSolution.in (HTML + Tailwind) with technical SEO, local SEO, GBP & AI-search-ready content."
   );
   const [url, setUrl] = useState(domain);
   const [device, setDevice] = useState<"desktop" | "mobile">("desktop");

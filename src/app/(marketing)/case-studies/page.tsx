@@ -7,15 +7,15 @@ import { CASE_STUDIES } from "@/data/portfolioData";
 import { Award, ArrowRight, CheckCircle2, TrendingUp, Gauge, BarChart3 } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "SEO & Web Development Case Studies — Rohit Gupta",
+  title: "Live Website Projects With SEO Breakdown — Rohit Gupta",
   description:
-    "Explore real-world SEO and web development case studies by Rohit Gupta detailing Problem → Analysis → Work → Result → Evidence.",
+    "Two live websites designed, built and SEO-optimized from scratch — MegaMind India (Next.js + Supabase dynamic site) and AttendanceSolution.in (HTML + Tailwind) — technical SEO, on-page, local SEO, GBP, AEO & GEO.",
   path: "/case-studies/",
   keywords: [
-    "SEO Case Studies",
-    "Technical SEO Results",
-    "Rohit Gupta Case Studies",
-    "Web Development Work Evidence",
+    "live website projects",
+    "nextjs supabase portfolio",
+    "seo optimized websites",
+    "Rohit Gupta work",
   ],
 });
 
@@ -41,20 +41,20 @@ export default function CaseStudiesPage() {
           <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono font-bold uppercase tracking-wider">
             <Award className="w-4 h-4" />
-            Verified Case Studies &amp; Evidence
+            Live Client Work — Built From Scratch &amp; SEO-Optimized
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            SEO &amp; Web Development Case Studies
+            Live Websites I Designed, Built &amp; Rank With SEO
           </h1>
 
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-3xl font-light">
-            Real client case studies demonstrating technical SEO analysis, web performance optimization, and organic growth strategies.
+            Dono website maine khud scratch se banayi hain — neeche har project ka live link, tech stack, homepage screenshot aur poora SEO breakdown (technical, on-page, off-page base, local SEO, Google Business Profile, AEO/GEO) diya hai.
           </p>
         </header>
 
         <section className="space-y-6">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">Featured Client Case Studies</h2>
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">Live Client Projects With SEO Breakdown</h2>
           {CASE_STUDIES.map((cs) => (
             <div
               key={cs.id}
@@ -71,13 +71,43 @@ export default function CaseStudiesPage() {
                   <p className="text-xs font-mono text-white/50 mt-1">Client: {cs.client} · Timeline: {cs.timeline}</p>
                 </div>
 
-                <Link
-                  href={`/case-studies/${cs.id}/`}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-wider hover:bg-emerald-300 transition-colors shadow-lg shrink-0 self-start sm:self-center"
-                >
-                  View Case Study
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
+                <div className="flex flex-wrap items-center gap-2 shrink-0 self-start sm:self-center">
+                  <a
+                    href={cs.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-wider hover:bg-emerald-300 transition-colors shadow-lg"
+                  >
+                    Visit Live Site
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </a>
+                  <Link
+                    href={`/case-studies/${cs.id}/`}
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/5 text-white border border-white/10 text-xs font-mono font-bold hover:border-emerald-500/40 transition-colors"
+                  >
+                    SEO Breakdown
+                  </Link>
+                </div>
+              </div>
+
+              {/* Live screenshot */}
+              <div className="rounded-2xl overflow-hidden border border-white/10 bg-black">
+                <img
+                  src={cs.afterImageUrl}
+                  alt={`${cs.title} — live homepage screenshot`}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-52 sm:h-72 object-cover object-top"
+                />
+              </div>
+
+              {/* Tech stack */}
+              <div className="flex flex-wrap gap-2">
+                {cs.stack.map((tech, tIdx) => (
+                  <span key={tIdx} className="px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-[11px] font-mono text-emerald-300">
+                    {tech}
+                  </span>
+                ))}
               </div>
 
               <p className="text-xs sm:text-sm text-white/75 leading-relaxed">
@@ -123,28 +153,28 @@ export default function CaseStudiesPage() {
               </p>
             </div>
             <div className="p-5 rounded-2xl bg-black border border-white/10 space-y-2">
-              <h4 className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 3 · Codebase Implementation</h4>
+              <h4 className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 3 · Schema + Content Setup</h4>
               <p className="text-xs text-white/70 leading-relaxed font-light">
-                Direct code-level optimization in React, Next.js, or CMS templates, eliminating hydration drag, layout shift, and server response latency.
+                Product, Blog, FAQ aur LocalBusiness JSON-LD schema, category pages aur admin panel se manageable content.
               </p>
             </div>
             <div className="p-5 rounded-2xl bg-black border border-white/10 space-y-2">
-              <h4 className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 4 · Ethical Authority Building</h4>
+              <h4 className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 4 · Local SEO + GBP</h4>
               <p className="text-xs text-white/70 leading-relaxed font-light">
-                White-hat digital PR outreach, local citation reclamation, unlinked brand mention conversion, and contextual editorial link acquisition.
+                Delhi HQ ka NAP setup, Google Business Profile aur Maps linkage, service-area pages aur contact consistency.
               </p>
             </div>
             <div className="p-5 rounded-2xl bg-black border border-white/10 space-y-2">
               <h4 className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 5 · Performance Monitoring</h4>
               <p className="text-xs text-white/70 leading-relaxed font-light">
-                Continuous Google Search Console position tracking, CrUX real-user monitoring, algorithm update immunity verification, and conversion audits.
+                FAQ aur entity-based content taaki AI search me cite ho, plus call/WhatsApp/quote CTAs har page par.
               </p>
             </div>
             <div className="p-5 rounded-2xl bg-black border border-white/10 space-y-2 flex flex-col justify-between">
               <div className="space-y-1">
-                <span className="text-xs font-mono font-bold text-emerald-400 uppercase">Verified Evidence</span>
+                <span className="text-xs font-mono font-bold text-emerald-400 uppercase">Stage 5 · AEO/GEO + Leads</span>
                 <p className="text-xs text-white/70 leading-relaxed font-light">
-                  Transparent before/after metrics from Google Search Console, Google Analytics 4, and Lighthouse reports.
+                  FAQ aur entity-based content taaki AI search me cite ho, plus call/WhatsApp/quote CTAs har page par.
                 </p>
               </div>
               <Link href="/contact/" className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 font-bold mt-2">
@@ -157,10 +187,10 @@ export default function CaseStudiesPage() {
         {/* CTA */}
         <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-emerald-950/40 via-zinc-950 to-zinc-950 border border-emerald-500/30 text-center space-y-5 shadow-2xl">
           <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-            Ready to Scale Your Organic Search Growth?
+            Aisi Website Chahiye Jo Google Par Bhi Dikhe?
           </h3>
           <p className="text-sm sm:text-base text-white/75 max-w-2xl mx-auto leading-relaxed">
-            Get in touch with Rohit Gupta for a complimentary technical SEO diagnosis and discover the exact bottlenecks preventing your site from ranking #1.
+            Dono live websites maine scratch se banayi hain — baat karo aur apne business ke liye aisi hi SEO-ready website banao.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { CASE_STUDIES } from "@/data/portfolioData";
-import { BeforeAfterSlider } from "@/components/shared/BeforeAfterSlider";
+import { ProjectLiveBreakdown } from "@/components/shared/ProjectLiveBreakdown";
 import { ProjectCaseStudy } from "@/types";
 import {
   Code2,
@@ -11,6 +11,8 @@ import {
   Filter,
   Layers,
   ArrowRight,
+  ExternalLink,
+  Globe,
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
@@ -19,7 +21,7 @@ export const ProjectsPage: React.FC = () => {
   const [categoryFilter, setCategoryFilter] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState<string>("");
 
-  const categories = ["All", "SEO Optimization", "Web Development", "Full Stack App"];
+  const categories = ["All", "SEO Optimization", "Web Development", "Full Stack Development"];
 
   const matchesCategory = (category: string): boolean => {
     if (categoryFilter === "All") return true;
@@ -55,15 +57,15 @@ export const ProjectsPage: React.FC = () => {
       <div className="bg-white/5 border border-white/10 p-5 sm:p-8 lg:p-10 rounded-2xl space-y-5 sm:space-y-6">
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-white border border-white/20 text-[10px] sm:text-xs font-mono uppercase tracking-widest">
           <Code2 className="w-3.5 h-3.5" />
-          <span>Verified Case Studies &amp; Quantifiable Proof</span>
+          <span>Live Client Websites — Designed, Built &amp; SEO-Optimized</span>
         </div>
 
         <div className="space-y-2">
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-            Project Showcase &amp; Growth Engineering
+            Live Client Projects — Built From Scratch &amp; Ranked With SEO
           </h1>
           <p className="text-xs sm:text-sm text-white/60 max-w-3xl leading-relaxed">
-            Explore Rohit Gupta&apos;s full stack web development &amp; technical SEO portfolio. Filter by service category or test the interactive side-by-side performance slider below.
+            Ye dono website maine khud scratch se design, develop aur SEO-optimize ki hain — neeche har project ka live link, tech stack aur homepage screenshot ke saath poora SEO breakdown (technical, on-page, off-page base, local SEO, GBP, AEO/GEO) diya hai.
           </p>
         </div>
 
@@ -117,7 +119,7 @@ export const ProjectsPage: React.FC = () => {
       <div className="space-y-4">
         <h2 className="text-xs font-mono uppercase text-white/50 tracking-widest font-bold flex items-center gap-2">
           <Layers className="w-3.5 h-3.5 text-white" />
-          <span>Select A Project Case Study ({filteredProjects.length} Available)</span>
+          <span>Live Client Projects ({filteredProjects.length} Live Websites)</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -157,6 +159,17 @@ export const ProjectsPage: React.FC = () => {
                       <span className="text-[10px] font-mono text-white/50">{project.client}</span>
                     </div>
 
+                    {/* Live homepage screenshot */}
+                    <div className="rounded-xl overflow-hidden border border-white/10 bg-black">
+                      <img
+                        src={project.afterImageUrl}
+                        alt={`${project.title} — live homepage screenshot`}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full h-44 sm:h-52 object-cover object-top"
+                      />
+                    </div>
+
                     <h3 className="text-base sm:text-lg font-bold text-white leading-snug">
                       {project.title}
                     </h3>
@@ -164,35 +177,48 @@ export const ProjectsPage: React.FC = () => {
                     <p className="text-xs text-white/70 line-clamp-2 leading-relaxed font-light">
                       {project.summary}
                     </p>
+
+                    {/* Tech stack pills */}
+                    <div className="flex flex-wrap gap-1.5">
+                      {project.stack.slice(0, 5).map((tech, idx) => (
+                        <span key={idx} className="text-[10px] font-mono text-white/70 bg-white/10 px-2 py-0.5 rounded border border-white/10">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
 
                   {/* Highlights Bar */}
                   <div className="pt-3 border-t border-white/10 space-y-3">
                     <div className="grid grid-cols-2 gap-2 text-xs font-mono">
                       <div className="p-2 bg-black rounded border border-white/10">
-                        <span className="text-[9px] sm:text-[10px] text-white/40 uppercase block">Primary Metric</span>
-                        <span className="text-emerald-400 font-bold text-[11px] sm:text-xs">{project.metrics[0].improvement} ({project.metrics[0].after})</span>
+                        <span className="text-[9px] sm:text-[10px] text-white/40 uppercase block">Timeline</span>
+                        <span className="text-emerald-400 font-bold text-[11px] sm:text-xs">{project.timeline}</span>
                       </div>
                       <div className="p-2 bg-black rounded border border-white/10">
-                        <span className="text-[9px] sm:text-[10px] text-white/40 uppercase block">Speed Score</span>
-                        <span className="text-white font-bold text-[11px] sm:text-xs">{project.lighthouse.after.performance}/100 Lighthouse</span>
+                        <span className="text-[9px] sm:text-[10px] text-white/40 uppercase block">Status</span>
+                        <span className="text-white font-bold text-[11px] sm:text-xs">Live Website</span>
                       </div>
                     </div>
 
-                    <div className="flex items-center justify-between pt-1 text-xs font-mono">
-                      <div className="flex flex-wrap gap-1">
-                        {project.toolsUsed.slice(0, 3).map((tool, idx) => (
-                          <span key={idx} className="text-[9px] text-white/60 bg-white/10 px-2 py-0.5 rounded">
-                            {tool}
-                          </span>
-                        ))}
-                      </div>
+                    <div className="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono">
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-emerald-400 text-black font-black uppercase tracking-wider text-[10px] hover:bg-emerald-300 transition-colors"
+                      >
+                        <Globe className="w-3.5 h-3.5" />
+                        <span>Visit Live Site</span>
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
                       <button
                         type="button"
                         onClick={() => selectProject(project.id)}
-                        className={`text-xs font-bold flex items-center gap-1 ${isSelected ? "text-white" : "text-white/60 group-hover:text-white"}`}
+                        className={`inline-flex items-center gap-1 text-xs font-bold ${isSelected ? "text-white" : "text-white/60 hover:text-white"}`}
                       >
-                        <span>{isSelected ? "Active View" : "Inspect Case Study"}</span>
+                        <span>{isSelected ? "Active View" : "Read SEO Breakdown"}</span>
                         <ArrowRight className="w-3.5 h-3.5" />
                       </button>
                     </div>
@@ -219,12 +245,22 @@ export const ProjectsPage: React.FC = () => {
               <span className="text-xs font-mono text-emerald-400 font-bold uppercase tracking-wider">{selectedProject.category}</span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-white mt-1">{selectedProject.title}</h2>
             </div>
-            <div className="flex items-center gap-3 text-xs font-mono text-white/60">
-              <div className="flex items-center gap-1.5 bg-black px-3 py-1.5 rounded-xl border border-white/10">
+            <div className="flex flex-wrap items-center gap-2 text-xs font-mono">
+              <a
+                href={selectedProject.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-emerald-400 text-black font-black uppercase tracking-wider text-[11px] hover:bg-emerald-300 transition-colors"
+              >
+                <Globe className="w-4 h-4" />
+                <span>Visit Live Website</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+              <div className="flex items-center gap-1.5 bg-black px-3 py-2 rounded-xl border border-white/10 text-white/60">
                 <User className="w-3.5 h-3.5 text-white/40" />
                 <span>{selectedProject.client}</span>
               </div>
-              <div className="flex items-center gap-1.5 bg-black px-3 py-1.5 rounded-xl border border-white/10">
+              <div className="flex items-center gap-1.5 bg-black px-3 py-2 rounded-xl border border-white/10 text-white/60">
                 <Calendar className="w-3.5 h-3.5 text-white/40" />
                 <span>{selectedProject.timeline}</span>
               </div>
@@ -234,6 +270,21 @@ export const ProjectsPage: React.FC = () => {
           <p className="text-sm text-white/80 leading-relaxed font-light">
             {selectedProject.summary}
           </p>
+
+          {/* Tech stack pills */}
+          <div className="space-y-2">
+            <div className="text-xs font-mono text-white/50 uppercase font-bold flex items-center gap-2">
+              <Code2 className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Tech Stack Used:</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {selectedProject.stack.map((tech, idx) => (
+                <span key={idx} className="px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-xs font-mono text-emerald-300">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
 
           {/* Targeted Keywords Pill Cloud */}
           <div className="space-y-2">
@@ -251,8 +302,8 @@ export const ProjectsPage: React.FC = () => {
           </div>
         </div>
 
-        {/* Interactive Before/After Slider Component */}
-        <BeforeAfterSlider project={selectedProject} />
+        {/* Live website breakdown — single screenshot, no fake before/after slider */}
+        <ProjectLiveBreakdown project={selectedProject} />
       </motion.div>
 
     </div>

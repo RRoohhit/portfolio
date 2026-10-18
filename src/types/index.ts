@@ -30,15 +30,13 @@ export interface ProjectCaseStudy {
   client: string;
   timeline: string;
   summary: string;
+  liveUrl: string;
+  stack: string[];
   beforeImageUrl: string;
   afterImageUrl: string;
   beforeDescription: string;
   afterDescription: string;
   metrics: MetricComparison[];
-  lighthouse: {
-    before: { performance: number; accessibility: number; bestPractices: number; seo: number; lcp: string; fid: string; cls: string };
-    after: { performance: number; accessibility: number; bestPractices: number; seo: number; lcp: string; fid: string; cls: string };
-  };
   technicalHighlights: string[];
   codeComparison: {
     beforeSnippet: string;

@@ -38,7 +38,7 @@ export const FAQ_DATA: FaqItem[] = [
   },
   {
     question: "Why should I hire Rohit Gupta as my SEO expert?",
-    answer: "Rohit combines 2 years of White-hat SEO with real full stack development (React, Next.js). He has optimized 200+ websites, delivered 4,700%+ organic traffic surges, 99/100 Core Web Vitals, and Rank #1 results for both local Delhi/Noida businesses and global clients.",
+    answer: "Rohit combines 2 years of White-hat SEO with real full stack development (React, Next.js). He has optimized live client websites, delivered white-hat organic growth, 99/100 Core Web Vitals, and Rank #1 results for both local Delhi/Noida businesses and global clients.",
     keywords: ["hire Rohit Gupta", "SEO expert India", "full stack web developer SEO"],
     category: "Hiring & Pricing"
   },
@@ -74,7 +74,7 @@ export const FAQ_DATA: FaqItem[] = [
   },
   {
     question: "What is the difference between On-Page SEO and Off-Page SEO?",
-    answer: "On-Page SEO covers everything you control inside your website — title tags, meta descriptions, headings, content quality, internal links, schema markup and Core Web Vitals. Off-Page SEO covers everything outside it — backlinks, brand mentions, citations, guest posts and digital PR. Both build authority; on-page makes your page relevant, off-page makes it trustworthy. Rohit Gupta applies a combined on-page + off-page strategy across 200+ websites.",
+    answer: "On-Page SEO covers everything you control inside your website — title tags, meta descriptions, headings, content quality, internal links, schema markup and Core Web Vitals. Off-Page SEO covers everything outside it — backlinks, brand mentions, citations, guest posts and digital PR. Both build authority; on-page makes your page relevant, off-page makes it trustworthy. Rohit Gupta applies a combined on-page + off-page strategy across live client websites.",
     keywords: ["On-Page SEO", "Off-Page SEO", "SEO strategy India"],
     category: "Strategy"
   },
@@ -122,7 +122,7 @@ export const FAQ_DATA: FaqItem[] = [
   },
   {
     question: "Where can I read client reviews for Rohit Web Developer & SEO Expert Freelancer in Noida?",
-    answer: "You can read verified client reviews and case study feedback on the Testimonials page (/testimonials/) as well as on verified LinkedIn and Google profiles. Rohit has an established track record across Delhi NCR and global clients for 4,700%+ organic traffic growth.",
+    answer: "You can read verified client reviews and case study feedback on the Testimonials page (/testimonials/) as well as on verified LinkedIn and Google profiles. Rohit has an established track record across Delhi NCR and global clients for honest, white-hat organic growth.",
     keywords: ["rohit web developer & seo expert freelancer noida reviews", "rohit gupta reviews", "seo expert in noida reviews"],
     category: "Hiring & Pricing"
   },

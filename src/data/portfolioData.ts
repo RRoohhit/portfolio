@@ -100,135 +100,109 @@ export const SEO_TOOLS = [
 
 export const CASE_STUDIES: ProjectCaseStudy[] = [
   {
-    id: "project-megamind-portal",
-    title: "E-Commerce SEO & Next.js Case Study",
+    id: "megamindindia-dynamic-website-seo",
+    title: "MegaMind India — Dynamic Biometric & Security Website (Next.js + Supabase)",
     category: "Full Stack Development & Technical SEO",
-    client: "Megamind Tech Client (Delhi)",
-    timeline: "3 Months (2026)",
-    summary: "E-Commerce SEO case study: +4,766% organic traffic, 99/100 Core Web Vitals speed, and Position #2 Google rankings in 3 months.",
-    beforeImageUrl: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1000&q=80",
-    afterImageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80",
-    beforeDescription: "Legacy website suffered from 5.4s load time, zero Schema markup, broken mobile layout, 2,400+ unindexed URLs, and average SERP ranking at Position #42.",
-    afterDescription: "Modern SSR architecture delivering 0.6s load speed, 100/100 Lighthouse SEO score, top 3 SERP rankings for 35 high-value commercial keywords, and 58,400 monthly organic visitors.",
+    client: "MegaMind Technosoft, New Delhi",
+    timeline: "2025 – 2026 · Designed, built & SEO-optimized from scratch",
+    summary:
+      "Maine megamindindia.in ko zero se banaya hai — 511+ products wala dynamic catalog, admin panel se products aur blogs manage karne ka system, aur saath me complete SEO setup: technical SEO, on-page, off-page base, local SEO, Google Business Profile, aur AI search (AEO/GEO) taaki Google ke saath ChatGPT, Perplexity aur AI Overviews se bhi enquiries aayein.",
+    liveUrl: "https://www.megamindindia.in/",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Admin Panel CMS", "Technical SEO", "Local SEO", "AEO/GEO"],
+    beforeImageUrl: "/projects/megamindindia-home.gif",
+    afterImageUrl: "/projects/megamindindia-home.gif",
+    beforeDescription:
+      "Shuruaat me koi structured, fast aur SEO-ready website nahi thi — products aur blogs manually manage karne padte, category-wise pages missing the, aur Google Maps, local search aur AI search ke liye proper setup nahi tha.",
+    afterDescription:
+      "Ab ek proper dynamic website live hai — Supabase-backed admin panel se products aur blogs khud add hote hain, 511+ hardware models ka searchable catalog, category pages, product finder, GST calculator, quote cart, aur SEO + AEO + GEO foundation ke saath. Screenshot upar live homepage ka hai.",
     metrics: [
-      { label: "Google SERP Ranking", before: "Position #42", after: "Position #2", improvement: "+40 Positions", unit: "" },
-      { label: "Monthly Organic Traffic", before: "1,200", after: "58,400", improvement: "+4,766%", unit: "visitors/mo" },
-      { label: "Lighthouse Performance", before: "32/100", after: "99/100", improvement: "+209%", unit: "pts" },
-      { label: "Domain Authority (DA)", before: "DA 14", after: "DA 46", improvement: "+32 Points", unit: "DA" },
-      { label: "Conversion Rate", before: "0.8%", after: "4.2%", improvement: "+425%", unit: "%" },
-      { label: "Quality Backlinks", before: "38", after: "1,420", improvement: "+3,636%", unit: "dofollow" }
+      { label: "Product Catalog", before: "Manual / unstructured", after: "511+ models live", improvement: "Dynamic CMS", unit: "" },
+      { label: "Content Management", before: "Developer-dependent", after: "Self-managed admin panel", improvement: "Zero-code updates", unit: "" },
+      { label: "Site Architecture", before: "Flat pages", after: "Category + product + blog hierarchy", improvement: "Crawl-ready", unit: "" },
+      { label: "SEO Foundations Shipped", before: "0", after: "20+ setups", improvement: "Full setup", unit: "" },
+      { label: "Local + GBP Setup", before: "Missing", after: "NAP + Delhi HQ + Maps linked", improvement: "Local-ready", unit: "" },
+      { label: "AI-Search Readiness", before: "Unstructured", after: "FAQ + entity content", improvement: "AEO/GEO ready", unit: "" }
     ],
-    lighthouse: {
-      before: { performance: 32, accessibility: 64, bestPractices: 58, seo: 52, lcp: "5.4s", fid: "290ms", cls: "0.48" },
-      after: { performance: 99, accessibility: 100, bestPractices: 100, seo: 100, lcp: "0.6s", fid: "12ms", cls: "0.00" }
-    },
     technicalHighlights: [
-      "Re-engineered frontend with Next.js Server Components to eliminate JavaScript execution bottlenecks.",
-      "Implemented JSON-LD Rich Snippet Schema for Product, AggregateRating, and FAQPage.",
-      "Converted 450+ uncompressed PNG assets into WebP with responsive srcset attributes.",
-      "Executed White Hat guest posting & broken link reclamation strategy gaining 1,300+ high DA dofollow links.",
-      "Configured Google Search Console automated sitemap pinging and canonical link canonicalization."
+      "Next.js + TypeScript + Tailwind me scratch se build — Supabase se dynamic products aur blogs, admin panel se bina code ke updates.",
+      "Product, Blog, FAQ aur LocalBusiness JSON-LD schema, XML sitemap, robots.txt aur clean URL architecture.",
+      "On-page SEO: keyword-mapped titles, meta descriptions, H1–H3 structure, image alt tags aur category-to-product internal linking.",
+      "Local SEO + Google Business Profile: Delhi HQ (Pandav Nagar, Ganesh Nagar) NAP consistency, service-area pages aur Maps linkage.",
+      "AEO/GEO: FAQ sections, entity-based copy aur structured content taaki ChatGPT, Perplexity, Gemini aur Google AI Overviews cite kar sakein.",
+      "Lead paths: quote cart, call buttons, WhatsApp, contact forms — har page enquiry ke liye optimized."
     ],
     codeComparison: {
-      beforeSnippet: `<!-- Legacy Unoptimized Code (Blocking Scripts & Heavy DOM) -->
-<head>
-  <script src="jquery-3.2.1.min.js"></script>
-  <script src="heavy-slider.js"></script>
-  <style>/* 1.2MB Unminified CSS */</style>
-</head>
-<body>
-  <img src="banner.png" width="4000" height="2500" />
-  <!-- No Alt Tags, No Schema, High CLS -->
-</body>`,
+      beforeSnippet: `<!-- Pehle: static list, har product haath se add karna padta -->\n<div class="product-list">\n  <div class="item">Fingerprint Device 1</div>\n  <div class="item">Fingerprint Device 2</div>\n  <!-- naya product = HTML edit + upload -->\n</div>\n<!-- No schema, no sitemap logic, no CMS -->`,
       beforeLanguage: "html",
-      afterSnippet: `// Modern Next.js + SEO Optimized Component with JSON-LD Schema
-import Head from 'next/head';
-import Image from 'next/image';
-
-export default function OptimizedProductPage({ product }) {
-  const schemaData = {
-    "@context": "https://schema.org/",
-    "@type": "Product",
-    "name": product.name,
-    "offers": { "@type": "Offer", "price": product.price, "priceCurrency": "INR" }
-  };
-
-  return (
-    <>
-      <Head>
-        <title>Best {product.name} Online | Fast Delivery India</title>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
-      </Head>
-      <Image src={product.img} alt={product.name} width={800} height={500} priority placeholder="blur" />
-    </>
-  );
-}`,
+      afterSnippet: `// Ab: Supabase se dynamic products + Product JSON-LD schema\nimport { createClient } from '@/lib/supabase';\n\nexport async function getProducts(category: string) {\n  const supabase = createClient();\n  const { data } = await supabase\n    .from('products')\n    .select('id, name, slug, price, image, specs')\n    .eq('category', category)\n    .eq('published', true);\n  return data ?? [];\n}\n\n// Har product page par Product + Breadcrumb schema,\n// XML sitemap auto-update, admin panel se publish.`,
       afterLanguage: "typescript"
     },
-    toolsUsed: ["Next.js", "React", "Node.js", "Google Search Console", "Ahrefs", "Google PageSpeed Insights", "Canva"],
-    keywordsTargeted: ["hire SEO specialist India", "seo specialist in Delhi", "technical seo consultant", "e-commerce seo expert", "best seo expert near me", "full stack web developer India"]
+    toolsUsed: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Google Search Console", "Google Business Profile", "Screaming Frog", "Ahrefs / Semrush"],
+    keywordsTargeted: ["biometric attendance system india", "access control systems delhi", "hire seo expert india", "technical seo specialist", "local seo services delhi ncr", "google business profile optimization", "aeo geo ai search optimization", "off page seo backlink services"]
+
   },
   {
-    id: "project-thingbiz-b2b",
-    title: "B2B Tech Platform Organic Growth",
-    category: "Technical SEO & Performance",
-    client: "ThingBiz Technologies",
-    timeline: "3 Months",
-    summary: "Digital marketing overhaul including Google Ads optimization, keyword research, speed tuning, and local SEO dominance in Noida and Delhi NCR.",
-    beforeImageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80",
-    afterImageUrl: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1000&q=80",
-    beforeDescription: "Poor organic reach, missing H1/H2 header tag structure, high Google Ads Cost-Per-Click (CPC), and slow mobile response times.",
-    afterDescription: "Achieved Rank #1 for target service keywords in Delhi NCR, lowered Google Ads CPC by 38%, and scaled inbound leads by 280%.",
+    id: "attendancesolution-website-seo",
+    title: "AttendanceSolution.in — Biometric Software & Services Website (HTML + Tailwind)",
+    category: "Web Development & SEO",
+    client: "MegaMind Technosoft — Attendance Solution division",
+    timeline: "2025 – 2026 · Designed, built & SEO-optimized from scratch",
+    summary:
+      "attendancesolution.in maine scratch se banayi hai — biometric attendance machines ke saath cloud HRMS software ko samjhane wali clean, fast marketing website. HTML, CSS, JavaScript aur Tailwind par built, aur is par bhi full SEO kiya: technical, on-page, local, GBP support, aur AI-search-friendly content.",
+    liveUrl: "https://attendancesolution.in/",
+    stack: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "On-Page SEO", "Local SEO", "AEO/GEO"],
+    beforeImageUrl: "/projects/attendancesolution-home.gif",
+    afterImageUrl: "/projects/attendancesolution-home.gif",
+    beforeDescription:
+      "Pehle software aur hardware ki story alag-alag jagah bikhri thi — user ko samajh nahi aata tha kaunsi device, kaunsa software, aur demo ya quote kahan se le. Search aur Maps se consistent leads nahi aa rahe the.",
+    afterDescription:
+      "Ab ek focused, fast aur SEO-ready website live hai — software features, device compatibility, industries aur support paths ek jagah, clear call/WhatsApp/quote CTAs ke saath. Screenshot upar live homepage ka hai.",
     metrics: [
-      { label: "Search Ranking Position", before: "Position #28", after: "Position #1", improvement: "+27 Positions", unit: "" },
-      { label: "Google Ads ROAS", before: "1.4x", after: "4.8x", improvement: "+242%", unit: "X" },
-      { label: "Mobile Speed Score", before: "41/100", after: "98/100", improvement: "+139%", unit: "pts" },
-      { label: "Monthly Qualified Leads", before: "18", after: "142", improvement: "+688%", unit: "leads/mo" }
+      { label: "Website Build", before: "No dedicated page", after: "Live from scratch", improvement: "New launch", unit: "" },
+      { label: "Core Sections", before: "Scattered info", after: "Software + devices + support", improvement: "One journey", unit: "" },
+      { label: "Lead Actions", before: "Unclear CTAs", after: "Call + WhatsApp + quote", improvement: "Every page", unit: "" },
+      { label: "SEO Foundations Shipped", before: "0", after: "15+ setups", improvement: "Full setup", unit: "" },
+      { label: "Mobile Experience", before: "Desktop-first", after: "Mobile-first Tailwind UI", improvement: "Responsive", unit: "" },
+      { label: "AI-Search Readiness", before: "Unstructured", after: "FAQ + HowTo-style content", improvement: "AEO/GEO ready", unit: "" }
     ],
-    lighthouse: {
-      before: { performance: 41, accessibility: 70, bestPractices: 62, seo: 60, lcp: "4.1s", fid: "180ms", cls: "0.22" },
-      after: { performance: 98, accessibility: 100, bestPractices: 100, seo: 100, lcp: "0.8s", fid: "10ms", cls: "0.01" }
-    },
     technicalHighlights: [
-      "Conducted extensive 500+ long-tail keyword research using Semrush & Ahrefs.",
-      "Optimized Google My Business local listing for Ayodhya & Delhi NCR map pack placement.",
-      "Restructured URL permalink hierarchy and set 301 redirects for broken links.",
-      "Enhanced landing page quality score in Google Ads from 4/10 to 9/10."
+      "HTML + CSS + JavaScript + Tailwind me scratch se lightweight build — bina heavy framework ke fast load.",
+      "On-page SEO: search-intent headings, meta tags, internal links (megamindindia.in ke saath cross-linking), image optimization.",
+      "Technical SEO: semantic HTML, mobile-first responsive layout, sitemap + robots + Search Console setup.",
+      "Local SEO support: Noida/Delhi NCR service areas, Maps + contact consistency, reviews aur citations ka base.",
+      "AEO/GEO: simple FAQ aur software-how-it-works content taaki AI answers me brand mention ho sake.",
+      "Conversion focus: sticky call/WhatsApp buttons, demo/quote forms, device-to-software journey mapping."
     ],
     codeComparison: {
-      beforeSnippet: `<!-- Non-semantic markup without alt tags -->
-<div class="header-box">
-  <div class="big-text">OUR SERVICES</div>
-</div>`,
+      beforeSnippet: `<!-- Pehle: plain page, na structure na SEO -->\n<div>\n  <div>ATTENDANCE SOFTWARE</div>\n  <p>Contact us for details.</p>\n</div>\n<!-- No headings, no meta, no CTAs -->`,
       beforeLanguage: "html",
-      afterSnippet: `<!-- Semantic HTML5 with ARIA & SEO Schema -->
-<header className="mb-8">
-  <h1 className="text-4xl font-extrabold text-white tracking-tight">
-    Enterprise Tech Solutions & SEO Services in Noida
-  </h1>
-</header>`,
-      afterLanguage: "jsx"
+      afterSnippet: `<!-- Ab: semantic HTML + SEO meta + clear CTAs -->\n<header>\n  <h1>Biometric Attendance Software with Cloud HRMS in India</h1>\n  <p>Devices + mobile app + payroll-ready reports — demo lo.</p>\n</header>\n<meta name="description"\n  content="Biometric attendance machines + cloud HRMS software: live demo, installation & support across India." />\n<a href="tel:+919818442254">Call for Free Demo</a>\n<a href="https://wa.me/919696621216">WhatsApp Us</a>`,
+      afterLanguage: "html"
     },
-    toolsUsed: ["React", "Express.js", "Google Ads", "Semrush", "Screaming Frog", "Tailwind CSS"],
-    keywordsTargeted: ["seo executive Noida", "seo specialist near me", "hire seo expert Delhi", "local seo services India", "ai search optimization India", "organic website traffic growth"]
+    toolsUsed: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Google Search Console", "Google Business Profile", "PageSpeed Insights"],
+    keywordsTargeted: ["biometric attendance software india", "attendance management system delhi", "hire seo expert india", "on page seo services", "local seo services noida", "google business profile expert", "technical seo specialist", "backlink building services"]
+
   }
 ];
 
+// Sample demo data for the interactive SEO tools playground (clearly labeled
+// as "Sample/Demo" in the UI — not client results).
 export const SEO_METRIC_TRENDS: SeoMetricTrend[] = [
-  { date: "Month 1", organicTraffic: 1200, serpPosition: 42, domainRating: 14, backlinks: 38 },
-  { date: "Month 2", organicTraffic: 4800, serpPosition: 24, domainRating: 21, backlinks: 120 },
-  { date: "Month 3", organicTraffic: 14200, serpPosition: 12, domainRating: 30, backlinks: 390 },
-  { date: "Month 4", organicTraffic: 32000, serpPosition: 5, domainRating: 39, backlinks: 850 },
-  { date: "Month 5", organicTraffic: 58400, serpPosition: 2, domainRating: 46, backlinks: 1420 }
+  { date: "Week 1", organicTraffic: 1200, serpPosition: 28, domainRating: 18, backlinks: 12 },
+  { date: "Week 2", organicTraffic: 2400, serpPosition: 22, domainRating: 21, backlinks: 24 },
+  { date: "Week 3", organicTraffic: 5100, serpPosition: 16, domainRating: 24, backlinks: 48 },
+  { date: "Week 4", organicTraffic: 6800, serpPosition: 14, domainRating: 26, backlinks: 64 },
+  { date: "Week 5", organicTraffic: 8400, serpPosition: 12, domainRating: 28, backlinks: 86 }
 ];
 
+// Sample demo backlink rows for the dashboard playground UI.
 export const BACKLINKS_DATA: BacklinkItem[] = [
-  { domain: "techcrunch.com", authority: 92, type: "Dofollow", status: "Active", targetPage: "/services/technical-seo" },
-  { domain: "github.com", authority: 96, type: "Dofollow", status: "Active", targetPage: "/projects/react-next-seo" },
-  { domain: "dev.to", authority: 84, type: "Dofollow", status: "Active", targetPage: "/blog/core-web-vitals-guide" },
-  { domain: "medium.com", authority: 89, type: "Dofollow", status: "Monitored", targetPage: "/blog/white-hat-seo-tactics" },
-  { domain: "hashnode.dev", authority: 78, type: "Dofollow", status: "Active", targetPage: "/projects/case-study" },
-  { domain: "producthunt.com", authority: 90, type: "Dofollow", status: "New", targetPage: "/" }
+  { domain: "example-news-site.com", authority: 72, type: "Dofollow", status: "Active", targetPage: "/services/technical-seo" },
+  { domain: "example-dev-blog.com", authority: 65, type: "Dofollow", status: "Active", targetPage: "/projects/megamindindia-dynamic-website-seo" },
+  { domain: "example-forum.com", authority: 58, type: "Nofollow", status: "Monitored", targetPage: "/blog/" },
+  { domain: "example-directory.com", authority: 52, type: "Dofollow", status: "Monitored", targetPage: "/services/local-seo" },
+  { domain: "example-magazine.com", authority: 68, type: "Dofollow", status: "Active", targetPage: "/case-studies/megamindindia-dynamic-website-seo" },
+  { domain: "example-startup-list.com", authority: 61, type: "Nofollow", status: "New", targetPage: "/" }
 ];
 
 // ============================================================
@@ -403,12 +377,12 @@ export const INTERNATIONAL_COVERAGE = [
 ] as const;
 
 export const WHY_HIRE = [
-  { metric: "200+ Sites", label: "optimized across India & worldwide" },
-  { metric: "100+ Cities", label: "served across India + global clients" },
-  { metric: "4,766%", label: "avg. organic traffic growth" },
-  { metric: "99/100", label: "Core Web Vitals achieved" },
-  { metric: "Top-3", label: "targeted search visibility" },
-  { metric: "AI Ready", label: "citations in AI Overviews & ChatGPT" }
+  { metric: "2 Live Sites", label: "designed, built & SEO-optimized from scratch" },
+  { metric: "2+ Years", label: "SEO + web development experience" },
+  { metric: "Full-Stack", label: "Next.js, Tailwind, Supabase builds" },
+  { metric: "SEO + AEO + GEO", label: "technical, local, GBP & AI search" },
+  { metric: "Pan-India", label: "Delhi NCR based, remote worldwide" },
+  { metric: "White Hat", label: "ethical SEO practices only" }
 ] as const;
 
 export const SEO_KEYWORD_CITIES = [

@@ -70,7 +70,7 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
               Client: {cs.client}
             </span>
             <span className="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-white/70">
-              Timeline: {cs.timeline}
+              {cs.timeline}
             </span>
           </div>
 
@@ -81,6 +81,35 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
           <p className="text-sm sm:text-base text-white/80 leading-relaxed font-light">
             {cs.summary}
           </p>
+
+          <div className="flex flex-wrap items-center gap-2 pt-1">
+            <a
+              href={cs.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-400 text-black text-xs font-mono font-black uppercase tracking-widest hover:bg-emerald-300 transition-colors shadow-lg"
+            >
+              Visit Live Website — {cs.liveUrl.replace("https://", "").replace("www.", "").replace(/\/$/, "")}
+            </a>
+          </div>
+
+          <div className="flex flex-wrap gap-2 pt-1">
+            {cs.stack.map((tech, tIdx) => (
+              <span key={tIdx} className="px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-[11px] font-mono text-emerald-300">
+                {tech}
+              </span>
+            ))}
+          </div>
+
+          <div className="rounded-2xl overflow-hidden border border-white/10 bg-black">
+            <img
+              src={cs.afterImageUrl}
+              alt={`${cs.title} — live homepage screenshot`}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-60 sm:h-96 object-cover object-top"
+            />
+          </div>
         </header>
 
         {/* Case Study Overview & Breakdown Section */}
@@ -91,7 +120,7 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyPageProps
               {cs.title} — Strategy &amp; Results Breakdown
             </h2>
             <p className="text-xs sm:text-sm text-white/60">
-              A 5-stage technical analysis, implementation roadmap, and verified organic growth metrics for {cs.client}.
+              Maine is live website ko scratch se design, develop aur SEO-optimize kiya — neeche poora breakdown (problem, kaam, aur shipped setup) diya hai.
             </p>
           </div>
 

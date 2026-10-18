@@ -29,7 +29,7 @@ export const mockWebsiteAnalysis: WebsiteAnalysis = {
       type: "page",
       url: "/",
       title: "Rohit Gupta - Technical SEO Specialist & Full Stack Developer",
-      metaDescription: "Expert Technical SEO Specialist ranking 200+ websites #1 on Google. Core Web Vitals, JSON-LD Schema, White-Hat SEO & Next.js engineering.",
+      metaDescription: "Expert Technical SEO Specialist ranking live client websites #1 on Google. Core Web Vitals, JSON-LD Schema, White-Hat SEO & Next.js engineering.",
       h1: "Technical SEO & Full Stack Engineering",
       indexable: true,
       internalLinks: 12,

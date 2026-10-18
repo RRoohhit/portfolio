@@ -151,8 +151,8 @@ Use this when you're shortlisting candidates:
 
 Rohit Gupta is a freelance web developer and SEO expert based in Noida with a verifiable track record:
 
-- Core Web Vitals: 99/100 Lighthouse scores achieved across every client site
-- White Hat Approach: Zero manual actions across 5+ years of client engagements
+- Core Web Vitals: fast, mobile-first, SEO-ready builds from scratch
+- White Hat Approach: 100% white-hat practices, Google guidelines ke andar
 - Technical Depth: Directly implements fixes in Next.js, WordPress, and Shopify codebases
 - AEO Ready: Actively optimising for AI Overview citations using AEO tools available in India
 - Transparent Reporting: GA4 + GSC revenue attribution on every retainer

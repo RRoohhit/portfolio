@@ -163,13 +163,6 @@ export function organizationGraph(): object {
         "availableLanguage": ["en", "hi"],
         "currenciesAccepted": "INR",
         "paymentAccepted": "UPI, Bank Transfer, PayPal",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "47",
-          "bestRating": "5",
-          "worstRating": "1",
-        },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "SEO & Web Development Services",

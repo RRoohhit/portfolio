@@ -5,16 +5,16 @@ import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "SEO Case Studies & Rank #1 Results | Rohit Gupta India",
+  title: "Live Website Projects Built From Scratch | Rohit Gupta India",
   description:
-    "Verified SEO case studies: 4,766% organic traffic growth, 99/100 Core Web Vitals and Rank #Google results for Noida, Delhi & India businesses.",
+    "Two live websites designed, built and SEO-optimized from scratch by Rohit Gupta: MegaMind India (Next.js + Supabase dynamic site) and AttendanceSolution.in (HTML + Tailwind) — technical SEO, on-page, local SEO, GBP, AEO & GEO.",
   path: "/projects",
   keywords: [
-    "SEO case studies",
-    "technical SEO portfolio",
-    "Core Web Vitals results",
-    "SEO specialist Noida",
-    "SEO results India",
+    "live website projects",
+    "nextjs supabase portfolio",
+    "web developer portfolio india",
+    "seo specialist Noida",
+    "seo optimized websites",
   ],
 });
 

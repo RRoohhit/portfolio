@@ -57,7 +57,7 @@ export default function NotFound() {
             <FolderGit2 className="w-6 h-6 text-emerald-400" />
             <h3 className="text-sm font-bold text-white">Case Studies</h3>
             <p className="text-xs text-white/60">
-              Verified Rank #1 &amp; 4,766% traffic growth proof.
+              Live websites built from scratch with full SEO.
             </p>
           </div>
           <span className="text-xs font-mono font-bold text-emerald-400 flex items-center gap-1.5">

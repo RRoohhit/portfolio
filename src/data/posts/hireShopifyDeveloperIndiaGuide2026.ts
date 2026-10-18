@@ -276,7 +276,7 @@ A Shopify developer is not a luxury — for a store that matters, it is a necess
 
 When hiring, remember the pattern: the best developers talk about business outcomes — sales, speed, organic traffic — because that is what a store is actually for. Find that person and your store becomes an asset that compounds.
 
-If you want a Shopify store built right, or an existing store fixed for speed, SEO and conversions, I would be glad to help. I am Rohit Gupta, a developer and SEO expert who has built and optimised 200+ websites — including WordPress and Shopify stores. Explore my [e-commerce SEO services](/services/ecommerce-seo/), my [web development services](/services/web-development/), the [WordPress vs Shopify companion guide](/blog/wordpress-vs-shopify-2026-complete-guide/), or [contact me](/contact/) to talk about your store.
+If you want a Shopify store built right, or an existing store fixed for speed, SEO and conversions, I would be glad to help. I am Rohit Gupta, a developer and SEO expert who has built and optimised live client websites — including WordPress and Shopify stores. Explore my [e-commerce SEO services](/services/ecommerce-seo/), my [web development services](/services/web-development/), the [WordPress vs Shopify companion guide](/blog/wordpress-vs-shopify-2026-complete-guide/), or [contact me](/contact/) to talk about your store.
 ---`,
   faqs: [
     {

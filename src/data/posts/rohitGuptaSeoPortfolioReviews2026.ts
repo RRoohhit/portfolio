@@ -36,7 +36,7 @@ export const rohitGuptaSeoPortfolioReviews2026: BlogPost = {
     {
       question: "Who is Rohit Gupta and what does he do?",
       answer:
-        "Rohit Gupta is an SEO specialist and full stack web developer based in Noida (Sector 66), Uttar Pradesh, serving clients across Delhi NCR, India and worldwide. He combines technical SEO, white hat link building, local SEO, AI search optimization (AEO/GEO) and high-performance web development in one accountable service, which means the person who plans the SEO also builds and fixes the website. He has worked on 200+ websites across every type of business, from local shops and clinics to e-commerce stores and SaaS startups, and he offers free technical SEO audits to new clients.",
+        "Rohit Gupta is an SEO specialist and full stack web developer based in Noida (Sector 66), Uttar Pradesh, serving clients across Delhi NCR, India and worldwide. He combines technical SEO, white hat link building, local SEO, AI search optimization (AEO/GEO) and high-performance web development in one accountable service, which means the person who plans the SEO also builds and fixes the website. He has worked on live client websites across every type of business, from local shops and clinics to e-commerce stores and SaaS startups, and he offers free technical SEO audits to new clients.",
     },
     {
       question: "What services does Rohit Gupta offer?",
@@ -46,7 +46,7 @@ export const rohitGuptaSeoPortfolioReviews2026: BlogPost = {
     {
       question: "What do Rohit Gupta's clients say about him?",
       answer:
-        "Clients consistently describe Rohit as technical, transparent and reliable:they value that he explains SEO in plain language, shows real numbers in Search Console, fixes code himself instead of writing tickets, and reports honestly including what is not working yet. His reviews highlight three patterns:fast technical fixes that improve site speed and indexation;real ranking and traffic growth within 3 to 6 months;and a working relationship where the client always knows what was done and what comes next. His Google Business Profile carries a 4.9/5 rating across dozens of reviews, and he shares case studies with real before-and-after numbers on his site.",
+        "Clients consistently describe Rohit as technical, transparent and reliable: they value that he explains SEO in plain language, fixes code himself instead of writing tickets, and reports honestly including what is not working yet. His live work proof is two websites designed, built and SEO-optimized from scratch — megamindindia.in and attendancesolution.in — which you can open and check yourself.",
     },
     {
       question: "How much does Rohit Gupta charge for SEO services?",
@@ -118,7 +118,7 @@ Rather than curating a highlight reel, here are the patterns that come up again 
 - **Real growth on a realistic timeline.** Reviews reflect the truth I state upfront:meaningful movement in 8 to 12 weeks, page one positions in 3 to 6 months, and compounding beyond. Clients who stay past six months describe the growth as steadily compounding rather than dramatic and fragile.
 - **A professional, reliable process.** Defined deliverables, monthly reviews, clear next steps, and a single accountable person who answers messages within hours not days. For busy owners who had been burned by agencies, this reliability is often the highest-rated quality.
 
-The [testimonials](/testimonials/) page carries the structured reviews, and my Google Business Profile shows the 4.9/5 rating. I invite you to read them skeptically, the way you should, and then to test me directly with the free audit offered on this site, because in the end, the only review that matters is the one from your own experience of the work.
+The [testimonials](/testimonials/) page carries my work summary, and the [projects](/projects/) page carries both live websites. I invite you to open them and check everything yourself, and then to test me directly with the free audit offered on this site, because in the end, the only review that matters is the one from your own experience of the work.
 
 
 ## Chapter 4: How I Price, and Why It is Transparent
@@ -151,5 +151,5 @@ If the profile above holds up to your scrutiny, here is exactly what the journey
 
 If you take one thing from this page, take this:hire the freelancer you can verify, and the only verification that matters is the one you can do yourself. My entire practice is built to survive your skepticism:real case studies with numbers, public methodology guides, transparent pricing, honest reporting and a free audit that proves the work before you pay for it.
 
-I built this portfolio with a simple belief, the same one I hold for every client:search visibility is a system you run with discipline, not a trick you buy once, and the people who own that system outrun the people who rent results. My name is Rohit Gupta, I am based in Noida and Ayodhya, I have served 200+ websites across India and worldwide, and my doors and my audit reports are open. If you want to test the system for yourself, start with the [free technical SEO audit](/seo-audit/), or simply call me at +91 96966 21216 and ask me the hard questions directly. I would rather you test me thoroughly and hire me for my work, than trust me quickly and disappear in a month.`
+I built this portfolio with a simple belief, the same one I hold for every client:search visibility is a system you run with discipline, not a trick you buy once, and the people who own that system outrun the people who rent results. My name is Rohit Gupta, I am based in Noida and Ayodhya, I have served live client websites across India and worldwide, and my doors and my audit reports are open. If you want to test the system for yourself, start with the [free technical SEO audit](/seo-audit/), or simply call me at +91 96966 21216 and ask me the hard questions directly. I would rather you test me thoroughly and hire me for my work, than trust me quickly and disappear in a month.`
 };

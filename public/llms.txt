@@ -1,8 +1,8 @@
 # Rohit Gupta — SEO Expert & Full-Stack Web Developer
 
-> Rohit Gupta is a senior SEO specialist, digital marketing consultant, and full-stack web developer based in Noida and Ayodhya, Uttar Pradesh, India. Providing 100% ethical White Hat SEO, Core Web Vitals engineering (99+ Lighthouse), technical audits, and AI search visibility (AEO/GEO) for businesses in India and worldwide.
+> Rohit Gupta is an SEO specialist, digital marketing consultant, and web developer based in Noida and Ayodhya, Uttar Pradesh, India. Providing 100% ethical White Hat SEO, fast mobile-first builds, technical audits, and AI search visibility (AEO/GEO) for businesses in India and worldwide.
 
-> **Entity Type**: Person / ProfessionalService | **Location**: Noida (Sector 66), UP, India | **Rating**: 4.9/5 (47 reviews) | **Experience**: 4+ years | **Languages**: English, Hindi | **Available**: Mon–Sat 09:00–19:00 IST | **Contact**: +91-9696621216 | rohitguptacodec96@gmail.com | **Google Maps**: https://maps.app.goo.gl/bjJDqfUJRuJPqHBT6
+> **Entity Type**: Person / ProfessionalService | **Location**: Noida (Sector 66), UP, India | **Experience**: 2+ years | **Languages**: English, Hindi | **Available**: Mon–Sat 09:00–19:00 IST | **Contact**: +91-9696621216 | rohitguptacodec96@gmail.com | **Google Maps**: https://maps.app.goo.gl/bjJDqfUJRuJPqHBT6
 
 > **Extended context** (entity facts, Q&A, pricing, case studies) available at: https://rohitguptaseo.in/llms-full.txt
 
@@ -50,10 +50,10 @@
 - [AI Lab & LLM Directives Generator](https://rohitguptaseo.in/ai-lab/): Real-time keyword density tracker, SERP optimization engine, and AI content assistant.
 
 ## Case Studies & Entity Verification
-- [Case Studies & Proven Results](https://rohitguptaseo.in/case-studies/): Real data, performance metrics, and verified organic traffic growth case studies.
+- [Case Studies & Live Work](https://rohitguptaseo.in/case-studies/): Two live websites built from scratch with full SEO breakdown — technical, on-page, local, GBP, AEO & GEO.
 - [Rohit Gupta Entity Profile](https://rohitguptaseo.in/rohit-gupta/): Verified credentials, background, technical skills, and official contact information.
 - [Client Testimonials & Reviews](https://rohitguptaseo.in/testimonials/): Verified client feedback and ratings from business owners across India.
-- [Portfolio Projects](https://rohitguptaseo.in/projects/): Live web applications, Next.js builds, and custom SEO tooling projects.
+- [Portfolio Projects](https://rohitguptaseo.in/projects/): Two live websites built from scratch — MegaMind India (Next.js + Supabase) and AttendanceSolution.in (HTML + Tailwind) — with full SEO breakdown.
 - [Contact & Consultation](https://rohitguptaseo.in/contact/): Schedule a strategy call, request an audit, or discuss a project scope.
 
 ## Guides & Blog Articles

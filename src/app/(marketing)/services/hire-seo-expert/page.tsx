@@ -90,8 +90,8 @@ const WHY_HIRE_ROHIT = [
   },
   {
     icon: TrendingUp,
-    title: "Proven 4,700%+ Organic Traffic Growth",
-    desc: "I've scaled niche portals, e-commerce stores, and B2B platforms to top-3 rankings on tough commercial keywords — and I can show you the actual before/after data.",
+    title: "Live Websites Built From Scratch + Full SEO",
+    desc: "Maine do live websites scratch se banayi hain — dynamic catalog, admin panel aur full SEO setup ke saath — aur live links portfolio me diye hain taaki khud check kar sako.",
   },
   {
     icon: Globe,

@@ -83,7 +83,7 @@ My content checklist for ranking pages:
 
 Page one results in 2026 are technically clean. My [technical SEO audit](/seo-audit/) checklist for every ranking page:
 
-- Pass Core Web Vitals in field data, not just lab — LCP under 2.5 s, INP under 200 ms, CLS under 0.1 (aim for 99+/100 Lighthouse)
+- Pass Core Web Vitals in field data, not just lab — LCP under 2.5 s, INP under 200 ms, CLS under 0.1 (aim for strong Lighthouse)
 - Every page indexable, with one canonical, crawlable by Googlebot
 - Inner pages reached within 3 clicks from home — flat architecture
 - Internal links with descriptive, consistent anchors

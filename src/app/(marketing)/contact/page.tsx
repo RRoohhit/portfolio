@@ -95,7 +95,7 @@ const CORE_SERVICES_LINKS = [
   { title: "WordPress Development", href: "/services/wordpress-development/", desc: "Fast Gutenberg themes, WooCommerce stores, and clean code." },
   { title: "Full-Stack Web Development", href: "/services/web-development/", desc: "High-performance React & Next.js web applications." },
   { title: "Free Technical SEO Audit", href: "/seo-audit/", desc: "Automated instant technical diagnosis and ranking bottlenecks check." },
-  { title: "Verified Case Studies", href: "/case-studies/", desc: "Real client ranking proofs, traffic data, and revenue evidence." },
+  { title: "Live Client Work", href: "/case-studies/", desc: "Two live websites built from scratch with full SEO breakdown." },
   { title: "About Rohit Gupta", href: "/rohit-gupta/", desc: "Full biography, technical certifications, and entity credentials." },
   { title: "SEO & Growth Blog", href: "/blog/", desc: "Actionable 2026 ranking tutorials, algorithm guides, and tools reviews." },
 ];

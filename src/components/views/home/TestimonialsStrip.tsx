@@ -7,31 +7,22 @@ import { Reveal } from "@/components/ui/Reveal";
 
 const STRIP_REVIEWS = [
   {
-    name: "Megamind Technosoft Team",
-    company: "Megamind Technosoft",
-    location: "Delhi, India",
-    service: "Full Stack Development & Technical SEO",
+    name: "MegaMind Technosoft — Delhi",
+    company: "Full Stack Development & Technical SEO",
+    location: "megamindindia.in + attendancesolution.in — built from scratch",
+    service: "Next.js · Supabase · HTML/Tailwind · SEO + AEO + GEO",
     rating: 5,
     quote:
-      "Rohit transformed our web performance and technical SEO architecture. Our Core Web Vitals went from failing grades to top 99/100 Lighthouse scores, and organic traffic increased substantially.",
+      "Dono live websites scratch se design, develop aur SEO-optimize ki — dynamic catalog, admin panel, on-page/technical SEO aur AI-search-ready content ke saath.",
   },
   {
-    name: "Thingbiz Management",
-    company: "Thingbiz Hightech Pvt. Ltd.",
-    location: "Noida, UP",
-    service: "Google Ads & Local SEO",
+    name: "Thingbiz Hightech — Noida",
+    company: "On-Page, Off-Page & Local SEO",
+    location: "Client portals · keyword research · Google Ads",
+    service: "White-hat SEO · technical audits · campaign optimization",
     rating: 5,
     quote:
-      "Working with Rohit on our Google Ads and local SEO positioning delivered impressive ROI. He restructured our campaigns and technical setup, giving us steady qualified inbound leads.",
-  },
-  {
-    name: "Ayodhya Heritage Stays",
-    company: "Ayodhya Hospitality Partner",
-    location: "Ayodhya, UP",
-    service: "Local SEO & Google Maps Ranking",
-    rating: 5,
-    quote:
-      "Rohit optimized our Google Business Profile and local citations in Ayodhya. We saw a dramatic rise in direct calls and Map Pack visibility for local tourism and stay searches.",
+      "Client portals par on-page, off-page aur technical SEO plus Google Ads optimization — clean white-hat workflow me kaam kiya.",
   },
 ];
 
@@ -51,10 +42,10 @@ export const TestimonialsStrip: React.FC = () => {
       <Reveal className="space-y-3 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 text-[10px] font-mono uppercase tracking-widest font-bold">
           <BadgeCheck className="w-3 h-3" />
-          <span>Verified Client Results</span>
+          <span>Live client work — Delhi & Noida</span>
         </div>
         <p id="social-proof-heading" className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
-          Businesses That <span className="text-gradient">Trust Rohit</span>
+          Work I <span className="text-gradient">Actually Did</span>
         </p>
         <div className="flex items-center justify-center gap-2 pt-1">
           <div className="flex items-center gap-1">
@@ -62,11 +53,11 @@ export const TestimonialsStrip: React.FC = () => {
               <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
             ))}
           </div>
-          <span className="text-xs font-mono text-white/70">5.0 average rating · verified clients</span>
+          <span className="text-xs font-mono text-white/70">2 work engagements · Delhi & Noida</span>
         </div>
       </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
         {STRIP_REVIEWS.map((review, idx) => (
           <Reveal key={review.company} delay={idx * 0.08} className="h-full">
             <div className="card-3d-interactive p-5 sm:p-6 space-y-4 h-full flex flex-col relative overflow-hidden group">

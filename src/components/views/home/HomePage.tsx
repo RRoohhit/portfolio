@@ -97,7 +97,7 @@ const SERVICES = [
     icon: Layers,
     title: "White Hat SEO Firm & Technical Audits",
     desc: "Deep crawl analysis, Schema JSON-LD structured data, and ethical link acquisition aligned with Google Search Essentials.",
-    highlights: ["Zero Penalty Risk", "Core Web Vitals Fix", "1,400+ Quality Backlinks"],
+    highlights: ["Zero Penalty Risk", "Core Web Vitals Focus", "White-Hat Links Only"],
     color: "teal",
   },
 ];
@@ -105,8 +105,8 @@ const SERVICES = [
 const HERO_STATS = [
   { value: "100%", label: "White Hat SEO", icon: ShieldCheck, color: "emerald" },
   { value: "2+", label: "Years Experience", icon: Award, color: "amber" },
-  { value: "99+", label: "Lighthouse Performance", icon: Gauge, color: "blue" },
-  { value: "Data", label: "Driven Strategy", icon: Star, color: "violet" },
+  { value: "2", label: "Live Sites Built", icon: Gauge, color: "blue" },
+  { value: "SEO", label: "+ AEO + GEO", icon: Star, color: "violet" },
 ];
 
 const WEB_VITALS_METRICS = [
@@ -356,14 +356,14 @@ export const HomePage: React.FC = () => {
             <div className="space-y-1.5">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-mono uppercase font-bold tracking-widest">
                 <FastForward className="w-3.5 h-3.5 text-emerald-400" />
-                <span>Sub-Second Performance &amp; Google Core Web Vitals</span>
+                <span>Fast, Mobile-First, SEO-Ready Builds</span>
               </div>
               <p className="text-base sm:text-xl lg:text-2xl font-black text-white uppercase tracking-tight leading-tight">
-                Verified 99–100/100 Lighthouse Performance Benchmarks
+                Core Web Vitals Ka Poora Dhyan Har Build Me
               </p>
             </div>
             <div className="btn-3d-emerald text-[10px] sm:text-xs py-2 px-4 shrink-0 pointer-events-none">
-              ⚡ Lighthouse 99/100 Certified
+              ⚡ Speed + SEO, Dono Saath
             </div>
           </div>
 
