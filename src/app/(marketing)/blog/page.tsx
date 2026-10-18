@@ -5,9 +5,9 @@ import { buildPageMetadata } from "@/lib/seo";
 import { breadcrumbGraph, renderJsonLd } from "@/lib/jsonld";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "SEO Blog & Technical Hiring Guides | Rohit Gupta",
+  title: "SEO Blog: Technical SEO, AEO/GEO, Local Leads & AI Search | Rohit Gupta",
   description:
-    "Read actionable SEO articles and hiring guides on technical SEO, Core Web Vitals, white-hat link building, and Next.js development by Rohit Gupta.",
+    "Actionable SEO guides by Rohit Gupta: technical SEO, Core Web Vitals, AEO/GEO AI citations, Google Business Profile leads, Noida Delhi Gurgaon local SEO + 32 lead playbooks.",
   path: "/blog",
   keywords: [
     "SEO blog",

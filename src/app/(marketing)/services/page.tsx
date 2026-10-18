@@ -130,7 +130,7 @@ const FAQS = [
   {
     question: "Do you offer all these services for one monthly price?",
     answer:
-      "Yes — the Complete Website SEO package bundles everything (SEO, local listing, content, backlinks) at a single monthly rate. Ads and social media can be added as separate monthly services. Every plan is transparent with no hidden fees and you can cancel anytime.",
+      "Yes — the Complete Website SEO package bundles everything (SEO, local listing, content, backlinks) at one monthly price decided according to work, typically ₹15k–₹40k. Ads and social media can be added as separate monthly services. Every plan is transparent with no hidden fees and you can cancel anytime.",
   },
 ];
 export default function ServicesPage() {
@@ -237,10 +237,10 @@ export default function ServicesPage() {
             </div>
 
             <div className="flex flex-col items-center gap-4 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10 text-center">
-              <div className="text-xs font-mono uppercase tracking-widest text-white/50 font-bold">Starting at</div>
-              <div className="text-4xl sm:text-5xl font-black text-white font-mono">₹15,000<span className="text-lg text-white/50">/mo</span></div>
+              <div className="text-xs font-mono uppercase tracking-widest text-white/50 font-bold">According to work</div>
+              <div className="text-4xl sm:text-5xl font-black text-white font-mono">₹15k–₹40k<span className="text-lg text-white/50">/mo</span></div>
               <p className="text-xs text-white/60 leading-relaxed max-w-xs">
-                One transparent monthly rate. Includes free SEO audit worth ₹5,000. No hidden fees, cancel anytime.
+                No fixed one-size price — final quote depends on work scope. Includes free SEO audit worth ₹5,000. No hidden fees, cancel anytime.
               </p>
               <Link
                 href="/contact/"

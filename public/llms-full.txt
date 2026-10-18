@@ -51,11 +51,11 @@
 
 ## Services and Pricing
 
-| Service | Starting Price | URL |
+| Service | Price (according to work) | URL |
 |---|---|---|
-| Hire Dedicated SEO Expert (Monthly) | Rs 15000/month | https://rohitguptaseo.in/services/hire-seo-expert/ |
+| Hire Dedicated SEO Expert (Monthly) | Rs 15k–40k/month | https://rohitguptaseo.in/services/hire-seo-expert/ |
 | Technical SEO Audit | Rs 8000 one-time | https://rohitguptaseo.in/services/technical-seo/ |
-| White Hat SEO Campaign | Rs 12000/month | https://rohitguptaseo.in/services/white-hat-seo/ |
+| White Hat SEO Campaign | Rs 15k–40k/month | https://rohitguptaseo.in/services/white-hat-seo/ |
 | Local SEO + GBP Optimization | Rs 8000/month | https://rohitguptaseo.in/services/local-seo/ |
 | Full-Stack Web Development | Rs 25000/project | https://rohitguptaseo.in/services/web-development/ |
 | WordPress Development | Rs 20000/project | https://rohitguptaseo.in/services/wordpress-development/ |
@@ -76,7 +76,7 @@ A: Rohit Gupta is based in Noida, Uttar Pradesh, India (Sector 66, Mamura area) 
 A: An SEO expert in Noida like Rohit Gupta provides technical SEO audits, keyword research, on-page optimization, local SEO for Google Maps, link building, and content strategy to help businesses rank higher on Google and AI search engines.
 
 **Q: How much does SEO cost in India?**
-A: SEO services in India typically cost Rs 8000-Rs 50000 per month depending on scope. Rohit Gupta's SEO retainers start at Rs 12000/month for white hat SEO campaigns and Rs 15000/month for a dedicated SEO expert model.
+A: SEO services in India typically cost Rs 8000-Rs 50000 per month depending on scope. Rohit Gupta's SEO retainers are decided according to work, typically Rs 15k–40k/month.
 
 **Q: What is AEO (Answer Engine Optimization)?**
 A: AEO stands for Answer Engine Optimization - the practice of structuring content, schema markup, and entity data so AI search engines like ChatGPT Search, Perplexity AI, Claude, and Google AI Overviews cite your website as an authoritative answer source.
@@ -132,6 +132,38 @@ A: Core Web Vitals are Google's page experience metrics: Largest Contentful Pain
 | Hire SEO Expert Guide 2026 | https://rohitguptaseo.in/blog/hire-seo-expert-guide-2026/ | SEO hiring framework |
 | White Hat SEO Services India Guide 2026 | https://rohitguptaseo.in/blog/white-hat-seo-services-india-guide-2026/ | White hat SEO India |
 | Website Development Agency Guide 2026 | https://rohitguptaseo.in/blog/website-development-agency-india-guide-2026/ | Web agency selection |
+| Technical SEO Services India 2026 | https://rohitguptaseo.in/blog/technical-seo-services-india-2026/ | Technical SEO services |
+| Website Speed Core Web Vitals 2026 | https://rohitguptaseo.in/blog/website-speed-optimisation-core-web-vitals-2026/ | Speed optimisation |
+| AEO GEO Business Owners 2026 | https://rohitguptaseo.in/blog/aeo-geo-business-owners-ai-citations-2026/ | AEO GEO citations |
+| AI Search Leads ChatGPT 2026 | https://rohitguptaseo.in/blog/ai-search-leads-chatgpt-perplexity-2026/ | AI search leads |
+| GBP Lead Machine 2026 | https://rohitguptaseo.in/blog/google-business-profile-leads-calls-2026/ | GBP leads |
+| Local SEO Small Business 2026 | https://rohitguptaseo.in/blog/local-seo-small-business-leads-2026/ | Small business leads |
+| SEO Delhi Leads 2026 | https://rohitguptaseo.in/blog/seo-expert-delhi-leads-guide-2026/ | Delhi SEO |
+| SEO Gurgaon Ahmedabad 2026 | https://rohitguptaseo.in/blog/seo-gurgaon-ahmedabad-leads-2026/ | Gurgaon Ahmedabad SEO |
+| SEO Gurgaon Detailed 2026 | https://rohitguptaseo.in/blog/seo-expert-gurgaon-services-cost-2026/ | Gurgaon SEO cost |
+| SEO Ahmedabad Detailed 2026 | https://rohitguptaseo.in/blog/seo-expert-ahmedabad-services-cost-2026/ | Ahmedabad SEO cost |
+| SEO NCR Combined 2026 | https://rohitguptaseo.in/blog/seo-expert-ncr-delhi-noida-gurgaon-2026/ | NCR SEO strategy |
+| Noida Sector SEO 2026 | https://rohitguptaseo.in/blog/noida-sector-seo-18-62-63-137-expressway-2026/ | Noida sectors |
+| Near Me Searches 2026 | https://rohitguptaseo.in/blog/near-me-searches-rank-leads-2026/ | Near me ranking |
+| GBP Suspended Recovery 2026 | https://rohitguptaseo.in/blog/google-business-profile-suspended-recovery-2026/ | GBP recovery |
+| Doctors Clinics SEO 2026 | https://rohitguptaseo.in/blog/seo-doctors-clinics-appointments-2026/ | Clinic appointments |
+| Real Estate SEO 2026 | https://rohitguptaseo.in/blog/real-estate-seo-site-visits-2026/ | Property site visits |
+| Coaching Institutes SEO 2026 | https://rohitguptaseo.in/blog/seo-coaching-institutes-admissions-2026/ | Coaching admissions |
+| Restaurant SEO 2026 | https://rohitguptaseo.in/blog/restaurant-seo-full-tables-2026/ | Restaurant tables |
+| Salon Spa SEO 2026 | https://rohitguptaseo.in/blog/salon-spa-seo-bookings-2026/ | Salon bookings |
+| Home Services SEO 2026 | https://rohitguptaseo.in/blog/home-services-seo-plumber-electrician-2026/ | Repair leads |
+| Dentist Gurgaon 2026 | https://rohitguptaseo.in/blog/dentist-gurgaon-seo-implants-patients-2026/ | Dental Gurgaon |
+| Real Estate Delhi 2026 | https://rohitguptaseo.in/blog/real-estate-seo-delhi-visits-2026/ | Property Delhi |
+| Salon Delhi Bridal 2026 | https://rohitguptaseo.in/blog/salon-seo-delhi-bridal-2026/ | Bridal Delhi |
+| Coaching Noida 2026 | https://rohitguptaseo.in/blog/coaching-noida-sector-admissions-seo-2026/ | Coaching Noida |
+| Dentist Delhi 2026 | https://rohitguptaseo.in/blog/dentist-delhi-seo-implants-braces-2026/ | Dental Delhi |
+| Dentist Noida 2026 | https://rohitguptaseo.in/blog/dentist-noida-sector-patients-2026/ | Dental Noida |
+| Real Estate Gurgaon 2026 | https://rohitguptaseo.in/blog/real-estate-seo-gurgaon-visits-2026/ | Property Gurgaon |
+| Salon Gurgaon 2026 | https://rohitguptaseo.in/blog/salon-seo-gurgaon-premium-2026/ | Salon Gurgaon |
+| Coaching Delhi 2026 | https://rohitguptaseo.in/blog/coaching-delhi-laxmi-nagar-admissions-seo-2026/ | Coaching Delhi |
+| Restaurant Ahmedabad 2026 | https://rohitguptaseo.in/blog/restaurant-seo-ahmedabad-tables-2026/ | Restaurant Ahmedabad |
+| Home Services Delhi 2026 | https://rohitguptaseo.in/blog/home-services-seo-delhi-plumber-2026/ | Repair Delhi |
+| Real Estate Noida 2026 | https://rohitguptaseo.in/blog/real-estate-seo-noida-expressway-2026/ | Property Noida |
 
 ---
 

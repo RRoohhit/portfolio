@@ -167,7 +167,7 @@ const HIRE_FAQS = [
   {
     question: "How much does it cost to hire an SEO expert in India?",
     answer:
-      "It honestly depends on your goals. A one-time technical audit usually runs ₹8,000 to ₹20,000, while an ongoing monthly retainer with me is typically in the ₹15,000 to ₹60,000 range depending on how much content, link building, and development you need. You'll always know exactly what's included before you commit — no hidden surprises at renewal.",
+      "It honestly depends on your goals and work scope — no fixed price. A one-time technical audit usually runs ₹8,000 to ₹20,000, while an ongoing monthly retainer with me is typically ₹15k to ₹40k according to work — depending on how much content, link building, and development you need. You'll always know exactly what's included before you commit — no hidden surprises at renewal.",
   },
   {
     question: "Can you improve my Core Web Vitals and site speed?",

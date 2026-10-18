@@ -55,7 +55,7 @@ const CONTACT_FAQS = [
   {
     question: "What are your starting SEO retainer and project rates?",
     answer:
-      "Monthly SEO retainers start at ₹12,000/month for focused campaigns and ₹15,000/month for dedicated specialist support with direct code access. One-time technical SEO audits start at ₹8,000, and custom Next.js/WordPress websites start at ₹20,000 to ₹25,000.",
+      "Monthly SEO retainers are decided according to work, typically ₹15k–₹40k/month — focused campaigns at the lower end and dedicated specialist support with direct code access at the higher end. One-time technical SEO audits start at ₹8,000, and custom Next.js/WordPress websites start at ₹20,000 to ₹25,000.",
   },
   {
     question: "Do I need to sign a long-term lock-in contract?",

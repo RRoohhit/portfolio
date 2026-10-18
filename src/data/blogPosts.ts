@@ -54,6 +54,38 @@ import { organicVsPaidMarketingGuide2026 } from "./posts/organicVsPaidMarketingG
 import { hireVideoEditorIndiaGuide2026 } from "./posts/hireVideoEditorIndiaGuide2026";
 import { seoAuditCostIndiaGuide2026 } from "./posts/seoAuditCostIndiaGuide2026";
 import { hireShopifyDeveloperIndiaGuide2026 } from "./posts/hireShopifyDeveloperIndiaGuide2026";
+import { technicalSeoServicesIndia2026 } from "./posts/technicalSeoServicesIndia2026";
+import { coreWebVitalsSpeedFix2026 } from "./posts/coreWebVitalsSpeedFix2026";
+import { aeoGeoBusinessGuide2026 } from "./posts/aeoGeoBusinessGuide2026";
+import { aiSearchLeadsGuide2026 } from "./posts/aiSearchLeadsGuide2026";
+import { googleBusinessProfileLeads2026 } from "./posts/googleBusinessProfileLeads2026";
+import { localSeoLeadsSmallBusiness2026 } from "./posts/localSeoLeadsSmallBusiness2026";
+import { seoExpertDelhiLeads2026 } from "./posts/seoExpertDelhiLeads2026";
+import { seoGurgaonAhmedabadGuide2026 } from "./posts/seoGurgaonAhmedabadGuide2026";
+import { seoExpertGurgaonDetailed2026 } from "./posts/seoExpertGurgaonDetailed2026";
+import { seoExpertAhmedabadDetailed2026 } from "./posts/seoExpertAhmedabadDetailed2026";
+import { seoExpertNcrCombined2026 } from "./posts/seoExpertNcrCombined2026";
+import { noidaSectorSeoGuide2026 } from "./posts/noidaSectorSeoGuide2026";
+import { nearMeSearchesLeads2026 } from "./posts/nearMeSearchesLeads2026";
+import { gbpSuspendedRecovery2026 } from "./posts/gbpSuspendedRecovery2026";
+import { clinicSeoLeads2026 } from "./posts/clinicSeoLeads2026";
+import { realEstateSeoLeads2026 } from "./posts/realEstateSeoLeads2026";
+import { coachingInstituteSeo2026 } from "./posts/coachingInstituteSeo2026";
+import { restaurantSeoLeads2026 } from "./posts/restaurantSeoLeads2026";
+import { salonSeoLeads2026 } from "./posts/salonSeoLeads2026";
+import { homeServicesSeo2026 } from "./posts/homeServicesSeo2026";
+import { dentistGurgaonSeo2026 } from "./posts/dentistGurgaonSeo2026";
+import { realEstateDelhiSeo2026 } from "./posts/realEstateDelhiSeo2026";
+import { salonDelhiSeo2026 } from "./posts/salonDelhiSeo2026";
+import { coachingNoidaSeo2026 } from "./posts/coachingNoidaSeo2026";
+import { dentistDelhiSeo2026 } from "./posts/dentistDelhiSeo2026";
+import { dentistNoidaSeo2026 } from "./posts/dentistNoidaSeo2026";
+import { realEstateGurgaonSeo2026 } from "./posts/realEstateGurgaonSeo2026";
+import { salonGurgaonSeo2026 } from "./posts/salonGurgaonSeo2026";
+import { coachingDelhiSeo2026 } from "./posts/coachingDelhiSeo2026";
+import { restaurantAhmedabadSeo2026 } from "./posts/restaurantAhmedabadSeo2026";
+import { homeServicesDelhiSeo2026 } from "./posts/homeServicesDelhiSeo2026";
+import { realEstateNoidaSeo2026 } from "./posts/realEstateNoidaSeo2026";
 
 // Single source of truth for all articles.
 // Consumed by: /blog listing, /blog/[slug] pages, home page grid and reader modal.
@@ -1377,6 +1409,38 @@ I have spent my career doing exactly this for businesses across Noida, Delhi and
   hireVideoEditorIndiaGuide2026,
   seoAuditCostIndiaGuide2026,
   hireShopifyDeveloperIndiaGuide2026,
+  technicalSeoServicesIndia2026,
+  coreWebVitalsSpeedFix2026,
+  aeoGeoBusinessGuide2026,
+  aiSearchLeadsGuide2026,
+  googleBusinessProfileLeads2026,
+  localSeoLeadsSmallBusiness2026,
+  seoExpertDelhiLeads2026,
+  seoGurgaonAhmedabadGuide2026,
+  seoExpertGurgaonDetailed2026,
+  seoExpertAhmedabadDetailed2026,
+  seoExpertNcrCombined2026,
+  noidaSectorSeoGuide2026,
+  nearMeSearchesLeads2026,
+  gbpSuspendedRecovery2026,
+  clinicSeoLeads2026,
+  realEstateSeoLeads2026,
+  coachingInstituteSeo2026,
+  restaurantSeoLeads2026,
+  salonSeoLeads2026,
+  homeServicesSeo2026,
+  dentistGurgaonSeo2026,
+  realEstateDelhiSeo2026,
+  salonDelhiSeo2026,
+  coachingNoidaSeo2026,
+  dentistDelhiSeo2026,
+  dentistNoidaSeo2026,
+  realEstateGurgaonSeo2026,
+  salonGurgaonSeo2026,
+  coachingDelhiSeo2026,
+  restaurantAhmedabadSeo2026,
+  homeServicesDelhiSeo2026,
+  realEstateNoidaSeo2026,
 ];
 
 // ── SEO Topic Clusters ──────────────────────────────────────────────────────

@@ -14,7 +14,7 @@ export const FAQ_DATA: FaqItem[] = [
   },
   {
     question: "How much does it cost to hire an SEO expert in India?",
-    answer: "SEO specialist services in India typically range from ₹15,000 to ₹80,000 per month for monthly SEO; one-time SEO audits start near ₹5,000–₹10,000. Rates vary by competition, industry, and the number of targeted keywords. Contact Rohit Gupta for an exact, requirement-based quote with milestone pricing.",
+    answer: "My SEO retainers are decided according to work, typically ₹15k to ₹40k per month; one-time SEO audits start near ₹5,000–₹10,000. Final quote depends on competition, industry, and the number of targeted keywords. Contact Rohit Gupta for an exact, requirement-based quote with milestone pricing.",
     keywords: ["SEO cost India", "hire SEO expert price", "SEO retainer India"],
     category: "Hiring & Pricing"
   },
